@@ -1,0 +1,87 @@
+{
+  "name": "RealEstateMagnet",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+
+  // ── VS Code Extensions ──────────────────────────────────────────────────
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Python
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "ms-python.mypy-type-checker",
+
+        // Database
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+
+        // Docker / containers
+        "ms-azuretools.vscode-docker",
+
+        // Data files
+        "mechatroner.rainbow-csv",
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+
+        // Git
+        "eamodio.gitlens",
+
+        // Productivity
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "christian-kohler.path-intellisense"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": false,
+        "editor.formatOnSave": true,
+        "editor.rulers": [100],
+
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter",
+          "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+          }
+        },
+
+        // SQLTools auto-connects to local PostGIS
+        "sqltools.connections": [
+          {
+            "name": "RealEstateMagnet (dev)",
+            "driver": "PostgreSQL",
+            "server": "db",
+            "port": 5432,
+            "database": "realestate_magnet",
+            "username": "rem",
+            "password": "rem_dev"
+          }
+        ],
+
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+
+  // ── Lifecycle hooks ─────────────────────────────────────────────────────
+  // postCreateCommand runs once after the container is built
+  "postCreateCommand": "pip install -r requirements.txt && playwright install chromium",
+
+  // postStartCommand runs every time the container starts
+  "postStartCommand": "echo '✅ RealEstateMagnet ready  |  FastAPI: http://localhost:8000  |  pgAdmin: http://localhost:5050'",
+
+  // ── Port forwarding ─────────────────────────────────────────────────────
+  "forwardPorts": [8000, 5432, 5050],
+  "portsAttributes": {
+    "8000": { "label": "FastAPI Dev Server",  "onAutoForward": "notify" },
+    "5432": { "label": "PostgreSQL / PostGIS", "onAutoForward": "silent" },
+    "5050": { "label": "pgAdmin 4",           "onAutoForward": "notify" }
+  },
+
+  // ── Runtime options ─────────────────────────────────────────────────────
+  "remoteUser": "vscode",
+  "shutdownAction": "stopCompose"
+}

@@ -1,0 +1,57 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# ── Environment / Secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Transcripts (generated at runtime — keep dir, ignore files) ──────────────
+transcripts/*.md
+transcripts/*.json
+
+# ── Data files (generated at runtime) ────────────────────────────────────────
+data/catalogs/*.json
+data/raw/
+data/downloads/
+data/exports/
+# Keep the placeholder so git tracks the directory
+!data/catalogs/.gitkeep
+
+# ── Playwright ───────────────────────────────────────────────────────────────
+playwright-report/
+test-results/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+# Keep devcontainer configs but ignore local overrides
+.devcontainer/.env
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/

@@ -1,0 +1,91 @@
+version: '3.9'
+
+# ── RealEstateMagnet Devcontainer Services ───────────────────────────────────
+#
+#   app      → Python 3.12 dev container (the VS Code workspace)
+#   db       → PostgreSQL 16 + PostGIS 3.4
+#   pgadmin  → pgAdmin 4 web UI  http://localhost:5050
+#
+# Ports forwarded to host:
+#   8000 → FastAPI (when running uvicorn)
+#   5432 → PostgreSQL  (psql / DBeaver / SQLTools)
+#   5050 → pgAdmin 4
+
+services:
+
+  # ── Application / Dev Container ─────────────────────────────────────────
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      # Mount repo root into container (cached for performance on Windows)
+      - ..:/workspace:cached
+    command: sleep infinity      # VS Code attaches and keeps alive
+    environment:
+      DATABASE_URL:        postgresql://rem:${POSTGRES_PASSWORD:-rem_dev}@db:5432/realestate_magnet
+      PGHOST:              db
+      PGPORT:              "5432"
+      PGUSER:              rem
+      PGPASSWORD:          ${POSTGRES_PASSWORD:-rem_dev}
+      PGDATABASE:          realestate_magnet
+      APP_ENV:             ${APP_ENV:-development}
+      SECRET_KEY:          ${SECRET_KEY:-dev-secret-change-in-production}
+      CRAWL_DELAY_SECONDS: ${CRAWL_DELAY_SECONDS:-1.5}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    networks:
+      - rem-net
+
+  # ── PostgreSQL 16 + PostGIS 3.4 ─────────────────────────────────────────
+  db:
+    image: postgis/postgis:16-3.4
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER:     rem
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rem_dev}
+      POSTGRES_DB:       realestate_magnet
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # DB init script runs once on first start (idempotent)
+      - ../Installation/scripts/init-database.sh:/docker-entrypoint-initdb.d/01-init.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rem -d realestate_magnet"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - rem-net
+
+  # ── pgAdmin 4 (optional, web DB browser) ────────────────────────────────
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL:             ${PGADMIN_EMAIL:-admin@rem.local}
+      PGADMIN_DEFAULT_PASSWORD:          ${PGADMIN_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE:        "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - db
+    networks:
+      - rem-net
+
+# ── Named volumes ────────────────────────────────────────────────────────────
+volumes:
+  postgres_data:
+  pgadmin_data:
+
+# ── Networks ─────────────────────────────────────────────────────────────────
+networks:
+  rem-net:
+    driver: bridge

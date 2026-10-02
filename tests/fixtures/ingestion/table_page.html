@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>County Data Tables</title></head>
+<body>
+<h1>Property Assessment Summary</h1>
+<table id="t1">
+  <tr><th>Parcel ID</th><th>Owner</th><th>Tax Amount</th></tr>
+  <tr><td>P-001</td><td>Smith</td><td>1200.50</td></tr>
+  <tr><td>P-002</td><td>Johnson</td><td>980.00</td></tr>
+  <tr><td>P-003</td><td>Lee</td><td>1450.75</td></tr>
+</table>
+<table id="t2">
+  <tr><th>School</th><th>Grade</th></tr>
+  <tr><td>Lincoln Elem</td><td>A</td></tr>
+  <tr><td>Roosevelt MS</td><td>B+</td></tr>
+</table>
+<script>
+var parcelData = [
+  {"id": "P-001", "value": 350000, "year_built": 1998},
+  {"id": "P-002", "value": 410000, "year_built": 2005},
+  {"id": "P-003", "value": 275000, "year_built": 1987}
+];
+</script>
+<a href="/downloads/parcel_export.csv">Download full parcel CSV</a>
+<a href="https://other.example.com/external.csv">External file</a>
+</body>
+</html>

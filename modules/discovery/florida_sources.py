@@ -30,7 +30,7 @@ class FloridaSource:
     protocol: Protocol
     categories: list[DataCategory]
     notes: str = ""
-    # Socrata domain (e.g. "opendata.broward.org") — equals hostname for Socrata portals
+    # Socrata domain (e.g. "data.example.gov") — equals hostname for Socrata portals
     socrata_domain: str = ""
     # Web-crawler options (only relevant when protocol == "web")
     requires_js: bool = False       # True → use Playwright instead of httpx
@@ -120,8 +120,11 @@ COUNTY_SOURCES: list[FloridaSource] = [
         base_url="https://gis-mdc.opendata.arcgis.com",
         protocol="arcgis",
         categories=["property", "geospatial", "misc"],
-        socrata_domain="opendata.miamidade.gov",
-        notes="Property boundaries, zoning, transit layers.",
+        notes=(
+            "Property boundaries, zoning, transit layers. Legacy Socrata portal "
+            "opendata.miamidade.gov is decommissioned (API 404, verified 2026-10-02); "
+            "use this ArcGIS hub instead."
+        ),
     ),
     FloridaSource(
         name="Miami-Dade Property Appraiser",
@@ -133,10 +136,15 @@ COUNTY_SOURCES: list[FloridaSource] = [
     # Broward
     FloridaSource(
         name="Broward County Open Data",
-        base_url="https://opendata.broward.org",
-        protocol="socrata",
-        categories=["property", "misc"],
-        socrata_domain="opendata.broward.org",
+        base_url="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services",
+        protocol="arcgis",
+        categories=["property", "geospatial", "misc"],
+        notes=(
+            "Migrated from Socrata (opendata.broward.org, decommissioned) to the "
+            "Broward County GeoHub ArcGIS Open Data portal. Service root verified "
+            "live 2026-10-02 (~70 FeatureServers). Human-facing portal: "
+            "https://geohub-bcgis.opendata.arcgis.com"
+        ),
     ),
     FloridaSource(
         name="Broward County Property Appraiser",
@@ -194,10 +202,17 @@ COUNTY_SOURCES: list[FloridaSource] = [
     # Duval (Jacksonville)
     FloridaSource(
         name="Jacksonville / Duval County Open Data",
-        base_url="https://opendata.coj.net",
-        protocol="socrata",
+        base_url="https://data.jacksonville.com",
+        protocol="web",
         categories=["property", "crime", "misc"],
-        socrata_domain="opendata.coj.net",
+        notes=(
+            "Replaced dead Socrata portal opendata.coj.net (NXDOMAIN, 2026-10-02). "
+            "Platform of data.jacksonville.com unverified — it bot-blocks automated "
+            "clients (403/406), so the web-crawler path is used. Re-check for a "
+            "structured API before relying on this source."
+        ),
+        requires_js=True,
+        crawl_depth=1,
     ),
     FloridaSource(
         name="Duval County Property Appraiser",

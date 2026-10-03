@@ -75,7 +75,8 @@ class ArcGisFetcher(BaseFetcher):
 
     async def _walk_service_tree(self, root: str, source_name: str) -> list[DatasetInfo]:
         try:
-            resp = await self.client.get(root)
+            # f=json is required: service roots default to an HTML directory page
+            resp = await self.client.get(root, params={"f": "json"})
         except Exception as exc:
             logger.debug("ArcGIS service tree %s failed: %s", root, exc)
             return []
@@ -102,7 +103,7 @@ class ArcGisFetcher(BaseFetcher):
 
     async def _layers_of_service(self, service_url: str, source_name: str) -> list[DatasetInfo]:
         try:
-            resp = await self.client.get(service_url)
+            resp = await self.client.get(service_url, params={"f": "json"})
         except Exception as exc:
             logger.debug("ArcGIS service %s failed: %s", service_url, exc)
             return []

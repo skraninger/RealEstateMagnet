@@ -12,9 +12,13 @@ Baseline: Phase 1 complete (60/60 tests passing), `modules/ingestion/` is a stub
 - Live smoke: `python -m modules.ingestion.ingestion_engine --source "Broward" --limit 2`
   harvested real data from bcpa.net (direct/PDF) and browardclerk.org (web/HTML tables);
   `data/raw/manifest.json` written with sha256/size per fetch.
-- Known environment limitation: some hosts (opendata.broward.org, ocfl.maps.arcgis.com)
-  fail DNS resolution on the dev machine — Socrata/ArcGIS live paths are covered by
-  offline fixture tests only.
+- Known environment limitation: some hosts (e.g. ocfl.maps.arcgis.com) fail DNS
+  resolution on the dev machine — Socrata/ArcGIS live paths are covered by offline
+  fixture tests only.
+- 2026-10-02 source migration: opendata.broward.org and opendata.coj.net (Socrata)
+  are dead (NXDOMAIN). Broward → ArcGIS GeoHub service root (verified live);
+  Jacksonville/Duval → data.jacksonville.com via web protocol (bot-blocks automated
+  clients; platform unverified). Registry now has zero live Socrata sources.
 - httpx 0.28 note: per-request `proxy=` was removed upstream; PoliteClient keeps a
   lazy pool of one `AsyncClient` per proxy (key `None` = no proxy).
 

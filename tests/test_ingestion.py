@@ -356,13 +356,13 @@ class TestArcGisFetcher:
     @pytest.mark.asyncio
     async def test_discover_walks_service_tree(self):
         def handler(request: httpx.Request) -> httpx.Response:
-            url = str(request.url)
-            if url.endswith("/arcgis/rest/services"):
+            path = request.url.path
+            if path.endswith("/arcgis/rest/services"):
                 return httpx.Response(200, json={"services": [
                     {"name": "TaxMap.Parcels", "type": "FeatureServer"},
                     {"name": "Aerial", "type": "ImageServer"},   # skipped type
                 ]})
-            if url.endswith("/TaxMap.Parcels/FeatureServer"):
+            if path.endswith("/TaxMap.Parcels/FeatureServer"):
                 return httpx.Response(200, json={"layers": [{"id": 3, "name": "Parcels"}]})
             return httpx.Response(404)
 
@@ -669,8 +669,10 @@ class TestIngestionEngine:
     def test_find_sources_filters(self):
         broward = find_sources(name="Broward")
         assert len(broward) >= 1 and all("broward" in s.name.lower() for s in broward)
+        # Invariant only: FL county Socrata portals were decommissioned (2026-10),
+        # so the registry may contain zero socrata sources.
         socrata = find_sources(protocol="socrata")
-        assert len(socrata) >= 2 and all(s.protocol == "socrata" for s in socrata)
+        assert all(s.protocol == "socrata" for s in socrata)
         tax_socrata = find_sources(category="tax", protocol="socrata")
         assert all("tax" in s.categories for s in tax_socrata)
         assert find_sources(name="no-such-source-xyz") == []

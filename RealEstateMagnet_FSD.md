@@ -80,7 +80,8 @@ python -m modules.ingestion.ingestion_engine --source "Broward" --force
 - Single HTTP entry point: `PoliteClient` (per-host rate limit via `CRAWL_DELAY_SECONDS`, tenacity retries w/ `Retry-After`, proxy pool via `PROXY_LIST`).
 - Fetchers registered by protocol in `modules/ingestion/fetchers/__init__.py`: `socrata`, `arcgis`, `ckan`, `census`, `direct`, `web` (Playwright branch for `requires_js`; gated sources emit an auth placeholder).
 - Playwright 1.63 + chromium installed in host `.venv` (`playwright install chromium`). JS tests skip automatically when the browser is absent.
-- Known environment quirk: some hosts (e.g. `opendata.broward.org`, `ocfl.maps.arcgis.com`) fail DNS on the dev machine; those paths are covered by offline fixture tests.
+- Known environment quirk: some hosts (e.g. `ocfl.maps.arcgis.com`) fail DNS on the dev machine; those paths are covered by offline fixture tests.
+- 2026-10 source migration: FL county Socrata portals were decommissioned — Broward now points at its ArcGIS GeoHub service root and Jacksonville/Duval at `data.jacksonville.com` (web protocol, platform unverified). The registry currently has no live Socrata sources; `SocrataFetcher` remains for future/other Socrata portals.
 
 **Next step:** implement Phase 3 following `Documents/Phase3_Transformation_Plan.md`
 (raw → Master Schema normalization, PostGIS schema, Livability Score).

@@ -21,7 +21,7 @@ Usage
   from modules.discovery.schema_analyzer import SchemaAnalyzer
 
   analyzer = SchemaAnalyzer()
-  report = await analyzer.analyze("https://opendata.broward.org/resource/abc123.json")
+  report = await analyzer.analyze("https://<data-portal>/api/views/<dataset-id>.json")
   print(report)
 """
 

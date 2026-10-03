@@ -14,7 +14,7 @@ Single async HTTP entry point for all ingestion fetchers:
 Usage
 -----
   client = PoliteClient()
-  resp = await client.get("https://opendata.broward.org/api/views/m39i-ikge/rows.json")
+  resp = await client.get("https://<socrata-domain>/api/views/<dataset-id>/rows.json")
   await client.aclose()
 
 Tests inject ``transport=httpx.MockTransport(...)`` plus a fake clock/sleep

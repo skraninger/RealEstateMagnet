@@ -1,5 +1,7 @@
 """
-Socrata (SODA) fetcher — opendata.broward.org, opendata.coj.net, ...
+Socrata (SODA) fetcher — any Socrata Open Data portal (<socrata-domain>).
+Note: as of 2026-10 the FL county Socrata portals in the registry have been
+decommissioned; this fetcher is retained for future/other Socrata sources.
 
 Discovery:  GET {base}/api/views?$limit=5000
 Fetch:      GET {base}/api/views/{id}/rows.csv?$limit=-1   (full export)

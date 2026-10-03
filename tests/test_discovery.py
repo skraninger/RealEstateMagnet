@@ -56,8 +56,10 @@ class TestFloridaSources:
             assert len(source.categories) > 0, f"No categories for {source.name}"
 
     def test_socrata_sources_have_domain(self):
+        # Invariant only: FL county Socrata portals (Broward, Jacksonville/Duval)
+        # were decommissioned by 2026-10 and migrated to ArcGIS/web, so the
+        # registry may legitimately contain zero socrata sources.
         socrata = [s for s in ALL_SOURCES if s.protocol == "socrata"]
-        assert len(socrata) >= 2
         for s in socrata:
             assert s.socrata_domain, f"Socrata source missing domain: {s.name}"
 

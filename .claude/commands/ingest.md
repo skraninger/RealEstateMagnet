@@ -39,7 +39,10 @@ python -m modules.ingestion.ingestion_engine --source "Broward" --delay 3 --outp
 
 - Playwright must be installed for `requires_js` sources:
   `pip install playwright && playwright install chromium` (already done in host `.venv`).
-- Some hosts fail DNS on the dev machine (e.g. opendata.broward.org); those paths are
+- Some hosts fail DNS on the dev machine (e.g. ocfl.maps.arcgis.com); those paths are
   covered by offline tests — verify with `pytest tests/test_ingestion.py -q`.
+- 2026-10: FL county Socrata portals (opendata.broward.org, opendata.coj.net) are
+  decommissioned; Broward migrated to ArcGIS GeoHub, Jacksonville/Duval to the web
+  crawler. The registry has no live Socrata sources at present.
 - Phase 3 (`modules/transformation/`) consumes `data/raw` + manifest; do not add
   network calls or Master-Schema coupling to ingestion code.

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Review Queue - RealEstateMagnet Viewer{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Review Queue ({{ review_items|length }})</h2>
+    <p class="text-muted">URLs that failed with 4xx errors and need manual review.</p>
+    
+    {% if review_items %}
+    <table>
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>Domain</th>
+                <th>HTTP Status</th>
+                <th>Failure Category</th>
+                <th>Failure Detail</th>
+                <th>Retryable</th>
+                <th>Discovered</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in review_items %}
+            <tr>
+                <td class="truncate"><a href="{{ item.url }}" target="_blank">{{ item.url }}</a></td>
+                <td>{{ item.domain or '-' }}</td>
+                <td><span class="badge badge-danger">{{ item.http_status or '-' }}</span></td>
+                <td><span class="badge badge-warning">{{ item.failure_category or '-' }}</span></td>
+                <td class="text-small truncate">{{ item.failure_detail or '-' }}</td>
+                <td>
+                    {% if item.is_retryable %}
+                    <span class="badge badge-info">Yes</span>
+                    {% else %}
+                    <span class="badge badge-warning">No</span>
+                    {% endif %}
+                </td>
+                <td class="text-muted text-small">{{ item.discovered_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p style="padding: 2rem; text-align: center; color: #27ae60;">✓ No URLs need review!</p>
+    {% endif %}
+</div>
+{% endblock %}

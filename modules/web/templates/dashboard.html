@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - RealEstateMagnet Viewer{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Overview</h2>
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="value">{{ total_communities }}</div>
+            <div class="label">Total Communities</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">{{ gated_communities }}</div>
+            <div class="label">Gated Communities</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">{{ total_urls }}</div>
+            <div class="label">Total URLs Tracked</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">{{ printed_urls }}</div>
+            <div class="label">Successfully Printed</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">{{ urls_with_data }}</div>
+            <div class="label">URLs with Data</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">{{ avg_quality }}</div>
+            <div class="label">Avg Quality Score</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Data Quality Distribution</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Quality Tier</th>
+                <th>Count</th>
+                <th>Score Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="quality-high">High Quality</span></td>
+                <td>{{ quality_distribution.get('high', 0) }}</td>
+                <td>75-100</td>
+            </tr>
+            <tr>
+                <td><span class="quality-medium">Medium Quality</span></td>
+                <td>{{ quality_distribution.get('medium', 0) }}</td>
+                <td>50-74</td>
+            </tr>
+            <tr>
+                <td><span class="quality-low">Low Quality</span></td>
+                <td>{{ quality_distribution.get('low', 0) }}</td>
+                <td>0-49</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="card">
+    <h2>Recent Communities</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>County</th>
+                <th>Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for community in recent_communities %}
+            <tr>
+                <td><a href="/communities/{{ community.slug }}">{{ community.name }}</a></td>
+                <td>{{ community.city or '-' }}</td>
+                <td>{{ community.county_fips or '-' }}</td>
+                <td class="text-muted text-small">{{ community.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% if failed_urls > 0 %}
+<div class="card" style="border-left: 4px solid #e74c3c;">
+    <h2>⚠️ Review Queue Alert</h2>
+    <p>You have <strong>{{ failed_urls }}</strong> URLs that failed with 4xx errors and need manual review.</p>
+    <p><a href="/review-queue">View Review Queue →</a></p>
+</div>
+{% endif %}
+{% endblock %}

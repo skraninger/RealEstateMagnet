@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Communities - RealEstateMagnet Viewer{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Communities ({{ communities|length }})</h2>
+    
+    <form method="get" class="filter-form">
+        <input type="text" name="search" value="{{ search or '' }}" placeholder="Search name or city...">
+        <select name="county">
+            <option value="">All Counties</option>
+            {% for county in counties %}
+            <option value="{{ county }}" {% if county == county %}selected{% endif %}>{{ county }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Filter</button>
+        {% if search or county %}
+        <a href="/communities" style="margin-left: 1rem;">Clear</a>
+        {% endif %}
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>County</th>
+                <th>Gated</th>
+                <th>Fees</th>
+                <th>Amenities</th>
+                <th>Median Age</th>
+                <th>Population</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for community in communities %}
+            <tr>
+                <td><a href="/communities/{{ community.slug }}">{{ community.name }}</a></td>
+                <td>{{ community.city or '-' }}</td>
+                <td>{{ community.county_fips or '-' }}</td>
+                <td>
+                    {% if community.is_gated %}
+                    <span class="badge badge-success">Yes</span>
+                    {% else %}
+                    <span class="badge badge-warning">No</span>
+                    {% endif %}
+                </td>
+                <td>{{ community.fee_count }}</td>
+                <td>{{ community.amenity_count }}</td>
+                <td>{{ community.median_age or '-' }}</td>
+                <td>{{ community.population or '-' }}</td>
+                <td class="text-muted text-small">{{ community.data_source }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}High Quality URLs - RealEstateMagnet Viewer{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>High Quality URLs ({{ urls|length }})</h2>
+    
+    <form method="get" class="filter-form">
+        <label>Minimum Score: </label>
+        <input type="number" name="min_score" value="{{ min_score }}" step="5" min="0" max="100">
+        <button type="submit">Filter</button>
+    </form>
+    
+    {% if urls %}
+    <table>
+        <thead>
+            <tr>
+                <th>Quality Score</th>
+                <th>URL</th>
+                <th>Domain</th>
+                <th>Data Types</th>
+                <th>Data Summary</th>
+                <th>Community</th>
+                <th>Discovered</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for url in urls %}
+            <tr>
+                <td>
+                    {% if url.data_quality_score >= 75 %}
+                    <span class="quality-high">{{ url.data_quality_score }}</span>
+                    {% elif url.data_quality_score >= 50 %}
+                    <span class="quality-medium">{{ url.data_quality_score }}</span>
+                    {% else %}
+                    <span class="quality-low">{{ url.data_quality_score }}</span>
+                    {% endif %}
+                </td>
+                <td class="truncate"><a href="{{ url.url }}" target="_blank">{{ url.url }}</a></td>
+                <td>{{ url.domain or '-' }}</td>
+                <td class="text-small">{{ url.data_types_found or '-' }}</td>
+                <td class="text-small truncate">{{ url.data_summary or '-' }}</td>
+                <td>
+                    {% if url.community_slug %}
+                    <a href="/communities/{{ url.community_slug }}">{{ url.community_slug }}</a>
+                    {% else %}
+                    -
+                    {% endif %}
+                </td>
+                <td class="text-muted text-small">{{ url.discovered_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p style="padding: 2rem; text-align: center; color: #7f8c8d;">No URLs meet the quality threshold.</p>
+    {% endif %}
+</div>
+{% endblock %}

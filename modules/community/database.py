@@ -324,7 +324,11 @@ class CommunityDatabase:
 
     def upsert_record(self, record: CommunityRecord, data_source: str = "file_store") -> str:
         with self.session() as session:
-            existing = session.get(CommunityRow, str(record.id))
+            # First check by slug (the actual UNIQUE constraint)
+            existing = session.query(CommunityRow).filter(
+                CommunityRow.slug == record.identity.slug
+            ).first()
+            
             if existing is not None:
                 self._update_row(existing, record, session)
                 session.commit()

@@ -259,6 +259,63 @@ try:
     if captcha_detected > 0:
         print(f'    CAPTCHAs detected: {captcha_detected}')
         print(f'    CAPTCHAs solved: {captcha_solved}')
+    
+    # Data quality statistics
+    try:
+        cursor.execute('SELECT COUNT(*) FROM source_urls WHERE has_community_data = 1')
+        with_data = cursor.fetchone()[0]
+        
+        if with_data > 0:
+            cursor.execute('SELECT AVG(data_quality_score) FROM source_urls WHERE has_community_data = 1')
+            avg_score = cursor.fetchone()[0] or 0
+            
+            cursor.execute('SELECT MAX(data_quality_score) FROM source_urls WHERE has_community_data = 1')
+            max_score = cursor.fetchone()[0] or 0
+            
+            cursor.execute('SELECT MIN(data_quality_score) FROM source_urls WHERE has_community_data = 1')
+            min_score = cursor.fetchone()[0] or 0
+            
+            # Count URLs by quality tier
+            cursor.execute('SELECT COUNT(*) FROM source_urls WHERE data_quality_score >= 75')
+            high_quality = cursor.fetchone()[0]
+            
+            cursor.execute('SELECT COUNT(*) FROM source_urls WHERE data_quality_score >= 50 AND data_quality_score < 75')
+            medium_quality = cursor.fetchone()[0]
+            
+            cursor.execute('SELECT COUNT(*) FROM source_urls WHERE data_quality_score > 0 AND data_quality_score < 50')
+            low_quality = cursor.fetchone()[0]
+            
+            print('')
+            print('  Data Quality:')
+            print(f'    URLs with community data: {with_data}')
+            print(f'    Average quality score: {avg_score:.1f}/100')
+            print(f'    Score range: {min_score:.0f} - {max_score:.0f}')
+            print(f'    High quality (75+): {high_quality}')
+            print(f'    Medium quality (50-74): {medium_quality}')
+            print(f'    Low quality (<50): {low_quality}')
+            
+            # Show top 3 highest quality URLs
+            cursor.execute('''
+                SELECT url, data_quality_score, data_types_found 
+                FROM source_urls 
+                WHERE has_community_data = 1 
+                ORDER BY data_quality_score DESC 
+                LIMIT 3
+            ''')
+            top_urls = cursor.fetchall()
+            
+            if top_urls:
+                print('')
+                print('    Top quality sources:')
+                for url, score, types in top_urls:
+                    # Truncate URL for display
+                    display_url = url[:60] + '...' if len(url) > 60 else url
+                    print(f'      [{score:.0f}] {display_url}')
+                    if types:
+                        print(f'           Data: {types}')
+    except sqlite3.OperationalError:
+        # data quality columns don't exist yet
+        pass
         
 except sqlite3.OperationalError:
     # source_urls table doesn't exist yet

@@ -1,0 +1,23 @@
+{
+  "id": "c0928fbe-7b7c-4a91-abdf-c4dc56db688d",
+  "identity": {
+    "name": "The Bear's Club",
+    "slug": "the-bear-s-club",
+    "county_fips": null,
+    "city": "Jupiter",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": null
+  },
+  "fees": [],
+  "amenities": [],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-06T19:44:31.984171Z",
+  "updated_at": "2026-10-06T19:44:31.984214Z"
+}

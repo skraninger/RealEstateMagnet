@@ -1,0 +1,23 @@
+{
+  "id": "b30887d9-30c8-48e5-a086-77c18f5a186e",
+  "identity": {
+    "name": "Pointe Royal",
+    "slug": "pointe-royal",
+    "county_fips": null,
+    "city": "Miami",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Ultra-luxury, gated waterfront enclave on Biscayne Bay in Miami's Edgewater area, home to roughly 500+ waterfront estates on about one mile of shoreline. Widely considered one of the most exclusive communities in the United States, with a gated entrance and private dockage."
+  },
+  "fees": [],
+  "amenities": [],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-04T16:19:57.866601Z",
+  "updated_at": "2026-10-04T16:19:57.866800Z"
+}

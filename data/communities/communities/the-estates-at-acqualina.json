@@ -1,0 +1,261 @@
+{
+  "id": "b465ffbe-f05a-43ff-b0e8-a0612daaf88a",
+  "identity": {
+    "name": "The Estates at Acqualina",
+    "slug": "the-estates-at-acqualina",
+    "county_fips": null,
+    "city": "Sunny Isles Beach, FL",
+    "hoa_name": "Estates Master Association (related entity of Acqualina Ocean Residences & Resort Condominium Association, Inc.); managed by Acqualina Management, LLC",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Ultra-luxury oceanfront condominium HOA community at 17901 and 17975 Collins Ave, Sunny Isles Beach, FL 33160, consisting of two high-rise towers (North and South) with approximately 248 residences. Part of the Acqualina Resort campus completed around 2022, operating in partnership with the adjacent Acqualina Resort & Residences / Resort & Spa. HOA manages common areas, security, and shared amenities via Acqualina entities (management: Acqualina Management, LLC)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722378Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1.5,
+      "period": "month",
+      "currency": "USD",
+      "note": "Monthly HOA fees typically range from $1.50 to $2.00+ per square foot depending on unit size and specifics; examples from listings show $3,655 to over $23,000 per month for larger residences. Exact figures vary by unit and are not uniformly published. Web-extracted."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722384Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1.5,
+      "period": "month",
+      "currency": "USD",
+      "note": "Broader Acqualina community (multiple towers incl. Estates at Acqualina): monthly fees typically range from $1.50 to $2.50 per square foot depending on the unit and tower, with examples from several thousand dollars to over $10,000 per month for larger residences. Exact current fees, transfer fees, capital contributions, and special assessments unavailable from public sources. Web-extracted."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722386Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Transfer fees, capital contributions, and CDD/special assessments are not uniformly published in public sources and vary by unit; must be obtained from the association (Acqualina Management, LLC, phone (305) 918-8000). Web-extracted."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:17:03.324644Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA/CDD fees are published in the community's Annual Comprehensive Financial Report (the source document), but the provided page is an unparseable PDF binary and no fee amounts could be extracted explicitly from it."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556489Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 8065.5,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Estimated property tax from listing payment estimate (not an HOA fee); no HOA/CDD fee stated on page."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556496Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 2697.92,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Estimated homeowner's insurance from listing payment estimate (not an HOA fee)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722389Z",
+      "confidence": 0.5,
+      "amenity": "multiple_swimming_pools",
+      "detail": "Oceanfront infinity pool, rooftop pool, family pool, lap pool, and children's pool with waterslide; multiple oceanfront pools on the resort campus."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722397Z",
+      "confidence": 0.5,
+      "amenity": "private_beach_access",
+      "detail": "Private beach access with beach service/attendants."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722400Z",
+      "confidence": 0.5,
+      "amenity": "full_service_spa",
+      "detail": "Full-service ESPA spa."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722402Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness center / fitness centers."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722405Z",
+      "confidence": 0.5,
+      "amenity": "sports_courts",
+      "detail": "Sports courts on the resort campus."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722407Z",
+      "confidence": 0.5,
+      "amenity": "gardens",
+      "detail": "Resort-style gardens."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722409Z",
+      "confidence": 0.5,
+      "amenity": "concierge_and_dining_services",
+      "detail": "Resort-style services including concierge and dining options via the adjacent Acqualina Resort & Spa."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722412Z",
+      "confidence": 0.5,
+      "amenity": "security_and_gated_secure_access",
+      "detail": "HOA manages common areas and security in a secure oceanfront setting."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722414Z",
+      "confidence": 0.5,
+      "amenity": "unique_simulators",
+      "detail": "Noted in community overview ('unique simulators'); specific details unavailable in public sources."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556500Z",
+      "confidence": 0.8,
+      "amenity": "private_beach_club",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556508Z",
+      "confidence": 0.8,
+      "amenity": "multiple_pools",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556511Z",
+      "confidence": 0.8,
+      "amenity": "state_of_the_art_fitness_facilities",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556514Z",
+      "confidence": 0.5,
+      "amenity": "dining_options",
+      "detail": "Extraordinary dining options within the community amenity suite"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556517Z",
+      "confidence": 0.5,
+      "amenity": "concierge_services",
+      "detail": "Personalized concierge services"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556519Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Tranquil sauna in unit outdoor space"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:18:18.556522Z",
+      "confidence": 0.5,
+      "amenity": "bbq_area",
+      "detail": "Private BBQ area in unit outdoor space"
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-06T19:07:44.722418Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Acqualina Resort & Residences / Acqualina Resort & Spa",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:17:03.324656Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Fort Lauderdale Public Library - Lake Santa Lucie Branch",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:17:03.324661Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Las Olas Boulevard, downtown Fort Lauderdale",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T19:17:03.324662Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "St. Mary Medical Center, Plantation",
+      "distance_miles": 10.0
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+          "retrieved_at": "2026-10-06T19:07:44.722386+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T19:17:03.324644+00:00"
+        },
+        {
+          "amount": 8065.5,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T19:18:18.556489+00:00"
+        },
+        {
+          "amount": 2697.92,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T19:18:18.556496+00:00"
+        }
+      ],
+      "detected_at": "2026-10-06T19:18:18.557321Z"
+    }
+  ],
+  "created_at": "2026-10-06T19:07:44.723064Z",
+  "updated_at": "2026-10-06T19:18:18.557388Z"
+}

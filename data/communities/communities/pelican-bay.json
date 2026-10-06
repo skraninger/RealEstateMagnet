@@ -1,0 +1,60 @@
+{
+  "id": "d24135f1-4d2a-48b8-aec7-fbd35f3530dd",
+  "identity": {
+    "name": "Pelican Bay",
+    "slug": "pelican-bay",
+    "county_fips": "12086",
+    "city": "Key Biscayne",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated island community; verify current HOA structure and fees."
+  },
+  "fees": [],
+  "amenities": [],
+  "demographics": {
+    "source_url": "https://www.miamiluxuryhomes.com/key-biscayne/",
+    "retrieved_at": "2026-08-24T12:00:00Z",
+    "confidence": 0.4,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 12500,
+    "data_year": null,
+    "geography_level": "Village of Key Biscayne, FL (island-wide proxy only; a 'Pelican Bay' community in Key Biscayne could not be verified, so no community-level demographics exist for this report)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/key-biscayne/",
+      "retrieved_at": "2026-10-03T21:42:22.339672Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "MAST Academy (private school on Key Biscayne; island-level context, not verified as nearest to the community)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/key-biscayne/",
+      "retrieved_at": "2026-10-03T21:42:22.339685Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": null,
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Existence: I could not verify that a gated community named 'Pelican Bay' exists in Key Biscayne, Florida. Exact-phrase searches for '\"Pelican Bay\" \"Key Biscayne\"' returned no results, and Key Biscayne gated-community listings (miamigatedcommunities.com, floridahomefinder.com, miamiluxuryhomes.com) do not mention it. Please confirm the intended community name/location.",
+    "Name collision - Naples: There is a large master-planned gated community named 'Pelican Bay' in Naples, FL (Collier County) with its own fee layers (foundation dues, PBSD assessments, HOA costs). If that is the intended community, it needs separate research.",
+    "Name collision - Daytona Beach: 'Pelican Bay' in Daytona Beach, FL is a 1,806-unit gated PUD (pelicanbayhoa.com/pbdbhoa.com references). If that is the intended community, it needs separate research.",
+    "Name collision - Santa Rosa Beach: The top 'Pelican Bay HOA' search result (pelicanbayhoa.com) is the Pelican Bay HOA at 427 Pelican Bay Dr, Santa Rosa Beach, FL 32459 (Choctawhatchee Bay). Its amenities (private park with bay dock, tennis, pickleball, basketball courts) and any fees were NOT attributed to the Key Biscayne community because the locations do not match.",
+    "HOA structure and fees: No HOA website, association registration, or fee schedule for a 'Pelican Bay' in Key Biscayne could be found; current HOA structure and monthly/annual dues and any CDD/special assessments are unverifiable.",
+    "Amenities: Pool, clubhouse, golf, tennis, trails, fitness center, gate/security, and pet policies for a 'Pelican Bay' in Key Biscayne are unverifiable.",
+    "Demographics: No community-level median age, median household income, owner-occupancy %, or population could be verified. The only figure recorded is the approximate population of the entire Village of Key Biscayne (~12,500), used as island-wide context only.",
+    "Proximity distances: Distances to nearest shopping/grocery, library, hospital, and school from the community are unverifiable because the community's location could not be confirmed. Island-level context only: a public library (unnamed in the source) and MAST Academy are on Key Biscayne (miamiluxuryhomes.com); no distances were stated. Nearest hospital not identified.",
+    "Site access: pelicanbaypoa.com could not be read (page could not be loaded), so its association could not be identified; it was not used as a source."
+  ],
+  "discrepancies": [],
+  "created_at": "2026-10-03T21:33:30.303048Z",
+  "updated_at": "2026-10-03T21:42:22.341125Z"
+}

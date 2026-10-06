@@ -1,0 +1,357 @@
+{
+  "id": "5f5d2a26-1c67-4aa5-a983-911e4fea8b10",
+  "identity": {
+    "name": "Indian Creek Village",
+    "slug": "indian-creek-village",
+    "county_fips": null,
+    "city": "Surfside",
+    "hoa_name": "Indian Creek Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "One of the most exclusive gated communities in the United States. Indian Creek Village occupies Indian Creek Island, a barrier island off the coast of Surfside, Miami-Dade County, Florida. Access is via a single gated bridge (the Indian Creek Bridge) off Indian Creek Drive in Surfside, with all non-resident visitors required to check in with security. The island is home to roughly 90-110 large waterfront estate homes, many owned by prominent business leaders, athletes, and entertainers. It features its own private marina and yacht club, a golf course, tennis, pool, and clubhouse, and is renowned for its privacy, security, and Biscayne Bay waterfront."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807372Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Base association dues commonly reported in the $1,000-$2,000+/month range, varying by lot size, frontage, and parcel; among the highest HOA dues in the Miami area. Exact current figure varies and should be verified with the Indian Creek Association before purchase/sale. Dues cover bridge/gate security, roads, landscaping, marina operations, and island infrastructure maintenance in addition to amenity upkeep. Periodic special assessments (e.g., for bridge, marina, and seawall repairs) may also be levied on top of base dues. No CDD (Community Development District) assessment is associated with the island to our knowledge - recurring costs are HOA-based rather than CDD-based. Treat all figures as approximate and verify directly with the association or a listing agent for the specific parcel. (AI-knowledge estimate, not from a specific current listing.)"
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807383Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "variable",
+      "currency": "USD",
+      "note": "Potential additional charges: periodic special assessments for capital projects (bridge, marina, seawalls, roads), and optional private marina berth/boat slip fees if a resident leases a slip. Amounts not standardized in our knowledge; verify with association. (AI-knowledge estimate.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:14:21.913305Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 10001.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Average property tax, above Florida average of $2,730 and U.S. average of $3,119. Source: U.S. Census Bureau ACS 2020-2024 5-year estimates via TownTapestry."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807388Z",
+      "confidence": 0.5,
+      "amenity": "gated_bridge_entrance_security",
+      "detail": "Single point of access via the Indian Creek Bridge with 24/7 guard house; all vehicles and pedestrians logged, visitors pre-approved by residents. One of the most tightly controlled entrances in South Florida."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807402Z",
+      "confidence": 0.5,
+      "amenity": "private_marina_yacht_club",
+      "detail": "Indian Creek Yacht Club and marina on Biscayne Bay with private berths/slip capacity for residents' boats and yachts - a signature amenity of the community."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807405Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "On-island 9-hole golf course for residents (course configuration may vary; verify current status with association)."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807407Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Resident tennis courts on the island."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807409Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool area on the island for resident use."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807412Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Indian Creek Club / clubhouse for resident events, dining, and social functions."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807414Z",
+      "confidence": 0.5,
+      "amenity": "security_patrol",
+      "detail": "Community security/patrol operations in addition to the guarded gate entrance."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807416Z",
+      "confidence": 0.5,
+      "amenity": "trails_walkways",
+      "detail": "Paved and natural walkways along canals and shoreline connecting the island's neighborhoods."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807419Z",
+      "confidence": 0.5,
+      "amenity": "water_taxi_service",
+      "detail": "Historically, a private water taxi service has connected the island with Bal Harbour / Miami Beach; service availability is seasonal/variable - verify with association."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:12:24.274608Z",
+      "confidence": 0.5,
+      "amenity": "private_country_club",
+      "detail": "Lifestyle anchored by a private country club on the island (no specifics given). Retrieved from page titled 'Indian Creek Island: The Ultra-Private Enclave...'. retrieved_at: 2025-05-01T00:00:00Z, confidence 0.55"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:12:24.274626Z",
+      "confidence": 0.5,
+      "amenity": "24_7_municipal_public_safety_police_department",
+      "detail": "Indian Creek Village Public Safety Department provides 24/7 coverage and specialized capabilities; operates vehicle checkpoint. Retrieved from page titled 'Indian Creek Island: The Ultra-Private Enclave...'. retrieved_at: 2025-05-01T00:00:00Z, confidence 0.85"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:12:24.274630Z",
+      "confidence": 0.5,
+      "amenity": "high_tech_perimeter_monitoring",
+      "detail": "Perimeter security system described as Israeli-designed, incorporating radar and thermal/infrared camera surveillance of approaches. Retrieved from page titled 'Indian Creek Island: The Ultra-Private Enclave...'. retrieved_at: 2025-05-01T00:00:00Z, confidence 0.65"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:12:24.274634Z",
+      "confidence": 0.5,
+      "amenity": "marine_patrol_and_boat_monitoring",
+      "detail": "Security posture includes marine patrol and boat monitoring to deter waterborne approaches; waterline treated as a perimeter. Retrieved from page titled 'Indian Creek Island: The Ultra-Private Enclave...'. retrieved_at: 2025-05-01T00:00:00Z, confidence 0.7"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477066Z",
+      "confidence": 0.5,
+      "amenity": "private_golf_course",
+      "detail": "The Indian Creek Country Club golf course is located at the center of the roughly 300-acre island, with estates facing the course greens, Biscayne Bay, or the Intracoastal Waterway."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477084Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_estates_and_views",
+      "detail": "Approximately 40 expansive waterfront estates on oversized lots, with landscaped grounds and waterfront views stretching across Biscayne Bay."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477090Z",
+      "confidence": 0.5,
+      "amenity": "guarded_single_bridge_access",
+      "detail": "The entire municipality occupies a single island connected to the mainland by only one guarded bridge, creating an intentionally private, limited-access environment."
+    }
+  ],
+  "demographics": {
+    "source_url": "browser:google",
+    "retrieved_at": "2026-10-06T18:14:21.913316Z",
+    "confidence": 0.5,
+    "median_age": 48.5,
+    "median_household_income": null,
+    "owner_occupancy_pct": 60.0,
+    "population": null,
+    "data_year": 2024,
+    "geography_level": "Town/CDP - Indian Creek, FL"
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807424Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 300,
+      "data_year": 2022,
+      "geography_level": "Indian Creek Island (sub-area within Surfside CDP, Miami-Dade County). All figures are rough estimates based on the island's ~90-110 estate homes and its status as one of America's wealthiest micro-communities; not exact Census/ACS tabulations for this specific island. Verify with current census block data or the association for precise numbers. (AI-knowledge estimate.)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807433Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Bal Harbour Shops",
+      "distance_miles": 2.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807439Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix supermarket (Bal Harbour)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807441Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Bal Harbour Branch, Miami-Dade Public Library",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807444Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Mount Sinai Medical Center (Miami Beach)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807446Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Surfside Elementary School (public)",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-06T17:54:35.807447Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "The New World School (private, Bal Harbour)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:12:24.274643Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Surfside (via single bridge)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477097Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477101Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami Beach",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477104Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477106Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Surfside / Bay Harbor Islands",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T18:13:33.477108Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Bal Harbour",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": "variable",
+          "source_url": "ai:condensed",
+          "retrieved_at": "2026-10-06T17:54:35.807383+00:00"
+        },
+        {
+          "amount": 10001.0,
+          "period": "annual",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T18:14:21.913305+00:00"
+        }
+      ],
+      "detected_at": "2026-10-06T18:15:03.821135Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Surfside (via single bridge)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Downtown Miami",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami Beach",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami International Airport",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Surfside / Bay Harbor Islands",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Bal Harbour",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-06T18:15:03.821140Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Surfside Elementary School (public)",
+          "distance_miles": 2.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "The New World School (private, Bal Harbour)",
+          "distance_miles": 3.0,
+          "source_url": "ai:condensed"
+        }
+      ],
+      "detected_at": "2026-10-06T18:15:03.821143Z"
+    }
+  ],
+  "created_at": "2026-10-06T17:54:35.808317Z",
+  "updated_at": "2026-10-06T18:15:03.821205Z"
+}

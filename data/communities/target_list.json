@@ -1,0 +1,1252 @@
+{
+  "communities": [
+    {
+      "name": "Fisher Island",
+      "city": "Miami Beach / Miami-Dade County",
+      "county_fips": null,
+      "notes": "Fisher Island is a well-known private residential community in Miami-Dade County, Florida. It is a census-designated place (population 561, ZIP 33109) with no road connection to the mainland — accessible only by private ferry or yacht, requiring pre-arranged security clearance. This makes it even more restricted than a typical gated community. It is firmly in southern Florida (Miami-Dade County). The reported name, city, and county are all accurate."
+    },
+    {
+      "name": "Indian Creek Village",
+      "city": "Miami-Dade County, Florida (island accessible from Surfside)",
+      "county_fips": null,
+      "notes": "Indian Creek Village is a well-documented, real residential community — a self-governed municipality on a man-made island in northeastern Miami-Dade County, developed in 1928 and incorporated in 1939. It contains only 41 residential home sites and the Indian Creek Country Club. It is not merely gated; it has a single private bridge from Surfside with its own police checkpoint and private police force, making it one of the most exclusive and controlled addresses in South Florida. It is located in Miami-Dade County, which is within the target area of southern Florida. Multiple credible sources (Miami and Beaches tourism site, luxury real estate sites) confirm its existence and characteristics."
+    },
+    {
+      "name": "Gables Estates",
+      "city": "Coral Gables, Miami-Dade County, FL",
+      "county_fips": null,
+      "notes": "Gables Estates is a well-documented, ultra-exclusive guard-gated residential community in Coral Gables, Miami-Dade County. Multiple independent sources confirm it is a real residential neighborhood (developed 1960s, ~179–192 single-family waterfront lots), protected by 24/7 armed guards with entry approval via Gables Estates Club, Inc. (functioning as an HOA/club). Location in Coral Gables places it squarely in Miami-Dade County, within the southern Florida target area. Name and location are correct as reported."
+    },
+    {
+      "name": "Star Island",
+      "city": "Miami Beach",
+      "county_fips": null,
+      "notes": "Star Island is a well-known, real residential community — a man-made island in Biscayne Bay with 34 waterfront homes, part of the City of Miami Beach, Miami-Dade County. It has a single staffed guard gate at its entrance on the MacArthur Causeway, which qualifies as gated (though some sources note it's a \"public neighborhood\" where visitors are permitted to tour). The name, city, and county are all correct. It is firmly in southern Florida (Miami-Dade County)."
+    },
+    {
+      "name": "The Estates at Acqualina",
+      "city": "Sunny Isles Beach",
+      "county_fips": null,
+      "notes": "The Estates at Acqualina is confirmed as a real, private gated residential community in Sunny Isles Beach, Miami-Dade County. Both sources explicitly describe it as a \"private, gated residential community\" with two 50-story towers of condominiums (3-7 bedrooms), part of the larger Acqualina resort complex. It opened around 2020 and is located north of the five-star Acqualina Resort & Spa on the beach. All criteria are met: real residential community, explicitly gated, and located in Miami-Dade County (southern Florida)."
+    },
+    {
+      "name": "Royal Palm Yacht & Country Club",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "Royal Palm Yacht & Country Club is a well-documented, prestigious gated residential community in Boca Raton, Palm Beach County, FL. Multiple sources confirm it is a guard-gated community (24-hour manned gate, roving security patrols) with an HOA. It features ~750 estate homes, a Jack Nicklaus/Fazio golf course, marina with 100+ Intracoastal slips, and other luxury amenities. Ranked by Forbes as the #1 most expensive gated community in America. Location in Boca Raton (Palm Beach County) is squarely in the southern Florida target area."
+    },
+    {
+      "name": "The Bear's Club",
+      "city": "Jupiter",
+      "county_fips": null,
+      "notes": "The Bear's Club (correct spelling includes an apostrophe) is a well-documented, ultra-luxury private gated residential community in Jupiter, Palm Beach County, Florida. Founded in 1999 by Jack and Barbara Nicklaus, it features approximately 99 residences on ~401 acres, centered around a Nicklaus-designed 18-hole championship golf course. It has a 24/7 manned guard gate, a mandatory HOA (The Bear's Club Property Owners' Association), and an invitation-only membership structure. Entry prices start at $7.4M+. Notable residents include Michael Jordan and Ernie Els. It has been recognized by Travel & Leisure Golf as one of America's Top 100 Golf Communities. All three criteria are clearly met: real residential community, gated with HOA, and located in Palm Beach County (southern Florida)."
+    },
+    {
+      "name": "Cocoplum",
+      "city": "Coral Gables, Miami-Dade County",
+      "county_fips": null,
+      "notes": "Cocoplum is a well-known, real gated waterfront estate community in Coral Gables, Miami-Dade County. Multiple sources confirm it is an exclusive, guard-gated enclave (~302 estate homes) along the Gables Waterway and Biscayne Bay, with 24/7 armed security, an on-site yacht club with ~200 slips, and HOA governance (voluntary in Phase I, mandatory in Phase II and Tahiti Beach Island). It is clearly residential (single-family estates, not a business or park) and located in the target southern Florida area."
+    },
+    {
+      "name": "Jupiter Island",
+      "city": "Jupiter Island, off the coast of Jupiter, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Jupiter Island is a real, exclusive barrier island off Jupiter, Florida, in Palm Beach County (not Martin County, as reported). It is a well-known residential area with luxury homes, private roads, and multiple gated streets/sections (e.g., Sailors Cove), though it is an island with several neighborhoods rather than a single HOA-gated community. The web evidence is mostly SEO listing pages for gated homes in the area; the island is real and in the target area, but the reported county should be corrected to Palm Beach."
+    },
+    {
+      "name": "Audubon Golf & Country Club",
+      "city": "Naples, Collier County, FL",
+      "county_fips": null,
+      "notes": "Multiple independent real estate sources confirm Audubon Golf & Country Club (also referred to as Audubon Country Club) as a real, private, fully gated residential community in North Naples, Collier County. It is described as a low-density community with 401 homes on 750 acres, 24-hour manned security, a Joe Lee-designed 18-hole golf course, clubhouse, and resort amenities. Collier County is in southern Florida, so it meets all criteria."
+    },
+    {
+      "name": "Fiddler's Creek",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Fiddler's Creek is a well-documented, large-scale master-planned gated community in Naples, Collier County, Florida. Multiple independent sources confirm it is a private, gated golf community spanning nearly 4,000 acres between downtown Naples and Marco Island, with multiple residential neighborhoods, sub-association HOAs, a CDD, a 54,000 sq ft Club & Spa, an optional Arthur Hills-designed golf course, and a private beach/marina program on Marco Island. The address (8152 Fiddler's Creek Parkway, Naples, FL 34114) places it squarely in Collier County, which is in the target southern Florida area. All reported details (name, city, county) are correct."
+    },
+    {
+      "name": "Grey Oaks Country Club",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Grey Oaks Country Club is a well-known, real gated luxury residential community in Naples, Florida (Collier County). Multiple independent sources confirm it is fully gated, features three championship golf courses, a 30,000+ sq ft wellness center, two clubhouses, pools, tennis, and pickleball. It includes luxury estates, single-family homes, villas, and some condo options. Naples is in Collier County, which is within the target southern Florida area. The reported name, city, and county are all accurate."
+    },
+    {
+      "name": "Collier's Reserve",
+      "city": "Naples (North Naples), Collier County, Florida",
+      "county_fips": null,
+      "notes": "Collier's Reserve is confirmed as a real, fully gated private residential country club community in North Naples, Collier County, Florida. Multiple sources (its official HOA site and real estate listings) describe a 450-acre, ~224-228 home gated community along the Cocohatchee River with an Arthur Hills-designed golf course, an access control gate, and an HOA (Collier's Reserve Homeowner's Association). Recent home sales with Naples, FL 34110 addresses confirm active residential real estate. All criteria met: real residential community, gated with HOA, and located in Collier County (southern Florida)."
+    },
+    {
+      "name": "BallenIsles",
+      "city": "Palm Beach Gardens, Palm Beach County",
+      "county_fips": null,
+      "notes": "Wikipedia confirms BallenIsles is a gated community in Palm Beach Gardens, Palm Beach County, FL, comprising 1,575 residences in 33 neighborhoods (patio homes, golf villas, estate homes). Private Communities of America describes it as a secure gated environment with a 24-hour manned gatehouse. It is a real residential community with both HOA-style residential structure and a member-owned equity country club. Palm Beach County is in the target southern Florida area. Minor nuance: \"BallenIsles Country Club\" is the name of the private club/golf facility within the residential community, which is simply called \"BallenIsles.\""
+    },
+    {
+      "name": "Indian Creek",
+      "city": "Indian Creek, Miami-Dade County",
+      "county_fips": null,
+      "notes": "Indian Creek is a well-documented, real gated community. It is an incorporated village and man-made barrier island in Miami-Dade County, Florida, with only 41 residential home sites and the Indian Creek Country Club. Both Wikipedia and real estate sources explicitly describe it as a \"gated community.\" It is known as the \"Billionaire Bunker\" and has its own government and law enforcement. The reported city of \"Miami Beach\" is slightly off — Indian Creek is its own incorporated village (ZIP 33154), though it is geographically near Miami Beach and in the same metro area. It is squarely in the southern Florida target area (Miami-Dade County)."
+    },
+    {
+      "name": "Stone Creek Ranch",
+      "city": "Delray Beach (bordering Boca Raton), Palm Beach County, FL 33446",
+      "county_fips": null,
+      "notes": "Stone Creek Ranch is a real, well-documented gated community: an exclusive 187-acre enclave of just 37 custom luxury estates (2.5+ acre lots, ~$15M+ average prices) with a manned gatehouse, stone bridge, and internal ring road on Lyons Road. Multiple sources (Wikipedia, official community sites, CNBC coverage of a $19M record sale) confirm it is gated. However, the reported location is wrong: it is NOT in Plantation, Broward County. It is in western Delray Beach (straddling the border with Boca Raton), which is in Palm Beach County — still within the target southern Florida area."
+    },
+    {
+      "name": "Azure Palm Beaches",
+      "city": "Palm Beach Gardens, Palm Beach County, Florida",
+      "county_fips": null,
+      "notes": "Azure Palm Beaches is a confirmed real luxury waterfront condominium community in Palm Beach Gardens, Palm Beach County, Florida. Multiple sources confirm it is a 14-acre private gated community with 101 residences in two mid-rise buildings, featuring 24-hour security and surveillance, a private gated entry, and a semi-private yacht harbor. Located at the Intracoastal Waterway and Donald Ross Road, it is clearly in the target area (Palm Beach County). Prices range from $1.3M to $3M. The name, city, and county are all accurate."
+    },
+    {
+      "name": "The Crimson",
+      "city": "Edgewater, Miami",
+      "county_fips": null,
+      "notes": "The Crimson is a real 19-20 story, 90-unit waterfront condominium at 601 NE 27th Street in Edgewater, Miami (Miami-Dade County). It has a condo association (HOA) with dues, 24-hour security, controlled access, and a 20,000 SF gated park. While it's a single high-rise condo building rather than a traditional gated neighborhood, it meets the HOA/security-access criteria. The more common name is simply \"The Crimson\" — the \"Miami\" suffix is not part of the official name. Completed in 2016, developed by MCKafka, designed by IDEA architects."
+    },
+    {
+      "name": "Parkland Golf & Country Club",
+      "city": "Parkland, Broward County",
+      "county_fips": null,
+      "notes": "The official website (parklandgcc.com) confirms Parkland Golf & Country Club is a gated residential community of ~790 acres with 878 single-family homes and 60 condominiums, a 43,000 sq ft sports club, and a par-72 golf course. An independent real estate guide also lists it among Parkland's gated/controlled-access communities. Parkland is in northern Broward County, which is within the southern Florida target area. The county report \"Broward/Palm Beach\" should be corrected to Broward only."
+    },
+    {
+      "name": "Westlake",
+      "city": "Westlake, FL 33470 (Palm Beach County)",
+      "county_fips": null,
+      "notes": "Westlake is a real master-planned residential community (described as \"Florida's new city\") developed by Minto Communities in Palm Beach County, FL (ZIP 33470). Zillow explicitly lists it as \"Gated.\" It contains multiple neighborhoods (including Cresswind Palm Beach at Westlake), a town center, pool, tennis, trails, and other amenities. The movewithmomentum.com source confirms 88 active home listings in the area. Palm Beach County is within the target southern Florida area."
+    },
+    {
+      "name": "Lotus (Boca Raton) by GL Homes",
+      "city": "Boca Raton, FL (Palm Beach County)",
+      "county_fips": null,
+      "notes": "Strong evidence confirms this is real: a real estate source explicitly describes Lotus in West Boca Raton as \"an exclusive new gated community\" built by GL Homes, completed in 2020, with 805 homesites, resort-style clubhouse amenities (pools, tennis, pickleball, fitness center), and luxury new-construction homes. Zillow independently lists the related GL Homes community Lotus Edge in Boca Raton (33434) as active new construction. It is clearly a residential (not commercial/park) community, explicitly gated, and located in Boca Raton, Palm Beach County — within the southern Florida target area. The candidate name \"Lotus\" is correct; more precise references are \"Lotus Boca Raton\" (with sister communities Lotus Palm and Lotus Edge)."
+    },
+    {
+      "name": "Admiral's Cove",
+      "city": "Jupiter, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Admiral's Cove is a well-documented, prestigious gated residential community in Jupiter, Palm Beach County, Florida (a target county). Multiple sources confirm: (1) It is a real residential community established in 1986 by Ben Frankel of Frankel Enterprises, with ~900 custom residences on 727 acres. (2) It is explicitly guard-gated with 24/7 armed security, dual guard-gates, and a mandatory MPOA (HOA) with ~$1,058/month fees. (3) Jupiter is in Palm Beach County, which is in the target southern Florida area. The more common/official name is \"Admiral's Cove\" (with apostrophe) rather than \"Admirals Cove.\" The community features a mega-yacht marina, 27+ hole golf courses, and is ranked a top Platinum Club of America."
+    },
+    {
+      "name": "Harbor Islands",
+      "city": "Hollywood, Broward County",
+      "county_fips": null,
+      "notes": "Harbor Islands is a well-known, real gated residential community in Hollywood, Broward County, Florida. The evidence confirms it is a 192-acre waterfront community with eight exclusive neighborhoods, explicitly described as \"one of Hollywood's premier gated communities.\" It is accessed via a bridge and features resort-style amenities, marinas, and parks. Hollywood is in Broward County, which is within the target southern Florida area (between Miami and Fort Lauderdale). All details match the reported name, city, and county."
+    },
+    {
+      "name": "Valencia Sound",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Valencia Sound is confirmed as a real gated 55+ active adult community in Boynton Beach, Palm Beach County, FL. Multiple independent sources (55places.com, where55.com, homesoldflorida.com) consistently describe it as a gated community of 412 single-family homes built by GL Homes (2019–present), with HOA dues of $415–$940/mo. It features a 39,000 sq ft clubhouse, resort pools, and a racquet club with 20+ sport courts. Boynton Beach is in Palm Beach County, which is within the target southern Florida area. All reported details (name, city, county, gated status) are confirmed."
+    },
+    {
+      "name": "Delray Dunes Golf & Country Club",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Strong evidence confirms this is a real, gated residential golf community. The privatecommunities.com listing explicitly describes it as a \"private member-owned Florida golf community\" and a \"gated golf community\" with a \"24-hour manned gatehouse.\" Located at 12005 Dunes Road, Boynton Beach, FL 33436 (Palm Beach County, which is in the target area of southern Florida). It features 337 acres with 323 home sites (200 single-family homes, 123 villas), a Pete Dye-designed championship golf course (his first in Florida, 1969), a 26,000 sq ft clubhouse, and resort-style amenities. The community's own website confirms a secure, thoughtfully maintained environment with robust security. All details are consistent across sources."
+    },
+    {
+      "name": "Delray Trails",
+      "city": "Delray Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Multiple independent sources confirm Delray Trails as a real gated 55+ active adult community in Delray Beach (Palm Beach County, FL). It's a Lennar development at 5832 Shining Sea Ct., Delray Beach, FL 33484, with a gatehouse, clubhouse, pool, and tennis/pickleball courts. Zillow lists it as a gated masterplan community now selling villas from ~$470k. Palm Beach County is in the target area (southern Florida)."
+    },
+    {
+      "name": "Snapper Creek Lakes",
+      "city": "Coral Gables, Miami-Dade County",
+      "county_fips": null,
+      "notes": "Multiple independent sources (Zillow, Haute Residence with Miami Association of REALTORS/MLS data, Globalty Investment) confirm Snapper Creek Lakes is a real, ultra-private gated estate community in south Coral Gables (FL 33156), between Old Cutler Road and Red Road. It features a guard-gated entrance with 24-hour patrol, private roads, ~124 lots, two lakes, a private marina, and direct Biscayne Bay access. Zillow and MLS records show active listings and 2025-2026 sold history at real addresses (e.g., 5250 Snapper Creek Rd, 9979 Fairchild Way, 10225 Coral Creek Rd). Coral Gables is in Miami-Dade County, which is in southern Florida. The reported name, city, and county all check out."
+    },
+    {
+      "name": "Eastern Shores",
+      "city": "North Miami Beach",
+      "county_fips": null,
+      "notes": "Eastern Shores is a real waterfront residential community in North Miami Beach, Miami-Dade County. Zillow has a dedicated page with home listings for this community, and a real estate brokerage (Luis Garcia Group/Coldwell Banker) describes it explicitly as \"a prestigious and exclusive neighborhood\" and \"a gated community\" along the Intracoastal Waterway. North Miami Beach is in Miami-Dade County, which is in southern Florida. Multiple sources confirm it is a residential community with homes for sale featuring waterfront properties and private docks."
+    },
+    {
+      "name": "Old Cutler Bay",
+      "city": "Coral Gables, Miami-Dade County",
+      "county_fips": null,
+      "notes": "Old Cutler Bay is a well-documented, real guard-gated community in Coral Gables, Miami-Dade County, Florida. Multiple independent sources confirm it: a luxury real estate site describes it as a \"secluded, gated community\" of 150 acres on Biscayne Bay; a dedicated community website (oldcutlerbayfl.com) details it as a \"premier, guard-gated waterfront enclave\" with 136 single-family estate sites, 24/7 guard security, and a voluntary HOA, established in the early 1960s; and Zillow shows active real estate listings with Coral Gables, FL 33156 addresses. All three criteria are met: it is a real residential community, it is gated (with 24/7 guard and an HOA), and it is in Miami-Dade County in southern Florida."
+    },
+    {
+      "name": "Keystone Point",
+      "city": "North Miami, Miami-Dade County, FL",
+      "county_fips": null,
+      "notes": "Keystone Point is a well-documented gated residential community in North Miami, Miami-Dade County. Multiple sources confirm it is a gated boating community with ~880 units, an active HOA (Keystone Point Homeowners Association), waterfront canals, a marina, and is situated near Biscayne Boulevard and Biscayne Bay. Zillow lists 46 active properties in the area. The community is in the 33181 ZIP code (North Miami), firmly within Miami-Dade County and the southern Florida target area."
+    },
+    {
+      "name": "Bay Point",
+      "city": "Miami (Upper East Side), Miami-Dade County",
+      "county_fips": null,
+      "notes": "Multiple independent sources (miamicondoinvestments.com, luisgarciagroup.com, Zillow) confirm Bay Point is a real, upscale gated community in the Upper East Side neighborhood of Miami, Miami-Dade County. It is described as having a 24/7 guarded entrance, privately owned streets maintained by homeowners with ~$2,200 annual dues (functioning as an HOA), approximately 250 homes, and waterfront access to Biscayne Bay. It is east of Biscayne Boulevard between NE 41st and NE 50th Streets. All three criteria are clearly met: real residential community, gated with HOA, and located in southern Florida."
+    },
+    {
+      "name": "Tahiti Beach",
+      "city": "Coral Gables",
+      "county_fips": null,
+      "notes": "Multiple independent real estate sources (Miami Luxury Homes, JMC Real Estate, and a dedicated site) consistently describe Tahiti Beach as a real, ultra-exclusive enclave of ~26-29 estate homes on a private-beach peninsula/island in Biscayne Bay, within the master-gated Cocoplum community in Coral Gables, Miami-Dade County. It is double/guard-gated with 24-hour security and shares Cocoplum amenities (marina, clubhouse, tennis). The name has historical roots: George Merrick (Coral Gables founder) built a South Seas-themed island resort called Tahiti Beach there in the 1920s. It is a real gated residential community in the target area, though it is a sub-enclave within the larger, more commonly known community of Cocoplum."
+    },
+    {
+      "name": "San Souci Estates",
+      "city": "North Miami, Miami-Dade County",
+      "county_fips": null,
+      "notes": "San Souci Estates is a well-known gated community in North Miami (Miami-Dade County), located just south of the Keystone Islands along Biscayne Bay. Multiple independent sources (real estate broker sites, Zillow listings) confirm it as a gated, single-family residential community with luxury waterfront homes. All criteria met: real residential community, explicitly gated, and in southern Florida."
+    },
+    {
+      "name": "Hammock Oaks and Lakes",
+      "city": "Coral Gables, Miami-Dade County, FL",
+      "county_fips": null,
+      "notes": "Hammock Oaks is a well-documented, ultra-exclusive guard-gated enclave in South Coral Gables (Miami-Dade County). Established in 1970 by Babe Elias Builders, it comprises ~107 single-family custom estates on ~85 acres, bordered by Fairchild Tropical Botanic Garden to the north and Matheson Hammock Park to the south. Multiple independent sources (dedicated community site and Miami luxury real estate listings) confirm it is gated with 24/7 security and governed by a private HOA plus a municipal taxing district. Many homes have deep-water canal access to Biscayne Bay. The more commonly listed name is \"Hammock Oaks and Lakes,\" but \"Hammock Oaks\" is widely used as well. Location in Coral Gables, Miami-Dade County is confirmed, which is within the southern Florida target area."
+    },
+    {
+      "name": "Gables by the Sea",
+      "city": "Coral Gables / Pinecrest, Miami-Dade County",
+      "county_fips": null,
+      "notes": "Gables by the Sea is a well-established, real waterfront residential community in Coral Gables (with some properties in Pinecrest), Miami-Dade County. Multiple sources confirm it is a guard-gated community (~520 single-family homes) on Biscayne Bay, established in 1957. It is explicitly described as gated with 24/7 security. The location is confirmed in Miami-Dade County, which is within the target southern Florida area. The name \"Gables by the Sea\" is the standard and commonly used name for this community."
+    },
+    {
+      "name": "The Sanctuary at Pinecrest",
+      "city": "Pinecrest, Miami-Dade County",
+      "county_fips": null,
+      "notes": "Three independent real estate sources confirm The Sanctuary at Pinecrest is a real, small (~12 homes) gated estate community in the Village of Pinecrest, Miami-Dade County. All sources describe guard-gated entry with monitored access, large lots (30,000–40,000 sq ft), and 4-6 bedroom estate homes priced in the $4M-$8M+ range. It's located near SW 59th Court and SW 111th Street beside Pinecrest Gardens. This is a residential community (not a business or park), confirmed gated, and located in southern Florida."
+    },
+    {
+      "name": "Doral Estates",
+      "city": "Doral, Miami-Dade County, FL",
+      "county_fips": null,
+      "notes": "Zillow has an active neighborhood page for 'Doral Estates Doral FL' with home listings, parking/garage filters, and price-per-sq-ft data, confirming it is a real residential community in Doral (Miami-Dade County), which is in southern Florida. Doral Estates is a known neighborhood of single-family homes in Doral with gated entrance and HOA. Name and location appear correct."
+    },
+    {
+      "name": "Miami Lakes",
+      "city": "Miami Lakes",
+      "county_fips": null,
+      "notes": "Miami Lakes is a real master-planned community (census-designated place) in Miami-Dade County, southwest Miami-Dade. The Zillow gated-community search returns 31 listings within Miami Lakes, confirming gated residential subdivisions (e.g., along Balgowan Rd, NW 139th Ter) exist there, and the planned development operates under a village/community association structure. It is a legitimate residential community in southern Florida. Note: it is better described as a master-planned community containing multiple gated subdivisions rather than a single gated enclave."
+    },
+    {
+      "name": "Four Seasons Residences Naples (Naples Beach Club Residences)",
+      "city": "Naples, Collier County",
+      "county_fips": null,
+      "notes": "The evidence strongly indicates this is a real luxury residential development — the Four Seasons Residences at Naples Beach Club in Naples, FL (Collier County). It is a private, gated residential community adjacent to a Four Seasons Resort (opened Nov 2025), with ~58 beach-side and ~95 golf-side residences sold directly by the developer. Collier County is within the target southern Florida area. However, the reported location of \"Miami (Downtown), Miami-Dade County\" is incorrect — the community is in Naples, Collier County. The Fort Lauderdale Zillow link appears to be a generic listing search, not a distinct Miami community by that name."
+    },
+    {
+      "name": "Brickell Key",
+      "city": "Miami (Brickell), Miami-Dade County",
+      "county_fips": null,
+      "notes": "Brickell Key is a real small residential island in Biscayne Bay, connected to the Brickell neighborhood of Miami by the Brickell Key Bridge. It is a recognized gated island community with controlled bridge access and 24/7 security, home to luxury waterfront condos like Asia, Carbonell, Tequesta Point Towers, and the Residences at Mandarin Oriental. Located in Miami-Dade County, squarely within the southern Florida target area."
+    },
+    {
+      "name": "SilverLakes",
+      "city": "Pembroke Pines, Broward County",
+      "county_fips": null,
+      "notes": "SilverLakes is a real, well-established residential community in Southwest Broward County (near Pembroke Pines), founded in 1990, comprising 39 sub-communities. It has a confirmed HOA (SilverLakes Community Association). Note: there is a separate Silverlakes community in Fort Myers (Lee County) that is explicitly described as gated, but the candidate matches the Broward County one. The official name is 'SilverLakes' (one word)."
+    },
+    {
+      "name": "Parkland Bay",
+      "city": "Parkland, Broward County, FL",
+      "county_fips": null,
+      "notes": "Parkland Bay is confirmed as a real, gated 550-home luxury community built by WCI (Lennar) in northwest Parkland, Broward County, FL (zip 33076). It features a 24-hour manned gate, a 16,000 sq ft clubhouse, and is built around a 178-acre lake. Built 2015-2023, it has active real estate listings in the $925K-$1.2M range. Parkland is in Broward County, which is within the target southern Florida area."
+    },
+    {
+      "name": "The Isles at Weston",
+      "city": "Weston, Broward County, FL",
+      "county_fips": null,
+      "notes": "Multiple sources confirm The Isles at Weston is a real 24-hour guard gated luxury community of ~654-655 single-family Mediterranean-style homes built 2004-2006 by Centex Homes, located near Post Road and Bonaventure Blvd in Weston, Broward County (33332). It has an active HOA with its own association website and clubhouse amenities. All criteria met: real residential community, gated, and in southern Florida."
+    },
+    {
+      "name": "Country Isles",
+      "city": "Weston",
+      "county_fips": null,
+      "notes": "Country Isles is a well-known gated residential community in Weston, Broward County, Florida. The web search confirms a dedicated real estate listing page for \"Country Isles, Weston, FL Gated Community Homes for Sale\" on southflhomes.com. Weston is in Broward County, which is part of southern Florida. The community is a large master-planned gated neighborhood. All criteria are met."
+    },
+    {
+      "name": "Merrick Square",
+      "city": "Pembroke Pines",
+      "county_fips": null,
+      "notes": "Merrick Square is a real D.R. Horton gated townhome community (~211 units) in Pembroke Pines, FL 33027 (Broward County, target area). Evidence confirms a gated entrance, clubhouse, pool, and fitness center; a registered HOA (Merrick Square Homeowners' Association, Inc., FL entity N21000014314) managed by RealManage; and a CDD established by city ordinance in 2021 with an active CDD site (merricksquarecdd.net). The suspended Conduu HOA site is not disqualifying. Name and location match the reported candidate."
+    },
+    {
+      "name": "Parkland Royale",
+      "city": "Parkland, Broward County, FL",
+      "county_fips": null,
+      "notes": "Parkland Royale is confirmed as a real, actively selling gated community by Lennar at 9520 Majestic Way, Parkland, FL 33076. Both Lennar's official page and an independent guide explicitly describe it as a gated community. It features 8 single-family floor plans across Crown and Monarch collections, with amenities including a pool, fitness center, and clubhouse. Parkland is in Broward County, which is in the target southern Florida area."
+    },
+    {
+      "name": "Heron Bay",
+      "city": "Parkland (spans Parkland and Coral Springs), Florida — Broward County",
+      "county_fips": null,
+      "notes": "Heron Bay is a real, well-documented master-planned gated community in Broward County. Evidence confirms it is a large planned community (3,000+ homes) with a golf & country club, 24/7 manned guard gates, and an HOA. It is located in Parkland and spans into Coral Springs, so the reported city of Coral Springs is partially accurate but Parkland is the more common primary designation. Broward County is in the target southern Florida area."
+    },
+    {
+      "name": "Marina Landings",
+      "city": "Fort Lauderdale, Broward County, FL",
+      "county_fips": null,
+      "notes": "Marina Landings is confirmed as a real gated residential community in Fort Lauderdale, Broward County, Florida. The developer's website (marina-landings.com) explicitly describes it as \"Fort Lauderdale's premier new-construction gated neighborhood\" with \"residents already enjoying life behind the gates.\" It features multiple single-family home models (The Ketch, The Mainsail, The Catamaran, The Schooner), a sales center at 1200 E Las Olas Blvd, Fort Lauderdale, FL, and is described as an established, nearly sold-out luxury community. All criteria are met: real residential community, confirmed gated, and located in Broward County (target area)."
+    },
+    {
+      "name": "Hillsboro Shores",
+      "city": "Pompano Beach",
+      "county_fips": null,
+      "notes": "Hillsboro Shores is a real residential subdivision in Pompano Beach, Broward County. Zillow has a dedicated listing page for \"Hillsboro Shores Pompano Beach FL\" with active home listings, and Paradise Realty lists properties in \"Hillsboro Shores Sec\" with a specific address (1780 Bay Drive). Paradise Realty explicitly markets it as having \"Gated Community Features\" with controlled access, and the URL specifically includes \"Homes-with-Gated-Community-Features.\" Pompano Beach is in Broward County, which is in the target southern Florida area."
+    },
+    {
+      "name": "Walnut Creek",
+      "city": "Pembroke Pines",
+      "county_fips": null,
+      "notes": "Zillow has a dedicated page for \"Gated Community Of Walnut Creek\" in Pembroke Pines, FL with 42 active listings. The properties are located in Pembroke Pines zip codes (33024, 33026, 33028, 33029), confirming it is in Broward County, southern Florida. Zillow specifically tags it as a gated community. However, the listed addresses span a fairly wide geographic area (NW 79th Way through NW 184th Ter), suggesting it may be a larger residential area rather than a tightly bounded single gated enclave. Still, it is confirmed as a real residential community with gated status in the target area."
+    },
+    {
+      "name": "Weston Hills Country Club",
+      "city": "Weston, Broward County",
+      "county_fips": null,
+      "notes": "Multiple independent real estate sources confirm Weston Hills Country Club is a real residential community in Weston, Broward County (target area). It is described as the City of Weston's largest guard-gated community, with two 24-hour guard-gated entrances and an HOA that funds the guardhouse security (~$130/month). It comprises 29 subdivisions of single-family homes built 1992-2009, adjacent to a Robert Trent Jones-designed dual 18-hole golf course and a 50,000 sq ft clubhouse. Zillow shows 269+ listings under this community name, confirming it is an active, well-known residential neighborhood."
+    },
+    {
+      "name": "Sea Ranch Lakes",
+      "city": "Sea Ranch Lakes, Broward County, Florida",
+      "county_fips": null,
+      "notes": "Sea Ranch Lakes is a real, incorporated village in Broward County, Florida (part of the Miami metropolitan area, hence southern Florida). Wikipedia confirms it was incorporated October 6, 1959, has a population of 540 (2020 census), and that \"the majority of the village is a gated community,\" with the remainder a shopping plaza and a private beach club for residents. The community's own site corroborates it as a private gated enclave of ~200-220 custom single-family residences with private police, a private beach club, and two freshwater lakes. All three criteria are strongly met: real residential community, gated, and in the target southern Florida area. No name correction needed."
+    },
+    {
+      "name": "Jupiter Farms",
+      "city": "Jupiter, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Jupiter Farms is confirmed as a real gated residential community in Jupiter, Palm Beach County, Florida. The Horizon Palm Realty source explicitly describes it as \"a gated residential community\" with an HOA (fees averaging $40/month). The NV Realty Group source confirms it as a self-sufficient residential area with equestrian estates, homes, a neighborhood elementary school (Jupiter Farms Elementary), and local businesses. Jupiter is in Palm Beach County, which is in the target southern Florida area. The name and location are correct."
+    },
+    {
+      "name": "Arden",
+      "city": "Loxahatchee",
+      "county_fips": null,
+      "notes": "Arden is a confirmed residential community in Loxahatchee, Palm Beach County, FL (33470). Multiple sources verify it as a gated community — ideal-living.com explicitly mentions \"Just outside Arden's gates.\" It features single-family homes and villas from $500K-$1M+ built by GL Homes, Lennar, and Ryan Homes. It is an \"Agrihood\" with a 5-acre community farm, 20+ miles of trails, lakeside clubhouse, pool complex, and other resort amenities (all suggesting a strong HOA). Located in Palm Beach County, which is squarely in southern Florida. All reported details (name, city, county) are accurate."
+    },
+    {
+      "name": "Huntington Pointe",
+      "city": "Delray Beach",
+      "county_fips": null,
+      "notes": "Huntington Pointe is confirmed as a real 55+ gated residential community in Delray Beach, FL (Palm Beach County). It is a 24-hour manned gated community with ~1,096 villas and condominium units, built 1990-2006. It has HOA dues ($292-$788/mo), a large clubhouse, multiple pools, and extensive amenities. The address 6251 N Oriole, Delray Beach, FL 33484 places it squarely in Palm Beach County, which is in the target southern Florida area."
+    },
+    {
+      "name": "BallenIsles",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": null
+    },
+    {
+      "name": "Artistry Wellington",
+      "city": "Wellington, FL",
+      "county_fips": null,
+      "notes": "The evidence confirms Artistry Wellington is a real, announced gated community by Kolter Homes in Wellington, Florida (Palm Beach County), scheduled to open in summer 2027 with 579 single-family homes, 15 lakes, and private resort-style amenities. However, two corrections are needed: (1) the full name is \"Artistry Wellington,\" not just \"Artistry,\" and (2) the location is Wellington, FL, NOT Palm Beach Gardens — these are different cities in Palm Beach County. The community is still in development and has not yet opened, but it is a legitimate announced gated residential community in the target area."
+    },
+    {
+      "name": "Rainberry Bay",
+      "city": "Delray Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "The evidence describes Rainberry Bay as an established 55+ residential community in Delray Beach (Palm Beach County), built 1977–1989 with 901 homes, HOA dues of $223–$632/mo, and confirmed gated status with manned gate security. Delray Beach is in Palm Beach County, which is in the southern Florida target area. All criteria are met."
+    },
+    {
+      "name": "Lakes of Delray",
+      "city": "Delray Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Lakes of Delray is a real 55+ gated condominium community in Delray Beach, Palm Beach County, Florida. Multiple sources confirm it: a third-party listing (55places.com) describes it as a gated 55+ community with ~1,400 Lennar-built condo units (1982-1994), HOA dues, and extensive clubhouse amenities; the official community website (lakesofdelray.org) confirms its location off Atlantic Avenue between Military Trail and Jog Road and states it has a 24-hour manned gate for guest access. It is a residential community, gated, and in the southern Florida target area."
+    },
+    {
+      "name": "Palm Beach Country Estates",
+      "city": "Palm Beach Gardens, Palm Beach County, FL 33418",
+      "county_fips": null,
+      "notes": "Multiple independent real estate sources (Horizon Palm Realty, Zillow, NV Realty Group) confirm Palm Beach Country Estates is a real residential community in Palm Beach Gardens, Palm Beach County (southern Florida, 33418). It is explicitly described as a gated residential community with an HOA; it's an equestrian-oriented neighborhood of large lots (many 1+ acre), original homes from the 1970s, with active sales (median ~$1.17M). Some individual listings mention \"no HOA\" (likely individual estate parcels or vacant ag-res land), but the community itself is confirmed gated with an HOA."
+    },
+    {
+      "name": "Boca Woods Country Club",
+      "city": "Boca Raton, Palm Beach County",
+      "county_fips": null,
+      "notes": "Confirmed by three independent sources: (1) bocaratonrealestate.com describes it as an \"exclusive, gated country club community\" in West Boca Raton with ~650 single-family homes; (2) the official website bocawoodscc.com confirms it is a private club community with \"24/7 gated access\" and ~645 homes; (3) horizonpalmrealty.com explicitly calls it a \"gated residential community in Boca Raton, Palm Beach County, Florida\" with an HOA averaging $633/month. All sources agree on the name, location, gated status, and residential nature. Palm Beach County is in the target southern Florida area."
+    },
+    {
+      "name": "Huntington Lakes",
+      "city": "Naples, Collier County",
+      "county_fips": null,
+      "notes": "Huntington Lakes is a real gated condo community, but the reported location is wrong. Multiple sources confirm it is in North Naples, Collier County (zip 34119), NOT Delray Beach, Palm Beach County. The Briten Team source explicitly states it is a \"gated condo community\" with \"secured gated entry.\" Collier County is within the southern Florida target area, so the community qualifies despite the incorrect city/county reporting."
+    },
+    {
+      "name": "Valencia Reserve",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Valencia Reserve is a real 55+ active adult community in Boynton Beach, FL (Palm Beach County), built by GL Homes between 2009-2014 with 1,043 single-family homes. Multiple independent sources (Where55, 55places) explicitly confirm it is gated (\"Gated: Yes\") and has HOA dues ($281-$753/mo). Boynton Beach is in Palm Beach County, which is in the target southern Florida area."
+    },
+    {
+      "name": "Cascade Lakes",
+      "city": "Boynton Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "The official HOA website (cascadelakeshoa.net) confirms Cascade Lakes is a gated community of 600 single-family homes in Boynton Beach, an active adult (55+) community with a recreation complex, pool, tennis courts, and eight lakes. A third-party listing (55places.com) independently corroborates the gated status, 600-home count, HOA dues, and Boynton Beach location on Military Trail. All three criteria are satisfied: real residential community, confirmed gated, and located in Palm Beach County (within the southern Florida target area). No corrections needed."
+    },
+    {
+      "name": "Valencia Falls",
+      "city": "Delray Beach",
+      "county_fips": null,
+      "notes": "Valencia Falls is confirmed as a real 55+ gated residential community in West Delray Beach, Florida (Palm Beach County). Multiple independent sources (its official site valenciafalls.org, 55places.com, and where55.com) consistently describe it as a gated community of ~724 single-family homes built by GL Homes (2001–2004) with a 24/7 manned guardhouse/gatehouse, monthly HOA dues (~$339–$817), clubhouse, resort-style pool, tennis/pickleball courts, and lakes. Delray Beach is in Palm Beach County, which is in the target southern Florida area. Name and location are both correct."
+    },
+    {
+      "name": "The Cascades",
+      "city": "Boynton Beach, FL",
+      "county_fips": null,
+      "notes": "Both sources confirm The Cascades is a real, guard-gated 55+ residential community in Boynton Beach, Palm Beach County, Florida. It has 928 single-family homes built 1997-2000, HOA dues ($256-$607/mo), a manned guard gate, and extensive amenities including a clubhouse, pools, tennis/pickleball courts, and an on-site cafe. Palm Beach County is within the target southern Florida area."
+    },
+    {
+      "name": "Golden Lakes Village",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "Golden Lakes Village is a well-documented 55+ gated community in West Palm Beach, Palm Beach County, Florida. The source confirms it is explicitly gated, has HOA dues ($177-$647/mo), consists of ~1,088 attached villas and condos built 1974-1992, and is located in West Palm Beach. All three criteria are met: real residential community, gated, and in Palm Beach County (southern Florida)."
+    },
+    {
+      "name": "Ponte Vecchio",
+      "city": "Boynton Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Multiple independent sources confirm Ponte Vecchio is a real, gated 55+ active adult community in Boynton Beach, Florida. The official HOA website (pontevecchiohoa.com), 55places.com, and a local real estate site all corroborate the details: 647 Mediterranean-style single-family homes built 2000-2003 by Ansca Homes and Levitt & Sons, featuring a guarded gate, roving security patrol, HOA dues ($233-$677/mo), and extensive amenities including a clubhouse, pool, fitness center, and sports complex. Boynton Beach is in Palm Beach County, which is in southern Florida. All evidence is consistent and reliable."
+    },
+    {
+      "name": "RiverWalk",
+      "city": "West Palm Beach, Palm Beach County",
+      "county_fips": null,
+      "notes": "The website (riverwalkofwpb.com) clearly describes RiverWalk as a residential community in West Palm Beach with resort-style amenities including pools, fitness center, tennis/pickleball courts, and a Town Center. The site explicitly states it is a \"gated community.\" West Palm Beach is in Palm Beach County, Florida, which is in the target southern Florida area. All three criteria (real residential community, gated, southern Florida) are confirmed."
+    },
+    {
+      "name": "Parkside",
+      "city": "Boca Raton, Palm Beach County",
+      "county_fips": null,
+      "notes": "Parkside is a confirmed real luxury gated community, but it is located in Boca Raton, not Royal Palm Beach. The evidence from bocaratonrealestate.com explicitly describes it as \"a luxury gated community situated in the heart of Boca Raton between 18th street and Camino Real, on the east side of Military Trail,\" with a 24-hour manned guard gate and a second gated entrance. It was developed in three phases from 1984 to 1995, contains about 200 single-family custom homes, and features a clubhouse and tennis courts. Palm Beach County is within the target southern Florida area. The reported city of Royal Palm Beach is incorrect — the community is in Boca Raton."
+    },
+    {
+      "name": "L'Ambiance at Avenir",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Both sources confirm L'Ambiance at Avenir is a real gated residential community in Palm Beach Gardens, Palm Beach County, Florida. It is a new construction development by Kolter Homes (built 2024-2026) with an HOA, two clubhouses, resort-style pools, tennis/pickleball courts, and other amenities. Explicitly described as \"gated\" in both sources. Palm Beach County is within the target southern Florida area."
+    },
+    {
+      "name": "Artistry Palm Beach",
+      "city": "Palm Beach Gardens, FL 33418 (Palm Beach County)",
+      "county_fips": null,
+      "notes": "Strong, consistent evidence from two independent sources. Zillow lists \"Artistry Palm Beach by Kolter Homes\" in Palm Beach Gardens, FL 33418 as a gated community with new construction from ~$2.1M (3-5 bedrooms, 4-6 baths). The dedicated site (artistrypalmbeachgardenshomes.com) confirms it is a gated, master-planned residential community with 24-hour gated access and a professionally managed HOA, offering estate homes, townhomes, and villas with resort-style amenities (lagoon pool, fitness center, tennis/pickleball, clubhouse, trails). It is a real residential community, clearly gated, with an HOA, located in Palm Beach County — within the target area. Name and location as reported are accurate."
+    },
+    {
+      "name": "Solana Bay at Avenir",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Solana Bay at Avenir is confirmed as a real gated residential community. Multiple sources (Akel Homes developer website and Zillow) describe it as a gated enclave of 118 single-family homes by Akel Homes, located within the larger Avenir master-planned community in Palm Beach Gardens, FL 33412. Zillow explicitly lists it as \"Gated.\" Palm Beach Gardens is in Palm Beach County, which is in the target southern Florida area. The name, city, and county all check out."
+    },
+    {
+      "name": "The Estates at Lotis Wellington",
+      "city": "Wellington",
+      "county_fips": null,
+      "notes": "The Estates at Lotis Wellington is a real, actively selling Lennar new-construction community in Wellington, FL (Palm Beach County — target area). Multiple independent sources confirm it: Lennar's official listing page (1381 S State Rd 7, Wellington, FL 33414, $599,900–$1,199,567), a local real estate agent page describing it as a \"gated single-family home and townhome community\" with HOA information, and a Zillow community listing that explicitly labels it \"Gated.\" It is a mixed-use master-planned community (~100 single-family homes and 72 townhomes) with clubhouse, pool, 18-acre lake, trails, and retail. The candidate name matches the official Lennar name; no correction needed."
+    },
+    {
+      "name": "Whitmore Estates",
+      "city": "Lake Worth (West Lake Worth), Palm Beach County",
+      "county_fips": null,
+      "notes": "Three independent sources confirm Whitmore Estates as a real gated master-planned estate community in West Lake Worth, Palm Beach County, FL. The official developer site (Whitmore Living) describes it as a gated luxury estate community with 166 Lennar-built homes (2025–2027), from ~$1.6M, with clubhouse, pool, and resort amenities. A real estate team page corroborates the gated status, HOA, school zoning, and location (west of SR-7/441, south of Hypoluxo Road, near Wellington). Paradise Realty lists live MLS-style listings for the gated subdivision. Palm Beach County is in the target area. The community is new/under construction but verified as real."
+    },
+    {
+      "name": "Cresswind Palm Beach at Westlake",
+      "city": "Westlake, FL (Palm Beach County)",
+      "county_fips": null,
+      "notes": "Confirmed by Zillow and NewHomeSource as an actively selling, gated 55+ new-construction community by Kolter Homes at 5287 Siesta Key Lane, Westlake, FL 33470. Westlake is in Palm Beach County, which is in the target southern Florida area. The community is explicitly listed as gated, has HOA fees of $335/month, and offers amenities including pool, clubhouse, tennis, and lake access. Both sources independently confirm the name and details."
+    },
+    {
+      "name": "The Estates at Morikami Park Road",
+      "city": "Delray Beach",
+      "county_fips": null,
+      "notes": "Multiple sources (the community's own website, a lifestyle page, and a Florida real estate listing site) confirm The Estates at Morikami Park Road is a real, boutique gated community of just 15 luxury new construction homes in Delray Beach, Palm Beach County, FL. It is explicitly described as \"an intimate gated community\" with \"gated entrances.\" Delray Beach is in Palm Beach County, which is in southern Florida. The community is located adjacent to the well-known Morikami Park and Museum of Japanese Gardens. Priced from $2.7M, it is a legitimate residential development."
+    },
+    {
+      "name": "Frenchman's Creek",
+      "city": "Palm Beach Gardens, Palm Beach County",
+      "county_fips": null,
+      "notes": "Frenchman's Creek is a well-documented, real gated residential community in Palm Beach Gardens, Palm Beach County, Florida. Multiple independent sources confirm it is a private, gated community with ~600-606 single-family homes on approximately 700-720 acres, featuring two championship golf courses, a private oceanfront beach club in Juno Beach, and Intracoastal Waterway access. It is explicitly described as \"gated\" in multiple sources. Palm Beach County is one of the target counties for southern Florida."
+    },
+    {
+      "name": "Mirasol (The Country Club at Mirasol)",
+      "city": "Palm Beach Gardens, Palm Beach County",
+      "county_fips": null,
+      "notes": "Mirasol is a well-established 2,300-acre master-planned residential community in Palm Beach Gardens (Palm Beach County) with 23 neighborhoods and real property listings at specific addresses (Tranquilla Dr, Porto Vecchio Way, etc.). The official site explicitly describes it as a gated community with 24/7 security, perimeter thermal imaging cameras, and a gate access mobile app. Home ownership also requires mandatory membership in The Country Club at Mirasol (member-owned private club that hosted the PGA Tour's Honda Classic 2003-2006), functioning as a strong HOA/club requirement. Palm Beach County is on the target county list, so it qualifies as southern Florida per the definition (though it is in the northern part of that county)."
+    },
+    {
+      "name": "PGA National",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "PGA National is a well-known, 2,340-acre master-planned gated community in Palm Beach Gardens, Palm Beach County, Florida. The evidence confirms it has ~5,000 homes across 40 neighborhoods, with 24-hour security and multiple gated enclaves (Grand Cay, Preston, The Island). It's a prestigious golf course community home to the PGA National Golf Club and the Honda Classic. Location in Palm Beach County qualifies it as southern Florida."
+    },
+    {
+      "name": "Old Palm Golf Club",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Wikipedia confirms Old Palm Golf Club is a 650-acre private residential golf community with an equity club in Palm Beach Gardens, Palm Beach County (founded 2004, Raymond Floyd-designed course, ~300 estate homes). Multiple sources explicitly describe it as a gated luxury community with clubhouse, pool, and fitness amenities. Home prices range $3.2M–$25M, and notable residents include Raymond Floyd, Louis Oosthuizen, Charl Schwartzel, and Lee Westwood. All criteria met: real residential community, gated, in Palm Beach County (southern Florida)."
+    },
+    {
+      "name": "The Bear's Club",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": null
+    },
+    {
+      "name": "The Club at Ibis",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "The community is real and confirmed gated: The Club at Ibis is described as \"one of the finest gated communities in South Florida\" with gated entry and 24-hour security (Ibis Public Safety), 33 diverse neighborhoods adjacent to Grassy Waters Nature Preserve, and mandatory equity club membership for property owners. The official address is 8225 Ibis Boulevard, West Palm Beach, FL 33412 — so the correct name is \"The Club at Ibis\" (not \"Ibis Golf & Country Club\") and the correct city is West Palm Beach, not Palm Beach Gardens, though the reported county (Palm Beach) is correct. Palm Beach County is within the target area."
+    },
+    {
+      "name": "Eastpointe Country Club",
+      "city": "Palm Beach Gardens, Palm Beach County",
+      "county_fips": null,
+      "notes": "Eastpointe Country Club is a well-documented real residential community in Palm Beach Gardens, Palm Beach County, Florida. Multiple sources confirm it is a gated private golf community with ~875 residences (single-family homes, villas, condos), entered through staffed/24-hour manned gates on Donald Ross Road and Hood Road, established in the 1970s-1980s with two championship golf courses. It is squarely in the target area (Palm Beach County)."
+    },
+    {
+      "name": "Evergrene",
+      "city": "Palm Beach Gardens, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Evergrene is a well-documented, real gated community in Palm Beach Gardens, Palm Beach County, Florida. Multiple sources (including its own official website evergrene.com) confirm it is a luxury gated community with 963 residences (townhomes and single-family homes) built by WCI Communities between 2002 and 2006. It is explicitly described as \"gated\" and is served by three HOAs. It features a 20,000 sq ft clubhouse, a 150,000-gallon pool, and is situated on 365 acres around Lake Dorothy. Palm Beach County is within the target southern Florida area. The name \"Evergrene\" is consistent across all sources and is correct."
+    },
+    {
+      "name": "Frenchman's Reserve",
+      "city": "Palm Beach Gardens, FL",
+      "county_fips": null,
+      "notes": "Frenchman's Reserve is confirmed as a real, gated luxury golf community in Palm Beach Gardens, Palm Beach County, Florida. Multiple sources describe it as an exclusive Toll Brothers gated community of approximately 448 Mediterranean-style homes on 400+ acres, built around an 18-hole Arnold Palmer Signature golf course. It requires equity membership (golf or social/sport) for all residents, confirming HOA/gated status. The community features a 45,000 sq ft clubhouse, pool, clay tennis courts, spa, and fitness center. Homes range from 3,400 sq ft to 7,500+ sq ft, priced from ~$760K to $7M+. Palm Beach County is within the target southern Florida area."
+    },
+    {
+      "name": "Tiffany Trace",
+      "city": "Boca Raton, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Strong evidence confirms Tiffany Trace is a real gated single-family HOA community in Boca Raton (ZIP 33487), Palm Beach County. It has a registered HOA (Tiffany Trace Homeowners Association, Inc.) with a Sunbiz filing, managed by Allied Property Management Group in West Palm Beach. Described as ~64 homes built in the late 1980s-early 1990s within the Boca Country Club area, featuring a gated entrance with 24/7 security and monthly HOA fees of ~$433-$507. Boca Raton is in Palm Beach County, which is in the southern Florida target area. No corrections needed."
+    },
+    {
+      "name": "Banyan Cay Resort Community Plat",
+      "city": "West Palm Beach, Palm Beach County",
+      "county_fips": null,
+      "notes": "Multiple MLS-based real estate sites (Paradise Realty Florida, Choice Realty Florida) reference \"Banyan Cay Resort Community Plat\" as a recorded subdivision in West Palm Beach, Palm Beach County. A specific address (2948 Gin Berry Way) is associated with it, and the \"Plat\" designation indicates an officially recorded land subdivision. The Paradise Realty listing specifically labels it as having \"Gated Community Features\" and describes amenities (clubhouse, pool, fitness center). The marketing copy is heavily embellished and likely AI-generated, but the underlying subdivision reference across multiple independent listing platforms supports its existence. West Palm Beach / Palm Beach County is within the target southern Florida area."
+    },
+    {
+      "name": "Pelican Preserve",
+      "city": "Fort Myers",
+      "county_fips": null,
+      "notes": "Pelican Preserve is a well-documented, real 55+ master-planned community in Fort Myers, Collier County, Florida. Multiple sources confirm it is gated (Greater Ft Myers explicitly calls it \"a gated master-planned community\"; 55places lists \"Gated: Yes\"). It has 2,498 homes built by WCI Homes (2001-2020), includes HOA dues ($65-$679/mo), a 27-hole golf course, town center, and extensive amenities. Located at Colonial Boulevard at Treeline Avenue, Fort Myers, FL 33913 — squarely in Collier County, which is in the target area of southern Florida."
+    },
+    {
+      "name": "Century Village East",
+      "city": "Deerfield Beach",
+      "county_fips": null,
+      "notes": "Century Village East is a well-documented 55+ residential community in Deerfield Beach, Broward County, Florida. Multiple sources confirm it: (1) It is a real residential community with ~8,508 condo units built between 1970-1995 by developer Levy. (2) It is explicitly gated with round-the-clock manned security and has HOA dues of $213-$560/month. (3) It is located in Deerfield Beach, Broward County, which is in southern Florida. All details are consistent across the community's official website (centuryvillageeast.com) and third-party listings (55places.com)."
+    },
+    {
+      "name": "Century Village at Pembroke Pines",
+      "city": "Pembroke Pines, Broward County, FL",
+      "county_fips": null,
+      "notes": "Century Village at Pembroke Pines is a well-known, large 55+ gated condominium community of approximately 7,700 units built 1970–1995 by Levy, with an official website (centuryvillage.com/pembroke-pines) confirming gated entry with 24/7 manned security, plus Zillow listings and third-party community profiles confirming HOA dues and amenities. It is located in Pembroke Pines, Broward County, which is in the southern Florida target area. Name, city, and county are all correct."
+    },
+    {
+      "name": "Ave Maria",
+      "city": "Ave Maria / Naples, Collier County",
+      "county_fips": null,
+      "notes": "Ave Maria is a well-known master-planned residential community in Collier County, Florida, near Naples. The evidence from the official website (avemaria.com) confirms it is a real community with new homes from multiple builders, resort-style amenities, a golf course, water park, Town Center with shopping and dining, and trails/parks. It is located in Collier County, which is in southern Florida. As a master-planned community, it is governed by an HOA and has gated entry points. All criteria are met."
+    },
+    {
+      "name": "Del Webb Naples",
+      "city": "Ave Maria / Naples, Collier County, FL",
+      "county_fips": null,
+      "notes": "Del Webb Naples is a well-documented, real 55+ active adult community in Ave Maria, Collier County, Florida. Multiple independent sources (55places.com, naplescondoboutique.com, realtyofnaples.com) confirm it is a gated, age-restricted community with HOA dues, an amenities center (Oasis Club), and approximately 2,123 homes. Recent property sales data further confirms it is an active residential community. Collier County is one of the target southern Florida counties. All reported details (name, city, county) are accurate."
+    },
+    {
+      "name": "Regency at Avenir",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Regency at Avenir is a real 55+ active adult community developed by Toll Brothers in Palm Beach Gardens, FL 33412, part of the larger Avenir master-planned community. Multiple sources (Toll Brothers, Meyer Lucas real estate, 55places.com) confirm it is gated, has an HOA with dues of $395-$425/month, and contains 469 single-family homes built from 2019 onward. Palm Beach Gardens is in Palm Beach County, which is within the target southern Florida area. The name, location, and gated status are all consistent across sources."
+    },
+    {
+      "name": "Valencia Del Mar",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Valencia Del Mar is confirmed as a real 55+ gated community in Boynton Beach, Palm Beach County, FL. Three independent sources corroborate its existence: (1) 55places.com lists it as a gated 55+ community with ~518 single-family homes, (2) GL Homes (the builder) maintains an official page with model home tours and sales information, and (3) GR Management (the HOA management company) lists it as a \"gated community with a manned gatehouse\" with full HOA governance including quarterly assessments, architectural control, and board meetings. Boynton Beach is in Palm Beach County, which is within the target southern Florida area. Construction began in 2025, so it is a new-construction community currently being built, but it is a legitimate, real community with active sales and HOA operations."
+    },
+    {
+      "name": "Aberdeen",
+      "city": "Boynton Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Aberdeen is a real, well-established master-planned residential area in West Boynton Beach, Palm Beach County (southern Florida). Multiple listing sources confirm it comprises numerous neighborhoods (Bristol Lakes, Muirhead Estates, Bermuda Isle, The Landings, Shores, Coves, etc.) with an Aberdeen Golf & Country Club. It has an HOA (reported dues ~$194–$651/mo). Gating is confirmed for portions of the community — listings reference a \"Gated, All-age Aberdeen Community\" and \"Guard-gated Section Home\" in Aberdeen Country Club — though one 55+ source lists some sections as non-gated, so it is at least partially gated."
+    },
+    {
+      "name": "Babcock Ranch",
+      "city": "Unincorporated Collier County (Fort Myers area)",
+      "county_fips": null,
+      "notes": "Babcock Ranch is a well-known, large master-planned community in unincorporated Collier County, Florida (Fort Myers area), marketed as \"America's first solar-powered town.\" The official website confirms multiple gated neighborhoods within it (Creekside Run, Palmetto Landing, Regency are all explicitly described as gated). It is located in Collier County, which is a target county. Note: The reported city of \"Punta Gorda\" is incorrect — Punta Gorda is in Charlotte County, north of Collier. Babcock Ranch is in the Fort Myers area of unincorporated Collier County."
+    },
+    {
+      "name": "Pelican Bay",
+      "city": "Naples, FL",
+      "county_fips": null,
+      "notes": "Pelican Bay is a well-known, real gated residential community in Naples, Florida (Collier County, zip 34108). Zillow explicitly categorizes it as a \"Gated Community\" with 40 property listings. It features resort-style amenities and is a recognized neighborhood in the Naples area. Collier County is in southern Florida, within the target area."
+    },
+    {
+      "name": "Tiburón (Tiburon Golf Club / Tiburon Estates)",
+      "city": "Naples (North Naples), Collier County, FL",
+      "county_fips": null,
+      "notes": "Multiple independent sources confirm Tiburón is a real, gated luxury golf community in North Naples, Collier County. It features two Greg Norman-designed 18-hole courses (Gold and Black), a 27,000 sq ft clubhouse, and is adjacent to The Ritz-Carlton Naples, Tiburón. It comprises ~10 sub-communities (e.g., Marsala at Tiburon, Escada Estates) with an overarching Tiburon Estates HOA plus individual neighborhood HOAs, and is described as gated/double-gated. Naples is in Collier County, which is in the target southern Florida area. The commonly used spelling is \"Tiburón.\""
+    },
+    {
+      "name": "Grey Oaks",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Grey Oaks Country Club is a well-documented, 1,600-acre master-planned gated residential community in Naples, Collier County, Florida. Multiple sources confirm it is fully gated with a master HOA, mandatory country club membership, three championship golf courses, and a range of homes including estates, single-family homes, and villas. Naples is in Collier County, which is within the target southern Florida area."
+    },
+    {
+      "name": "Bay Colony",
+      "city": "Juno Beach, Palm Beach County",
+      "county_fips": null,
+      "notes": "Bay Colony is a real guard-gated waterfront condominium community (~120 units, 32 deeded slips) in Juno Beach, Palm Beach County — adjacent to the Seminole Golf Club. The coordinates (26°52'N, 80°05'W) confirm the Juno Beach location, not Naples. It is gated (24/7 guard, HOA) and in the target area via Palm Beach County, but the reported city/county (Naples, Collier) is incorrect."
+    },
+    {
+      "name": "Wyndemere",
+      "city": "Naples, Collier County, Florida",
+      "county_fips": null,
+      "notes": "The Wyndemere HOA website (wyndemerehomeowners.com) explicitly describes it as \"a private, well-established gated community in the heart of Naples, Florida\" with 634 residences on 450 acres across sixteen neighborhoods. Real estate listings confirm it as a platinum golf community in Naples with homes and condominiums, and Wyndemere Country Club (founded 1981) anchors the community. All criteria met: real residential community, explicitly gated, in Collier County (southern Florida). No corrections needed."
+    },
+    {
+      "name": "Lely Resort",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Lely Resort is a well-known, large residential community in Naples, Collier County, Florida. The evidence confirms it is a real residential community with approximately 4,506 homes across 40+ neighborhoods, multiple home types, and multiple builders. It is explicitly listed as gated, has HOA dues ($24-$683/mo), and features amenities including three golf courses, a Players Club & Spa, and a lagoon-style pool. Naples is in Collier County, which is in southern Florida (target area). All criteria are met with high confidence."
+    },
+    {
+      "name": "Cove Towers",
+      "city": "Naples, Collier County",
+      "county_fips": null,
+      "notes": "Cove Towers is a real residential condominium community in North Naples, Collier County, Florida. Multiple real estate sources confirm active condo listings in its buildings (Aruba at Cove Towers, Nevis at Cove Towers, Caribe at Cove Towers) with actual addresses on Cove Tower Drive. It is described as a \"private North Naples enclave\" and one source explicitly lists Caribe At Cove Towers as a \"gated community,\" and as a condo community it has an HOA. Naples in Collier County is in the target southern Florida area. The name is accurate as reported."
+    },
+    {
+      "name": "Martin Downs",
+      "city": "Palm City, Martin County, FL",
+      "county_fips": null,
+      "notes": "Martin Downs is a well-established, guard-gated (controlled-access) master-planned community in Palm City, Martin County, Florida. Multiple sources confirm it has 24/7 manned gates, its own security staff, and is governed by the Martin Downs Property Owners Association. It contains numerous neighborhoods (The Meadows at Martin Downs, Eagle Lake, Heronwood, Monarch Country Club, etc.) with hundreds of homes. Martin County is explicitly included in the target area list. The name, city, and county are all correct."
+    },
+    {
+      "name": "Abacoa",
+      "city": "Jupiter, Palm Beach County, Florida",
+      "county_fips": null,
+      "notes": "Abacoa is a well-documented, large master-planned community in Jupiter, Palm Beach County, Florida. It comprises 20 distinct residential neighborhoods with single-family homes, townhouses, condos, and apartments, along with amenities like a golf club, restaurants, and shopping. Master-planned communities of this scale in Florida are typically gated and HOA-governed. Jupiter is squarely in Palm Beach County (southern Florida target area). The name and location are correct."
+    },
+    {
+      "name": "The Club at Ibis",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "Ibis (commonly known as \"The Club at Ibis\") is a well-established, luxury gated residential community in West Palm Beach, Palm Beach County, Florida. Evidence confirms it has 33 diverse neighborhoods, a gated entry with 24-hour security, three Nicklaus-family-designed golf courses, a 120,000 sq ft clubhouse, and mandatory equity club membership for property owners. The address is 8225 Ibis Boulevard, West Palm Beach, FL 33412, placing it squarely in the target area. This is clearly a real, gated residential community in southern Florida."
+    },
+    {
+      "name": "Palm Beach Polo Golf & Country Club",
+      "city": "Wellington, Palm Beach County",
+      "county_fips": null,
+      "notes": "Palm Beach Polo Golf & Country Club is a well-documented, guard-gated master-planned residential community in Wellington, Florida (Palm Beach County). It comprises approximately 45 villages of condos, villas, townhomes, and estate homes built from 1979 to present, with staffed guard-gated entries, two golf courses, and an HOA. All criteria are met: real residential community, confirmed gated, and located in Palm Beach County within the target southern Florida area. The candidate name is a shortened form; the full common name is \"Palm Beach Polo Golf & Country Club.\""
+    },
+    {
+      "name": "Bonita Bay Club",
+      "city": "Bonita Springs, Collier County, FL",
+      "county_fips": null,
+      "notes": "Confirmed as a real, gated, master-planned residential community in Bonita Springs, Collier County (southern Florida). Multiple sources explicitly describe it as a 2,400-acre gated community with 24-hour manned security, offering single-family homes, condos, and villas. It features five golf courses (3 Arthur Hills in the West, 2 Tom Fazio in the East), a private marina with Gulf access, a beach club, and extensive trails. Zillow shows active residential listings. The \"West\" designation refers specifically to the western club/courses portion; the residential community is more commonly known simply as \"Bonita Bay\" or \"Bonita Bay Club.\" It also has an HOA and requires a social club membership for residents."
+    },
+    {
+      "name": "Mediterra",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Mediterra is a well-known luxury master-planned community in North Naples, Collier County, Florida. Multiple sources confirm it is guard-gated (1,697 acres, 12 neighborhoods, two Tom Fazio golf courses, private beach club). It has a formal Community Association (HOA). Naples is in Collier County, which is in southern Florida. The name \"Mediterra\" is correct and consistently used across all sources."
+    },
+    {
+      "name": "Grey Oaks Country Club",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Grey Oaks Country Club is a well-established, fully gated luxury golf community in Naples, Collier County, Florida. Multiple sources confirm: (1) the official website (greyoakscc.com) describes it as a private club community in Naples; (2) the Naples Golf Guy site lists residential real estate (single-family homes $2.85M–$13M, condos $1.8M–$4.2M) with 54 holes of golf across three courses (Pine, Palm, Estuary); (3) Briten Team explicitly confirms it is \"a prestigious, fully gated country club community centrally located in Naples\" with a required social membership, consistent with gated access. Naples is in Collier County, which is in the target southern Florida area. The official/more common name is \"Grey Oaks Country Club\" rather than \"Grey Oaks Golf & Country Club.\""
+    },
+    {
+      "name": "Quail West",
+      "city": "Naples, Collier County, FL",
+      "county_fips": null,
+      "notes": "Quail West is a well-established, real luxury gated estate community in North Naples, Collier County, Florida. Multiple independent sources confirm: (1) it is explicitly described as a \"gated luxury golf community\" with \"24/7 guard-gated entry\"; (2) it consists of approximately 700 detached single-family/estate homes spanning ~1,180 acres, with active real estate listings on Zillow; (3) it is located in Naples, FL 34119, which is in Collier County, a target southern Florida county. The community features two Arthur Hills–designed 18-hole golf courses and a private member-owned Quail West Golf & Country Club with a 100,000+ sq ft clubhouse. All criteria are clearly met."
+    },
+    {
+      "name": "Talis Park Golf Club",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Talis Park Golf Club is a well-documented, affluent gated residential community in Naples, Collier County, Florida. Multiple sources confirm: (1) It is a real residential community with single-family homes ($2M–$13M), condos ($730K–$2.5M), and coach homes surrounding a Greg Norman/Pete Dye-designed 18-hole golf course. (2) It is explicitly described as a \"gated community\" by luxury-communities.com. (3) Naples is in Collier County, which is in southern Florida. The name \"Talis Park Golf Club\" matches the official website (talisparkgolfclub.com) and is also commonly referred to as simply \"Talis Park.\" All criteria are met with high confidence."
+    },
+    {
+      "name": "Addison Reserve",
+      "city": "Delray Beach, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "Addison Reserve is a well-documented, real luxury gated community in Delray Beach, Palm Beach County, FL. It is a 653-acre, 717-home country club community (built 1999-early 2000s by Kenco/Taylor Woodrow) with three 9-hole golf courses, a 70,000 sq ft clubhouse, and mandatory club membership (Full Golf ~$325k initiation or Partial/Sports ~$200k initiation). The mandatory membership model, private golf courses, and Zillow listings describing it as a \"private golf-course community\" all confirm it is gated. Located at ZIP 33446 in Delray Beach, which is in Palm Beach County — squarely in southern Florida. The more common name is simply \"Addison Reserve\" though \"Addison Reserve Country Club\" is also used."
+    },
+    {
+      "name": "Loblolly",
+      "city": "Hobe Sound, Martin County, FL",
+      "county_fips": null,
+      "notes": "Both sources confirm Loblolly is a real gated, private club community in Hobe Sound, Martin County, Florida, bordered by the Intracoastal Waterway and Jupiter Island National Wildlife Refuge. It features an 18-hole Pete Dye golf course, club membership, and the Pines and Bay neighborhoods. Martin County is within the target southern Florida area. All details are consistent across sources."
+    },
+    {
+      "name": "Fisher Island",
+      "city": "Miami Beach",
+      "county_fips": null,
+      "notes": "Fisher Island is a well-known, extremely exclusive private island residential community in Miami Beach, Miami-Dade County. Multiple sources confirm it is a real residential neighborhood with single-family homes, a 9-hole golf course, tennis courts, marinas, and other amenities. It is explicitly described as gated with round-the-clock security and controlled access; in fact, it goes beyond a traditional gate — the island is only accessible by private ferry, yacht, seaplane, or helicopter. The \"Fisher Island Club\" name typically refers to the resort/amenities club on the island; the residential community is more commonly known simply as \"Fisher Island.\" The reported city of \"Miami\" should be corrected to \"Miami Beach,\" which is the actual city where the island is located, though it is still in Miami-Dade County (a target county)."
+    },
+    {
+      "name": "Ballen Isles",
+      "city": "Palm Beach Gardens, Palm Beach County",
+      "county_fips": null,
+      "notes": "Ballen Isles is a well-known, real residential country club community in Palm Beach Gardens, FL (33418). It is explicitly described as gated, with 1,575 families across 33 neighborhoods on 1,300 acres. It has a dedicated website (ballenisles.org), a phone number, and holds a five-star rating from Platinum Clubs of America. Palm Beach Gardens is in Palm Beach County, which is within the target area of southern Florida. The source's city listing of \"Palm Beach\" is slightly off — the actual city is Palm Beach Gardens, as confirmed by the ZIP code 33418 and the address."
+    },
+    {
+      "name": "The Loxahatchee Club",
+      "city": "Jupiter, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "The Loxahatchee Club is a well-known gated golf community in Jupiter, Florida (Palm Beach County, Gold Coast area). Evidence confirms: multiple active residential listings (114 Sota Drive, 115 Echo Lane, 116 Terrapin Trail, 195 Birkdale Lane) with real street addresses; sources consistently describe it as a gated community with 24/7 gate security; and it features a Jack Nicklaus-designed 18-hole golf course, consistent with the known club that was conceived as a members' golf club first and residential community second. It is a residential community (not a business/park), has HOA/gated access, and Jupiter is within the target southern Florida area (Palm Beach County)."
+    },
+    {
+      "name": "Boca West",
+      "city": "Boca Raton, Palm Beach County",
+      "county_fips": null,
+      "notes": "Boca West is a well-documented, large residential community in Boca Raton, Palm Beach County (southern Florida). Evidence confirms 6,000+ residents across 55 residential villages (townhomes, patio homes, villas, apartments, single-family homes) on 1,400 acres, with a Master Association (HOA established 1991) managing facilities. It is consistently described as a private/gated country club community. The residential community is more commonly known as simply \"Boca West\"; \"Boca West Country Club\" refers to the associated private club within it."
+    },
+    {
+      "name": "The Club at Ibis",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": null
+    },
+    {
+      "name": "The Polo Club of Boca Raton",
+      "city": "Boca Raton, Palm Beach County, FL",
+      "county_fips": null,
+      "notes": "The Polo Club of Boca Raton is a well-documented, prestigious private country club community in Boca Raton, Palm Beach County, Florida. Multiple independent sources (real estate listings, luxury community sites, and the official poloclub.org website) confirm it is a fully gated, secured community spanning ~1,100 acres with over 1,700 residences across 24 distinct communities. It features two championship golf courses, tennis/pickleball facilities, a spa, a 145,000 sq ft clubhouse, and 24/7 gated security with concierge services. It is clearly a real residential community, gated, and located in southern Florida (Palm Beach County)."
+    },
+    {
+      "name": "Mirasol",
+      "city": "Palm Beach Gardens, Palm Beach County",
+      "county_fips": null,
+      "notes": "Mirasol is a well-established, large-scale private residential community in Palm Beach Gardens, Palm Beach County, Florida. The evidence confirms: (1) It is a real residential community with 23 neighborhoods and 2,300 acres; (2) It is explicitly described as a \"gated community\" with 24/7 security, gate access app, and perimeter cameras; (3) It is located in Palm Beach County, which is in the target southern Florida area. The name \"Country Club at Mirasol\" refers specifically to the country club/amenity center within the community; the residential community itself is more commonly known simply as \"Mirasol.\" Membership in the Country Club at Mirasol is mandatory with home ownership, further confirming it as a gated, amenity-driven community."
+    },
+    {
+      "name": "Jupiter Hills",
+      "city": "Jupiter, Florida (Palm Beach County, just north of Tequesta)",
+      "county_fips": null,
+      "notes": "Jupiter Hills (Jupiter Hills Country Club) is a well-documented private, gated country club community with ~212 residences on ~366 acres, featuring two championship 18-hole Fazio-designed golf courses (Hills and Village courses) and a large clubhouse. It is located just north of the Village of Tequesta near Jonathan Dickinson State Park. Note: one source claims it is \"technically in Martin County,\" but since Tequesta is in Palm Beach County and Jupiter Hills is described as just north of Tequesta, the community is in Palm Beach County (standard listing: Jupiter, FL 33478). Either way, both counties fall within the southern Florida target area. Confirmed as a real gated residential community."
+    },
+    {
+      "name": "Sailfish Point",
+      "city": "Stuart",
+      "county_fips": null,
+      "notes": "Sailfish Point is a well-established, real private residential community on a 532-acre peninsula in Stuart, Martin County, Florida. Multiple sources confirm it is gated (explicitly described as a \"gated community\" with round-the-clock patrols, private ADT security, and references to \"beyond the gates\"). It features a Jack Nicklaus Signature golf course, private marina, and clubhouse. Martin County is explicitly included in the target area definition, and the community is located in Stuart, Martin County. The name \"Sailfish Point\" is correct and is its well-known, official name."
+    },
+    {
+      "name": "Quail Ridge Country Club",
+      "city": "Palm Beach County (near Wellington/Palm Beach Gardens)",
+      "county_fips": null,
+      "notes": "Quail Ridge Country Club is a well-established, real private gated residential community in Palm Beach County, Florida. Multiple sources confirm: (1) It is a residential community with 946 homes across 24 villages (townhomes, villas, condos, single-family homes). (2) It is explicitly described as a \"private, gated community\" with two gatehouses, 24-hour roving security, sensor perimeter fences, and alarm monitoring. (3) It is located in Palm Beach County, Florida, which is within the target area (southern Florida). The community spans 600+ acres, features 2 championship golf courses, and has mandatory club membership. It has been in existence for 50+ years. The name \"Quail Ridge Country Club\" is correct and matches the official website (quailridgecc.com)."
+    },
+    {
+      "name": "The Club at Quail Ridge",
+      "city": "Wellington, Palm Beach County, Florida",
+      "county_fips": null,
+      "notes": "The Club at Quail Ridge is well-documented as a real, private gated residential community in Palm Beach County, Florida. Multiple sources (privatecommunities.com and quailridgecc.com) confirm it is a 946-residence, member-owned golf community with two gatehouses, 24-hour roving security, sensored perimeter fences, and mandatory club membership. It is governed by a Property Owners Association (P.O.A.). Palm Beach County is within the target southern Florida area. The community is located in Wellington, FL (the reported city was \"unknown\" but the county was correctly identified as Palm Beach)."
+    },
+    {
+      "name": "Harbour Ridge Yacht & Country Club",
+      "city": "Palm City, Martin County, FL",
+      "county_fips": null,
+      "notes": "Harbour Ridge Yacht & Country Club is a well-documented, real 885-acre private gated residential community in Palm City, Martin County, FL (address: 3091 SW Martin Downs Blvd). Multiple sources confirm it is a private, member-owned gated community with 24-hour roving security, ~695 residents across 28 villages, two golf courses, a private marina on the St. Lucie River, tennis/pickleball facilities, and a clubhouse. Martin County is explicitly within the target southern Florida area. All reported details (name, city, county) are accurate."
+    },
+    {
+      "name": "Broken Sound Club",
+      "city": "Boca Raton, Broward County",
+      "county_fips": null,
+      "notes": "Broken Sound Club is a real, well-known gated golf and country club community with 28 residential villages and over 1,600 homes. Multiple sources confirm it is gated with 24-hour security and requires membership to purchase. However, the reported location of Jupiter, Palm Beach County is incorrect — the community is actually located in Boca Raton, Broward County (as stated on the official About page: \"Nestled in the heart of Boca Raton,\" and the realtor listing: \"north Boca Raton\"). Broward County is within the target southern Florida area."
+    },
+    {
+      "name": "The Polo Club of Boca Raton",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": null
+    },
+    {
+      "name": "Bocaire Country Club",
+      "city": "Boca Raton, Palm Beach County",
+      "county_fips": null,
+      "notes": "The source explicitly describes Bocaire Country Club as \"a gated private country club community\" in Boca Raton, Palm Beach County. It consists of 237 custom-built estate homes on 300 acres, with an 18-hole golf course, tennis courts, pool, fitness center, and clubhouse. This is clearly a real, gated residential community in southern Florida (Palm Beach County is a target county)."
+    },
+    {
+      "name": "St. Andrews Country Club",
+      "city": "Boca Raton, Palm Beach County",
+      "county_fips": null,
+      "notes": "St. Andrews Country Club is a well-documented, real residential community in west Boca Raton, Palm Beach County, FL 33496. It features ~730 single-family custom estate homes on 700+ acres, established in 1982. Multiple sources confirm it is gated (with a \"manned and gated entryway\") and operates under a single HOA/association. The reported city of \"Tequesta\" is incorrect — the community is located in Boca Raton, though it is still in Palm Beach County, which is in the target southern Florida area."
+    },
+    {
+      "name": "The Residences at Shell Bay",
+      "city": "Hallandale Beach",
+      "county_fips": null,
+      "notes": "The Residences at Shell Bay is a real, pre-construction 20-story, 108-residence condominium tower in Hallandale Beach, Miami-Dade County, part of the Auberge Resorts Collection. Multiple sources (Bogatov Realty, South Florida Realtor) confirm it is described as \"a private, gated club community spanning 150 acres\" with a Greg Norman-designed golf course, private marina, and resort-style amenities. It has condo association maintenance fees, confirming HOA governance. Hallandale Beach is in Miami-Dade County, squarely in southern Florida. The name is accurate as listed."
+    },
+    {
+      "name": "Panther National",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Multiple independent sources (official website panthernationalfl.com, panthernational.com, and NV Realty Group) confirm Panther National is a real, guard-gated private golf community of 218 custom estates in western Palm Beach Gardens, Palm Beach County, Florida. It opened in 2023, features 24/7 guard security, and operates under a stabilized HOA. The reported city of \"West Palm Beach\" is incorrect — the community is in Palm Beach Gardens, a different city in Palm Beach County. Palm Beach County is in the target southern Florida area."
+    },
+    {
+      "name": "Vision Community",
+      "city": null,
+      "county_fips": null,
+      "notes": ""
+    },
+    {
+      "name": "The Sanctuary",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "The Sanctuary in Boca Raton is positioned as a guard-gated, waterfront-focused community associated with privacy and boating access, with an orientation toward the Intracoastal."
+    },
+    {
+      "name": "The Bears Club",
+      "city": "Jupiter",
+      "county_fips": null,
+      "notes": "The Bears Club in Jupiter is an ultra-exclusive gated golf community created around a Jack Nicklaus branded private club experience."
+    },
+    {
+      "name": "Pelican Landing",
+      "city": "Bonita Springs",
+      "county_fips": null,
+      "notes": "Listed under 'Top Gated Communities': 'A sprawling, gated master-planned community in Bonita Springs spanning over 2,365 acres, offering lush preserves, golf, tennis, kayaking, a private island beach, and resort-style amenities.'"
+    },
+    {
+      "name": "BallenIsles Country Club",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Buyers at this established Palm Beach County country club community gain exclusive access to three historic golf courses originally developed as the home of the PGA, plus a 22-court tennis center and a sports complex. Single-family homes priced from $500,000; Condos and Villas from $400,000."
+    },
+    {
+      "name": "The Crimson Miami",
+      "city": "Miami (Edgewater)",
+      "county_fips": null,
+      "notes": "With just 90 residences, this 18 story tower delivers a more intimate residential experience... Residents enjoy a gated park, resort style pool deck, fitness center, yoga studio, and private theater."
+    },
+    {
+      "name": "The Tides",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "The Tides in Fort Lauderdale delivers true beachfront, resort style living... Residents enjoy multiple pools, fitness centers, and 24 hour security, creating a turnkey lifestyle centered around comfort and ease."
+    },
+    {
+      "name": "Savanna at Weston",
+      "city": "Weston",
+      "county_fips": null,
+      "notes": "'Weston's largest gated enclave'; $128/month fee covering staffed gates, mini water park, and sports fields"
+    },
+    {
+      "name": "Olympia",
+      "city": "Wellington",
+      "county_fips": null,
+      "notes": "In equestrian Wellington; 'Four guarded gates open to palm alleys, man-made lakes, and 1,800 homes' with $350 monthly fee and Villa Olympia clubhouse"
+    },
+    {
+      "name": "Lotus",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "West of Boca Raton's older club communities; modern club community with resort clubhouse, $615/month dues, no golf fee"
+    },
+    {
+      "name": "Admirals Cove",
+      "city": "Jupiter",
+      "county_fips": null,
+      "notes": "130-slip marina with 45 holes of golf; 'two staffed gates, roving patrols, and a marine unit'; $1,000/month dues plus $225,000 club initiation"
+    },
+    {
+      "name": "Doral Isles",
+      "city": "Doral",
+      "county_fips": null,
+      "notes": "'Step through any of three guarded gates'; $350 monthly fee covers lagoon pool, café, tennis and sports fields in heart of Miami-Dade"
+    },
+    {
+      "name": "Bella Terra",
+      "city": "Estero",
+      "county_fips": null,
+      "notes": "Bella Terra is a gated Florida community in Estero offering 2,350 homes surrounded by lakes and preserves."
+    },
+    {
+      "name": "The Moorings",
+      "city": "Coconut Grove",
+      "county_fips": null,
+      "notes": "\"The Moorings was established in the early 1900s, making it one of the oldest gated communities in Miami\""
+    },
+    {
+      "name": "Hammock Oaks",
+      "city": "Coral Gables",
+      "county_fips": null,
+      "notes": "Listed in a guide of 25 top gated communities in Miami-Dade; described as having \"a strong sense of security and privacy\""
+    },
+    {
+      "name": "none visible",
+      "city": "none visible",
+      "county_fips": null,
+      "notes": "the page rendered empty (likely a failed load, a blank page, or a capture that excluded the content area)"
+    },
+    {
+      "name": "Hammock Lakes",
+      "city": "Pinecrest",
+      "county_fips": null,
+      "notes": "While not a single gated community, Pinecrest has several guard-gated enclaves including Hammock Lakes and Banyan Lakes."
+    },
+    {
+      "name": "Banyan Lakes",
+      "city": "Pinecrest",
+      "county_fips": null,
+      "notes": "While not a single gated community, Pinecrest has several guard-gated enclaves including Hammock Lakes and Banyan Lakes."
+    },
+    {
+      "name": "Four Seasons Residences",
+      "city": "Miami (Downtown)",
+      "county_fips": null,
+      "notes": "Buildings like the Four Seasons Residences, Brickell Key condos, and Fisher Island offer 24/7 security, controlled lobby access, and private amenities — described as 'vertical gated communities.'"
+    },
+    {
+      "name": "Silver Lakes",
+      "city": "Pembroke Pines",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $660,000, 79 days on market"
+    },
+    {
+      "name": "Pembroke Falls",
+      "city": "Pembroke Pines",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $800,000, 61 days on market"
+    },
+    {
+      "name": "Towngate",
+      "city": "Pembroke Pines",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $685,000, 72 days on market"
+    },
+    {
+      "name": "Victoria Park",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $1.48M, 111 days on market"
+    },
+    {
+      "name": "Coral Ridge Country Club",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $1.83M, 146 days on market"
+    },
+    {
+      "name": "Rio Vista",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $2.59M, 120 days on market"
+    },
+    {
+      "name": "Grand Palms",
+      "city": "Pembroke Pines",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $765,000, 59 days on market"
+    },
+    {
+      "name": "Maplewood",
+      "city": "Coral Springs",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $768,000, 88 days on market"
+    },
+    {
+      "name": "Coral Ridge",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $2.99M, 149 days on market. May be same as or distinct from Coral Ridge Country Club."
+    },
+    {
+      "name": "Sunset Trails",
+      "city": "Coral Springs",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $608,000, 136 days on market"
+    },
+    {
+      "name": "The Lakes",
+      "city": "Weston",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $402,000, 97 days on market"
+    },
+    {
+      "name": "Wyndham Lakes",
+      "city": "Coral Springs",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $705,000, 80 days on market"
+    },
+    {
+      "name": "Colee Hammock",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $1.60M, 81 days on market"
+    },
+    {
+      "name": "Imagination Farms",
+      "city": "Davie",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $1.63M, 111 days on market"
+    },
+    {
+      "name": "Forest Ridge",
+      "city": "Davie",
+      "county_fips": null,
+      "notes": "Listed in table of 'Broward County gated communities' with median price $775,000"
+    },
+    {
+      "name": "Kings Point",
+      "city": "Delray Beach",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Kings Point · agent | Delray Beach | $85,000 | – | 142 d' — well-known gated Intracoastal island, though the $85K median suggests condos/small lots"
+    },
+    {
+      "name": "Venetian Isles",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Venetian Isles · agent | Boynton Beach | $502,000 | – | –'"
+    },
+    {
+      "name": "Quail Ridge",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Quail Ridge · agent | Boynton Beach | $560,000 | – | 92 d'"
+    },
+    {
+      "name": "Artistry",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Artistry · agent | Palm Beach Gardens | $1.79M | – | 119 d'"
+    },
+    {
+      "name": "Whisper Walk",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Whisper Walk · agent | Boca Raton | $259,000 | – | 104 d'"
+    },
+    {
+      "name": "Coral Lakes",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Coral Lakes · agent | Boynton Beach | $304,000 | – | 141 d'"
+    },
+    {
+      "name": "Flamingo Park",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "Listed in the gated communities table: 'Flamingo Park · agent | West Palm Beach | $1.62M | – | 80 d'"
+    },
+    {
+      "name": "Ibis Golf & Country Club",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "'Located in northern Palm Beach, Ibis Golf & Country Club is a vibrant community featuring luxurious gated homes and three Nicklaus family-designed golf courses.'"
+    },
+    {
+      "name": "Banyan Cay Resort Community",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "Listed as 'BANYAN CAY RESORT COMMUNITY PLAT' on a gated community page. Address: 2948 Gin Berry Way, West Palm Beach, FL 33401. 'Resort Community' designation suggests gated with amenities."
+    },
+    {
+      "name": "Arden (PUD Pod H South)",
+      "city": "Loxahatchee",
+      "county_fips": null,
+      "notes": "Listed as 'ARDEN PUD POD H SOUTH' (Planned Unit Development) on a gated community page. Address: 19172 Croft Mill Crossing, Loxahatchee, FL 33470."
+    },
+    {
+      "name": "Blue Cypress Single Family Homes",
+      "city": "Wellington",
+      "county_fips": null,
+      "notes": "Multiple listings (2951, 2945, 2942 Blue Cypress Circle) listed as 'BLUE CYPRESS SINGLE FAMILY HOMES OF' on a gated community page. Wellington, FL 33414."
+    },
+    {
+      "name": "Cypress Lakes",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "Listed as 'CYPRESS LAKES 9' (likely subdivision 9 of a larger community) on a gated community page. Address: 5289 Crystal Anne Dr, West Palm Beach, FL 33417."
+    },
+    {
+      "name": "Canyon Isles",
+      "city": "Boynton Beach",
+      "county_fips": null,
+      "notes": "Listed as 'CANYON ISLES 1' (likely subdivision 1 of a larger community) on a gated community page. Address: 11128 Brandywine Lake Way, Boynton Beach, FL 33473."
+    },
+    {
+      "name": "Bonita Bay",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Bonita Bay is another gated communities with 2193 homes"
+    },
+    {
+      "name": "Valencia Vista at Riverland",
+      "city": null,
+      "county_fips": null,
+      "notes": "Valencia Vista at Riverland is a gated communities with 2100 homes"
+    },
+    {
+      "name": "Toll Brothers at Sawgrass Lakes",
+      "city": "Fort Lauderdale",
+      "county_fips": null,
+      "notes": "The most recent communities started in Florida include Toll Brothers at Sawgrass Lakes (Sawgrass Lakes is a Fort Lauderdale/Broward County area; gated status not stated on page)"
+    },
+    {
+      "name": "Del Webb Naples (within Ave Maria)",
+      "city": "Ave Maria / Naples",
+      "county_fips": null,
+      "notes": "Also, within the community is the 55+ Del Webb Naples neighborhood. (Del Webb communities are typically gated 55+ communities; this is a sub-neighborhood within Ave Maria.)"
+    },
+    {
+      "name": "Del Webb Oak Creek",
+      "city": "Fort Myers",
+      "county_fips": null,
+      "notes": "Del Webb community (brand known for gated communities; Del Webb Nocatee on same page is explicitly called 'a 55+ gated community'). 'Del Webb Oak Creek opened in Fort Myers in 2022.'"
+    },
+    {
+      "name": "Del Webb Tradition",
+      "city": "Port St. Lucie",
+      "county_fips": null,
+      "notes": "Listed in the 2026 top active adult communities as \"Del Webb Naples and Tradition (Port St. Lucie)\" with modern designs, resort pools, and wellness programs; HOA/amenity fees of $180–$550/month noted for these communities."
+    },
+    {
+      "name": "Tiburon",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Tiburon - Naples - 5 villages, 21 for sale, $650K-$4M. Gated community on Tiburon Island, Naples."
+    },
+    {
+      "name": "Portofino",
+      "city": "Miami Beach",
+      "county_fips": null,
+      "notes": "Portofino - Miami Beach - 5 villages, 24 for sale, $585K-$25M. Master-planned community with gated sections and HOA."
+    },
+    {
+      "name": "Ibis",
+      "city": "West Palm Beach",
+      "county_fips": null,
+      "notes": "Ibis - West Palm Beach - 29 villages, 18 for sale, $418K-$3.6M. Master-planned community with gated sections and HOA."
+    },
+    {
+      "name": "The Landings at Wellington",
+      "city": "Wellington",
+      "county_fips": null,
+      "notes": "the Landings at Wellington - Wellington - 4 villages, 13 for sale, $665K-$12.99M. Gated luxury community on Lake Worth Lagoon."
+    },
+    {
+      "name": "Palm Beach Polo",
+      "city": "Wellington",
+      "county_fips": null,
+      "notes": "Palm Beach Polo - Wellington - 6 villages, 9 for sale, $1.35M-$6.45M. Gated luxury community in Wellington."
+    },
+    {
+      "name": "Via Verde",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "Via Verde - Boca Raton - 8 villages, 4 for sale, $645K-$1.3M. Gated master-planned community in Boca Raton."
+    },
+    {
+      "name": "Boca Pointe",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "Boca Pointe - Boca Raton - 23 villages, 56 for sale, $219K-$1.2M. Large master-planned community with some gated sections and HOA."
+    },
+    {
+      "name": "Weston",
+      "city": "Weston",
+      "county_fips": null,
+      "notes": "Weston - Weston - 270 villages, 271 for sale, $198K-$11.5M. Largest master plan on list; includes multiple gated subdivisions and HOA/CDD."
+    },
+    {
+      "name": "Bonita Bay Club West",
+      "city": "Bonita Springs",
+      "county_fips": null,
+      "notes": "Spanning 2,400 acres in Bonita Springs, Bonita Bay is a stunning community known for its commitment to preserving nature while providing an exceptional lifestyle. 54 holes of championship golf, private parks, marina."
+    },
+    {
+      "name": "Grey Oaks Golf & Country Club",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "Nestled in the heart of Naples, Grey Oaks is the epitome of luxury golf living. Three championship golf courses, 30,000-square-foot fitness center."
+    },
+    {
+      "name": "Addison Reserve Country Club",
+      "city": "Delray Beach",
+      "county_fips": null,
+      "notes": "Located in Delray Beach, Addison Reserve is an exclusive private community spanning nearly 500 acres along Florida's Atlantic Coast. Robert Trent Jones Jr.-designed 18-hole championship golf course."
+    },
+    {
+      "name": "Fisher Island Club",
+      "city": "Miami",
+      "county_fips": null,
+      "notes": "Located just off the coast of Miami, Fisher Island Club is one of the most exclusive golf communities in the world. Accessible only by ferry or private yacht."
+    },
+    {
+      "name": "Boca West Country Club",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "Recognized as one of the finest golf communities in the nation, Boca West Country Club in Boca Raton offers an unparalleled lifestyle. The club features four 18-hole championship golf courses."
+    },
+    {
+      "name": "Polo Club of Boca Raton",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "Located in Boca Raton, The Polo Club offers an unparalleled lifestyle with two 18-hole championship golf courses designed by Timothy Freeland. This luxurious community also features a state-of-the-art fitness center."
+    },
+    {
+      "name": "Country Club at Mirasol",
+      "city": "Palm Beach Gardens",
+      "county_fips": null,
+      "notes": "Located in Palm Beach Gardens, Mirasol Country Club is a private, gated community that epitomizes elegance and exclusivity. With 23 distinct gated neighborhoods, Mirasol provides a variety of residential options."
+    },
+    {
+      "name": "Jupiter Hills Country Club",
+      "city": "Tequesta",
+      "county_fips": null,
+      "notes": "Set in Tequesta, Jupiter Hills Country Club is one of the most exclusive golf communities in Southeast Florida. The community boasts two 18-hole championship courses designed by Pete Dye."
+    },
+    {
+      "name": "Stuart Country Club Community (960 SE Indian Street)",
+      "city": "Stuart",
+      "county_fips": null,
+      "notes": "An Arthur Hills golf course is the centerpiece of this exclusive South Florida country club and gated golf community, which features a total of 375 luxury homes located in the charming Treasure Coast city of Stuart."
+    },
+    {
+      "name": "Founders Club",
+      "city": "Naples",
+      "county_fips": null,
+      "notes": "The page states: \"Sarasota offers a wide range as well, from country club communities starting in the low $200,000s to custom estates well over $1 million in gated communities like Founders Club.\" Founders Club is explicitly called a gated community. However, it appears in a sentence about Sarasota (Sarasota County, not a target county), though the immediately preceding sentence discusses Naples and Southwest Florida. A known Founders Club exists in Naples, Collier County."
+    },
+    {
+      "name": "Boca Rio Golf Club",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "\"Boutique environments like Bocaire Country Club or capped membership models such as Boca Rio Golf Club appeal to serious golfers who prioritize uncrowded fairways and pace of play.\""
+    },
+    {
+      "name": "Boca Pointe Golf Club",
+      "city": "Boca Raton",
+      "county_fips": null,
+      "notes": "\"In others, such as Boca Pointe Golf Club, flexible membership options provide more optionality.\" Presented among gated golf course communities with private gates."
+    },
+    {
+      "name": "Tesoro Club",
+      "city": "Treasure Coast area",
+      "county_fips": null,
+      "notes": "Private club community with 22,000 sq ft Swim and Racquet club, two 18-hole championship golf courses (Arnold Palmer and Tom Watson designs), Junior Olympic swimming pool, nine tennis courts, 11 pickleball courts. Note: located on Treasure Coast (St. Lucie County), slightly outside the core southern FL county list but included by the article as a South Florida community."
+    },
+    {
+      "name": "Grand Harbor Golf and Beach Club",
+      "city": "Vero Beach",
+      "county_fips": null,
+      "notes": "Private club with two championship golf courses, private beach, sports complex with ten Har-Tru tennis courts. Two named neighborhoods: The Falls (island-inspired designs from $600K-$800K) and The Reserve (golf and waterfront view homes from $1.6M-$2.5M). Note: located in Indian River County, slightly outside the core southern FL county list."
+    }
+  ]
+}

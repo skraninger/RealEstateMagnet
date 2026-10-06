@@ -1,0 +1,23 @@
+{
+  "id": "158de3ee-3582-41a3-9b57-1d046844c6c8",
+  "identity": {
+    "name": "River Shore Country Club",
+    "slug": "river-shore-country-club",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Ultra-luxury gated golf and yachting community along the Intracoastal Waterway in Boca Raton, featuring a private 18-hole championship course and a long stretch of overwater and waterfront estates. One of Palm Beach County's most prestigious address communities."
+  },
+  "fees": [],
+  "amenities": [],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-04T16:19:57.882671Z",
+  "updated_at": "2026-10-04T16:19:57.882743Z"
+}

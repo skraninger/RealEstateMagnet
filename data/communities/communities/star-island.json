@@ -1,201 +1,242 @@
 {
-  "id": "00efffd9-c8e8-4d38-92a8-ba2a9d6884e6",
+  "id": "927c1936-9f24-463e-bc21-39b0092dd8d2",
   "identity": {
     "name": "Star Island",
     "slug": "star-island",
     "county_fips": null,
-    "city": "Miami Beach, FL",
-    "hoa_name": "Palm Hibiscus Star Islands Association, Inc. (PHS Islands Association)",
+    "city": "Miami Beach",
+    "hoa_name": "Palm Hibiscus Star Islands Association, Inc.",
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": "Star Island is a small, exclusive man-made residential island in Biscayne Bay within the City of Miami Beach, completed in 1922 by the Army Corps of Engineers (land initially owned by developer Carl Fisher). It features a fixed supply of approximately 30-35 single-family waterfront estates, is part of the Biscayne Bay Aquatic Preserve, is known for high-profile/celebrity residents, and has been named the most expensive neighborhood in the United States by Bloomberg L.P. Access is via a single guard-gated bridge; it lies south of the Venetian Islands and east of Palm and Hibiscus Islands, with access to Miami Beach and downtown Miami via the MacArthur Causeway."
+    "notes": "Star Island is a small, exclusive man-made residential island in Biscayne Bay, completed in 1922 by the Army Corps of Engineers. Located within the City of Miami Beach, it features approximately 30-35 single-family waterfront estates and a fixed supply of ~35 lots. Per Bloomberg, it is the most expensive neighborhood in the United States. The island is part of the Biscayne Bay Aquatic Preserve and is accessible via the MacArthur Causeway. It lies south of the Venetian Islands and just east of Palm and Hibiscus Islands. Total area is 0.134 sq mi (0.35 km²), ZIP 33139."
   },
   "fees": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:50:27.969610Z",
+      "retrieved_at": "2026-10-06T22:00:26.952005Z",
       "confidence": 0.5,
       "fee_type": "hoa_monthly",
       "amount": null,
       "period": null,
       "currency": "USD",
-      "note": "Specific fee amounts and structures are not publicly detailed in available sources. Traditional monthly or quarterly HOA dues are reportedly not applicable; residents contribute to shared security and maintenance supported by the Palm Hibiscus Star Islands Association (HOA established 04/23/1998, per florida-hoa.net; managed by FPMS, Sarasota FL). Treat fee levels as uncertain/unverified."
+      "note": "Traditional monthly or quarterly HOA dues are not applicable; residents contribute to shared security and maintenance. Specific fee amounts and structures are not publicly detailed in available sources. Association established 04/23/1998; managed by FPMS (5600 Granada Dr, Sarasota, FL 34231, phone 941-960-5000)."
     }
   ],
   "amenities": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:50:27.969617Z",
+      "retrieved_at": "2026-10-06T22:00:26.952012Z",
       "confidence": 0.5,
-      "amenity": "gate_security",
-      "detail": "Guard-gated access via a single bridge with private security; low-density, secure setting with association-supported security and upkeep across Star, Palm, and Hibiscus Islands."
+      "amenity": "guard_gated_access_private_security",
+      "detail": "Access via single bridge with guard-gated entry and private security; association supports security, landscaping, and community upkeep across Star, Palm, and Hibiscus Islands."
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:50:27.969626Z",
+      "retrieved_at": "2026-10-06T22:00:26.952021Z",
       "confidence": 0.5,
-      "amenity": "park",
-      "detail": "Buoy Park located on the island; shared amenities are limited, with focus on private estate features."
+      "amenity": "buoy_park",
+      "detail": "Shared park located on Star Island; the island has limited shared amenities with a focus on private estate features."
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:50:27.969628Z",
+      "retrieved_at": "2026-10-06T22:00:26.952024Z",
       "confidence": 0.5,
       "amenity": "tennis_courts",
-      "detail": "Tennis courts at nearby Palm Island Park (adjacent Palm Island) — not on Star Island itself."
+      "detail": "Located at Palm Island Park (nearby island), offering residents access to tennis facilities."
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:50:27.969632Z",
+      "retrieved_at": "2026-10-06T22:00:26.952026Z",
       "confidence": 0.5,
       "amenity": "basketball_courts",
-      "detail": "Basketball courts at nearby Palm Island Park (adjacent Palm Island) — not on Star Island itself."
+      "detail": "Located at Palm Island Park (nearby island), offering residents access to basketball facilities."
     },
     {
-      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N98000002371",
-      "retrieved_at": "2026-10-06T18:50:27.969635Z",
+      "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
+      "retrieved_at": "2026-10-06T22:00:26.952029Z",
       "confidence": 0.5,
-      "amenity": "landscaping_maintenance",
-      "detail": "Palm Hibiscus Star Islands Association board is responsible for collecting dues and ensuring facilities and common areas are well-managed, maintained, and attractive (association supports security, landscaping, and community upkeep)."
+      "amenity": "biscayne_bay_aquatic_preserve",
+      "detail": "The island is part of the Biscayne Bay Aquatic Preserve, providing a protected natural waterfront setting."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:59:13.154534Z",
+      "retrieved_at": "2026-10-06T22:11:56.938393Z",
       "confidence": 0.5,
-      "amenity": "commercial_amenities",
-      "detail": "No commercial amenities on the island; residents use nearby South Beach and mainland Miami for shopping and services. Guarded gate with restricted public access and on-site security are provided at the MacArthur Causeway entrance. Law enforcement jurisdiction is the Miami Beach Police Department, with relatively few reported incidents compared with the broader city. Climate is tropical monsoon: hot humid summers (88-92°F), warm winters (70-76°F), most rainfall May-October, hurricane season June 1-November 30 peaking August-September; vulnerable to storm surge and seasonal coastal flooding. Property taxes, insurance, and maintenance costs are described as consequential given very high property values and maintenance costs, but no specific fee amounts are stated on the page."
+      "amenity": "guard_gated_entrance",
+      "detail": "Star Island is described as an exclusive, guard-gated island exemplifying luxury living (community-level). No community fee or amenity fees stated on page. MLS data last updated Oct 06, 2026."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057612Z",
+      "retrieved_at": "2026-10-06T22:11:56.938404Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_biscayne_bay_access",
+      "detail": "Waterfront lots with direct Biscayne Bay and Miami skyline sunset views; Atlantic Ocean access via private dock (per featured property at 13 Star Island Dr)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:11:56.938407Z",
+      "confidence": 0.5,
+      "amenity": "private_100_ft_ipe_wood_dock",
+      "detail": "Feature of the listed property (13 Star Island Dr) with Atlantic Ocean access, not confirmed as a community-wide amenity."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:13:05.907876Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_access_to_biscayne_bay",
+      "detail": "Waterfront homes stretch across expansive lots; prime waterfront estates feature unobstructed Biscayne Bay views and extended waterfront frontage with deeper setbacks for privacy."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:13:05.907888Z",
+      "confidence": 0.5,
+      "amenity": "guarded_entrance_with_controlled_access",
+      "detail": "The island is defined by control and privacy, with a guarded entrance that filters who comes in and who doesn't."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:13:05.907892Z",
+      "confidence": 0.5,
+      "amenity": "resort_style_lifestyle",
+      "detail": "Every second feels like living in a five-star resort — but better."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:16:15.814513Z",
       "confidence": 0.5,
       "amenity": "swimming_pools",
-      "detail": "Luxurious homes are fitted with swimming pools, among other modern conveniences (per article dated July 13, 2016)."
+      "detail": "Luxurious homes fitted with swimming pools among the latest mod cons."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057621Z",
+      "retrieved_at": "2026-10-06T22:16:15.814524Z",
       "confidence": 0.5,
       "amenity": "hot_tubs",
-      "detail": "Luxurious homes are fitted with hot tubs."
+      "detail": "Homes include hot tubs as a standard feature."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057624Z",
-      "confidence": 0.5,
-      "amenity": "landscaped_gardens",
-      "detail": "Luxurious homes feature large landscaped gardens."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057626Z",
-      "confidence": 0.5,
-      "amenity": "security_systems",
-      "detail": "Luxurious homes include security systems."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057629Z",
+      "retrieved_at": "2026-10-06T22:16:15.814527Z",
       "confidence": 0.5,
       "amenity": "private_garages",
-      "detail": "Luxurious homes include private garages."
+      "detail": "Homes include private garages."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057631Z",
+      "retrieved_at": "2026-10-06T22:16:15.814530Z",
       "confidence": 0.5,
-      "amenity": "water_sports_and_yachts",
-      "detail": "Star Island is located in Biscayne Bay, famous for its water sports and yachts."
+      "amenity": "security_systems",
+      "detail": "Homes fitted with security systems."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:16:15.814532Z",
+      "confidence": 0.5,
+      "amenity": "large_landscaped_gardens",
+      "detail": "Homes include large landscaped gardens."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:16:15.814535Z",
+      "confidence": 0.5,
+      "amenity": "contemporary_kitchens",
+      "detail": "Homes fitted with contemporary kitchens to the highest construction standards."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:16:15.814537Z",
+      "confidence": 0.5,
+      "amenity": "water_sports_and_yachting",
+      "detail": "Located in Biscayne Bay, famous for its water sports and yachts."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:16:15.814540Z",
+      "confidence": 0.5,
+      "amenity": "bayside_views",
+      "detail": "Known for its stunning bayside views and relaxed pace of life."
     }
   ],
   "demographics": {
     "source_url": "browser:google",
-    "retrieved_at": "2026-10-06T19:00:35.057635Z",
+    "retrieved_at": "2026-10-06T22:16:15.814544Z",
     "confidence": 0.5,
     "median_age": null,
     "median_household_income": null,
     "owner_occupancy_pct": null,
     "population": 100,
     "data_year": 2016,
-    "geography_level": "island (less than 100 residents per 2016 article; 100 used as approximate upper bound)}"
+    "geography_level": "island (Biscayne Bay, Miami Beach, Florida, USA)"
   },
   "demographics_history": [
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T18:50:27.969640Z",
+      "retrieved_at": "2026-10-06T22:00:26.952034Z",
       "confidence": 0.5,
       "median_age": null,
       "median_household_income": null,
       "owner_occupancy_pct": null,
       "population": 98,
       "data_year": 2010,
-      "geography_level": "neighborhood (island), total area 0.134 sq mi / 0.35 km2, ZIP 33139, area codes 305/786. Median age, median household income, and owner-occupancy % not found in provided content."
+      "geography_level": "neighborhood"
     }
   ],
   "proximity": [
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T18:50:27.969645Z",
+      "retrieved_at": "2026-10-06T22:00:26.952039Z",
       "confidence": 0.5,
       "category": "school",
-      "nearest_name": "South Pointe Elementary School (Miami-Dade County Public Schools)",
+      "nearest_name": "South Pointe Elementary School",
       "distance_miles": null
     },
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T18:50:27.969648Z",
+      "retrieved_at": "2026-10-06T22:00:26.952042Z",
       "confidence": 0.5,
       "category": "school",
-      "nearest_name": "Nautilus Middle School (Miami-Dade County Public Schools)",
+      "nearest_name": "Nautilus Middle School",
       "distance_miles": null
     },
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T18:50:27.969649Z",
+      "retrieved_at": "2026-10-06T22:00:26.952043Z",
       "confidence": 0.5,
       "category": "school",
-      "nearest_name": "Miami Beach High School (Miami-Dade County Public Schools)",
+      "nearest_name": "Miami Beach High School",
       "distance_miles": null
     },
     {
-      "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:50:27.969651Z",
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:14:48.577479Z",
       "confidence": 0.5,
       "category": "shopping",
-      "nearest_name": "Miami Beach / downtown Miami (proximity stated in content; no specific distances given)",
+      "nearest_name": "South Beach / mainland Miami",
       "distance_miles": null
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:59:13.154572Z",
-      "confidence": 0.5,
-      "category": "shopping",
-      "nearest_name": "South Beach",
-      "distance_miles": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:59:13.154576Z",
-      "confidence": 0.5,
-      "category": "other",
-      "nearest_name": "Mainland Miami (general services)",
-      "distance_miles": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057641Z",
+      "retrieved_at": "2026-10-06T22:16:15.814549Z",
       "confidence": 0.5,
       "category": "school",
       "nearest_name": "Three schools on the island",
-      "distance_miles": 0.0
+      "distance_miles": null
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:00:35.057644Z",
+      "retrieved_at": "2026-10-06T22:16:15.814554Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami Beach (via MacArthur Causeway)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T22:16:15.814555Z",
       "confidence": 0.5,
       "category": "shopping",
-      "nearest_name": "South Beach (restaurants and shops, described as a short trip)",
+      "nearest_name": "South Beach (world-class restaurants and bustling night scene)",
       "distance_miles": null
     }
   ],
@@ -205,50 +246,45 @@
       "field": "proximity.school",
       "values": [
         {
-          "nearest_name": "South Pointe Elementary School (Miami-Dade County Public Schools)",
+          "nearest_name": "South Pointe Elementary School",
           "distance_miles": null,
           "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)"
         },
         {
-          "nearest_name": "Nautilus Middle School (Miami-Dade County Public Schools)",
+          "nearest_name": "Nautilus Middle School",
           "distance_miles": null,
           "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)"
         },
         {
-          "nearest_name": "Miami Beach High School (Miami-Dade County Public Schools)",
+          "nearest_name": "Miami Beach High School",
           "distance_miles": null,
           "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)"
         },
         {
           "nearest_name": "Three schools on the island",
-          "distance_miles": 0.0,
+          "distance_miles": null,
           "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T19:00:35.058393Z"
+      "detected_at": "2026-10-06T22:16:15.815324Z"
     },
     {
       "field": "proximity.shopping",
       "values": [
         {
-          "nearest_name": "Miami Beach / downtown Miami (proximity stated in content; no specific distances given)",
-          "distance_miles": null,
-          "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/"
-        },
-        {
-          "nearest_name": "South Beach",
+          "nearest_name": "South Beach / mainland Miami",
           "distance_miles": null,
           "source_url": "browser:google"
         },
         {
-          "nearest_name": "South Beach (restaurants and shops, described as a short trip)",
+          "nearest_name": "South Beach (world-class restaurants and bustling night scene)",
           "distance_miles": null,
           "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T19:00:35.058397Z"
+      "detected_at": "2026-10-06T22:16:15.815326Z"
     }
   ],
-  "created_at": "2026-10-06T18:50:27.970163Z",
-  "updated_at": "2026-10-06T19:00:35.058456Z"
+  "created_at": "2026-10-06T22:00:26.952529Z",
+  "updated_at": "2026-10-06T22:16:15.815378Z"
 }

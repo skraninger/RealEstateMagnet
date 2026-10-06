@@ -15,8 +15,9 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(title="RealEstateMagnet Database Viewer")
 
-# Setup templates
-templates = Jinja2Templates(directory="modules/web/templates")
+# Setup templates - use absolute path based on this file's location
+templates_dir = Path(__file__).parent / "templates"
+templates = Jinja2Templates(directory=str(templates_dir))
 
 # Database path
 DB_PATH = Path("data/communities.db")
@@ -95,19 +96,22 @@ async def dashboard(request: Request):
     
     conn.close()
     
-    return templates.TemplateResponse("dashboard.html", {
-        "request": request,
-        "total_communities": total_communities,
-        "gated_communities": gated_communities,
-        "total_urls": total_urls,
-        "printed_urls": printed_urls,
-        "failed_urls": failed_urls,
-        "urls_with_data": urls_with_data,
-        "avg_quality": round(avg_quality, 1),
-        "high_quality_count": high_quality_count,
-        "quality_distribution": quality_distribution,
-        "recent_communities": recent_communities,
-    })
+    return templates.TemplateResponse(
+        request,
+        "dashboard.html",
+        {
+            "total_communities": total_communities,
+            "gated_communities": gated_communities,
+            "total_urls": total_urls,
+            "printed_urls": printed_urls,
+            "failed_urls": failed_urls,
+            "urls_with_data": urls_with_data,
+            "avg_quality": round(avg_quality, 1),
+            "high_quality_count": high_quality_count,
+            "quality_distribution": quality_distribution,
+            "recent_communities": recent_communities,
+        }
+    )
 
 
 @app.get("/communities", response_class=HTMLResponse)
@@ -158,13 +162,16 @@ async def communities_list(
     
     conn.close()
     
-    return templates.TemplateResponse("communities.html", {
-        "request": request,
-        "communities": communities,
-        "counties": counties,
-        "search": search,
-        "county": county,
-    })
+    return templates.TemplateResponse(
+        request,
+        "communities.html",
+        {
+            "communities": communities,
+            "counties": counties,
+            "search": search,
+            "county": county,
+        }
+    )
 
 
 @app.get("/communities/{slug}", response_class=HTMLResponse)
@@ -229,15 +236,18 @@ async def community_detail(request: Request, slug: str):
     
     conn.close()
     
-    return templates.TemplateResponse("community_detail.html", {
-        "request": request,
-        "community": community,
-        "fees": fees,
-        "amenities": amenities,
-        "demographics": demographics,
-        "proximity": proximity,
-        "source_urls": source_urls,
-    })
+    return templates.TemplateResponse(
+        request,
+        "community_detail.html",
+        {
+            "community": community,
+            "fees": fees,
+            "amenities": amenities,
+            "demographics": demographics,
+            "proximity": proximity,
+            "source_urls": source_urls,
+        }
+    )
 
 
 @app.get("/urls", response_class=HTMLResponse)
@@ -290,13 +300,16 @@ async def urls_list(
     
     conn.close()
     
-    return templates.TemplateResponse("urls.html", {
-        "request": request,
-        "urls": urls,
-        "status": status,
-        "min_quality": min_quality,
-        "has_data": has_data,
-    })
+    return templates.TemplateResponse(
+        request,
+        "urls.html",
+        {
+            "urls": urls,
+            "status": status,
+            "min_quality": min_quality,
+            "has_data": has_data,
+        }
+    )
 
 
 @app.get("/review-queue", response_class=HTMLResponse)
@@ -321,10 +334,13 @@ async def review_queue(request: Request):
     
     conn.close()
     
-    return templates.TemplateResponse("review_queue.html", {
-        "request": request,
-        "review_items": review_items,
-    })
+    return templates.TemplateResponse(
+        request,
+        "review_queue.html",
+        {
+            "review_items": review_items,
+        }
+    )
 
 
 @app.get("/high-quality", response_class=HTMLResponse)
@@ -348,11 +364,14 @@ async def high_quality_urls(request: Request, min_score: float = 75.0):
     
     conn.close()
     
-    return templates.TemplateResponse("high_quality.html", {
-        "request": request,
-        "urls": urls,
-        "min_score": min_score,
-    })
+    return templates.TemplateResponse(
+        request,
+        "high_quality.html",
+        {
+            "urls": urls,
+            "min_score": min_score,
+        }
+    )
 
 
 if __name__ == "__main__":

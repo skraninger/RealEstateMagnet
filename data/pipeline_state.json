@@ -1,7 +1,7 @@
 {
   "version": 1,
   "started_at": "2026-10-06T17:19:32.650343+00:00",
-  "last_updated": "2026-10-06T20:46:03.647548+00:00",
+  "last_updated": "2026-10-06T22:55:25.388990+00:00",
   "condensers": [
     "ai",
     "web",
@@ -1435,51 +1435,47 @@
   "results": {
     "fisher-island": {
       "ai": {
-        "status": "error",
-        "elapsed": 154.7483026000009,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 144.96349290000217,
+        "fees": 1,
+        "amenities": 6,
+        "proximity": 6,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('6b720215-5d39-4b59-8769-e056e2a8292b', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Community Association', None, 1, None, None, None, 'A private, man-made island in Biscayne Bay and one of the most exclusive residential communities in the United States. The roughly 2-square-mile isla ... (94 characters truncated) ... ont and some of the most valuable homes in the country. Access is controlled entirely by a single private toll drawbridge from Mid-Beach Miami Beach.', 'ai_condenser', '2026-10-06 20:46:03.642113', '2026-10-06 20:46:03.642115')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "web": {
-        "status": "running",
-        "elapsed": 366.78685199999927,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 224.9613532000003,
+        "fees": 1,
+        "amenities": 6,
+        "proximity": 2,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'web_condenser', '2026-10-06 17:32:35.322865', '2026-10-06 17:32:35.322868')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "research": {
-        "status": "error",
-        "elapsed": 622.2497146000005,
+        "status": "done",
+        "elapsed": 506.9789039999996,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'file_store', '2026-10-06 17:42:57.586033', '2026-10-06 17:42:57.586035')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (35632 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 35632, 'n_ctx': 32768}"
         ]
       },
       "browser": {
-        "status": "error",
-        "elapsed": 525.0417794000005,
+        "status": "running",
+        "elapsed": 464.17453380000006,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'browser_condenser', '2026-10-06 17:51:42.632016', '2026-10-06 17:51:42.632019')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0739c5a0-3274-431f-8bb6-9fc461ae9861', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Residents Association, Inc.', None, 1, None, None, None, 'Fisher Island is a private residential and resort community on a barrier island in Miami-Dade County, Florida, spanning approximately 216 acres (0.27 ... (773 characters truncated) ... lt family. HOA legal name: Fisher Island Residents Association, Inc. (est. 01/29/2016, Federal ID 81-1320766); property managed by FPMS, Sarasota FL.', 'browser_condenser', '2026-10-06 21:09:52.206225', '2026-10-06 21:09:52.206227')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "gemini": {
@@ -1497,15 +1493,15 @@
     },
     "indian-creek-village": {
       "ai": {
-        "status": "error",
-        "elapsed": 173.1588238000004,
+        "status": "running",
+        "elapsed": 149.3256094999997,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('5f5d2a26-1c67-4aa5-a983-911e4fea8b10', 'Indian Creek Village', 'indian-creek-village', None, 'Surfside', 'Indian Creek Association', None, 1, None, None, None, 'One of the most exclusive gated communities in the United States. Indian Creek Village occupies Indian Creek Island, a barrier island off the coast o ... (360 characters truncated) ... wn private marina and yacht club, a golf course, tennis, pool, and clubhouse, and is renowned for its privacy, security, and Biscayne Bay waterfront.', 'ai_condenser', '2026-10-06 17:54:35.810713', '2026-10-06 17:54:35.810715')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('5b64327d-4397-4e74-88f9-2358cb796cd3', 'Indian Creek Village', 'indian-creek-village', None, 'Surfside / Indian Creek Island', 'Indian Creek Community Association', None, 1, None, None, None, 'Exclusive, privately gated island community (~250 acres) in the Indian River Lagoon, accessible only from Surfside via a single community-controlled  ... (22 characters truncated) ... Creek Drive. One of the wealthiest enclaves in the US, with waterfront mansions, a private marina, and a long history (developed from the 1920s-30s).', 'ai_condenser', '2026-10-06 21:12:21.540247', '2026-10-06 21:12:21.540249')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "web": {
@@ -1520,26 +1516,26 @@
       },
       "research": {
         "status": "error",
-        "elapsed": 717.3061304999992,
+        "elapsed": 695.0742819999978,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'file_store', '2026-10-06 18:09:03.306265', '2026-10-06 18:09:03.306268')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0739c5a0-3274-431f-8bb6-9fc461ae9861', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Residents Association, Inc.', None, 1, None, None, None, 'Fisher Island is a private residential and resort community on a barrier island in Miami-Dade County, Florida, spanning approximately 216 acres (0.27 ... (773 characters truncated) ... lt family. HOA legal name: Fisher Island Residents Association, Inc. (est. 01/29/2016, Federal ID 81-1320766); property managed by FPMS, Sarasota FL.', 'file_store', '2026-10-06 21:23:56.639047', '2026-10-06 21:23:56.639049')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "browser": {
         "status": "error",
-        "elapsed": 360.51342769999974,
+        "elapsed": 301.0307971000002,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('5f5d2a26-1c67-4aa5-a983-911e4fea8b10', 'Indian Creek Village', 'indian-creek-village', None, 'Surfside', 'Indian Creek Association', None, 1, None, None, None, 'One of the most exclusive gated communities in the United States. Indian Creek Village occupies Indian Creek Island, a barrier island off the coast o ... (360 characters truncated) ... wn private marina and yacht club, a golf course, tennis, pool, and clubhouse, and is renowned for its privacy, security, and Biscayne Bay waterfront.', 'browser_condenser', '2026-10-06 18:15:03.824131', '2026-10-06 18:15:03.824133')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('5b64327d-4397-4e74-88f9-2358cb796cd3', 'Indian Creek Village', 'indian-creek-village', None, 'Surfside / Indian Creek Island', 'Indian Creek Community Association', None, 1, None, None, None, 'Exclusive, privately gated island community (~250 acres) in the Indian River Lagoon, accessible only from Surfside via a single community-controlled  ... (22 characters truncated) ... Creek Drive. One of the wealthiest enclaves in the US, with waterfront mansions, a private marina, and a long history (developed from the 1920s-30s).', 'browser_condenser', '2026-10-06 21:28:57.674709', '2026-10-06 21:28:57.674711')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "gemini": {
@@ -1558,50 +1554,50 @@
     "gables-estates": {
       "ai": {
         "status": "error",
-        "elapsed": 210.22729660000005,
+        "elapsed": 425.41057379999984,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('6102ccdb-3094-477f-add2-0b4636245dc4', 'Gables Estates', 'gables-estates', None, 'Coral Gables', None, None, 1, None, None, None, 'Gables Estates is a master-planned gated community in the northern part of the Village of Coral Gables, developed by NCI Building Corporation. It fea ... (28 characters truncated) ... t among parks and open space, with pools, trails, and clubhouse amenities, located a short drive from downtown Miami and Coral Gables village center.', 'ai_condenser', '2026-10-06 18:18:34.067786', '2026-10-06 18:18:34.067789')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('2144ce8e-b079-4a05-a210-981ceba3f64b', 'Gables Estates', 'gables-estates', None, 'Coral Gables', 'Gables Estates Community Association', None, 1, None, None, None, 'Gables Estates is a prestigious, gated master-planned community in eastern Coral Gables near the Miami River, known for large estate lots (many 1+ ac ... (134 characters truncated) ... emographic figures below are city-level (Coral Gables) proxies; the Gables Estates census tract is substantially more affluent than the city average.', 'ai_condenser', '2026-10-06 21:36:03.090365', '2026-10-06 21:36:03.090367')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "web": {
         "status": "error",
-        "elapsed": 529.6432487000002,
+        "elapsed": 197.59718059999796,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('ec14d18d-f87c-44da-9620-e65c73d76b2c', 'Gables Estates', 'gables-estates', None, 'Coral Gables', 'Gables Estates Club, Inc.', None, 1, None, None, None, \"Guard-gated, ultra-exclusive waterfront community in Coral Gables, FL 33156, developed in the early 1960s by ALCOA founder Arthur Vining Davis. Widel ... (247 characters truncated) ... $10M+. Membership in Gables Estates Club, Inc. (with non-refundable six-figure application fee and resident sponsorship) is required before purchase.\", 'web_condenser', '2026-10-06 18:27:23.735410', '2026-10-06 18:27:23.735412')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0c601579-da1d-4804-b779-ec0f07d29762', 'Gables Estates', 'gables-estates', None, 'Coral Gables, FL 33156', 'Gables Estates Club, Inc.', None, 1, None, None, None, 'Guard-gated, ultra-exclusive waterfront community in Coral Gables developed in the early 1960s by ALCOA founder Arthur Vining Davis. Comprises 192 si ... (269 characters truncated) ... dent sponsorship and a non-refundable six-figure application fee. Widely described as one of the most expensive residential neighborhoods in the U.S.', 'web_condenser', '2026-10-06 21:39:20.698567', '2026-10-06 21:39:20.698570')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "research": {
         "status": "error",
-        "elapsed": 454.6476901999995,
+        "elapsed": 501.92003979999936,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'file_store', '2026-10-06 18:34:58.395554', '2026-10-06 18:34:58.395556')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0739c5a0-3274-431f-8bb6-9fc461ae9861', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Residents Association, Inc.', None, 1, None, None, None, 'Fisher Island is a private residential and resort community on a barrier island in Miami-Dade County, Florida, spanning approximately 216 acres (0.27 ... (773 characters truncated) ... lt family. HOA legal name: Fisher Island Residents Association, Inc. (est. 01/29/2016, Federal ID 81-1320766); property managed by FPMS, Sarasota FL.', 'file_store', '2026-10-06 21:47:42.640284', '2026-10-06 21:47:42.640286')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "browser": {
         "status": "error",
-        "elapsed": 530.4773163000009,
+        "elapsed": 427.9690457999968,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('ec14d18d-f87c-44da-9620-e65c73d76b2c', 'Gables Estates', 'gables-estates', None, 'Coral Gables', 'Gables Estates Club, Inc.', None, 1, None, None, None, \"Guard-gated, ultra-exclusive waterfront community in Coral Gables, FL 33156, developed in the early 1960s by ALCOA founder Arthur Vining Davis. Widel ... (247 characters truncated) ... $10M+. Membership in Gables Estates Club, Inc. (with non-refundable six-figure application fee and resident sponsorship) is required before purchase.\", 'browser_condenser', '2026-10-06 18:43:48.876424', '2026-10-06 18:43:48.876429')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0c601579-da1d-4804-b779-ec0f07d29762', 'Gables Estates', 'gables-estates', None, 'Coral Gables, FL 33156', 'Gables Estates Club, Inc.', None, 1, None, None, None, 'Guard-gated, ultra-exclusive waterfront community in Coral Gables developed in the early 1960s by ALCOA founder Arthur Vining Davis. Comprises 192 si ... (269 characters truncated) ... dent sponsorship and a non-refundable six-figure application fee. Widely described as one of the most expensive residential neighborhoods in the U.S.', 'browser_condenser', '2026-10-06 21:54:50.613518', '2026-10-06 21:54:50.613520')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "gemini": {
@@ -1620,50 +1616,50 @@
     "star-island": {
       "ai": {
         "status": "error",
-        "elapsed": 182.12738170000011,
+        "elapsed": 162.40900730000067,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('438835da-5ae3-486d-8500-f40a53996d68', 'Star Island', 'star-island', None, 'Miami Beach', None, None, 1, None, None, None, 'Star Island is a small, highly exclusive island community in Biscayne Bay/the Intracoastal Waterway between North Miami Beach and Miami. It is widely ... (491 characters truncated) ... ted HOA/CDD fee figures for the island as a whole were not available, so no fee data is reported; individual estates may carry their own assessments.', 'ai_condenser', '2026-10-06 18:46:51.035101', '2026-10-06 18:46:51.035104')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('4947a092-9977-43d0-a56f-028fe9f6e2b9', 'Star Island', 'star-island', None, 'Miami Beach', None, None, 1, None, None, None, 'Star Island is one of the most exclusive and affluent residential enclaves in the United States. It is a private, gated barrier island located just n ... (183 characters truncated) ... bridge with a security entrance. It is known for celebrity and ultra-high-net-worth residents, a private beach, and a yacht basin with private docks.', 'ai_condenser', '2026-10-06 21:57:33.027102', '2026-10-06 21:57:33.027104')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "web": {
         "status": "error",
-        "elapsed": 216.92299109999658,
+        "elapsed": 173.91705269999875,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('00efffd9-c8e8-4d38-92a8-ba2a9d6884e6', 'Star Island', 'star-island', None, 'Miami Beach, FL', 'Palm Hibiscus Star Islands Association, Inc. (PHS Islands Association)', None, 1, None, None, None, 'Star Island is a small, exclusive man-made residential island in Biscayne Bay within the City of Miami Beach, completed in 1922 by the Army Corps of  ... (370 characters truncated) ... t lies south of the Venetian Islands and east of Palm and Hibiscus Islands, with access to Miami Beach and downtown Miami via the MacArthur Causeway.', 'web_condenser', '2026-10-06 18:50:27.971954', '2026-10-06 18:50:27.971956')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('927c1936-9f24-463e-bc21-39b0092dd8d2', 'Star Island', 'star-island', None, 'Miami Beach', 'Palm Hibiscus Star Islands Association, Inc.', None, 1, None, None, None, 'Star Island is a small, exclusive man-made residential island in Biscayne Bay, completed in 1922 by the Army Corps of Engineers. Located within the C ... (275 characters truncated) ... acArthur Causeway. It lies south of the Venetian Islands and just east of Palm and Hibiscus Islands. Total area is 0.134 sq mi (0.35 km²), ZIP 33139.', 'web_condenser', '2026-10-06 22:00:26.954268', '2026-10-06 22:00:26.954270')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "research": {
         "status": "error",
-        "elapsed": 418.35256089999893,
+        "elapsed": 478.4244249000003,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'file_store', '2026-10-06 18:57:26.339981', '2026-10-06 18:57:26.339984')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0739c5a0-3274-431f-8bb6-9fc461ae9861', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Residents Association, Inc.', None, 1, None, None, None, 'Fisher Island is a private residential and resort community on a barrier island in Miami-Dade County, Florida, spanning approximately 216 acres (0.27 ... (773 characters truncated) ... lt family. HOA legal name: Fisher Island Residents Association, Inc. (est. 01/29/2016, Federal ID 81-1320766); property managed by FPMS, Sarasota FL.', 'file_store', '2026-10-06 22:08:25.389514', '2026-10-06 22:08:25.389516')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "browser": {
         "status": "error",
-        "elapsed": 188.71620390000317,
+        "elapsed": 470.4242276999976,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('00efffd9-c8e8-4d38-92a8-ba2a9d6884e6', 'Star Island', 'star-island', None, 'Miami Beach, FL', 'Palm Hibiscus Star Islands Association, Inc. (PHS Islands Association)', None, 1, None, None, None, 'Star Island is a small, exclusive man-made residential island in Biscayne Bay within the City of Miami Beach, completed in 1922 by the Army Corps of  ... (370 characters truncated) ... t lies south of the Venetian Islands and east of Palm and Hibiscus Islands, with access to Miami Beach and downtown Miami via the MacArthur Causeway.', 'browser_condenser', '2026-10-06 19:00:35.060279', '2026-10-06 19:00:35.060280')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('927c1936-9f24-463e-bc21-39b0092dd8d2', 'Star Island', 'star-island', None, 'Miami Beach', 'Palm Hibiscus Star Islands Association, Inc.', None, 1, None, None, None, 'Star Island is a small, exclusive man-made residential island in Biscayne Bay, completed in 1922 by the Army Corps of Engineers. Located within the C ... (275 characters truncated) ... acArthur Causeway. It lies south of the Venetian Islands and just east of Palm and Hibiscus Islands. Total area is 0.134 sq mi (0.35 km²), ZIP 33139.', 'browser_condenser', '2026-10-06 22:16:15.817832', '2026-10-06 22:16:15.817834')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "gemini": {
@@ -1682,30 +1678,30 @@
     "the-estates-at-acqualina": {
       "ai": {
         "status": "error",
-        "elapsed": 186.0980662999973,
+        "elapsed": 145.4874903000018,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('392cbafa-bd6e-4a42-8a7d-5e70f5cf05d9', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach', None, None, 1, None, None, None, 'Luxury residential component of the Acqualina resort development along Collins Avenue (A1A) in Sunny Isles Beach. The Estates is a gated residential  ... (143 characters truncated) ... ecurity. Specific community-level statistics are not well documented; figures below are approximate or drawn from the broader Sunny Isles Beach area.', 'ai_condenser', '2026-10-06 19:03:41.177062', '2026-10-06 19:03:41.177064')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('b48b7cab-f86b-451a-8520-40798717c151', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach', None, None, 1, None, None, None, 'A small, gated enclave of luxury waterfront estate homes along the Intracoastal Waterway in Sunny Isles Beach, adjacent to the Acqualina Resort & Residences. Characterized by large lots, custom-built estates, and direct Intracoastal access rather than shared resort-style facilities.', 'ai_condenser', '2026-10-06 22:18:41.310922', '2026-10-06 22:18:41.310925')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "web": {
         "status": "error",
-        "elapsed": 243.53739219999989,
+        "elapsed": 468.17823789999966,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('b465ffbe-f05a-43ff-b0e8-a0612daaf88a', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach, FL', 'Estates Master Association (related entity of Acqualina Ocean Residences & Resort Condominium Association, Inc.); managed by Acqualina Management, LLC', None, 1, None, None, None, 'Ultra-luxury oceanfront condominium HOA community at 17901 and 17975 Collins Ave, Sunny Isles Beach, FL 33160, consisting of two high-rise towers (No ... (169 characters truncated) ... & Residences / Resort & Spa. HOA manages common areas, security, and shared amenities via Acqualina entities (management: Acqualina Management, LLC).', 'web_condenser', '2026-10-06 19:07:44.724917', '2026-10-06 19:07:44.724919')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('bd15f204-4d1b-4f0b-8c81-f946ddbfceab', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach', 'Estates Master Association (related entity of Acqualina Ocean Residences & Resort Condominium Association, Inc.; managed by Acqualina Management, LLC, (305) 918-8000)', None, 1, None, None, None, 'Ultra-luxury oceanfront condominium HOA community consisting of two high-rise towers (North and South) with approximately 248 residences at 17901 and ... (172 characters truncated) ... e adjacent Acqualina Resort & Residences / Resort & Spa. The HOA manages common areas, security, and shared amenities in a secure oceanfront setting.', 'web_condenser', '2026-10-06 22:26:29.524182', '2026-10-06 22:26:29.524184')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
         ]
       },
       "research": {
-        "status": "error",
+        "status": "running",
         "elapsed": 393.02087140000003,
         "fees": 0,
         "amenities": 0,
@@ -12049,9 +12045,9 @@
     }
   },
   "stats": {
-    "total_runs": 31,
-    "successful": 1,
-    "failed": 24,
+    "total_runs": 50,
+    "successful": 4,
+    "failed": 40,
     "skipped": 6,
     "started_at": "2026-10-06T17:19:32.650361+00:00",
     "last_updated": null

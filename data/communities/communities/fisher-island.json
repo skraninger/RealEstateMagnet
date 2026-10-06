@@ -1,128 +1,121 @@
 {
-  "id": "6b720215-5d39-4b59-8769-e056e2a8292b",
+  "id": "bdad0b59-fc62-42a9-bf33-e87117cdcb9a",
   "identity": {
     "name": "Fisher Island",
     "slug": "fisher-island",
     "county_fips": null,
-    "city": "Miami Beach",
-    "hoa_name": "Fisher Island Community Association",
+    "city": "Miami Beach, Florida",
+    "hoa_name": null,
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": "A private, man-made island in Biscayne Bay and one of the most exclusive residential communities in the United States. The roughly 2-square-mile island is part of the City of Miami Beach and features about 3.5 miles of private Atlantic beachfront and some of the most valuable homes in the country. Access is controlled entirely by a single private toll drawbridge from Mid-Beach Miami Beach."
+    "notes": "Fisher Island is a 216-acre private barrier island in Miami-Dade County, Florida (ZIP 33109), at the mouth of Government Cut directly across from South Pointe Park. It contains roughly 700–800 residences — primarily Mediterranean-style mid-rise condos, plus townhomes and a limited set of single-family waterfront estates — with no road or bridge connection to the mainland; access is only by controlled/private ferry, yacht, or authorized helicopter, with pre-arranged security clearance required for ferry guests. 2020 census population: 561. In October 2025 it was reported as the most expensive ZIP code in the U.S., with a median home price of ~$9.5 million (+65% YoY). Named for developer Carl G. Fisher; originally the private winter estate of William K. Vanderbilt II. Created by the dredging of Government Cut."
   },
   "fees": [
     {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628917Z",
+      "source_url": "https://ivanandmike.com/miami-beach-real-estate/fisher-island/",
+      "retrieved_at": "2026-10-06T22:41:55.670198Z",
       "confidence": 0.5,
       "fee_type": "other",
       "amount": null,
       "period": null,
       "currency": "USD",
-      "note": "Fisher Island does not have a conventional monthly HOA dues structure. Access is controlled via the private toll drawbridge: non-resident visitors pay a per-vehicle toll (historically reported around $15-$25), while residents receive a key fob and generally cross toll-free. Exact amounts vary and are not consistently published."
+      "note": "HOA fees, club dues, property taxes, insurance, and community association costs are identified as significant ongoing ownership expenses ('the acquisition price is truly just your entry ticket'), but NO specific dollar amounts are stated in the provided content. Verify current amounts with the community association/seller disclosures. Confidence reflects unquantified amounts (brokerage marketing content)."
     }
   ],
   "amenities": [
     {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628931Z",
-      "confidence": 0.5,
-      "amenity": "gated_drawbridge_entrance",
-      "detail": "The island's sole point of entry is a private toll drawbridge from Miami Beach, staffed and fob-controlled — effectively a gatehouse for the entire community."
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628948Z",
-      "confidence": 0.5,
-      "amenity": "beach",
-      "detail": "Approximately 3.5 miles of private Atlantic Ocean beachfront along the island's seaward side."
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628954Z",
-      "confidence": 0.5,
-      "amenity": "marina",
-      "detail": "Private residents' yacht marina on Biscayne Bay."
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628960Z",
-      "confidence": 0.5,
-      "amenity": "clubhouse",
-      "detail": "Residents' clubhouse/club facility (Fisher Island Club) with social and dining spaces."
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628965Z",
-      "confidence": 0.5,
-      "amenity": "pool",
-      "detail": "Pool at the residents' club facility."
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628970Z",
+      "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs",
+      "retrieved_at": "2026-10-06T22:41:55.670208Z",
       "confidence": 0.5,
       "amenity": "golf",
-      "detail": "No golf course on the island itself; the private 18-hole Shores Golf Club is located on adjacent Shores Island, just across the water."
+      "detail": "Golf frontage cited as a key design feature of the island's layout; development was planned around golf frontage, marina space, courtyards, and beach buffers rather than high-rises. No course specifics stated. Confidence 0.6 ('golf frontage' is stated, course details are not)."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs",
+      "retrieved_at": "2026-10-06T22:41:55.670219Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "Marina space cited as part of the island's designed layout."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs",
+      "retrieved_at": "2026-10-06T22:41:55.670222Z",
+      "confidence": 0.5,
+      "amenity": "private_beach",
+      "detail": "Private beach buffers cited as part of the island's design."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs",
+      "retrieved_at": "2026-10-06T22:41:55.670226Z",
+      "confidence": 0.5,
+      "amenity": "landscaped_courtyards",
+      "detail": "Island designed around landscaped courtyards rather than high-rise construction; lower density than mainland Miami Beach."
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Fisher_Island,_Florida",
+      "retrieved_at": "2026-10-06T22:41:55.670228Z",
+      "confidence": 0.5,
+      "amenity": "controlled_access_security_gated",
+      "detail": "Recognized as a private residential and resort community with restricted access and a high concentration of wealth. No road or causeway connection to the mainland; accessible only by yacht or private ferry, with ferry guests required to obtain pre-arranged security clearance. Corroborated by allinmiami.com (most guarded enclaves in the U.S.; access only by controlled ferry, yacht, or authorized helicopter). Confidence 0.8."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs",
+      "retrieved_at": "2026-10-06T22:41:55.670233Z",
+      "confidence": 0.5,
+      "amenity": "private_ferry_service",
+      "detail": "Controlled/private ferry is the standard means of access; private yacht and authorized helicopter also permitted. No public bridge connects the island to Miami Beach."
     }
   ],
   "demographics": {
-    "source_url": "ai:condensed",
-    "retrieved_at": "2026-10-06T20:46:03.628977Z",
+    "source_url": "https://en.wikipedia.org/wiki/Fisher_Island,_Florida",
+    "retrieved_at": "2026-10-06T22:41:55.670237Z",
     "confidence": 0.5,
     "median_age": null,
     "median_household_income": null,
     "owner_occupancy_pct": null,
-    "population": 456,
+    "population": 561,
     "data_year": 2020,
-    "geography_level": "Island community, Miami Beach (Census tract level), Miami-Dade County, FL — 2020 Census; very small population, figures are approximate and vary by source (often cited in the ~450-600 range)."
+    "geography_level": "Census-designated place (CDP), ZIP 33109; density 2,330/sq mi (899/km2). Population is the 2020 U.S. Census figure. Median age, median household income, and owner-occupancy rate are NOT stated in the provided content (left null). Confidence 0.7 (reputable secondary source)."
   },
   "demographics_history": [],
   "proximity": [
     {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628986Z",
+      "source_url": "https://ivanandmike.com/miami-beach-real-estate/fisher-island/",
+      "retrieved_at": "2026-10-06T22:41:55.670245Z",
       "confidence": 0.5,
-      "category": "hospital",
-      "nearest_name": "Memorial Hospital of Miami Beach",
-      "distance_miles": 3.5
+      "category": "other",
+      "nearest_name": "Miami Beach (mainland barrier island)",
+      "distance_miles": 3.0
     },
     {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628991Z",
+      "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs",
+      "retrieved_at": "2026-10-06T22:41:55.670249Z",
       "confidence": 0.5,
-      "category": "shopping",
-      "nearest_name": "Mid-Beach retail corridor / Miami Beach Design District",
-      "distance_miles": 5.0
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628994Z",
-      "confidence": 0.5,
-      "category": "grocery",
-      "nearest_name": "Mid-Beach grocery stores (e.g., Winn-Dixie on 63rd/71st St area)",
-      "distance_miles": 4.0
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.628997Z",
-      "confidence": 0.5,
-      "category": "library",
-      "nearest_name": "Miami-Dade Public Library - Miami Beach (Mid-Beach) branch",
-      "distance_miles": 4.0
-    },
-    {
-      "source_url": "ai:condensed",
-      "retrieved_at": "2026-10-06T20:46:03.629003Z",
-      "confidence": 0.5,
-      "category": "school",
-      "nearest_name": "Miami Beach public schools (e.g., Miami Beach K-8)",
-      "distance_miles": 4.0
+      "category": "other",
+      "nearest_name": "South Pointe Park (directly across the water at the mouth of Government Cut)",
+      "distance_miles": null
     }
   ],
   "open_questions": [],
-  "discrepancies": [],
-  "created_at": "2026-10-06T20:46:03.630136Z",
-  "updated_at": "2026-10-06T20:46:03.630461Z"
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Miami Beach (mainland barrier island)",
+          "distance_miles": 3.0,
+          "source_url": "https://ivanandmike.com/miami-beach-real-estate/fisher-island/"
+        },
+        {
+          "nearest_name": "South Pointe Park (directly across the water at the mouth of Government Cut)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs"
+        }
+      ],
+      "detected_at": "2026-10-06T22:41:55.671222Z"
+    }
+  ],
+  "created_at": "2026-10-06T22:41:55.671150Z",
+  "updated_at": "2026-10-06T22:41:55.671460Z"
 }

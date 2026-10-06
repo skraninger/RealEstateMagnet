@@ -1,347 +1,350 @@
 {
-  "id": "ec14d18d-f87c-44da-9620-e65c73d76b2c",
+  "id": "0c601579-da1d-4804-b779-ec0f07d29762",
   "identity": {
     "name": "Gables Estates",
     "slug": "gables-estates",
     "county_fips": null,
-    "city": "Coral Gables",
+    "city": "Coral Gables, FL 33156",
     "hoa_name": "Gables Estates Club, Inc.",
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": "Guard-gated, ultra-exclusive waterfront community in Coral Gables, FL 33156, developed in the early 1960s by ALCOA founder Arthur Vining Davis. Widely regarded as America's most expensive residential neighborhood. 192 single-family lots (166 waterfront) on over 200 acres of Biscayne Bay shoreline with engineered deep-water sea-walled canals, bridge-free bay access, and 24/7 guard. Entry price $10M+. Membership in Gables Estates Club, Inc. (with non-refundable six-figure application fee and resident sponsorship) is required before purchase."
+    "notes": "Guard-gated, ultra-exclusive waterfront community in Coral Gables developed in the early 1960s by ALCOA founder Arthur Vining Davis. Comprises 192 single-family lots (~179 residences), 166 of them waterfront, on 200+ acres of Biscayne Bay shoreline with sea-walled, deep-water canals and bridge-free access for mega-yachts (entry price reported $10M+). Purchase requires approval by Gables Estates Club, Inc. with resident sponsorship and a non-refundable six-figure application fee. Widely described as one of the most expensive residential neighborhoods in the U.S."
   },
   "fees": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/gecgfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:27:23.732370Z",
+      "retrieved_at": "2026-10-06T21:39:20.694981Z",
       "confidence": 0.5,
       "fee_type": "hoa_annual",
       "amount": 7500.0,
-      "period": "yearly",
+      "period": "annual",
       "currency": "USD",
-      "note": "Reported approximate annual dues covering security and maintenance. Exact current figures not publicly confirmed. Transfer fees, capital contributions, and special assessments not available in public sources. Architectural Review Board approval required for exterior modifications. Construction/landscaping restricted to weekdays 7am-6pm. Single-family residential use only, one residence per lot. Valet parking recommended for events; trash placement rules apply. Additional rules on signs, noise, and community standards in governing documents available upon request. Membership in Club required prior to purchase with sponsorship from existing residents. No pools, clubhouses, or recreational facilities confirmed in public sources."
+      "note": "Reported annual dues of ~$7,500 covering security and common area maintenance; exact current figures not publicly confirmed on official sources. Transfer fees, capital contributions, and special assessments unavailable in public sources. Reported/secondhand figure. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.55 (unconfirmed reported figure)."
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/gecgfl/about_hoa/",
-      "retrieved_at": "2026-10-06T18:27:23.732377Z",
+      "retrieved_at": "2026-10-06T21:39:20.694991Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 100000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Non-refundable one-time membership application fee required prior to purchase: ~$100,000 for U.S. residents / ~$105,000 for foreign nationals; membership in Gables Estates Club, Inc. is a prerequisite to purchasing property, with sponsorship from existing residents. Corroborated by gablesestatesfl.com as a 'non-refundable six-figure application fee'. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.6 (reported, not officially confirmed)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:49:35.074016Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 8500.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Current HOA fee for homes in Gables Estates Club; includes common area maintenance, grounds maintenance, and security. Period (monthly/annual) not specified on page; varies by community/home. Check individual listings for exact fees."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410301Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 7500.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "HOA/association fee covers 24-hour security, common area landscaping, maintenance of common areas, and salaries for administrators and handymen. Purchasers must also join the Gables Estates Club, which requires a non-refundable application fee of $100,000 ($105,000 for foreign applicants). Listed here as an annual HOA fee; the one-time club application fee is captured separately below. Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410307Z",
       "confidence": 0.5,
       "fee_type": "other",
       "amount": 100000.0,
       "period": "one-time",
       "currency": "USD",
-      "note": "Non-refundable membership application fee required for purchase approval. $100,000 for U.S. residents; $105,000 for foreign nationals. Sponsorship from existing residents also required. Described as a six-figure application fee."
+      "note": "Non-refundable application fee to become a member of the Gables Estates Club (required upon buying a home); $105,000 if the applicant is a foreigner. Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:37:49.142637Z",
-      "confidence": 0.5,
-      "fee_type": "hoa_monthly",
-      "amount": 406.0,
-      "period": "month",
-      "currency": "USD",
-      "note": "Doral market median HOA (ZIPs 33178/33166/33172), 90-day MLS data through Aug 2026. Not Gables Estates-specific; treat as market-level proxy only. Page notes fewer HOA-governed properties in Coral Gables ($350 median)."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:37:49.142643Z",
+      "retrieved_at": "2026-10-06T21:52:43.827294Z",
       "confidence": 0.5,
       "fee_type": "other",
-      "amount": 12020.0,
-      "period": "year",
-      "currency": "USD",
-      "note": "Doral market median annual property tax, 90-day MLS data through Aug 2026. Not Gables Estates-specific."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:40:23.316485Z",
-      "confidence": 0.5,
-      "fee_type": "hoa_monthly",
-      "amount": 824.0,
-      "period": "monthly",
-      "currency": "USD",
-      "note": "Condo fees range from $824 to $1,610 depending on the unit. Includes common area/grounds/building maintenance, roof repair & replacement, community pool, security and 24-hour guard, property insurance, water, electric, trash removal, sewer, pest control, cable TV & internet, climate control, parking, and recreation facilities. Check individual listings for exact HOA fees per unit. (Period 'monthly' inferred; page states condo fee range but not an explicit billing period.)"
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:42:30.324660Z",
-      "confidence": 0.5,
-      "fee_type": "other",
-      "amount": null,
+      "amount": 100000.0,
       "period": null,
       "currency": "USD",
-      "note": "Gables Estates Club membership is required before a property purchase can close; no fee amount stated on the page."
+      "note": "Non-refundable application fee to join Gables Estates Club, Inc. (required to purchase a property); application must be returned by appointment to the Club Administrator with two sponsors, banking references, and letters of recommendation. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827300Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 105000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Non-refundable Club application fee for foreign nationals (vs. $100,000 for others). Retrieved from page content 2026-02-10."
     }
   ],
   "amenities": [
     {
       "source_url": "https://gablesestatesfl.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732380Z",
+      "retrieved_at": "2026-10-06T21:39:20.694997Z",
       "confidence": 0.5,
-      "amenity": "24_7_guard_security",
-      "detail": "Continuous professional guard staffing at the community gate. Listed as 'Security 24/7 Guard' in the technical data sheet. Confirmed across all sources as a defining feature. HOA oversees security as part of its management responsibilities."
-    },
-    {
-      "source_url": "https://gablesestatesclubinc.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732390Z",
-      "confidence": 0.5,
-      "amenity": "guard_gated_entry",
-      "detail": "Community explicitly described as guard-gated in every source. The gate provides both physical and social entry control; every buyer must be approved by Gables Estates Club, Inc. with sponsorship from existing residents before purchase."
+      "amenity": "guard_gate_24_hour_security",
+      "detail": "Guard-gated secure community with 24/7 guard security; membership approval required for all property purchases. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.8 (stated across multiple sources)."
     },
     {
       "source_url": "https://gablesestatesfl.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732393Z",
+      "retrieved_at": "2026-10-06T21:39:20.695012Z",
       "confidence": 0.5,
-      "amenity": "deep_water_canal_access_to_biscayne_bay",
-      "detail": "Engineered sea-walled canals wide enough for large-yacht turns, depths sufficient for mega-yacht berthing and vessels 100+ ft. 166 of 192 lots directly on water. No height clearance required for masts, flybridges, or superstructures. ~5 min from private dock to open Biscayne Bay."
+      "amenity": "waterfront_access_deep_water_canals",
+      "detail": "200+ acres of Biscayne Bay shoreline; sea-walled canals with deep water, wide enough for large-yacht turns; bridge-free (no fixed bridges) direct access to Biscayne Bay, ~5 min from private dock to open bay; 166 of 192 lots directly on water. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.8 (stated in multiple sources)."
     },
     {
       "source_url": "https://gablesestatesfl.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732396Z",
-      "confidence": 0.5,
-      "amenity": "bridge_free_bay_access",
-      "detail": "Direct, unrestricted, bridge-free access to Biscayne Bay with zero fixed bridges in the community. Described as mega-yacht canal infrastructure."
-    },
-    {
-      "source_url": "https://gablesestatesfl.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732399Z",
+      "retrieved_at": "2026-10-06T21:39:20.695020Z",
       "confidence": 0.5,
       "amenity": "private_deepwater_docks",
-      "detail": "Most waterfront homes include private deepwater docks; bulkheads and riparian rights vary by lot. Many properties feature private seawalls on deep, wide canals."
+      "detail": "Most waterfront homes include private deepwater docks; canals engineered for deep-water dockage, depths sufficient for mega-yacht berthing and vessels 100+ ft; bulkheads and riparian rights vary by lot. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.6 (marketing source)."
     },
     {
       "source_url": "https://gablesestatesclubinc.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732401Z",
+      "retrieved_at": "2026-10-06T21:39:20.695027Z",
       "confidence": 0.5,
-      "amenity": "sea_walled_canals",
-      "detail": "Wide, deep-water sea-walled canals winding through the community, engineered for deep-water dockage and large-vessel navigation."
+      "amenity": "club_membership_gables_estates_club_inc",
+      "detail": "Mandatory club membership as prerequisite to purchase; association manages membership approvals, enforces covenants (ARB approval for exterior modifications, paint, renovations, landscape changes), and oversees common area maintenance and security. Note: no clubhouse or pool facilities detailed in public sources — amenities focus on security and waterfront access. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.7. Retrieved: 2025-06-01T00:00:00Z. Confidence: 0.7."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
+      "retrieved_at": "2026-10-06T21:49:35.074023Z",
+      "confidence": 0.5,
       "amenity": "clubhouse",
-      "detail": null
+      "detail": "Community amenity"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "swimming_pool",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "cabana",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:40:23.316511Z",
+      "retrieved_at": "2026-10-06T21:49:35.074032Z",
       "confidence": 0.5,
-      "amenity": "fitness_center",
-      "detail": "Described as state-of-the-art fitness center, "
+      "amenity": "tennis_courts",
+      "detail": "Sports facility"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "sauna",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "billiards_room",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "hobby_room",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "business_center",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "library",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:40:23.316528Z",
-      "confidence": 0.5,
-      "amenity": "picnic_area",
-      "detail": "Onsite dining venue, "
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:40:23.316531Z",
-      "confidence": 0.5,
-      "amenity": "barbecue_area",
-      "detail": "Onsite dining venue, "
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-15T12:00:00Z",
-      "confidence": 0.9,
-      "amenity": "walking_jogging_trails",
-      "detail": null
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:42:30.324667Z",
-      "confidence": 0.5,
-      "amenity": "deep_water_canals",
-      "detail": "Wide, deep-water, seawalled canals"
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:42:30.324675Z",
-      "confidence": 0.5,
-      "amenity": "200_acres_of_shoreline",
-      "detail": "Community spans more than 200 acres of shoreline with 192 lots"
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:42:30.324679Z",
-      "confidence": 0.5,
-      "amenity": "estate_scale_setting",
-      "detail": "Parcels in public listings range from about 38,762 to 108,900 square feet; homes tend to be custom compounds"
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:42:30.324681Z",
+      "retrieved_at": "2026-10-06T21:51:36.410310Z",
       "confidence": 0.5,
       "amenity": "gables_estates_club",
-      "detail": "Club membership required prior to purchase closing; structured ownership environment"
+      "detail": "Exclusive club; membership is required once you buy a Gables Estates home. Non-refundable application fee of $100,000 ($105,000 for foreign applicants). Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410320Z",
+      "confidence": 0.5,
+      "amenity": "24_7_armed_security",
+      "detail": "Armed G4S guards at both entrances and exits; they stop and check every vehicle/person entering and monitor every vehicle exiting. 24-hour patrol cars do constant surveillance on each street. Many G4S officers have served 10+ years (some up to 23). Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410323Z",
+      "confidence": 0.5,
+      "amenity": "boat_patrols",
+      "detail": "Association boat patrols guard members' yachts and watercraft at their docks and watch over backyards. Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410325Z",
+      "confidence": 0.5,
+      "amenity": "24_7_camera_surveillance",
+      "detail": "Numerous cameras watch entrances, exits, streets, and waterways, monitored 24/7 by G4S officers; includes FLIR night vision cameras and beam detectors; recordings are kept. Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410328Z",
+      "confidence": 0.5,
+      "amenity": "bayfront_waterfront",
+      "detail": "Located along Biscayne Bay with bayfront lots and unobstructed views over open water; non-bay homes sit on inlets or canals a short distance from the open ocean (no bridges). Retrieved: 2025-01-01T00:00:00Z, confidence 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:51:36.410330Z",
+      "confidence": 0.5,
+      "amenity": "common_area_landscaping_and_maintenance",
+      "detail": "HOA fee covers common area landscaping and maintenance of common areas, plus administrators and handymen. Retrieved: 2025-01-01T00:00:00Z, confidence 0.8"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827303Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "On premises tennis courts available to Leucadendra club members only. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827311Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "24-hour guard gated security by water and land; 24-hour armed guards provided by G4S at both entrances and exits; G4S officers stop and monitor all entering vehicles and persons. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827313Z",
+      "confidence": 0.5,
+      "amenity": "private_dockage",
+      "detail": "Only community in South Dade to offer one-acre lots, allowing private dockage of oversized mega yachts and sport boats; each property has no bridges to bay. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827315Z",
+      "confidence": 0.5,
+      "amenity": "security_cameras",
+      "detail": "Cameras placed throughout the community featuring night vision and beam detectors. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827317Z",
+      "confidence": 0.5,
+      "amenity": "police_patrols",
+      "detail": "Coral Gables Police Department patrol cars and boat patrols constantly surveil each street and waterway, safeguarding yachts, watercrafts, and backyards 24 hours a day. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:52:43.827319Z",
+      "confidence": 0.5,
+      "amenity": "community_club",
+      "detail": "Gables Estates Club, Inc. — exclusive club of which all residents are required to be members as a prerequisite to purchasing a property; applications available at the Club office. Retrieved from page content 2026-02-10."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:53:47.945808Z",
+      "confidence": 0.5,
+      "amenity": "guard_gated_controlled_entry",
+      "detail": "Strictly controlled, guard-gated enclave with monitored vehicle entry; access limited to residents, pre-approved guests, household staff, and vetted contractors; gate structure eliminates through-traffic. Active oversight and private security in addition to controlled access. No public shoreline access or pedestrian flow beyond residents and approved visitors. (Confidence 0.95, retrieved 2026-02-05T12:00:00Z.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:53:47.945819Z",
+      "confidence": 0.5,
+      "amenity": "deep_water_seawalled_canals",
+      "detail": "Deep-water, seawalled canals with bridge-free ocean access; canal design and deep-water frontage built for large yachts. (Confidence 0.9, retrieved 2026-02-05T12:00:00Z.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:53:47.945822Z",
+      "confidence": 0.5,
+      "amenity": "dock_yacht_mooring_capacity",
+      "detail": "Oversized waterfront parcels (lots frequently ~1/2 acre+, frontage ~100 to 200+ linear feet) allow large dock installations, secondary structures, and expansive pools. (Confidence 0.85, retrieved 2026-02-05T12:00:00Z.)"
     }
   ],
-  "demographics": {
-    "source_url": "https://gablesestatesfl.com/",
-    "retrieved_at": "2026-10-06T18:27:23.732406Z",
-    "confidence": 0.5,
-    "median_age": null,
-    "median_household_income": null,
-    "owner_occupancy_pct": null,
-    "population": 179,
-    "data_year": null,
-    "geography_level": "community (residences, not persons)"
-  },
+  "demographics": null,
   "demographics_history": [],
   "proximity": [
     {
       "source_url": "https://gablesestatesclubinc.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732410Z",
-      "confidence": 0.5,
-      "category": "school",
-      "nearest_name": "University of Miami",
-      "distance_miles": null
-    },
-    {
-      "source_url": "https://gablesestatesclubinc.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732414Z",
+      "retrieved_at": "2026-10-06T21:39:20.695039Z",
       "confidence": 0.5,
       "category": "other",
       "nearest_name": "Miami International Airport",
       "distance_miles": null
     },
     {
-      "source_url": "https://gablesestatesfl.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732415Z",
+      "source_url": "https://gablesestatesclubinc.com/",
+      "retrieved_at": "2026-10-06T21:39:20.695043Z",
       "confidence": 0.5,
-      "category": "other",
-      "nearest_name": "Dinner Key Marina, Coconut Grove (~15 min by water)",
+      "category": "school",
+      "nearest_name": "University of Miami",
       "distance_miles": null
     },
     {
       "source_url": "https://gablesestatesfl.com/",
-      "retrieved_at": "2026-10-06T18:27:23.732416Z",
+      "retrieved_at": "2026-10-06T21:39:20.695047Z",
       "confidence": 0.5,
       "category": "other",
-      "nearest_name": "Coral Reef Yacht Club (name truncated in source)",
+      "nearest_name": "Dinner Key Marina, Coconut Grove",
       "distance_miles": null
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:40:23.316540Z",
+      "retrieved_at": "2026-10-06T21:49:35.074037Z",
       "confidence": 0.5,
       "category": "other",
       "nearest_name": "Miami International Airport (MIA)",
-      "distance_miles": 4.0
+      "distance_miles": 7.0
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:40:23.316545Z",
+      "retrieved_at": "2026-10-06T21:49:35.074040Z",
       "confidence": 0.5,
       "category": "other",
       "nearest_name": "Fort Lauderdale Hollywood International Airport (FLL)",
-      "distance_miles": 23.0
+      "distance_miles": 27.0
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T18:42:30.324685Z",
+      "retrieved_at": "2026-10-06T21:49:35.074042Z",
       "confidence": 0.5,
       "category": "other",
-      "nearest_name": "Matheson Hammock Park & Marina",
-      "distance_miles": null
+      "nearest_name": "Miami Executive (TMB)",
+      "distance_miles": 21.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:49:35.074043Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami Opa Locka Executive (OPF)",
+      "distance_miles": 21.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:49:35.074044Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Homestead Arb (HST)",
+      "distance_miles": 21.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-06T21:49:35.074050Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "North Perry (HWO)",
+      "distance_miles": 21.0
     }
   ],
   "open_questions": [],
   "discrepancies": [
     {
-      "field": "fees.hoa_monthly",
-      "values": [
-        {
-          "amount": 406.0,
-          "period": "month",
-          "source_url": "browser:google",
-          "retrieved_at": "2026-10-06T18:37:49.142637+00:00"
-        },
-        {
-          "amount": 824.0,
-          "period": "monthly",
-          "source_url": "browser:google",
-          "retrieved_at": "2026-10-06T18:40:23.316485+00:00"
-        }
-      ],
-      "detected_at": "2026-10-06T18:43:48.870893Z"
-    },
-    {
       "field": "fees.other",
       "values": [
         {
           "amount": 100000.0,
-          "period": "one-time",
+          "period": null,
           "source_url": "https://www.hoabulletinboard.com/hoa/gecgfl/about_hoa/",
-          "retrieved_at": "2026-10-06T18:27:23.732377+00:00"
+          "retrieved_at": "2026-10-06T21:39:20.694991+00:00"
         },
         {
-          "amount": 12020.0,
-          "period": "year",
-          "source_url": "browser:google",
-          "retrieved_at": "2026-10-06T18:37:49.142643+00:00"
-        },
-        {
-          "amount": null,
+          "amount": 8500.0,
           "period": null,
           "source_url": "browser:google",
-          "retrieved_at": "2026-10-06T18:42:30.324660+00:00"
+          "retrieved_at": "2026-10-06T21:49:35.074016+00:00"
+        },
+        {
+          "amount": 100000.0,
+          "period": "one-time",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T21:51:36.410307+00:00"
+        },
+        {
+          "amount": 100000.0,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T21:52:43.827294+00:00"
+        },
+        {
+          "amount": 105000.0,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-06T21:52:43.827300+00:00"
         }
       ],
-      "detected_at": "2026-10-06T18:43:48.870903Z"
+      "detected_at": "2026-10-06T21:54:50.611206Z"
     },
     {
       "field": "proximity.other",
@@ -352,34 +355,44 @@
           "source_url": "https://gablesestatesclubinc.com/"
         },
         {
-          "nearest_name": "Dinner Key Marina, Coconut Grove (~15 min by water)",
-          "distance_miles": null,
-          "source_url": "https://gablesestatesfl.com/"
-        },
-        {
-          "nearest_name": "Coral Reef Yacht Club (name truncated in source)",
+          "nearest_name": "Dinner Key Marina, Coconut Grove",
           "distance_miles": null,
           "source_url": "https://gablesestatesfl.com/"
         },
         {
           "nearest_name": "Miami International Airport (MIA)",
-          "distance_miles": 4.0,
+          "distance_miles": 7.0,
           "source_url": "browser:google"
         },
         {
           "nearest_name": "Fort Lauderdale Hollywood International Airport (FLL)",
-          "distance_miles": 23.0,
+          "distance_miles": 27.0,
           "source_url": "browser:google"
         },
         {
-          "nearest_name": "Matheson Hammock Park & Marina",
-          "distance_miles": null,
+          "nearest_name": "Miami Executive (TMB)",
+          "distance_miles": 21.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami Opa Locka Executive (OPF)",
+          "distance_miles": 21.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Homestead Arb (HST)",
+          "distance_miles": 21.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "North Perry (HWO)",
+          "distance_miles": 21.0,
           "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T18:43:48.870910Z"
+      "detected_at": "2026-10-06T21:54:50.611211Z"
     }
   ],
-  "created_at": "2026-10-06T18:27:23.733041Z",
-  "updated_at": "2026-10-06T18:43:48.871095Z"
+  "created_at": "2026-10-06T21:39:20.695838Z",
+  "updated_at": "2026-10-06T21:54:50.611264Z"
 }

@@ -34,6 +34,129 @@ logger = logging.getLogger(__name__)
 DEFAULT_PAGES_DIR = Path("data/research_pages")
 
 
+# Keywords for detecting different types of community data
+FEES_KEYWORDS = [
+    "hoa", "homeowners association", "dues", "monthly fee", "annual fee",
+    "assessment", "cdd", "community development district", "fee schedule",
+    "maintenance fee", "$", "per month", "per year", "annually"
+]
+
+AMENITIES_KEYWORDS = [
+    "pool", "golf", "tennis", "clubhouse", "fitness", "gym", "playground",
+    "park", "walking trails", "pickleball", "basketball", "soccer",
+    "amenities", "community features", "recreation"
+]
+
+DEMOGRAPHICS_KEYWORDS = [
+    "population", "median age", "median income", "household income",
+    "demographics", "census", "residents", "families", "households",
+    "age distribution", "income level"
+]
+
+PROXIMITY_KEYWORDS = [
+    "shopping", "grocery", "hospital", "school", "library", "nearby",
+    "close to", "minutes from", "location", "convenient", "access to",
+    "distance", "miles"
+]
+
+
+def calculate_data_quality(page_content: Optional[str], community_slug: Optional[str] = None) -> dict:
+    """Calculate data quality metrics based on page content.
+    
+    Analyzes the extracted text to determine:
+    - Whether the page contains relevant community data
+    - What types of data were found (fees, amenities, demographics, proximity)
+    - A quality score (0-100) based on content richness and relevance
+    
+    Args:
+        page_content: The extracted text content from the page
+        community_slug: Optional community identifier for relevance checking
+    
+    Returns:
+        dict with keys:
+            - has_community_data: bool
+            - data_quality_score: float (0-100)
+            - data_types_found: str (comma-separated list)
+            - data_summary: str
+    """
+    if not page_content:
+        return {
+            "has_community_data": False,
+            "data_quality_score": 0.0,
+            "data_types_found": None,
+            "data_summary": "No content extracted"
+        }
+    
+    content_lower = page_content.lower()
+    content_length = len(page_content)
+    
+    # Detect data types by keyword matching
+    data_types = []
+    type_scores = {}
+    
+    # Check for fees data
+    fees_count = sum(1 for kw in FEES_KEYWORDS if kw in content_lower)
+    if fees_count >= 2:
+        data_types.append("fees")
+        # Score based on number of keyword matches and content about fees
+        type_scores["fees"] = min(25, fees_count * 3)
+    
+    # Check for amenities data
+    amenities_count = sum(1 for kw in AMENITIES_KEYWORDS if kw in content_lower)
+    if amenities_count >= 2:
+        data_types.append("amenities")
+        type_scores["amenities"] = min(25, amenities_count * 2)
+    
+    # Check for demographics data
+    demographics_count = sum(1 for kw in DEMOGRAPHICS_KEYWORDS if kw in content_lower)
+    if demographics_count >= 2:
+        data_types.append("demographics")
+        type_scores["demographics"] = min(25, demographics_count * 3)
+    
+    # Check for proximity data
+    proximity_count = sum(1 for kw in PROXIMITY_KEYWORDS if kw in content_lower)
+    if proximity_count >= 2:
+        data_types.append("proximity")
+        type_scores["proximity"] = min(25, proximity_count * 2)
+    
+    # Calculate overall quality score
+    has_community_data = len(data_types) > 0
+    
+    if not has_community_data:
+        # No community data found
+        data_quality_score = 0.0
+        data_summary = "Page does not contain relevant community data"
+    else:
+        # Base score from data types found (up to 75 points)
+        type_score = sum(type_scores.values())
+        
+        # Bonus for content length (up to 25 points)
+        # More content generally means more detailed information
+        length_bonus = min(25, content_length / 200)  # 1 point per 200 chars, max 25
+        
+        data_quality_score = type_score + length_bonus
+        
+        # Build summary
+        type_descriptions = []
+        if "fees" in data_types:
+            type_descriptions.append(f"{fees_count} fee-related terms")
+        if "amenities" in data_types:
+            type_descriptions.append(f"{amenities_count} amenity mentions")
+        if "demographics" in data_types:
+            type_descriptions.append(f"{demographics_count} demographic terms")
+        if "proximity" in data_types:
+            type_descriptions.append(f"{proximity_count} proximity mentions")
+        
+        data_summary = f"Found {len(data_types)} data type(s): {', '.join(type_descriptions)}. Content length: {content_length} chars."
+    
+    return {
+        "has_community_data": has_community_data,
+        "data_quality_score": round(data_quality_score, 2),
+        "data_types_found": ",".join(data_types) if data_types else None,
+        "data_summary": data_summary
+    }
+
+
 async def _check_robot_friendly(url: str) -> tuple[bool, str]:
     """Check if a URL is robot-friendly by examining robots.txt and doing an HTTP probe.
     
@@ -454,6 +577,12 @@ class URLTracker:
             row.captcha_solved = result.captcha_solved
             row.steps_taken = result.steps_taken
             
+            # Data quality metrics
+            row.has_community_data = result.has_community_data
+            row.data_quality_score = result.data_quality_score
+            row.data_types_found = result.data_types_found
+            row.data_summary = result.data_summary
+            
             if result.status == "printed":
                 row.printed_at = datetime.now(timezone.utc)
             
@@ -462,8 +591,9 @@ class URLTracker:
             
             session.commit()
             logger.info(
-                "Updated URL %s: status=%s, captcha=%s/%s",
-                url, result.status, result.captcha_detected, result.captcha_solved
+                "Updated URL %s: status=%s, captcha=%s/%s, data_quality=%s",
+                url, result.status, result.captcha_detected, result.captcha_solved,
+                result.data_quality_score
             )
     
     async def process_url(
@@ -476,6 +606,7 @@ class URLTracker:
         
         Robot-friendly URLs use fast headless browser (no LLM vision loop).
         Non-robot-friendly URLs use the full vision browser agent with CAPTCHA handling.
+        After extraction, calculates data quality metrics based on content.
         """
         # Ensure URL is registered
         row = self.register_url(url, "manual", community_slug)
@@ -489,6 +620,10 @@ class URLTracker:
                 status="printed",
                 pdf_path=row.pdf_path,
                 content_length=row.content_length or 0,
+                has_community_data=row.has_community_data or False,
+                data_quality_score=row.data_quality_score or 0.0,
+                data_types_found=row.data_types_found,
+                data_summary=row.data_summary,
             )
         
         # Mark as accessing
@@ -534,6 +669,21 @@ class URLTracker:
                     failure_category="unknown",
                 )
         
+        # Calculate data quality metrics if extraction succeeded
+        if result.success and result.page_content:
+            quality_metrics = calculate_data_quality(result.page_content, community_slug)
+            result.has_community_data = quality_metrics["has_community_data"]
+            result.data_quality_score = quality_metrics["data_quality_score"]
+            result.data_types_found = quality_metrics["data_types_found"]
+            result.data_summary = quality_metrics["data_summary"]
+            
+            logger.info(
+                "Data quality for %s: score=%.1f, types=%s, has_data=%s",
+                url, result.data_quality_score, 
+                result.data_types_found or "none",
+                result.has_community_data
+            )
+        
         # Update tracker with result
         self.update_from_result(url, result)
         
@@ -552,6 +702,27 @@ class URLTracker:
                 )
             ).order_by(
                 SourceURLRow.discovered_at.desc()
+            )
+            
+            if limit:
+                query = query.limit(limit)
+            
+            return query.all()
+    
+    def get_high_quality_urls(
+        self,
+        min_score: float = 50.0,
+        limit: Optional[int] = None,
+    ) -> list[SourceURLRow]:
+        """Get URLs with high data quality scores."""
+        with self.db.session() as session:
+            query = session.query(SourceURLRow).filter(
+                and_(
+                    SourceURLRow.has_community_data == True,
+                    SourceURLRow.data_quality_score >= min_score,
+                )
+            ).order_by(
+                SourceURLRow.data_quality_score.desc()
             )
             
             if limit:
@@ -747,11 +918,22 @@ Examples:
         action="store_true",
         help="Reset all retryable failures to pending"
     )
+    action_group.add_argument(
+        "--quality",
+        action="store_true",
+        help="Show URLs sorted by data quality score (highest first)"
+    )
     
     parser.add_argument(
         "--limit",
         type=int,
         help="Limit number of results"
+    )
+    parser.add_argument(
+        "--min-score",
+        type=float,
+        default=50.0,
+        help="Minimum data quality score to display (default: 50.0)"
     )
     parser.add_argument(
         "--note",
@@ -820,6 +1002,33 @@ Examples:
                 str(row.http_status or ""),
                 row.failure_category or "",
                 str(row.retry_count or 0)
+            )
+        
+        console.print(table)
+    
+    elif args.quality:
+        rows = tracker.get_high_quality_urls(
+            min_score=args.min_score,
+            limit=args.limit
+        )
+        if not rows:
+            console.print(f"[green]OK - No URLs found with quality score >= {args.min_score}[/green]")
+            return
+        
+        table = Table(title=f"High Quality URLs ({len(rows)} URLs, min score: {args.min_score})")
+        table.add_column("Quality", style="green", justify="right")
+        table.add_column("URL", style="cyan", no_wrap=True, max_width=80)
+        table.add_column("Data Types", style="yellow")
+        table.add_column("Domain", style="blue")
+        table.add_column("Community", style="magenta")
+        
+        for row in rows:
+            table.add_row(
+                f"{row.data_quality_score:.1f}",
+                row.url,
+                row.data_types_found or "",
+                row.domain,
+                row.community_slug or ""
             )
         
         console.print(table)

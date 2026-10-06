@@ -15,9 +15,13 @@
     - stats: Show URL tracking statistics
     - review: Show review queue (unreviewed 4xx failures)
     - retryable: Show retryable failures (5xx, timeout, network errors)
+    - quality: Show high-quality URLs sorted by data quality score
     - mark-reviewed: Mark a URL as reviewed with optional note
     - retry: Reset a specific URL to pending for retry
     - retry-all: Reset all retryable failures to pending
+
+.PARAMETER MinScore
+    Minimum data quality score for 'quality' action (default: 50.0)
 
 .PARAMETER Url
     URL to mark as reviewed or retry (required for mark-reviewed and retry actions)
@@ -48,6 +52,14 @@
     .\scripts\review-urls.ps1 -Action retryable
 
 .EXAMPLE
+    # Show high-quality URLs (default minimum score: 50.0)
+    .\scripts\review-urls.ps1 -Action quality
+
+.EXAMPLE
+    # Show high-quality URLs with custom minimum score
+    .\scripts\review-urls.ps1 -Action quality -MinScore 75.0
+
+.EXAMPLE
     # Mark URL as reviewed with note
     .\scripts\review-urls.ps1 -Action mark-reviewed -Url "https://example.com/page" -Note "Need login cookies"
 
@@ -70,7 +82,7 @@
 
 param(
     [Parameter(Mandatory=$true)]
-    [ValidateSet('stats', 'review', 'retryable', 'mark-reviewed', 'retry', 'retry-all')]
+    [ValidateSet('stats', 'review', 'retryable', 'quality', 'mark-reviewed', 'retry', 'retry-all')]
     [string]$Action,
 
     [Parameter(Mandatory=$false)]
@@ -81,6 +93,9 @@ param(
 
     [Parameter(Mandatory=$false)]
     [int]$Limit = 0,
+
+    [Parameter(Mandatory=$false)]
+    [double]$MinScore = 50.0,
 
     [Parameter(Mandatory=$false)]
     [string]$DbPath = "data/communities.db"
@@ -109,6 +124,11 @@ if ($Note -ne "") {
 if ($Limit -gt 0) {
     $cmdArgs += "--limit"
     $cmdArgs += $Limit
+}
+
+if ($Action -eq "quality" -and $MinScore -ne 50.0) {
+    $cmdArgs += "--min-score"
+    $cmdArgs += $MinScore
 }
 
 if ($DbPath -ne "data/communities.db") {

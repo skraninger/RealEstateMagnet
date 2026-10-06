@@ -298,6 +298,12 @@ class SourceURLRow(Base):
     # Execution metadata
     retry_count = Column(Integer, default=0)
     steps_taken = Column(Integer, default=0)
+    
+    # Data quality metrics
+    has_community_data = Column(Boolean, default=False, index=True)
+    data_quality_score = Column(Float, default=0.0, index=True)
+    data_types_found = Column(String(255))  # comma-separated: fees,amenities,demographics,proximity
+    data_summary = Column(Text)  # brief summary of extracted data
 
 
 class CommunityDatabase:

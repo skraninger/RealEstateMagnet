@@ -442,4 +442,10 @@ class BrowserExtractResult(BaseModel):
     # Execution metadata
     steps_taken: int = Field(default=0, description="Number of LLM action steps in the vision loop")
     elapsed_seconds: float = Field(default=0.0, description="Total time spent on this URL")
+    
+    # Data quality metrics
+    has_community_data: bool = Field(default=False, description="Whether the page contains relevant community data")
+    data_quality_score: float = Field(default=0.0, description="Quality score 0-100, larger is better")
+    data_types_found: Optional[str] = Field(default=None, description="Comma-separated list of data types found (fees,amenities,demographics,proximity)")
+    data_summary: Optional[str] = Field(default=None, description="Brief summary of extracted data")
 

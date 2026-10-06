@@ -909,3 +909,139 @@ class TestRobotFriendlyDetection:
             
             # Clean up database connection
             db.engine.dispose()
+
+
+class TestDataQuality:
+    """Tests for data quality calculation functionality."""
+
+    def test_calculate_data_quality_no_content(self):
+        """Test quality calculation with no content."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        result = calculate_data_quality(None)
+        assert result["has_community_data"] is False
+        assert result["data_quality_score"] == 0.0
+        assert result["data_types_found"] is None
+
+    def test_calculate_data_quality_empty_content(self):
+        """Test quality calculation with empty content."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        result = calculate_data_quality("")
+        assert result["has_community_data"] is False
+        assert result["data_quality_score"] == 0.0
+        assert result["data_types_found"] is None
+
+    def test_calculate_data_quality_with_fees(self):
+        """Test quality calculation detects fee information."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        content = "HOA dues are $450 per month. Annual assessment is $2000."
+        result = calculate_data_quality(content)
+        
+        assert result["has_community_data"] is True
+        assert "fees" in result["data_types_found"]
+        assert result["data_quality_score"] > 0
+        assert "fee" in result["data_summary"].lower()
+
+    def test_calculate_data_quality_with_amenities(self):
+        """Test quality calculation detects amenity information."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        content = "Community amenities include pool, tennis courts, and clubhouse."
+        result = calculate_data_quality(content)
+        
+        assert result["has_community_data"] is True
+        assert "amenities" in result["data_types_found"]
+        assert result["data_quality_score"] > 0
+
+    def test_calculate_data_quality_with_demographics(self):
+        """Test quality calculation detects demographic information."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        content = "The population is 5000 with a median age of 45 and median household income of $120,000."
+        result = calculate_data_quality(content)
+        
+        assert result["has_community_data"] is True
+        assert "demographics" in result["data_types_found"]
+        assert result["data_quality_score"] > 0
+
+    def test_calculate_data_quality_with_proximity(self):
+        """Test quality calculation detects proximity information."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        content = "Located 5 minutes from shopping and hospitals. Close to schools and libraries."
+        result = calculate_data_quality(content)
+        
+        assert result["has_community_data"] is True
+        assert "proximity" in result["data_types_found"]
+        assert result["data_quality_score"] > 0
+
+    def test_calculate_data_quality_multiple_types(self):
+        """Test quality calculation with multiple data types."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        content = """
+        HOA dues are $450 per month with annual assessment of $2000.
+        Community amenities include pool, golf course, tennis courts, and clubhouse.
+        Population is 5000 with median age of 45.
+        Located 5 minutes from shopping and hospitals.
+        """
+        result = calculate_data_quality(content)
+        
+        assert result["has_community_data"] is True
+        assert "fees" in result["data_types_found"]
+        assert "amenities" in result["data_types_found"]
+        assert "demographics" in result["data_types_found"]
+        assert "proximity" in result["data_types_found"]
+        # Should have reasonable score with multiple data types
+        assert result["data_quality_score"] >= 35
+
+    def test_calculate_data_quality_irrelevant_content(self):
+        """Test quality calculation with irrelevant content."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        content = "This is a general website about web development and programming."
+        result = calculate_data_quality(content)
+        
+        assert result["has_community_data"] is False
+        assert result["data_quality_score"] == 0.0
+        assert result["data_types_found"] is None
+
+    def test_data_quality_score_range(self):
+        """Test that quality score is within expected range."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        # Test with comprehensive content
+        content = """
+        HOA fees are $500 monthly. Annual assessment $3000.
+        Amenities: pool, tennis, golf, clubhouse, fitness center, walking trails.
+        Population: 8000 residents. Median age: 42. Median income: $150,000.
+        Close to shopping, hospitals, schools, and libraries within 10 minutes.
+        """
+        result = calculate_data_quality(content)
+        
+        # Score should be between 0 and 100
+        assert 0 <= result["data_quality_score"] <= 100
+        # With comprehensive content, should have reasonable score (actual score ~44)
+        assert result["data_quality_score"] >= 40
+
+    def test_data_quality_length_bonus(self):
+        """Test that longer content gets quality bonus."""
+        from modules.community.url_tracker import calculate_data_quality
+        
+        # Short content with fees
+        short_content = "HOA dues are $450 per month."
+        short_result = calculate_data_quality(short_content)
+        
+        # Longer content with fees and more context
+        long_content = """
+        HOA dues are $450 per month. The community maintains common areas,
+        provides security, and covers water and sewer. Annual assessment is $2000
+        for reserve fund contributions. Fee schedule includes special assessments
+        for capital improvements.
+        """
+        long_result = calculate_data_quality(long_content)
+        
+        # Longer content should have higher score due to length bonus
+        assert long_result["data_quality_score"] > short_result["data_quality_score"]

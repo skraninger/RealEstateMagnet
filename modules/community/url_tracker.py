@@ -596,6 +596,87 @@ class URLTracker:
                 result.data_quality_score
             )
     
+    def update_url_status(
+        self,
+        url: str,
+        status: str,
+        error_message: Optional[str] = None,
+        http_status: Optional[int] = None,
+    ) -> None:
+        """Update URL status and error information.
+        
+        Args:
+            url: The URL to update
+            status: New status (e.g., "failed", "printed")
+            error_message: Optional error message
+            http_status: Optional HTTP status code
+        """
+        with self.db.session() as session:
+            row = session.query(SourceURLRow).filter(
+                SourceURLRow.url == url
+            ).first()
+            
+            if not row:
+                logger.warning("URL not found in tracker: %s", url)
+                return
+            
+            row.status = status
+            if error_message:
+                row.error_message = error_message
+                row.failure_detail = error_message
+            if http_status is not None:
+                row.http_status = http_status
+                # Classify failure based on HTTP status
+                if 400 <= http_status < 500:
+                    row.status = "failed_4xx"
+                elif 500 <= http_status < 600:
+                    row.status = "failed_5xx"
+            
+            session.commit()
+            logger.info("Updated URL %s: status=%s, http_status=%s", url, status, http_status)
+    
+    def update_url_quality(
+        self,
+        url: str,
+        has_community_data: bool,
+        data_quality_score: float,
+        data_types_found: Optional[str] = None,
+        data_summary: Optional[str] = None,
+        status: str = "printed",
+    ) -> None:
+        """Update URL with data quality metrics.
+        
+        Args:
+            url: The URL to update
+            has_community_data: Whether the page contains community data
+            data_quality_score: Quality score (0-100)
+            data_types_found: Comma-separated list of data types found
+            data_summary: Brief summary of extracted data
+            status: Status to set (default: "printed")
+        """
+        with self.db.session() as session:
+            row = session.query(SourceURLRow).filter(
+                SourceURLRow.url == url
+            ).first()
+            
+            if not row:
+                logger.warning("URL not found in tracker: %s", url)
+                return
+            
+            row.has_community_data = has_community_data
+            row.data_quality_score = data_quality_score
+            row.data_types_found = data_types_found
+            row.data_summary = data_summary
+            row.status = status
+            if status == "printed":
+                row.printed_at = datetime.now(timezone.utc)
+            
+            session.commit()
+            logger.info(
+                "Updated URL %s: quality_score=%s, has_data=%s, types=%s",
+                url, data_quality_score, has_community_data, data_types_found
+            )
+    
     async def process_url(
         self,
         url: str,

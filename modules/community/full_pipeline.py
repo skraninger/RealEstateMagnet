@@ -341,7 +341,7 @@ async def _run_web_condenser(
     """Run the web condenser for one community."""
     from .web_condenser import WebAICondenser
 
-    condenser = WebAICondenser(store=store, database=database)
+    condenser = WebAICondenser(store=store, database=database, url_tracker=url_tracker)
     started = time.monotonic()
     result = CondenserStepResult(status="running")
     try:
@@ -472,14 +472,45 @@ async def _run_browser_condenser(
             if not search_results:
                 continue
 
+            # Register URLs immediately when discovered
+            urls = [sr.url for sr in search_results]
+            url_tracker.register_urls(urls, discovered_by="browser_condenser")
+
             # Read top 2 results
             for sr in search_results[:2]:
                 try:
                     page_text = await read_page(sr.url, max_chars=6000, use_js=True)
                 except Exception:
+                    # Record failure in URL tracker
+                    url_tracker.update_url_status(
+                        sr.url,
+                        status="failed",
+                        error_message="Page could not be read",
+                        http_status=400
+                    )
                     continue
+                
                 if not page_text:
+                    # Record failure in URL tracker
+                    url_tracker.update_url_status(
+                        sr.url,
+                        status="failed",
+                        error_message="Empty page content",
+                        http_status=400
+                    )
                     continue
+
+                # Update URL with quality score after successful read
+                from .url_tracker import calculate_data_quality
+                quality_metrics = calculate_data_quality(page_text)
+                url_tracker.update_url_quality(
+                    sr.url,
+                    has_community_data=quality_metrics["has_community_data"],
+                    data_quality_score=quality_metrics["data_quality_score"],
+                    data_types_found=quality_metrics["data_types_found"],
+                    data_summary=quality_metrics["data_summary"],
+                    status="printed",
+                )
 
                 extraction_prompt = (
                     f"Extract information about '{info.name}' from this page.\n\n"

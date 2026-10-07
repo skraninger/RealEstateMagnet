@@ -137,6 +137,7 @@ class WebAICondenser:
         max_tokens: int | None = None,
         store: CommunityStore | None = None,
         database: CommunityDatabase | None = None,
+        url_tracker: Any | None = None,
         verbose: bool = False,
         show_thinking: bool = False,
         on_progress: Optional[Callable[[str], None]] = None,
@@ -152,6 +153,7 @@ class WebAICondenser:
         self.max_tokens = max_tokens or int(os.environ.get("MODEL_MAX_TOKENS", "8192"))
         self.store = store or CommunityStore()
         self.database = database or CommunityDatabase()
+        self.url_tracker = url_tracker
         self.verbose = verbose
         self.show_thinking = show_thinking
         self.on_progress = on_progress
@@ -209,6 +211,11 @@ class WebAICondenser:
         
         self._report_progress(f"Found {len(search_results)} web search results")
         
+        # Register URLs immediately when discovered
+        if self.url_tracker:
+            urls = [sr.url for sr in search_results]
+            self.url_tracker.register_urls(urls, discovered_by="web_condenser")
+        
         # Step 2: Read the actual pages to get community names
         page_contents = []
         for sr in search_results[:5]:  # Read top 5 pages
@@ -216,6 +223,18 @@ class WebAICondenser:
             page_text = await read_page(sr.url, max_chars=6000)
             if page_text:
                 page_contents.append(f"Source: {sr.title}\nURL: {sr.url}\n\n{page_text}")
+                # Update URL with quality score after successful read
+                if self.url_tracker:
+                    from .url_tracker import calculate_data_quality
+                    quality_metrics = calculate_data_quality(page_text)
+                    self.url_tracker.update_url_quality(
+                        sr.url,
+                        has_community_data=quality_metrics["has_community_data"],
+                        data_quality_score=quality_metrics["data_quality_score"],
+                        data_types_found=quality_metrics["data_types_found"],
+                        data_summary=quality_metrics["data_summary"],
+                        status="printed",
+                    )
         
         if not page_contents:
             self._report_progress("Could not read any pages")
@@ -286,12 +305,29 @@ class WebAICondenser:
         
         for query in queries:
             search_results = web_search(query, max_results=5)
+            # Register URLs immediately when discovered
+            if self.url_tracker:
+                urls = [sr.url for sr in search_results]
+                self.url_tracker.register_urls(urls, discovered_by="web_condenser")
+            
             for sr in search_results[:2]:
                 # Read the page content
                 page_text = await read_page(sr.url, max_chars=8000)
                 if page_text:
                     all_content.append(f"Source: {sr.url}\n{page_text[:2000]}")
                     sources_consulted += 1
+                    # Update URL with quality score after successful read
+                    if self.url_tracker:
+                        from .url_tracker import calculate_data_quality
+                        quality_metrics = calculate_data_quality(page_text)
+                        self.url_tracker.update_url_quality(
+                            sr.url,
+                            has_community_data=quality_metrics["has_community_data"],
+                            data_quality_score=quality_metrics["data_quality_score"],
+                            data_types_found=quality_metrics["data_types_found"],
+                            data_summary=quality_metrics["data_summary"],
+                            status="printed",
+                        )
         
         if not all_content:
             self._report_progress(f"No web content found for {name}")

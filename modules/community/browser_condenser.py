@@ -83,12 +83,14 @@ class BrowserCondenser:
         store: CommunityStore | None = None,
         database: CommunityDatabase | None = None,
         state_path: Path | None = None,
+        url_tracker: Any | None = None,
     ):
         self.config = config or BrowserCondenserConfig()
         self.store = store or CommunityStore()
         self.database = database or CommunityDatabase()
         self.state_path = state_path or Path("data/communities/browser_condenser_state.json")
         self.state = self._load_state()
+        self.url_tracker = url_tracker
 
         self._model = None
         self._iteration = 0
@@ -241,6 +243,12 @@ Return the query and explain what you expect to find."""
             delay_seconds=self.config.delay_between_searches,
         )
 
+        # Register URLs immediately when discovered
+        if self.url_tracker and results:
+            urls = [result.url for result in results]
+            self.url_tracker.register_urls(urls, discovered_by="browser_condenser")
+            logger.info(f"Registered {len(urls)} URLs with URLTracker")
+
         logger.info(f"Found {len(results)} search results")
         return results
 
@@ -248,6 +256,7 @@ Return the query and explain what you expect to find."""
         """Read pages from search results and extract community data.
 
         Uses the local model to extract structured data from page content.
+        Updates URL tracking with quality scores and failure information.
         """
         extracted_communities = []
 
@@ -264,7 +273,28 @@ Return the query and explain what you expect to find."""
 
             if not page_content:
                 logger.warning(f"Could not read page: {result.url}")
+                # Record failure in URL tracker
+                if self.url_tracker:
+                    self.url_tracker.update_url_status(
+                        result.url,
+                        status="failed",
+                        error_message="Page could not be read",
+                        http_status=400  # Generic failure status
+                    )
                 continue
+
+            # Update URL with quality score after successful read
+            if self.url_tracker:
+                from .url_tracker import calculate_data_quality
+                quality_metrics = calculate_data_quality(page_content)
+                self.url_tracker.update_url_quality(
+                    result.url,
+                    has_community_data=quality_metrics["has_community_data"],
+                    data_quality_score=quality_metrics["data_quality_score"],
+                    data_types_found=quality_metrics["data_types_found"],
+                    data_summary=quality_metrics["data_summary"],
+                    status="printed",
+                )
 
             logger.info(f"Extracting data from: {result.title}")
 

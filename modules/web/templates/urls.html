@@ -34,6 +34,7 @@
                 <th>Status</th>
                 <th>Quality</th>
                 <th>Has Data</th>
+                <th>Communities</th>
                 <th>Data Types</th>
                 <th>Robot Friendly</th>
                 <th>CAPTCHA</th>
@@ -73,6 +74,7 @@
                     <span class="badge badge-warning">No</span>
                     {% endif %}
                 </td>
+                <td>{{ url.community_count or 0 }}</td>
                 <td class="text-small">{{ url.data_types_found or '-' }}</td>
                 <td>
                     {% if url.robot_friendly %}

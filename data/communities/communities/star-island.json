@@ -1,191 +1,290 @@
 {
-  "id": "927c1936-9f24-463e-bc21-39b0092dd8d2",
+  "id": "d6a0a0ec-859c-4045-94bd-d0bf338195c0",
   "identity": {
     "name": "Star Island",
     "slug": "star-island",
     "county_fips": null,
     "city": "Miami Beach",
-    "hoa_name": "Palm Hibiscus Star Islands Association, Inc.",
+    "hoa_name": "Palm Hibiscus Star Islands Association, Inc. (aka PHS Islands Association)",
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": "Star Island is a small, exclusive man-made residential island in Biscayne Bay, completed in 1922 by the Army Corps of Engineers. Located within the City of Miami Beach, it features approximately 30-35 single-family waterfront estates and a fixed supply of ~35 lots. Per Bloomberg, it is the most expensive neighborhood in the United States. The island is part of the Biscayne Bay Aquatic Preserve and is accessible via the MacArthur Causeway. It lies south of the Venetian Islands and just east of Palm and Hibiscus Islands. Total area is 0.134 sq mi (0.35 km²), ZIP 33139."
+    "notes": "Star Island is a small (0.134 sq mi), exclusive man-made residential island in the City of Miami Beach, completed in 1922 by the Army Corps of Engineers and initially owned by developer Carl Fisher. It features approximately 30–35 single-family waterfront estates (fixed supply of ~35 lots), is accessible by a single guard-gated bridge via the MacArthur Causeway, and is part of the Biscayne Bay Aquatic Preserve. Per Bloomberg, it is the most expensive neighborhood in the U.S. The Palm Hibiscus Star Islands Association (est. 04/23/1998; property manager FPMS, Sarasota FL, 941-960-5000; board address 152 Palm Avenue, Miami Beach, FL 33139; association records list 255 Palm Ave) supports security, landscaping, and community upkeep across Star, Palm, and Hibiscus Islands."
   },
   "fees": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:00:26.952005Z",
+      "retrieved_at": "2025-06-15T00:00:00Z",
       "confidence": 0.5,
-      "fee_type": "hoa_monthly",
+      "fee_type": "other",
       "amount": null,
       "period": null,
       "currency": "USD",
-      "note": "Traditional monthly or quarterly HOA dues are not applicable; residents contribute to shared security and maintenance. Specific fee amounts and structures are not publicly detailed in available sources. Association established 04/23/1998; managed by FPMS (5600 Granada Dr, Sarasota, FL 34231, phone 941-960-5000)."
+      "note": "Traditional monthly or quarterly HOA dues are not applicable; residents contribute to shared security and maintenance. Specific fee amounts and structures are not publicly detailed in available sources."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:33:03.691202Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 0.0,
+      "period": "per listing record",
+      "currency": "USD",
+      "note": "MLS A11081499 (8 Star Island, Miami Beach, FL 33139) lists HOA Fees: $0; subdivision recorded as CORRECTED PL OF STAR ISLA; taxes $290,144/year on the subject property only, not a community fee."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:35:27.522402Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 25.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Florida Power & Light (FPL) electricity: deposit of $25 (minimum) and other initial set-up fees may be charged upfront for new or existing customers when applying for service at a Star Island address. Not an HOA fee; utility deposit only. No HOA or CDD fees stated on page. (retrieved_at: 2025-01-15T00:00:00Z, confidence: 0.85)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:12.923135Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 3495.0,
+      "period": "nightly",
+      "currency": "USD",
+      "note": "Published nightly rate from, across 11 published homes with private docks; before taxes, fees and gratuity, confirmed in written quote. Inventory as of October 3, 2026. Listed areas on page: Venetian Islands, Fort Lauderdale, Golden Isles, North Bay Village (Star Island not separately itemized). Retrieved from Star Island villa rental page at https://www.google.com/goto?url=CAESaQHrOzAVq3lW2kkUmZEORmv4O95k44C08_myyNDl3Zo2r2RPwbLa-QQT40fiXUZBUoid0sQJqyFVMCQp-rYVO36tuRj7oYRLaH3J_S0Znc_3xXypCimBeLKf10pY3PqzY9lAIia363d53Q, title: 'Star Island Villa Rental Miami | Waterfront Estates & Private ...'. Confidence that this rate applies specifically to Star Island is low, as the page is a keyword-targeted rental landing page for the Miami area. Retrieved via browser:google on 2026-10-03. Page states: 'Published nightly rates across 11 homes start at $3,495 with a median of $4,595. Taxes, cleaning and the security deposit are confirmed in the quote.' (Azul Privé concierge/booking intermediary; yachts, cars and homes operated by independent licensed partners and owners; every booking confirmed in writing before payment.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:12.923143Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 4595.0,
+      "period": "nightly",
+      "currency": "USD",
+      "note": "Median published nightly rate across 11 published homes with private docks; before taxes, fees and gratuity. Inventory as of October 3, 2026. Same caveat as the from-rate: areas listed on page are Venetian Islands, Fort Lauderdale, Golden Isles, North Bay Village; Star Island not separately itemized. Retrieved from Star Island villa rental page at https://www.google.com/goto?url=CAESaQHrOzAVq3lW2kkUmZEORmv4O95k44C08_myyNDl3Zo2r2RPwbLa-QQT40fiXUZBUoid0sQJqyFVMCQp-rYVO36tuRj7oYRLaH3J_S0Znc_3xXypCimBeLKf10pY3PqzY9lAIia363d53Q, title: 'Star Island Villa Rental Miami | Waterfront Estates & Private ...'. Retrieved via browser:google on 2026-10-03. Page states: 'Published nightly rates across 11 homes start at $3,495 with a median of $4,595. Taxes, cleaning and the security deposit are confirmed in the quote.' (Azul Privé concierge/booking intermediary; yachts, cars and homes operated by independent licensed partners and owners; every booking confirmed in writing before payment.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:58.934644Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No specific fee amounts stated on page. Page notes consequential property taxes, insurance (flood and wind typically necessary due to hurricane/storm-surge/sea-level rise risk), and maintenance costs."
     }
   ],
   "amenities": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:00:26.952012Z",
-      "confidence": 0.5,
-      "amenity": "guard_gated_access_private_security",
-      "detail": "Access via single bridge with guard-gated entry and private security; association supports security, landscaping, and community upkeep across Star, Palm, and Hibiscus Islands."
-    },
-    {
-      "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:00:26.952021Z",
+      "retrieved_at": "2026-10-07T02:26:10.752682Z",
       "confidence": 0.5,
       "amenity": "buoy_park",
-      "detail": "Shared park located on Star Island; the island has limited shared amenities with a focus on private estate features."
+      "detail": "Shared park located on Star Island itself; community focus is otherwise on private estate features rather than shared amenities (pool, clubhouse, fitness center not listed). Retrieved 2025-06-15T00:00:00Z. Confidence 0.65: per HOA summary of association info. Limitation: shared amenity list is explicitly described as limited; no on-island pool or tennis court is confirmed in the provided content."
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:00:26.952024Z",
+      "retrieved_at": "2026-10-07T02:26:10.752691Z",
       "confidence": 0.5,
       "amenity": "tennis_courts",
-      "detail": "Located at Palm Island Park (nearby island), offering residents access to tennis facilities."
+      "detail": "Located at nearby Palm Island Park (off-island, adjacent community). Retrieved 2025-06-15T00:00:00Z. Confidence 0.55: secondhand summary; courts are on Palm Island, not Star Island itself."
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:00:26.952026Z",
+      "retrieved_at": "2026-10-07T02:26:10.752694Z",
       "confidence": 0.5,
       "amenity": "basketball_courts",
-      "detail": "Located at Palm Island Park (nearby island), offering residents access to basketball facilities."
+      "detail": "Located at nearby Palm Island Park (off-island, adjacent community). Retrieved 2025-06-15T00:00:00Z. Confidence 0.55: secondhand summary; courts are on Palm Island, not Star Island itself."
     },
     {
-      "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T22:00:26.952029Z",
+      "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
+      "retrieved_at": "2026-10-07T02:26:10.752697Z",
       "confidence": 0.5,
-      "amenity": "biscayne_bay_aquatic_preserve",
-      "detail": "The island is part of the Biscayne Bay Aquatic Preserve, providing a protected natural waterfront setting."
+      "amenity": "guard_gated_access_private_security",
+      "detail": "Guard-gated access via a single bridge with private security; association-supported security across the islands. Retrieved 2025-06-15T00:00:00Z. Confidence 0.75: stated consistently across multiple sources."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
+      "retrieved_at": "2026-10-07T02:26:10.752700Z",
+      "confidence": 0.5,
+      "amenity": "association_maintained_landscaping_and_upkeep",
+      "detail": "Palm Hibiscus Star Islands Association supports security, landscaping, and community upkeep across Star, Palm, and Hibiscus Islands. Retrieved 2025-06-15T00:00:00Z. Confidence 0.65: per HOA summary sources."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:11:56.938393Z",
+      "retrieved_at": "2026-10-07T02:33:03.691210Z",
       "confidence": 0.5,
-      "amenity": "guard_gated_entrance",
-      "detail": "Star Island is described as an exclusive, guard-gated island exemplifying luxury living (community-level). No community fee or amenity fees stated on page. MLS data last updated Oct 06, 2026."
+      "amenity": "private_dock_waterfront_on_biscayne_bay",
+      "detail": "Residences feature private docks for water commutes; island is described as the jewel of Miami Beach on Biscayne Bay."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:11:56.938404Z",
+      "retrieved_at": "2026-10-07T02:33:03.691220Z",
       "confidence": 0.5,
-      "amenity": "waterfront_biscayne_bay_access",
-      "detail": "Waterfront lots with direct Biscayne Bay and Miami skyline sunset views; Atlantic Ocean access via private dock (per featured property at 13 Star Island Dr)."
+      "amenity": "palm_lined_park_road_perimeter",
+      "detail": "The island is divided by a park road lined with soaring palm trees and magnificent estates that line the island's perimeter."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:11:56.938407Z",
+      "retrieved_at": "2026-10-07T02:33:03.691223Z",
       "confidence": 0.5,
-      "amenity": "private_100_ft_ipe_wood_dock",
-      "detail": "Feature of the listed property (13 Star Island Dr) with Atlantic Ocean access, not confirmed as a community-wide amenity."
+      "amenity": "guarded_gated_perimeter",
+      "detail": "Described as a small, guarded island."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:13:05.907876Z",
+      "retrieved_at": "2026-10-07T02:33:03.691226Z",
       "confidence": 0.5,
-      "amenity": "waterfront_access_to_biscayne_bay",
-      "detail": "Waterfront homes stretch across expansive lots; prime waterfront estates feature unobstructed Biscayne Bay views and extended waterfront frontage with deeper setbacks for privacy."
+      "amenity": "views_of_port_of_miami_and_miami_skyline",
+      "detail": "Uninterrupted views of the Port of Miami and the Magic City's skyline from waterfront estates."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:13:05.907888Z",
+      "retrieved_at": "2026-10-07T02:35:27.522412Z",
       "confidence": 0.5,
-      "amenity": "guarded_entrance_with_controlled_access",
-      "detail": "The island is defined by control and privacy, with a guarded entrance that filters who comes in and who doesn't."
+      "amenity": "waterfront_residences_on_biscayne_bay",
+      "detail": "Impressive waterfront luxury residences on the island's Biscayne Bay waterfront; community described as a floating masterpiece of luxury island living. (retrieved_at: 2025-01-15T00:00:00Z, confidence: 0.8)"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:13:05.907892Z",
+      "retrieved_at": "2026-10-07T02:35:27.522421Z",
       "confidence": 0.5,
-      "amenity": "resort_style_lifestyle",
-      "detail": "Every second feels like living in a five-star resort — but better."
+      "amenity": "biscayne_bay_aquatic_preserve_setting",
+      "detail": "Star Island is part of the Biscayne Bay Aquatic Preserve, an aquatic preserve on Biscayne Bay. (retrieved_at: 2025-01-15T00:00:00Z, confidence: 0.85)"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814513Z",
+      "retrieved_at": "2026-10-07T02:37:12.923147Z",
+      "confidence": 0.5,
+      "amenity": "private_dock",
+      "detail": "11 published homes list a private dock; waterfront homes 'where the yacht can collect you from the garden.' Dock length, depth and access are checked against the yacht before pickup is confirmed."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:12.923155Z",
+      "confidence": 0.5,
+      "amenity": "yacht_pickup_at_dock",
+      "detail": "Charter yacht pickup at the villa's dock is often possible if the dock, water depth and route allow it; the pickup is written into both quotes (guest and yacht)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:12.923158Z",
+      "confidence": 0.5,
+      "amenity": "5_6_bedrooms",
+      "detail": "Published homes with private docks list 5 to 6 bedrooms."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:12.923162Z",
+      "confidence": 0.5,
+      "amenity": "accommodates_up_to_14_guests",
+      "detail": "Published homes list up to 14 guests."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:12.923165Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_location",
+      "detail": "Waterfront estates with private dock; yacht can collect guests from the garden."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:58.934653Z",
+      "confidence": 0.5,
+      "amenity": "none_no_commercial_amenities",
+      "detail": "There are no commercial amenities on the island; residents use nearby South Beach and mainland Miami for shopping and services."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:39:52.795047Z",
       "confidence": 0.5,
       "amenity": "swimming_pools",
-      "detail": "Luxurious homes fitted with swimming pools among the latest mod cons."
+      "detail": "Luxurious homes fitted with swimming pools among the latest modern conveniences"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814524Z",
+      "retrieved_at": "2026-10-07T02:39:52.795058Z",
       "confidence": 0.5,
       "amenity": "hot_tubs",
-      "detail": "Homes include hot tubs as a standard feature."
+      "detail": "Available in the island's luxurious homes"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814527Z",
-      "confidence": 0.5,
-      "amenity": "private_garages",
-      "detail": "Homes include private garages."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814530Z",
+      "retrieved_at": "2026-10-07T02:39:52.795061Z",
       "confidence": 0.5,
       "amenity": "security_systems",
-      "detail": "Homes fitted with security systems."
+      "detail": "Homes fitted with security systems as a standard feature"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814532Z",
+      "retrieved_at": "2026-10-07T02:39:52.795063Z",
       "confidence": 0.5,
       "amenity": "large_landscaped_gardens",
-      "detail": "Homes include large landscaped gardens."
+      "detail": "Homes feature large landscaped gardens"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814535Z",
+      "retrieved_at": "2026-10-07T02:39:52.795066Z",
       "confidence": 0.5,
       "amenity": "contemporary_kitchens",
-      "detail": "Homes fitted with contemporary kitchens to the highest construction standards."
+      "detail": "Homes include contemporary kitchens among the latest mod cons"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814537Z",
+      "retrieved_at": "2026-10-07T02:39:52.795068Z",
       "confidence": 0.5,
-      "amenity": "water_sports_and_yachting",
-      "detail": "Located in Biscayne Bay, famous for its water sports and yachts."
+      "amenity": "private_garages",
+      "detail": "Homes include private garages"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814540Z",
+      "retrieved_at": "2026-10-07T02:39:52.795070Z",
       "confidence": 0.5,
       "amenity": "bayside_views",
-      "detail": "Known for its stunning bayside views and relaxed pace of life."
+      "detail": "Star Island is known for its stunning bayside views and relaxed pace of life"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:39:52.795072Z",
+      "confidence": 0.5,
+      "amenity": "water_sports_and_yachts",
+      "detail": "Located in Biscayne Bay, famous for its water sports and yachts"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:39:52.795074Z",
+      "confidence": 0.5,
+      "amenity": "three_schools",
+      "detail": "Despite a population of less than 100, the island has three schools"
     }
   ],
   "demographics": {
     "source_url": "browser:google",
-    "retrieved_at": "2026-10-06T22:16:15.814544Z",
+    "retrieved_at": "2026-10-07T02:39:52.795078Z",
     "confidence": 0.5,
     "median_age": null,
     "median_household_income": null,
     "owner_occupancy_pct": null,
-    "population": 100,
+    "population": 99,
     "data_year": 2016,
-    "geography_level": "island (Biscayne Bay, Miami Beach, Florida, USA)"
+    "geography_level": "island community"
   },
   "demographics_history": [
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T22:00:26.952034Z",
-      "confidence": 0.5,
+      "retrieved_at": "2025-06-15T00:00:00Z",
+      "confidence": 0.7,
       "median_age": null,
       "median_household_income": null,
       "owner_occupancy_pct": null,
       "population": 98,
       "data_year": 2010,
-      "geography_level": "neighborhood"
+      "geography_level": "neighborhood (Star Island, Miami Beach, Miami-Dade County, FL) — 2010 census population 98; area 0.134 sq mi. Median age, median household income, and owner-occupancy % not provided in the content. Limitation: 2010 census data only; no income, age, or occupancy statistics were stated in the sources."
     }
   ],
   "proximity": [
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T22:00:26.952039Z",
+      "retrieved_at": "2026-10-07T02:26:10.752711Z",
       "confidence": 0.5,
       "category": "school",
       "nearest_name": "South Pointe Elementary School",
@@ -193,7 +292,7 @@
     },
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T22:00:26.952042Z",
+      "retrieved_at": "2026-10-07T02:26:10.752715Z",
       "confidence": 0.5,
       "category": "school",
       "nearest_name": "Nautilus Middle School",
@@ -201,7 +300,7 @@
     },
     {
       "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)",
-      "retrieved_at": "2026-10-06T22:00:26.952043Z",
+      "retrieved_at": "2026-10-07T02:26:10.752716Z",
       "confidence": 0.5,
       "category": "school",
       "nearest_name": "Miami Beach High School",
@@ -209,7 +308,47 @@
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:14:48.577479Z",
+      "retrieved_at": "2026-10-07T02:33:03.691231Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami Financial District and Downtown Miami",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:33:03.691234Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "South Beach",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:33:03.691236Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:33:03.691237Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Port of Miami",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:35:27.522426Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "South Beach / Downtown Miami",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:37:58.934664Z",
       "confidence": 0.5,
       "category": "shopping",
       "nearest_name": "South Beach / mainland Miami",
@@ -217,15 +356,31 @@
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814549Z",
+      "retrieved_at": "2026-10-07T02:37:58.934668Z",
       "confidence": 0.5,
-      "category": "school",
-      "nearest_name": "Three schools on the island",
+      "category": "other",
+      "nearest_name": "Miami Beach Police Department (law enforcement jurisdiction)",
       "distance_miles": null
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814554Z",
+      "retrieved_at": "2026-10-07T02:39:52.795084Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Three schools on Star Island",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:39:52.795087Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "South Beach (restaurants and nightlife)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:39:52.795089Z",
       "confidence": 0.5,
       "category": "other",
       "nearest_name": "Downtown Miami Beach (via MacArthur Causeway)",
@@ -233,15 +388,97 @@
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T22:16:15.814555Z",
+      "retrieved_at": "2026-10-07T02:39:52.795090Z",
       "confidence": 0.5,
       "category": "shopping",
-      "nearest_name": "South Beach (world-class restaurants and bustling night scene)",
+      "nearest_name": "South Beach (world-class restaurants and boutique shopping)",
       "distance_miles": null
     }
   ],
   "open_questions": [],
   "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/stimbfl/about_hoa/",
+          "retrieved_at": "2025-06-15T00:00:00+00:00"
+        },
+        {
+          "amount": 25.0,
+          "period": "one-time",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T02:35:27.522402+00:00"
+        },
+        {
+          "amount": 3495.0,
+          "period": "nightly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T02:37:12.923135+00:00"
+        },
+        {
+          "amount": 4595.0,
+          "period": "nightly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T02:37:12.923143+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T02:37:58.934644+00:00"
+        }
+      ],
+      "detected_at": "2026-10-07T02:39:52.795895Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Miami Financial District and Downtown Miami",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "South Beach",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami International Airport",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Port of Miami",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "South Beach / Downtown Miami",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami Beach Police Department (law enforcement jurisdiction)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "South Beach (restaurants and nightlife)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Downtown Miami Beach (via MacArthur Causeway)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-07T02:39:52.795901Z"
+    },
     {
       "field": "proximity.school",
       "values": [
@@ -261,12 +498,12 @@
           "source_url": "https://en.wikipedia.org/wiki/Star_Island_(Miami_Beach)"
         },
         {
-          "nearest_name": "Three schools on the island",
-          "distance_miles": null,
+          "nearest_name": "Three schools on Star Island",
+          "distance_miles": 0.0,
           "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T22:16:15.815324Z"
+      "detected_at": "2026-10-07T02:39:52.795904Z"
     },
     {
       "field": "proximity.shopping",
@@ -277,14 +514,14 @@
           "source_url": "browser:google"
         },
         {
-          "nearest_name": "South Beach (world-class restaurants and bustling night scene)",
+          "nearest_name": "South Beach (world-class restaurants and boutique shopping)",
           "distance_miles": null,
           "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T22:16:15.815326Z"
+      "detected_at": "2026-10-07T02:39:52.795906Z"
     }
   ],
-  "created_at": "2026-10-06T22:00:26.952529Z",
-  "updated_at": "2026-10-06T22:16:15.815378Z"
+  "created_at": "2026-10-07T02:26:10.753250Z",
+  "updated_at": "2026-10-07T02:39:52.795960Z"
 }

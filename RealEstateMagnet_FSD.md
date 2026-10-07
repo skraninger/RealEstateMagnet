@@ -70,7 +70,7 @@ Installation/
 
 ---
 
-## 1c. Project Status (updated 2026-10-03)
+## 1c. Project Status (updated 2026-10-07)
 
 | Phase | Status | Where | Verified by |
 |-------|--------|-------|-------------|
@@ -81,7 +81,16 @@ Installation/
 | 5. API | Not started | `modules/api/` (stub) | — |
 | B. Community Research Assistant (Workstream B) | ✅ Harness implemented + live tested 2026-10-03; LLM-powered discovery + multimodal vision added 2026-10-03 | `modules/community/`, `Documents/Community_Research_Plan.md` | `tests/test_community.py` (48 tests) + live run (532s, 43 tool calls) |
 
-**Full suite:** `python -m pytest tests/ -q` → **167 passed** (offline; no network needed).
+**Full suite:** `python -m pytest tests/ -q` → **297 passed** (offline; no network needed).
+
+**Pipeline schema (2026-10-07):** the full pipeline is now database-first. All
+known communities are registered in `communities` up front, per-community
+progress is tracked in `community_pipeline_status` (flagged `processing` →
+`completed`), per-condenser results live in `community_condenser_runs`, and every
+URL inspected for a community is linked in the `community_urls` join table. A
+restart resumes at the first community that has not been completed. See §3b/§3c.
+Run the migration with `python migrate_database.py` (also runs automatically on
+pipeline/viewer startup; idempotent and additive).
 
 **Phase 2 quick reference (implemented per `Documents/Phase2_Ingestion_Plan.md`):**
 ```bash
@@ -175,6 +184,27 @@ Every fact recorded by the Research Assistant is stored with provenance (`source
 | `community_demographics.*` | Numeric/Text | Median age, median household income, owner-occupancy %, population, data year (ACS) |
 | `proximity_metrics.category` | Text | `shopping`, `library`, `hospital`, `school`, … with nearest facility name + distance (miles) |
 | `research_log.*`     | JSONB/Timestamp | Raw query, URL read, extracted JSON, agent id — full audit trail per research session |
+| `community_pipeline_status.*` | Text/Int/Timestamp | Per-community processing flag: `status` (`pending`/`processing`/`partial`/`completed`/`failed`), `sort_order`, `attempts`, `started_at`, `completed_at`, `last_error`. Source of truth for resumable runs. |
+| `community_condenser_runs.*` | Text/Int/Timestamp | One row per `(community, condenser)` step: status, elapsed, fees/amenities/proximity counts, demographics flag, errors. Replaces `pipeline_state.json`. |
+| `community_urls.*`   | Int/FK/Timestamp | Many-to-many link between a community and each inspected URL (`source_urls`), with `discovered_by`, `inspected`, per-link status and quality score. |
+
+### 3c. Pipeline processing model (Workstream B)
+
+The full pipeline is **database-first and community-oriented**:
+
+1. **Register** every known community (`communities` + `community_pipeline_status`,
+   status `pending`) before any processing, assigning a stable `sort_order`.
+2. Mark a community **`processing`** while its condensers run. Every URL inspected
+   for it is linked in `community_urls` (the same URL may belong to several
+   communities).
+3. Mark it **`completed`** once every selected condenser has finished (`done`, or
+   `skipped` when inapplicable — e.g. Gemini without an API key). Errors leave it
+   `partial` so a later run retries.
+4. A restart selects the **first community whose status is not `completed`**
+   (ordered by `sort_order`) and resumes only its unfinished condensers.
+
+`source_urls` remains the canonical URL registry (deduplicated by URL); its legacy
+`community_slug` column is retained and backfilled into `community_urls`.
 
 ---
 

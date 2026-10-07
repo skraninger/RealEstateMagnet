@@ -91,6 +91,7 @@ def _make_tools(
     page_max_chars: int,
     enable_screenshot: bool = False,
     url_tracker: Any | None = None,
+    community_slug: str | None = None,
 ) -> list[Callable]:
     async def web_search(query: str) -> str:
         """Search the web for information about a gated community (fees, amenities, demographics, nearby services)."""
@@ -100,7 +101,9 @@ def _make_tools(
         # Register URLs immediately when discovered
         if url_tracker and results:
             urls = [r.url for r in results]
-            url_tracker.register_urls(urls, discovered_by="research_agent")
+            url_tracker.register_urls(
+                urls, discovered_by="research_agent", community_slug=community_slug
+            )
         
         if not results:
             return "No results."
@@ -122,6 +125,7 @@ def _make_tools(
                 data_types_found=quality_metrics["data_types_found"],
                 data_summary=quality_metrics["data_summary"],
                 status="printed",
+                community_slug=community_slug,
             )
         elif url_tracker and not text:
             # Record failure if page couldn't be read
@@ -129,7 +133,8 @@ def _make_tools(
                 url,
                 status="failed",
                 error_message="Page could not be read",
-                http_status=400
+                http_status=400,
+                community_slug=community_slug,
             )
         
         return text or "(page could not be read)"
@@ -219,7 +224,14 @@ class CommunityResearchAgent:
             output_type=CommunityFacts,
             system_prompt=SYSTEM_PROMPT,
             retries=2,
-            tools=_make_tools(calls.append, self.max_results, self.page_max_chars, self.enable_screenshot, self.url_tracker),
+            tools=_make_tools(
+                calls.append,
+                self.max_results,
+                self.page_max_chars,
+                self.enable_screenshot,
+                self.url_tracker,
+                identity.get("slug"),
+            ),
         )
         prompt = self.build_prompt(identity)
         result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})

@@ -321,6 +321,33 @@ except sqlite3.OperationalError:
     # source_urls table doesn't exist yet
     pass
 
+# Pipeline status + URL↔community links (new schema)
+try:
+    cursor.execute('SELECT status, COUNT(*) FROM community_pipeline_status GROUP BY status')
+    pipeline_rows = cursor.fetchall()
+
+    print('')
+    print('  Pipeline Status:')
+    if pipeline_rows:
+        for status, count in pipeline_rows:
+            print(f'    {status}: {count}')
+    else:
+        print('    (no statuses recorded yet)')
+
+    cursor.execute('SELECT COUNT(*) FROM community_urls')
+    link_count = cursor.fetchone()[0]
+    cursor.execute('SELECT COUNT(DISTINCT url_id) FROM community_urls')
+    linked_url_count = cursor.fetchone()[0]
+    print(f'    URL↔community links: {link_count} ({linked_url_count} unique URLs)')
+
+    cursor.execute('SELECT community_slug, sort_order FROM community_pipeline_status WHERE status != ? ORDER BY sort_order LIMIT 1', ('completed',))
+    next_row = cursor.fetchone()
+    if next_row:
+        print(f'    Next incomplete: {next_row[0]} (order {next_row[1]})')
+except sqlite3.OperationalError:
+    # new-schema tables don't exist yet
+    pass
+
 conn.close()
 "@
 

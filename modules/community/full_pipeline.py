@@ -60,7 +60,7 @@ from typing import Any, Callable, Optional
 from pydantic import BaseModel, Field
 
 from .agent import CommunityResearchAgent
-from .database import CommunityDatabase
+from .database import TERMINAL_OK_STATUSES, CommunityDatabase
 from .models import (
     AI_SOURCE_URL,
     BROWSER_SOURCE_URL,
@@ -181,8 +181,13 @@ def _discover_all_communities(
     store: CommunityStore,
     database: CommunityDatabase,
     discovery_state_path: Path | None = None,
+    state_path: Path | None = None,
 ) -> list[CommunityInfo]:
-    """Gather communities from every known source, deduplicated by slug."""
+    """Gather communities from every known source, deduplicated by slug.
+
+    Sources (priority order): target_list.json, discovery_state.json, the
+    database, and the legacy ``pipeline_state.json`` (used once for migration).
+    """
     seen: dict[str, CommunityInfo] = {}
 
     # Source 1: target_list.json
@@ -230,6 +235,24 @@ def _discover_all_communities(
                 )
     except Exception as exc:
         logger.warning("Could not list database records: %s", exc)
+
+    # Source 4: legacy pipeline_state.json (identity only — used for migration)
+    if state_path is not None and Path(state_path).exists():
+        try:
+            data = json.loads(Path(state_path).read_text(encoding="utf-8"))
+            for dc in data.get("communities", []):
+                name = dc.get("name", "")
+                slug = dc.get("slug") or slugify(name)
+                if slug and slug not in seen:
+                    seen[slug] = CommunityInfo(
+                        name=name,
+                        slug=slug,
+                        city=dc.get("city"),
+                        county=dc.get("county"),
+                        source="pipeline_state",
+                    )
+        except Exception as exc:
+            logger.warning("Could not read pipeline state: %s", exc)
 
     return list(seen.values())
 
@@ -474,7 +497,9 @@ async def _run_browser_condenser(
 
             # Register URLs immediately when discovered
             urls = [sr.url for sr in search_results]
-            url_tracker.register_urls(urls, discovered_by="browser_condenser")
+            url_tracker.register_urls(
+                urls, discovered_by="browser_condenser", community_slug=info.slug
+            )
 
             # Read top 2 results
             for sr in search_results[:2]:
@@ -486,7 +511,8 @@ async def _run_browser_condenser(
                         sr.url,
                         status="failed",
                         error_message="Page could not be read",
-                        http_status=400
+                        http_status=400,
+                        community_slug=info.slug,
                     )
                     continue
                 
@@ -496,7 +522,8 @@ async def _run_browser_condenser(
                         sr.url,
                         status="failed",
                         error_message="Empty page content",
-                        http_status=400
+                        http_status=400,
+                        community_slug=info.slug,
                     )
                     continue
 
@@ -510,6 +537,7 @@ async def _run_browser_condenser(
                     data_types_found=quality_metrics["data_types_found"],
                     data_summary=quality_metrics["data_summary"],
                     status="printed",
+                    community_slug=info.slug,
                 )
 
                 extraction_prompt = (
@@ -684,6 +712,9 @@ class FullPipeline:
         self.store = store or CommunityStore()
         self.database = database or CommunityDatabase()
         self.condensers = condensers or list(ALL_CONDENSERS)
+        # Completion is judged against the full condenser set, so a partial
+        # subset run (e.g. --condensers ai) never marks a community complete.
+        self.completion_condensers = list(ALL_CONDENSERS)
         self.discovery_state_path = Path(discovery_state_path) if discovery_state_path else None
         self.url_tracker = url_tracker or URLTracker(self.database)
         self.on_progress = on_progress
@@ -697,39 +728,66 @@ class FullPipeline:
         logger.info(message)
 
     def init_state(self, reset: bool = False) -> PipelineState:
-        """Initialise or reload pipeline state."""
-        if reset and self.state_path.exists():
-            self.state_path.unlink()
-            self._log("Pipeline state reset.")
+        """Load state, register every discovered community, optionally reset.
 
+        The database is the source of truth for progress; ``pipeline_state.json``
+        is kept as a human-readable mirror and one-time migration input. A reset
+        clears progress but never discards community identity or collected data.
+        """
         state = PipelineState.load(self.state_path)
 
-        if not state.communities or reset:
-            # Discover all communities from every source
-            communities = _discover_all_communities(
-                self.store, self.database, self.discovery_state_path
-            )
-            self._log(f"Discovered {len(communities)} communities from all sources")
-            for c in communities:
-                self._log(f"  [{c.source}] {c.name} ({c.city or '?'})")
+        # Discover every known community (identity only) and merge with the
+        # mirror, preserving prior order.
+        discovered = _discover_all_communities(
+            self.store, self.database, self.discovery_state_path, self.state_path
+        )
+        self._log(f"Discovered {len(discovered)} communities from all sources")
 
-            state.communities = communities
-            state.condensers = list(self.condensers)
+        ordered = list(state.communities)
+        seen = {c.slug for c in ordered}
+        for c in discovered:
+            if c.slug not in seen:
+                ordered.append(c)
+                seen.add(c.slug)
+        state.communities = ordered
+        state.condensers = list(self.condensers)
 
-            # Initialise results for each community
-            for ci in communities:
-                if ci.slug not in state.results:
-                    state.results[ci.slug] = {}
-                for cond in state.condensers:
-                    if cond not in state.results[ci.slug]:
-                        state.results[ci.slug][cond] = CondenserStepResult()
+        # Record every community in the database (duplicate-safe + sort order).
+        n = self.database.register_communities(
+            [
+                {
+                    "name": c.name,
+                    "slug": c.slug,
+                    "city": c.city,
+                    "county": c.county,
+                    "source": c.source,
+                }
+                for c in state.communities
+            ]
+        )
+        self._log(f"Registered {n} communities in the database")
 
-            if not state.started_at or reset:
-                state.started_at = _now_iso()
-                state.stats.started_at = _now_iso()
+        if reset:
+            self.database.reset_all_statuses()
+            self.database.reset_condenser_runs()
+            state.stats = PipelineStats()
+            state.started_at = None
+            for slug, results in state.results.items():
+                for cond in list(results):
+                    results[cond] = CondenserStepResult()
+            self._log("Pipeline progress reset (community data retained).")
 
-            state.save(self.state_path)
+        # Initialise the reporting mirror for each community/condenser.
+        for ci in state.communities:
+            state.results.setdefault(ci.slug, {})
+            for cond in state.condensers:
+                state.results[ci.slug].setdefault(cond, CondenserStepResult())
 
+        if not state.started_at:
+            state.started_at = _now_iso()
+            state.stats.started_at = _now_iso()
+
+        state.save(self.state_path)
         return state
 
     async def run(
@@ -737,98 +795,129 @@ class FullPipeline:
         community: Optional[str] = None,
         reset: bool = False,
     ) -> PipelineState:
-        """Run the full pipeline.
+        """Run the pipeline, resuming at the first community not completed.
+
+        Communities are processed in ``community_pipeline_status.sort_order``.
+        Each is flagged ``processing`` while its condensers run and
+        ``completed`` once every condenser in ``self.completion_condensers`` has
+        finished (``done`` or ``skipped``). Every URL inspected for a community
+        is linked to it in the ``community_urls`` table.
 
         Args:
             community: If set, only process communities matching this name.
-            reset: If True, discard existing state and start fresh.
+            reset: If True, clear progress (data retained) and start fresh.
 
         Returns:
-            Final pipeline state.
+            Final pipeline state (reporting mirror).
         """
         state = self.init_state(reset=reset)
 
-        # Filter communities if requested
+        # Recover communities interrupted mid-run so they resume cleanly.
+        stale = self.database.reset_stale_processing()
+        if stale:
+            self._log(f"Recovered {stale} interrupted community(ies) for resume.")
+
+        # Ordered target list (from the database, the source of truth).
+        statuses = self.database.list_pipeline_statuses()
         if community is not None:
             needle = community.lower()
-            target_slugs = {
-                ci.slug for ci in state.communities if needle in ci.name.lower()
-            }
-            if not target_slugs:
+            statuses = [
+                s
+                for s in statuses
+                if needle in s["name"].lower() or needle in s["slug"]
+            ]
+            if not statuses:
                 self._log(f"No communities matching '{community}'")
                 return state
-        else:
-            target_slugs = set(state.community_slugs())
 
-        # Compute work list: (slug, condenser) pairs still to run
-        pending = state.pending_work()
-        pending = [(s, c) for s, c in pending if s in target_slugs]
+        # Only communities not yet completed, in order — this starts at the
+        # first community that has not been completed.
+        pending_targets = [s for s in statuses if s["status"] != "completed"]
+        target_slugs = {s["slug"] for s in statuses}
 
-        total = len(pending)
-        if total == 0:
-            self._log("Nothing to do — all condensers have been run.")
+        if not pending_targets:
+            self._log("Nothing to do — all target communities are completed.")
             return state
+
+        # Total condenser steps remaining across the pending communities.
+        total_steps = 0
+        for target in pending_targets:
+            runs = self.database.condenser_statuses(target["slug"])
+            total_steps += sum(
+                1 for c in state.condensers if runs.get(c) not in TERMINAL_OK_STATUSES
+            )
 
         self._log(
             f"\n{'=' * 70}\n"
-            f"FULL PIPELINE — {len(target_slugs)} communities × "
-            f"{len(state.condensers)} condensers = {total} steps\n"
+            f"FULL PIPELINE — {len(pending_targets)} community(ies) to process "
+            f"(starting at: {pending_targets[0]['name']})\n"
+            f"Condensers: {', '.join(state.condensers)} "
+            f"({total_steps} steps remaining this run)\n"
             f"{'=' * 70}"
         )
 
         done = 0
-        current_slug = None
 
-        for slug, condenser_name in pending:
-            # Track community transitions
-            if slug != current_slug:
-                if current_slug is not None:
-                    self._log("")  # blank line between communities
-                current_slug = slug
-                ci = next(c for c in state.communities if c.slug == slug)
-                progress = state.community_progress(slug)
-                done_count = sum(1 for s in progress.values() if s == "done")
-                total_count = len(progress)
-                self._log(
-                    f"\n{'─' * 60}\n"
-                    f"Community: {ci.name} [{ci.city or '?'}] "
-                    f"({done_count}/{total_count} condensers done)\n"
-                    f"{'─' * 60}"
+        for target in pending_targets:
+            slug = target["slug"]
+            ci = next((c for c in state.communities if c.slug == slug), None)
+            if ci is None:
+                ci = CommunityInfo(
+                    name=target["name"],
+                    slug=slug,
+                    city=target["city"],
+                    source="database",
                 )
-                if self.on_community_start:
-                    self.on_community_start(slug, condenser_name)
+                state.communities.append(ci)
 
-            label = _CONDENSER_LABELS.get(condenser_name, condenser_name)
-            self._log(f"  ▶ [{condenser_name}] {label}...")
+            # Ensure the filesystem record exists, then flag the community.
+            _ensure_community_record(ci, self.store, self.database)
+            self.database.mark_processing(slug)
 
-            # Mark as running
-            state.results[slug][condenser_name].status = "running"
-            state.save(self.state_path)
+            runs = self.database.condenser_statuses(slug)
+            completed_count = sum(
+                1 for v in runs.values() if v in TERMINAL_OK_STATUSES
+            )
+            self._log(
+                f"\n{'─' * 60}\n"
+                f"Community: {ci.name} [{ci.city or '?'}] "
+                f"({completed_count}/{len(self.completion_condensers)} condensers done)\n"
+                f"{'─' * 60}"
+            )
+            if self.on_community_start:
+                self.on_community_start(slug, "")
 
-            # Run the condenser
-            runner = _CONDENSER_RUNNERS.get(condenser_name)
-            if runner is None:
-                self._log(f"  ✗ Unknown condenser: {condenser_name}")
-                state.results[slug][condenser_name].status = "skipped"
-                state.results[slug][condenser_name].errors.append(
-                    f"Unknown condenser: {condenser_name}"
-                )
-                state.stats.skipped += 1
-            else:
-                ci = next(c for c in state.communities if c.slug == slug)
-                # Ensure record exists before running
-                _ensure_community_record(ci, self.store, self.database)
+            for condenser_name in state.condensers:
+                # Resume: skip condensers already finished on a prior run.
+                if runs.get(condenser_name) in TERMINAL_OK_STATUSES:
+                    self._log(f"  ↻ [{condenser_name}] already done — skipping")
+                    continue
 
-                step_result = await runner(
-                    ci,
-                    self.store,
-                    self.database,
-                    url_tracker=self.url_tracker,
-                    on_progress=self.on_progress,
-                )
+                label = _CONDENSER_LABELS.get(condenser_name, condenser_name)
+                self._log(f"  ▶ [{condenser_name}] {label}...")
+
+                state.results.setdefault(slug, {})[
+                    condenser_name
+                ] = CondenserStepResult(status="running")
+                state.save(self.state_path)
+
+                runner = _CONDENSER_RUNNERS.get(condenser_name)
+                if runner is None:
+                    step_result = CondenserStepResult(status="skipped")
+                    step_result.errors.append(f"Unknown condenser: {condenser_name}")
+                else:
+                    step_result = await runner(
+                        ci,
+                        self.store,
+                        self.database,
+                        url_tracker=self.url_tracker,
+                        on_progress=self.on_progress,
+                    )
+
+                # Persist to the database (authoritative) + reporting mirror.
+                self.database.record_condenser_run(slug, condenser_name, step_result)
                 state.results[slug][condenser_name] = step_result
 
-                # Update stats
                 state.stats.total_runs += 1
                 if step_result.status == "done":
                     state.stats.successful += 1
@@ -840,29 +929,46 @@ class FullPipeline:
                 elif step_result.status == "skipped":
                     state.stats.skipped += 1
                     self._log(
-                        f"  ⊘ [{condenser_name}] skipped: {step_result.errors[0] if step_result.errors else '?'}"
+                        f"  ⊘ [{condenser_name}] skipped: "
+                        f"{step_result.errors[0] if step_result.errors else '?'}"
                     )
                 elif step_result.status == "error":
                     state.stats.failed += 1
                     self._log(
-                        f"  ✗ [{condenser_name}] FAILED: {step_result.errors[0] if step_result.errors else '?'}"
+                        f"  ✗ [{condenser_name}] FAILED: "
+                        f"{step_result.errors[0] if step_result.errors else '?'}"
                     )
 
                 if self.on_community_done:
                     self.on_community_done(slug, condenser_name, step_result)
 
-            # Save state after every step
-            done += 1
-            state.save(self.state_path)
+                done += 1
+                state.save(self.state_path)
+                self._log(f"  [Progress: {done}/{total_steps} steps this run]")
 
-            self._log(
-                f"  [Progress: {done}/{total} steps complete]"
-            )
+            # Completion is judged across the full condenser set.
+            if self.database.community_is_complete(slug, self.completion_condensers):
+                self.database.mark_completed(slug)
+                self._log(f"  ✓ Community complete: {ci.name}")
+            else:
+                runs_after = self.database.condenser_statuses(slug)
+                incomplete = [
+                    c
+                    for c in self.completion_condensers
+                    if runs_after.get(c) not in TERMINAL_OK_STATUSES
+                ]
+                self.database.mark_partial(
+                    slug, error=f"pending condensers: {', '.join(incomplete)}"
+                )
+                self._log(
+                    f"  • Community partial: {ci.name} "
+                    f"(pending: {', '.join(incomplete)})"
+                )
 
         # Pipeline complete
         self._log(
             f"\n{'=' * 70}\n"
-            f"PIPELINE COMPLETE\n"
+            f"PIPELINE RUN COMPLETE\n"
             f"  Total runs: {state.stats.total_runs}\n"
             f"  Successful: {state.stats.successful}\n"
             f"  Failed:     {state.stats.failed}\n"
@@ -870,31 +976,50 @@ class FullPipeline:
             f"{'=' * 70}"
         )
 
-        # Print per-community summary
+        # Per-community summary (from the database, filtered to targets).
         self._log("\nPer-community summary:")
-        for ci in state.communities:
-            if ci.slug not in target_slugs:
+        final_statuses = {
+            s["slug"]: s for s in self.database.list_pipeline_statuses()
+        }
+        for slug in [s["slug"] for s in statuses]:
+            info = final_statuses.get(slug)
+            if info is None:
                 continue
-            progress = state.community_progress(ci.slug)
-            done_items = []
-            for cond, status in progress.items():
-                icon = {"done": "✓", "error": "✗", "skipped": "⊘", "pending": "·", "running": "▶"}.get(
-                    status, "?"
-                )
-                done_items.append(f"{icon}{cond}")
-            self._log(f"  {ci.name}: {' '.join(done_items)}")
+            runs = self.database.get_condenser_runs(slug)
+            marks = []
+            for cond in self.completion_condensers:
+                st = runs.get(cond, {}).get("status", "pending")
+                icon = {
+                    "done": "✓",
+                    "error": "✗",
+                    "skipped": "⊘",
+                    "pending": "·",
+                    "running": "▶",
+                }.get(st, "?")
+                marks.append(f"{icon}{cond}")
+            self._log(f"  {info['name']}: {' '.join(marks)}  [{info['status']}]")
 
-        # Print database summary
+        # Database summary
         try:
             db_summary = self.database.summary()
-            self._log(f"\nDatabase summary:")
+            self._log("\nDatabase summary:")
             self._log(f"  Total communities: {db_summary.get('total_communities', '?')}")
             self._log(f"  Gated: {db_summary.get('gated_count', '?')}")
             self._log(f"  With fees: {db_summary.get('with_fees', '?')}")
             self._log(f"  With amenities: {db_summary.get('with_amenities', '?')}")
             self._log(f"  With demographics: {db_summary.get('with_demographics', '?')}")
+            statuses_summary = db_summary.get("pipeline_statuses") or {}
+            if statuses_summary:
+                self._log(
+                    "  Pipeline status: "
+                    + ", ".join(f"{k}={v}" for k, v in statuses_summary.items())
+                )
+            self._log(f"  URLs linked to communities: {db_summary.get('linked_urls', '?')}")
         except Exception as exc:
             self._log(f"  (Could not get DB summary: {exc})")
+
+        # Keep target_slugs referenced for clarity in logs (unused otherwise).
+        logger.debug("targets: %s", target_slugs)
 
         if self.on_pipeline_done:
             self.on_pipeline_done(state)
@@ -905,22 +1030,37 @@ class FullPipeline:
 # ── CLI ──────────────────────────────────────────────────────────────────────
 
 
-def _print_status(state: PipelineState) -> None:
-    """Print a human-readable status report."""
+def _print_status(
+    database: CommunityDatabase,
+    state: Optional[PipelineState] = None,
+) -> None:
+    """Print a progress report from the database (source of truth)."""
+    statuses = database.list_pipeline_statuses()
+    status_counts: dict[str, int] = {}
+    community_progress: dict[str, Any] = {}
+    for s in statuses:
+        status_counts[s["status"]] = status_counts.get(s["status"], 0) + 1
+        runs = database.get_condenser_runs(s["slug"])
+        community_progress[s["slug"]] = {
+            "name": s["name"],
+            "city": s["city"],
+            "status": s["status"],
+            "sort_order": s["sort_order"],
+            "condensers": {
+                c: runs.get(c, {}).get("status", "pending")
+                for c in ALL_CONDENSERS
+            },
+        }
+
     print(json.dumps({
-        "started_at": state.started_at,
-        "last_updated": state.last_updated,
-        "communities": len(state.communities),
-        "condensers": state.condensers,
-        "stats": state.stats.model_dump(),
-        "community_progress": {
-            ci.slug: {
-                "name": ci.name,
-                "city": ci.city,
-                "condensers": state.community_progress(ci.slug),
-            }
-            for ci in state.communities
-        },
+        "started_at": state.started_at if state else None,
+        "last_updated": _now_iso(),
+        "communities": len(statuses),
+        "condensers": list(ALL_CONDENSERS),
+        "status_counts": status_counts,
+        "next_incomplete": database.next_incomplete_community(),
+        "stats": state.stats.model_dump() if state else {},
+        "community_progress": community_progress,
     }, indent=2))
 
 
@@ -964,6 +1104,18 @@ async def _main(argv: Optional[list[str]] = None) -> None:
     database = CommunityDatabase(args.db_path)
     database.create_tables()
 
+    # One-time (idempotent) migration of legacy data into the new schema.
+    try:
+        from .migration import migrate_database
+
+        migrate_database(
+            db=database,
+            state_path=Path(args.state_path),
+            verbose=True,
+        )
+    except Exception as exc:  # pragma: no cover - defensive
+        logging.getLogger(__name__).warning("Migration skipped: %s", exc)
+
     condensers = args.condensers.split(",") if args.condensers else None
 
     url_tracker = URLTracker(database)
@@ -978,7 +1130,7 @@ async def _main(argv: Optional[list[str]] = None) -> None:
 
     if args.status:
         state = pipeline.init_state()
-        _print_status(state)
+        _print_status(database, state)
         return
 
     await pipeline.run(community=args.community, reset=args.reset)

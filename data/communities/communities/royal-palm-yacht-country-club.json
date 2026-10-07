@@ -1,219 +1,244 @@
 {
-  "id": "cb7cc5ab-d9e6-4789-8e61-4c02d0903e97",
+  "id": "380f1879-c3da-4b47-960e-869897c59a4d",
   "identity": {
     "name": "Royal Palm Yacht & Country Club",
     "slug": "royal-palm-yacht-country-club",
     "county_fips": null,
-    "city": "Boca Raton",
+    "city": "Boca Raton, FL",
     "hoa_name": "Royal Palm Improvement Association, Inc. (RPIA)",
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": "A prestigious ~450-acre gated country-club community in Boca Raton, FL, with ~742 lots and ~680 homes. Features waterfront, golf-course, and interior lots. Homes range from 3-7 bedrooms, 2,240–11,471 sq ft. Median sold price rose from $3.4M (2017) to ~$9M (2026). The community includes an optional private club with yacht club, marina, golf, tennis, and country club amenities. 24/7 armed security and guarded entrances."
+    "notes": "Prestigious limited-access, gated community in Boca Raton (33432) of approximately 742 lots / ~680 homes on a 450-acre layout with waterfront, golf-course, and interior lots. Gated via a private motor court with 24/7 armed security patrols and guarded entrances. The official HOA, RPIA (1650 S. Dixie Highway, Suite 100, Boca Raton, FL 33432; rpia.net), enforces architectural standards. Median sold price rose from $3.4M (2017) to $9M (2026). The private Royal Palm Yacht & Country Club (since 1959) offers optional membership with yacht club, marina, country club, golf, tennis, wellness center, and dining."
   },
   "fees": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/rpyccbrfl/about_hoa/",
-      "retrieved_at": "2026-10-06T19:27:55.192236Z",
+      "retrieved_at": "2026-10-07T03:00:50.924181Z",
       "confidence": 0.5,
       "fee_type": "hoa_annual",
       "amount": 4150.0,
-      "period": "annual",
+      "period": "annual (paid July 1)",
       "currency": "USD",
-      "note": "Approximately $4,150 per lot, paid July 1. No historical special assessments noted. Exact fees may vary by lot type; verify with RPIA directly. Club membership is optional and separate from HOA dues."
+      "note": "Approximate HOA dues per lot; no historical special assessments noted; variations by lot type should be verified with RPIA. Club membership is optional and billed separately. Web-extracted from a reputable third-party aggregator, not an official source. Confidence in fact: 0.7"
     },
     {
       "source_url": "https://brealtors.com/boca-raton/royal-palm-yacht-country-club/",
-      "retrieved_at": "2026-10-06T19:27:55.192244Z",
+      "retrieved_at": "2026-10-07T03:00:50.924187Z",
       "confidence": 0.5,
       "fee_type": "hoa_monthly",
       "amount": 346.0,
       "period": "monthly",
       "currency": "USD",
-      "note": "Reported as monthly equivalent of the annual HOA dues. Covers community services and reserves."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:36:08.656860Z",
-      "confidence": 0.5,
-      "fee_type": "hoa_annual",
-      "amount": 4540.0,
-      "period": "Annually",
-      "currency": "USD",
-      "note": "HOA Fees per property listing for 257 Royal Palm Way, Boca Raton, FL 33432 (MLS B26082023). No CDD assessment stated on page; annual taxes listed separately at $82,566/year (not included in HOA fee). Retrieved 2025-06-18T12:00:00Z, confidence 0.95, is_gated true, hoa_name null, demographics null, proximity empty."
+      "note": "Monthly HOA dues averaging about $346, covering community services and reserves (consistent with ~$4,150/lot annually). Web-extracted from a brokerage community page. Confidence in fact: 0.7"
     }
   ],
   "amenities": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/rpyccbrfl/about_hoa/",
-      "retrieved_at": "2026-10-06T19:27:55.192248Z",
+      "retrieved_at": "2026-10-07T03:00:50.924191Z",
       "confidence": 0.5,
-      "amenity": "gated_entry_24_7_security",
-      "detail": "Limited-access community with 24/7 armed security patrols and guarded entrances."
+      "amenity": "gated_entry_24_7_armed_security",
+      "detail": "Limited-access community with private motor court, guarded entrances, and 24/7 armed security patrols. Web-extracted; also corroborated by brealtors.com ('beyond the gates of a private motor court'). Confidence: 0.7"
     },
     {
       "source_url": "https://brealtors.com/boca-raton/royal-palm-yacht-country-club/",
-      "retrieved_at": "2026-10-06T19:27:55.192259Z",
+      "retrieved_at": "2026-10-07T03:00:50.924201Z",
       "confidence": 0.5,
-      "amenity": "golf_course",
-      "detail": "Golf course on the community grounds; part of the private club amenities."
+      "amenity": "golf",
+      "detail": "Golf course community with golf-course and waterfront estates; golf is a key club amenity. Web-extracted; also cited by hoabulletinboard.com. Confidence: 0.7"
     },
     {
       "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192262Z",
-      "confidence": 0.5,
-      "amenity": "tennis_courts",
-      "detail": "Five tennis courts plus a sports court, described as active areas for play."
-    },
-    {
-      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192265Z",
-      "confidence": 0.5,
-      "amenity": "swimming_pool",
-      "detail": "Renovated pool with saline chlorination system (softer water, less irritation), gazebo, shallow wading pool for toddlers, and water features."
-    },
-    {
-      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192268Z",
-      "confidence": 0.5,
-      "amenity": "yacht_club",
-      "detail": "Recently remodeled venue with member dining, flexible event spaces (4 to ~400 guests), two meeting spaces, wine room with sampling area, terrace dining, and fire pit. Views of marina."
-    },
-    {
-      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192270Z",
+      "retrieved_at": "2026-10-07T03:00:50.924204Z",
       "confidence": 0.5,
       "amenity": "marina",
-      "detail": "Private marina on the community waterfront."
+      "detail": "Private marina on campus; Yacht Club offers a commanding view of the marina. Web-extracted from official club site. Confidence: 0.85"
     },
     {
       "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192273Z",
+      "retrieved_at": "2026-10-07T03:00:50.924206Z",
       "confidence": 0.5,
-      "amenity": "two_story_country_club",
-      "detail": "Clubhouse with dining and social spaces."
+      "amenity": "yacht_club_dining_events",
+      "detail": "Recently remodeled Yacht Club hosts everyday member dining and events for 4 to ~400 guests; two meeting spaces, wine room with sampling space, terrace dining, and fire pit. Web-extracted from official club site. Confidence: 0.85"
     },
     {
       "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192277Z",
+      "retrieved_at": "2026-10-07T03:00:50.924209Z",
       "confidence": 0.5,
-      "amenity": "wellness_center",
-      "detail": "Fitness and wellness facility with fitness team offering programs including water aerobics."
+      "amenity": "country_club_clubhouse",
+      "detail": "Two-story Country Club on campus. Web-extracted from official club site; brealtors.com also references clubhouse amenities. Confidence: 0.85"
     },
     {
       "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192279Z",
+      "retrieved_at": "2026-10-07T03:00:50.924212Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Renovated pool with new gazebo, saline chlorination system (softer water), water aerobics with the fitness team, plus shallow toddler area with water features and wading pool; host to parties, youth events, and weddings. Web-extracted from official club site. Confidence: 0.85"
+    },
+    {
+      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
+      "retrieved_at": "2026-10-07T03:00:50.924220Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Five tennis courts, an active area with tennis programs. Web-extracted from official club site; also cited by hoabulletinboard.com and brealtors.com. Confidence: 0.85"
+    },
+    {
+      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
+      "retrieved_at": "2026-10-07T03:00:50.924222Z",
+      "confidence": 0.5,
+      "amenity": "sports_court",
+      "detail": "Sports court steps from the Yacht Club. Web-extracted from official club site. Confidence: 0.85"
+    },
+    {
+      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
+      "retrieved_at": "2026-10-07T03:00:50.924225Z",
+      "confidence": 0.5,
+      "amenity": "wellness_fitness_center",
+      "detail": "Wellness Center on campus; fitness team leads pool water aerobics. Web-extracted from official club site; hoabulletinboard.com also lists fitness among club amenities. Confidence: 0.85"
+    },
+    {
+      "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
+      "retrieved_at": "2026-10-07T03:00:50.924227Z",
       "confidence": 0.5,
       "amenity": "entertainment_patio",
-      "detail": "Outdoor entertainment space on the club campus."
+      "detail": "Entertainment Patio on campus. Web-extracted from official club site. Confidence: 0.85"
     },
     {
       "source_url": "https://www.rpycc.org/since-1959/amenities-activites",
-      "retrieved_at": "2026-10-06T19:27:55.192282Z",
+      "retrieved_at": "2026-10-07T03:00:50.924230Z",
       "confidence": 0.5,
       "amenity": "junior_palmers_kids_area",
-      "detail": "Dedicated kids' space in the Yacht Club with hand-painted Florida wildlife mural, chalkboard wall, gaming stations, dedicated restroom, and S.T.E.A.M. program activities led by a Youth Activities Director."
+      "detail": "Dedicated kids' space in the Yacht Club with hand-painted Florida wildlife mural, chalkboard wall, gaming stations, and dedicated restroom; youth camps, kids' nights, and S.T.E.A.M. program. Web-extracted from official club site. Confidence: 0.85"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:36:08.656870Z",
+      "retrieved_at": "2026-10-07T03:11:35.597755Z",
+      "confidence": 0.5,
+      "amenity": "yacht_club_remodeled",
+      "detail": "Elegant venue for everyday member dining and special events. Flexible spaces host events from 4 to almost 400 guests. Features two meeting spaces, wine room with sampling space, terrace dining, fire pit, and commanding view of the marina. Year-round calendar of social events and activities."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597764Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597767Z",
+      "confidence": 0.5,
+      "amenity": "entertainment_patio",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597769Z",
+      "confidence": 0.5,
+      "amenity": "pool_renovated",
+      "detail": "Renovated pool with new gazebo, saline chlorination system for softer swim. Includes wading pool and water features for toddlers. Host to club parties, youth events, and weddings. Ideal for laps and water aerobics."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597772Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Five tennis courts active with tennis teams, kids programs, and clinics for all experience levels."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597774Z",
+      "confidence": 0.5,
+      "amenity": "sports_court",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597776Z",
+      "confidence": 0.5,
+      "amenity": "wellness_center",
+      "detail": "Personal training, group exercise classes, pilates, and spa services. Cardio and weights area, personal training studio, group exercise studio, and dedicated pilates area with towers and reformers. Hosts nutrition and health lectures, demonstrations, and guest speakers."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597778Z",
+      "confidence": 0.5,
+      "amenity": "country_club_two_story",
+      "detail": "Built around golf. Features a Pro Shop adjacent to the 19th Hole with course and water feature views. Spacious Men's and Women's locker rooms. Shoe service, custom and special orders from the Golf Shop, and pro tips available on the shop's astroturf."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:11:35.597780Z",
       "confidence": 0.5,
       "amenity": "golf_course",
-      "detail": "Jack Nicklaus Signature Golf Course within the community; the featured residence has 92 ft of golf course frontage overlooking the 10th tee. Retrieved 2025-06-18T12:00:00Z, confidence 0.9."
+      "detail": "The club was built around golf, with a 19th Hole bar and views of the course."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:39:29.289913Z",
+      "retrieved_at": "2026-10-07T03:11:35.597783Z",
       "confidence": 0.5,
-      "amenity": "gated_entry",
-      "detail": "Listing describes a 'sprawling, gated setting' with the estate 'behind private walls', consistent with a gated community layout. Note: pool, loggia, and outdoor kitchen features on the page are residence-specific to the 2121 E Maya Palm property, not confirmed community facilities."
+      "amenity": "junior_palmers_kids_space",
+      "detail": "Dedicated kids' room within the Yacht Club with hand-painted Florida wildlife mural, chalkboard wall, gaming stations, and dedicated restroom. Home base for Junior Palmer events, camps, kids' nights, and S.T.E.A.M. program led by a Youth Activities Director."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:39:29.289928Z",
+      "retrieved_at": "2026-10-07T03:13:44.577078Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Jack Nicklaus signature golf course; 221 golf course homesites in the community; golf among listed outdoor amenities. Developed by Arvida Corporation from Arthur Vining Davis's land holdings (1958). Contact: (561) 368-6200, 741 East Palmetto Park Road, Boca Raton, FL 33432. Homeownership is separate from club membership and not mandatory; RPYCC Homeowner's Association (RPIA) at www.RPIA.net; Membership Services contact Michael Shanely, (561) 210-8146, mshanley@rpycc.org."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:13:44.577098Z",
       "confidence": 0.5,
       "amenity": "yacht_club",
-      "detail": "Indicated by the community name 'Royal Palm Yacht & Country Club'; not explicitly detailed on the page."
+      "detail": "World-class yachting facility with direct Ocean and Intracoastal access; 229 waterfront/Intracoastal homesites. RPYCC is described as South Florida's most prestigious neighborhood where the past meets the present. Community includes 299 interior, 221 golf course, and 229 waterfront/Intracoastal homesites, with ocean swimming, fishing, golf and tennis available. Contact: david@royalpalm.com / nicholas@royalpalm.com, (561) 368-6200."
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:39:29.289936Z",
+      "retrieved_at": "2026-10-07T03:13:44.577107Z",
       "confidence": 0.5,
-      "amenity": "golf_country_club",
-      "detail": "Indicated by the community name 'Royal Palm Yacht & Country Club'; not explicitly detailed on the page."
+      "amenity": "tennis",
+      "detail": "Tennis listed among the community's outdoor entertainment options ('Golf or tennis, fishing or yachting, swimming in the ocean… whatever you choose in the world of outdoor entertainment, is conveniently here for you to enjoy.' Homeownership is separate from club membership and not mandatory.)"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:40:50.981554Z",
+      "retrieved_at": "2026-10-07T03:13:44.577115Z",
       "confidence": 0.5,
-      "amenity": "golf_course",
-      "detail": "Golf courses are listed among the community's luxurious amenities for residents and guests."
+      "amenity": "fishing",
+      "detail": "Fishing listed among the community's outdoor entertainment options ('Golf or tennis, fishing or yachting, swimming in the ocean… whatever you choose in the world of outdoor entertainment, is conveniently here for you to enjoy.' Homeownership is separate from club membership and not mandatory.)"
     },
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:40:50.981564Z",
+      "retrieved_at": "2026-10-07T03:13:44.577123Z",
       "confidence": 0.5,
-      "amenity": "fitness_center",
-      "detail": "Listed among the amenities offered with the corporate apartments/community."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:40:50.981567Z",
-      "confidence": 0.5,
-      "amenity": "recreational_facilities",
-      "detail": "Recreational facilities available within the community, along with fine dining."
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:40:50.981569Z",
-      "confidence": 0.5,
-      "amenity": "covered_parking",
-      "detail": "Covered parking listed among apartment/community amenities."
+      "amenity": "ocean_swimming",
+      "detail": "Direct Ocean access for swimming; the community has acres with direct Ocean and Intracoastal access. RPYCC is conveniently located in East Boca Raton, directly across from The Boca Raton Resort & Club, and minutes from fantastic shopping and fine dining in Mizner Park."
     }
   ],
-  "demographics": {
-    "source_url": "https://www.hoabulletinboard.com/hoa/rpyccbrfl/about_hoa/",
-    "retrieved_at": "2026-10-06T19:27:55.192287Z",
-    "confidence": 0.6,
-    "median_age": null,
-    "median_household_income": null,
-    "owner_occupancy_pct": null,
-    "population": 680,
-    "data_year": null,
-    "geography_level": "community (approx. 680 homes / 742 lots)"
-  },
+  "demographics": null,
   "demographics_history": [],
   "proximity": [
     {
       "source_url": "browser:google",
-      "retrieved_at": "2026-10-06T19:40:50.981574Z",
+      "retrieved_at": "2026-10-07T03:13:44.577133Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mizner Park",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:13:44.577140Z",
       "confidence": 0.5,
       "category": "other",
-      "nearest_name": "Major business hubs",
+      "nearest_name": "The Boca Raton Resort & Club",
       "distance_miles": null
     }
   ],
   "open_questions": [],
-  "discrepancies": [
-    {
-      "field": "fees.hoa_annual",
-      "values": [
-        {
-          "amount": 4150.0,
-          "period": "annual",
-          "source_url": "https://www.hoabulletinboard.com/hoa/rpyccbrfl/about_hoa/",
-          "retrieved_at": "2026-10-06T19:27:55.192236+00:00"
-        },
-        {
-          "amount": 4540.0,
-          "period": "Annually",
-          "source_url": "browser:google",
-          "retrieved_at": "2026-10-06T19:36:08.656860+00:00"
-        }
-      ],
-      "detected_at": "2026-10-06T19:44:31.967039Z"
-    }
-  ],
-  "created_at": "2026-10-06T19:27:55.192856Z",
-  "updated_at": "2026-10-06T19:44:31.967095Z"
+  "discrepancies": [],
+  "created_at": "2026-10-07T03:00:50.924827Z",
+  "updated_at": "2026-10-07T03:17:32.446590Z"
 }

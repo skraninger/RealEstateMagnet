@@ -12,11 +12,12 @@ The Full Pipeline automatically discovers all known communities and processes ea
 
 ## Key Features
 
-✅ **Automatic Discovery**: Finds communities from target_list.json, discovery_state.json, and database  
-✅ **Resumable**: Saves state after each step - safe to stop and restart  
-✅ **Database Updates**: Persists to SQLite after every condenser completes  
-✅ **Error Handling**: Continues processing even if individual condensers fail  
-✅ **Progress Tracking**: Detailed per-community, per-condenser status
+✅ **Automatic Discovery**: Finds communities from target_list.json, discovery_state.json, pipeline_state.json, and database  
+✅ **Database-First**: All communities are registered in the database before processing, and every step is persisted there  
+✅ **Resumable**: Each community is flagged `processing` → `completed`; a restart begins at the first community not completed  
+✅ **URL Attribution**: Every URL inspected for a community is linked to it in the `community_urls` table  
+✅ **Error Handling**: Continues processing even if individual condensers fail (the community stays `partial` for retry)  
+✅ **Progress Tracking**: Detailed per-community, per-condenser status (queryable from the database)
 
 ## Quick Start
 
@@ -27,10 +28,11 @@ The Full Pipeline automatically discovers all known communities and processes ea
 ```
 
 This will:
-1. Discover all communities from all sources
-2. For each community, run all 5 condensers in order
-3. Update the database after each condenser
-4. Save state after each step (resumable)
+1. Discover all communities from all sources and **register them in the database**
+2. Begin at the first community not yet `completed`
+3. For each community, flag it `processing`, run the remaining condensers in order,
+   and link every inspected URL to the community
+4. Mark the community `completed` (or `partial` on errors) and continue
 
 ### Check pipeline status
 
@@ -85,67 +87,36 @@ print(f"Processed: {state.stats.successful} condensers")
 print(f"Failed: {state.stats.failed} condensers")
 ```
 
-## Pipeline State
+## Pipeline State (database-first)
 
-State is saved to `data/pipeline_state.json` after every condenser step. The state file contains:
+The database is the **source of truth** for pipeline progress. `data/pipeline_state.json`
+is retained only as a human-readable mirror and one-time migration input.
 
-```json
-{
-  "version": 1,
-  "started_at": "2026-10-05T18:30:00Z",
-  "last_updated": "2026-10-05T19:45:00Z",
-  "communities": [
-    {
-      "name": "Pelican Bay",
-      "slug": "pelican-bay",
-      "city": "Naples",
-      "source": "target_list"
-    }
-  ],
-  "results": {
-    "pelican-bay": {
-      "ai": {
-        "status": "done",
-        "elapsed": 3.2,
-        "fees": 2,
-        "amenities": 8,
-        "proximity": 3,
-        "demographics_present": true
-      },
-      "web": {
-        "status": "done",
-        "elapsed": 15.7,
-        "fees": 1,
-        "amenities": 5
-      },
-      "research": {
-        "status": "pending"
-      },
-      "browser": {
-        "status": "pending"
-      },
-      "gemini": {
-        "status": "skipped",
-        "errors": ["API key not configured"]
-      }
-    }
-  },
-  "stats": {
-    "total_runs": 2,
-    "successful": 2,
-    "failed": 0,
-    "skipped": 1
-  }
-}
-```
+| Table | Purpose |
+|-------|---------|
+| `community_pipeline_status` | One row per community: `status`, `sort_order`, `attempts`, `started_at`, `completed_at`, `last_error` |
+| `community_condenser_runs` | One row per `(community, condenser)`: `status`, `elapsed`, `fees`, `amenities`, `proximity`, `demographics_present`, `sources_consulted`, `errors` |
+| `community_urls` | Many-to-many link of each inspected URL (`source_urls`) to the community it was researched for |
 
-### Status Values
+### Community pipeline status values
 
-- `pending`: Not yet processed
-- `running`: Currently being processed
-- `done`: Successfully completed
-- `error`: Failed (error message in `errors` array)
-- `skipped`: Skipped (e.g., Gemini without API key)
+- `pending`: Registered, not yet processed
+- `processing`: Currently being processed (a stale `processing` row resumes on restart)
+- `partial`: Some condensers ran but not all selected condensers finished
+- `completed`: Every selected condenser finished (`done`, or `skipped` when inapplicable)
+- `failed`: Processing aborted with an error recorded in `last_error`
+
+### Condenser run status values
+
+- `pending`, `running`, `done`, `error`, `skipped` (e.g. Gemini without an API key)
+
+### Migration
+
+Run `python migrate_database.py` to create the new tables, register every known
+community, assign `sort_order`, backfill `community_urls` from the legacy
+`source_urls.community_slug` column, and reconstruct per-condenser progress from
+the legacy JSON. It is idempotent and additive (no data is ever dropped) and also
+runs automatically on pipeline/viewer startup.
 
 ## Condenser Order
 
@@ -178,7 +149,9 @@ Condensers run in this order (cheapest/fastest first):
 
 ## Resume Behavior
 
-The pipeline automatically resumes from where it left off:
+The pipeline is community-oriented: it selects the **first community whose
+`community_pipeline_status.status` is not `completed`** (ordered by `sort_order`)
+and resumes only the condensers that have not yet finished for it.
 
 ```powershell
 # First run - processes all condensers
@@ -186,11 +159,15 @@ The pipeline automatically resumes from where it left off:
 
 # Pipeline interrupted (Ctrl+C, crash, etc.)
 
-# Second run - resumes from last saved state
+# Second run - resumes at the first community not completed
 .\scripts\run-full-pipeline.ps1
 ```
 
-To start completely fresh:
+An interrupted community that was left in `processing` is recovered (marked
+`partial`) and its remaining condensers are re-run; condensers already `done` or
+`skipped` are not repeated.
+
+To start completely fresh (progress cleared, but **all community data retained**):
 
 ```powershell
 .\scripts\run-full-pipeline.ps1 -Reset
@@ -198,13 +175,16 @@ To start completely fresh:
 
 ## Community Discovery
 
-Communities are discovered from three sources (in priority order):
+Communities are discovered from four sources (in priority order):
 
 1. **target_list.json**: Manually curated list in `data/communities/target_list.json`
 2. **discovery_state.json**: Previously discovered communities from web research
 3. **Database**: Communities already in `data/communities.db`
+4. **pipeline_state.json**: Legacy state (identity only) used for migration
 
-Discovery is deduplicated by slug (normalized name), so "Pelican Bay" won't be processed three times.
+Discovery is deduplicated by slug (normalized name), so "Pelican Bay" won't be
+processed more than once. **Every discovered community is registered in the
+database** (`communities` + `community_pipeline_status`) before processing begins.
 
 ## Error Handling
 
@@ -358,34 +338,36 @@ FullPipeline
 ├── _discover_all_communities()
 │   ├── Load target_list.json
 │   ├── Load discovery_state.json
-│   └── Load database records
+│   ├── Load database records
+│   └── Load legacy pipeline_state.json (identity only)
 │
 ├── init_state()
-│   ├── Create or load PipelineState
-│   ├── Initialize results for each community
-│   └── Save state to disk
+│   ├── Merge + dedupe discovered communities
+│   ├── register_communities()  -> communities + community_pipeline_status (pending)
+│   ├── Optionally reset statuses (--reset; data retained)
+│   └── Save the JSON reporting mirror
 │
 └── run()
-    ├── For each community:
-    │   ├── _ensure_community_record()
-    │   └── For each condenser:
-    │       ├── Mark as "running"
-    │       ├── Run condenser
-    │       ├── Update state with result
-    │       ├── Save state to disk
-    │       └── Update database
-    │
-    └── Return final state
+    ├── reset_stale_processing()  (interrupted -> partial)
+    ├── Select first community whose status != completed (by sort_order)
+    ├── For each pending community:
+    │   ├── mark_processing()
+    │   ├── For each remaining (not done/skipped) condenser:
+    │   │   ├── Run condenser (URLs linked via community_urls)
+    │   │   ├── record_condenser_run()  -> community_condenser_runs
+    │   │   └── Update the JSON reporting mirror
+    │   └── mark_completed() if all selected condensers finished, else mark_partial()
+    └── Return the reporting mirror
 ```
 
 ## State Persistence
 
-State is saved to disk after:
-- Initialization (community list discovered)
-- Each condenser completion
-- Each error
-
-This ensures maximum resumability with minimal data loss.
+- **Database** (authoritative): every community is registered up front and each
+  condenser run is written to `community_condenser_runs` immediately, so a crash
+  or Ctrl-C is safe. Community flags live in `community_pipeline_status`.
+- **JSON mirror** (`data/pipeline_state.json`): a human-readable copy for
+  inspection; it is no longer used to decide what to resume.
+- **URL links**: `community_urls` records each URL inspected for a community.
 
 ## Future Enhancements
 

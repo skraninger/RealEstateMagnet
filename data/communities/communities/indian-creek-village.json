@@ -110,6 +110,69 @@
       "confidence": 0.5,
       "amenity": "waterfront_estates_and_landscaped_grounds",
       "detail": "Only a few dozen expansive waterfront estates on oversized lots with landscaped grounds and views across Biscayne Bay; no commercial streets or apartment buildings"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:43:26.416112Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Indian Creek Country Club – a private golf course located at the center of the island, occupying a large portion of the ~300-acre land area. Estates are arranged in a ring around the course, facing Biscayne Bay, the Intracoastal Waterway, or the golf course greens."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:46:53.697449Z",
+      "confidence": 0.5,
+      "amenity": "private_country_club",
+      "detail": "Community lifestyle is described as anchored by a private country club."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:46:53.697463Z",
+      "confidence": 0.5,
+      "amenity": "24_7_dedicated_public_safety_department",
+      "detail": "Indian Creek Village runs its own police and public safety department with 24/7 coverage and specialized capabilities, including a vehicle screening checkpoint at the island's single bridge."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:46:53.697467Z",
+      "confidence": 0.5,
+      "amenity": "high_tech_perimeter_security",
+      "detail": "Associated with an Israeli-designed perimeter security system incorporating radar and thermal/infrared camera surveillance to monitor approaches."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:46:53.697470Z",
+      "confidence": 0.5,
+      "amenity": "marine_patrol_boat_monitoring",
+      "detail": "Water approaches are monitored; security posture includes marine patrol and boat monitoring to deter waterborne approaches."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.547965Z",
+      "confidence": 0.5,
+      "amenity": "private_golf_course",
+      "detail": "Indian Creek Country Club golf course located at the center of the island; estates face the course greens, Biscayne Bay, or the Intracoastal Waterway; the island spans roughly 300 acres with the golf course occupying a large portion of that area; approximately 40 residential estates on oversized waterfront lots; no commercial streets, apartment buildings, or public attractions; entire municipality is a single island connected to the mainland by one guarded bridge; residents include Tom Brady, Jeff Bezos, and Gisele Bündchen; independent incorporated municipality with its own mayor, council, police department, and municipal authority; nickname 'Billionaire Bunker'. Source: https://www.google.com/goto?url=CAEScgHrOzAV9Irvp7qTldvNAewqCsg4_MZ-WrxahXLkNwJuVqOELrAmB2sWzVd6LFx6inbHvnufWuaxHL_yzPt4gm_uMfa52ZXUEnTpJ9RR6diKuabwb5qyn0obS26kaqwIiqAWYDjcP3qz2bFHnqJy9xtt8g (Indian Creek, Miami — A Cheat Sheet for Buyers, Visitors, & the Curious). Retrieved 2026-02-10T00:00:00Z. Confidence: 0.95"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.547985Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_views",
+      "detail": "Estates positioned along the island's perimeter facing Biscayne Bay, the Intracoastal Waterway, or the golf course greens, on oversized waterfront lots providing expansive views and privacy between neighboring properties. Source: https://www.google.com/goto?url=CAEScgHrOzAV9Irvp7qTldvNAewqCsg4_MZ-WrxahXLkNwJuVqOELrAmB2sWzVd6LFx6inbHvnufWuaxHL_yzPt4gm_uMfa52ZXUEnTpJ9RR6diKuabwb5qyn0obS26kaqwIiqAWYDjcP3qz2bFHnqJy9xtt8g (Indian Creek, Miami — A Cheat Sheet for Buyers, Visitors, & the Curious). Retrieved 2026-02-10T00:00:00Z. Confidence: 0.9"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.547993Z",
+      "confidence": 0.5,
+      "amenity": "guarded_bridge_access",
+      "detail": "The entire municipality occupies a single island connected to the mainland by only one guarded bridge, creating an environment intentionally designed around privacy and limited access. Source: https://www.google.com/goto?url=CAEScgHrOzAV9Irvp7qTldvNAewqCsg4_MZ-WrxahXLkNwJuVqOELrAmB2sWzVd6LFx6inbHvnufWuaxHL_yzPt4gm_uMfa52ZXUEnTpJ9RR6diKuabwb5qyn0obS26kaqwIiqAWYDjcP3qz2bFHnqJy9xtt8g (Indian Creek, Miami — A Cheat Sheet for Buyers, Visitors, & the Curious). Retrieved 2026-02-10T00:00:00Z. Confidence: 0.95"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.548001Z",
+      "confidence": 0.5,
+      "amenity": "landscaped_grounds",
+      "detail": "Expansive estates and landscaped grounds; the island is intentionally planned as a low-density residential community with no commercial streets, apartment buildings, or public attractions. Source: https://www.google.com/goto?url=CAEScgHrOzAV9Irvp7qTldvNAewqCsg4_MZ-WrxahXLkNwJuVqOELrAmB2sWzVd6LFx6inbHvnufWuaxHL_yzPt4gm_uMfa52ZXUEnTpJ9RR6diKuabwb5qyn0obS26kaqwIiqAWYDjcP3qz2bFHnqJy9xtt8g (Indian Creek, Miami — A Cheat Sheet for Buyers, Visitors, & the Curious). Retrieved 2026-02-10T00:00:00Z. Confidence: 0.85"
     }
   ],
   "demographics": {
@@ -196,6 +259,62 @@
       "category": "other",
       "nearest_name": "Miami International Airport",
       "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:43:26.416132Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Bal Harbour",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:43:26.416133Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Surfside / Bay Harbor Islands",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:46:53.697474Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Surfside",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.548011Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami (typically about 20 minutes by car, depending on traffic)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.548017Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami Beach (roughly 10 to 15 minutes by car, depending on traffic)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.548019Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport (usually reachable in about 25 minutes, depending on traffic)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T01:48:54.548022Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Surfside and Bay Harbor Islands (immediately east); Bal Harbour (immediately south)",
+      "distance_miles": null
     }
   ],
   "open_questions": [],
@@ -217,9 +336,44 @@
           "nearest_name": "Miami International Airport",
           "distance_miles": null,
           "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Bal Harbour",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Surfside / Bay Harbor Islands",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Surfside",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Downtown Miami (typically about 20 minutes by car, depending on traffic)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami Beach (roughly 10 to 15 minutes by car, depending on traffic)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami International Airport (usually reachable in about 25 minutes, depending on traffic)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Surfside and Bay Harbor Islands (immediately east); Bal Harbour (immediately south)",
+          "distance_miles": null,
+          "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T21:28:57.672557Z"
+      "detected_at": "2026-10-07T01:49:00.286927Z"
     },
     {
       "field": "proximity.school",
@@ -235,9 +389,9 @@
           "source_url": "ai:condensed"
         }
       ],
-      "detected_at": "2026-10-06T21:28:57.672563Z"
+      "detected_at": "2026-10-07T01:49:00.286929Z"
     }
   ],
   "created_at": "2026-10-06T21:12:21.537570Z",
-  "updated_at": "2026-10-06T21:28:57.672673Z"
+  "updated_at": "2026-10-07T01:49:00.287001Z"
 }

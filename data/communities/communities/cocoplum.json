@@ -1,0 +1,249 @@
+{
+  "id": "192542a4-1201-4827-8c95-0e13b64c414b",
+  "identity": {
+    "name": "Cocoplum",
+    "slug": "cocoplum",
+    "county_fips": null,
+    "city": "Coral Gables",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Cocoplum is an exclusive, secluded gated community in Coral Gables, Florida, consisting of waterfront properties and luxury mansions, many with private docks. It borders the Gables Waterway and the edge of Biscayne Bay, and is tropically landscaped with palms and lush foliage. Attractive to families, professionals, and those seeking a waterfront lifestyle in South Florida."
+  },
+  "fees": [
+    {
+      "source_url": "https://jmc.realestate/miami-real-estate/gated-community-homes/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346672Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1500.0,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "HOA/association fee of $1,500/quarter reported for some residences (e.g., 431 Costanera Rd, 199 Caoba Ct) per MLS listing data; fees vary by home and may include CDD assessments not itemized."
+    },
+    {
+      "source_url": "https://jmc.realestate/miami-real-estate/gated-community-homes/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346680Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1800.0,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "HOA/association fee of $1,800/quarter reported for other residences (e.g., 277 Marinero Ct, 165 Paloma Dr) per MLS listing data."
+    },
+    {
+      "source_url": "https://jmc.realestate/miami-real-estate/gated-community-homes/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346682Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 600.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA/association fee of $600/month reported for at least one residence (132 Paloma Dr) per MLS listing data. Some listings show no stated association fee, so exact dues vary by property."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346685Z",
+      "confidence": 0.75,
+      "amenity": "24_hour_security",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346694Z",
+      "confidence": 0.75,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346697Z",
+      "confidence": 0.75,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346700Z",
+      "confidence": 0.75,
+      "amenity": "tennis_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346702Z",
+      "confidence": 0.75,
+      "amenity": "swimming_pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346705Z",
+      "confidence": 0.75,
+      "amenity": "children_s_playground",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346708Z",
+      "confidence": 0.75,
+      "amenity": "yacht_club",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346710Z",
+      "confidence": 0.5,
+      "amenity": "full_service_marina",
+      "detail": "Marina with dock master for boating enthusiasts; many homes have their own private docks along the Gables Waterway/Biscayne Bay edge"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:58:45.961642Z",
+      "confidence": 0.5,
+      "amenity": "private_marina_cocoplum_yacht_club",
+      "detail": "Fully staffed private facility with almost 200 slips; described as one of the broadest amenity packages in the Coral Gables waterfront group (larger marina ecosystem, shared facilities)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:58:45.961657Z",
+      "confidence": 0.5,
+      "amenity": "guard_house",
+      "detail": "Community reports a guard house as part of its gated, guard-staffed setup."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:58:45.961660Z",
+      "confidence": 0.5,
+      "amenity": "24_hour_surveillance",
+      "detail": "Stated alongside guard house and on-duty officers."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T03:58:45.961663Z",
+      "confidence": 0.5,
+      "amenity": "on_duty_officers",
+      "detail": "Stated alongside guard house and 24-hour surveillance."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346715Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Coral Gables (Miracle Mile)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346719Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Village of Merrick Park (Neiman-Marcus, Nordstrom)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346720Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Coconut Grove (shopping, dining, entertainment)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346721Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346723Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Port of Miami",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/",
+      "retrieved_at": "2026-10-07T03:46:32.346724Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Brickell / Downtown Miami / South Beach",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 1500.0,
+          "period": "quarterly",
+          "source_url": "https://jmc.realestate/miami-real-estate/gated-community-homes/cocoplum/",
+          "retrieved_at": "2026-10-07T03:46:32.346672+00:00"
+        },
+        {
+          "amount": 1800.0,
+          "period": "quarterly",
+          "source_url": "https://jmc.realestate/miami-real-estate/gated-community-homes/cocoplum/",
+          "retrieved_at": "2026-10-07T03:46:32.346680+00:00"
+        }
+      ],
+      "detected_at": "2026-10-07T03:59:56.726672Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Miami International Airport",
+          "distance_miles": null,
+          "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/"
+        },
+        {
+          "nearest_name": "Port of Miami",
+          "distance_miles": null,
+          "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/"
+        },
+        {
+          "nearest_name": "Brickell / Downtown Miami / South Beach",
+          "distance_miles": null,
+          "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/"
+        }
+      ],
+      "detected_at": "2026-10-07T03:59:56.726679Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Downtown Coral Gables (Miracle Mile)",
+          "distance_miles": null,
+          "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/"
+        },
+        {
+          "nearest_name": "The Village of Merrick Park (Neiman-Marcus, Nordstrom)",
+          "distance_miles": null,
+          "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/"
+        },
+        {
+          "nearest_name": "Coconut Grove (shopping, dining, entertainment)",
+          "distance_miles": null,
+          "source_url": "https://www.miamiluxuryhomes.com/coral-gables/cocoplum/"
+        }
+      ],
+      "detected_at": "2026-10-07T03:59:56.726684Z"
+    }
+  ],
+  "created_at": "2026-10-07T03:46:32.347243Z",
+  "updated_at": "2026-10-07T03:59:56.726773Z"
+}

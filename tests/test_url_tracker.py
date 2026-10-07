@@ -636,6 +636,90 @@ class TestURLTracker:
         assert len(pending) == 3
 
 
+class TestCommunityURLLinks:
+    """Tests for the community_urls many-to-many link table."""
+
+    @pytest.fixture
+    def temp_db(self, tmp_path):
+        db = CommunityDatabase(db_path=tmp_path / "links.db")
+        db.create_tables()
+        return db
+
+    @pytest.fixture
+    def tracker(self, temp_db, tmp_path):
+        return URLTracker(db=temp_db, pages_dir=tmp_path / "pages")
+
+    def test_register_url_links_community(self, tracker):
+        tracker.register_url(
+            "https://example.com/a", "web_condenser", community_slug="alpha"
+        )
+        linked = tracker.get_urls_for_community("alpha")
+        assert len(linked) == 1
+        assert linked[0]["url"] == "https://example.com/a"
+
+    def test_same_url_multiple_communities(self, tracker):
+        tracker.register_url(
+            "https://example.com/a", "web_condenser", community_slug="alpha"
+        )
+        tracker.register_url(
+            "https://example.com/a", "web_condenser", community_slug="bravo"
+        )
+        # One canonical row, two community links.
+        assert set(tracker.get_communities_for_url("https://example.com/a")) == {
+            "alpha",
+            "bravo",
+        }
+        assert len(tracker.get_urls_for_community("alpha")) == 1
+        assert len(tracker.get_urls_for_community("bravo")) == 1
+
+    def test_update_quality_marks_inspected(self, tracker):
+        tracker.register_url(
+            "https://example.com/a", "web_condenser", community_slug="alpha"
+        )
+        tracker.update_url_quality(
+            "https://example.com/a",
+            has_community_data=True,
+            data_quality_score=77.5,
+            data_types_found="fees,amenities",
+            data_summary="summary",
+            status="printed",
+            community_slug="alpha",
+        )
+        linked = tracker.get_urls_for_community("alpha")
+        assert linked[0]["inspected"] is True
+        assert linked[0]["data_quality_score"] == 77.5
+        assert linked[0]["has_community_data"] is True
+
+    def test_register_urls_batch_links_community(self, tracker):
+        rows = tracker.register_urls(
+            ["https://example.com/a", "https://example.com/b"],
+            "web_condenser",
+            community_slug="alpha",
+        )
+        assert len(rows) == 2
+        assert len(tracker.get_urls_for_community("alpha")) == 2
+
+    def test_backfill_from_legacy_column(self, temp_db, tracker):
+        # A legacy row recorded its community only via source_urls.community_slug.
+        with temp_db.session() as session:
+            session.add(
+                SourceURLRow(
+                    url="https://legacy.example/x",
+                    domain="legacy.example",
+                    status="printed",
+                    discovered_by="legacy",
+                    community_slug="legacy-community",
+                )
+            )
+            session.commit()
+
+        n = temp_db.backfill_community_urls()
+        assert n == 1
+        assert len(tracker.get_urls_for_community("legacy-community")) == 1
+        # Idempotent: a second run adds nothing.
+        assert temp_db.backfill_community_urls() == 0
+
+
 class TestFailureClassification:
     """Test the failure classification logic from vision_browser_agent."""
 

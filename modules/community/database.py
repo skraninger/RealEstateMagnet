@@ -43,6 +43,7 @@ from sqlalchemy import (
     func,
     select,
 )
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import (
     DeclarativeBase,
     Session,
@@ -306,6 +307,99 @@ class SourceURLRow(Base):
     data_summary = Column(Text)  # brief summary of extracted data
 
 
+# Pipeline status values (community_pipeline_status.status)
+PIPELINE_STATUSES = ("pending", "processing", "partial", "completed", "failed")
+
+# Condenser run status values (community_condenser_runs.status)
+CONDENSER_RUN_STATUSES = ("pending", "running", "done", "error", "skipped")
+
+# Statuses that count as a did-not-fail, "handled" condenser run
+TERMINAL_OK_STATUSES = ("done", "skipped")
+
+# Statuses that count as any terminal (handled) condenser run
+TERMINAL_STATUSES = ("done", "error", "skipped")
+
+
+class CommunityPipelineStatusRow(Base):
+    """Per-community pipeline progress — the source of truth for resumability.
+
+    A community is processed as a unit: it is flagged ``processing`` while its
+    selected condensers run, then ``completed`` once every selected condenser
+    has finished (``done`` or ``skipped``). A restart selects the first
+    community whose status is not ``completed`` (ordered by ``sort_order``).
+    """
+
+    __tablename__ = "community_pipeline_status"
+
+    community_slug = Column(
+        String(255), ForeignKey("communities.slug"), primary_key=True
+    )
+    status = Column(String(20), nullable=False, default="pending", index=True)
+    sort_order = Column(Integer, default=0, index=True)
+    attempts = Column(Integer, default=0)
+    started_at = Column(DateTime)
+    completed_at = Column(DateTime)
+    last_heartbeat = Column(DateTime)
+    last_error = Column(Text)
+    updated_at = Column(
+        DateTime,
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+    )
+
+
+class CommunityCondenserRunRow(Base):
+    """One row per (community, condenser) step — replaces pipeline_state.json."""
+
+    __tablename__ = "community_condenser_runs"
+    __table_args__ = (
+        UniqueConstraint("community_slug", "condenser", name="uq_condenser_run"),
+    )
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    community_slug = Column(
+        String(255), ForeignKey("communities.slug"), nullable=False, index=True
+    )
+    condenser = Column(String(30), nullable=False, index=True)
+    status = Column(String(20), default="pending", index=True)
+    elapsed = Column(Float, default=0.0)
+    fees = Column(Integer, default=0)
+    amenities = Column(Integer, default=0)
+    proximity = Column(Integer, default=0)
+    demographics_present = Column(Boolean, default=False)
+    sources_consulted = Column(Integer, default=0)
+    errors = Column(Text)  # JSON-encoded list[str]
+    started_at = Column(DateTime)
+    finished_at = Column(DateTime)
+
+
+class CommunityURLRow(Base):
+    """Many-to-many link between a community and an inspected source URL.
+
+    ``source_urls`` remains the canonical URL registry (deduplicated by URL);
+    this table records that a URL was discovered/inspected *for a community*,
+    so the same URL can be attributed to multiple communities.
+    """
+
+    __tablename__ = "community_urls"
+    __table_args__ = (
+        UniqueConstraint("community_slug", "url_id", name="uq_community_url"),
+    )
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    community_slug = Column(
+        String(255), ForeignKey("communities.slug"), nullable=False, index=True
+    )
+    url_id = Column(Integer, ForeignKey("source_urls.id"), nullable=False, index=True)
+    discovered_by = Column(String(50), index=True)
+    first_seen_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    last_seen_at = Column(DateTime)
+    inspected = Column(Boolean, default=False, index=True)
+    status = Column(String(30), index=True)
+    has_community_data = Column(Boolean, default=False)
+    data_quality_score = Column(Float, default=0.0)
+
+
 class CommunityDatabase:
     """SQLite database for storing and querying condensed community data."""
 
@@ -402,7 +496,20 @@ class CommunityDatabase:
                 ))
 
             session.add(row)
-            session.commit()
+            try:
+                session.commit()
+            except IntegrityError:
+                # A row with this slug already exists (e.g. a concurrent / prior
+                # insert). Roll back and update the existing row instead.
+                session.rollback()
+                existing = session.query(CommunityRow).filter(
+                    CommunityRow.slug == record.identity.slug
+                ).first()
+                if existing is None:
+                    raise
+                self._update_row(existing, record, session)
+                session.commit()
+                return existing.slug
             return row.slug
 
     def _update_row(self, row: CommunityRow, record: CommunityRecord, session: Session) -> None:
@@ -505,6 +612,469 @@ class CommunityDatabase:
         with self.session() as session:
             rows = session.query(CommunityRow).order_by(CommunityRow.name).limit(limit).all()
             return [row.to_record() for row in rows]
+
+    # ── community registration & pipeline status ────────────────────────────
+
+    def register_community(
+        self,
+        *,
+        name: str,
+        slug: str,
+        city: Optional[str] = None,
+        county: Optional[str] = None,
+        source: str = "pipeline",
+        sort_order: Optional[int] = None,
+    ) -> str:
+        """Get-or-create a community row and its pipeline status row.
+
+        Duplicate-safe: if the slug already exists it is updated (filling only
+        missing city/county) rather than inserted again.
+        """
+        with self.session() as session:
+            row = session.query(CommunityRow).filter(CommunityRow.slug == slug).first()
+            if row is None:
+                row = CommunityRow(
+                    id=str(uuid.uuid4()),
+                    name=name,
+                    slug=slug,
+                    city=city,
+                    county_fips=county,
+                    is_gated=True,
+                    data_source=source,
+                )
+                session.add(row)
+                try:
+                    session.flush()
+                except IntegrityError:
+                    session.rollback()
+                    row = session.query(CommunityRow).filter(
+                        CommunityRow.slug == slug
+                    ).first()
+            else:
+                if city and not row.city:
+                    row.city = city
+                if county and not row.county_fips:
+                    row.county_fips = county
+
+            status_row = session.query(CommunityPipelineStatusRow).filter_by(
+                community_slug=slug
+            ).first()
+            if status_row is None:
+                status_row = CommunityPipelineStatusRow(
+                    community_slug=slug,
+                    status="pending",
+                    sort_order=sort_order if sort_order is not None else 0,
+                )
+                session.add(status_row)
+            elif sort_order is not None and not status_row.sort_order:
+                status_row.sort_order = sort_order
+
+            session.commit()
+            return slug
+
+    def register_communities(self, infos: list[dict[str, Any]]) -> int:
+        """Register many communities, assigning ``sort_order`` by list position.
+
+        ``infos`` items accept keys: ``name``, ``slug`` (optional), ``city``,
+        ``county``, ``source``, ``is_gated``. Existing communities keep their
+        original ``sort_order``.
+        """
+        registered = 0
+        with self.session() as session:
+            for idx, info in enumerate(infos):
+                name = info["name"]
+                slug = info.get("slug") or slugify(name)
+                row = session.query(CommunityRow).filter(
+                    CommunityRow.slug == slug
+                ).first()
+                city = info.get("city")
+                county = info.get("county")
+                if row is None:
+                    row = CommunityRow(
+                        id=str(uuid.uuid4()),
+                        name=name,
+                        slug=slug,
+                        city=city,
+                        county_fips=county,
+                        is_gated=info.get("is_gated", True),
+                        data_source=info.get("source", "pipeline"),
+                    )
+                    session.add(row)
+                else:
+                    if city and not row.city:
+                        row.city = city
+                    if county and not row.county_fips:
+                        row.county_fips = county
+
+                status_row = session.query(CommunityPipelineStatusRow).filter_by(
+                    community_slug=slug
+                ).first()
+                if status_row is None:
+                    session.add(
+                        CommunityPipelineStatusRow(
+                            community_slug=slug,
+                            status="pending",
+                            sort_order=idx,
+                        )
+                    )
+                registered += 1
+            session.commit()
+        return registered
+
+    def assign_sort_order(self, ordered_slugs: list[str]) -> int:
+        """Set ``sort_order`` for communities from an ordered slug list."""
+        with self.session() as session:
+            for idx, slug in enumerate(ordered_slugs):
+                row = session.query(CommunityPipelineStatusRow).filter_by(
+                    community_slug=slug
+                ).first()
+                if row is None:
+                    session.add(
+                        CommunityPipelineStatusRow(
+                            community_slug=slug, status="pending", sort_order=idx
+                        )
+                    )
+                else:
+                    row.sort_order = idx
+            session.commit()
+        return len(ordered_slugs)
+
+    def count_condenser_runs(self) -> int:
+        with self.session() as session:
+            return session.query(func.count(CommunityCondenserRunRow.id)).scalar() or 0
+
+    def get_pipeline_status(self, slug: str) -> Optional[str]:
+        with self.session() as session:
+            row = session.query(CommunityPipelineStatusRow).filter_by(
+                community_slug=slug
+            ).first()
+            return row.status if row else None
+
+    def list_pipeline_statuses(self) -> list[dict[str, Any]]:
+        """Return every community's pipeline status in processing order."""
+        with self.session() as session:
+            rows = (
+                session.query(CommunityPipelineStatusRow)
+                .order_by(
+                    CommunityPipelineStatusRow.sort_order,
+                    CommunityPipelineStatusRow.community_slug,
+                )
+                .all()
+            )
+            out: list[dict[str, Any]] = []
+            for r in rows:
+                c = session.query(CommunityRow).filter_by(
+                    slug=r.community_slug
+                ).first()
+                out.append(
+                    {
+                        "slug": r.community_slug,
+                        "name": c.name if c else r.community_slug,
+                        "city": c.city if c else None,
+                        "status": r.status,
+                        "sort_order": r.sort_order,
+                        "attempts": r.attempts,
+                        "started_at": r.started_at,
+                        "completed_at": r.completed_at,
+                        "last_error": r.last_error,
+                    }
+                )
+            return out
+
+    def next_incomplete_community(self) -> Optional[str]:
+        """First community (by sort_order) whose status is not 'completed'."""
+        with self.session() as session:
+            row = (
+                session.query(CommunityPipelineStatusRow)
+                .filter(CommunityPipelineStatusRow.status != "completed")
+                .order_by(
+                    CommunityPipelineStatusRow.sort_order,
+                    CommunityPipelineStatusRow.community_slug,
+                )
+                .first()
+            )
+            return row.community_slug if row else None
+
+    def list_incomplete_communities(self) -> list[str]:
+        with self.session() as session:
+            rows = (
+                session.query(CommunityPipelineStatusRow.community_slug)
+                .filter(CommunityPipelineStatusRow.status != "completed")
+                .order_by(
+                    CommunityPipelineStatusRow.sort_order,
+                    CommunityPipelineStatusRow.community_slug,
+                )
+                .all()
+            )
+            return [r[0] for r in rows]
+
+    def _status_row(self, session: Session, slug: str) -> CommunityPipelineStatusRow:
+        row = session.query(CommunityPipelineStatusRow).filter_by(
+            community_slug=slug
+        ).first()
+        if row is None:
+            row = CommunityPipelineStatusRow(community_slug=slug, status="pending")
+            session.add(row)
+        return row
+
+    def mark_processing(self, slug: str) -> None:
+        now = datetime.now(timezone.utc)
+        with self.session() as session:
+            row = self._status_row(session, slug)
+            row.status = "processing"
+            if row.started_at is None:
+                row.started_at = now
+            row.last_heartbeat = now
+            row.attempts = (row.attempts or 0) + 1
+            session.commit()
+
+    def mark_completed(self, slug: str) -> None:
+        now = datetime.now(timezone.utc)
+        with self.session() as session:
+            row = self._status_row(session, slug)
+            row.status = "completed"
+            row.completed_at = now
+            row.last_heartbeat = now
+            row.last_error = None
+            session.commit()
+
+    def mark_partial(self, slug: str, error: Optional[str] = None) -> None:
+        with self.session() as session:
+            row = self._status_row(session, slug)
+            row.status = "partial"
+            if error:
+                row.last_error = error
+            session.commit()
+
+    def mark_failed(self, slug: str, error: Optional[str] = None) -> None:
+        with self.session() as session:
+            row = self._status_row(session, slug)
+            row.status = "failed"
+            if error:
+                row.last_error = error
+            session.commit()
+
+    def reset_stale_processing(self) -> int:
+        """Convert interrupted 'processing' communities to 'partial' (resumable)."""
+        with self.session() as session:
+            rows = (
+                session.query(CommunityPipelineStatusRow)
+                .filter(CommunityPipelineStatusRow.status == "processing")
+                .all()
+            )
+            for row in rows:
+                row.status = "partial"
+            session.commit()
+            return len(rows)
+
+    def reset_all_statuses(self) -> int:
+        """Reset every community to 'pending' (used by --reset); data is kept."""
+        with self.session() as session:
+            rows = session.query(CommunityPipelineStatusRow).all()
+            for row in rows:
+                row.status = "pending"
+                row.started_at = None
+                row.completed_at = None
+                row.last_heartbeat = None
+                row.last_error = None
+                row.attempts = 0
+            session.commit()
+            return len(rows)
+
+    def reset_condenser_runs(self, slugs: Optional[list[str]] = None) -> int:
+        """Reset condenser run rows back to 'pending'."""
+        with self.session() as session:
+            q = session.query(CommunityCondenserRunRow)
+            if slugs:
+                q = q.filter(CommunityCondenserRunRow.community_slug.in_(slugs))
+            rows = q.all()
+            for row in rows:
+                row.status = "pending"
+                row.started_at = None
+                row.finished_at = None
+                row.errors = None
+            session.commit()
+            return len(rows)
+
+    # ── condenser runs ──────────────────────────────────────────────────────
+
+    def record_condenser_run(self, slug: str, condenser: str, result: Any) -> None:
+        """Upsert the run row for ``(slug, condenser)`` from a step result."""
+        status = getattr(result, "status", "pending")
+        errors = getattr(result, "errors", None)
+        with self.session() as session:
+            row = session.query(CommunityCondenserRunRow).filter_by(
+                community_slug=slug, condenser=condenser
+            ).first()
+            now = datetime.now(timezone.utc)
+            if row is None:
+                row = CommunityCondenserRunRow(
+                    community_slug=slug, condenser=condenser
+                )
+                session.add(row)
+            row.status = status
+            row.elapsed = getattr(result, "elapsed", 0.0) or 0.0
+            row.fees = getattr(result, "fees", 0) or 0
+            row.amenities = getattr(result, "amenities", 0) or 0
+            row.proximity = getattr(result, "proximity", 0) or 0
+            row.demographics_present = bool(
+                getattr(result, "demographics_present", False)
+            )
+            row.sources_consulted = getattr(result, "sources_consulted", 0) or 0
+            if errors is not None:
+                row.errors = json.dumps(list(errors))
+            if status == "running":
+                row.started_at = now
+            elif status in TERMINAL_STATUSES:
+                row.finished_at = now
+            session.commit()
+
+    def get_condenser_runs(self, slug: str) -> dict[str, Any]:
+        with self.session() as session:
+            rows = session.query(CommunityCondenserRunRow).filter_by(
+                community_slug=slug
+            ).all()
+            return {
+                r.condenser: {
+                    "status": r.status,
+                    "elapsed": r.elapsed,
+                    "fees": r.fees,
+                    "amenities": r.amenities,
+                    "proximity": r.proximity,
+                    "demographics_present": r.demographics_present,
+                    "sources_consulted": r.sources_consulted,
+                    "errors": json.loads(r.errors) if r.errors else [],
+                }
+                for r in rows
+            }
+
+    def condenser_statuses(self, slug: str) -> dict[str, str]:
+        with self.session() as session:
+            rows = session.query(CommunityCondenserRunRow).filter_by(
+                community_slug=slug
+            ).all()
+            return {r.condenser: r.status for r in rows}
+
+    def community_is_complete(self, slug: str, condensers: list[str]) -> bool:
+        """True when every selected condenser has finished (done/skipped)."""
+        statuses = self.condenser_statuses(slug)
+        return all(statuses.get(c) in TERMINAL_OK_STATUSES for c in condensers)
+
+    # ── URL ↔ community links ───────────────────────────────────────────────
+
+    def link_url_to_community(
+        self,
+        slug: str,
+        url_id: int,
+        discovered_by: Optional[str] = None,
+    ) -> None:
+        now = datetime.now(timezone.utc)
+        with self.session() as session:
+            row = session.query(CommunityURLRow).filter_by(
+                community_slug=slug, url_id=url_id
+            ).first()
+            if row is None:
+                session.add(
+                    CommunityURLRow(
+                        community_slug=slug,
+                        url_id=url_id,
+                        discovered_by=discovered_by,
+                        first_seen_at=now,
+                        last_seen_at=now,
+                    )
+                )
+            else:
+                row.last_seen_at = now
+                if discovered_by and not row.discovered_by:
+                    row.discovered_by = discovered_by
+            session.commit()
+
+    def update_community_url(self, slug: str, url_id: int, **fields: Any) -> None:
+        with self.session() as session:
+            row = session.query(CommunityURLRow).filter_by(
+                community_slug=slug, url_id=url_id
+            ).first()
+            if row is None:
+                row = CommunityURLRow(community_slug=slug, url_id=url_id)
+                session.add(row)
+            for key, value in fields.items():
+                if hasattr(row, key):
+                    setattr(row, key, value)
+            row.last_seen_at = datetime.now(timezone.utc)
+            session.commit()
+
+    def get_urls_for_community(self, slug: str) -> list[dict[str, Any]]:
+        with self.session() as session:
+            rows = (
+                session.query(CommunityURLRow, SourceURLRow)
+                .join(SourceURLRow, CommunityURLRow.url_id == SourceURLRow.id)
+                .filter(CommunityURLRow.community_slug == slug)
+                .order_by(CommunityURLRow.last_seen_at.desc())
+                .all()
+            )
+            return [
+                {
+                    "url": su.url,
+                    "domain": su.domain,
+                    "title": su.title,
+                    "discovered_by": cu.discovered_by,
+                    "status": cu.status or su.status,
+                    "inspected": cu.inspected,
+                    "has_community_data": cu.has_community_data,
+                    "data_quality_score": cu.data_quality_score,
+                    "first_seen_at": cu.first_seen_at,
+                    "last_seen_at": cu.last_seen_at,
+                }
+                for cu, su in rows
+            ]
+
+    def get_communities_for_url(self, url: str) -> list[str]:
+        with self.session() as session:
+            rows = (
+                session.query(CommunityURLRow.community_slug)
+                .join(SourceURLRow, CommunityURLRow.url_id == SourceURLRow.id)
+                .filter(SourceURLRow.url == url)
+                .all()
+            )
+            return [r[0] for r in rows]
+
+    def backfill_community_urls(self) -> int:
+        """Populate ``community_urls`` from legacy ``source_urls.community_slug``."""
+        count = 0
+        with self.session() as session:
+            srcs = (
+                session.query(SourceURLRow)
+                .filter(
+                    SourceURLRow.community_slug.isnot(None),
+                    SourceURLRow.community_slug != "",
+                )
+                .all()
+            )
+            now = datetime.now(timezone.utc)
+            for src in srcs:
+                exists = session.query(CommunityURLRow).filter_by(
+                    community_slug=src.community_slug, url_id=src.id
+                ).first()
+                if exists:
+                    continue
+                session.add(
+                    CommunityURLRow(
+                        community_slug=src.community_slug,
+                        url_id=src.id,
+                        discovered_by=src.discovered_by,
+                        first_seen_at=src.discovered_at or now,
+                        last_seen_at=src.accessed_at
+                        or src.discovered_at
+                        or now,
+                        inspected=bool(src.status and src.status != "pending"),
+                        status=src.status,
+                        has_community_data=bool(src.has_community_data),
+                        data_quality_score=src.data_quality_score or 0.0,
+                    )
+                )
+                count += 1
+            session.commit()
+        return count
 
     def query_communities(
         self,
@@ -752,6 +1322,21 @@ class CommunityDatabase:
             for county, cnt in session.query(CommunityRow.county_fips, func.count(CommunityRow.id)).filter(CommunityRow.county_fips.isnot(None)).group_by(CommunityRow.county_fips).all():
                 counties[county] = cnt
 
+            pipeline_statuses: dict[str, int] = {}
+            for status, cnt in session.query(
+                CommunityPipelineStatusRow.status,
+                func.count(CommunityPipelineStatusRow.community_slug),
+            ).group_by(CommunityPipelineStatusRow.status).all():
+                pipeline_statuses[status or "unknown"] = cnt
+
+            linked_urls = (
+                session.query(func.count(func.distinct(CommunityURLRow.url_id))).scalar()
+                or 0
+            )
+            community_url_links = (
+                session.query(func.count(CommunityURLRow.id)).scalar() or 0
+            )
+
         return {
             "total_communities": total,
             "gated_count": gated,
@@ -760,4 +1345,7 @@ class CommunityDatabase:
             "with_demographics": with_demographics,
             "data_sources": sources,
             "by_county": counties,
+            "pipeline_statuses": pipeline_statuses,
+            "linked_urls": linked_urls,
+            "community_url_links": community_url_links,
         }

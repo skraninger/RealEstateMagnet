@@ -3,7 +3,13 @@
 from .agent import CommunityResearchAgent, ResearchResult, build_model
 from .ai_condenser import AICondenser, CondenserResult
 from .browser_condenser import BrowserCondenser, BrowserCondenserConfig
-from .database import CommunityDatabase, SourceURLRow
+from .database import (
+    CommunityCondenserRunRow,
+    CommunityDatabase,
+    CommunityPipelineStatusRow,
+    CommunityURLRow,
+    SourceURLRow,
+)
 from .discovery import (
     CommunityDiscoveryEngine,
     DiscoveredCommunity,
@@ -48,6 +54,7 @@ from .full_pipeline import (
 from .web_condenser import WebAICondenser, WebCondenserResult
 from .url_tracker import URLTracker
 from .vision_browser_agent import access_and_extract
+from .migration import MigrationReport, migrate_database
 
 __all__ = [
     "build_model",
@@ -60,15 +67,18 @@ __all__ = [
     "BrowserCondenserConfig",
     "BrowserCondenserState",
     "BrowserExtractResult",
+    "CommunityCondenserRunRow",
     "CommunityDatabase",
     "CommunityDiscoveryEngine",
     "CommunityFacts",
     "CommunityIdentity",
+    "CommunityPipelineStatusRow",
     "CommunityRecord",
     "CommunityResearchAgent",
     "CommunityResearchEngine",
     "CommunityResearchReport",
     "CommunityStore",
+    "CommunityURLRow",
     "CondensedCommunityBatch",
     "CondensedCommunityItem",
     "CondenserResult",
@@ -83,6 +93,7 @@ __all__ = [
     "GeminiCondenser",
     "GeminiCondenserResult",
     "GoogleSearchResult",
+    "MigrationReport",
     "NextQuery",
     "PageExtractionResult",
     "ProximityMetric",
@@ -95,6 +106,7 @@ __all__ = [
     "WebCondenserResult",
     "access_and_extract",
     "merge_facts",
+    "migrate_database",
     "slugify",
     "ALL_CONDENSERS",
     "CondenserStepResult",

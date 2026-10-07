@@ -1,0 +1,309 @@
+{
+  "id": "b63140c6-82ca-41ad-a2a3-697f1716ccd0",
+  "identity": {
+    "name": "Fiddler's Creek",
+    "slug": "fiddler-s-creek",
+    "county_fips": null,
+    "city": "Naples, FL (South Naples)",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "One of the largest master-planned gated communities in Southwest Florida, covering nearly 4,000 acres in South Naples with 2,600+ acres permanently preserved as lakes, wetlands, and native preserves. Located between downtown Naples and Marco Island along the Collier Boulevard corridor. Features a layered fee structure (master HOA, sub-association HOA, CDD assessment, and optional memberships) and a diverse range of home types from condominiums under $500,000 to custom estate homes at $5 million and above. Includes a 54,000 sq ft Club & Spa, an optional championship golf course, and an optional private beach and marina program on Marco Island."
+  },
+  "fees": [
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469259Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 280.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Master HOA fee, same for ALL owners regardless of home type. Marked as approximate (~) by source. Excludes sub-association HOA, CDD, and optional golf/Tarpon Club memberships. Agent (Scott) can pull exact figures for any specific property before an offer. Figures are estimates, not official HOA published dues. Confidence 0.7: reputable Naples gated-community resource site but amounts are approximations."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469271Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 150.0,
+      "period": "monthly equivalent",
+      "currency": "USD",
+      "note": "CDD (Community Development District) monthly equivalent assessment, applies to all home types. Marked as approximate (~) by source. This is one of four distinct fee layers: master HOA, sub-association HOA, CDD, and optional memberships. Buyers are cautioned to add all four layers for the true all-in monthly cost."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469276Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1030.0,
+      "period": "monthly (all-in estimate, range $1,030–$1,430)",
+      "currency": "USD",
+      "note": "Estimated ALL-IN monthly cost for CONDOMINIUMS: master HOA ~$280 + sub-HOA ~$600–$1,000 (covers exterior maintenance, building insurance, reserves, landscaping) + CDD ~$150. Excludes optional golf and Tarpon Club memberships. Lower bound $1,030, upper bound $1,430."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469283Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 930.0,
+      "period": "monthly (all-in estimate, range $930–$1,230)",
+      "currency": "USD",
+      "note": "Estimated ALL-IN monthly cost for COACH HOMES: master HOA ~$280 + sub-HOA ~$500–$800 (covers exterior maintenance, building insurance, reserves, landscaping) + CDD ~$150. Excludes optional golf and Tarpon Club memberships. Lower bound $930, upper bound $1,230."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469288Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 730.0,
+      "period": "monthly (all-in estimate, range $730–$1,030)",
+      "currency": "USD",
+      "note": "Estimated ALL-IN monthly cost for VILLAS: master HOA ~$280 + sub-HOA ~$300–$600 (covers neighborhood common areas, landscaping) + CDD ~$150. Excludes optional golf and Tarpon Club memberships. Lower bound $730, upper bound $1,030."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469294Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 580.0,
+      "period": "monthly (all-in estimate, range $580–$780)",
+      "currency": "USD",
+      "note": "Estimated ALL-IN monthly cost for SINGLE-FAMILY (ENTRY): master HOA ~$280 + sub-HOA ~$150–$350 (covers neighborhood common areas; lawn care is SEPARATE) + CDD ~$150. Excludes optional golf and Tarpon Club memberships. Lower bound $580, upper bound $780."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469299Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 630.0,
+      "period": "monthly (all-in estimate, range $630–$930)",
+      "currency": "USD",
+      "note": "Estimated ALL-IN monthly cost for SINGLE-FAMILY (ESTATE): master HOA ~$280 + sub-HOA ~$200–$500 (covers neighborhood common areas; lawn care is SEPARATE) + CDD ~$150. Excludes optional golf and Tarpon Club memberships. Lower bound $630, upper bound $930."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469304Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "optional membership (amounts not stated)",
+      "currency": "USD",
+      "note": "Optional golf membership and Tarpon Club membership are ADDITIONAL costs NOT included in the all-in HOA/CDD figures above. The community has an optional championship golf course and an optional private beach and marina program on Marco Island. Exact membership fees are not stated in the provided content. These are the fourth fee layer buyers must account for."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:51:21.044064Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 1736.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Fiddler's Creek CDD #1 - paid-off neighborhoods (bond repaid); operations portion only. Collected on November property-tax bill (non-ad valorem). Source data current as of July 17, 2026."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:51:21.044071Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 6836.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Fiddler's Creek CDD #1 - bond-active neighborhoods (bond still outstanding). Collected on November property-tax bill (non-ad valorem). Source data current as of July 17, 2026."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-community-naples-fl/",
+      "retrieved_at": "2026-10-07T04:41:37.469311Z",
+      "confidence": 0.5,
+      "amenity": "club_spa",
+      "detail": "54,000 square foot Club & Spa facility on the community. Described as part of the community's optional lifestyle infrastructure. One of the key amenities of the community."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-community-naples-fl/",
+      "retrieved_at": "2026-10-07T04:41:37.469325Z",
+      "confidence": 0.5,
+      "amenity": "championship_golf_course",
+      "detail": "Optional championship golf course — membership is optional and not included in standard HOA/CDD fees. Described as part of the community's optional lifestyle infrastructure."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-community-naples-fl/",
+      "retrieved_at": "2026-10-07T04:41:37.469333Z",
+      "confidence": 0.5,
+      "amenity": "private_beach_marina_marco_island",
+      "detail": "Optional private beach and marina program located on Marco Island. Membership is optional and not included in standard HOA/CDD fees."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+      "retrieved_at": "2026-10-07T04:41:37.469342Z",
+      "confidence": 0.5,
+      "amenity": "tarpon_club",
+      "detail": "Optional Tarpon Club membership referenced as one of the four fee layers, separate from master HOA, sub-association HOA, and CDD. Specific fees not stated in provided content."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-community-naples-fl/",
+      "retrieved_at": "2026-10-07T04:41:37.469348Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry_community_security",
+      "detail": "Described as a 'self-contained gated environment' with multiple residential neighborhoods. One of the largest master-planned gated communities in Southwest Florida."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-community-naples-fl/",
+      "retrieved_at": "2026-10-07T04:41:37.469355Z",
+      "confidence": 0.5,
+      "amenity": "preserved_natural_open_space_preserves",
+      "detail": "More than 2,600 acres permanently preserved as lakes, wetlands, and native preserves out of the nearly 4,000 total acres. The majority of the acreage is open space and preserve, giving every neighborhood a sense of space and nature connection that smaller communities cannot replicate."
+    },
+    {
+      "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-community-naples-fl/",
+      "retrieved_at": "2026-10-07T04:41:37.469362Z",
+      "confidence": 0.5,
+      "amenity": "lakes_wetlands",
+      "detail": "Community features lakes and wetlands as part of its permanent natural preservation landscape."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194176Z",
+      "confidence": 0.5,
+      "amenity": "community_club_and_spa",
+      "detail": "Central hub of the community, fostering a dynamic and engaging atmosphere for residents. (August 2026 edition, Waterfront Realty Group neighborhood guide.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194186Z",
+      "confidence": 0.5,
+      "amenity": "resort_style_pools",
+      "detail": "Pools inviting leisure and relaxation, with thoughtfully designed outdoor spaces. (August 2026 edition, Waterfront Realty Group neighborhood guide.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194189Z",
+      "confidence": 0.5,
+      "amenity": "fitness_facilities",
+      "detail": "Dedicated fitness facilities equipped to support a variety of wellness routines. (August 2026 edition, Waterfront Realty Group neighborhood guide.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194192Z",
+      "confidence": 0.5,
+      "amenity": "dining_options",
+      "detail": "Diverse dining within the community, ranging from casual fare to more refined culinary experiences. (August 2026 edition, Waterfront Realty Group neighborhood guide.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194193Z",
+      "confidence": 0.5,
+      "amenity": "golf_courses",
+      "detail": "Beautifully maintained golf courses available directly within the community for spontaneous and regular play. (August 2026 edition, Waterfront Realty Group neighborhood guide.)"
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194198Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Gulf beaches of Marco Island",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:53:24.194202Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "City of Naples / Marco Island (on Naples-to-Marco corridor)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.cdd_assessment",
+      "values": [
+        {
+          "amount": 150.0,
+          "period": "monthly equivalent",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469271+00:00"
+        },
+        {
+          "amount": 1736.0,
+          "period": "year",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T04:51:21.044064+00:00"
+        },
+        {
+          "amount": 6836.0,
+          "period": "year",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T04:51:21.044071+00:00"
+        }
+      ],
+      "detected_at": "2026-10-07T04:56:21.698330Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 280.0,
+          "period": "monthly",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469259+00:00"
+        },
+        {
+          "amount": 1030.0,
+          "period": "monthly (all-in estimate, range $1,030–$1,430)",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469276+00:00"
+        },
+        {
+          "amount": 930.0,
+          "period": "monthly (all-in estimate, range $930–$1,230)",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469283+00:00"
+        },
+        {
+          "amount": 730.0,
+          "period": "monthly (all-in estimate, range $730–$1,030)",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469288+00:00"
+        },
+        {
+          "amount": 580.0,
+          "period": "monthly (all-in estimate, range $580–$780)",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469294+00:00"
+        },
+        {
+          "amount": 630.0,
+          "period": "monthly (all-in estimate, range $630–$930)",
+          "source_url": "https://gatedcommunitiesinnaplesfl.com/fiddlers-creek-naples-hoa-fees/",
+          "retrieved_at": "2026-10-07T04:41:37.469299+00:00"
+        }
+      ],
+      "detected_at": "2026-10-07T04:56:21.698339Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Gulf beaches of Marco Island",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "City of Naples / Marco Island (on Naples-to-Marco corridor)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-07T04:56:21.698343Z"
+    }
+  ],
+  "created_at": "2026-10-07T04:41:37.470231Z",
+  "updated_at": "2026-10-07T04:56:21.698395Z"
+}

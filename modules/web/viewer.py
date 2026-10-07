@@ -23,6 +23,26 @@ templates = Jinja2Templates(directory=str(templates_dir))
 DB_PATH = Path("data/communities.db")
 
 
+def _ensure_schema() -> None:
+    """Create the new tables and run the (idempotent) migration on startup.
+
+    Best-effort: if the community package or legacy data is unavailable the
+    viewer still serves whatever exists.
+    """
+    try:
+        from modules.community.database import CommunityDatabase
+        from modules.community.migration import migrate_database
+
+        db = CommunityDatabase(DB_PATH)
+        db.create_tables()
+        migrate_database(db=db)
+    except Exception:  # pragma: no cover - defensive
+        pass
+
+
+_ensure_schema()
+
+
 def get_db():
     """Get database connection."""
     conn = sqlite3.connect(DB_PATH)
@@ -85,6 +105,21 @@ async def dashboard(request: Request):
         high_quality_count = 0
         quality_distribution = {'high': 0, 'medium': 0, 'low': 0}
     
+    # Pipeline status counts (new schema)
+    try:
+        cursor.execute(
+            "SELECT status, COUNT(*) FROM community_pipeline_status GROUP BY status"
+        )
+        pipeline_statuses = {row[0]: row[1] for row in cursor.fetchall()}
+    except sqlite3.OperationalError:
+        pipeline_statuses = {}
+
+    try:
+        cursor.execute("SELECT COUNT(*) FROM community_urls")
+        community_url_links = cursor.fetchone()[0]
+    except sqlite3.OperationalError:
+        community_url_links = 0
+
     # Recent communities
     cursor.execute("""
         SELECT name, slug, city, county_fips, created_at
@@ -98,8 +133,8 @@ async def dashboard(request: Request):
     
     return templates.TemplateResponse(
         request,
-        "dashboard.html",
-        {
+        name="dashboard.html",
+        context={
             "total_communities": total_communities,
             "gated_communities": gated_communities,
             "total_urls": total_urls,
@@ -110,6 +145,8 @@ async def dashboard(request: Request):
             "high_quality_count": high_quality_count,
             "quality_distribution": quality_distribution,
             "recent_communities": recent_communities,
+            "pipeline_statuses": pipeline_statuses,
+            "community_url_links": community_url_links,
         }
     )
 
@@ -119,22 +156,38 @@ async def communities_list(
     request: Request,
     search: Optional[str] = None,
     county: Optional[str] = None,
+    status: Optional[str] = None,
 ):
-    """List all communities with optional filtering."""
+    """List all communities with optional filtering (incl. pipeline status)."""
     conn = get_db()
     cursor = conn.cursor()
-    
-    query = """
+
+    has_pipeline = True
+    try:
+        cursor.execute("SELECT 1 FROM community_pipeline_status LIMIT 1")
+    except sqlite3.OperationalError:
+        has_pipeline = False
+
+    pipeline_select = "ps.status as pipeline_status" if has_pipeline else "NULL as pipeline_status"
+    pipeline_join = (
+        "LEFT JOIN community_pipeline_status ps ON c.slug = ps.community_slug"
+        if has_pipeline
+        else ""
+    )
+
+    query = f"""
         SELECT 
             c.slug, c.name, c.city, c.county_fips, c.is_gated,
             c.data_source, c.created_at,
             COUNT(DISTINCT f.id) as fee_count,
             COUNT(DISTINCT a.id) as amenity_count,
-            d.median_age, d.population
+            d.median_age, d.population,
+            {pipeline_select}
         FROM communities c
         LEFT JOIN community_fees f ON c.slug = f.community_slug
         LEFT JOIN community_amenities a ON c.slug = a.community_slug
         LEFT JOIN community_demographics d ON c.slug = d.community_slug
+        {pipeline_join}
     """
     
     params = []
@@ -147,6 +200,10 @@ async def communities_list(
     if county:
         conditions.append("c.county_fips = ?")
         params.append(county)
+
+    if status and has_pipeline:
+        conditions.append("ps.status = ?")
+        params.append(status)
     
     if conditions:
         query += " WHERE " + " AND ".join(conditions)
@@ -159,17 +216,26 @@ async def communities_list(
     # Get unique counties for filter
     cursor.execute("SELECT DISTINCT county_fips FROM communities WHERE county_fips IS NOT NULL ORDER BY county_fips")
     counties = [row[0] for row in cursor.fetchall()]
+
+    pipeline_statuses = []
+    if has_pipeline:
+        cursor.execute(
+            "SELECT DISTINCT status FROM community_pipeline_status ORDER BY status"
+        )
+        pipeline_statuses = [row[0] for row in cursor.fetchall()]
     
     conn.close()
     
     return templates.TemplateResponse(
         request,
-        "communities.html",
-        {
+        name="communities.html",
+        context={
             "communities": communities,
             "counties": counties,
             "search": search,
             "county": county,
+            "status": status,
+            "pipeline_statuses": pipeline_statuses,
         }
     )
 
@@ -221,31 +287,81 @@ async def community_detail(request: Request, slug: str):
     """, (slug,))
     proximity = cursor.fetchall()
     
-    # Source URLs for this community
+    # Pipeline status (new schema)
+    try:
+        cursor.execute(
+            """
+            SELECT status, attempts, started_at, completed_at, last_error
+            FROM community_pipeline_status
+            WHERE community_slug = ?
+            """,
+            (slug,),
+        )
+        pipeline_status = cursor.fetchone()
+    except sqlite3.OperationalError:
+        pipeline_status = None
+
+    # Per-condenser runs (new schema)
+    try:
+        cursor.execute(
+            """
+            SELECT condenser, status, elapsed, fees, amenities, proximity,
+                   demographics_present, sources_consulted, errors, finished_at
+            FROM community_condenser_runs
+            WHERE community_slug = ?
+            ORDER BY condenser
+            """,
+            (slug,),
+        )
+        condenser_runs = cursor.fetchall()
+    except sqlite3.OperationalError:
+        condenser_runs = []
+
+    # Source URLs for this community via the community_urls join table,
+    # falling back to the legacy source_urls.community_slug column.
+    source_urls = []
     try:
         cursor.execute("""
-            SELECT url, status, data_quality_score, data_types_found, 
-                   has_community_data, discovered_at
-            FROM source_urls
-            WHERE community_slug = ?
-            ORDER BY data_quality_score DESC
+            SELECT su.url, su.status, su.data_quality_score, su.data_types_found,
+                   su.has_community_data, su.discovered_at,
+                   cu.discovered_by, cu.inspected
+            FROM community_urls cu
+            JOIN source_urls su ON cu.url_id = su.id
+            WHERE cu.community_slug = ?
+            ORDER BY su.data_quality_score DESC
         """, (slug,))
         source_urls = cursor.fetchall()
     except sqlite3.OperationalError:
         source_urls = []
+
+    if not source_urls:
+        try:
+            cursor.execute("""
+                SELECT url, status, data_quality_score, data_types_found,
+                       has_community_data, discovered_at,
+                       discovered_by, NULL as inspected
+                FROM source_urls
+                WHERE community_slug = ?
+                ORDER BY data_quality_score DESC
+            """, (slug,))
+            source_urls = cursor.fetchall()
+        except sqlite3.OperationalError:
+            source_urls = []
     
     conn.close()
     
     return templates.TemplateResponse(
         request,
-        "community_detail.html",
-        {
+        name="community_detail.html",
+        context={
             "community": community,
             "fees": fees,
             "amenities": amenities,
             "demographics": demographics,
             "proximity": proximity,
             "source_urls": source_urls,
+            "pipeline_status": pipeline_status,
+            "condenser_runs": condenser_runs,
         }
     )
 
@@ -262,35 +378,45 @@ async def urls_list(
     cursor = conn.cursor()
     
     try:
-        query = """
+        try:
+            cursor.execute("SELECT 1 FROM community_urls LIMIT 1")
+            links_select = (
+                "(SELECT COUNT(*) FROM community_urls cu "
+                "WHERE cu.url_id = su.id) as community_count"
+            )
+        except sqlite3.OperationalError:
+            links_select = "0 as community_count"
+
+        query = f"""
             SELECT 
-                url, domain, status, title, 
-                data_quality_score, has_community_data, 
-                data_types_found, data_summary,
-                robot_friendly, captcha_detected, captcha_solved,
-                discovered_at, accessed_at
-            FROM source_urls
+                su.url, su.domain, su.status, su.title, 
+                su.data_quality_score, su.has_community_data, 
+                su.data_types_found, su.data_summary,
+                su.robot_friendly, su.captcha_detected, su.captcha_solved,
+                su.discovered_at, su.accessed_at,
+                {links_select}
+            FROM source_urls su
         """
         
         params = []
         conditions = []
         
         if status:
-            conditions.append("status = ?")
+            conditions.append("su.status = ?")
             params.append(status)
         
         if min_quality is not None:
-            conditions.append("data_quality_score >= ?")
+            conditions.append("su.data_quality_score >= ?")
             params.append(min_quality)
         
         if has_data is not None:
-            conditions.append("has_community_data = ?")
+            conditions.append("su.has_community_data = ?")
             params.append(1 if has_data else 0)
         
         if conditions:
             query += " WHERE " + " AND ".join(conditions)
         
-        query += " ORDER BY data_quality_score DESC, discovered_at DESC"
+        query += " ORDER BY su.data_quality_score DESC, su.discovered_at DESC"
         
         cursor.execute(query, params)
         urls = cursor.fetchall()
@@ -302,8 +428,8 @@ async def urls_list(
     
     return templates.TemplateResponse(
         request,
-        "urls.html",
-        {
+        name="urls.html",
+        context={
             "urls": urls,
             "status": status,
             "min_quality": min_quality,
@@ -336,8 +462,8 @@ async def review_queue(request: Request):
     
     return templates.TemplateResponse(
         request,
-        "review_queue.html",
-        {
+        name="review_queue.html",
+        context={
             "review_items": review_items,
         }
     )
@@ -366,8 +492,8 @@ async def high_quality_urls(request: Request, min_score: float = 75.0):
     
     return templates.TemplateResponse(
         request,
-        "high_quality.html",
-        {
+        name="high_quality.html",
+        context={
             "urls": urls,
             "min_score": min_score,
         }

@@ -291,6 +291,7 @@ class WebAICondenser:
     async def enrich_from_web(self, name: str, city: Optional[str] = None) -> CondensedCommunityItem:
         """Use web search + local model to enrich a community from web content."""
         location = f" {city}" if city else ""
+        community_slug = slugify(name)
         self._report_progress(f"Searching web for: {name}{location}")
         
         # Step 1: Search the web
@@ -308,7 +309,9 @@ class WebAICondenser:
             # Register URLs immediately when discovered
             if self.url_tracker:
                 urls = [sr.url for sr in search_results]
-                self.url_tracker.register_urls(urls, discovered_by="web_condenser")
+                self.url_tracker.register_urls(
+                    urls, discovered_by="web_condenser", community_slug=community_slug
+                )
             
             for sr in search_results[:2]:
                 # Read the page content
@@ -327,6 +330,7 @@ class WebAICondenser:
                             data_types_found=quality_metrics["data_types_found"],
                             data_summary=quality_metrics["data_summary"],
                             status="printed",
+                            community_slug=community_slug,
                         )
         
         if not all_content:

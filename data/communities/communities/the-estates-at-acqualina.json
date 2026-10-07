@@ -1,117 +1,418 @@
 {
-  "id": "bd15f204-4d1b-4f0b-8c81-f946ddbfceab",
+  "id": "2b052009-e855-4f0a-a2f9-25dfea6ca6b2",
   "identity": {
     "name": "The Estates at Acqualina",
     "slug": "the-estates-at-acqualina",
     "county_fips": null,
     "city": "Sunny Isles Beach",
-    "hoa_name": "Estates Master Association (related entity of Acqualina Ocean Residences & Resort Condominium Association, Inc.; managed by Acqualina Management, LLC, (305) 918-8000)",
+    "hoa_name": "Acqualina Ocean Residences & Resort Condominium Association, Inc. (with related entity: Estates Master Association); managed by Acqualina Management, LLC, phone (305) 918-8000",
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": "Ultra-luxury oceanfront condominium HOA community consisting of two high-rise towers (North and South) with approximately 248 residences at 17901 and 17975 Collins Ave, Sunny Isles Beach, FL 33160. Completed around 2022 as part of the Acqualina Resort campus, the community shares extensive resort-style amenities with the adjacent Acqualina Resort & Residences / Resort & Spa. The HOA manages common areas, security, and shared amenities in a secure oceanfront setting."
+    "notes": "Ultra-luxury oceanfront condominium HOA community with two high-rise towers (North and South) containing approximately 248 residences at 17901 and 17975 Collins Ave, Sunny Isles Beach, FL 33160. Part of the Acqualina Resort campus, completed around 2022. The HOA manages common areas, security, and shared amenities in partnership with the adjacent Acqualina Resort & Residences."
   },
   "fees": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521338Z",
+      "retrieved_at": "2026-10-07T02:46:58.862350Z",
       "confidence": 0.5,
       "fee_type": "hoa_monthly",
       "amount": null,
       "period": "monthly",
       "currency": "USD",
-      "note": "Typically $1.50 to $2.00+ per square foot per month depending on unit size; listing examples show $3,655 to over $23,000 per month for larger residences. Exact figures, transfer fees, capital contributions, and special assessments are not uniformly published and vary; not available in detail from public sources. CDD assessments not mentioned in sources. Broader Acqualina community (same campus) cited at $1.50-$2.50/sq ft with examples from several thousand to $10,000+/month."
+      "note": "Monthly HOA fees typically $1.50-$2.00+ per square foot depending on unit size; listing examples show $3,655 to over $23,000 per month for larger residences. Exact figures, transfer fees, capital contributions, and special assessments not uniformly published in public sources. No CDD assessments stated in sources reviewed. One listing source (homes.com) was inaccessible (access denied)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888892Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Deposit schedule stated as '100% at Closing' (purchase deposit, not a recurring fee). No HOA monthly/annual or CDD fee amounts are stated on the page. Price range $6.7M–$14.0M; available listings Dec 2025–Aug 2026 from $5,650,000 (Unit 1506) to $39,995,000 (Unit PH-01); sample: Unit 1803 $7,200,000 (4bd/5ba, 2,987 sq ft, MLS A12064632), Unit 2704 $10,900,000 (5bd/8ba, 3,803 sq ft, MLS A12018066), Unit 4507 $13,980,000 (4bd/6ba, 5,573 sq ft, MLS A11989912)."
     }
   ],
   "amenities": [
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521346Z",
+      "retrieved_at": "2026-10-07T02:46:58.862362Z",
       "confidence": 0.5,
-      "amenity": "swimming_pools",
-      "detail": "Multiple pools including oceanfront infinity pool, rooftop pool, family pool, lap pool, and children's pool with waterslide"
+      "amenity": "multiple_swimming_pools",
+      "detail": "Oceanfront infinity pool, rooftop pool, family pool, lap pool, and children's pool with waterslide"
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521355Z",
+      "retrieved_at": "2026-10-07T02:46:58.862376Z",
       "confidence": 0.5,
       "amenity": "private_beach_access",
-      "detail": "Private oceanfront beach access with beach service/attendants"
+      "detail": "Private oceanfront beach with attendants/beach service"
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521358Z",
+      "retrieved_at": "2026-10-07T02:46:58.862384Z",
       "confidence": 0.5,
       "amenity": "spa",
-      "detail": "Full-service spa (ESPA spa on the Acqualina campus)"
+      "detail": "Full-service ESPA spa (part of Acqualina Resort & Spa)"
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521361Z",
+      "retrieved_at": "2026-10-07T02:46:58.862390Z",
       "confidence": 0.5,
       "amenity": "fitness_center",
-      "detail": "State-of-the-art fitness center; multiple fitness centers across the Acqualina campus"
-    },
-    {
-      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521363Z",
-      "confidence": 0.5,
-      "amenity": "simulators",
-      "detail": "Unique simulators listed among resort amenities (specific type not detailed in sources)"
+      "detail": "State-of-the-art fitness center"
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521365Z",
+      "retrieved_at": "2026-10-07T02:46:58.862396Z",
       "confidence": 0.5,
       "amenity": "sports_courts",
-      "detail": "Sports courts (listed for the broader Acqualina community shared with Estates at Acqualina)"
+      "detail": null
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521367Z",
+      "retrieved_at": "2026-10-07T02:46:58.862401Z",
       "confidence": 0.5,
       "amenity": "gardens",
-      "detail": "Resort gardens (listed for the broader Acqualina campus)"
+      "detail": null
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521369Z",
+      "retrieved_at": "2026-10-07T02:46:58.862406Z",
       "confidence": 0.5,
-      "amenity": "concierge_and_resort_services",
-      "detail": "Resort-style services including concierge and dining options via the adjacent Acqualina Resort & Spa"
+      "amenity": "concierge_services",
+      "detail": "Resort-style concierge services"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/asibfl/about_hoa/",
+      "retrieved_at": "2026-10-07T02:46:58.862412Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Resort-style dining options"
     },
     {
       "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521372Z",
+      "retrieved_at": "2026-10-07T02:46:58.862416Z",
+      "confidence": 0.5,
+      "amenity": "simulators",
+      "detail": "Unique simulator installations noted in community description"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
+      "retrieved_at": "2026-10-07T02:46:58.862422Z",
       "confidence": 0.5,
       "amenity": "security",
-      "detail": "HOA-managed security in a secure oceanfront setting"
+      "detail": "HOA manages security; secure oceanfront setting"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888900Z",
+      "confidence": 0.5,
+      "amenity": "zero_entry_infinity_edge_and_adults_only_pools",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888909Z",
+      "confidence": 0.5,
+      "amenity": "private_poolside_cabanas",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888912Z",
+      "confidence": 0.5,
+      "amenity": "bowling_alley",
+      "detail": "4 lanes"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888915Z",
+      "confidence": 0.5,
+      "amenity": "ice_skating_rink",
+      "detail": "Private skating rink in Villa Acqualina"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888917Z",
+      "confidence": 0.5,
+      "amenity": "flowrider_surfing_simulator",
+      "detail": "FlowRider® surfing simulator"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888920Z",
+      "confidence": 0.5,
+      "amenity": "private_night_club",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888922Z",
+      "confidence": 0.5,
+      "amenity": "wine_room",
+      "detail": "Wine Lounge also listed in Villa Acqualina"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888924Z",
+      "confidence": 0.5,
+      "amenity": "cigar_lounge",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888926Z",
+      "confidence": 0.5,
+      "amenity": "billiards_room",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888928Z",
+      "confidence": 0.5,
+      "amenity": "wall_street_trader_s_clubroom",
+      "detail": "Wall Street Traders' Club Room"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888931Z",
+      "confidence": 0.5,
+      "amenity": "formula_one_racing_simulator",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888933Z",
+      "confidence": 0.5,
+      "amenity": "golf_simulator",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888935Z",
+      "confidence": 0.5,
+      "amenity": "teen_game_area",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888937Z",
+      "confidence": 0.5,
+      "amenity": "children_s_play_area",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888939Z",
+      "confidence": 0.5,
+      "amenity": "relaxation_lounge",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888941Z",
+      "confidence": 0.5,
+      "amenity": "walking_and_jogging_trails",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888943Z",
+      "confidence": 0.5,
+      "amenity": "gazebos",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888945Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888946Z",
+      "confidence": 0.5,
+      "amenity": "soccer_field",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888948Z",
+      "confidence": 0.5,
+      "amenity": "movie_screening_theater",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888950Z",
+      "confidence": 0.5,
+      "amenity": "meditation_areas",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888952Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888954Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888956Z",
+      "confidence": 0.5,
+      "amenity": "spa_and_salt_room",
+      "detail": "World-class Spa and Salt Room in 60,000 sq ft Villa Acqualina"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888958Z",
+      "confidence": 0.5,
+      "amenity": "celebrity_chef_restaurant",
+      "detail": "Located in Villa Acqualina"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888961Z",
+      "confidence": 0.5,
+      "amenity": "circus_maximus",
+      "detail": "Games and activities area in Villa Acqualina"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888963Z",
+      "confidence": 0.5,
+      "amenity": "private_saunas_and_spas",
+      "detail": "Per-residence amenities; residences delivered furniture-ready with smart-home technology and imported stone countertops"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888965Z",
+      "confidence": 0.5,
+      "amenity": "summer_kitchens",
+      "detail": "Per-residence amenity on expansive terraces"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833356Z",
+      "confidence": 0.5,
+      "amenity": "indoor_and_outdoor_amenities",
+      "detail": "Exclusive indoor and outdoor amenities offered as part of the resort-managed community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833367Z",
+      "confidence": 0.5,
+      "amenity": "designer_lobbies",
+      "detail": "Lobby designs by the legendary Karl Lagerfeld."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833370Z",
+      "confidence": 0.5,
+      "amenity": "five_star_services",
+      "detail": "Five-star services by Acqualina Resort, described as America's #1 Oceanfront Luxury Resort."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833372Z",
+      "confidence": 0.5,
+      "amenity": "platinum_collection_penthouses",
+      "detail": "Limited number of spectacular one- and two-story furnished penthouses for discerning buyers."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833375Z",
+      "confidence": 0.5,
+      "amenity": "wrap_around_terraces",
+      "detail": "Extraordinary wrap-around terraces with a panorama of Atlantic Ocean and city views."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833377Z",
+      "confidence": 0.5,
+      "amenity": "furniture_ready_delivery",
+      "detail": "Each residence delivered furniture ready and equipped with the finest appliances."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833379Z",
+      "confidence": 0.5,
+      "amenity": "imported_stone_countertops",
+      "detail": "Residences equipped with imported stone countertops."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833382Z",
+      "confidence": 0.5,
+      "amenity": "smart_home_technology",
+      "detail": "Residences equipped with smart-home technology."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833384Z",
+      "confidence": 0.5,
+      "amenity": "10_foot_6_inch_ceilings",
+      "detail": "Residences feature 10-foot-6-inch ceilings."
     }
   ],
   "demographics": {
     "source_url": "https://subdivisions.com/sunny-isles-beach-fl/the-estates-at-acqualina-condos-for-sale/demographics",
-    "retrieved_at": "2026-10-06T22:26:29.521376Z",
+    "retrieved_at": "2026-10-07T02:46:58.862429Z",
     "confidence": 0.5,
     "median_age": 47.5,
     "median_household_income": null,
     "owner_occupancy_pct": null,
     "population": null,
     "data_year": null,
-    "geography_level": "Area-level (approximate; source data covers a broader area than the ~248-residence building, e.g., ~19,666 housing units cited with Miami metro and Florida comparisons). Median age ~47.5, about 10% higher than Miami metro (41.8) and Florida (42.7)."
+    "geography_level": "Area/census-tract-level estimates (subdivisions.com), not community-specific; includes wide margins of error (e.g., ~19,666 housing units in surrounding area) and is ~10% higher than the Miami-Fort Lauderdale-West Palm Beach metro median age of 41.8"
   },
   "demographics_history": [],
   "proximity": [
     {
-      "source_url": "https://www.hoabulletinboard.com/hoa/easibfl/about_hoa/",
-      "retrieved_at": "2026-10-06T22:26:29.521380Z",
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:51:38.888969Z",
       "confidence": 0.5,
       "category": "other",
-      "nearest_name": "Acqualina Resort & Spa / Acqualina Resort & Residences (adjacent on same campus)",
-      "distance_miles": null
+      "nearest_name": "Ocean (Atlantic Oceanfront)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T02:53:58.833389Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Atlantic Ocean",
+      "distance_miles": 0.0
     }
   ],
   "open_questions": [],
-  "discrepancies": [],
-  "created_at": "2026-10-06T22:26:29.522120Z",
-  "updated_at": "2026-10-06T22:26:29.522271Z"
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Ocean (Atlantic Oceanfront)",
+          "distance_miles": 0.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Atlantic Ocean",
+          "distance_miles": 0.0,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-07T02:54:05.568356Z"
+    }
+  ],
+  "created_at": "2026-10-07T02:46:58.863209Z",
+  "updated_at": "2026-10-07T02:54:05.568407Z"
 }

@@ -1,0 +1,311 @@
+{
+  "id": "f5dea7eb-5ee5-48f5-854d-d461dae98ff6",
+  "identity": {
+    "name": "Jupiter Island",
+    "slug": "jupiter-island",
+    "county_fips": null,
+    "city": "Jupiter Island / Hobe Sound, Florida (Treasure Coast)",
+    "hoa_name": "None",
+    "cdd_name": null,
+    "is_gated": false,
+    "geo_point": null,
+    "notes": "Jupiter Island is a barrier island on Florida's Treasure Coast, bounded by the Atlantic Ocean, St. Lucie Inlet, the Indian River, and Jupiter Inlet. The Town of Jupiter Island (Martin County portion, ZIP 33455, area code 772) is described as exceptionally wealthy; Worth magazine (June 1999) ranked it #1 in the U.S. for highest median home sale. Population was 804 at the 2020 census. The island is bordered to the north by the Hobe Sound National Wildlife Refuge; other communities on the island include Jupiter Inlet Colony and the Village of Tequesta. No gate, HOA, or community-amenity information appears in the source content."
+  },
+  "fees": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257188Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 40.0,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fees for single-family homes range $40-$535 (period not stated on page). Includes common area maintenance, grounds maintenance, building maintenance, roof repair and replacement, community pool, property insurance, water, trash removal, sewer, pest control, internet, parking, and recreation facilities."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257198Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 590.0,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee for a Jupiter Village condo (period not stated on page)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257202Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 70.0,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fees for townhomes range $70-$1,090 (period not stated on page)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597107Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 110.0,
+      "period": "per night",
+      "currency": "USD",
+      "note": "Starting nightly rate for Jupiter Island vacation rentals, before taxes and fees (not an HOA or CDD fee). Source page is an Airbnb listings page, no HOA/CDD data listed. (retrieved_at: 2025-06-15T00:00:00Z, confidence 0.85)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257206Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257218Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257226Z",
+      "confidence": 0.5,
+      "amenity": "cabana",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257231Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Sports facility"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257237Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Sports facility"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257243Z",
+      "confidence": 0.5,
+      "amenity": "racquetball",
+      "detail": "Sports facility"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257248Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Sports facility"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257254Z",
+      "confidence": 0.5,
+      "amenity": "picnic_area",
+      "detail": "Onsite dining venue"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257260Z",
+      "confidence": 0.5,
+      "amenity": "barbecue_area",
+      "detail": "Onsite dining venue"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257265Z",
+      "confidence": 0.5,
+      "amenity": "community_park",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257271Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257276Z",
+      "confidence": 0.5,
+      "amenity": "walking_jogging_trails",
+      "detail": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597114Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "10 of 20 Jupiter Island vacation rentals feature pools; Pool is among the most popular amenities for guests. (retrieved_at: 2025-06-15T00:00:00Z, confidence 0.9)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597121Z",
+      "confidence": 0.5,
+      "amenity": "wi_fi",
+      "detail": "All 20 Jupiter Island vacation rentals include Wi-Fi access. (retrieved_at: 2025-06-15T00:00:00Z, confidence 0.9)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597124Z",
+      "confidence": 0.5,
+      "amenity": "kitchen",
+      "detail": "Kitchen is listed among the most popular amenities for guests across Jupiter Island rentals. (retrieved_at: 2025-06-15T00:00:00Z, confidence 0.85)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597126Z",
+      "confidence": 0.5,
+      "amenity": "dedicated_workspace",
+      "detail": "10 properties have a dedicated workspace. (retrieved_at: 2025-06-15T00:00:00Z, confidence 0.85)}]"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island,_Florida",
+    "retrieved_at": "2026-10-07T04:04:34.128645Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 804,
+    "data_year": 2020,
+    "geography_level": "Town of Jupiter Island (census town), Martin County, Florida — 3.58 sq mi total area (2.71 land, 0.87 water); density ~296.7/sq mi; part of Port St. Lucie metropolitan area. Noted for having some of the wealthiest U.S. residents; 1999 Worth magazine ranked it #1 for highest median home sale. No median age, income, or owner-occupancy figures stated in content (2020 census data)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island",
+      "retrieved_at": "2026-10-07T04:04:34.128654Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Hobe Sound National Wildlife Refuge (southern portion within town limits; adjacent)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island",
+      "retrieved_at": "2026-10-07T04:04:34.128658Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Coral Cove Park (county park within Tequesta city limits, on the island)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island",
+      "retrieved_at": "2026-10-07T04:04:34.128659Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "St. Lucie Inlet Preserve State Park (unincorporated Martin County portion of the island)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:15:35.257284Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach International Airport (PBI)",
+      "distance_miles": 17.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597130Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Beach (via Carlin Park)",
+      "distance_miles": 0.17
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597133Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach International Airport (PBI)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-07T04:17:34.597134Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Brand new grocery store",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 40.0,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T04:15:35.257188+00:00"
+        },
+        {
+          "amount": 590.0,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T04:15:35.257198+00:00"
+        },
+        {
+          "amount": 70.0,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T04:15:35.257202+00:00"
+        },
+        {
+          "amount": 110.0,
+          "period": "per night",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-07T04:17:34.597107+00:00"
+        }
+      ],
+      "detected_at": "2026-10-07T04:18:07.864359Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Hobe Sound National Wildlife Refuge (southern portion within town limits; adjacent)",
+          "distance_miles": 0.0,
+          "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island"
+        },
+        {
+          "nearest_name": "Coral Cove Park (county park within Tequesta city limits, on the island)",
+          "distance_miles": null,
+          "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island"
+        },
+        {
+          "nearest_name": "St. Lucie Inlet Preserve State Park (unincorporated Martin County portion of the island)",
+          "distance_miles": null,
+          "source_url": "https://en.wikipedia.org/wiki/Jupiter_Island"
+        },
+        {
+          "nearest_name": "Palm Beach International Airport (PBI)",
+          "distance_miles": 17.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Beach (via Carlin Park)",
+          "distance_miles": 0.17,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Palm Beach International Airport (PBI)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-07T04:18:07.864367Z"
+    }
+  ],
+  "created_at": "2026-10-07T04:04:34.129179Z",
+  "updated_at": "2026-10-07T04:18:07.864420Z"
+}

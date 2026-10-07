@@ -483,41 +483,55 @@ class URLTracker:
         discovered_by: str,
         community_slug: Optional[str] = None,
     ) -> SourceURLRow:
-        """Register a URL for tracking. Returns existing row if already registered."""
+        """Register a URL for tracking. Returns existing row if already registered.
+
+        When ``community_slug`` is given the URL is also linked to that
+        community in the ``community_urls`` join table, so the same URL can be
+        attributed to multiple communities.
+        """
         domain = urlparse(url).netloc
-        
+        url_id: Optional[int] = None
+        row: Optional[SourceURLRow] = None
+
         with self.db.session() as session:
             # Check if URL already exists
             existing = session.query(SourceURLRow).filter(
                 SourceURLRow.url == url
             ).first()
-            
+
             if existing:
                 logger.debug("URL already registered: %s", url)
+                url_id = existing.id
                 # Touch all attributes while session is still open to avoid DetachedInstanceError
                 _ = existing.id, existing.url, existing.domain, existing.status
-                return existing
-            
-            # Create new row
-            row = SourceURLRow(
-                url=url,
-                domain=domain,
-                status="pending",
-                discovered_by=discovered_by,
-                community_slug=community_slug,
-                discovered_at=datetime.now(timezone.utc),
-            )
-            session.add(row)
-            session.commit()
-            
-            # Refresh the row to get database-generated values
-            session.refresh(row)
-            
-            # Touch all attributes while session is still open
-            _ = row.id, row.url, row.domain, row.status
-            
-            logger.info("Registered new URL: %s (by %s)", url, discovered_by)
-            return row
+                row = existing
+            else:
+                # Create new row
+                row = SourceURLRow(
+                    url=url,
+                    domain=domain,
+                    status="pending",
+                    discovered_by=discovered_by,
+                    community_slug=community_slug,
+                    discovered_at=datetime.now(timezone.utc),
+                )
+                session.add(row)
+                session.commit()
+
+                # Refresh the row to get database-generated values
+                session.refresh(row)
+                url_id = row.id
+
+                # Touch all attributes while session is still open
+                _ = row.id, row.url, row.domain, row.status
+
+                logger.info("Registered new URL: %s (by %s)", url, discovered_by)
+
+        # Link to the community (outside the source-url session)
+        if community_slug and url_id is not None:
+            self.db.link_url_to_community(community_slug, url_id, discovered_by)
+
+        return row
     
     def register_urls(
         self,
@@ -553,8 +567,14 @@ class URLTracker:
                 row.captcha_detected = True
                 session.commit()
     
-    def update_from_result(self, url: str, result: BrowserExtractResult) -> None:
+    def update_from_result(
+        self,
+        url: str,
+        result: BrowserExtractResult,
+        community_slug: Optional[str] = None,
+    ) -> None:
         """Update URL row with results from vision browser agent."""
+        url_id: Optional[int] = None
         with self.db.session() as session:
             row = session.query(SourceURLRow).filter(
                 SourceURLRow.url == url
@@ -564,6 +584,7 @@ class URLTracker:
                 logger.warning("URL not found in tracker: %s", url)
                 return
             
+            url_id = row.id
             row.status = result.status
             row.http_status = result.http_status
             row.failure_category = result.failure_category
@@ -595,6 +616,17 @@ class URLTracker:
                 url, result.status, result.captcha_detected, result.captcha_solved,
                 result.data_quality_score
             )
+
+        if community_slug and url_id is not None:
+            self.db.link_url_to_community(community_slug, url_id, None)
+            self.db.update_community_url(
+                community_slug,
+                url_id,
+                inspected=True,
+                status=result.status,
+                has_community_data=bool(result.has_community_data),
+                data_quality_score=result.data_quality_score or 0.0,
+            )
     
     def update_url_status(
         self,
@@ -602,6 +634,7 @@ class URLTracker:
         status: str,
         error_message: Optional[str] = None,
         http_status: Optional[int] = None,
+        community_slug: Optional[str] = None,
     ) -> None:
         """Update URL status and error information.
         
@@ -610,7 +643,10 @@ class URLTracker:
             status: New status (e.g., "failed", "printed")
             error_message: Optional error message
             http_status: Optional HTTP status code
+            community_slug: Optional community this URL was inspected for
         """
+        final_status = status
+        url_id: Optional[int] = None
         with self.db.session() as session:
             row = session.query(SourceURLRow).filter(
                 SourceURLRow.url == url
@@ -619,7 +655,8 @@ class URLTracker:
             if not row:
                 logger.warning("URL not found in tracker: %s", url)
                 return
-            
+
+            url_id = row.id
             row.status = status
             if error_message:
                 row.error_message = error_message
@@ -631,9 +668,16 @@ class URLTracker:
                     row.status = "failed_4xx"
                 elif 500 <= http_status < 600:
                     row.status = "failed_5xx"
+            final_status = row.status
             
             session.commit()
             logger.info("Updated URL %s: status=%s, http_status=%s", url, status, http_status)
+
+        if community_slug and url_id is not None:
+            self.db.link_url_to_community(community_slug, url_id, None)
+            self.db.update_community_url(
+                community_slug, url_id, inspected=True, status=final_status
+            )
     
     def update_url_quality(
         self,
@@ -643,6 +687,7 @@ class URLTracker:
         data_types_found: Optional[str] = None,
         data_summary: Optional[str] = None,
         status: str = "printed",
+        community_slug: Optional[str] = None,
     ) -> None:
         """Update URL with data quality metrics.
         
@@ -653,7 +698,9 @@ class URLTracker:
             data_types_found: Comma-separated list of data types found
             data_summary: Brief summary of extracted data
             status: Status to set (default: "printed")
+            community_slug: Optional community this URL was inspected for
         """
+        url_id: Optional[int] = None
         with self.db.session() as session:
             row = session.query(SourceURLRow).filter(
                 SourceURLRow.url == url
@@ -662,7 +709,8 @@ class URLTracker:
             if not row:
                 logger.warning("URL not found in tracker: %s", url)
                 return
-            
+
+            url_id = row.id
             row.has_community_data = has_community_data
             row.data_quality_score = data_quality_score
             row.data_types_found = data_types_found
@@ -676,6 +724,25 @@ class URLTracker:
                 "Updated URL %s: quality_score=%s, has_data=%s, types=%s",
                 url, data_quality_score, has_community_data, data_types_found
             )
+
+        if community_slug and url_id is not None:
+            self.db.link_url_to_community(community_slug, url_id, None)
+            self.db.update_community_url(
+                community_slug,
+                url_id,
+                inspected=True,
+                status=status,
+                has_community_data=bool(has_community_data),
+                data_quality_score=data_quality_score or 0.0,
+            )
+
+    def get_urls_for_community(self, community_slug: str) -> list[dict]:
+        """Return every URL linked to a community."""
+        return self.db.get_urls_for_community(community_slug)
+
+    def get_communities_for_url(self, url: str) -> list[str]:
+        """Return every community a URL has been linked to."""
+        return self.db.get_communities_for_url(url)
     
     async def process_url(
         self,
@@ -766,7 +833,7 @@ class URLTracker:
             )
         
         # Update tracker with result
-        self.update_from_result(url, result)
+        self.update_from_result(url, result, community_slug=community_slug)
         
         return result
     

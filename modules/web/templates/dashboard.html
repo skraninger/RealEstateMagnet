@@ -30,7 +30,39 @@
             <div class="value">{{ avg_quality }}</div>
             <div class="label">Avg Quality Score</div>
         </div>
+        <div class="stat-box">
+            <div class="value">{{ pipeline_statuses.get('completed', 0) }}</div>
+            <div class="label">Communities Completed</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">{{ community_url_links }}</div>
+            <div class="label">URL↔Community Links</div>
+        </div>
     </div>
+</div>
+
+<div class="card">
+    <h2>Pipeline Status</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Communities</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for status, count in pipeline_statuses.items() %}
+            <tr>
+                <td>{{ status }}</td>
+                <td>{{ count }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="2" class="text-muted">No pipeline data yet.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 <div class="card">

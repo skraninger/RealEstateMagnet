@@ -37,6 +37,13 @@ from modules.community.models import (
 from modules.community.store import CommunityStore
 
 
+def make_db(tmp_path: Path) -> CommunityDatabase:
+    """Create a real, empty community database under tmp_path."""
+    db = CommunityDatabase(tmp_path / "communities.db")
+    db.create_tables()
+    return db
+
+
 # ── State models ─────────────────────────────────────────────────────────────
 
 
@@ -395,21 +402,23 @@ class TestFullPipeline:
             json.dumps({"communities": []}),
             encoding="utf-8",
         )
-        database = MagicMock()
-        database.list_records.return_value = []
+        database = make_db(tmp_path)
+        # A community that has already been processed.
+        database.register_community(name="Old", slug="old")
+        database.mark_completed("old")
+
         # Use non-existent discovery state path
         discovery_state_path = tmp_path / "discovery_state.json"
 
         state_path = tmp_path / "pipeline_state.json"
 
-        # Create initial state
+        # Create initial state mirror
         initial_state = PipelineState()
         initial_state.communities = [
             CommunityInfo(name="Old", slug="old"),
         ]
         initial_state.save(state_path)
 
-        # Reset should discard old state
         pipeline = FullPipeline(
             state_path=state_path,
             store=store,
@@ -417,7 +426,10 @@ class TestFullPipeline:
             discovery_state_path=discovery_state_path,
         )
         state = pipeline.init_state(reset=True)
-        assert len(state.communities) == 0
+
+        # Identity is retained; progress is reset (data is never discarded).
+        assert any(c.slug == "old" for c in state.communities)
+        assert database.get_pipeline_status("old") == "pending"
 
     def test_condenser_order(self) -> None:
         """Verify condensers run in the correct order."""
@@ -469,15 +481,7 @@ class TestFullPipeline:
             }),
             encoding="utf-8",
         )
-        database = MagicMock()
-        database.list_records.return_value = []
-        database.summary.return_value = {
-            "total_communities": 1,
-            "gated_count": 1,
-            "with_fees": 0,
-            "with_amenities": 0,
-            "with_demographics": 0,
-        }
+        database = make_db(tmp_path)
         discovery_state_path = tmp_path / "discovery_state.json"
 
         state_path = tmp_path / "pipeline_state.json"
@@ -489,31 +493,20 @@ class TestFullPipeline:
             discovery_state_path=discovery_state_path,
         )
 
-        mock_record = MagicMock()
-        mock_record.identity.name = "Pelican Bay"
-        mock_record.identity.slug = "pelican-bay"
-
         async def mock_ai_runner(*args, **kwargs):
             return CondenserStepResult(status="done", fees=1, amenities=2, elapsed=0.1)
 
-        # Patch the runners dict and _ensure_community_record
         with patch.dict(
             "modules.community.full_pipeline._CONDENSER_RUNNERS",
             {"ai": mock_ai_runner},
-        ), patch(
-            "modules.community.full_pipeline._ensure_community_record",
-            return_value=mock_record,
         ):
             state = await pipeline.run(community="Pelican")
 
         pelican_slug = slugify("Pelican Bay")
         pointe_slug = slugify("Pointe Royal")
-        assert pelican_slug in state.results
-        assert state.results[pelican_slug]["ai"].status == "done"
-        assert state.results.get(pointe_slug, {}).get("ai", CondenserStepResult()).status in (
-            "pending",
-            None,
-        )
+        assert database.condenser_statuses(pelican_slug).get("ai") == "done"
+        # Non-matching community was never processed.
+        assert database.condenser_statuses(pointe_slug).get("ai") is None
 
 
 # ── Integration tests ────────────────────────────────────────────────────────
@@ -535,16 +528,7 @@ class TestPipelineIntegration:
             }),
             encoding="utf-8",
         )
-        database = MagicMock()
-        database.list_records.return_value = []
-        database.import_from_store = MagicMock()
-        database.summary.return_value = {
-            "total_communities": 1,
-            "gated_count": 1,
-            "with_fees": 1,
-            "with_amenities": 2,
-            "with_demographics": 0,
-        }
+        database = make_db(tmp_path)
         discovery_state_path = tmp_path / "discovery_state.json"
 
         state_path = tmp_path / "pipeline_state.json"
@@ -556,31 +540,25 @@ class TestPipelineIntegration:
             discovery_state_path=discovery_state_path,
         )
 
-        mock_record = MagicMock()
-        mock_record.identity.name = "Test Community"
-        mock_record.identity.slug = "test-community"
-
         async def mock_condenser(*args, **kwargs):
             return CondenserStepResult(status="done", fees=2, amenities=5, elapsed=0.1)
 
         with patch.dict(
             "modules.community.full_pipeline._CONDENSER_RUNNERS",
             {"ai": mock_condenser, "web": mock_condenser},
-        ), patch(
-            "modules.community.full_pipeline._ensure_community_record",
-            return_value=mock_record,
         ):
             state = await pipeline.run()
 
-        # Verify state
-        assert len(state.communities) == 1
+        # Verify state (database is the source of truth)
         slug = slugify("Test Community")
-        assert state.results[slug]["ai"].status == "done"
-        assert state.results[slug]["web"].status == "done"
+        assert database.condenser_statuses(slug)["ai"] == "done"
+        assert database.condenser_statuses(slug)["web"] == "done"
         assert state.stats.total_runs == 2
         assert state.stats.successful == 2
+        # Only ai+web selected, so the community is partial (not fully complete).
+        assert database.get_pipeline_status(slug) == "partial"
 
-        # Verify state file was saved
+        # Verify state mirror was saved
         assert state_path.exists()
         loaded = PipelineState.load(state_path)
         assert loaded.stats.total_runs == 2
@@ -599,21 +577,12 @@ class TestPipelineIntegration:
             }),
             encoding="utf-8",
         )
-        database = MagicMock()
-        database.list_records.return_value = []
-        database.import_from_store = MagicMock()
-        database.summary.return_value = {
-            "total_communities": 2,
-            "gated_count": 2,
-            "with_fees": 2,
-            "with_amenities": 4,
-            "with_demographics": 0,
-        }
+        database = make_db(tmp_path)
         discovery_state_path = tmp_path / "discovery_state.json"
 
         state_path = tmp_path / "pipeline_state.json"
 
-        # First run: process only AI condenser
+        # First run: process only AI + Web condensers
         pipeline1 = FullPipeline(
             state_path=state_path,
             store=store,
@@ -625,16 +594,9 @@ class TestPipelineIntegration:
         async def mock_condenser(*args, **kwargs):
             return CondenserStepResult(status="done", fees=1, amenities=2, elapsed=0.1)
 
-        mock_record = MagicMock()
-        mock_record.identity.name = "Community A"
-        mock_record.identity.slug = "community-a"
-
         with patch.dict(
             "modules.community.full_pipeline._CONDENSER_RUNNERS",
             {"ai": mock_condenser, "web": mock_condenser},
-        ), patch(
-            "modules.community.full_pipeline._ensure_community_record",
-            return_value=mock_record,
         ):
             state1 = await pipeline1.run()
 
@@ -654,6 +616,109 @@ class TestPipelineIntegration:
         state2 = await pipeline2.run()
         # Should still show 4 runs from first run, no new runs
         assert state2.stats.total_runs == 4
+
+
+class TestDbFirstPipeline:
+    """Tests for database-backed registration, completion, and resume."""
+
+    def _store_with(self, tmp_path: Path, communities: list[dict]) -> CommunityStore:
+        store = CommunityStore(tmp_path / "communities")
+        store.root.mkdir(parents=True, exist_ok=True)
+        store.target_list_path.write_text(
+            json.dumps({"communities": communities}), encoding="utf-8"
+        )
+        return store
+
+    def test_registers_all_communities(self, tmp_path: Path) -> None:
+        store = self._store_with(
+            tmp_path,
+            [
+                {"name": "Alpha", "city": "Miami"},
+                {"name": "Bravo", "city": "Naples"},
+                {"name": "Charlie", "city": "Tampa"},
+            ],
+        )
+        database = make_db(tmp_path)
+        pipeline = FullPipeline(
+            state_path=tmp_path / "state.json",
+            store=store,
+            database=database,
+            discovery_state_path=tmp_path / "none.json",
+        )
+        state = pipeline.init_state()
+
+        assert len(state.communities) == 3
+        statuses = database.list_pipeline_statuses()
+        assert len(statuses) == 3
+        assert all(s["status"] == "pending" for s in statuses)
+        # Order is stable and contiguous.
+        assert [s["sort_order"] for s in statuses] == [0, 1, 2]
+
+    @pytest.mark.asyncio
+    async def test_completes_when_all_condensers_terminal(self, tmp_path: Path) -> None:
+        store = self._store_with(tmp_path, [{"name": "Alpha", "city": "Miami"}])
+        database = make_db(tmp_path)
+        pipeline = FullPipeline(
+            state_path=tmp_path / "state.json",
+            store=store,
+            database=database,
+            discovery_state_path=tmp_path / "none.json",
+        )
+
+        async def mock_done(*args, **kwargs):
+            return CondenserStepResult(status="done", elapsed=0.1)
+
+        runners = {c: mock_done for c in ALL_CONDENSERS}
+        with patch.dict("modules.community.full_pipeline._CONDENSER_RUNNERS", runners):
+            state = await pipeline.run()
+
+        slug = slugify("Alpha")
+        assert database.get_pipeline_status(slug) == "completed"
+        assert database.community_is_complete(slug, ALL_CONDENSERS)
+        assert state.stats.total_runs == len(ALL_CONDENSERS)
+        # Nothing left to process.
+        assert database.next_incomplete_community() is None
+
+    @pytest.mark.asyncio
+    async def test_resumes_at_first_incomplete(self, tmp_path: Path) -> None:
+        store = self._store_with(
+            tmp_path,
+            [{"name": "Alpha", "city": "Miami"}, {"name": "Bravo", "city": "Naples"}],
+        )
+        database = make_db(tmp_path)
+        # Simulate Alpha fully processed and Bravo not started.
+        database.register_communities(
+            [
+                {"name": "Alpha", "slug": "alpha", "city": "Miami"},
+                {"name": "Bravo", "slug": "bravo", "city": "Naples"},
+            ]
+        )
+        for cond in ALL_CONDENSERS:
+            database.record_condenser_run(
+                "alpha", cond, CondenserStepResult(status="done")
+            )
+        database.mark_completed("alpha")
+
+        pipeline = FullPipeline(
+            state_path=tmp_path / "state.json",
+            store=store,
+            database=database,
+            discovery_state_path=tmp_path / "none.json",
+        )
+
+        async def mock_done(*args, **kwargs):
+            return CondenserStepResult(status="done", elapsed=0.1)
+
+        runners = {c: mock_done for c in ALL_CONDENSERS}
+        with patch.dict("modules.community.full_pipeline._CONDENSER_RUNNERS", runners):
+            await pipeline.run()
+
+        # First incomplete community was Bravo; Alpha was left untouched.
+        assert database.get_pipeline_status("alpha") == "completed"
+        assert database.condenser_statuses("alpha") == {
+            c: "done" for c in ALL_CONDENSERS
+        }
+        assert database.get_pipeline_status("bravo") == "completed"
 
 
 if __name__ == "__main__":

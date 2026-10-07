@@ -1,7 +1,7 @@
 {
   "version": 1,
   "started_at": "2026-10-06T17:19:32.650343+00:00",
-  "last_updated": "2026-10-06T22:55:25.388990+00:00",
+  "last_updated": "2026-10-07T20:33:38.906097+00:00",
   "condensers": [
     "ai",
     "web",
@@ -1430,6 +1430,13 @@
       "city": "Boca Raton",
       "county": null,
       "source": "database"
+    },
+    {
+      "name": "Village of Indian Creek",
+      "slug": "village-of-indian-creek",
+      "city": "Indian Creek, Florida",
+      "county": null,
+      "source": "database"
     }
   ],
   "results": {
@@ -1515,7 +1522,7 @@
         "errors": []
       },
       "research": {
-        "status": "error",
+        "status": "running",
         "elapsed": 695.0742819999978,
         "fees": 0,
         "amenities": 0,
@@ -1527,16 +1534,14 @@
         ]
       },
       "browser": {
-        "status": "error",
-        "elapsed": 301.0307971000002,
+        "status": "done",
+        "elapsed": 417.09537750000163,
         "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
+        "amenities": 1,
+        "proximity": 5,
         "demographics_present": false,
-        "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('5b64327d-4397-4e74-88f9-2358cb796cd3', 'Indian Creek Village', 'indian-creek-village', None, 'Surfside / Indian Creek Island', 'Indian Creek Community Association', None, 1, None, None, None, 'Exclusive, privately gated island community (~250 acres) in the Indian River Lagoon, accessible only from Surfside via a single community-controlled  ... (22 characters truncated) ... Creek Drive. One of the wealthiest enclaves in the US, with waterfront mansions, a private marina, and a long history (developed from the 1920s-30s).', 'browser_condenser', '2026-10-06 21:28:57.674709', '2026-10-06 21:28:57.674711')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "sources_consulted": 300,
+        "errors": []
       },
       "gemini": {
         "status": "skipped",
@@ -1553,52 +1558,46 @@
     },
     "gables-estates": {
       "ai": {
-        "status": "error",
-        "elapsed": 425.41057379999984,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 217.2963402000023,
+        "fees": 1,
+        "amenities": 6,
+        "proximity": 5,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('2144ce8e-b079-4a05-a210-981ceba3f64b', 'Gables Estates', 'gables-estates', None, 'Coral Gables', 'Gables Estates Community Association', None, 1, None, None, None, 'Gables Estates is a prestigious, gated master-planned community in eastern Coral Gables near the Miami River, known for large estate lots (many 1+ ac ... (134 characters truncated) ... emographic figures below are city-level (Coral Gables) proxies; the Gables Estates census tract is substantially more affluent than the city average.', 'ai_condenser', '2026-10-06 21:36:03.090365', '2026-10-06 21:36:03.090367')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "web": {
-        "status": "error",
-        "elapsed": 197.59718059999796,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 506.8673462999941,
+        "fees": 2,
+        "amenities": 5,
+        "proximity": 4,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0c601579-da1d-4804-b779-ec0f07d29762', 'Gables Estates', 'gables-estates', None, 'Coral Gables, FL 33156', 'Gables Estates Club, Inc.', None, 1, None, None, None, 'Guard-gated, ultra-exclusive waterfront community in Coral Gables developed in the early 1960s by ALCOA founder Arthur Vining Davis. Comprises 192 si ... (269 characters truncated) ... dent sponsorship and a non-refundable six-figure application fee. Widely described as one of the most expensive residential neighborhoods in the U.S.', 'web_condenser', '2026-10-06 21:39:20.698567', '2026-10-06 21:39:20.698570')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "research": {
-        "status": "error",
-        "elapsed": 501.92003979999936,
+        "status": "done",
+        "elapsed": 528.187257000005,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0739c5a0-3274-431f-8bb6-9fc461ae9861', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Residents Association, Inc.', None, 1, None, None, None, 'Fisher Island is a private residential and resort community on a barrier island in Miami-Dade County, Florida, spanning approximately 216 acres (0.27 ... (773 characters truncated) ... lt family. HOA legal name: Fisher Island Residents Association, Inc. (est. 01/29/2016, Federal ID 81-1320766); property managed by FPMS, Sarasota FL.', 'file_store', '2026-10-06 21:47:42.640284', '2026-10-06 21:47:42.640286')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (33613 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 33613, 'n_ctx': 32768}"
         ]
       },
       "browser": {
-        "status": "error",
-        "elapsed": 427.9690457999968,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
+        "status": "done",
+        "elapsed": 373.1009838999962,
+        "fees": 2,
+        "amenities": 14,
+        "proximity": 2,
         "demographics_present": false,
-        "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0c601579-da1d-4804-b779-ec0f07d29762', 'Gables Estates', 'gables-estates', None, 'Coral Gables, FL 33156', 'Gables Estates Club, Inc.', None, 1, None, None, None, 'Guard-gated, ultra-exclusive waterfront community in Coral Gables developed in the early 1960s by ALCOA founder Arthur Vining Davis. Comprises 192 si ... (269 characters truncated) ... dent sponsorship and a non-refundable six-figure application fee. Widely described as one of the most expensive residential neighborhoods in the U.S.', 'browser_condenser', '2026-10-06 21:54:50.613518', '2026-10-06 21:54:50.613520')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "sources_consulted": 207,
+        "errors": []
       },
       "gemini": {
         "status": "skipped",
@@ -1615,52 +1614,46 @@
     },
     "star-island": {
       "ai": {
-        "status": "error",
-        "elapsed": 162.40900730000067,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 404.8045106999998,
+        "fees": 2,
+        "amenities": 4,
+        "proximity": 7,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('4947a092-9977-43d0-a56f-028fe9f6e2b9', 'Star Island', 'star-island', None, 'Miami Beach', None, None, 1, None, None, None, 'Star Island is one of the most exclusive and affluent residential enclaves in the United States. It is a private, gated barrier island located just n ... (183 characters truncated) ... bridge with a security entrance. It is known for celebrity and ultra-high-net-worth residents, a private beach, and a yacht basin with private docks.', 'ai_condenser', '2026-10-06 21:57:33.027102', '2026-10-06 21:57:33.027104')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "web": {
-        "status": "error",
-        "elapsed": 173.91705269999875,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 200.15028529999836,
+        "fees": 1,
+        "amenities": 5,
+        "proximity": 3,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('927c1936-9f24-463e-bc21-39b0092dd8d2', 'Star Island', 'star-island', None, 'Miami Beach', 'Palm Hibiscus Star Islands Association, Inc.', None, 1, None, None, None, 'Star Island is a small, exclusive man-made residential island in Biscayne Bay, completed in 1922 by the Army Corps of Engineers. Located within the C ... (275 characters truncated) ... acArthur Causeway. It lies south of the Venetian Islands and just east of Palm and Hibiscus Islands. Total area is 0.134 sq mi (0.35 km²), ZIP 33139.', 'web_condenser', '2026-10-06 22:00:26.954268', '2026-10-06 22:00:26.954270')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "research": {
-        "status": "error",
-        "elapsed": 478.4244249000003,
+        "status": "done",
+        "elapsed": 343.8637491000045,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('0739c5a0-3274-431f-8bb6-9fc461ae9861', 'Fisher Island', 'fisher-island', None, 'Miami Beach', 'Fisher Island Residents Association, Inc.', None, 1, None, None, None, 'Fisher Island is a private residential and resort community on a barrier island in Miami-Dade County, Florida, spanning approximately 216 acres (0.27 ... (773 characters truncated) ... lt family. HOA legal name: Fisher Island Residents Association, Inc. (est. 01/29/2016, Federal ID 81-1320766); property managed by FPMS, Sarasota FL.', 'file_store', '2026-10-06 22:08:25.389514', '2026-10-06 22:08:25.389516')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (35663 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 35663, 'n_ctx': 32768}"
         ]
       },
       "browser": {
-        "status": "error",
-        "elapsed": 470.4242276999976,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
+        "status": "done",
+        "elapsed": 478.1608636000019,
+        "fees": 1,
+        "amenities": 4,
+        "proximity": 4,
         "demographics_present": false,
-        "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('927c1936-9f24-463e-bc21-39b0092dd8d2', 'Star Island', 'star-island', None, 'Miami Beach', 'Palm Hibiscus Star Islands Association, Inc.', None, 1, None, None, None, 'Star Island is a small, exclusive man-made residential island in Biscayne Bay, completed in 1922 by the Army Corps of Engineers. Located within the C ... (275 characters truncated) ... acArthur Causeway. It lies south of the Venetian Islands and just east of Palm and Hibiscus Islands. Total area is 0.134 sq mi (0.35 km²), ZIP 33139.', 'browser_condenser', '2026-10-06 22:16:15.817832', '2026-10-06 22:16:15.817834')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "sources_consulted": 126,
+        "errors": []
       },
       "gemini": {
         "status": "skipped",
@@ -1677,28 +1670,24 @@
     },
     "the-estates-at-acqualina": {
       "ai": {
-        "status": "error",
-        "elapsed": 145.4874903000018,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 222.20928479999566,
+        "fees": 1,
+        "amenities": 5,
+        "proximity": 5,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('b48b7cab-f86b-451a-8520-40798717c151', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach', None, None, 1, None, None, None, 'A small, gated enclave of luxury waterfront estate homes along the Intracoastal Waterway in Sunny Isles Beach, adjacent to the Acqualina Resort & Residences. Characterized by large lots, custom-built estates, and direct Intracoastal access rather than shared resort-style facilities.', 'ai_condenser', '2026-10-06 22:18:41.310922', '2026-10-06 22:18:41.310925')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "web": {
-        "status": "error",
-        "elapsed": 468.17823789999966,
-        "fees": 0,
-        "amenities": 0,
+        "status": "done",
+        "elapsed": 203.84265919999598,
+        "fees": 1,
+        "amenities": 10,
         "proximity": 0,
-        "demographics_present": false,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('bd15f204-4d1b-4f0b-8c81-f946ddbfceab', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach', 'Estates Master Association (related entity of Acqualina Ocean Residences & Resort Condominium Association, Inc.; managed by Acqualina Management, LLC, (305) 918-8000)', None, 1, None, None, None, 'Ultra-luxury oceanfront condominium HOA community consisting of two high-rise towers (North and South) with approximately 248 residences at 17901 and ... (172 characters truncated) ... e adjacent Acqualina Resort & Residences / Resort & Spa. The HOA manages common areas, security, and shared amenities in a secure oceanfront setting.', 'web_condenser', '2026-10-06 22:26:29.524182', '2026-10-06 22:26:29.524184')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "research": {
         "status": "running",
@@ -1713,16 +1702,14 @@
         ]
       },
       "browser": {
-        "status": "error",
-        "elapsed": 240.7974413999982,
+        "status": "done",
+        "elapsed": 426.6904716000063,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
-        "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('b465ffbe-f05a-43ff-b0e8-a0612daaf88a', 'The Estates at Acqualina', 'the-estates-at-acqualina', None, 'Sunny Isles Beach, FL', 'Estates Master Association (related entity of Acqualina Ocean Residences & Resort Condominium Association, Inc.); managed by Acqualina Management, LLC', None, 1, None, None, None, 'Ultra-luxury oceanfront condominium HOA community at 17901 and 17975 Collins Ave, Sunny Isles Beach, FL 33160, consisting of two high-rise towers (No ... (169 characters truncated) ... & Residences / Resort & Spa. HOA manages common areas, security, and shared amenities via Acqualina entities (management: Acqualina Management, LLC).', 'browser_condenser', '2026-10-06 19:18:18.559588', '2026-10-06 19:18:18.559590')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "sources_consulted": 183,
+        "errors": []
       },
       "gemini": {
         "status": "skipped",
@@ -1739,52 +1726,46 @@
     },
     "royal-palm-yacht-country-club": {
       "ai": {
-        "status": "error",
-        "elapsed": 418.06564419999995,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 222.93256880000263,
+        "fees": 2,
+        "amenities": 7,
+        "proximity": 5,
+        "demographics_present": true,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('2c987208-6aff-4c20-9944-2f06d84ff3cb', 'Royal Palm Yacht & Country Club', 'royal-palm-yacht-country-club', None, 'Boca Raton', None, None, 1, None, None, None, 'Gated, luxury waterfront community in Boca Raton situated on the Intracoastal Waterway near Royal Palm Way/Camino Real. Centered on a deep-water yach ... (66 characters truncated) ... upscale single-family waterfront homes, many with private docks. One of the most established and exclusive boating communities in greater Boca Raton.', 'ai_condenser', '2026-10-06 19:25:16.643428', '2026-10-06 19:25:16.643431')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "web": {
-        "status": "error",
-        "elapsed": 158.53982389999874,
-        "fees": 0,
-        "amenities": 0,
+        "status": "done",
+        "elapsed": 182.40106679999735,
+        "fees": 2,
+        "amenities": 11,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('cb7cc5ab-d9e6-4789-8e61-4c02d0903e97', 'Royal Palm Yacht & Country Club', 'royal-palm-yacht-country-club', None, 'Boca Raton', 'Royal Palm Improvement Association, Inc. (RPIA)', None, 1, None, None, None, 'A prestigious ~450-acre gated country-club community in Boca Raton, FL, with ~742 lots and ~680 homes. Features waterfront, golf-course, and interior ... (123 characters truncated) ... unity includes an optional private club with yacht club, marina, golf, tennis, and country club amenities. 24/7 armed security and guarded entrances.', 'web_condenser', '2026-10-06 19:27:55.194995', '2026-10-06 19:27:55.194997')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "errors": []
       },
       "research": {
-        "status": "error",
-        "elapsed": 400.2363833999989,
+        "status": "done",
+        "elapsed": 573.8263842000015,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('88e88a42-4450-4f57-8084-260bbfbc843e', 'Fisher Island', 'fisher-island', None, 'Miami Beach, Florida', None, None, 1, None, None, None, \"Fisher Island is a 216-acre private residential and resort community in Miami-Dade County, Florida (ZIP 33109), with a 2020 census population of 561  ... (630 characters truncated) ... e U.S. In October 2025 it was reported as the most expensive ZIP code in the nation with a median home price of $9.5 million (up 65% year-over-year).\", 'file_store', '2026-10-06 19:34:35.443649', '2026-10-06 19:34:35.443651')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (33079 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 33079, 'n_ctx': 32768}"
         ]
       },
       "browser": {
-        "status": "error",
-        "elapsed": 596.521691599999,
+        "status": "done",
+        "elapsed": 427.6787098999994,
         "fees": 0,
-        "amenities": 0,
+        "amenities": 10,
         "proximity": 0,
         "demographics_present": false,
-        "sources_consulted": 0,
-        "errors": [
-          "(sqlite3.IntegrityError) UNIQUE constraint failed: communities.slug\n[SQL: INSERT INTO communities (id, name, slug, county_fips, city, hoa_name, cdd_name, is_gated, latitude, longitude, overview, notes, data_source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]\n[parameters: ('cb7cc5ab-d9e6-4789-8e61-4c02d0903e97', 'Royal Palm Yacht & Country Club', 'royal-palm-yacht-country-club', None, 'Boca Raton', 'Royal Palm Improvement Association, Inc. (RPIA)', None, 1, None, None, None, 'A prestigious ~450-acre gated country-club community in Boca Raton, FL, with ~742 lots and ~680 homes. Features waterfront, golf-course, and interior ... (123 characters truncated) ... unity includes an optional private club with yacht club, marina, golf, tennis, and country club amenities. 24/7 armed security and guarded entrances.', 'browser_condenser', '2026-10-06 19:44:31.969459', '2026-10-06 19:44:31.969461')]\n(Background on this error at: https://sqlalche.me/e/21/gkpj)"
-        ]
+        "sources_consulted": 183,
+        "errors": []
       },
       "gemini": {
         "status": "skipped",
@@ -1811,257 +1792,277 @@
         "errors": []
       },
       "web": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
+        "status": "done",
+        "elapsed": 168.85194520000368,
+        "fees": 3,
+        "amenities": 5,
         "proximity": 0,
-        "demographics_present": false,
+        "demographics_present": true,
         "sources_consulted": 0,
         "errors": []
       },
       "research": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 648.6022209000002,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (33662 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 33662, 'n_ctx': 32768}"
+        ]
       },
       "browser": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
+        "status": "done",
+        "elapsed": 618.7987080999956,
+        "fees": 2,
+        "amenities": 7,
+        "proximity": 2,
         "demographics_present": false,
-        "sources_consulted": 0,
+        "sources_consulted": 126,
         "errors": []
       },
       "gemini": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "skipped",
+        "elapsed": 0.000026100002287421376,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "Gemini not configured (missing MODEL_BASE_URL/MODEL_API_KEY)"
+        ]
       }
     },
     "cocoplum": {
       "ai": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 127.53141740000137,
         "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "amenities": 1,
+        "proximity": 6,
+        "demographics_present": true,
         "sources_consulted": 0,
         "errors": []
       },
       "web": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
+        "status": "done",
+        "elapsed": 176.06425909999962,
+        "fees": 3,
+        "amenities": 8,
+        "proximity": 6,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": []
       },
       "research": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 414.4883785999991,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (33978 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 33978, 'n_ctx': 32768}"
+        ]
       },
       "browser": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 389.8660025999998,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
-        "sources_consulted": 0,
+        "sources_consulted": 177,
         "errors": []
       },
       "gemini": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "skipped",
+        "elapsed": 0.00002510000194888562,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "Gemini not configured (missing MODEL_BASE_URL/MODEL_API_KEY)"
+        ]
       }
     },
     "jupiter-island": {
       "ai": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 129.04730019999988,
+        "fees": 1,
+        "amenities": 5,
+        "proximity": 5,
+        "demographics_present": true,
         "sources_consulted": 0,
         "errors": []
       },
       "web": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 148.29497830000037,
         "fees": 0,
         "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "proximity": 3,
+        "demographics_present": true,
         "sources_consulted": 0,
         "errors": []
       },
       "research": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 425.69355260000157,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (32954 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 32954, 'n_ctx': 32768}"
+        ]
       },
       "browser": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 388.0281163999971,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
-        "sources_consulted": 0,
+        "sources_consulted": 291,
         "errors": []
       },
       "gemini": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "skipped",
+        "elapsed": 0.00001700000575510785,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "Gemini not configured (missing MODEL_BASE_URL/MODEL_API_KEY)"
+        ]
       }
     },
     "audubon-golf-country-club": {
       "ai": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 112.33043539999926,
+        "fees": 1,
+        "amenities": 7,
+        "proximity": 5,
+        "demographics_present": true,
         "sources_consulted": 0,
         "errors": []
       },
       "web": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
+        "status": "done",
+        "elapsed": 321.1602481000009,
+        "fees": 3,
+        "amenities": 8,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": []
       },
       "research": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 389.97731139999814,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (33302 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 33302, 'n_ctx': 32768}"
+        ]
       },
       "browser": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 181.31863039999735,
         "fees": 0,
-        "amenities": 0,
+        "amenities": 4,
         "proximity": 0,
         "demographics_present": false,
-        "sources_consulted": 0,
+        "sources_consulted": 219,
         "errors": []
       },
       "gemini": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "skipped",
+        "elapsed": 0.000015600002370774746,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "Gemini not configured (missing MODEL_BASE_URL/MODEL_API_KEY)"
+        ]
       }
     },
     "fiddler-s-creek": {
       "ai": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
-        "proximity": 0,
-        "demographics_present": false,
+        "status": "done",
+        "elapsed": 164.3097351000033,
+        "fees": 1,
+        "amenities": 2,
+        "proximity": 5,
+        "demographics_present": true,
         "sources_consulted": 0,
         "errors": []
       },
       "web": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
-        "amenities": 0,
+        "status": "done",
+        "elapsed": 240.41605340000388,
+        "fees": 8,
+        "amenities": 7,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
         "errors": []
       },
       "research": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "done",
+        "elapsed": 348.5704420999973,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "research failed: status_code: 400, model_name: local, body: {'code': 400, 'message': 'request (34197 tokens) exceeds the available context size (32768 tokens), try increasing it', 'type': 'exceed_context_size_error', 'n_prompt_tokens': 34197, 'n_ctx': 32768}"
+        ]
       },
       "browser": {
-        "status": "pending",
-        "elapsed": 0.0,
-        "fees": 0,
+        "status": "done",
+        "elapsed": 535.6299859000064,
+        "fees": 2,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
-        "sources_consulted": 0,
+        "sources_consulted": 123,
         "errors": []
       },
       "gemini": {
-        "status": "pending",
-        "elapsed": 0.0,
+        "status": "skipped",
+        "elapsed": 0.00001769999653333798,
         "fees": 0,
         "amenities": 0,
         "proximity": 0,
         "demographics_present": false,
         "sources_consulted": 0,
-        "errors": []
+        "errors": [
+          "Gemini not configured (missing MODEL_BASE_URL/MODEL_API_KEY)"
+        ]
       }
     },
     "grey-oaks-country-club": {
       "ai": {
-        "status": "pending",
+        "status": "running",
         "elapsed": 0.0,
         "fees": 0,
         "amenities": 0,
@@ -12042,13 +12043,65 @@
         "sources_consulted": 0,
         "errors": []
       }
+    },
+    "village-of-indian-creek": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
     }
   },
   "stats": {
-    "total_runs": 50,
-    "successful": 4,
+    "total_runs": 90,
+    "successful": 39,
     "failed": 40,
-    "skipped": 6,
+    "skipped": 11,
     "started_at": "2026-10-06T17:19:32.650361+00:00",
     "last_updated": null
   }

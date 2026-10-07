@@ -59,6 +59,93 @@
     </table>
 </div>
 
+{% if pipeline_status %}
+<div class="card">
+    <h2>Pipeline Status</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th style="width: 200px;">Status</th>
+                <td>
+                    {% if pipeline_status.status == 'completed' %}
+                    <span class="badge badge-success">{{ pipeline_status.status }}</span>
+                    {% elif pipeline_status.status == 'processing' %}
+                    <span class="badge badge-info">{{ pipeline_status.status }}</span>
+                    {% elif pipeline_status.status == 'partial' %}
+                    <span class="badge badge-warning">{{ pipeline_status.status }}</span>
+                    {% elif pipeline_status.status == 'failed' %}
+                    <span class="badge badge-danger">{{ pipeline_status.status }}</span>
+                    {% else %}
+                    <span class="badge">{{ pipeline_status.status }}</span>
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <th>Attempts</th>
+                <td>{{ pipeline_status.attempts or 0 }}</td>
+            </tr>
+            <tr>
+                <th>Started</th>
+                <td class="text-muted text-small">{{ pipeline_status.started_at or '-' }}</td>
+            </tr>
+            <tr>
+                <th>Completed</th>
+                <td class="text-muted text-small">{{ pipeline_status.completed_at or '-' }}</td>
+            </tr>
+            {% if pipeline_status.last_error %}
+            <tr>
+                <th>Last Error</th>
+                <td class="text-small">{{ pipeline_status.last_error }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    {% if condenser_runs %}
+    <table style="margin-top: 1rem;">
+        <thead>
+            <tr>
+                <th>Condenser</th>
+                <th>Status</th>
+                <th>Elapsed (s)</th>
+                <th>Fees</th>
+                <th>Amenities</th>
+                <th>Proximity</th>
+                <th>Demographics</th>
+                <th>Sources</th>
+                <th>Finished</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for run in condenser_runs %}
+            <tr>
+                <td>{{ run.condenser }}</td>
+                <td>
+                    {% if run.status == 'done' %}
+                    <span class="badge badge-success">{{ run.status }}</span>
+                    {% elif run.status == 'error' %}
+                    <span class="badge badge-danger">{{ run.status }}</span>
+                    {% elif run.status == 'skipped' %}
+                    <span class="badge badge-warning">{{ run.status }}</span>
+                    {% else %}
+                    <span class="badge badge-info">{{ run.status }}</span>
+                    {% endif %}
+                </td>
+                <td>{{ "%.1f"|format(run.elapsed) if run.elapsed else '-' }}</td>
+                <td>{{ run.fees }}</td>
+                <td>{{ run.amenities }}</td>
+                <td>{{ run.proximity }}</td>
+                <td>{{ 'Yes' if run.demographics_present else 'No' }}</td>
+                <td>{{ run.sources_consulted }}</td>
+                <td class="text-muted text-small">{{ run.finished_at or '-' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+{% endif %}
+
 {% if fees %}
 <div class="card">
     <h2>Fees ({{ fees|length }})</h2>
@@ -179,6 +266,8 @@
             <tr>
                 <th>URL</th>
                 <th>Status</th>
+                <th>Inspected</th>
+                <th>Discovered By</th>
                 <th>Quality Score</th>
                 <th>Has Data</th>
                 <th>Data Types</th>
@@ -198,6 +287,14 @@
                     <span class="badge badge-info">{{ url.status }}</span>
                     {% endif %}
                 </td>
+                <td>
+                    {% if url.inspected %}
+                    <span class="badge badge-success">Yes</span>
+                    {% else %}
+                    <span class="badge badge-warning">No</span>
+                    {% endif %}
+                </td>
+                <td class="text-small">{{ url.discovered_by or '-' }}</td>
                 <td>
                     {% if url.data_quality_score is not none %}
                         {% if url.data_quality_score >= 75 %}

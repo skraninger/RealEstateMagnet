@@ -10,12 +10,18 @@
         <input type="text" name="search" value="{{ search or '' }}" placeholder="Search name or city...">
         <select name="county">
             <option value="">All Counties</option>
-            {% for county in counties %}
-            <option value="{{ county }}" {% if county == county %}selected{% endif %}>{{ county }}</option>
+            {% for c in counties %}
+            <option value="{{ c }}" {% if c == county %}selected{% endif %}>{{ c }}</option>
+            {% endfor %}
+        </select>
+        <select name="status">
+            <option value="">All Pipeline Statuses</option>
+            {% for s in pipeline_statuses %}
+            <option value="{{ s }}" {% if s == status %}selected{% endif %}>{{ s }}</option>
             {% endfor %}
         </select>
         <button type="submit">Filter</button>
-        {% if search or county %}
+        {% if search or county or status %}
         <a href="/communities" style="margin-left: 1rem;">Clear</a>
         {% endif %}
     </form>
@@ -26,6 +32,7 @@
                 <th>Name</th>
                 <th>City</th>
                 <th>County</th>
+                <th>Pipeline</th>
                 <th>Gated</th>
                 <th>Fees</th>
                 <th>Amenities</th>
@@ -40,6 +47,22 @@
                 <td><a href="/communities/{{ community.slug }}">{{ community.name }}</a></td>
                 <td>{{ community.city or '-' }}</td>
                 <td>{{ community.county_fips or '-' }}</td>
+                <td>
+                    {% set pstatus = community.pipeline_status %}
+                    {% if pstatus == 'completed' %}
+                    <span class="badge badge-success">{{ pstatus }}</span>
+                    {% elif pstatus == 'processing' %}
+                    <span class="badge badge-info">{{ pstatus }}</span>
+                    {% elif pstatus == 'partial' %}
+                    <span class="badge badge-warning">{{ pstatus }}</span>
+                    {% elif pstatus == 'failed' %}
+                    <span class="badge badge-danger">{{ pstatus }}</span>
+                    {% elif pstatus %}
+                    <span class="badge">{{ pstatus }}</span>
+                    {% else %}
+                    -
+                    {% endif %}
+                </td>
                 <td>
                     {% if community.is_gated %}
                     <span class="badge badge-success">Yes</span>

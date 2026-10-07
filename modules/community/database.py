@@ -400,6 +400,15 @@ class CommunityURLRow(Base):
     data_quality_score = Column(Float, default=0.0)
 
 
+class SchemaMigrationRow(Base):
+    """Records applied migrations so repeated startups skip heavy migration work."""
+
+    __tablename__ = "schema_migrations"
+
+    name = Column(String(100), primary_key=True)
+    applied_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+
 class CommunityDatabase:
     """SQLite database for storing and querying condensed community data."""
 
@@ -675,41 +684,57 @@ class CommunityDatabase:
     def register_communities(self, infos: list[dict[str, Any]]) -> int:
         """Register many communities, assigning ``sort_order`` by list position.
 
-        ``infos`` items accept keys: ``name``, ``slug`` (optional), ``city``,
-        ``county``, ``source``, ``is_gated``. Existing communities keep their
-        original ``sort_order``.
+        Batched for efficient restarts: existing slugs are loaded once and only
+        missing rows are inserted. ``infos`` items accept keys: ``name``,
+        ``slug`` (optional), ``city``, ``county``, ``source``, ``is_gated``.
+        Existing communities keep their original ``sort_order``.
         """
         registered = 0
         with self.session() as session:
+            existing = {
+                slug: (city, county)
+                for slug, city, county in session.query(
+                    CommunityRow.slug, CommunityRow.city, CommunityRow.county_fips
+                ).all()
+            }
+            existing_status = {
+                row[0]
+                for row in session.query(
+                    CommunityPipelineStatusRow.community_slug
+                ).all()
+            }
+
+            # Slugs whose stored city/county is missing but now known.
+            fill: dict[str, tuple[Optional[str], Optional[str]]] = {}
+
             for idx, info in enumerate(infos):
                 name = info["name"]
                 slug = info.get("slug") or slugify(name)
-                row = session.query(CommunityRow).filter(
-                    CommunityRow.slug == slug
-                ).first()
                 city = info.get("city")
                 county = info.get("county")
-                if row is None:
-                    row = CommunityRow(
-                        id=str(uuid.uuid4()),
-                        name=name,
-                        slug=slug,
-                        city=city,
-                        county_fips=county,
-                        is_gated=info.get("is_gated", True),
-                        data_source=info.get("source", "pipeline"),
-                    )
-                    session.add(row)
-                else:
-                    if city and not row.city:
-                        row.city = city
-                    if county and not row.county_fips:
-                        row.county_fips = county
 
-                status_row = session.query(CommunityPipelineStatusRow).filter_by(
-                    community_slug=slug
-                ).first()
-                if status_row is None:
+                if slug not in existing:
+                    session.add(
+                        CommunityRow(
+                            id=str(uuid.uuid4()),
+                            name=name,
+                            slug=slug,
+                            city=city,
+                            county_fips=county,
+                            is_gated=info.get("is_gated", True),
+                            data_source=info.get("source", "pipeline"),
+                        )
+                    )
+                    existing[slug] = (city, county)
+                else:
+                    cur_city, cur_county = existing[slug]
+                    if (city and not cur_city) or (county and not cur_county):
+                        fill[slug] = (
+                            city or cur_city,
+                            county or cur_county,
+                        )
+
+                if slug not in existing_status:
                     session.add(
                         CommunityPipelineStatusRow(
                             community_slug=slug,
@@ -717,9 +742,41 @@ class CommunityDatabase:
                             sort_order=idx,
                         )
                     )
+                    existing_status.add(slug)
                 registered += 1
+
+            # Fill missing city/county with a single IN query.
+            if fill:
+                for row in session.query(CommunityRow).filter(
+                    CommunityRow.slug.in_(list(fill))
+                ).all():
+                    new_city, new_county = fill[row.slug]
+                    if new_city and not row.city:
+                        row.city = new_city
+                    if new_county and not row.county_fips:
+                        row.county_fips = new_county
+
             session.commit()
         return registered
+
+    def list_community_infos(self) -> list[dict[str, Any]]:
+        """Lightweight identity list (no facts) for discovery/registration."""
+        with self.session() as session:
+            rows = session.query(
+                CommunityRow.slug,
+                CommunityRow.name,
+                CommunityRow.city,
+                CommunityRow.county_fips,
+            ).order_by(CommunityRow.name).all()
+            return [
+                {
+                    "slug": r[0],
+                    "name": r[1],
+                    "city": r[2],
+                    "county": r[3],
+                }
+                for r in rows
+            ]
 
     def assign_sort_order(self, ordered_slugs: list[str]) -> int:
         """Set ``sort_order`` for communities from an ordered slug list."""
@@ -751,35 +808,47 @@ class CommunityDatabase:
             return row.status if row else None
 
     def list_pipeline_statuses(self) -> list[dict[str, Any]]:
-        """Return every community's pipeline status in processing order."""
+        """Return every community's pipeline status in processing order.
+
+        Single joined query (no per-community lookups) for fast restarts/status.
+        """
         with self.session() as session:
             rows = (
-                session.query(CommunityPipelineStatusRow)
+                session.query(
+                    CommunityPipelineStatusRow.community_slug,
+                    CommunityPipelineStatusRow.status,
+                    CommunityPipelineStatusRow.sort_order,
+                    CommunityPipelineStatusRow.attempts,
+                    CommunityPipelineStatusRow.started_at,
+                    CommunityPipelineStatusRow.completed_at,
+                    CommunityPipelineStatusRow.last_error,
+                    CommunityRow.name,
+                    CommunityRow.city,
+                )
+                .outerjoin(
+                    CommunityRow,
+                    CommunityRow.slug == CommunityPipelineStatusRow.community_slug,
+                )
                 .order_by(
                     CommunityPipelineStatusRow.sort_order,
                     CommunityPipelineStatusRow.community_slug,
                 )
                 .all()
             )
-            out: list[dict[str, Any]] = []
-            for r in rows:
-                c = session.query(CommunityRow).filter_by(
-                    slug=r.community_slug
-                ).first()
-                out.append(
-                    {
-                        "slug": r.community_slug,
-                        "name": c.name if c else r.community_slug,
-                        "city": c.city if c else None,
-                        "status": r.status,
-                        "sort_order": r.sort_order,
-                        "attempts": r.attempts,
-                        "started_at": r.started_at,
-                        "completed_at": r.completed_at,
-                        "last_error": r.last_error,
-                    }
-                )
-            return out
+            return [
+                {
+                    "slug": r[0],
+                    "status": r[1],
+                    "sort_order": r[2],
+                    "attempts": r[3],
+                    "started_at": r[4],
+                    "completed_at": r[5],
+                    "last_error": r[6],
+                    "name": r[7] if r[7] is not None else r[0],
+                    "city": r[8],
+                }
+                for r in rows
+            ]
 
     def next_incomplete_community(self) -> Optional[str]:
         """First community (by sort_order) whose status is not 'completed'."""
@@ -954,6 +1023,45 @@ class CommunityDatabase:
                 community_slug=slug
             ).all()
             return {r.condenser: r.status for r in rows}
+
+    def condenser_statuses_map(
+        self, slugs: Optional[list[str]] = None
+    ) -> dict[str, dict[str, str]]:
+        """All ``{slug: {condenser: status}}`` in a single query."""
+        with self.session() as session:
+            q = session.query(
+                CommunityCondenserRunRow.community_slug,
+                CommunityCondenserRunRow.condenser,
+                CommunityCondenserRunRow.status,
+            )
+            if slugs:
+                q = q.filter(CommunityCondenserRunRow.community_slug.in_(slugs))
+            out: dict[str, dict[str, str]] = {}
+            for slug, condenser, status in q.all():
+                out.setdefault(slug, {})[condenser] = status
+            return out
+
+    # ── schema migration markers ────────────────────────────────────────────
+
+    def is_migration_applied(self, name: str) -> bool:
+        with self.session() as session:
+            return (
+                session.query(SchemaMigrationRow)
+                .filter(SchemaMigrationRow.name == name)
+                .first()
+                is not None
+            )
+
+    def mark_migration_applied(self, name: str) -> None:
+        with self.session() as session:
+            if (
+                session.query(SchemaMigrationRow)
+                .filter(SchemaMigrationRow.name == name)
+                .first()
+                is None
+            ):
+                session.add(SchemaMigrationRow(name=name))
+                session.commit()
 
     def community_is_complete(self, slug: str, condensers: list[str]) -> bool:
         """True when every selected condenser has finished (done/skipped)."""

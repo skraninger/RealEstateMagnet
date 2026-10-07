@@ -110,8 +110,13 @@ def test_migration_is_idempotent(tmp_path: Path) -> None:
     assert first.registered == 3
     runs_after_first = db.count_condenser_runs()
 
+    assert db.is_migration_applied("pipeline_status_v1")
+
     second = migrate_database(db=db, state_path=state_path, **kwargs)
 
+    # The second run is a fast no-op once the marker is recorded.
+    assert any("already applied" in note for note in second.notes)
+    assert second.registered == 0
     # No duplicate communities are created.
     assert db.count() == 3
     # Progress import is skipped on the second run (already present).

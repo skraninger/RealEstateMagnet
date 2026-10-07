@@ -216,12 +216,14 @@ class TestDiscovery:
     def test_discover_from_database(self, tmp_path: Path) -> None:
         store = CommunityStore(tmp_path / "communities")
         database = MagicMock()
-        record = MagicMock()
-        record.identity.name = "DB Community"
-        record.identity.slug = "db-community"
-        record.identity.city = "Fort Lauderdale"
-        record.identity.county_fips = None
-        database.list_records.return_value = [record]
+        database.list_community_infos.return_value = [
+            {
+                "slug": "db-community",
+                "name": "DB Community",
+                "city": "Fort Lauderdale",
+                "county": None,
+            }
+        ]
         # Use a non-existent discovery state path to avoid reading real data
         discovery_state_path = tmp_path / "discovery_state.json"
 
@@ -242,12 +244,14 @@ class TestDiscovery:
             encoding="utf-8",
         )
         database = MagicMock()
-        record = MagicMock()
-        record.identity.name = "Pelican Bay"
-        record.identity.slug = "pelican-bay"
-        record.identity.city = "Naples"
-        record.identity.county_fips = None
-        database.list_records.return_value = [record]
+        database.list_community_infos.return_value = [
+            {
+                "slug": "pelican-bay",
+                "name": "Pelican Bay",
+                "city": "Naples",
+                "county": None,
+            }
+        ]
         # Use a non-existent discovery state path to avoid reading real data
         discovery_state_path = tmp_path / "discovery_state.json"
 

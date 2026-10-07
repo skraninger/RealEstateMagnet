@@ -45,6 +45,10 @@ DEFAULT_CONDENSERS = ["ai", "web", "research", "browser", "gemini"]
 
 DEFAULT_STATE_PATH = Path("data") / "pipeline_state.json"
 
+# Marker recorded in schema_migrations after a successful run so subsequent
+# startups skip the (heavy) legacy scan/import entirely.
+MIGRATION_NAME = "pipeline_status_v1"
+
 
 @dataclass
 class MigrationReport:
@@ -252,11 +256,22 @@ def migrate_database(
     condensers: Optional[list[str]] = None,
     verbose: bool = False,
 ) -> MigrationReport:
-    """Run the full, idempotent migration. Returns a :class:`MigrationReport`."""
+    """Run the full, idempotent migration. Returns a :class:`MigrationReport`.
+
+    Subsequent calls are a fast no-op once the migration marker is recorded;
+    new communities discovered later are registered by the pipeline itself.
+    """
     db = db or CommunityDatabase()
     db.create_tables()
     report = MigrationReport()
     condensers = condensers or list(DEFAULT_CONDENSERS)
+
+    # Fast restart path: nothing to do if already applied.
+    if db.is_migration_applied(MIGRATION_NAME):
+        report.notes.append("migration already applied — skipped")
+        if verbose:
+            logger.info("Migration %s already applied — skipping", MIGRATION_NAME)
+        return report
 
     # 1 + 2. Register all communities and assign processing order.
     ordered = collect_communities(db, state_path, store_root, discovery_state_path)
@@ -275,6 +290,8 @@ def migrate_database(
             logger.warning("Legacy progress import failed: %s", exc)
     else:
         report.notes.append("condenser runs already present — progress import skipped")
+
+    db.mark_migration_applied(MIGRATION_NAME)
 
     if verbose:
         logger.info("Migration report: %s", report.to_dict())

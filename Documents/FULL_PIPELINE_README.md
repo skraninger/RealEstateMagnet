@@ -118,6 +118,12 @@ community, assign `sort_order`, backfill `community_urls` from the legacy
 the legacy JSON. It is idempotent and additive (no data is ever dropped) and also
 runs automatically on pipeline/viewer startup.
 
+After the first successful run a marker is written to `schema_migrations`, so
+subsequent startups skip the migration entirely (a fast no-op). Restarts are
+therefore cheap: the pipeline only re-reads community identities and existing
+condenser statuses, then resumes at the first community whose status is not
+`completed`.
+
 ## Condenser Order
 
 Condensers run in this order (cheapest/fastest first):

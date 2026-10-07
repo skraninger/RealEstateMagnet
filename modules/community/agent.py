@@ -90,11 +90,18 @@ def _make_tools(
     max_results: int,
     page_max_chars: int,
     enable_screenshot: bool = False,
+    url_tracker: Any | None = None,
 ) -> list[Callable]:
     async def web_search(query: str) -> str:
         """Search the web for information about a gated community (fees, amenities, demographics, nearby services)."""
         results = web_search_impl(query, max_results=max_results)
         record_call({"action": "search", "query": query, "url": None, "summary": f"{len(results)} results"})
+        
+        # Register URLs immediately when discovered
+        if url_tracker and results:
+            urls = [r.url for r in results]
+            url_tracker.register_urls(urls, discovered_by="research_agent")
+        
         if not results:
             return "No results."
         return "\n".join(f"- {r.title} | {r.url}\n  {r.snippet}" for r in results)
@@ -103,6 +110,28 @@ def _make_tools(
         """Read the main text content of a web page. Set use_js=True only if the page appears to require JavaScript."""
         text = await read_page_impl(url, max_chars=page_max_chars, use_js=use_js)
         record_call({"action": "read_page", "query": None, "url": url, "summary": f"{len(text)} chars"})
+        
+        # Update URL with quality score after successful read
+        if url_tracker and text:
+            from .url_tracker import calculate_data_quality
+            quality_metrics = calculate_data_quality(text)
+            url_tracker.update_url_quality(
+                url,
+                has_community_data=quality_metrics["has_community_data"],
+                data_quality_score=quality_metrics["data_quality_score"],
+                data_types_found=quality_metrics["data_types_found"],
+                data_summary=quality_metrics["data_summary"],
+                status="printed",
+            )
+        elif url_tracker and not text:
+            # Record failure if page couldn't be read
+            url_tracker.update_url_status(
+                url,
+                status="failed",
+                error_message="Page could not be read",
+                http_status=400
+            )
+        
         return text or "(page could not be read)"
 
     tools = [web_search, read_page]
@@ -137,6 +166,7 @@ class CommunityResearchAgent:
         page_max_chars: int | None = None,
         max_tokens: int | None = None,
         enable_screenshot: bool = False,
+        url_tracker: Any | None = None,
     ) -> None:
         self.model = model
         self.model_name = model_name or os.environ.get("MODEL_NAME", "local")
@@ -149,6 +179,7 @@ class CommunityResearchAgent:
         )
         self.max_tokens = max_tokens or int(os.environ.get("MODEL_MAX_TOKENS", "8192"))
         self.enable_screenshot = enable_screenshot or os.environ.get("ENABLE_SCREENSHOT", "").lower() in ("1", "true", "yes")
+        self.url_tracker = url_tracker
 
     def _build_model(self) -> Any:
         if self.model is not None:
@@ -188,7 +219,7 @@ class CommunityResearchAgent:
             output_type=CommunityFacts,
             system_prompt=SYSTEM_PROMPT,
             retries=2,
-            tools=_make_tools(calls.append, self.max_results, self.page_max_chars, self.enable_screenshot),
+            tools=_make_tools(calls.append, self.max_results, self.page_max_chars, self.enable_screenshot, self.url_tracker),
         )
         prompt = self.build_prompt(identity)
         result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})

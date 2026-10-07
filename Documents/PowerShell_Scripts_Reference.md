@@ -618,6 +618,123 @@ Do NOT run this script while opencode itself is being served by the local llama-
 
 ---
 
+### `scripts/run-full-pipeline.ps1`
+
+**Purpose:** Execute the complete data collection pipeline using all available condensers in sequence
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `$Community` | string | `""` | Only process communities matching this name (substring match) |
+| `$Condensers` | string | `""` | Comma-separated list of condensers to run (default: all) |
+| `$Reset` | switch | `$false` | Discard existing state and start fresh |
+| `$Status` | switch | `$false` | Print current pipeline status and exit |
+| `$StatePath` | string | `data/pipeline_state.json` | Path to state file |
+| `$DbPath` | string | `data/communities.db` | Path to database file |
+| `$LogLevel` | string | `INFO` | Logging level (DEBUG, INFO, WARNING, ERROR) |
+
+**Condensers Available:**
+
+| Condenser | Description | Speed | Cost |
+|-----------|-------------|-------|------|
+| `ai` | Local AI knowledge (no web) | ⚡ Fastest | Free |
+| `web` | DuckDuckGo search + LLM | 🐢 Slow | Free |
+| `research` | Deep research with vision browser | 🐢 Slowest | Free |
+| `browser` | Google search + Chrome automation | 🐢 Slow | Free |
+| `gemini` | Google Gemini API | ⚡ Fast | Free tier limits |
+
+**Key Features:**
+
+- **Sequential execution** - Runs condensers in order: AI → Web → Research → Browser → Gemini
+- **URL tracking integration** - Automatically tracks all discovered URLs in database
+- **Data quality scoring** - Scores URLs 0-100 based on keyword detection (HOA, amenities, etc.)
+- **Robot-friendly detection** - Routes URLs to appropriate extraction method
+- **Resumable** - Saves state after each condenser, can resume if interrupted
+- **Comprehensive statistics** - Shows URL tracking stats at end of run
+
+**URL Tracking Integration:**
+
+All condensers now integrate with the URL tracking system:
+- URLs are registered immediately when discovered
+- Quality metrics calculated after page processing
+- Status updated to "printed" on success or "failed" on error
+- 4xx failures recorded for manual review
+- Robot-friendly status cached at domain level
+
+**Data Quality Scoring:**
+
+Each URL is scored 0-100 based on detected keywords:
+- **Fees detection** (HOA, dues, assessment, etc.) - up to 25 points
+- **Amenities detection** (pool, tennis, golf, etc.) - up to 25 points
+- **Demographics detection** (population, income, etc.) - up to 25 points
+- **Proximity detection** (shopping, hospital, school, etc.) - up to 25 points
+
+**Output Statistics:**
+
+At the end of each run, the script displays:
+- Total communities processed
+- Communities with fee/amenity/demographics data
+- URL tracking statistics (total, printed, failed, robot-friendly)
+- CAPTCHA detection and solve rates
+- Data quality metrics (average score, quality tiers, top sources)
+
+**Examples:**
+
+```powershell
+# Run full pipeline on all communities
+.\scripts\run-full-pipeline.ps1
+
+# Run only specific condensers
+.\scripts\run-full-pipeline.ps1 -Condensers "ai,web"
+
+# Run for specific community only
+.\scripts\run-full-pipeline.ps1 -Community "Pelican Bay"
+
+# Check pipeline status
+.\scripts\run-full-pipeline.ps1 -Status
+
+# Reset and start fresh
+.\scripts\run-full-pipeline.ps1 -Reset
+
+# Debug logging
+.\scripts\run-full-pipeline.ps1 -LogLevel "DEBUG"
+```
+
+**State File:** `data/pipeline_state.json`
+
+Tracks:
+- Pipeline version and timestamps
+- List of communities to process
+- Per-condenser status (pending, running, done, error, skipped)
+- Results for each community/condenser combination
+- Overall statistics (total runs, successful, failed, skipped)
+
+**Pipeline Flow:**
+
+```
+1. Initialize state (discover communities from all sources)
+2. For each community:
+   a. Run AI condenser (local knowledge)
+   b. Run Web condenser (DuckDuckGo + LLM)
+   c. Run Research condenser (deep research with vision browser)
+   d. Run Browser condenser (Google + Chrome automation)
+   e. Run Gemini condenser (Gemini API, if configured)
+3. Save state after each condenser
+4. Display comprehensive statistics
+5. Show review queue if 4xx failures exist
+```
+
+**⚠️ Important Notes:**
+
+- Requires model server running (use `start-model-server.ps1`)
+- Gemini condenser requires API key in `.env` file
+- Pipeline is fully resumable - safe to interrupt and restart
+- All URLs are tracked in `source_urls` table with quality scores
+- Failed URLs (4xx) require manual review via `review-urls.ps1`
+
+---
+
 ## Quick Start Guide
 
 ### 1. Initial Setup

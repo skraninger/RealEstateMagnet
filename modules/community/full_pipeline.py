@@ -384,7 +384,7 @@ async def _run_research_agent(
     """Run the research agent for one community."""
     from .research_engine import CommunityResearchEngine
 
-    engine = CommunityResearchEngine(store=store)
+    engine = CommunityResearchEngine(store=store, url_tracker=url_tracker)
     started = time.monotonic()
     result = CondenserStepResult(status="running")
     try:

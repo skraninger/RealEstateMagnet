@@ -30,7 +30,15 @@
     API port (default 8080).
 
 .PARAMETER CtxSize
-    Context size (default 32768).
+    Context window size in tokens (default 65536).
+
+    This was raised from 32768 because the research agent's prompts regularly
+    exceeded the old window and llama.cpp rejected them with HTTP 400
+    ("request (NNNNN tokens) exceeds the available context size"). The
+    Qwen3.8-27B GGUF advertises a native context of 262144 tokens, so it can be
+    raised much further — but the KV cache grows with the context and competes
+    with the model weights for VRAM. If llama-server fails to load (out of
+    memory), lower this value or reduce -GpuLayers.
 
 .PARAMETER GpuLayers
     Layers offloaded to the GPU via -ngl (default 99 = all; lower if VRAM is tight).
@@ -41,17 +49,49 @@
 
 .PARAMETER Device
     GPU device to use (default: Vulkan1 = Intel Arc Pro B70). Use --list-devices to see available devices.
+
+.PARAMETER ServerLog
+    File that receives the llama-server console output (default:
+    logs/llama-server.log, relative to the repo root). This is where you look
+    for load failures and, most importantly, the HTTP 400 context-size errors
+    that the pipeline reports. The file is truncated on every launch.
 #>
 param(
+    # Directory containing llama-server.exe (and the ggml-*.dll runtime).
     [string]$LlamaDir = "C:\Users\skran\.unsloth\llama.cpp\build\bin\Release",
+
+    # Full path to a .gguf model. Empty = auto-locate the largest
+    # Qwen3.8-27B GGUF under -HfCacheDir.
     [string]$ModelPath = "",
+
+    # Hugging Face cache root used for model auto-discovery.
     [string]$HfCacheDir = "C:\Users\skran\.cache\huggingface",
+
+    # Model name exposed through the OpenAI-compatible API (must match
+    # MODEL_NAME in .env).
     [string]$ModelAlias = "qwen3.8-27b",
+
+    # API port (must match MODEL_BASE_URL in .env).
     [int]$Port = 8080,
-    [int]$CtxSize = 32768,
+
+    # Context window in tokens. Raised from 32768 to 65536 because research
+    # prompts exceeded the old window (llama.cpp HTTP 400). Lower it if VRAM
+    # is tight; raise it (model supports 262144) for longer research prompts.
+    [int]$CtxSize = 65536,
+
+    # Layers offloaded to the GPU via -ngl (99 = all; lower if VRAM is tight).
     [int]$GpuLayers = 99,
+
+    # Multimodal projector GGUF for vision. Empty = auto-locate in HfCacheDir
+    # or LlamaDir; vision is disabled when none is found.
     [string]$MmprojPath = "",
-    [string]$Device = "Vulkan1"
+
+    # GPU device (default Vulkan1 = Intel Arc Pro B70). Use --list-devices.
+    [string]$Device = "Vulkan1",
+
+    # File receiving the server console output (default logs/llama-server.log).
+    # Truncated on each launch; check it for load failures and HTTP 400 errors.
+    [string]$ServerLog = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -162,12 +202,29 @@ if (Test-Path $vulkanDll) {
     Write-Warning "Vulkan DLL not found - GPU acceleration may not work"
 }
 
+# Route the server console output to a log file so problems can be reviewed
+# after the fact. The most useful entries are load failures and the HTTP 400
+# "exceeds the available context size" rejections reported by the pipeline.
+if ([string]::IsNullOrWhiteSpace($ServerLog)) {
+    $repoRoot = Split-Path -Parent $PSScriptRoot
+    $ServerLog = Join-Path $repoRoot "logs\llama-server.log"
+}
+$logDir = Split-Path -Parent $ServerLog
+if ($logDir -and -not (Test-Path -LiteralPath $logDir)) {
+    New-Item -ItemType Directory -Path $logDir -Force | Out-Null
+}
+# Truncate the previous log so each launch starts clean.
+if (Test-Path -LiteralPath $ServerLog) {
+    Remove-Item -LiteralPath $ServerLog -Force -ErrorAction SilentlyContinue
+}
+
 Write-Host "Starting llama-server in new window (port $Port, ctx $CtxSize, ngl $GpuLayers, alias $ModelAlias)"
 Write-Host "Device: $Device (Intel Arc Pro B70)"
 Write-Host "GPU layers: $GpuLayers (99 = offload all layers to GPU)"
+Write-Host "Server log: $ServerLog"
 
 # Build argument list
-$argList = @("--model", $ModelPath, "--alias", $ModelAlias, "--port", "$Port", "-c", "$CtxSize", "-ngl", "$GpuLayers", "--device", $Device)
+$argList = @("--model", $ModelPath, "--alias", $ModelAlias, "--port", "$Port", "-c", "$CtxSize", "-ngl", "$GpuLayers", "--device", $Device, "--log-file", $ServerLog)
 
 # Add mmproj if available
 if (-not [string]::IsNullOrWhiteSpace($MmprojPath)) {
@@ -198,5 +255,8 @@ Write-Host "Other scripts will wait automatically for the server to be ready."
 Write-Host ""
 Write-Host "To monitor progress, check the new console window or visit:"
 Write-Host ("  http://localhost:" + $Port + "/health")
+Write-Host ""
+Write-Host "Server output is also being written to:"
+Write-Host "  $ServerLog"
 Write-Host ""
 exit 0

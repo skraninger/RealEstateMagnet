@@ -31,8 +31,18 @@
 .PARAMETER StatePath
     Path to state file (default: data/pipeline_state.json)
 
-.PARAMETER Verbose
-    Show detailed progress
+.PARAMETER DbPath
+    Path to the SQLite database (default: data/communities.db)
+
+.PARAMETER LogLevel
+    Python logging level: DEBUG, INFO, WARNING or ERROR (default: INFO)
+
+.PARAMETER LogPath
+    Full run log. Empty = logs/run-full-pipeline_<timestamp>.log
+
+.PARAMETER ErrorLogPath
+    Focused error report, extracted from the database after the run.
+    Empty = logs/pipeline-errors_<timestamp>.log
 
 .EXAMPLE
     .\scripts\run-full-pipeline.ps1
@@ -66,13 +76,45 @@
 
 [CmdletBinding()]
 param(
+    # Only process communities whose name or slug contains this substring.
+    # Empty string = process every discovered community.
     [string]$Community = "",
+
+    # Comma-separated subset of condensers to run, in the fixed order:
+    # ai,web,research,browser,gemini. Empty string = all condensers.
+    # NOTE: a subset run never marks a community "complete" (completion is
+    # always judged against the full set), so it is safe to run one at a time.
     [string]$Condensers = "",
+
+    # Discard recorded progress and start over. Only progress is cleared —
+    # community identity and already-collected facts are retained in the DB.
     [switch]$Reset,
+
+    # Print the current pipeline status report (DB-backed) and exit without
+    # running any collection.
     [switch]$Status,
+
+    # JSON file that mirrors progress for humans and feeds the one-time legacy
+    # migration. The SQLite database is the source of truth, NOT this file.
     [string]$StatePath = "data/pipeline_state.json",
+
+    # SQLite database holding community facts and the authoritative pipeline
+    # status / condenser-run rows.
     [string]$DbPath = "data/communities.db",
-    [string]$LogLevel = "INFO"
+
+    # Logging level for the Python pipeline module. One of:
+    # DEBUG | INFO | WARNING | ERROR. Use DEBUG to capture per-request detail.
+    [string]$LogLevel = "INFO",
+
+    # Full run log (key messages + all pipeline output, including Python
+    # stderr such as llama.cpp HTTP 400 context-size errors).
+    # Empty = logs/run-full-pipeline_<timestamp>.log
+    [string]$LogPath = "",
+
+    # Focused error report extracted from the database after the run — this is
+    # the file to open first when something failed.
+    # Empty = logs/pipeline-errors_<timestamp>.log
+    [string]$ErrorLogPath = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -82,10 +124,72 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ProjectRoot = Split-Path -Parent $ScriptDir
 Set-Location $ProjectRoot
 
+# ── Console encoding ─────────────────────────────────────────────────────────
+# The pipeline logs box-drawing/status glyphs. Force Python into UTF-8 mode and
+# match PowerShell's output decoder to it, otherwise the cp1252 Windows console
+# makes Python raise UnicodeEncodeError and the run aborts with exit code 1.
+$env:PYTHONUTF8 = "1"
+$env:PYTHONIOENCODING = "utf-8"
+$env:PYTHONUNBUFFERED = "1"
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+
+# ── Logging setup ────────────────────────────────────────────────────────────
+# Every run produces two files under logs/:
+#   * a full run log: key messages plus all pipeline output (stdout + stderr,
+#     so llama.cpp HTTP 400 context-size errors are captured), and
+#   * a focused error report extracted from the database after the run.
+# These are what you review when an unattended run fails.
+$LogsDir = Join-Path $ProjectRoot "logs"
+if (-not (Test-Path -LiteralPath $LogsDir)) {
+    New-Item -ItemType Directory -Path $LogsDir -Force | Out-Null
+}
+
+$RunTimestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+
+if ([string]::IsNullOrWhiteSpace($LogPath)) {
+    $LogPath = Join-Path $LogsDir "run-full-pipeline_$RunTimestamp.log"
+} elseif (-not [System.IO.Path]::IsPathRooted($LogPath)) {
+    $LogPath = Join-Path $ProjectRoot $LogPath
+}
+
+if ([string]::IsNullOrWhiteSpace($ErrorLogPath)) {
+    $ErrorLogPath = Join-Path $LogsDir "pipeline-errors_$RunTimestamp.log"
+} elseif (-not [System.IO.Path]::IsPathRooted($ErrorLogPath)) {
+    $ErrorLogPath = Join-Path $ProjectRoot $ErrorLogPath
+}
+
+New-Item -ItemType File -Path $LogPath -Force | Out-Null
+
+# Write a line to both the console and the full run log.
+function Write-Log {
+    param([string]$Message = "", [string]$Color = "White")
+    Write-Host $Message -ForegroundColor $Color
+    Add-Content -LiteralPath $LogPath -Value $Message -Encoding UTF8
+}
+
+# Summarise database errors into the focused report (and the run log).
+# Deliberately non-fatal: a reporting failure must never hide the run result.
+function Write-RunErrorReport {
+    $helper = Join-Path $ProjectRoot "scripts\pipeline_error_report.py"
+    if (-not (Test-Path -LiteralPath $helper)) { return }
+    if (-not (Test-Path -LiteralPath $PythonCmd)) { return }
+    $previousEap = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    $report = & $PythonCmd $helper --db $DbPath --output $ErrorLogPath 2>&1 |
+        ForEach-Object { "$_" }
+    $ErrorActionPreference = $previousEap
+    $report | ForEach-Object { Write-Host $_ }
+    Add-Content -LiteralPath $LogPath -Value ($report -join "`r`n") -Encoding UTF8
+}
+
 Write-Host "======================================================================" -ForegroundColor Cyan
 Write-Host "  RealEstateMagnet - Full Community Data Pipeline" -ForegroundColor Cyan
 Write-Host "======================================================================" -ForegroundColor Cyan
 Write-Host ""
+Write-Log "[LOG] Full run log:  $LogPath"
+Write-Log "[LOG] Error report:  $ErrorLogPath"
+Write-Log "[CONFIG] Community='$Community' Condensers='$Condensers' Reset=$Reset Status=$Status"
+Write-Log "[CONFIG] StatePath='$StatePath' DbPath='$DbPath' LogLevel='$LogLevel'"
 
 # Check if model server is running
 Write-Host "[CHECK] Verifying model server..." -ForegroundColor Yellow
@@ -117,6 +221,7 @@ if (-not $ModelServerHealthy) {
     $answer = Read-Host "Model server not running. Continue anyway? (y/N)"
     if ($answer -ne 'y' -and $answer -ne 'Y') {
         Write-Host "Aborted." -ForegroundColor Red
+        Write-Log "[ABORT] Model server not running - aborted at user request." -Color Red
         exit 1
     }
 }
@@ -124,6 +229,12 @@ if (-not $ModelServerHealthy) {
 # Build command
 $PythonCmd = ".venv\Scripts\python.exe"
 $ModuleCmd = "modules.community.full_pipeline"
+
+if (-not (Test-Path -LiteralPath $PythonCmd)) {
+    Write-Log "[ABORT] Python interpreter not found at '$PythonCmd' (is the venv set up?)." -Color Red
+    Write-RunErrorReport
+    exit 1
+}
 
 $Args = @()
 
@@ -156,30 +267,51 @@ $Args += $LogLevel
 
 # Run the pipeline
 Write-Host "[RUN] Starting full pipeline..." -ForegroundColor Green
+Write-Host "  Progress streams below. Press Ctrl+C to stop safely - progress is" -ForegroundColor DarkGray
+Write-Host "  saved after every condenser and the run resumes where it left off." -ForegroundColor DarkGray
+Write-Host "  Live status from another terminal: .\scripts\run-full-pipeline.ps1 -Status" -ForegroundColor DarkGray
 Write-Host ""
 
 try {
-    & $PythonCmd -m $ModuleCmd @Args
-    
+    # Stream combined stdout+stderr to the console line-by-line WHILE appending
+    # it to the run log. Capturing the output into a variable first would buffer
+    # the whole run and show nothing until it finished; Python also block-buffers
+    # stdout when it is not a TTY, so we run with -u / PYTHONUNBUFFERED.
+    # ErrorActionPreference is relaxed only for this call: merging native stderr
+    # with 2>&1 under "Stop" would be treated as a terminating error.
+    $PreviousErrorAction = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    & $PythonCmd -u -m $ModuleCmd @Args 2>&1 | ForEach-Object {
+        $line = "$_"
+        Write-Host $line
+        Add-Content -LiteralPath $LogPath -Value $line -Encoding UTF8
+    }
     $ExitCode = $LASTEXITCODE
-    
+    $ErrorActionPreference = $PreviousErrorAction
+
     if ($ExitCode -eq 0) {
-        Write-Host ""
-        Write-Host "======================================================================" -ForegroundColor Green
-        Write-Host "  Pipeline completed successfully!" -ForegroundColor Green
-        Write-Host "======================================================================" -ForegroundColor Green
+        Write-Log ""
+        Write-Log "======================================================================" "Green"
+        Write-Log "  Pipeline completed successfully!" "Green"
+        Write-Log "======================================================================" "Green"
     } else {
-        Write-Host ""
-        Write-Host "======================================================================" -ForegroundColor Red
-        Write-Host "  Pipeline failed with exit code $ExitCode" -ForegroundColor Red
-        Write-Host "======================================================================" -ForegroundColor Red
+        Write-Log ""
+        Write-Log "======================================================================" "Red"
+        Write-Log "  Pipeline failed with exit code $ExitCode" "Red"
+        Write-Log "======================================================================" "Red"
+        Write-RunErrorReport
+        Write-Log "[LOG] Review the run log:   $LogPath" "Yellow"
+        Write-Log "[LOG] Review the error log: $ErrorLogPath" "Yellow"
         exit $ExitCode
     }
 } catch {
-    Write-Host ""
-    Write-Host "======================================================================" -ForegroundColor Red
-    Write-Host "  Pipeline failed with exception: $_" -ForegroundColor Red
-    Write-Host "======================================================================" -ForegroundColor Red
+    Write-Log ""
+    Write-Log "======================================================================" "Red"
+    Write-Log "  Pipeline failed with exception: $_" "Red"
+    Write-Log "======================================================================" "Red"
+    Write-RunErrorReport
+    Write-Log "[LOG] Review the run log:   $LogPath" "Yellow"
+    Write-Log "[LOG] Review the error log: $ErrorLogPath" "Yellow"
     exit 1
 }
 
@@ -189,13 +321,17 @@ if (-not $Status) {
     Write-Host "[SUMMARY] Final database statistics:" -ForegroundColor Cyan
     Write-Host ""
     
-    & $PythonCmd -c @"
+    # Relax ErrorActionPreference only for this reporting call: merging native
+    # stderr (2>&1) under "Stop" would turn any diagnostic into a fatal error.
+    $PreviousErrorAction = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    $SummaryOutput = & $PythonCmd -c @"
 import sqlite3
 import sys
 from pathlib import Path
 
 # Database statistics
-conn = sqlite3.connect('$DbPath')
+conn = sqlite3.connect(sys.argv[1])
 cursor = conn.cursor()
 
 cursor.execute('SELECT COUNT(*) FROM communities')
@@ -349,14 +485,18 @@ except sqlite3.OperationalError:
     pass
 
 conn.close()
-"@
+"@ $DbPath 2>&1 | ForEach-Object { "$_" }
+    $ErrorActionPreference = $PreviousErrorAction
+    $SummaryOutput | ForEach-Object { Write-Host $_ }
+    $SummaryOutput | Out-File -FilePath $LogPath -Append -Encoding utf8
 
     # Show review queue if there are failed URLs
     $ReviewQueueCount = & $PythonCmd -c @"
 import sqlite3
+import sys
 from pathlib import Path
 try:
-    conn = sqlite3.connect('$DbPath')
+    conn = sqlite3.connect(sys.argv[1])
     cursor = conn.cursor()
     cursor.execute('SELECT COUNT(*) FROM source_urls WHERE status = ? AND reviewed = 0', ('failed_4xx',))
     count = cursor.fetchone()[0]
@@ -364,7 +504,7 @@ try:
     print(count)
 except:
     print(0)
-"@
+"@ $DbPath
     
     if ([int]$ReviewQueueCount -gt 0) {
         Write-Host ""
@@ -373,7 +513,13 @@ except:
     }
 }
 
-Write-Host ""
-Write-Host "State saved to: $StatePath" -ForegroundColor Gray
-Write-Host "To check status: .\scripts\run-full-pipeline.ps1 -Status" -ForegroundColor Gray
-Write-Host ""
+# Focused error report — the first file to open when a run had failures.
+# (The helper also writes it to $ErrorLogPath.)
+Write-RunErrorReport
+
+Write-Log ""
+Write-Log "State saved to: $StatePath" "Gray"
+Write-Log "To check status: .\scripts\run-full-pipeline.ps1 -Status" "Gray"
+Write-Log "[LOG] Full run log:  $LogPath" "Gray"
+Write-Log "[LOG] Error report:  $ErrorLogPath" "Gray"
+Write-Log ""

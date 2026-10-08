@@ -74,10 +74,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 | `$HfCacheDir` | string | `C:\Users\skran\.cache\huggingface` | Hugging Face cache for model auto-discovery |
 | `$ModelAlias` | string | `qwen3.8-27b` | Model name exposed via OpenAI-compatible API |
 | `$Port` | int | `8080` | API port |
-| `$CtxSize` | int | `32768` | Context window size in tokens |
+| `$CtxSize` | int | `65536` | Context window size in tokens (raised from 32768; model supports 262144) |
 | `$GpuLayers` | int | `99` | GPU layers to offload (99 = all layers) |
 | `$MmprojPath` | string | `""` (auto-locate) | Path to multimodal projector GGUF for vision |
 | `$Device` | string | `Vulkan1` | GPU device (use `--list-devices` to see options) |
+| `$ServerLog` | string | `logs/llama-server.log` | File receiving the server console output (truncated each launch) |
 
 **Key Features:**
 
@@ -91,6 +92,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
    - Multimodal projector (mmproj) file for vision capabilities
 
 3. **Immediate Exit** - Launches server and exits immediately without waiting for model load
+
+4. **Server Logging** - Console output is additionally written to `logs/llama-server.log`
+   (`-ServerLog`), where load failures and HTTP 400 context-size errors can be reviewed.
 
 **Duplicate Detection Logic:**
 ```
@@ -633,6 +637,8 @@ Do NOT run this script while opencode itself is being served by the local llama-
 | `$StatePath` | string | `data/pipeline_state.json` | Path to state file |
 | `$DbPath` | string | `data/communities.db` | Path to database file |
 | `$LogLevel` | string | `INFO` | Logging level (DEBUG, INFO, WARNING, ERROR) |
+| `$LogPath` | string | `logs/run-full-pipeline_<timestamp>.log` | Full run log (key messages + all pipeline output) |
+| `$ErrorLogPath` | string | `logs/pipeline-errors_<timestamp>.log` | Focused error report extracted from the database |
 
 **Condensers Available:**
 
@@ -678,6 +684,46 @@ At the end of each run, the script displays:
 - URL tracking statistics (total, printed, failed, robot-friendly)
 - CAPTCHA detection and solve rates
 - Data quality metrics (average score, quality tiers, top sources)
+
+**Run Logs & Error Reporting:**
+
+Every run writes two files under `logs/`:
+
+| File | Contents |
+|------|----------|
+| `run-full-pipeline_<timestamp>.log` | Key script messages plus all pipeline output (stdout **and** stderr, so llama.cpp HTTP 400 context-size errors are captured) |
+| `pipeline-errors_<timestamp>.log` | Focused error report extracted from the database (condenser errors + failed/partial communities) |
+
+The error report is produced by `scripts/pipeline_error_report.py` and can also be
+run standalone:
+
+```powershell
+.venv\Scripts\python.exe scripts\pipeline_error_report.py --db data/communities.db --output logs\errors.log
+```
+
+Override the destinations with `-LogPath` and `-ErrorLogPath`. The paths are also
+printed at the end of every run. When a run fails, open the error report first.
+
+**Live progress:**
+
+Pipeline output is streamed to the console line-by-line *as it happens* (not
+buffered until the end), so you can watch the run and decide whether to stop it.
+Because the run is resumable, `Ctrl+C` is safe: progress is committed to the
+database after every condenser, and the next run picks up at the same community.
+
+Long single steps (e.g. the research agent) print a heartbeat every 30 seconds:
+
+```
+  ▶ [research] Research Agent (deep web research)...
+  ⏳ still working on Pelican Bay / research (30s elapsed)
+  ⏳ still working on Pelican Bay / research (60s elapsed)
+  ✓ [research] done in 74.2s — 3 fees, 11 amenities, demo=yes
+```
+
+Tune or disable the heartbeat with the `PIPELINE_HEARTBEAT_SECONDS` environment
+variable (`0` disables it). For a less chatty console, run with
+`-LogLevel WARNING` (progress and heartbeats still appear; the duplicated
+`INFO` logger lines are suppressed).
 
 **Examples:**
 

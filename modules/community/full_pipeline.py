@@ -51,6 +51,7 @@ import asyncio
 import json
 import logging
 import os
+import sys
 import time
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -86,6 +87,12 @@ ALL_CONDENSERS = ["ai", "web", "research", "browser", "gemini"]
 CONDENSERS_WITHOUT_OPTIONAL = ["ai", "web", "research", "browser"]
 
 DEFAULT_STATE_PATH = Path("data") / "pipeline_state.json"
+
+# How often the pipeline prints a "still working" heartbeat while a condenser
+# runs. A single research step can take minutes, so this reassures an operator
+# watching the console that the run is alive (and lets them decide whether to
+# stop and resume). Set PIPELINE_HEARTBEAT_SECONDS=0 to disable.
+HEARTBEAT_SECONDS = int(os.environ.get("PIPELINE_HEARTBEAT_SECONDS", "30"))
 
 # ── State models ─────────────────────────────────────────────────────────────
 
@@ -727,11 +734,60 @@ class FullPipeline:
         self.on_community_start = on_community_start
         self.on_community_done = on_community_done
         self.on_pipeline_done = on_pipeline_done
+        # Heartbeat bookkeeping: what condenser is running right now and since
+        # when (monotonic seconds). Updated by run(); read by _heartbeat().
+        self._current_step = ""
+        self._step_started = 0.0
 
     def _log(self, message: str) -> None:
         if self.on_progress:
             self.on_progress(message)
         logger.info(message)
+
+    async def _run_with_heartbeat(
+        self,
+        runner: Callable,
+        info: CommunityInfo,
+        condenser_name: str,
+    ) -> CondenserStepResult:
+        """Await one condenser runner, logging a periodic "still working" line.
+
+        A single research/vision step can take several minutes with no other
+        output. Without a heartbeat the console looks frozen and an operator
+        cannot tell whether to keep waiting or stop and resume.
+        """
+        task = asyncio.ensure_future(
+            runner(
+                info,
+                self.store,
+                self.database,
+                url_tracker=self.url_tracker,
+                on_progress=self.on_progress,
+            )
+        )
+        if HEARTBEAT_SECONDS <= 0:
+            return await task
+
+        self._current_step = f"{info.name} / {condenser_name}"
+        self._step_started = time.monotonic()
+        try:
+            while True:
+                done, _ = await asyncio.wait({task}, timeout=HEARTBEAT_SECONDS)
+                if task in done:
+                    return task.result()
+                elapsed = time.monotonic() - self._step_started
+                self._log(
+                    f"  ⏳ still working on {self._current_step} "
+                    f"({elapsed:.0f}s elapsed)"
+                )
+        finally:
+            self._current_step = ""
+            if not task.done():
+                task.cancel()
+                try:
+                    await task
+                except asyncio.CancelledError:
+                    pass
 
     def init_state(self, reset: bool = False) -> PipelineState:
         """Load state, register every discovered community, optionally reset.
@@ -919,12 +975,8 @@ class FullPipeline:
                     step_result = CondenserStepResult(status="skipped")
                     step_result.errors.append(f"Unknown condenser: {condenser_name}")
                 else:
-                    step_result = await runner(
-                        ci,
-                        self.store,
-                        self.database,
-                        url_tracker=self.url_tracker,
-                        on_progress=self.on_progress,
+                    step_result = await self._run_with_heartbeat(
+                        runner, ci, condenser_name
                     )
 
                 # Persist to the database (authoritative) + reporting mirror.
@@ -1085,7 +1137,23 @@ def _print_status(
     }, indent=2))
 
 
+def _force_utf8_stdio() -> None:
+    """Make stdout/stderr tolerate the pipeline's Unicode log glyphs.
+
+    The Windows console is often cp1252, which cannot encode the box-drawing
+    characters (``─``) and status icons (``▶ ✓ ✗``) the pipeline logs. Without
+    this, ``print`` raises ``UnicodeEncodeError`` and the whole run aborts with
+    exit code 1. ``errors="replace"`` keeps logging non-fatal on any terminal.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):  # pragma: no cover - non-TTY/old
+            pass
+
+
 async def _main(argv: Optional[list[str]] = None) -> None:
+    _force_utf8_stdio()
     parser = argparse.ArgumentParser(
         description="Full pipeline: discover and condense communities using all methods."
     )

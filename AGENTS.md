@@ -145,6 +145,9 @@ guarded by `count_condenser_runs() == 0`.
 
 # Web viewer (runs migration on startup)
 .venv\Scripts\python.exe -m modules.web.viewer      # http://localhost:8000
+
+# Focused error report from the DB (also written by the pipeline on failure)
+.venv\Scripts\python.exe scripts\pipeline_error_report.py --db data\communities.db
 ```
 
 Positional args use forward-compatible flags (`--community`, `--condensers`,
@@ -179,6 +182,13 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   sys.modules ...`.** Cause: `modules/community/__init__.py` imports
   `full_pipeline`, so runpy sees it already imported. Harmless. It also makes
   PowerShell report exit code 1 while exiting 0 — don't treat as failure.
+- **Unicode crash on Windows consoles (exit code 1).** The pipeline logs
+  box-drawing glyphs (`─`) and status icons (`▶ ✓ ✗`); a cp1252 console makes
+  `print()` raise `UnicodeEncodeError` and abort the run. `full_pipeline._main`
+  calls `_force_utf8_stdio()` (stdout/stderr → UTF-8, `errors="replace"`), and
+  `run-full-pipeline.ps1` sets `PYTHONUTF8=1` / `PYTHONIOENCODING=utf-8` /
+  `[Console]::OutputEncoding`. Keep both; the Python fix covers direct `-m`
+  runs, the script fix keeps the captured log readable.
 - **PowerShell here-strings in scripts are double-quoted (`@" ... "@`).** Avoid
   `$` inside the embedded Python (it will be interpolated). The pipeline summary
   Python block must not contain `$`.
@@ -200,6 +210,26 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
 - **Environment quirk:** some hosts (e.g. `ocfl.maps.arcgis.com`) fail DNS on
   the dev machine; covered by offline fixtures.
 - **Never commit `.env`** (gitignored); use `.env.example`.
+- **Model server context is `-CtxSize 65536`** (raised from 32768). Research
+  prompts exceeded the old window and llama.cpp returned HTTP 400
+  `exceed_context_size_error`. The Qwen3.8-27B GGUF advertises a native context
+  of 262144 tokens, so raise it further if VRAM allows (lower `-GpuLayers` if it
+  fails to load). The server's own log is `logs/llama-server.log` (gitignored).
+- **Pipeline errors are logged.** `run-full-pipeline.ps1` streams the pipeline
+  output live to the console while appending a full run log
+  (`logs/run-full-pipeline_<timestamp>.log`, stdout+stderr) and a focused error
+  report (`logs/pipeline-errors_<timestamp>.log`, produced by
+  `scripts/pipeline_error_report.py` from `community_condenser_runs` +
+  `community_pipeline_status`). Review the error report first when a run fails.
+- **Progress heartbeat.** Each condenser runs as a task and the pipeline logs
+  `⏳ still working on <community> / <condenser> (Ns elapsed)` every 30s
+  (`PIPELINE_HEARTBEAT_SECONDS`, `0` disables). The run is resumable, so
+  `Ctrl+C` during a long step is safe. (`-LogLevel WARNING` gives a cleaner
+  console: progress + heartbeats only.)
+- **PowerShell 5.1 quirk:** `Tee-Object` writes UTF-16, so the pipeline script
+  streams output through `ForEach-Object { Write-Host $_; Add-Content -Encoding UTF8 }`
+  instead. Merging native stderr (`2>&1`) under `$ErrorActionPreference = "Stop"`
+  is a terminating error, so the script relaxes it around those calls.
 - **Performance invariants (keep them!):** no per-step JSON-mirror writes;
   migration is marker-gated; `register_communities` is batched;
   `list_pipeline_statuses` and `condenser_statuses_map` are single queries;

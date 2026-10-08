@@ -387,7 +387,12 @@ Potential improvements:
 
 ## See Also
 
+- `AGENTS.md` - Developer/agent notes (architecture, commands, gotchas)
 - `modules/community/full_pipeline.py` - Main pipeline implementation
+- `modules/community/database.py` - Schema + all database access
+- `modules/community/migration.py` / `migrate_database.py` - Schema migration
 - `scripts/run-full-pipeline.ps1` - PowerShell wrapper
-- `tests/test_full_pipeline.py` - Test suite
-- `data/pipeline_state.json` - State file (created on first run)
+- `tests/test_full_pipeline.py`, `tests/test_migration.py` - Test suites
+- `data/communities.db` - Source of truth (`community_pipeline_status`,
+  `community_condenser_runs`, `community_urls`)
+- `data/pipeline_state.json` - Human-readable reporting mirror only

@@ -210,6 +210,10 @@ The full pipeline is **database-first and community-oriented**:
 
 ## 4. Implementation Instructions for Claude Code
 
+> **Read `AGENTS.md` first.** It is the maintained developer/agent notes file:
+> repository map, the DB-first pipeline architecture, commands, testing
+> conventions, and the gotchas to avoid. Keep it updated when behaviour changes.
+
 ### Step 0: Environment Setup
 > Before any coding steps, ensure the devcontainer is running:
 > ```bash

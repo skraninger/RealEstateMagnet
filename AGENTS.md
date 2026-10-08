@@ -230,6 +230,14 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   streams output through `ForEach-Object { Write-Host $_; Add-Content -Encoding UTF8 }`
   instead. Merging native stderr (`2>&1`) under `$ErrorActionPreference = "Stop"`
   is a terminating error, so the script relaxes it around those calls.
+- **`read_page` only opens a visible browser when `use_js=True`.** Its cascade is
+  static → headless JS render → (opt-in) visible Chrome PDF capture. The visible
+  fallback keeps **one** browser session and, on a CAPTCHA, saves a `.png`
+  screenshot and polls the same window for `CAPTCHA_MANUAL_WAIT_SECONDS` (default
+  60) — it never relaunches fresh browsers. Do not reintroduce a fresh-browser
+  retry loop: it opened the page 3× and could not carry a solved challenge.
+  Robot-hostile URLs should go through the vision agent
+  (`URLTracker.process_url` → `access_and_extract`).
 - **Performance invariants (keep them!):** no per-step JSON-mirror writes;
   migration is marker-gated; `register_communities` is batched;
   `list_pipeline_statuses` and `condenser_statuses_map` are single queries;

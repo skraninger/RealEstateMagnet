@@ -7,9 +7,11 @@ workstream, but access stays single-request and human-paced.
 
 from __future__ import annotations
 
+import asyncio
 import logging
 import os
 import tempfile
+import time
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -25,6 +27,12 @@ logger = logging.getLogger(__name__)
 # Directory for storing CAPTCHA artifacts (screenshots and PDFs) for manual review
 CAPTCHA_ARTIFACTS_DIR = Path("data/captcha_artifacts")
 
+# How long (seconds) to keep a visible browser open on a CAPTCHA so a human can
+# solve it in the same session. The challenge is polled in-place; we never
+# relaunch a fresh browser for the same URL. 0 disables the wait.
+CAPTCHA_MANUAL_WAIT_SECONDS = int(os.environ.get("CAPTCHA_MANUAL_WAIT_SECONDS", "60"))
+CAPTCHA_POLL_INTERVAL_SECONDS = 3.0
+
 
 def _get_artifacts_dir() -> Path:
     """Get or create the CAPTCHA artifacts directory for storing screenshots and PDFs."""
@@ -32,20 +40,24 @@ def _get_artifacts_dir() -> Path:
     return CAPTCHA_ARTIFACTS_DIR
 
 
-def _generate_artifact_name(url: str, artifact_type: str) -> str:
+def _generate_artifact_name(url: str, artifact_type: str, extension: str) -> str:
     """Generate a descriptive filename for CAPTCHA artifacts.
-    
+
     Args:
         url: The URL being accessed
-        artifact_type: Type of artifact (e.g., 'screenshot', 'pdf')
-    
+        artifact_type: Label for the artifact (e.g. 'screenshot', 'page', 'captcha')
+        extension: File extension **without** the dot ('png' or 'pdf'). This is
+            explicit on purpose: the previous heuristic returned '.pdf' for
+            anything that wasn't literally named 'screenshot', which made
+            ``page.screenshot(path=...)`` fail with
+            ``path: unsupported mime type ".pdf"``.
+
     Returns:
-        Filename with timestamp, domain, and artifact type
+        Filename with timestamp, domain, and artifact label
     """
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     domain = urlparse(url).netloc.replace(".", "_").replace(":", "_")
-    return f"{artifact_type}_{timestamp}_{domain}.png" if artifact_type == "screenshot" \
-        else f"{artifact_type}_{timestamp}_{domain}.pdf"
+    return f"{artifact_type}_{timestamp}_{domain}.{extension}"
 
 
 @dataclass(frozen=True)
@@ -193,7 +205,7 @@ async def _read_page_js(url: str, max_retries: int = 2) -> str:
                 
                 # Save screenshot to artifacts directory for manual review
                 artifacts_dir = _get_artifacts_dir()
-                screenshot_filename = _generate_artifact_name(url, "screenshot")
+                screenshot_filename = _generate_artifact_name(url, "screenshot", "png")
                 screenshot_path = artifacts_dir / screenshot_filename
                 await page.screenshot(path=str(screenshot_path), full_page=True)
                 logger.info("CAPTCHA screenshot saved to: %s", screenshot_path)
@@ -206,124 +218,141 @@ async def _read_page_js(url: str, max_retries: int = 2) -> str:
     return text
 
 
-async def _read_page_pdf(url: str, max_retries: int = 2) -> str:
-    """Capture page as PDF using real Chrome browser and extract text with pdfplumber.
-    
-    This is the most robust method - uses a real (non-headless) browser with anti-detection
-    to bypass bot protection, captures the full page as PDF, then extracts text with pdfplumber.
-    Slower than other methods but works on sites that block automated access.
-    
-    Includes CAPTCHA detection - if detected, takes a screenshot for manual review and
-    waits for user to solve it before retrying. The browser window stays open so you
-    can manually solve the CAPTCHA if needed.
-    
-    PDFs and screenshots are saved to data/captcha_artifacts/ for review.
+async def _wait_for_captcha_clear(page, url: str, timeout: float) -> bool:
+    """Poll an open page until the CAPTCHA/bot challenge clears or ``timeout``.
+
+    Runs against the *existing* browser page so a human (or an auto-passing
+    Cloudflare check) can solve the challenge without losing the session.
     """
-    import asyncio
-    from pathlib import Path as PathLib
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        await asyncio.sleep(CAPTCHA_POLL_INTERVAL_SECONDS)
+        try:
+            html = await page.content()
+        except Exception:
+            return False
+        text = _extract_text(html, url)
+        check = _detect_captcha(text, html)
+        if not check["detected"] and len(text.strip()) > 100:
+            return True
+    return False
+
+
+async def _read_page_pdf(url: str) -> str:
+    """Capture a page as PDF using a real (visible) Chrome, then extract text.
+
+    This is the most robust read method: a non-headless browser with
+    anti-detection flags gets past many bot checks, the page is captured as a
+    PDF and the text is extracted with pdfplumber. PDFs and CAPTCHA screenshots
+    are saved to ``data/captcha_artifacts/`` for review.
+
+    A single browser session is used per URL. If a CAPTCHA is detected the
+    screenshot is saved and the *same* window is kept open (polled in place) for
+    ``CAPTCHA_MANUAL_WAIT_SECONDS`` so a human can solve it. We deliberately do
+    not relaunch fresh browsers: that opened the page three times and could never
+    carry a solved challenge forward.
+    """
     import pdfplumber
     from playwright.async_api import async_playwright
-    
+
     artifacts_dir = _get_artifacts_dir()
-    pdf_filename = _generate_artifact_name(url, "page")
-    pdf_path = artifacts_dir / pdf_filename
-    
-    for attempt in range(max_retries + 1):
-        try:
-            async with async_playwright() as pw:
-                # Launch real browser (not headless) with anti-detection flags
-                browser = await pw.chromium.launch(
-                    headless=False,
-                    args=['--disable-blink-features=AutomationControlled']
-                )
-                
-                # Use realistic browser profile
+    pdf_path = artifacts_dir / _generate_artifact_name(url, "page", "pdf")
+
+    try:
+        async with async_playwright() as pw:
+            # Launch real browser (not headless) with anti-detection flags
+            browser = await pw.chromium.launch(
+                headless=False,
+                args=['--disable-blink-features=AutomationControlled'],
+            )
+            try:
                 context = await browser.new_context(
                     user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                     viewport={'width': 1920, 'height': 1080},
-                    locale='en-US'
+                    locale='en-US',
                 )
-                
                 page = await context.new_page()
-                
-                logger.info("Capturing page as PDF (attempt %d/%d): %s", attempt + 1, max_retries + 1, url)
+
+                logger.info("Capturing page as PDF (visible browser): %s", url)
                 await page.goto(url, wait_until='networkidle', timeout=60000)
                 await page.wait_for_timeout(3000)  # Wait for content to fully load
-                
-                # Get page content for CAPTCHA detection
+
+                # Check for a CAPTCHA / bot challenge.
                 html = await page.content()
                 text = _extract_text(html, url)
-                
-                # Check for CAPTCHA
                 captcha_check = _detect_captcha(text, html)
                 if captcha_check["detected"]:
-                    logger.warning("CAPTCHA detected on %s: %s", url, captcha_check["message"])
-                    
-                    # Save screenshot to artifacts directory for manual review
-                    screenshot_filename = _generate_artifact_name(url, f"captcha_attempt{attempt}")
-                    screenshot_path = artifacts_dir / screenshot_filename
+                    logger.warning(
+                        "CAPTCHA detected on %s: %s", url, captcha_check["message"]
+                    )
+
+                    # Save the challenge screenshot (.png) for manual review.
+                    screenshot_path = artifacts_dir / _generate_artifact_name(
+                        url, "captcha", "png"
+                    )
                     await page.screenshot(path=str(screenshot_path), full_page=True)
                     logger.info("CAPTCHA screenshot saved to: %s", screenshot_path)
-                    
-                    if attempt < max_retries:
-                        logger.info(
-                            "Browser window is open - you can manually solve the CAPTCHA if needed. "
-                            "Waiting 10 seconds before retry (attempt %d/%d)...",
-                            attempt + 1, max_retries
-                        )
-                        await asyncio.sleep(10)
-                        await browser.close()
-                        continue
-                    else:
-                        logger.error("CAPTCHA still present after %d attempts, giving up", max_retries)
-                        await browser.close()
+
+                    if CAPTCHA_MANUAL_WAIT_SECONDS <= 0:
+                        logger.error("CAPTCHA wait disabled; giving up on %s", url)
                         return ""
-                
-                # No CAPTCHA detected, proceed with PDF generation
+
+                    logger.info(
+                        "Browser window is open - solve the CAPTCHA if you can. "
+                        "Waiting up to %ds in this same session for it to clear...",
+                        CAPTCHA_MANUAL_WAIT_SECONDS,
+                    )
+                    if not await _wait_for_captcha_clear(
+                        page, url, CAPTCHA_MANUAL_WAIT_SECONDS
+                    ):
+                        logger.error(
+                            "CAPTCHA still present after %ds, giving up on %s",
+                            CAPTCHA_MANUAL_WAIT_SECONDS,
+                            url,
+                        )
+                        return ""
+                    logger.info("CAPTCHA cleared; continuing PDF capture for %s", url)
+
+                # No (remaining) CAPTCHA: capture the page as PDF.
                 await page.pdf(
                     path=str(pdf_path),
                     format='A4',
                     print_background=True,
-                    margin={'top': '0.5in', 'right': '0.5in', 'bottom': '0.5in', 'left': '0.5in'}
+                    margin={'top': '0.5in', 'right': '0.5in', 'bottom': '0.5in', 'left': '0.5in'},
                 )
                 logger.info("PDF saved to: %s", pdf_path)
-                
+            finally:
                 await browser.close()
-            
-            # Extract text from PDF using pdfplumber
-            logger.info("Extracting text from PDF: %s", pdf_path)
-            full_text = []
-            with pdfplumber.open(pdf_path) as pdf:
-                for i, page in enumerate(pdf.pages, 1):
-                    page_text = page.extract_text()
-                    if page_text:
-                        full_text.append(page_text)
-            
-            combined_text = '\n\n'.join(full_text)
-            logger.info("PDF extraction complete: %d characters from %d pages", len(combined_text), len(full_text))
-            
-            # Verify the extracted content doesn't contain CAPTCHA indicators
-            final_captcha_check = _detect_captcha(combined_text)
-            if final_captcha_check["detected"] and final_captcha_check["confidence"] > 0.7:
-                logger.warning("Extracted PDF content still contains CAPTCHA indicators: %s", final_captcha_check["message"])
-                if attempt < max_retries:
-                    logger.info("Retrying with fresh browser session...")
-                    continue
-                else:
-                    logger.error("Could not bypass CAPTCHA after %d attempts", max_retries)
-                    return ""
-            
-            return combined_text
-            
-        except Exception as exc:
-            logger.warning("_read_page_pdf failed for %s: %s", url, exc)
-            if attempt < max_retries:
-                logger.info("Retrying after error...")
-                continue
-            else:
-                return ""
-    
-    return ""
+
+        # Extract text from PDF using pdfplumber
+        logger.info("Extracting text from PDF: %s", pdf_path)
+        full_text = []
+        with pdfplumber.open(pdf_path) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    full_text.append(page_text)
+
+        combined_text = '\n\n'.join(full_text)
+        logger.info(
+            "PDF extraction complete: %d characters from %d pages",
+            len(combined_text), len(full_text),
+        )
+
+        # Refuse to return content that is still a CAPTCHA challenge.
+        final_check = _detect_captcha(combined_text)
+        if final_check["detected"] and final_check["confidence"] > 0.7:
+            logger.warning(
+                "Extracted PDF content still contains CAPTCHA indicators: %s",
+                final_check["message"],
+            )
+            return ""
+
+        return combined_text
+
+    except Exception as exc:
+        logger.warning("_read_page_pdf failed for %s: %s", url, exc)
+        return ""
 
 
 @retry(
@@ -347,15 +376,20 @@ async def _fetch_page_html(url: str) -> str:
 async def read_page(url: str, max_chars: int = 12_000, use_js: bool = False) -> str:
     """Fetch one page and return its main text, truncated to ``max_chars``.
 
-    Cascades through three methods:
-    1. Static HTTP fetch (fastest, easily blocked)
-    2. Playwright JS render with realistic user agent (medium success rate)
-    3. Real Chrome browser → PDF → pdfplumber text extraction (slowest but bypasses bot detection)
+    Cascade:
+    1. Static HTTP fetch (fastest, no browser)
+    2. Playwright **headless** JS render (no visible window)
+    3. Real Chrome **visible** browser → PDF → pdfplumber (only when
+       ``use_js=True``)
 
-    Automatically tries each method in order. If a method fails or returns empty content,
-    moves to the next. This ensures maximum compatibility with sites that have bot detection.
+    Methods 1–2 are always attempted. Method 3 pops a real browser window, so it
+    is opt-in via ``use_js=True`` — routine/background reads stay headless.
+    Robot-hostile pages should instead be handled by the dedicated vision
+    browser agent (``vision_browser_agent.access_and_extract``), which keeps a
+    single visible session and solves CAPTCHAs via the LLM.
 
-    Returns "" on complete failure (the agent decides what to do with an unreadable page).
+    Returns "" on complete failure (the caller decides what to do with an
+    unreadable page).
     """
     # Method 1: Static HTTP fetch
     try:
@@ -368,17 +402,25 @@ async def read_page(url: str, max_chars: int = 12_000, use_js: bool = False) -> 
     except Exception as exc:
         logger.info("Static fetch failed for %s: %s, trying JS render", url, exc)
 
-    # Method 2: Playwright JS render with realistic user agent
+    # Method 2: Playwright JS render with realistic user agent (headless)
     try:
         text = await _read_page_js(url)
         if text and len(text) > 100:
             logger.debug("read_page succeeded with JS render for %s", url)
             return text[:max_chars]
-        logger.info("JS render returned insufficient content for %s, trying PDF capture", url)
+        logger.info("JS render returned insufficient content for %s", url)
     except Exception as exc:
-        logger.info("JS render failed for %s: %s, trying PDF capture", url, exc)
+        logger.info("JS render failed for %s: %s", url, exc)
 
-    # Method 3: Real Chrome browser → PDF → pdfplumber
+    # Method 3: visible real-Chrome PDF capture — opt-in only (pops a window).
+    if not use_js:
+        logger.info(
+            "Skipping visible PDF capture for %s (use_js=False); "
+            "use the vision browser agent for robot-hostile pages",
+            url,
+        )
+        return ""
+
     try:
         text = await _read_page_pdf(url)
         if text and len(text) > 100:

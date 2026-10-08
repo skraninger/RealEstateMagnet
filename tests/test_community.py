@@ -257,6 +257,55 @@ class TestTools:
         httpx_mock.add_response(url="https://down.example.com", status_code=500)
         assert await community_tools.read_page("https://down.example.com") == ""
 
+    def test_generate_artifact_name_uses_explicit_extension(self):
+        png = community_tools._generate_artifact_name(
+            "https://x.example.com/a", "captcha", "png"
+        )
+        pdf = community_tools._generate_artifact_name(
+            "https://x.example.com/a", "page", "pdf"
+        )
+        assert png.endswith(".png")
+        assert pdf.endswith(".pdf")
+        assert "x_example_com" in png
+
+    @pytest.mark.asyncio
+    async def test_read_page_skips_visible_fallback_by_default(
+        self, httpx_mock, monkeypatch
+    ):
+        """read_page must not open a visible browser unless use_js=True."""
+        httpx_mock.add_response(url="https://blocked.example.com/page", status_code=403)
+
+        async def js_stub(url):
+            return ""
+
+        async def pdf_must_not_run(url):
+            raise AssertionError("visible PDF fallback must be opt-in (use_js=True)")
+
+        monkeypatch.setattr(community_tools, "_read_page_js", js_stub)
+        monkeypatch.setattr(community_tools, "_read_page_pdf", pdf_must_not_run)
+
+        assert await community_tools.read_page("https://blocked.example.com/page") == ""
+
+    @pytest.mark.asyncio
+    async def test_read_page_runs_visible_fallback_when_opted_in(
+        self, httpx_mock, monkeypatch
+    ):
+        httpx_mock.add_response(url="https://blocked.example.com/page", status_code=403)
+
+        async def js_stub(url):
+            return ""
+
+        async def pdf_stub(url):
+            return "A" * 500
+
+        monkeypatch.setattr(community_tools, "_read_page_js", js_stub)
+        monkeypatch.setattr(community_tools, "_read_page_pdf", pdf_stub)
+
+        text = await community_tools.read_page(
+            "https://blocked.example.com/page", use_js=True
+        )
+        assert text == "A" * 500
+
     @pytest.mark.asyncio
     async def test_model_server_health_true(self, httpx_mock):
         httpx_mock.add_response(url="http://localhost:8080/health", status_code=200)

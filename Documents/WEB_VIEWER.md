@@ -64,19 +64,44 @@ The main landing page shows:
 Browse all communities with:
 - Search by name or city
 - Filter by county
-- View community details: name, city, county, gated status, fees count, amenities count, median age, population
-- Click on any community to see full details
+- Filter by pipeline status
+- Summary columns: gated status, fees count, amenities count, median age, population
+
+#### Drilling down into a community
+
+The list is the entry point for the per-community view. To descend from a
+community to its associated facts, click the community **name** — the name is a
+link to `/communities/<slug>`. You can also navigate directly:
+
+```
+http://localhost:8000/communities/<slug>
+```
+
+For example, `http://localhost:8000/communities/gables-estates`.
+
+The same detail page is linked from the **Dashboard → Recent Communities**
+table, so a community can be reached from either place.
 
 ### Community Detail (`/communities/{slug}`)
 
-Detailed view of a single community showing:
-- Basic information (slug, city, county, HOA name, CDD name, data source)
-- Overview and notes
-- Fees table with amounts, periods, sources, and confidence levels
-- Amenities list with details and sources
-- Demographics data (median age, income, owner occupancy, population)
-- Proximity information (nearest facilities by category)
-- Source URLs used to gather data, with quality scores
+The drill-down page for one community. It is served by
+`community_detail()` in `modules/web/viewer.py` and rendered by
+`templates/community_detail.html`. Every section links back to its source
+table so the UI matches the database exactly:
+
+| Section | Source table | What it shows |
+|---------|--------------|---------------|
+| Basic info | `communities` | Slug, city, county, gated status, HOA name, CDD name, data source, overview/notes, created/updated |
+| Pipeline Status | `community_pipeline_status` | Status badge, attempts, start/completed timestamps, last error |
+| Condenser Runs | `community_condenser_runs` | One row per condenser: status, elapsed, fees/amenities/proximity counts, demographics present, sources consulted |
+| Fees | `community_fees` | Fee type, amount, period, currency, source URL, confidence |
+| Amenities | `community_amenities` | Amenity, detail, source URL, confidence |
+| Demographics | `community_demographics` | Median age, median income, owner occupancy %, population, data year, source |
+| Proximity | `proximity_metrics` | Category, nearest facility, distance (miles), source |
+| Source URLs | `community_urls` → `source_urls` | URLs attributed to the community (falls back to the legacy `source_urls.community_slug` column) with status, quality score, data types, discovery info |
+
+Empty sections are simply omitted, so a community with no fees yet shows no
+Fees card. If the slug is unknown the route returns HTTP 404.
 
 ### Source URLs (`/urls`)
 
@@ -112,8 +137,12 @@ The viewer reads from the SQLite database at `data/communities.db`. The database
 - `community_demographics` - Demographic data
 - `proximity_metrics` - Proximity to facilities
 - `source_urls` - URL tracking with quality metrics
+- `community_urls` - Links source URLs to the communities they were inspected for
+- `community_pipeline_status` - Per-community pipeline progress
+- `community_condenser_runs` - Per-community condenser step results
+- `schema_migrations` - Applied-migration markers
 
-If the `source_urls` table doesn't exist, the viewer will gracefully handle the missing table and show dashes for URL-related statistics.
+If optional tables (e.g. `source_urls`, `community_urls`, `community_pipeline_status`, `community_condenser_runs`) are missing, the viewer degrades gracefully: it hides the corresponding cards and shows dashes for URL-related statistics instead of erroring.
 
 ## Technology Stack
 

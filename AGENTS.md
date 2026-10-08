@@ -43,7 +43,8 @@ modules/community/        Workstream B — research, condensers, storage, pipeli
   browser_condenser.py    Google via Playwright + local model (gap analysis)
   gemini_condenser.py     Gemini API with web grounding (optional)
   vision_browser_agent.py Playwright vision loop + CAPTCHA handling
-modules/web/              FastAPI viewer (viewer.py + templates/)
+modules/web/              FastAPI viewer (viewer.py + templates/); /communities/{slug}
+                          drills into a community's fees/amenities/demographics/proximity
 scripts/                  PowerShell wrappers (run-full-pipeline.ps1, etc.)
 tests/                    pytest suite (offline; no network needed)
 data/                     Runtime data (tracked in git — see §7)
@@ -169,7 +170,8 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   reads the real `data/communities` store and registers ~204 communities.
 - URL multi-community linking is covered in
   `tests/test_url_tracker.py::TestCommunityURLLinks`.
-- Current status: **297 passing**.
+- Current status: **303 passing** (web-viewer template tests run when
+  `fastapi`/`jinja2` are installed; they `importorskip` otherwise).
 
 ---
 
@@ -204,6 +206,18 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   standalone `URLTracker` use may create links for unknown slugs.
 - **`url` is UNIQUE in `source_urls`.** Multi-community attribution must go
   through `community_urls`; do not try to store multiple communities on the row.
+- **Jinja's `format` filter is printf-style, not `str.format`.** A template line
+  `"{:,.0f}"|format(x)` raises `TypeError: not all arguments converted during
+  string formatting` — this 500-ed the viewer's `/communities/{slug}` page for
+  every community whose `median_household_income` was set. Use
+  `"{:,.0f}".format(x)` (or a `%`-style literal). Regression:
+  `tests/test_web_viewer.py`.
+- **The web viewer needs the web extras (`fastapi`, `jinja2`, `uvicorn`).**
+  `fastapi`/`uvicorn` were already in `requirements.txt`; `jinja2` (Starlette
+  templating) was added alongside them. A `.venv` built before that must be
+  refreshed with `pip install -r requirements.txt` or `run-web-viewer` fails at
+  import. The viewer template tests `importorskip` these deps so the core suite
+  is unaffected when they're missing.
 - **runpy and CRLF warnings** appear on Windows; they are benign.
 - **Runtime data is tracked in git** (see §7) — `git add -A` is normal for data
   changes here, and captcha artifacts/community JSON are expected.

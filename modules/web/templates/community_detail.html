@@ -220,7 +220,7 @@
             {% for demo in demographics %}
             <tr>
                 <td>{{ demo.median_age or '-' }}</td>
-                <td>${{ "{:,.0f}"|format(demo.median_household_income) if demo.median_household_income else '-' }}</td>
+                <td>${{ '{:,.0f}'.format(demo.median_household_income) if demo.median_household_income else '-' }}</td>
                 <td>{{ "%.1f"|format(demo.owner_occupancy_pct) if demo.owner_occupancy_pct else '-' }}%</td>
                 <td>{{ demo.population or '-' }}</td>
                 <td>{{ demo.data_year or '-' }}</td>

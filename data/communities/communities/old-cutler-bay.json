@@ -1,0 +1,89 @@
+{
+  "id": "8f119ae2-9ca9-4ebb-8c08-f78f625cf3d0",
+  "identity": {
+    "name": "Old Cutler Bay",
+    "slug": "old-cutler-bay",
+    "county_fips": null,
+    "city": "Coral Gables",
+    "hoa_name": "OLD CUTLER BAY HOMEOWNERS CORPORATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Old Cutler Bay is a voluntary, guard-gated single-family homeowners association (established 1986; community dates to the early 1960s) of approximately 136 luxury waterfront estate homes in Coral Gables, Miami-Dade County, FL, situated on ~150 acres of Biscayne Bay. 127 of 136 sites have direct, bridge-free deep-water canal access; security is provided 24/7 via a separate Security Guard Special Taxing District. The HOA is voluntary with no large shared amenities. HOA legal name: OLD CUTLER BAY HOMEOWNERS CORPORATION, INC. (Fed ID 592741020), office 360 Solano Prado, Miami, FL 33156; property manager FPMS, 5600 Granada Dr, Sarasota, FL, 941-960-5000."
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15321",
+      "retrieved_at": "2026-10-09T00:27:06.009597Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee is required (per florida-hoa.net listing), but the exact monthly/annual amount is not stated in available sources; the fee field is blank and public sources note specific fees are not disclosed. Property manager: FPMS (941-960-5000). Community size ~136 luxury homes, entry price ~$4.4M, peak valuation $47M (unverified marketing site)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ocbcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:27:06.009611Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 4900.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Separate Old Cutler Bay Security Guard Special Taxing District collects assessments of approximately $4,900 for improved lots in recent data; exact period and current rate not specified."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ocbcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:27:06.009619Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour guard-gated security with roving patrols, provided via a separate (city-administered) Security Guard Special Taxing District; entrance marked by Albert Aronson's 10-foot sculpture 'A World of Its Own' (dedicated 1965)."
+    },
+    {
+      "source_url": "https://oldcutlerbayfl.com/",
+      "retrieved_at": "2026-10-09T00:27:06.009635Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_access",
+      "detail": "Direct, bridge-free deep-water canal access to Biscayne Bay (no vertical height restrictions); canals engineered through bedrock, deep water reachable in ~3 minutes."
+    },
+    {
+      "source_url": "https://oldcutlerbayfl.com/",
+      "retrieved_at": "2026-10-09T00:27:06.009643Z",
+      "confidence": 0.5,
+      "amenity": "private_dockage",
+      "detail": "127 of 136 estate sites have private seawalls and lot-line dockage; suitable for vessels drafting up to 5-6 feet (center consoles, deep-keel sailboats)."
+    },
+    {
+      "source_url": "https://oldcutlerbayfl.com/",
+      "retrieved_at": "2026-10-09T00:27:06.009649Z",
+      "confidence": 0.5,
+      "amenity": "marina_wet_slips",
+      "detail": "Private wet slips available via the Old Cutler Bay Marina Association."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ocbcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:27:06.009656Z",
+      "confidence": 0.5,
+      "amenity": "no_shared_recreational_amenities",
+      "detail": "No community-wide amenities such as clubhouses, pools, or recreational facilities are listed in HOA records; focus is on security and common-area maintenance."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ocbcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:27:06.009666Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Parks and nature preserves",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-09T00:27:06.010405Z",
+  "updated_at": "2026-10-09T00:27:06.010552Z"
+}

@@ -1,0 +1,179 @@
+{
+  "id": "f1fe7462-650b-48fc-baeb-6abf7cb85ea9",
+  "identity": {
+    "name": "Valencia Sound",
+    "slug": "valencia-sound",
+    "county_fips": null,
+    "city": "Boynton Beach",
+    "hoa_name": "Valencia Sound Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated 55+ active adult community in West Boynton Beach, FL 33473 (Palm Beach County), developed by GL Homes. Single-family homes (content price range $1.1M-$2.2M) with a 39,000 sq ft clubhouse (full-service restaurant, outdoor bar, live entertainment), three resort-style pools, 11 lighted pickleball courts, tennis and bocce courts, state-of-the-art fitness center, and 24/7 manned gate security. At least one resident must be 55+; no permanent residents under 19. All amenities funded through the master HOA with no required club membership or equity buy-in. HOA phone 561-800-4493; GL Homes 954-753-1733."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+      "retrieved_at": "2026-10-08T21:56:04.361739Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 580.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Master HOA dues per listing agent source (checked Sept 16, 2026); well-funded reserves noted. Exact current official HOA figure unavailable; other sources report a wider range of ~$500-$898/month depending on listing and time period. A past capital contribution fee was reportedly subject to a legal settlement; current transfer fees not confirmed in public sources. Management company details not publicly available. HOA phone 561-800-4493; GL Homes 954-753-1733. HOA covers common areas, amenities, security, and community standards (architectural review, pet breed/size limits, RV/commercial parking limits, rental restrictions, landscaping/noise standards). No demographic statistics or specific service distances found in provided content; community located in West Boynton Beach, Palm Beach County, FL 33473."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/vsbbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T21:56:04.361749Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 550.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Midpoint of reported range ~$500-$898/month; exact current official HOA figure unavailable, amounts vary by listing and time period. One past capital contribution fee reportedly subject to legal settlement; transfer fees and current capital terms not confirmed in public sources. No demographic statistics or service distances found in provided content."
+    },
+    {
+      "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+      "retrieved_at": "2026-10-08T21:56:04.361752Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1600.0,
+      "period": "one-time at closing",
+      "currency": "USD",
+      "note": "One-time capital contribution at closing per listing agent source (checked Sept 16, 2026). Well-funded reserves noted. No mandatory country club membership or six-figure equity buy-in (zero club equity). No demographic statistics or service distances found in provided content."
+    },
+    {
+      "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+      "retrieved_at": "2026-10-08T21:56:04.361754Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 0.0,
+      "period": "n/a",
+      "currency": "USD",
+      "note": "No required club membership; zero club equity. No mandatory country club membership or six-figure equity buy-in. All community amenities (resort-style pools, full-service clubhouse, tennis and pickleball courts) are 100% funded and managed through the master HOA. No demographic statistics or service distances found in provided content."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361759Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "39,000 sq ft clubhouse with full-service restaurant, outdoor bar, live entertainment, shows, events and seasonal parties; three game rooms and social hall; fully equipped demonstration kitchen and arts and crafts room. Over 30 world-class amenities total; dozens of resident-run clubs (art, book club, theatre, music, cards, pickleball, tennis, softball, bocce, current affairs, cultural activities). Group exercise classes offered. No required club membership; all amenities funded through master HOA."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361770Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Three resort-style pools."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361773Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "11 lighted pickleball courts with competitive league play available; resident-run pickleball club."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361777Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts with competitive league play available; resident-run tennis club."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361780Z",
+      "confidence": 0.5,
+      "amenity": "bocce",
+      "detail": "Bocce courts; resident-run bocce club."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361782Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness center with variety of group exercise classes (competitive league play to morning stretch classes); steam rooms included per agent-verified HOA inclusions."
+    },
+    {
+      "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+      "retrieved_at": "2026-10-08T21:56:04.361786Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community with 24/7 manned gate and security patrol (agent-verified HOA inclusion; 24/7 security also confirmed by hoabulletinboard.com)."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361790Z",
+      "confidence": 0.5,
+      "amenity": "social_hall",
+      "detail": "Three game rooms and a social hall offering space for activities from poker and canasta to mahjong and more."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361794Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Fully equipped demonstration kitchen and an arts and crafts room as additional places to learn, play, and create."
+    },
+    {
+      "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+      "retrieved_at": "2026-10-08T21:56:04.361796Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Complete lawn and shrub maintenance with irrigation included in master HOA (agent-verified inclusion)."
+    },
+    {
+      "source_url": "https://www.valencia-sound.com/",
+      "retrieved_at": "2026-10-08T21:56:04.361799Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Dozens of resident-run clubs and social activities: art, book club, theatre, music, cards, pickleball, tennis, softball, bocce, current affairs, and cultural activities; live entertainment, shows, events, and seasonal parties at the clubhouse."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 580.0,
+          "period": "monthly",
+          "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+          "retrieved_at": "2026-10-08T21:56:04.361739+00:00"
+        },
+        {
+          "amount": 550.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/vsbbfl/about_hoa/",
+          "retrieved_at": "2026-10-08T21:56:04.361749+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T21:56:04.362383Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 1600.0,
+          "period": "one-time at closing",
+          "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+          "retrieved_at": "2026-10-08T21:56:04.361752+00:00"
+        },
+        {
+          "amount": 0.0,
+          "period": "n/a",
+          "source_url": "https://www.racheldelray.com/developments/valencia-sound",
+          "retrieved_at": "2026-10-08T21:56:04.361754+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T21:56:04.362392Z"
+    }
+  ],
+  "created_at": "2026-10-08T21:56:04.362351Z",
+  "updated_at": "2026-10-08T21:56:04.362485Z"
+}

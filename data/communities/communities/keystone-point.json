@@ -1,0 +1,100 @@
+{
+  "id": "14dfe55c-9cb4-4d15-b9a7-4a93e8f58128",
+  "identity": {
+    "name": "Keystone Point",
+    "slug": "keystone-point",
+    "county_fips": null,
+    "city": "North Miami, FL",
+    "hoa_name": "Keystone Point Neighborhood Association (KPNA)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated waterfront community of approximately 880 single-family homes in North Miami, FL 33181, with canal access and direct Biscayne Bay access for boating. Served by the voluntary Keystone Point Neighborhood Association (KPNA, formerly KPHA), which organizes community events and represents residents to the City of North Miami and Miami-Dade County."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.keystonepoint.net/",
+      "retrieved_at": "2026-10-09T00:53:21.240150Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "KPNA is a voluntary neighborhood association (not a mandatory HOA). Residents make suggested annual contributions to fund meetings, the Keystone Kids' Club, holiday gifts for gate guards, and gate beautification. No specific dollar amount disclosed in public sources; no mandatory monthly/quarterly fees, transfer fees, capital contributions, or special assessments found."
+    },
+    {
+      "source_url": "https://www.keystonepoint.net/",
+      "retrieved_at": "2026-10-09T00:53:21.240158Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Gate transponder or decal available from KPNA (bring ID, car registration, and a check); no fee amount stated."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.keystonepoint.net/about",
+      "retrieved_at": "2026-10-09T00:53:21.240163Z",
+      "confidence": 0.5,
+      "amenity": "gated_entrance_with_security",
+      "detail": "Gated community with on-site gate guards; residents obtain gate transponder/decal via KPNA. No clubhouse, pool, or fitness center mentioned in any source as on-site amenities."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/kpnmfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:53:21.240175Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_and_canal_access",
+      "detail": "Canal and Biscayne Bay access for boating and fishing; private docks common among residents."
+    },
+    {
+      "source_url": "https://www.keystonepoint.net/about",
+      "retrieved_at": "2026-10-09T00:53:21.240179Z",
+      "confidence": 0.5,
+      "amenity": "community_events_and_social_programs",
+      "detail": "KPNA hosts monthly meetings with Pizza & Wine social at Scott Galvin Community Center, the Keystone Kids' Club for children of all ages, neighborhood get-togethers on 'land and sea', and an Annual General Meeting with catered meal and board elections in January."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/kpnmfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:53:21.240184Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Keystone Park (playground, tennis/pickleball courts, fields)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.keystonepoint.net/",
+      "retrieved_at": "2026-10-09T00:53:21.240187Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Scott Galvin Community Center, 1600 NE 126 Street (KPNA meeting venue)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Keystone Park (playground, tennis/pickleball courts, fields)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/kpnmfl/about_hoa/"
+        },
+        {
+          "nearest_name": "Scott Galvin Community Center, 1600 NE 126 Street (KPNA meeting venue)",
+          "distance_miles": null,
+          "source_url": "https://www.keystonepoint.net/"
+        }
+      ],
+      "detected_at": "2026-10-09T00:53:21.240791Z"
+    }
+  ],
+  "created_at": "2026-10-09T00:53:21.240770Z",
+  "updated_at": "2026-10-09T00:53:21.240863Z"
+}

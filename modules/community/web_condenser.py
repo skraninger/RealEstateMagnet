@@ -44,6 +44,7 @@ from .models import (
     utcnow,
 )
 from .store import CommunityStore, merge_facts, slugify
+from .streaming import run_agent_streamed
 from .tools import read_page, web_search
 
 logger = logging.getLogger(__name__)
@@ -141,6 +142,7 @@ class WebAICondenser:
         verbose: bool = False,
         show_thinking: bool = False,
         on_progress: Optional[Callable[[str], None]] = None,
+        on_thinking: Optional[Callable[[str], None]] = None,
         on_discovery: Optional[Callable[[CondensedCommunityItem], None]] = None,
         on_enrichment: Optional[Callable[[CondensedCommunityItem], None]] = None,
     ) -> None:
@@ -157,6 +159,7 @@ class WebAICondenser:
         self.verbose = verbose
         self.show_thinking = show_thinking
         self.on_progress = on_progress
+        self.on_thinking = on_thinking
         self.on_discovery = on_discovery
         self.on_enrichment = on_enrichment
 
@@ -266,9 +269,13 @@ class WebAICondenser:
             self._report_progress("=" * 80 + "\n")
         
         started = time.monotonic()
-        result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})
+        batch: CondensedCommunityBatch = await run_agent_streamed(
+            agent,
+            prompt,
+            model_settings={"max_tokens": self.max_tokens},
+            on_thinking=self.on_thinking,
+        )
         elapsed = time.monotonic() - started
-        batch: CondensedCommunityBatch = result.output
         
         if self.verbose:
             self._report_progress(f"Local model extracted {len(batch.communities)} communities in {elapsed:.2f}s")
@@ -361,9 +368,13 @@ class WebAICondenser:
             self._report_progress("=" * 80 + "\n")
         
         started = time.monotonic()
-        result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})
+        item: CondensedCommunityItem = await run_agent_streamed(
+            agent,
+            prompt,
+            model_settings={"max_tokens": self.max_tokens},
+            on_thinking=self.on_thinking,
+        )
         elapsed = time.monotonic() - started
-        item: CondensedCommunityItem = result.output
         
         # Mark source as web-extracted
         for fee in item.fees:

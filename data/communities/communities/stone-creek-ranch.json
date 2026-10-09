@@ -1,0 +1,122 @@
+{
+  "id": "ae5ae33b-1b4c-4d5b-95d5-d6ae2b21f84d",
+  "identity": {
+    "name": "Stone Creek Ranch",
+    "slug": "stone-creek-ranch",
+    "county_fips": null,
+    "city": "Delray Beach, FL 33446 (West Delray Beach, along Lyons Rd)",
+    "hoa_name": "Stone Creek Ranch Homeowners' Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Ultra-exclusive gated community of 37 custom lakefront estates on 2.5+ acre homesites spanning ~187 acres in West Delray Beach, Florida. Developed by Kenco Communities (sold out). Managed by GRS Community Management (per HOA Bulletin Board) with quarterly assessments, capital contributions on transfers, and strict ARC rules. Amenities are limited to common areas — a 24-hour manned gatehouse, stone bridge, 1.5-mile promenade, lakes, and preserved green space; no shared clubhouse, pool, or fitness facilities."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/scrdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T16:52:00.674839Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Quarterly assessments billed Jan 1, Apr 1, Jul 1, Oct 1 (late after the 15th). Exact assessment amounts are not publicly disclosed on available sources. HOA managed by GRS Community Management; florida-hoa.net separately lists Exclusive Property Management (2945 W Cypress Creek Rd Ste 201, Ft Lauderdale, FL 33309, 954-969-1330) as property manager - potential discrepancy in management records."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/scrdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T16:52:00.674847Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Capital contribution equal to one quarter's assessment due upon purchase or transfer of ownership."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://stonecreekranchestates.com/",
+      "retrieved_at": "2026-10-08T16:52:00.674853Z",
+      "confidence": 0.5,
+      "amenity": "24_hour_manned_gatehouse_gate_security",
+      "detail": "Stately gatehouse at 16281 Lyons Rd; iconic stone bridge at entry; ultra-private, low-density estate setting with no country club membership required."
+    },
+    {
+      "source_url": "https://stonecreekranchestates.com/",
+      "retrieved_at": "2026-10-08T16:52:00.674864Z",
+      "confidence": 0.5,
+      "amenity": "1_5_mile_promenade",
+      "detail": "Trail for walking, biking, and jogging through the ~187-acre lake-dotted property."
+    },
+    {
+      "source_url": "https://stonecreekranchestates.com/",
+      "retrieved_at": "2026-10-08T16:52:00.674868Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Multiple lakes with landscaping and sightlines planned to showcase water views and privacy."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/scrdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T16:52:00.674870Z",
+      "confidence": 0.5,
+      "amenity": "preserved_green_space",
+      "detail": "Rolling green space across the community; no shared clubhouse, pool, or fitness facilities listed in official sources."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000000704",
+      "retrieved_at": "2026-10-08T16:52:00.674873Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Gated entry with 24-hour manned gatehouse; strict ARC (Architectural Review Committee) approval required for all exterior modifications."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://stonecreekranchestates.com/",
+      "retrieved_at": "2026-10-08T16:52:00.674878Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Delray Marketplace",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://stonecreekranchestates.com/",
+      "retrieved_at": "2026-10-08T16:52:00.674881Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Boca Town Center (Boca Raton)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://stonecreekranchestates.com/",
+      "retrieved_at": "2026-10-08T16:52:00.674882Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "I-95 / Florida Turnpike / Atlantic Ave.",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Delray Marketplace",
+          "distance_miles": null,
+          "source_url": "https://stonecreekranchestates.com/"
+        },
+        {
+          "nearest_name": "Boca Town Center (Boca Raton)",
+          "distance_miles": null,
+          "source_url": "https://stonecreekranchestates.com/"
+        }
+      ],
+      "detected_at": "2026-10-08T16:52:00.675888Z"
+    }
+  ],
+  "created_at": "2026-10-08T16:52:00.675398Z",
+  "updated_at": "2026-10-08T16:52:00.675978Z"
+}

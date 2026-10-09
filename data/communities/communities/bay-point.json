@@ -1,0 +1,416 @@
+{
+  "id": "fe0f4891-4704-4cd6-ac2b-a2a204d5c159",
+  "identity": {
+    "name": "Bay Point",
+    "slug": "bay-point",
+    "county_fips": null,
+    "city": "Miami",
+    "hoa_name": "Bay Point Homeowners Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Bay Point is a residential subdivision within the Upper East Side neighborhood of Miami, FL (ZIP 33138), situated on Biscayne Bay. It is one of several independent sub-neighborhoods (along with Morningside, Belle Meade, Shorecrest, Palm Grove, etc.) each governed by its own independent HOA or civic association. The broader Upper East Side is a primarily residential area composed of historic single-family homes from the 1920s–1940s, with the MiMo Historic District along Biscayne Boulevard featuring preserved Miami Modern architecture, art galleries, shops, and restaurants. Settled 1909; annexed into the City of Miami in 1924."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-resource.com/bay-point-homeowners-association-miami-fl/",
+      "retrieved_at": "2026-10-09T01:20:03.410330Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA dues cover: Common Area Maintenance, Management Fee, Reserves, Water, Sewer, Snow Removal. No specific dollar amount stated in source. CAUTION: Snow removal inclusion is inconsistent with Miami climate — likely a template/auto-generation error on the aggregator site. Fees for individual Upper East Side associations are not publicly aggregated; condo HOA dues in the area have been reported around $454/month in some buildings per listing examples (hoabulletinboard.com). Verify current amounts and coverage directly with Bay Point HOA/management company. Information is subject to change by the HOA and/or management company."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+      "retrieved_at": "2026-10-09T01:44:20.593176Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 4121.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Lower end of BEX Realty range: current HOA fees for Bay Point single-family homes 'range from $4,121 to $5,281 and $3,080 for a Bay Point condo'. Billing period not stated on page (likely monthly, unverified). Fee reportedly includes common area maintenance, security, property insurance, water, trash, sewer, cable TV/internet, climate control, parking. Listing-site figure - verify via estoppel from HOA/manager."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+      "retrieved_at": "2026-10-09T01:44:20.593187Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 5281.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Upper end of BEX Realty single-family HOA fee range ($4,121-$5,281); billing period not stated. Page notes fees sometimes vary between homes in the community."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+      "retrieved_at": "2026-10-09T01:44:20.593192Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 3080.0,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee for a Bay Point condo per BEX Realty; billing period not stated on page."
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=703456",
+      "retrieved_at": "2026-10-09T01:44:20.593195Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Directory confirms 'Association HOA Fee: HOA Fee Required' with no dollar amount. Legal name: BAY POINT PROPERTY OWNER'S ASSOCIATION, INC. (aka Bay Point HOA); est. 01/15/1962; federal ID 591208129; single-family homes association; property manager FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/bay-point-miami-faqs",
+      "retrieved_at": "2026-10-09T01:44:20.593198Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Buyer's guide: Bay Point operates under an HOA; dues support 24-hour security operations, gate staffing, and maintenance of common infrastructure. Fees change over time - confirm current amounts during purchase. No dollar figure given."
+    },
+    {
+      "source_url": "https://hoa-resource.com/baypoint-homeowners-association-miami-fl/",
+      "retrieved_at": "2026-10-09T01:44:20.593201Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA directory (unverified): fee includes management fee, reserves, trash removal, water/sewer; features listed: clubhouse, security gate. No dollar amount."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Upper_Eastside",
+      "retrieved_at": "2026-10-09T01:20:03.410341Z",
+      "confidence": 0.5,
+      "amenity": "bayfront_biscayne_bay_waterfront",
+      "detail": "Bay Point is a subdivision of the Upper East Side that sits on Biscayne Bay. District-level amenities include bayfront access; specific Bay Point HOA amenities are not individually itemized in available content."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/muesmifl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:20:03.410351Z",
+      "confidence": 0.5,
+      "amenity": "parks_with_recreational_facilities",
+      "detail": "City park-level amenities with recreational facilities are available throughout the Upper East Side area. Specific Bay Point park facilities are not detailed in the source content. Private condo amenities (pools, fitness centers) exist in some buildings in the district but are not specifically attributed to Bay Point."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/bay-point-miami-faqs",
+      "retrieved_at": "2026-10-09T01:44:20.593206Z",
+      "confidence": 0.5,
+      "amenity": "gated_community_24_hour_security",
+      "detail": "Private guard-gated community, 24-hour security; two staffed entrance gates; access limited to residents, approved guests, scheduled service providers; no public traffic or public park access inside; entry monitored at all times. (Conflicting gate counts in other sources - see open questions.)"
+    },
+    {
+      "source_url": "https://baypointmiami.com/discover-bay-point/",
+      "retrieved_at": "2026-10-09T01:44:20.593221Z",
+      "confidence": 0.5,
+      "amenity": "privately_owned_resident_maintained_streets",
+      "detail": "Streets are privately owned and maintained by residents, including a roaming safety patrol and security gate officers who can restrict access. Community est. 1937 per this site; ~250 single-family homes."
+    },
+    {
+      "source_url": "https://baypointmiami.com/discover-bay-point/",
+      "retrieved_at": "2026-10-09T01:44:20.593229Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_boating_access",
+      "detail": "~90 of ~250 homes are waterfront estates with direct bay frontage or frontage along the Sabal waterway/Sabal Lake; lots from 13,000 sq ft. Privately owned canals and waterways with direct Biscayne Bay access and no bridges; ~10 minutes to water sports and waterfront restaurants."
+    },
+    {
+      "source_url": "https://jillszeder.com/communities/bay-point/",
+      "retrieved_at": "2026-10-09T01:44:20.593236Z",
+      "confidence": 0.5,
+      "amenity": "private_docks_ocean_access",
+      "detail": "Waterfront homes have private docks with direct Biscayne Bay/ocean access. Community guarded 24/7; all streets restricted to residents and guests; residents own the streets. ~250 homes (2,406-11,485 sq ft), mostly built 1940s-1960s."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+      "retrieved_at": "2026-10-09T01:44:20.593243Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_pool_fitness_sports_listing_site_claim_unverified",
+      "detail": "BEX Realty lists: clubhouse, swimming pool, spa/hot tub, fitness center, sauna, business center, tennis courts, racquetball, community kitchen, picnic area, boat facilities. CAUTION: community's own website describes no clubhouse/pool - list may be template text; verify with HOA."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+      "retrieved_at": "2026-10-09T01:44:20.593250Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "HOA rules allow pets with restrictions, including a limitation on pet size (per listing site; exact rules unpublished)."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/bay-point-miami-faqs",
+      "retrieved_at": "2026-10-09T01:44:20.593256Z",
+      "confidence": 0.5,
+      "amenity": "no_commercial_frontage_inside_gates",
+      "detail": "Strictly residential: no stores, cafes, restaurants, or public parks inside the gates; no nightlife; short-term rentals generally restricted."
+    },
+    {
+      "source_url": "https://jillszeder.com/communities/bay-point/",
+      "retrieved_at": "2026-10-09T01:44:20.593262Z",
+      "confidence": 0.5,
+      "amenity": "nearby_city_parks",
+      "detail": "Morningside Park, Stearns Park, Legion Park, Lemon City Park are 'just minutes away' with recreation centers, playgrounds, sports areas, tennis courts, boat ramps. Design District, MiMo Historic District, Brickell City Centre within walking distance or a few minutes' drive."
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593268Z",
+      "confidence": 0.5,
+      "amenity": "nearby_golf",
+      "detail": "Miami Beach Golf Club (opened 1923 as Bayshore Golf Course; redesigned 2011) listed as a nearby recreational destination. Sabal Palm Drive called one of the most expensive streets in the US; 'one way in and out' with a guard gate manned 24/7 per this source."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.getzips.com/zip/33138.html",
+    "retrieved_at": "2026-10-09T01:44:20.593276Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 28871,
+    "data_year": 2023,
+    "geography_level": "ZIP code 33138 (Miami, FL) - broader Upper East Side area, not Bay Point alone; ACS 2019-2023 5-year estimates per page. No census data exists at the Bay Point sub-neighborhood level in sources found. Realtor-site neighborhood estimate: ~629 residents, median age ~39 (waterfrontliving.miami, unverified). jillszeder.com cites Upper Eastside median HH income ~$45,000 (2016 data, stale)."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Upper_Eastside",
+      "retrieved_at": "2026-10-09T01:20:03.410357Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 12525,
+      "data_year": 2010,
+      "geography_level": "neighborhood (entire Upper East Side district — not Bay Point sub-neighborhood alone; no Bay Point-specific census figures available in source content)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Upper_Eastside",
+      "retrieved_at": "2026-10-09T01:20:03.410363Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "MiMo District / Biscayne Boulevard — art galleries, shops, restaurants, boutique hotels",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593285Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Miami Design District",
+      "distance_miles": 0.7
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593302Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Aventura Mall",
+      "distance_miles": 15.0
+    },
+    {
+      "source_url": "https://mdpls.org/branch-little-river",
+      "retrieved_at": "2026-10-09T01:44:20.593309Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library, Little River Branch (160 NE 79th St, Miami FL 33138 - same ZIP as Bay Point)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://jacksonlungcenter.org/locations/jackson-memorial-hospital/",
+      "retrieved_at": "2026-10-09T01:44:20.593313Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jackson Memorial Hospital, 1611 NW 12th Ave, Miami FL 33136 (Downtown; 24/7 ER, Ryder Trauma Center)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593316Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "The Cushman School (private, K-12); public options listed: Morningside K-8 Academy, Phyllis R. Miller Elementary, Horace Mann Middle, Miami Arts Charter (6-12), DASH (9-12). baypointmiami.com adds Miami Country Day and Avenues School, all 'within a 10-minute drive'",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593319Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport (MIA)",
+      "distance_miles": 8.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+      "retrieved_at": "2026-10-09T01:44:20.593322Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport (MIA) - second source; also FLL 18 miles",
+      "distance_miles": 7.0
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593324Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Midtown Miami",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593327Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Wynwood Arts District",
+      "distance_miles": 1.6
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593331Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami",
+      "distance_miles": 4.8
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593334Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Brickell Center",
+      "distance_miles": 5.4
+    },
+    {
+      "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/",
+      "retrieved_at": "2026-10-09T01:44:20.593337Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "South Beach (Miami Beach) via Julia Tuttle Causeway",
+      "distance_miles": 6.4
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA fee, billing period, and any special assessments: BEX Realty's $4,121-$5,281 (single-family) / $3,080 (condo) figures come from a listing site with no stated billing period; florida-hoa.com confirms a fee is required but publishes no amount. Obtain an estoppel letter/budget from the association (per hoabulletinboard.com, Bay Point HOA contact: 305-576-4657, baypointpoa@gmail.com).",
+    "Whether Bay Point actually has a clubhouse, pool, fitness center, or tennis courts: BEX Realty's amenity list conflicts with the community's own website (baypointmiami.com), which mentions no clubhouse or pool.",
+    "Number of entry gates: allinmiami.com says two staffed gates; waterfrontliving.miami says 'only one way in and out'; rossmilroygroup.com refers to a single 'main entrance gate'.",
+    "Establishment year: 1937 (baypointmiami.com) vs 1946 (jillszeder.com) vs 'the forties' (waterfrontliving.miami).",
+    "No CDD or CDD special assessment found for Miami's Bay Point (it is an HOA, est. 1962, not a CDD); confirm no special taxing district applies via title/property tax bill.",
+    "No census/ACS data at the Bay Point sub-neighborhood level; ZIP 33138 figures cover the broader area. Neighborhood estimate (~629 residents, median age ~39) from a realtor site is unverified.",
+    "Mileage to the Little River Branch library and to Jackson Memorial Hospital was not found in any source read (Downtown Miami is listed at 4.8 miles; JMH is in Downtown 33136).",
+    "Nearest grocery store was not identified in sources read (Design District is the cited shopping destination, 0.7 miles).",
+    "Demographic source discrepancy for ZIP 33138: getzips.com (ACS 2019-2023: pop 28,871; median HH income $71,518; median age 40.1) vs CensusEasy snippet (pop 28,980; $75,051; age 41.4 - different ACS vintage, page would not load) vs Census Reporter header (pop 28,980).",
+    "baypointflorida.org ('Bay Point Community Association / BPCA', AppFolio portal) is likely the separate Bay Point community in Naples, FL - excluded from Miami facts but worth confirming it is not a Miami master association.",
+    "City of Miami's Upper East Side HOA directory page (miami.gov) would not load; it likely holds the official Bay Point HOA contact listing."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 4121.0,
+          "period": null,
+          "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+          "retrieved_at": "2026-10-09T01:44:20.593176+00:00"
+        },
+        {
+          "amount": 5281.0,
+          "period": null,
+          "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+          "retrieved_at": "2026-10-09T01:44:20.593187+00:00"
+        },
+        {
+          "amount": 3080.0,
+          "period": null,
+          "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/",
+          "retrieved_at": "2026-10-09T01:44:20.593192+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=703456",
+          "retrieved_at": "2026-10-09T01:44:20.593195+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.allinmiami.com/blog/bay-point-miami-faqs",
+          "retrieved_at": "2026-10-09T01:44:20.593198+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://hoa-resource.com/baypoint-homeowners-association-miami-fl/",
+          "retrieved_at": "2026-10-09T01:44:20.593201+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T01:44:20.594442Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Miami International Airport (MIA)",
+          "distance_miles": 8.0,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        },
+        {
+          "nearest_name": "Miami International Airport (MIA) - second source; also FLL 18 miles",
+          "distance_miles": 7.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Miami/Bay-Point/"
+        },
+        {
+          "nearest_name": "Midtown Miami",
+          "distance_miles": 1.0,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        },
+        {
+          "nearest_name": "Wynwood Arts District",
+          "distance_miles": 1.6,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        },
+        {
+          "nearest_name": "Downtown Miami",
+          "distance_miles": 4.8,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        },
+        {
+          "nearest_name": "Brickell Center",
+          "distance_miles": 5.4,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        },
+        {
+          "nearest_name": "South Beach (Miami Beach) via Julia Tuttle Causeway",
+          "distance_miles": 6.4,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        }
+      ],
+      "detected_at": "2026-10-09T01:44:20.594457Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "MiMo District / Biscayne Boulevard — art galleries, shops, restaurants, boutique hotels",
+          "distance_miles": null,
+          "source_url": "https://en.wikipedia.org/wiki/Upper_Eastside"
+        },
+        {
+          "nearest_name": "Miami Design District",
+          "distance_miles": 0.7,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        },
+        {
+          "nearest_name": "Aventura Mall",
+          "distance_miles": 15.0,
+          "source_url": "https://waterfrontliving.miami/the-neighborhood-of-bay-point-and-stillwater/"
+        }
+      ],
+      "detected_at": "2026-10-09T01:44:20.594464Z"
+    }
+  ],
+  "created_at": "2026-10-09T01:20:03.410876Z",
+  "updated_at": "2026-10-09T01:44:20.594590Z"
+}

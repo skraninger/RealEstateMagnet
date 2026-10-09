@@ -1,0 +1,464 @@
+{
+  "id": "0fb5dfa3-2882-456b-87ca-a611611794c7",
+  "identity": {
+    "name": "Lotus (Boca Raton) by GL Homes",
+    "slug": "lotus-boca-raton-by-gl-homes",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Lotus is a new-construction, gated single-family community in the West Boca Raton area of Palm Beach County, Florida, built by GL Homes. Because it is a relatively recent development, detailed published statistics (exact HOA/CDD amounts, tract-level demographics) are limited; figures below are best estimates from builder marketing norms and comparable West Boca communities and should be verified directly with GL Homes, the HOA, or the Palm Beach County CDD office."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2025-06-15T00:00:00Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Typical range for gated new-construction communities of this type in West Boca Raton is roughly $250–$450/month. Exact current dues should be confirmed with GL Homes or the HOA."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2025-06-15T00:00:00Z",
+      "confidence": 0.35,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "CDD status not confirmed. Many new Palm Beach County communities carry a Community Development District assessment; where applicable, annual assessments in this area typically run about $1,500–$3,500/year. Check the deed or Palm Beach County CDD office."
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-09T12:00:00Z",
+      "confidence": 0.8,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA assessments billed quarterly, due the 1st of each quarter; $25 late penalty if unpaid within 15 days. Capital Contribution equal to two (2) current quarterly maintenance assessments collected from buyer at closing. No dollar amount published here - call GRS Community Management (561-641-8554) for current dues."
+    },
+    {
+      "source_url": "https://glennluxuryhomes.com/blog/lotus-in-boca-raton-the-hoa-fee-that-changed-and-the-websites-that-didnt",
+      "retrieved_at": "2026-10-08T20:14:46.579133Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 415.0,
+      "period": "2019 launch estimate (also listed on a 2022 agent page)",
+      "currency": "USD",
+      "note": "GL Homes quoted ~$415-$417/mo at 2019 launch (lawn, manned gate, alarm monitoring, amenities). One real-estate site still showed the stale $417 figure as of June 2026."
+    },
+    {
+      "source_url": "https://glennluxuryhomes.com/blog/lotus-in-boca-raton-the-hoa-fee-that-changed-and-the-websites-that-didnt",
+      "retrieved_at": "2026-10-08T20:14:46.579140Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 652.0,
+      "period": "reported January 2025",
+      "currency": "USD",
+      "note": "Reported monthly fee by Jan 2025 after the association moved past developer control; a >55% jump from launch, matching the 'possibly double' warning market observers gave."
+    },
+    {
+      "source_url": "https://glennluxuryhomes.com/blog/lotus-in-boca-raton-the-hoa-fee-that-changed-and-the-websites-that-didnt",
+      "retrieved_at": "2026-10-08T20:14:46.579144Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 650.0,
+      "period": "reported April 2026",
+      "currency": "USD",
+      "note": "April 2026 overview across all three Lotus communities put dues generally in the $650-$700 range; original Lotus has its own separate association/budget."
+    },
+    {
+      "source_url": "https://www.bocaratonrealestate.com/lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579148Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 720.0,
+      "period": "current (agent comparison table)",
+      "currency": "USD",
+      "note": "$720/mo, no mandatory equity fee (compared with Boca Bridges $1,000-$1,200+/mo and The Oaks $969.13/mo). Listing-site figure - confirm with HOA."
+    },
+    {
+      "source_url": "https://atlanticluxuryadvisors.com/communities/boca-raton/lotus",
+      "retrieved_at": "2026-10-08T20:14:46.579152Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 621.0,
+      "period": "current (MLS-derived range)",
+      "currency": "USD",
+      "note": "HOA fee range $621-$720/mo computed from recent MLS sale listings (refreshed weekly). Median asking price $2,425,000; 26 listings last two years. Confirms HOA-fee community (no CDD indicated)."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Boca-Raton/Lotus/",
+      "retrieved_at": "2026-10-09T12:00:00Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No equity buy-in required (vs $5,000+/mo country club dues and $100,000+ one-time equity charges). ~2022-dated page noted the $415/mo fee 'is likely to increase (perhaps even double)' after GL departs - confirmed by later sources."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T19:45:29.422254Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Single-point gated entrance with controlled access, consistent with GL Homes community standards; verify whether staffed gatehouse is 24/7 or app/remote-controlled access only. 0.75 confidence in the gate itself; security staffing details unverified. (confidence field: 0.75 not allowed above 1; using 0.75 as stated in schema max 1 - ok.)"
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-08T20:14:46.579168Z",
+      "confidence": 0.5,
+      "amenity": "community",
+      "detail": "804 luxury single-family homes (agent pages cite 805 homesites). Gated West Boca Raton community on Lyons Road between Clint Moore Rd and Atlantic Avenue (ZIP 33434/33496). Purchase/lease requires association approval; architectural changes need committee approval. Garbage Tue/Fri, recycling Tue, bulk/vegetation Fri. Managed by GRS Community Management (Lake Worth, FL; 561-641-8554); HOA est. 09/07/2017; association site lotushoa.com (per florida-hoa.com, floridacommunitynetwork.net)."
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-08T20:14:46.579182Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse spanning over 26,000 sq ft across more than 8 acres (HOA-manager figure; agent pages cite 30,000 sq ft - conflicting entry recorded separately)."
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-08T20:14:46.579188Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool with shaded and covered patio seating, lap pool, whirlpool spa, interactive wet play area, poolside cabana baths."
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-08T20:14:46.579193Z",
+      "confidence": 0.5,
+      "amenity": "dining_lounge",
+      "detail": "Luna Bistro Cafe with poolside seating; full-service pool bar on covered patio; elegant lounge with bar and catering kitchen; game room; card room; multi-purpose room."
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-08T20:14:46.579200Z",
+      "confidence": 0.5,
+      "amenity": "fitness_sports",
+      "detail": "Fully equipped fitness center; indoor sports court; locker rooms with showers; full outdoor basketball court; party pavilion; large shaded playground and open play area."
+    },
+    {
+      "source_url": "https://www.grsmgt.com/association/lotus-hoa/",
+      "retrieved_at": "2026-10-08T20:14:46.579205Z",
+      "confidence": 0.5,
+      "amenity": "tennis_pickleball",
+      "detail": "Seven lighted clay tennis courts + one lighted asphalt tennis court; six pickleball courts with shade pavilions; Racquet Center (pro shop). Agent pages cite 'six lighted Har-Tru tennis courts' - conflicting entry recorded separately."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Boca-Raton/Lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579211Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Round-the-clock guardhouse (man-gated) security with a single entry point on Lyons Road; gated community with no golf course inside (championship courses <20 min drive)."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Boca-Raton/Lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579216Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_conflicting_size",
+      "detail": "30,000 sq ft clubhouse with cascading water features; beach-entry Cancun-style pool with spa and large lap pool; splash pad with wading pool; weekend poolside bar and outdoor cafe; sundeck with lounge chairs, shaded seating, cabanas. Conflicts with HOA manager's 26,000+ sq ft figure - not reconciled."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Boca-Raton/Lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579223Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pets allowed with certain breed restrictions, a limit on number of pets, and a size restriction; dogs allowed. (Listing-site summary; hoabulletinboard.com says specific breeds are prohibited per documents - obtain official rules from GRS/HOA.)"
+    },
+    {
+      "source_url": "https://www.bocaratonrealestate.com/lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579229Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_conflicting_size_homes",
+      "detail": "30,000 sq ft clubhouse; weekend pool bar & outdoor cafe, social lounge with bar & kitchen, fitness center, fitness/dance studio, his/her locker rooms, indoor sports court, yoga lawn, covered children's playground, game/card rooms, kid's indoor playroom, splash pad with wading pool, sundeck. Homes: 805 homesites, 12 plans in Bali and Fiji collections (1,966-5,160 sq ft), many lakefront lots; completed ~2020; now resale-only; no mandatory equity fee."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.zip-codes.com/zip-code/33434/zip-code-33434.asp",
+    "retrieved_at": "2026-10-09T12:00:00Z",
+    "confidence": 0.55,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 21686,
+    "data_year": 2024,
+    "geography_level": "ZIP code 33434 (West Boca Raton), Palm Beach County, FL; page cites US Census Bureau (2024 ACS: median age 62.7, median household income $77,269, 78.16% owner-occupied of occupied housing; 2020 Decennial Census population 21,003). Lotus itself is a new 805-home development with no published tract-level Census profile; a neighborhood-level estimate (pop ~1,394, median age 68, avg individual income $185,421, 'data provided by the U.S. Census Bureau') appears on noahjheller.com/neighborhoods/lotus."
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2025-06-15T00:00:00Z",
+      "confidence": 0.4,
+      "median_age": 42.0,
+      "median_household_income": 80000.0,
+      "owner_occupancy_pct": 63.0,
+      "population": null,
+      "data_year": 2022,
+      "geography_level": "Boca Raton city (proxy for new community's census tract; community itself too new for tract-level data)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T19:45:29.422271Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "St. Edward's Square (West Boca Raton)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T19:45:29.422274Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix at St. Edward's Square",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T19:45:29.422276Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Boca Raton Branch, Palm Beach County Public Library (2400 Glades Rd)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T19:45:29.422277Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "St. Mary Medical Center (West Boca Raton campus)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T19:45:29.422279Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "West Boca Raton High School",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://www.premierlivingfl.com/community/lotus",
+      "retrieved_at": "2026-10-08T20:14:46.579248Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Whispering Pines Elementary (A-rated)",
+      "distance_miles": 1.8
+    },
+    {
+      "source_url": "https://www.premierlivingfl.com/community/lotus",
+      "retrieved_at": "2026-10-08T20:14:46.579254Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Olympic Heights High (A-rated)",
+      "distance_miles": 3.4
+    },
+    {
+      "source_url": "https://www.premierlivingfl.com/community/lotus",
+      "retrieved_at": "2026-10-08T20:14:46.579257Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Eagles Landing Middle (A-rated)",
+      "distance_miles": 5.3
+    },
+    {
+      "source_url": "https://www.bocaratonrealestate.com/lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579260Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Zoned per agent page to Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights Community High (Palm Beach County A-rated)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://noahjheller.com/neighborhoods/lotus",
+      "retrieved_at": "2026-10-08T20:14:46.579263Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Nearest retail/shopping (Yelp data; business name not rendered on page)",
+      "distance_miles": 1.18
+    },
+    {
+      "source_url": "https://www.bocaratonrealestate.com/lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579266Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Canyon Town Center, Delray Marketplace, Town Center at Boca Raton (all described as 'just minutes' away)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.pbclibrary.org/locations/WBOCA/",
+      "retrieved_at": "2026-10-08T20:14:46.579269Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Palm Beach County Library System - West Boca Branch (serves the west Boca Raton community; distance from Lotus not stated on page)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.bocaratonrealestate.com/lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579272Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Spanish River Park (public beach), 10 miles from the community; nearby parks: Burt Aaronson South County Regional Park, Morikami Museum & Japanese Gardens, Gumbo Limbo Nature Center",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Boca-Raton/Lotus/",
+      "retrieved_at": "2026-10-08T20:14:46.579275Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Numerous championship golf courses throughout Boca Raton within a 20-minute drive (no golf in community)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Current exact HOA dues: sources conflict - $415/mo (2019 launch, still shown on a site as of June 2026), $652/mo (reported Jan 2025), $650-$700/mo (Apr 2026 overview), $621-$720/mo (recent MLS range), $720/mo (one agent page). The HOA office (GRS Community Management, 561-641-8554; lotushoa.com would not load) is the authoritative source. Also confirm whether the association has completed turnover from GL Homes to homeowner control, which typically triggers the next fee change.",
+    "CDD status: no Community Development District or CDD assessment was found for the original Lotus in any source checked; a blog says GL Homes 'typically self-develops rather than using a CDD' (stated about Lotus Edge). Verify with the Palm Beach County CDD office (pbcpao.gov) whether any CDD applies to lots in Lotus.",
+    "Nearest hospital: no page stating a distance from Lotus to a hospital was found (Baptist Health Boca Raton and Jupiter Medical Center are the likely nearest major hospitals, but this was not verified on a readable page).",
+    "Nearest grocery: no verified distance found; a grocery store category appears in Yelp-based data on noahjheller.com but the business name and distance did not render.",
+    "Clubhouse size conflict: 26,000+ sq ft (GRS HOA manager) vs 30,000 sq ft (agent pages) - not reconciled.",
+    "Tennis court count conflict: 7 clay + 1 asphalt lighted courts (GRS) vs six lighted Har-Tru courts (agent pages) - not reconciled.",
+    "Home count: 804 (GRS) vs 805 homesites (agent pages).",
+    "Pet policy specifics (prohibited breed list, max number/size limits): only secondary summaries found; official GRS/HOA rules and regulations (purchase/lease application package) were not accessible.",
+    "Tract/census-tract-level demographics for the development itself were not published; only ZIP 33434 Census data and a realtor-site neighborhood estimate (pop ~1,394, median age 68) are available. The ZIP-level median household income ($77,269, ACS 2024) is depressed by the surrounding area and likely understates household income within this $1.3M+ luxury community."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "ai:condensed",
+          "retrieved_at": "2025-06-15T00:00:00+00:00"
+        },
+        {
+          "amount": 415.0,
+          "period": "2019 launch estimate (also listed on a 2022 agent page)",
+          "source_url": "https://glennluxuryhomes.com/blog/lotus-in-boca-raton-the-hoa-fee-that-changed-and-the-websites-that-didnt",
+          "retrieved_at": "2026-10-08T20:14:46.579133+00:00"
+        },
+        {
+          "amount": 652.0,
+          "period": "reported January 2025",
+          "source_url": "https://glennluxuryhomes.com/blog/lotus-in-boca-raton-the-hoa-fee-that-changed-and-the-websites-that-didnt",
+          "retrieved_at": "2026-10-08T20:14:46.579140+00:00"
+        },
+        {
+          "amount": 650.0,
+          "period": "reported April 2026",
+          "source_url": "https://glennluxuryhomes.com/blog/lotus-in-boca-raton-the-hoa-fee-that-changed-and-the-websites-that-didnt",
+          "retrieved_at": "2026-10-08T20:14:46.579144+00:00"
+        },
+        {
+          "amount": 720.0,
+          "period": "current (agent comparison table)",
+          "source_url": "https://www.bocaratonrealestate.com/lotus/",
+          "retrieved_at": "2026-10-08T20:14:46.579148+00:00"
+        },
+        {
+          "amount": 621.0,
+          "period": "current (MLS-derived range)",
+          "source_url": "https://atlanticluxuryadvisors.com/communities/boca-raton/lotus",
+          "retrieved_at": "2026-10-08T20:14:46.579152+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T20:14:46.580373Z"
+    },
+    {
+      "field": "proximity.library",
+      "values": [
+        {
+          "nearest_name": "Boca Raton Branch, Palm Beach County Public Library (2400 Glades Rd)",
+          "distance_miles": 5.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Palm Beach County Library System - West Boca Branch (serves the west Boca Raton community; distance from Lotus not stated on page)",
+          "distance_miles": null,
+          "source_url": "https://www.pbclibrary.org/locations/WBOCA/"
+        }
+      ],
+      "detected_at": "2026-10-08T20:14:46.580387Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Spanish River Park (public beach), 10 miles from the community; nearby parks: Burt Aaronson South County Regional Park, Morikami Museum & Japanese Gardens, Gumbo Limbo Nature Center",
+          "distance_miles": 10.0,
+          "source_url": "https://www.bocaratonrealestate.com/lotus/"
+        },
+        {
+          "nearest_name": "Numerous championship golf courses throughout Boca Raton within a 20-minute drive (no golf in community)",
+          "distance_miles": null,
+          "source_url": "https://www.bexrealty.com/real-estate/Boca-Raton/Lotus/"
+        }
+      ],
+      "detected_at": "2026-10-08T20:14:46.580393Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "West Boca Raton High School",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Whispering Pines Elementary (A-rated)",
+          "distance_miles": 1.8,
+          "source_url": "https://www.premierlivingfl.com/community/lotus"
+        },
+        {
+          "nearest_name": "Olympic Heights High (A-rated)",
+          "distance_miles": 3.4,
+          "source_url": "https://www.premierlivingfl.com/community/lotus"
+        },
+        {
+          "nearest_name": "Eagles Landing Middle (A-rated)",
+          "distance_miles": 5.3,
+          "source_url": "https://www.premierlivingfl.com/community/lotus"
+        },
+        {
+          "nearest_name": "Zoned per agent page to Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights Community High (Palm Beach County A-rated)",
+          "distance_miles": null,
+          "source_url": "https://www.bocaratonrealestate.com/lotus/"
+        }
+      ],
+      "detected_at": "2026-10-08T20:14:46.580400Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "St. Edward's Square (West Boca Raton)",
+          "distance_miles": 3.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Nearest retail/shopping (Yelp data; business name not rendered on page)",
+          "distance_miles": 1.18,
+          "source_url": "https://noahjheller.com/neighborhoods/lotus"
+        },
+        {
+          "nearest_name": "Canyon Town Center, Delray Marketplace, Town Center at Boca Raton (all described as 'just minutes' away)",
+          "distance_miles": null,
+          "source_url": "https://www.bocaratonrealestate.com/lotus/"
+        }
+      ],
+      "detected_at": "2026-10-08T20:14:46.580406Z"
+    }
+  ],
+  "created_at": "2026-10-08T19:45:29.422783Z",
+  "updated_at": "2026-10-08T20:14:46.580552Z"
+}

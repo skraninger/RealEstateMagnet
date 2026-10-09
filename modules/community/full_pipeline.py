@@ -76,6 +76,7 @@ from .models import (
     utcnow,
 )
 from .store import CommunityStore, merge_facts, slugify
+from .streaming import console_thinking_reporter
 from .url_tracker import URLTracker
 
 logger = logging.getLogger(__name__)
@@ -330,11 +331,12 @@ async def _run_ai_condenser(
     database: CommunityDatabase,
     url_tracker: URLTracker,
     on_progress: Optional[Callable[[str], None]] = None,
+    on_thinking: Optional[Callable[[str], None]] = None,
 ) -> CondenserStepResult:
     """Run the AI condenser for one community."""
     from .ai_condenser import AICondenser
 
-    condenser = AICondenser(store=store, database=database)
+    condenser = AICondenser(store=store, database=database, on_thinking=on_thinking)
     started = time.monotonic()
     result = CondenserStepResult(status="running")
     try:
@@ -373,11 +375,14 @@ async def _run_web_condenser(
     database: CommunityDatabase,
     url_tracker: URLTracker,
     on_progress: Optional[Callable[[str], None]] = None,
+    on_thinking: Optional[Callable[[str], None]] = None,
 ) -> CondenserStepResult:
     """Run the web condenser for one community."""
     from .web_condenser import WebAICondenser
 
-    condenser = WebAICondenser(store=store, database=database, url_tracker=url_tracker)
+    condenser = WebAICondenser(
+        store=store, database=database, url_tracker=url_tracker, on_thinking=on_thinking
+    )
     started = time.monotonic()
     result = CondenserStepResult(status="running")
     try:
@@ -416,11 +421,14 @@ async def _run_research_agent(
     database: CommunityDatabase,
     url_tracker: URLTracker,
     on_progress: Optional[Callable[[str], None]] = None,
+    on_thinking: Optional[Callable[[str], None]] = None,
 ) -> CondenserStepResult:
     """Run the research agent for one community."""
     from .research_engine import CommunityResearchEngine
 
-    engine = CommunityResearchEngine(store=store, url_tracker=url_tracker)
+    engine = CommunityResearchEngine(
+        store=store, url_tracker=url_tracker, on_thinking=on_thinking
+    )
     started = time.monotonic()
     result = CondenserStepResult(status="running")
     try:
@@ -456,6 +464,7 @@ async def _run_browser_condenser(
     database: CommunityDatabase,
     url_tracker: URLTracker,
     on_progress: Optional[Callable[[str], None]] = None,
+    on_thinking: Optional[Callable[[str], None]] = None,
 ) -> CondenserStepResult:
     """Run a targeted browser search for one community.
 
@@ -466,6 +475,7 @@ async def _run_browser_condenser(
     from pydantic_ai.models.openai import OpenAIChatModel
     from pydantic_ai.providers.openai import OpenAIProvider
 
+    from .streaming import run_agent_streamed
     from .tools import google_search, read_page
 
     started = time.monotonic()
@@ -573,11 +583,12 @@ async def _run_browser_condenser(
                 )
 
                 try:
-                    extraction = await agent.run(
+                    item = await run_agent_streamed(
+                        agent,
                         extraction_prompt,
                         model_settings={"max_tokens": 4096},
+                        on_thinking=on_thinking,
                     )
-                    item = extraction.output
                     # Set source URLs
                     for fee in item.fees:
                         if not fee.source_url.startswith(("http://", "https://", "browser:")):
@@ -642,6 +653,7 @@ async def _run_gemini_condenser(
     database: CommunityDatabase,
     url_tracker: URLTracker,
     on_progress: Optional[Callable[[str], None]] = None,
+    on_thinking: Optional[Callable[[str], None]] = None,
 ) -> CondenserStepResult:
     """Run the Gemini condenser for one community.
 
@@ -717,6 +729,7 @@ class FullPipeline:
         discovery_state_path: Path | str | None = None,
         url_tracker: URLTracker | None = None,
         on_progress: Optional[Callable[[str], None]] = None,
+        show_thinking: bool = False,
         on_community_start: Optional[Callable[[str, str], None]] = None,
         on_community_done: Optional[Callable[[str, str, CondenserStepResult], None]] = None,
         on_pipeline_done: Optional[Callable[[PipelineState], None]] = None,
@@ -731,6 +744,7 @@ class FullPipeline:
         self.discovery_state_path = Path(discovery_state_path) if discovery_state_path else None
         self.url_tracker = url_tracker or URLTracker(self.database)
         self.on_progress = on_progress
+        self.show_thinking = show_thinking
         self.on_community_start = on_community_start
         self.on_community_done = on_community_done
         self.on_pipeline_done = on_pipeline_done
@@ -755,7 +769,15 @@ class FullPipeline:
         A single research/vision step can take several minutes with no other
         output. Without a heartbeat the console looks frozen and an operator
         cannot tell whether to keep waiting or stop and resume.
+
+        When ``show_thinking`` is enabled, the model's streamed reasoning is
+        printed (indented) while the step runs, then closed on completion.
         """
+        reporter = (
+            console_thinking_reporter(f"{info.name} / {condenser_name}")
+            if self.show_thinking
+            else None
+        )
         task = asyncio.ensure_future(
             runner(
                 info,
@@ -763,10 +785,19 @@ class FullPipeline:
                 self.database,
                 url_tracker=self.url_tracker,
                 on_progress=self.on_progress,
+                on_thinking=reporter,
             )
         )
         if HEARTBEAT_SECONDS <= 0:
-            return await task
+            try:
+                return await task
+            finally:
+                if reporter is not None:
+                    reporter.close()
+                    if task.done() and not task.cancelled() and not reporter.produced:
+                        self._log(
+                            "  (no reasoning emitted by the model for this step)"
+                        )
 
         self._current_step = f"{info.name} / {condenser_name}"
         self._step_started = time.monotonic()
@@ -782,6 +813,12 @@ class FullPipeline:
                 )
         finally:
             self._current_step = ""
+            if reporter is not None:
+                reporter.close()
+                if task.done() and not task.cancelled() and not reporter.produced:
+                    self._log(
+                        "  (no reasoning emitted by the model for this step)"
+                    )
             if not task.done():
                 task.cancel()
                 try:
@@ -1177,6 +1214,15 @@ async def _main(argv: Optional[list[str]] = None) -> None:
         help="Print current pipeline status and exit.",
     )
     parser.add_argument(
+        "--show-thinking",
+        action=argparse.BooleanOptionalAction,
+        default=os.environ.get("PIPELINE_SHOW_THINKING", "1").strip().lower()
+        in ("1", "true", "yes", "on"),
+        help="Stream the model's reasoning (thinking) to the console while "
+             "condensers run (default: on). Use --no-show-thinking to disable. "
+             "Env: PIPELINE_SHOW_THINKING=0.",
+    )
+    parser.add_argument(
         "--state-path",
         default=str(DEFAULT_STATE_PATH),
         help=f"Path to state file (default: {DEFAULT_STATE_PATH})",
@@ -1215,7 +1261,14 @@ async def _main(argv: Optional[list[str]] = None) -> None:
         condensers=condensers,
         url_tracker=url_tracker,
         on_progress=lambda msg: print(f"[PIPELINE] {msg}"),
+        show_thinking=args.show_thinking,
     )
+
+    if args.show_thinking:
+        print(
+            "[PIPELINE] Thinking stream ON — the model's reasoning will be printed "
+            "per step (set PIPELINE_SHOW_THINKING=0 or omit -ShowThinking to disable)."
+        )
 
     if args.status:
         state = pipeline.init_state()

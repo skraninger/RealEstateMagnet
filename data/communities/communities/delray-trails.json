@@ -1,0 +1,631 @@
+{
+  "id": "9a869c03-7a9a-46d1-a850-7f28f8119f9e",
+  "identity": {
+    "name": "Delray Trails",
+    "slug": "delray-trails",
+    "county_fips": null,
+    "city": "Delray Beach",
+    "hoa_name": "Delray Trails Homeowner Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated 55+ active adult master-planned community in Delray Beach, FL 33484, developed by Lennar with approximately 436 villas, single-family homes, condos, and townhomes. Established in 2020 and managed by Lennar Homes LLC. Resort-style community with shared recreation amenities through association with Palm Greens Recreation Association. Located at 5832 Shining Sea Court. Currently sold out (as of latest source data)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T22:55:59.843030Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 396.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Single-family homes: $381–$412/month. Includes common area maintenance, grounds, building maintenance, roof, pool, security, insurance, water, electric, trash, sewer, pest control, internet, laundry, parking, recreation facilities. Condos: $360–$580/month. Townhomes: $358–$760/month. (Source data as of Oct 2026)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843039Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 450.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Estimates from real estate listings typically in the $300–$600 range monthly; exact figures and special assessments unavailable without direct HOA confirmation."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521161Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 336.54,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Lennar Community Fact Sheet, 2023 (dated 03/23): Single-family homesite base (abated) HOA fee. Includes utilities for common areas, landscape/irrigation maintenance, access control/entry, and association common area insurance. Homeowner pays own insurance. Subject to change without notice; verify with HOA for current year. 2023 figures may be outdated for 2025/2026 buyers."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521172Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 411.54,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Lennar Community Fact Sheet, 2023: Single-family homesite HOA fee WITH Recreation add-on (base $336.54 + ~$75.00 recreation)."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521174Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 282.9,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Lennar Community Fact Sheet, 2023: Villas homesite base (abated) HOA fee."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521175Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 357.9,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Lennar Community Fact Sheet, 2023: Villas homesite HOA fee WITH Recreation add-on (base $282.90 + ~$75.00 recreation)."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521177Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 75.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Lennar Community Fact Sheet, 2023: Recreation fee is ~$75.00/month per home (marked as estimate); excluded from abated fee."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521178Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 43.99,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Lennar Community Fact Sheet, 2023: Bulk Internet (1 GIG) - $43.99 per month per home."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T23:16:46.521180Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 381.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "BEX Realty listing-site range (lower bound recorded): HOA fees for Delray Trails homes (single-family) range $381-$412/month. Fee said to include common area maintenance, grounds, pool, security, property insurance, water, electric, trash, sewer, pest control, internet, laundry, parking, recreation."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T23:16:46.521181Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 360.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "BEX Realty listing-site range (lower bound recorded): Delray Trails condo HOA fees range $360-$580/month."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T23:16:46.521183Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 358.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "BEX Realty listing-site range (lower bound recorded): Delray Trails townhome HOA fees range $358-$760/month."
+    },
+    {
+      "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116",
+      "retrieved_at": "2026-10-08T23:16:46.521184Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 371.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Active MLS listing (BeachesMLS, via Trulia) for 5824 Shining Sea Ct, Delray Trails townhome: HOA Fee $371/month; HOA fee includes common areas and grounds maintenance."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/delray-trails-delray-beach-fl",
+      "retrieved_at": "2026-10-08T23:16:46.521186Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 388.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Horizon Palm Realty: community HOA fees averaging $388/month. Also reports annual property taxes averaging $1,113."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T23:16:46.521191Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 250.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA Bulletin Board: monthly HOA fee 'approximately $250' - unverified estimate; conflicts with all other sources (which show $282-$760). Treat as unreliable."
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/communities/delray-beach/delray-trails",
+      "retrieved_at": "2026-10-08T23:16:46.521192Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Some associations require a one-time capital contribution or transfer fee at closing (master and/or neighborhood association), separate from monthly dues. Amount for Delray Trails not found in any source - confirm with written association package."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843043Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Large clubhouse serving as community social hub"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843085Z",
+      "confidence": 0.5,
+      "amenity": "resort_style_pool_complex",
+      "detail": "Pool included in HOA fees; resort-style complex"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843089Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center on-site; also hosts outdoor fitness classes on event lawn"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails",
+      "retrieved_at": "2026-10-08T22:55:59.843092Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "13 tennis courts total; organized tournaments, lessons, and casual matches at the well-maintained sports center"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843094Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Multiple pickleball courts available"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843096Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Trails within the community and shared Palm Greens recreation area"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails",
+      "retrieved_at": "2026-10-08T22:55:59.843099Z",
+      "confidence": 0.5,
+      "amenity": "event_lawn_social_center",
+      "detail": "Expansive green space for community gatherings, live entertainment, outdoor movie nights, and seasonal celebrations"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails",
+      "retrieved_at": "2026-10-08T22:55:59.843102Z",
+      "confidence": 0.5,
+      "amenity": "outdoor_bar",
+      "detail": "Outdoor bar area for socializing; walking distance or short golf cart ride from homes"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843104Z",
+      "confidence": 0.5,
+      "amenity": "shared_palm_greens_recreation_association_facilities",
+      "detail": "Shared recreational amenities through association with Palm Greens Recreation Association"
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T22:55:59.843108Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated community with security included in HOA fees"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521196Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Official Lennar community page lists clubhouse among Delray Trails amenities."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521207Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Official Lennar community page lists swimming pool as a community amenity."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521210Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Official Lennar community page lists fitness center as a community amenity."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521213Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Lennar: 'With a total of 13 tennis courts, residents can enjoy organized tournaments, lessons or casual matches' at the community sports center."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521216Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Official Lennar community page lists pickleball court among amenities."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521218Z",
+      "confidence": 0.5,
+      "amenity": "trail",
+      "detail": "Official Lennar community page lists trail as a community amenity (MLS marketing also references 'scenic trails')."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521220Z",
+      "confidence": 0.5,
+      "amenity": "event_lawn_social_center_and_outdoor_bar_area",
+      "detail": "Lennar describes an event lawn as 'the vibrant centerpiece for community gatherings' (outdoor movie nights, fitness classes, celebrations) plus an outdoor bar area; both walking distance or a short golf cart ride away."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521224Z",
+      "confidence": 0.5,
+      "amenity": "pool_complex_pool_lap_pool_spa_kids_pool",
+      "detail": "Official Lennar 2023 Community Fact Sheet recreation list: Pool, lap pool, spa, kids pool."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521228Z",
+      "confidence": 0.5,
+      "amenity": "bocce_ball_and_shuffleboard",
+      "detail": "Official Lennar 2023 Community Fact Sheet recreation list: Tennis, pickle ball, bocce ball, and shuffleboard."
+    },
+    {
+      "source_url": "https://online.flippingbook.com/view/599586908/22/",
+      "retrieved_at": "2026-10-08T23:16:46.521232Z",
+      "confidence": 0.5,
+      "amenity": "multi_purpose_room",
+      "detail": "Official Lennar 2023 Community Fact Sheet recreation list: Fitness center, multi-purpose room."
+    },
+    {
+      "source_url": "https://www.palmgreens.org/",
+      "retrieved_at": "2026-10-08T23:16:46.521235Z",
+      "confidence": 0.5,
+      "amenity": "shared_palm_greens_recreation_association_facilities",
+      "detail": "Palm Greens Recreation Association (which per its site comprises Condo 1, Condo II and Delray Trails) comprises main pool area, hot tub, 9 tennis courts, shuffleboard, bocci court and a clubhouse; newly built clubhouse houses offices, gym, card and billiard rooms, art classes, library and a theater. Clubs host many events throughout the year."
+    },
+    {
+      "source_url": "https://www.palmgreens.org/",
+      "retrieved_at": "2026-10-08T23:16:46.521238Z",
+      "confidence": 0.5,
+      "amenity": "gym_fitness_card_room_and_billiard_room",
+      "detail": "Housed in the Palm Greens clubhouse shared with Delray Trails residents; billiard room also independently listed in MLS-derived amenity data."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521242Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry_with_access_control",
+      "detail": "Gated master-planned community; official Lennar 2023 fact sheet lists 'Access Control/Entry' as included in the HOA fee. Page also notes community is currently sold out (no homes available)."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T23:16:46.521245Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "BEX Realty: HOA rules allow pets with certain breed restrictions, a limit on the number of pets, and a restriction on pet size. Specific breeds/limits not published in sources found."
+    },
+    {
+      "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116",
+      "retrieved_at": "2026-10-08T23:16:46.521247Z",
+      "confidence": 0.5,
+      "amenity": "gated_community_security_gate",
+      "detail": "MLS-derived property data: Security: Security Gate, Gated Community; Community Features: HOA, Gated, Is a Senior Community; HOA Amenities: Clubhouse, Fitness Center, Gated, Other, Pickleball, Pool, Tennis Court(s); Pool: Association."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.zip-codes.com/zip-code/33484/zip-code-33484.asp",
+    "retrieved_at": "2026-10-24T00:00:00Z",
+    "confidence": 0.6,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 26208,
+    "data_year": 2024,
+    "geography_level": "ZIP Code 33484, Delray Beach, FL (aggregator citing 2020 Census and 2024 ACS; 2020 Census count 26,340, 14,819 households, 1.73 persons/household; median home value $237,400 per 2024 ACS; 80.96% of occupied housing owner-occupied (49.38% free and clear, 31.59% with mortgage), 19.04% renter-occupied; median rent $2,087; 43.2% of adults 25+ hold a bachelor's degree; 56.0% female; 12.21% Hispanic/Latino; 76.15% White per the site's 2020 Census table). Note: official city-of-Delray-Beach Census QuickFacts (ACS 2020-2024) show different aggregates: population 69,809 (2025 estimate), median household income $82,041, owner-occupied rate 63.2%, median home value $420,300, 28.0% age 65+ - see open questions."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+      "retrieved_at": "2026-10-08T22:55:59.843111Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "community"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T22:55:59.843115Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach International Airport (PBI)",
+      "distance_miles": 15.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T22:55:59.843119Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fort Lauderdale Hollywood International Airport (FLL)",
+      "distance_miles": 28.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+      "retrieved_at": "2026-10-08T22:55:59.843120Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport (MIA)",
+      "distance_miles": 48.0
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails",
+      "retrieved_at": "2026-10-08T22:55:59.843122Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Delray Beach (restaurants, theaters, retail)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://healthcarecomps.com/hospitals/fl/?zip=33484",
+      "retrieved_at": "2026-10-08T23:16:46.521262Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Delray Medical Center (5352 Linton Blvd, Delray Beach, FL 33484)",
+      "distance_miles": 6.6
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155",
+      "retrieved_at": "2026-10-08T23:16:46.521265Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Atlantic Avenue ('The Ave'), downtown Delray Beach - shops, restaurants, art galleries, entertainment",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.publix.com/locations/1576-delray-square",
+      "retrieved_at": "2026-10-08T23:16:46.521267Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix Delray Square (4771 W Atlantic Ave, Delray Beach, FL 33445)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://librarytechnology.org/library/4320",
+      "retrieved_at": "2026-10-08T23:16:46.521268Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Delray Beach Public Library (100 West Atlantic Avenue, Delray Beach, FL 33444; phone 561-266-0194; serves ~61,495 residents)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116",
+      "retrieved_at": "2026-10-08T23:16:46.521270Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Banyan Creek Elementary School (Palm Beach County) - per MLS school info for a Delray Trails home",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116",
+      "retrieved_at": "2026-10-08T23:16:46.521271Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Carver Community Middle School (Palm Beach County) - per MLS school info for a Delray Trails home",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116",
+      "retrieved_at": "2026-10-08T23:16:46.521272Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Atlantic High School (Palm Beach County) - per MLS school info for a Delray Trails home",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Current (2025/2026) HOA dues: the only official schedule found is the Lennar fact sheet dated 03/2023 ($282.90-$411.54/mo by home type, +~$75 recreation). Listing sites show $358-$760/mo by product type and an MLS-specific $371/mo; the HOA Bulletin Board's ~$250/mo is unverified and conflicts with everything else. Confirm current amounts with Lennar/HOA (561-345-6700).",
+    "CDD special assessments: no Community Development District or special assessment information found for Delray Trails in any source. Confirm with HOA/title company.",
+    "One-time capital contribution / transfer fee at closing is mentioned as possible but no amount was found. Obtain the written association package.",
+    "Driving distances from the community (5832 Shining Sea Court, 33484) to Atlantic Avenue, Publix Delray Square, the library, and zoned schools could not be verified numerically - marketing sources only say 'moments away' / 'minutes from'. The 6.6-mi hospital distance is as listed for ZIP 33484/Delray Beach generally, not from the community gate.",
+    "School zoning (Banyan Creek Elementary / Carver Community Middle / Atlantic High) comes from MLS-derived listing data for one Delray Trails address; verify boundaries with Palm Beach County School District's map tool.",
+    "Community-level demographics are unavailable; only ZIP 33484 (median age 66.7, median HH income $62,151 per 2024 ACS via zip-codes.com; ~81% owner-occupied) and city of Delray Beach (Census QuickFacts ACS 2020-2024: population 69,809, median HH income $82,041, 63.2% owner-occupied, 28% age 65+) aggregates exist. The two sources conflict on income/occupancy - geography levels differ.",
+    "Pet policy specifics (which breeds are restricted, maximum number of pets, size limits) are not published in the sources found.",
+    "Palm Greens clubhouse amenities (gym, card/billiard rooms, theater, library, art classes) are shared via the Recreation Association - confirm Delray Trails resident access rights and any separate recreation-association dues beyond the ~$75/mo recreation fee."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 396.0,
+          "period": "monthly",
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+          "retrieved_at": "2026-10-08T22:55:59.843030+00:00"
+        },
+        {
+          "amount": 450.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+          "retrieved_at": "2026-10-08T22:55:59.843039+00:00"
+        },
+        {
+          "amount": 336.54,
+          "period": "monthly",
+          "source_url": "https://online.flippingbook.com/view/599586908/22/",
+          "retrieved_at": "2026-10-08T23:16:46.521161+00:00"
+        },
+        {
+          "amount": 411.54,
+          "period": "monthly",
+          "source_url": "https://online.flippingbook.com/view/599586908/22/",
+          "retrieved_at": "2026-10-08T23:16:46.521172+00:00"
+        },
+        {
+          "amount": 282.9,
+          "period": "monthly",
+          "source_url": "https://online.flippingbook.com/view/599586908/22/",
+          "retrieved_at": "2026-10-08T23:16:46.521174+00:00"
+        },
+        {
+          "amount": 357.9,
+          "period": "monthly",
+          "source_url": "https://online.flippingbook.com/view/599586908/22/",
+          "retrieved_at": "2026-10-08T23:16:46.521175+00:00"
+        },
+        {
+          "amount": 75.0,
+          "period": "monthly",
+          "source_url": "https://online.flippingbook.com/view/599586908/22/",
+          "retrieved_at": "2026-10-08T23:16:46.521177+00:00"
+        },
+        {
+          "amount": 381.0,
+          "period": "monthly",
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+          "retrieved_at": "2026-10-08T23:16:46.521180+00:00"
+        },
+        {
+          "amount": 360.0,
+          "period": "monthly",
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+          "retrieved_at": "2026-10-08T23:16:46.521181+00:00"
+        },
+        {
+          "amount": 358.0,
+          "period": "monthly",
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/",
+          "retrieved_at": "2026-10-08T23:16:46.521183+00:00"
+        },
+        {
+          "amount": 371.0,
+          "period": "monthly",
+          "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116",
+          "retrieved_at": "2026-10-08T23:16:46.521184+00:00"
+        },
+        {
+          "amount": 388.0,
+          "period": "monthly",
+          "source_url": "https://horizonpalmrealty.com/community/delray-trails-delray-beach-fl",
+          "retrieved_at": "2026-10-08T23:16:46.521186+00:00"
+        },
+        {
+          "amount": 250.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/dtdbfl/about_hoa/",
+          "retrieved_at": "2026-10-08T23:16:46.521191+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T23:16:46.521947Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 43.99,
+          "period": "monthly",
+          "source_url": "https://online.flippingbook.com/view/599586908/22/",
+          "retrieved_at": "2026-10-08T23:16:46.521178+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://paulsapersteinhomes.com/communities/delray-beach/delray-trails",
+          "retrieved_at": "2026-10-08T23:16:46.521192+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T23:16:46.521954Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Palm Beach International Airport (PBI)",
+          "distance_miles": 15.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/"
+        },
+        {
+          "nearest_name": "Fort Lauderdale Hollywood International Airport (FLL)",
+          "distance_miles": 28.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/"
+        },
+        {
+          "nearest_name": "Miami International Airport (MIA)",
+          "distance_miles": 48.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Delray-Beach/Delray-Trails/"
+        }
+      ],
+      "detected_at": "2026-10-08T23:16:46.521960Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Banyan Creek Elementary School (Palm Beach County) - per MLS school info for a Delray Trails home",
+          "distance_miles": null,
+          "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116"
+        },
+        {
+          "nearest_name": "Carver Community Middle School (Palm Beach County) - per MLS school info for a Delray Trails home",
+          "distance_miles": null,
+          "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116"
+        },
+        {
+          "nearest_name": "Atlantic High School (Palm Beach County) - per MLS school info for a Delray Trails home",
+          "distance_miles": null,
+          "source_url": "https://www.trulia.com/home/5824-shining-sea-ct-delray-beach-fl-33484-447723116"
+        }
+      ],
+      "detected_at": "2026-10-08T23:16:46.521963Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Downtown Delray Beach (restaurants, theaters, retail)",
+          "distance_miles": null,
+          "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails"
+        },
+        {
+          "nearest_name": "Atlantic Avenue ('The Ave'), downtown Delray Beach - shops, restaurants, art galleries, entertainment",
+          "distance_miles": null,
+          "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/delray-beach/delray-trails/the-woods/magnolia/7790600155"
+        }
+      ],
+      "detected_at": "2026-10-08T23:16:46.521966Z"
+    }
+  ],
+  "created_at": "2026-10-08T22:55:59.843609Z",
+  "updated_at": "2026-10-08T23:16:46.522060Z"
+}

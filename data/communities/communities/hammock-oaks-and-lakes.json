@@ -1,0 +1,328 @@
+{
+  "id": "7f0405c0-e419-4f2f-82bc-23caf9a04084",
+  "identity": {
+    "name": "Hammock Oaks and Lakes",
+    "slug": "hammock-oaks-and-lakes",
+    "county_fips": null,
+    "city": "Coral Gables, Florida",
+    "hoa_name": "Hammock Oaks Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Web content describes Hammock Oaks (including its guard-gated Hammock Oaks Harbor enclave) in South Coral Gables, FL 33156 — an ultra-exclusive waterfront community established in 1970, spanning 85 acres with exactly 107 single-family custom estate homes built by Babe Elias Builders with architect Beverly Elias. It features 24/7 guard-gated security, deep-water canals with 16 ft MLW access to Biscayne Bay (via the Matheson Hammock–Hammock Oaks fixed bridge), and private docks up to 75 feet on select lots. Operated under dual governance (private HOA, registered in Miami-Dade County in 1981 under Fla. Stat. §720, plus a municipal special taxing district). Entry price ~$4.5M; peak valuation $15.6M+. Bordered by Fairchild Tropical Botanic Garden (north) and Matheson Hammock Park (south). No community pool, clubhouse, tennis, or fitness facilities documented — the focus is privacy, boating, and low-density waterfront living. Note: the name 'Hammock Oaks and Lakes' is not explicitly referenced in the source content; the content pertains to the Hammock Oaks / Hammock Oaks Harbor community."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T02:47:55.190775Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 45.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "Listings reference $45 per month (or ~$550 annually) in some sections; exact current fees, transfer fees, capital contributions, and special assessments are not available in public sources. Unverified listing reference only — confirm with the HOA or a current listing/resale certificate (FL resale certificate fee cap is $299 per Fla. Stat. §720.30851). HOA verified active: registered Miami-Dade County 1981, compliance verified Sep 2026. (retrieved_at: 2026-02-11T12:00:00Z, confidence: 0.35)"
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895515Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 550.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Community site 'Comparative Summary': 'HOA / Security District | Combined — Mandatory $3,000 City Security Taxing District + $550 annual HOA'. Marketing/community site citing Miami-Dade public records; verify with HOA (Hammock Oaks Homeowners Association, Inc.). Entry price on same page: ~$4.5M (2026 baseline)."
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895529Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 3000.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Mandatory City Security Taxing District charge (dual governance: private HOA + municipal special taxing district). Same source as the $550 annual HOA figure; not independently confirmed by a city or HOA document."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:03:03.895534Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 550.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Aggregator: 'Listings reference amounts such as $45 per month or $550 annually in some sections'; 'Detailed current fees, rules, and contacts are unavailable in public sources.' Consistent with the $550/yr figure from hammockoaksfl.com."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:03:03.895538Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 45.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Same aggregator citing MLS listing references: '$45 per month or $550 annually in some sections' — low confidence, listing-derived, varies by section."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=757490",
+      "retrieved_at": "2026-10-09T03:03:03.895542Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Directory confirms 'Association HOA Fee: HOA Fee Required' but publishes no amount. Association: HAMMOCK OAKS HOMEOWNERS ASSOCIATION, INC., est. 04/10/1981, Fed ID 592110561, type Single Family Homes, location 430 ROVINO AVE, MIAMI, FL 33156. Directory also lists property manager FPMS, 5600 Granada Dr, Sarasota, FL 34231, 941-960-5000 (unverified)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T02:47:55.190785Z",
+      "confidence": 0.5,
+      "amenity": "guard_gated_entrance_with_24_7_security",
+      "detail": "Exclusive guard-gated entrance providing security and privacy; the HOA's primary function is gate and security maintenance. (retrieved_at: 2026-02-11T12:00:00Z, confidence: 0.85)"
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T02:47:55.190794Z",
+      "confidence": 0.5,
+      "amenity": "deep_water_canal_access_to_biscayne_bay",
+      "detail": "16 ft MLW vertical clearance at the Matheson Hammock–Hammock Oaks fixed bridge; comfortably accommodates center consoles and sportfishers with folding T-tops. (retrieved_at: 2026-02-11T12:00:00Z, confidence: 0.8)"
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T02:47:55.190798Z",
+      "confidence": 0.5,
+      "amenity": "private_docks_and_boat_slips",
+      "detail": "Private docks, double boat slips, and up to 75-foot slips on select waterfront lots. (retrieved_at: 2026-02-11T12:00:00Z, confidence: 0.8)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T02:47:55.190801Z",
+      "confidence": 0.5,
+      "amenity": "no_shared_community_amenities",
+      "detail": "No community clubhouse, pools, tennis courts, or fitness centers documented; many individual homes feature private pools and docks. (retrieved_at: 2026-02-11T12:00:00Z, confidence: 0.7)"
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T02:47:55.190804Z",
+      "confidence": 0.5,
+      "amenity": "natural_park_buffers",
+      "detail": "85-acre low-density estate enclave in a mature tropical hammock, bordered by Fairchild Tropical Botanic Garden (north) and Matheson Hammock Park (south) — permanent, non-encroachable ecological buffers securing view corridors and privacy. (retrieved_at: 2026-02-11T12:00:00Z, confidence: 0.8)"
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895547Z",
+      "confidence": 0.5,
+      "amenity": "guard_gated_entry_with_24_7_manned_security",
+      "detail": "'24/7 Guard'; 'High privacy — 24/7 manned guardhouse, single-point controlled gate entry, and CGPD police patrols'. Established 1970; 85 acres; exactly 107 custom single-family estates by Babe Elias Builders / architect Beverly Elias."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/hammock-oaks-miami-faqs",
+      "retrieved_at": "2026-10-09T03:03:03.895566Z",
+      "confidence": 0.5,
+      "amenity": "guard_gate_single_access_point_municipal_police_patrols",
+      "detail": "'guard-gated, bayfront waterfront community within Coral Gables... controlled entry at a single access point. There is no through traffic and no public access beyond the guardhouse... the Coral Gables Police Department provides municipal patrol services.' Home count 'approximately 100 to 107'. HOA 'primary function is privacy and entry control'; 'not a club-style community'."
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895575Z",
+      "confidence": 0.5,
+      "amenity": "deep_water_canals_with_bay_access",
+      "detail": "16 ft MLW deep-water canal access to Biscayne Bay, constrained by a single fixed crossing — the Matheson Hammock–Hammock Oaks bridge (16 ft vertical clearance, MLW)."
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895583Z",
+      "confidence": 0.5,
+      "amenity": "private_dockage",
+      "detail": "'Private docks, double boat slips, and up to 75-foot slips on select waterfront estates. Most of the 107 home sites feature private canals, direct bay, or lake frontage.'"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:03:03.895589Z",
+      "confidence": 0.5,
+      "amenity": "no_community_pool_clubhouse_tennis_or_fitness_facilities_documented",
+      "detail": "'Amenities are limited; the primary feature is the guard-gated entrance providing security and privacy. No community clubhouse, pools, tennis courts, or fitness centers are documented. Many individual homes feature private pools and docks.' Emphasis on privacy, boating, seclusion; bordered by Fairchild Tropical Botanic Garden and Matheson Hammock Park."
+    },
+    {
+      "source_url": "https://hoa-resource.com/hammock-oaks-homeowners-association-coral-gables-fl/",
+      "retrieved_at": "2026-10-09T03:03:03.895597Z",
+      "confidence": 0.5,
+      "amenity": "pool_and_golf_conflicting_claim",
+      "detail": "Template/auto-generated directory claims 'Community Features: Pool, Golf' and fee includes 'Trash Removal, Sewer, Street Maintenance, Snow Removal' (snow removal in Coral Gables is implausible). Contradicted by hoabulletinboard.com, allinmiami.com and hammockoaksfl.com, which document no communal recreation facilities. Treat as unreliable."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=757490",
+      "retrieved_at": "2026-10-09T03:03:03.895605Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Directory lists 'Amenities for Hammock Oaks Homeowners Association Include: Gated Community' (only amenity listed)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Hammock-Oaks-Harbor-Demographics.html",
+    "retrieved_at": "2026-10-09T03:03:03.895613Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 306,
+    "data_year": 2023,
+    "geography_level": "Hammock Oaks Harbor neighborhood, Coral Gables FL — U.S. Census ACS 2019-2023 5-year estimates as republished by Point2 (page states income data 'in 2024, the most recent annual data available')"
+  },
+  "demographics_history": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2025-01-15T00:00:00Z",
+      "confidence": 0.2,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 49802,
+      "data_year": null,
+      "geography_level": "city (Coral Gables, FL — not community-specific data from the page, provided as proxy only; page contains no data about 'Hammock Oaks and Lakes' itself). Median income $134,216; average income $222,464 (2024). Median construction year 1969; median housing cost $2,765/mo; median gross rent $2,373/mo. Median age 39. 46.3% male / 53.7% female. Race: 46.2% Caucasian, 4.1% African American, 3.3% Asian, 42% two or more races. 57.8% US-born citizens, 29.9% naturalized, 12.3% non-citizens. 19,210 households, avg 2 members; 58.9% families. 22,020 housing units; 49.7% detached single-family; 35.5% renter-occupied; 12.8% vacant. Education: 27.9% bachelor's, 33.1% master's/doctorate, 5% associate, 17.6% some college, 15.3% high school. 23,904 working residents; 94% (figure cut off in source) ... 90.8% above poverty line. Renter median income $70,078 (2022); rent-to-income ratio 40.6%."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2025-07-08T12:00:00Z",
+      "confidence": 0.6,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 49578,
+      "data_year": 2024,
+      "geography_level": "City (Coral Gables, Florida) — population is July 1, 2025 estimate; other figures are ACS 2020-2024"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T02:47:55.190809Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fairchild Tropical Botanic Garden",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T02:47:55.190812Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Matheson Hammock Park",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/best-schools-near-hammock-oaks",
+      "retrieved_at": "2026-10-09T03:03:03.895622Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Pinecrest Elementary School (10250 SW 57th Ave, Pinecrest, FL 33156), ~6-minute drive; also Saint Thomas Episcopal (7 min), Mandelstam (7 min), Epiphany Catholic (8 min), Palmetto Elementary (9 min), Sunset Elementary (9 min)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895628Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Pinecrest Elementary ~6 min; Sunset Elementary ~9 min; Gulliver Preparatory ~10 min; Ransom Everglades ~12-15 min; Carrollton School of the Sacred Heart ~12-15 min (drive times; miles not published)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895630Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Doctors Hospital, ~10 min drive ('Premier orthopedic, sports medicine, and concierge emergency care'); Baptist Hospital of Miami ~12-15 min (drive times; miles not published)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://hammockoaksfl.com/",
+      "retrieved_at": "2026-10-09T03:03:03.895633Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Shops at Merrick Park, ~12 min drive (upscale open-air mall, Neiman Marcus/Nordstrom); Miracle Mile (Downtown Gables), ~15 min (drive times; miles not published)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-coral-gables-temporary",
+      "retrieved_at": "2026-10-09T03:03:03.895637Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Coral Gables Branch, Miami-Dade Public Library System — temporarily at 308 Miracle Mile, Coral Gables (branch closed ~18 months for renovation); Miracle Mile is ~15 min from the community per hammockoaksfl.com (miles not published)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues and any special assessments are not published in verifiable sources. communitypay.us search snippet claims 'Median fee $383/mo' and 'Risk: Very High' for this HOA, but the page content could not be retrieved far enough to confirm the figure — treat as unverified.",
+    "No CDD special-assessment data found for the Coral Gables community. The domain hammockoakscdd.net appears to be the official site of a DIFFERENT 'Hammock Oaks Community Development District' (Lake County/Fruitland Park, FL — its homepage references Fruitland Park Library and Lake County), so it should not be used for the Coral Gables community; confirm whether a CDD exists for the 33156 community and what bond/assessment obligations attach.",
+    "HOA management company conflict/unverified: florida-hoa.net lists FPMS (Sarasota, FL) as property manager; hammockoakscdd.net (likely a different community) lists First Service Residential (Clearwater, FL). Neither confirmed for the Coral Gables HOA.",
+    "Pet policy: no rules on pets found in any public source read (hoabulletinboard.com states detailed rules 'are not publicly available').",
+    "Proximity distances in miles: all sources publish drive times only (e.g., ~6-15 min); no source states mile distances to schools, hospitals, shopping, or the library.",
+    "Nearest grocery store not identified in sources read (Miracle Mile boutique shopping is ~15 min; a supermarket such as Publix/Whole Foods would need to be located specifically).",
+    "Entry price conflict: hammockoaksfl.com says ~$4.5M (2026 baseline, peak $15.6M+); allinmiami.com says 2025 pricing 'typically begins at $6 million to over $10 million'. Reported as separate versions, not reconciled.",
+    "Demographic conflicts across sources (unreconciled): Point2/ACS 2019-2023 (Hammock Oaks Harbor): 306 residents, median age 42, median HH income $137,076, 73.6% owner-occupied. Nextdoor (Hammock Oaks Harbor): 73 residents, average age 62, ~$250K average income, 100% homeowners. ZIP 33156 (zipdatamaps.com): population 32,582 (2022), median HH income $123,991 (2021) — much larger geography (Coral Gables/Pinecrest/Kendall).",
+    "The exact name 'Hammock Oaks and Lakes' does not appear in any source read; all sources describe Hammock Oaks / Hammock Oaks Harbor (ZIP 33156, South Coral Gables). Confirm the intended community identity.",
+    "Short-term rental/rental restrictions: allinmiami.com says short-term rentals 'may be restricted' by HOA and city ordinances but exact rules were not found in public sources.",
+    "School zoning for the community is stated as Miami-Dade County Public Schools under Coral Gables boundaries, but exact zoned schools should be verified with the district (per allinmiami.com)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 45.0,
+          "period": "month",
+          "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+          "retrieved_at": "2026-10-09T02:47:55.190775+00:00"
+        },
+        {
+          "amount": 45.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/hohcgfl/about_hoa/",
+          "retrieved_at": "2026-10-09T03:03:03.895538+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=757490",
+          "retrieved_at": "2026-10-09T03:03:03.895542+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T03:06:26.974688Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Fairchild Tropical Botanic Garden",
+          "distance_miles": null,
+          "source_url": "https://hammockoaksfl.com/"
+        },
+        {
+          "nearest_name": "Matheson Hammock Park",
+          "distance_miles": null,
+          "source_url": "https://hammockoaksfl.com/"
+        }
+      ],
+      "detected_at": "2026-10-09T03:06:26.974692Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Pinecrest Elementary School (10250 SW 57th Ave, Pinecrest, FL 33156), ~6-minute drive; also Saint Thomas Episcopal (7 min), Mandelstam (7 min), Epiphany Catholic (8 min), Palmetto Elementary (9 min), Sunset Elementary (9 min)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/best-schools-near-hammock-oaks"
+        },
+        {
+          "nearest_name": "Pinecrest Elementary ~6 min; Sunset Elementary ~9 min; Gulliver Preparatory ~10 min; Ransom Everglades ~12-15 min; Carrollton School of the Sacred Heart ~12-15 min (drive times; miles not published)",
+          "distance_miles": null,
+          "source_url": "https://hammockoaksfl.com/"
+        }
+      ],
+      "detected_at": "2026-10-09T03:06:26.974694Z"
+    }
+  ],
+  "created_at": "2026-10-09T02:47:55.191315Z",
+  "updated_at": "2026-10-09T03:06:26.974748Z"
+}

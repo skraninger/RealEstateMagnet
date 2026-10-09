@@ -1,9 +1,11 @@
 {% extends "base.html" %}
+{% from "_macros.html" import actions %}
 
 {% block title %}{{ community.name }} - RealEstateMagnet Viewer{% endblock %}
 
 {% block content %}
-<div class="card">
+{% set base = '/communities/' ~ community.slug %}
+<div class="card" id="community">
     <h2>{{ community.name }}</h2>
     <table>
         <tbody>
@@ -60,14 +62,21 @@
 </div>
 
 {% if pipeline_status %}
-<div class="card">
+{% set pipe_editing = edit_table == 'pipeline' %}
+<div class="card" id="pipeline">
     <h2>Pipeline Status</h2>
     <table>
         <tbody>
             <tr>
                 <th style="width: 200px;">Status</th>
                 <td>
-                    {% if pipeline_status.status == 'completed' %}
+                    {% if pipe_editing %}
+                    <select form="pipeline-edit-0" name="status">
+                        {% for s in pipeline_status_options %}
+                        <option value="{{ s }}" {% if s == pipeline_status.status %}selected{% endif %}>{{ s }}</option>
+                        {% endfor %}
+                    </select>
+                    {% elif pipeline_status.status == 'completed' %}
                     <span class="badge badge-success">{{ pipeline_status.status }}</span>
                     {% elif pipeline_status.status == 'processing' %}
                     <span class="badge badge-info">{{ pipeline_status.status }}</span>
@@ -82,7 +91,13 @@
             </tr>
             <tr>
                 <th>Attempts</th>
-                <td>{{ pipeline_status.attempts or 0 }}</td>
+                <td>
+                    {% if pipe_editing %}
+                    <input form="pipeline-edit-0" type="number" name="attempts" value="{{ pipeline_status.attempts or 0 }}">
+                    {% else %}
+                    {{ pipeline_status.attempts or 0 }}
+                    {% endif %}
+                </td>
             </tr>
             <tr>
                 <th>Started</th>
@@ -92,12 +107,22 @@
                 <th>Completed</th>
                 <td class="text-muted text-small">{{ pipeline_status.completed_at or '-' }}</td>
             </tr>
-            {% if pipeline_status.last_error %}
             <tr>
                 <th>Last Error</th>
-                <td class="text-small">{{ pipeline_status.last_error }}</td>
+                <td class="text-small">
+                    {% if pipe_editing %}
+                    <input form="pipeline-edit-0" name="last_error" value="{{ pipeline_status.last_error or '' }}">
+                    {% else %}
+                    {{ pipeline_status.last_error or '-' }}
+                    {% endif %}
+                </td>
             </tr>
-            {% endif %}
+            <tr>
+                <th>Actions</th>
+                <td class="row-actions">
+                    {{ actions('pipeline', 0, base ~ '/pipeline/edit', base ~ '/pipeline/delete', base, 'the pipeline status for this community', edit_table, edit_id) }}
+                </td>
+            </tr>
         </tbody>
     </table>
 
@@ -114,10 +139,33 @@
                 <th>Demographics</th>
                 <th>Sources</th>
                 <th>Finished</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             {% for run in condenser_runs %}
+            {% if edit_table == 'condenser_runs' and edit_id == run.id %}
+            <tr>
+                <td>{{ run.condenser }}</td>
+                <td>
+                    <select form="condenser_runs-edit-{{ run.id }}" name="status">
+                        {% for s in condenser_run_status_options %}
+                        <option value="{{ s }}" {% if s == run.status %}selected{% endif %}>{{ s }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td><input form="condenser_runs-edit-{{ run.id }}" type="number" step="any" name="elapsed" value="{{ run.elapsed if run.elapsed is not none else '' }}"></td>
+                <td><input form="condenser_runs-edit-{{ run.id }}" type="number" name="fees" value="{{ run.fees if run.fees is not none else '' }}"></td>
+                <td><input form="condenser_runs-edit-{{ run.id }}" type="number" name="amenities" value="{{ run.amenities if run.amenities is not none else '' }}"></td>
+                <td><input form="condenser_runs-edit-{{ run.id }}" type="number" name="proximity" value="{{ run.proximity if run.proximity is not none else '' }}"></td>
+                <td><input form="condenser_runs-edit-{{ run.id }}" type="checkbox" name="demographics_present" {% if run.demographics_present %}checked{% endif %}></td>
+                <td><input form="condenser_runs-edit-{{ run.id }}" type="number" name="sources_consulted" value="{{ run.sources_consulted if run.sources_consulted is not none else '' }}"></td>
+                <td class="text-muted text-small">{{ run.finished_at or '-' }}</td>
+                <td class="row-actions">
+                    {{ actions('condenser_runs', run.id, base ~ '/condenser-runs/' ~ run.id ~ '/edit', base ~ '/condenser-runs/' ~ run.id ~ '/delete', base, 'this condenser run', edit_table, edit_id) }}
+                </td>
+            </tr>
+            {% else %}
             <tr>
                 <td>{{ run.condenser }}</td>
                 <td>
@@ -138,7 +186,11 @@
                 <td>{{ 'Yes' if run.demographics_present else 'No' }}</td>
                 <td>{{ run.sources_consulted }}</td>
                 <td class="text-muted text-small">{{ run.finished_at or '-' }}</td>
+                <td class="row-actions">
+                    {{ actions('condenser_runs', run.id, base ~ '/condenser-runs/' ~ run.id ~ '/edit', base ~ '/condenser-runs/' ~ run.id ~ '/delete', base, 'this condenser run', edit_table, edit_id) }}
+                </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
     </table>
@@ -147,7 +199,7 @@
 {% endif %}
 
 {% if fees %}
-<div class="card">
+<div class="card" id="fees">
     <h2>Fees ({{ fees|length }})</h2>
     <table>
         <thead>
@@ -158,18 +210,39 @@
                 <th>Currency</th>
                 <th>Source</th>
                 <th>Confidence</th>
+                <th>Note</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             {% for fee in fees %}
+            {% if edit_table == 'fees' and edit_id == fee.id %}
+            <tr>
+                <td><input form="fees-edit-{{ fee.id }}" name="fee_type" value="{{ fee.fee_type or '' }}" required></td>
+                <td><input form="fees-edit-{{ fee.id }}" type="number" step="any" name="amount" value="{{ fee.amount if fee.amount is not none else '' }}"></td>
+                <td><input form="fees-edit-{{ fee.id }}" name="period" value="{{ fee.period or '' }}"></td>
+                <td><input form="fees-edit-{{ fee.id }}" name="currency" value="{{ fee.currency or '' }}"></td>
+                <td><input form="fees-edit-{{ fee.id }}" name="source_url" value="{{ fee.source_url or '' }}"></td>
+                <td><input form="fees-edit-{{ fee.id }}" type="number" step="any" name="confidence" value="{{ fee.confidence if fee.confidence is not none else '' }}"></td>
+                <td><input form="fees-edit-{{ fee.id }}" name="note" value="{{ fee.note or '' }}"></td>
+                <td class="row-actions">
+                    {{ actions('fees', fee.id, base ~ '/facts/fees/' ~ fee.id ~ '/edit', base ~ '/facts/fees/' ~ fee.id ~ '/delete', base, 'this fee', edit_table, edit_id) }}
+                </td>
+            </tr>
+            {% else %}
             <tr>
                 <td>{{ fee.fee_type }}</td>
                 <td>${{ "%.2f"|format(fee.amount) if fee.amount else '-' }}</td>
                 <td>{{ fee.period or '-' }}</td>
                 <td>{{ fee.currency }}</td>
                 <td class="text-muted text-small truncate">{{ fee.source_url }}</td>
-                <td>{{ "%.0f"|format(fee.confidence * 100) }}%</td>
+                <td>{{ "%.0f"|format(fee.confidence * 100) if fee.confidence else '-' }}%</td>
+                <td class="text-small">{{ fee.note or '-' }}</td>
+                <td class="row-actions">
+                    {{ actions('fees', fee.id, base ~ '/facts/fees/' ~ fee.id ~ '/edit', base ~ '/facts/fees/' ~ fee.id ~ '/delete', base, 'this fee', edit_table, edit_id) }}
+                </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
     </table>
@@ -177,7 +250,7 @@
 {% endif %}
 
 {% if amenities %}
-<div class="card">
+<div class="card" id="amenities">
     <h2>Amenities ({{ amenities|length }})</h2>
     <table>
         <thead>
@@ -186,16 +259,32 @@
                 <th>Detail</th>
                 <th>Source</th>
                 <th>Confidence</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             {% for amenity in amenities %}
+            {% if edit_table == 'amenities' and edit_id == amenity.id %}
+            <tr>
+                <td><input form="amenities-edit-{{ amenity.id }}" name="amenity" value="{{ amenity.amenity or '' }}" required></td>
+                <td><input form="amenities-edit-{{ amenity.id }}" name="detail" value="{{ amenity.detail or '' }}"></td>
+                <td><input form="amenities-edit-{{ amenity.id }}" name="source_url" value="{{ amenity.source_url or '' }}"></td>
+                <td><input form="amenities-edit-{{ amenity.id }}" type="number" step="any" name="confidence" value="{{ amenity.confidence if amenity.confidence is not none else '' }}"></td>
+                <td class="row-actions">
+                    {{ actions('amenities', amenity.id, base ~ '/facts/amenities/' ~ amenity.id ~ '/edit', base ~ '/facts/amenities/' ~ amenity.id ~ '/delete', base, 'this amenity', edit_table, edit_id) }}
+                </td>
+            </tr>
+            {% else %}
             <tr>
                 <td>{{ amenity.amenity }}</td>
                 <td>{{ amenity.detail or '-' }}</td>
                 <td class="text-muted text-small truncate">{{ amenity.source_url }}</td>
-                <td>{{ "%.0f"|format(amenity.confidence * 100) }}%</td>
+                <td>{{ "%.0f"|format(amenity.confidence * 100) if amenity.confidence else '-' }}%</td>
+                <td class="row-actions">
+                    {{ actions('amenities', amenity.id, base ~ '/facts/amenities/' ~ amenity.id ~ '/edit', base ~ '/facts/amenities/' ~ amenity.id ~ '/delete', base, 'this amenity', edit_table, edit_id) }}
+                </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
     </table>
@@ -203,7 +292,7 @@
 {% endif %}
 
 {% if demographics %}
-<div class="card">
+<div class="card" id="demographics">
     <h2>Demographics ({{ demographics|length }})</h2>
     <table>
         <thead>
@@ -213,19 +302,43 @@
                 <th>Owner Occupancy %</th>
                 <th>Population</th>
                 <th>Data Year</th>
+                <th>Geography</th>
                 <th>Source</th>
+                <th>Confidence</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             {% for demo in demographics %}
+            {% if edit_table == 'demographics' and edit_id == demo.id %}
+            <tr>
+                <td><input form="demographics-edit-{{ demo.id }}" type="number" step="any" name="median_age" value="{{ demo.median_age if demo.median_age is not none else '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" type="number" step="any" name="median_household_income" value="{{ demo.median_household_income if demo.median_household_income is not none else '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" type="number" step="any" name="owner_occupancy_pct" value="{{ demo.owner_occupancy_pct if demo.owner_occupancy_pct is not none else '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" type="number" name="population" value="{{ demo.population if demo.population is not none else '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" type="number" name="data_year" value="{{ demo.data_year if demo.data_year is not none else '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" name="geography_level" value="{{ demo.geography_level or '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" name="source_url" value="{{ demo.source_url or '' }}"></td>
+                <td><input form="demographics-edit-{{ demo.id }}" type="number" step="any" name="confidence" value="{{ demo.confidence if demo.confidence is not none else '' }}"></td>
+                <td class="row-actions">
+                    {{ actions('demographics', demo.id, base ~ '/facts/demographics/' ~ demo.id ~ '/edit', base ~ '/facts/demographics/' ~ demo.id ~ '/delete', base, 'this demographics row', edit_table, edit_id) }}
+                </td>
+            </tr>
+            {% else %}
             <tr>
                 <td>{{ demo.median_age or '-' }}</td>
                 <td>${{ '{:,.0f}'.format(demo.median_household_income) if demo.median_household_income else '-' }}</td>
                 <td>{{ "%.1f"|format(demo.owner_occupancy_pct) if demo.owner_occupancy_pct else '-' }}%</td>
                 <td>{{ demo.population or '-' }}</td>
                 <td>{{ demo.data_year or '-' }}</td>
+                <td>{{ demo.geography_level or '-' }}</td>
                 <td class="text-muted text-small truncate">{{ demo.source_url }}</td>
+                <td>{{ "%.0f"|format(demo.confidence * 100) if demo.confidence else '-' }}%</td>
+                <td class="row-actions">
+                    {{ actions('demographics', demo.id, base ~ '/facts/demographics/' ~ demo.id ~ '/edit', base ~ '/facts/demographics/' ~ demo.id ~ '/delete', base, 'this demographics row', edit_table, edit_id) }}
+                </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
     </table>
@@ -233,7 +346,7 @@
 {% endif %}
 
 {% if proximity %}
-<div class="card">
+<div class="card" id="proximity">
     <h2>Proximity ({{ proximity|length }})</h2>
     <table>
         <thead>
@@ -242,16 +355,35 @@
                 <th>Nearest</th>
                 <th>Distance (miles)</th>
                 <th>Source</th>
+                <th>Confidence</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             {% for prox in proximity %}
+            {% if edit_table == 'proximity' and edit_id == prox.id %}
+            <tr>
+                <td><input form="proximity-edit-{{ prox.id }}" name="category" value="{{ prox.category or '' }}" required></td>
+                <td><input form="proximity-edit-{{ prox.id }}" name="nearest_name" value="{{ prox.nearest_name or '' }}"></td>
+                <td><input form="proximity-edit-{{ prox.id }}" type="number" step="any" name="distance_miles" value="{{ prox.distance_miles if prox.distance_miles is not none else '' }}"></td>
+                <td><input form="proximity-edit-{{ prox.id }}" name="source_url" value="{{ prox.source_url or '' }}"></td>
+                <td><input form="proximity-edit-{{ prox.id }}" type="number" step="any" name="confidence" value="{{ prox.confidence if prox.confidence is not none else '' }}"></td>
+                <td class="row-actions">
+                    {{ actions('proximity', prox.id, base ~ '/facts/proximity/' ~ prox.id ~ '/edit', base ~ '/facts/proximity/' ~ prox.id ~ '/delete', base, 'this proximity row', edit_table, edit_id) }}
+                </td>
+            </tr>
+            {% else %}
             <tr>
                 <td>{{ prox.category }}</td>
                 <td>{{ prox.nearest_name or '-' }}</td>
                 <td>{{ "%.2f"|format(prox.distance_miles) if prox.distance_miles else '-' }}</td>
                 <td class="text-muted text-small truncate">{{ prox.source_url }}</td>
+                <td>{{ "%.0f"|format(prox.confidence * 100) if prox.confidence else '-' }}%</td>
+                <td class="row-actions">
+                    {{ actions('proximity', prox.id, base ~ '/facts/proximity/' ~ prox.id ~ '/edit', base ~ '/facts/proximity/' ~ prox.id ~ '/delete', base, 'this proximity row', edit_table, edit_id) }}
+                </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
     </table>
@@ -259,7 +391,7 @@
 {% endif %}
 
 {% if source_urls %}
-<div class="card">
+<div class="card" id="source_urls">
     <h2>Source URLs ({{ source_urls|length }})</h2>
     <table>
         <thead>

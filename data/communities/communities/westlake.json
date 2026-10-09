@@ -1,0 +1,237 @@
+{
+  "id": "8c23d09b-1f78-40c0-ba9e-fbd5fc310cd4",
+  "identity": {
+    "name": "Westlake",
+    "slug": "westlake",
+    "county_fips": null,
+    "city": "Westlake",
+    "hoa_name": "Westlake Residences Master HOA (West Lake Homeowners Association, Inc.)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Westlake is a 3,800-acre master-planned community and incorporated city (2016) in Westlake, FL 33470, in the heart of Palm Beach County. Developed by Minto Communities, it offers 3-4 bedroom townhomes (Courtyard Collection) and 2-6 bedroom single-family and luxury estate homes. Governed by the Westlake Residences Master HOA managed by Vesta Property Services (16290 Town Center Parkway North), the community features the 15-acre Westlake Adventure Park as its centerpiece. Sub-neighborhoods include Terraces of Westlake, Hammocks of Westlake, and Orchards of Westlake. Convenient access to I-95 and the Florida Turnpike provides connections to beaches, recreation, and airports across Palm Beach County and South Florida."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544449Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 0.0,
+      "period": "n/a",
+      "currency": "USD",
+      "note": "No CDD fees; advertised as a key buyer savings feature by developer Minto Communities. Multiple sub-sources confirm zero CDD assessments for Westlake properties. Confidence 0.8 (developer official listing)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wewlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544458Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 250.0,
+      "period": "month (estimated midpoint)",
+      "currency": "USD",
+      "note": "HOA fees described as 'low' with general reported ranges of approximately $100–$400/month depending on sub-association (e.g., Terraces, Hammocks, Orchards). No uniform master fee published; amounts vary by neighborhood and property type. Confidence 0.5 (aggregated secondary source, no primary HOA document)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544462Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 108.0,
+      "period": "quarter (reported as $313–$323/quarter for Terraces of Westlake; ~$104–$108/month equivalent)",
+      "currency": "USD",
+      "note": "Real estate listings indicate quarterly HOA fees around $313–$323 specifically for the Terraces of Westlake townhome sub-association. Other sub-HOAs may differ. Confidence 0.55 (secondary real-estate listing data, not HOA-verified)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544467Z",
+      "confidence": 0.5,
+      "amenity": "pool_resort_style_lagoon_pool_with_tower_slide",
+      "detail": "Centerpiece pool at the 15-acre Westlake Adventure Park; resort-style lagoon pool with a tower slide, described as the primary swimming amenity for all residents."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wewlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544481Z",
+      "confidence": 0.5,
+      "amenity": "pool_adult_lap_pool",
+      "detail": "Dedicated adult lap pool within Westlake Adventure Park, separate from the family lagoon pool."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544484Z",
+      "confidence": 0.5,
+      "amenity": "splash_pad",
+      "detail": "Water play feature for children located in the Westlake Adventure Park area."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544488Z",
+      "confidence": 0.5,
+      "amenity": "playground_adventure_playground",
+      "detail": "Large adventure playground within Westlake Adventure Park; additional playgrounds may exist in sub-neighborhoods."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544491Z",
+      "confidence": 0.5,
+      "amenity": "bmx_pump_park",
+      "detail": "Dedicated BMX pump park in Westlake Adventure Park for cycling and action sports."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544494Z",
+      "confidence": 0.5,
+      "amenity": "basketball_courts",
+      "detail": "Outdoor basketball courts in Westlake Adventure Park; additional courts may be available in sub-neighborhoods."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544497Z",
+      "confidence": 0.5,
+      "amenity": "dog_park_paw_park",
+      "detail": "Dedicated dog park (Paw Park) with green space, accessible to residents; a separate large park with green space and a dog park is also mentioned."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544500Z",
+      "confidence": 0.5,
+      "amenity": "bocce_courts",
+      "detail": "Outdoor bocce courts in the Westlake Adventure Park / community park area."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544502Z",
+      "confidence": 0.5,
+      "amenity": "concert_pavilion",
+      "detail": "Covered pavilion for concerts, events, and gatherings within the community parks."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544504Z",
+      "confidence": 0.5,
+      "amenity": "event_lawns",
+      "detail": "Large event lawns in Westlake Adventure Park for community gatherings, festivals, and private events."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544507Z",
+      "confidence": 0.5,
+      "amenity": "food_truck_court",
+      "detail": "Dedicated food truck court within the community for on-site dining and social gatherings."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wewlfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:10:10.544509Z",
+      "confidence": 0.5,
+      "amenity": "the_lodge",
+      "detail": "The Lodge — a clubhouse/social venue within the Westlake Adventure Park complex, used for events and resident gatherings."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544511Z",
+      "confidence": 0.5,
+      "amenity": "on_site_concessions",
+      "detail": "Concession stands at Westlake Adventure Park for food, beverages, and poolside refreshments."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544514Z",
+      "confidence": 0.5,
+      "amenity": "walking_paths_trails",
+      "detail": "Walking paths and trails throughout the 3,800-acre community and park areas, including a large green-space park."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544517Z",
+      "confidence": 0.5,
+      "amenity": "green_space_park_areas",
+      "detail": "Large park with ample green space maintained by the master association across the 3,800-acre development."
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544520Z",
+      "confidence": 0.5,
+      "amenity": "sales_center_caf_design_center",
+      "detail": "State-of-the-art sales center with interactive display, café, children's playroom, and interior design center (developer-operated; primarily for homebuyers)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.hoabulletinboard.com/hoa/wewlfl/about_hoa/",
+    "retrieved_at": "2026-10-08T19:10:10.544526Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": 2024,
+    "geography_level": "Census Tract / Community (Westlake, FL 33470, Palm Beach County)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544531Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "I-95 / Florida Turnpike",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544534Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Palm Beach County retail and entertainment venues",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm",
+      "retrieved_at": "2026-10-08T19:10:10.544535Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach County beaches and airports",
+      "distance_miles": 20.0
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 250.0,
+          "period": "month (estimated midpoint)",
+          "source_url": "https://www.hoabulletinboard.com/hoa/wewlfl/about_hoa/",
+          "retrieved_at": "2026-10-08T19:10:10.544458+00:00"
+        },
+        {
+          "amount": 108.0,
+          "period": "quarter (reported as $313–$323/quarter for Terraces of Westlake; ~$104–$108/month equivalent)",
+          "source_url": "https://www.hoabulletinboard.com/hoa/twwlfl/about_hoa/",
+          "retrieved_at": "2026-10-08T19:10:10.544462+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T19:10:10.545154Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "I-95 / Florida Turnpike",
+          "distance_miles": 0.0,
+          "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm"
+        },
+        {
+          "nearest_name": "Palm Beach County beaches and airports",
+          "distance_miles": 20.0,
+          "source_url": "https://www.privatecommunities.com/florida/westlake/index.htm"
+        }
+      ],
+      "detected_at": "2026-10-08T19:10:10.545158Z"
+    }
+  ],
+  "created_at": "2026-10-08T19:10:10.545123Z",
+  "updated_at": "2026-10-08T19:10:10.545234Z"
+}

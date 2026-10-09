@@ -1,0 +1,475 @@
+{
+  "id": "4a05886c-7604-4d62-be8a-7b0b5f1c3ea6",
+  "identity": {
+    "name": "Tahiti Beach",
+    "slug": "tahiti-beach",
+    "county_fips": null,
+    "city": "Coral Gables, FL 33143",
+    "hoa_name": "Tahiti Beach Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Private island enclave of 26–29 luxury custom bayfront estates on Biscayne Bay in Coral Gables, nested within Cocoplum Phase 2 (Cocoplum Sec 2 Plat E) — a \"gated community within a gated community\" behind double guards/gates. Conceived in 1926 by Coral Gables founder George Merrick; the HOA is an active Florida not-for-profit corporation incorporated December 4, 1987 (entity #N23726). No fixed bridges; bridge-free deep-water bay access, with 18–21 waterfront estates holding private deep-water docks. Entry price reported at $15M+; management via FirstService Residential (305-255-3000, managertahitibeach@gmail.com)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:49:44.763921Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Detailed HOA fee schedule (monthly/quarterly/annual, transfer, capital contribution, special assessments) is not publicly available in reviewed sources; real estate listings reference quarterly HOA payments only. Exact amounts unknown. (HOA contact: 305-255-3000, managertahitibeach@gmail.com; managed by FirstService Residential.)"
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039962Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 135000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Initial HOA membership fee of $135,000 per community site 'Comparative Summary'. Community's own site; no HOA-published fee schedule found online. Confirm via FirstService Residential (305-255-3000, managertahitibeach@gmail.com)."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039971Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 9000.0,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "HOA dues ~$9,000 per quarter (~$3,000/mo) per community site 'Comparative Summary'."
+    },
+    {
+      "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+      "retrieved_at": "2026-10-09T02:07:38.039974Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 3100.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "MLS A11861683 (26 Tahiti Beach Island Rd, active, upd. 3/12/2026): 'HOA FEE: $3,100/month; HOA FEE FREQ.: Quarterly'. Listing-site figure, lower confidence than HOA budget."
+    },
+    {
+      "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+      "retrieved_at": "2026-10-09T02:07:38.039976Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 9300.0,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Same MLS listing: 'Association Fee: $9,300; Assoc Fee Freq.: Quarterly'. Consistent with $3,100/mo x 3; slightly above the ~$9,000/qtr community-site figure. Both reported, not reconciled."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/tahiti-beach-miami-faqs",
+      "retrieved_at": "2026-10-09T02:07:38.039978Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1500.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Buyer blog estimates ~$1,500-$3,000+/month depending on property size and assessments; owners are part of the Cocoplum master association. Blog source; conflicts with higher figures above - reported separately."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T01:49:44.763929Z",
+      "confidence": 0.5,
+      "amenity": "private_residents_beach",
+      "detail": "Private bayfront community beach on Biscayne Bay used for launching paddleboards and kayaks; direct deep-water bay access with no fixed bridges."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:49:44.763937Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:49:44.763940Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T01:49:44.763942Z",
+      "confidence": 0.5,
+      "amenity": "double_gated_guard_gated_security",
+      "detail": "Guard-gated private island; described as a 'gated community within a gated community' behind the secure master gates of Cocoplum."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:49:44.763946Z",
+      "confidence": 0.5,
+      "amenity": "access_to_cocoplum_clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:49:44.763949Z",
+      "confidence": 0.5,
+      "amenity": "access_to_cocoplum_pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T01:49:44.763951Z",
+      "confidence": 0.5,
+      "amenity": "access_to_cocoplum_fitness_center",
+      "detail": "Access to Cocoplum's clubhouse, pool, fitness center, and other recreational facilities."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T01:49:44.763954Z",
+      "confidence": 0.5,
+      "amenity": "priority_access_to_cocoplum_yacht_club_marina",
+      "detail": "Fully staffed private marina with priority resident access."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T01:49:44.763958Z",
+      "confidence": 0.5,
+      "amenity": "private_deep_water_docks",
+      "detail": "18–21 waterfront/canal-front estates with private deep-water docks accommodating mid-size drafts; zero vertical height restrictions for tall-rig sailing yachts and sportfishers."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039982Z",
+      "confidence": 0.5,
+      "amenity": "private_beach",
+      "detail": "On-island private sandy bayfront beach for launching paddleboards, kayaks, and tenders."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039991Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Private Beach & Reserve on-island: sandy beach, tennis courts & quiet park, isolated from outside traffic."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039993Z",
+      "confidence": 0.5,
+      "amenity": "trails_park",
+      "detail": "Private quiet park/natural reserve on-island, isolated from outside traffic."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039996Z",
+      "confidence": 0.5,
+      "amenity": "yacht_club_marina",
+      "detail": "Priority resident access to fully staffed Cocoplum Yacht Club marina (on-island); 18-21 waterfront estates with private deep-water docks; no fixed bridges (unrestricted deep-water bay access)."
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.039999Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Double-gated (manned gates within Cocoplum master gate) with 24/7 roving patrols; only 26-29 estates."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T02:07:38.040001Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis and pickleball courts plus private residents' beach park; double-gating (Cocoplum master gate plus Tahiti gate)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T02:07:38.040003Z",
+      "confidence": 0.5,
+      "amenity": "pool_clubhouse_fitness",
+      "detail": "Access to Cocoplum's clubhouse, pool, fitness center and other recreational facilities."
+    },
+    {
+      "source_url": "https://www.islandsofcocoplum.net/amenities/",
+      "retrieved_at": "2026-10-09T02:07:38.040006Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Master Cocoplum Phase II (Islands of Cocoplum) amenity: 1,000 sqft gym in Clubhouse, top-of-line equipment, personal trainers, round-the-clock access. Tahiti Beach sits within Cocoplum Phase 2."
+    },
+    {
+      "source_url": "https://www.islandsofcocoplum.net/amenities/",
+      "retrieved_at": "2026-10-09T02:07:38.040008Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Master Cocoplum Phase II amenity: 60-foot climatized Olympic pool; registered swim coaches for kids/teens."
+    },
+    {
+      "source_url": "https://www.islandsofcocoplum.net/amenities/",
+      "retrieved_at": "2026-10-09T02:07:38.040010Z",
+      "confidence": 0.5,
+      "amenity": "yacht_club_marina",
+      "detail": "Master Cocoplum Phase II: Cocoplum Yacht Club marina, slips 40 ft to 120 ft T-Slips, protected from the bay; residents can purchase slips."
+    },
+    {
+      "source_url": "https://www.islandsofcocoplum.net/amenities/",
+      "retrieved_at": "2026-10-09T02:07:38.040013Z",
+      "confidence": 0.5,
+      "amenity": "sports_courts_fields",
+      "detail": "Master Cocoplum Phase II: Olympic-grade beach volleyball court, basketball court (plus kids' court), playground, sports field."
+    },
+    {
+      "source_url": "https://www.islandsofcocoplum.net/membership/faqs/",
+      "retrieved_at": "2026-10-09T02:07:38.040015Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Master Cocoplum Phase II HOA: 24-hour security, Allied Security guards patrol, resident ID required for amenities; association fee covers security, landscaping, amenities, common-area maintenance."
+    },
+    {
+      "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+      "retrieved_at": "2026-10-09T02:07:38.040017Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "MLS A11861683 community block: 'Association: Yes; Pets Allowed: Yes'. Detailed pet rules not published in sources read."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.zip-codes.com/zip-code/33143/zip-code-33143.asp",
+    "retrieved_at": "2026-10-05T17:00:00Z",
+    "confidence": 0.6,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 33711,
+    "data_year": 2024,
+    "geography_level": "ZIP Code 33143 (Census ACS 2024 5-yr; ZIP spans parts of Coral Gables, Glenvar Heights, South Miami, Kendall). No census geography for the 26-29-home enclave itself. Median HH income $83,008 and owner-occupancy 52.54% from same page. Alt ACS 2021 5-yr (uspopulation.org): pop 31,012, median age 40.8, median HH income $74,254. City of Coral Gables (censusflow, ACS 2024 5-yr): pop 49,802, median age 39.1. Not reconciled."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040030Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Carrollton School of the Sacred Heart",
+      "distance_miles": 1.24
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040034Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Ransom Everglades School",
+      "distance_miles": 1.48
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040035Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Sunset Elementary School (public, A-rated, language tracks)",
+      "distance_miles": 1.81
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040036Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "University of Miami",
+      "distance_miles": 3.1
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040038Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Gulliver Preparatory School (dist. not stated; ~5 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040039Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Doctors Hospital (Baptist Health)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040040Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Village of Merrick Park (luxury open-air shopping; ~5-10 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040042Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Miracle Mile, Downtown Coral Gables (~10 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://tahitibeachfl.com/",
+      "retrieved_at": "2026-10-09T02:07:38.040043Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Brickell Financial District",
+      "distance_miles": 7.9
+    },
+    {
+      "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+      "retrieved_at": "2026-10-09T02:07:38.040044Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Sunset Elementary School, 5120 SW 72nd St (PK-5) - zoned",
+      "distance_miles": 1.8
+    },
+    {
+      "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+      "retrieved_at": "2026-10-09T02:07:38.040045Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Ponce De Leon Middle School, 5801 Augusto St (6-8) - zoned",
+      "distance_miles": 1.8
+    },
+    {
+      "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+      "retrieved_at": "2026-10-09T02:07:38.040047Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Coral Gables Senior High School, 450 Bird Road (9-12) - zoned",
+      "distance_miles": 2.5
+    },
+    {
+      "source_url": "https://mdpls.org/branch-coral-gables",
+      "retrieved_at": "2026-10-09T02:07:38.040048Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Coral Gables Branch, Miami-Dade Public Library (3443 Segovia St, Coral Gables FL 33134)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Redfin listing for 2 Tahiti Beach Island Rd (page would not render; search snippet only) reportedly states: 'Quarterly Tahiti Beach HOA dues are $7,500 and $1,500 for CocoPlum. Initial homeowners association membership fee of $135,000 required' - unverified, needs confirmation.",
+    "No CDD or CDD special assessment was identified in any source read; Cocoplum/Tahiti Beach appear HOA-based (Islands of Cocoplum HOA Phase II + Tahiti Beach HOA). Confirm whether any CDD assessment applies.",
+    "No public HOA fee schedule or budget found; manager portal TahitiBeachHOA.connectresident.com would not render. Request estoppel/budget from FirstService Residential (305-255-3000, managertahitibeach@gmail.com, c/o 5200 Waterford District Dr Ste 1000, Miami FL 33126 per hoabulletinboard).",
+    "Fee conflicts remain unresolved: ~$9,000/qtr (community site) vs $9,300/qtr or $3,100/mo (MLS 26 Tahiti Beach Island Rd) vs $1,500-$3,000+/mo (allinmiami blog) vs $7,500+$1,500/qtr (unverified Redfin snippet).",
+    "Nearest grocery and its distance not verified on any page read (Whole Foods Coral Gables, 6701 Red Rd, is in the area per search results only).",
+    "Distance from Tahiti Beach to the Coral Gables library branch not stated in sources read (address verified via mdpls.org).",
+    "Pet policy, architectural guidelines, rental restrictions and detailed rules not published in sources read beyond 'Pets Allowed: Yes' in one MLS listing.",
+    "Demographics are ZIP-code/city level only; no census data exists for the enclave itself (26-29 homes).",
+    "Current sale activity/entry price: 26 Tahiti Beach Island Rd listed $17,990,000 (MLS A11861683); 10 Tahiti Beach Island Rd listed $52,500,000 (MLS A11971257, snippet only); 3 Tahiti Beach Island Rd sold $11.7M Oct 2025 (Zillow, snippet only) - market context, not fees."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 3100.0,
+          "period": "monthly",
+          "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+          "retrieved_at": "2026-10-09T02:07:38.039974+00:00"
+        },
+        {
+          "amount": 1500.0,
+          "period": "monthly",
+          "source_url": "https://www.allinmiami.com/blog/tahiti-beach-miami-faqs",
+          "retrieved_at": "2026-10-09T02:07:38.039978+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T02:07:38.040604Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/tacgfl/about_hoa/",
+          "retrieved_at": "2026-10-09T01:49:44.763921+00:00"
+        },
+        {
+          "amount": 135000.0,
+          "period": "one-time",
+          "source_url": "https://tahitibeachfl.com/",
+          "retrieved_at": "2026-10-09T02:07:38.039962+00:00"
+        },
+        {
+          "amount": 9000.0,
+          "period": "quarterly",
+          "source_url": "https://tahitibeachfl.com/",
+          "retrieved_at": "2026-10-09T02:07:38.039971+00:00"
+        },
+        {
+          "amount": 9300.0,
+          "period": "quarterly",
+          "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/",
+          "retrieved_at": "2026-10-09T02:07:38.039976+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T02:07:38.040615Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Carrollton School of the Sacred Heart",
+          "distance_miles": 1.24,
+          "source_url": "https://tahitibeachfl.com/"
+        },
+        {
+          "nearest_name": "Ransom Everglades School",
+          "distance_miles": 1.48,
+          "source_url": "https://tahitibeachfl.com/"
+        },
+        {
+          "nearest_name": "Sunset Elementary School (public, A-rated, language tracks)",
+          "distance_miles": 1.81,
+          "source_url": "https://tahitibeachfl.com/"
+        },
+        {
+          "nearest_name": "University of Miami",
+          "distance_miles": 3.1,
+          "source_url": "https://tahitibeachfl.com/"
+        },
+        {
+          "nearest_name": "Gulliver Preparatory School (dist. not stated; ~5 min drive)",
+          "distance_miles": null,
+          "source_url": "https://tahitibeachfl.com/"
+        },
+        {
+          "nearest_name": "Sunset Elementary School, 5120 SW 72nd St (PK-5) - zoned",
+          "distance_miles": 1.8,
+          "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/"
+        },
+        {
+          "nearest_name": "Ponce De Leon Middle School, 5801 Augusto St (6-8) - zoned",
+          "distance_miles": 1.8,
+          "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/"
+        },
+        {
+          "nearest_name": "Coral Gables Senior High School, 450 Bird Road (9-12) - zoned",
+          "distance_miles": 2.5,
+          "source_url": "https://www.coldwellbankerhomes.com/fl/coral-gables/26-tahiti-beach-island-rd/pid_67095665/"
+        }
+      ],
+      "detected_at": "2026-10-09T02:07:38.040624Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "The Village of Merrick Park (luxury open-air shopping; ~5-10 min drive)",
+          "distance_miles": null,
+          "source_url": "https://tahitibeachfl.com/"
+        },
+        {
+          "nearest_name": "Miracle Mile, Downtown Coral Gables (~10 min drive)",
+          "distance_miles": null,
+          "source_url": "https://tahitibeachfl.com/"
+        }
+      ],
+      "detected_at": "2026-10-09T02:07:38.040626Z"
+    }
+  ],
+  "created_at": "2026-10-09T01:49:44.764451Z",
+  "updated_at": "2026-10-09T02:07:38.040705Z"
+}

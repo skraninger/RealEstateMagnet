@@ -1,0 +1,129 @@
+{
+  "id": "af235561-f500-4c1a-b52d-c52473587053",
+  "identity": {
+    "name": "Parkland Golf & Country Club",
+    "slug": "parkland-golf-country-club",
+    "county_fips": null,
+    "city": "Parkland, FL 33076",
+    "hoa_name": "Parkland Golf & Country Club Homeowners Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Private, family-focused gated community in Parkland, FL with controlled access, centered on an 18-hole, par-72 Greg Norman-designed golf course. Self-managed HOA (HOA office). Governed by Florida Statute Chapter 720 (HOA Act)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/parkland-golf-and-country-club",
+      "retrieved_at": "2026-10-08T20:43:21.941372Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1100.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-submitted range of $1,000-$1,200/month (normalized median ~$1,100); not a guaranteed fee - verify with the association. Per hoa-resource.com, dues include common area maintenance, reserves, trash removal, water, and pest control. No special assessment signals reported yet. Self-managed (HOA office); units unknown. 0 formal reviews; fee labeled resident-verified only."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.parklandgcc.com/",
+      "retrieved_at": "2026-10-08T20:43:21.941385Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "18-hole, par-72 Greg Norman-designed golf course surrounding the community"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941395Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Two clubhouses at the center of the community experience"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941398Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Exceptional dining available at the clubhouses"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941400Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pools"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941402Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts (racquet sports)"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941405Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Pickleball courts (racquet sports)"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941407Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness and wellness programming"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941409Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa offerings"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941411Z",
+      "confidence": 0.5,
+      "amenity": "kids_programs",
+      "detail": "Family programming / kids programming"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941414Z",
+      "confidence": 0.5,
+      "amenity": "social_events",
+      "detail": "Year-round social events designed for all ages"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/parkland-golf-and-country-club",
+      "retrieved_at": "2026-10-08T20:43:21.941416Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated community with controlled access"
+    },
+    {
+      "source_url": "https://www.parklandgcc.com/about-us",
+      "retrieved_at": "2026-10-08T20:43:21.941419Z",
+      "confidence": 0.5,
+      "amenity": "membership_tiers",
+      "detail": "Tiered memberships: Sports Membership (tennis, pickleball, fitness, spa, kids programming, dining, social events) and full Golf Membership adding 18-hole course + complete practice facilities access"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Parkland-Pompano-Beach/Parkland-Golf-and-Country-Club-Demographics.html",
+    "retrieved_at": "2026-10-08T20:43:21.941424Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 6754,
+    "data_year": null,
+    "geography_level": "neighborhood/community (census-based per point2homes.com); gender: 49.1% male, 50.9% female"
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T20:43:21.942017Z",
+  "updated_at": "2026-10-08T20:43:21.942146Z"
+}

@@ -1,0 +1,424 @@
+{
+  "id": "a695638a-f4a7-4400-a2b6-d3d87414d350",
+  "identity": {
+    "name": "Azure Palm Beaches",
+    "slug": "azure-palm-beaches",
+    "county_fips": null,
+    "city": "Palm Beach Gardens / West Palm Beach",
+    "hoa_name": "Azure Condominium Association of PBG, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Azure Palm Beaches (operating as the Azure Condo Association of Palm Beach Gardens) is a 100-unit residential condominium community at 2700 Donald Ross Rd, West Palm Beach / Palm Beach Gardens, FL 33410, Palm Beach County. The HOA (Federal ID 81-3264985) was established June 26, 2014. The community is gated and offers extensive amenities including a community pool, spa, sauna, clubhouse, fitness center, dock, and canal. Official site: https://azurepalmbeaches.com/. HOA fee amounts were not stated in the provided sources and remain unverified by residents."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/azure-condo",
+      "retrieved_at": "2026-10-08T17:19:29.189399Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fees are required (listed as 'HOA Required Plus Fees' on florida-condo-associations.com) but no amount is stated in the provided content. Per hoa-agent.com, this community's fee has not yet been verified by residents. The average monthly HOA fee for Palm Beach Gardens is approximately $641 (area average only, NOT specific to this community). No CDD/special assessment signals reported yet for this community. Verify directly with the association or its property manager. Utilities (FPL electric, Seacoast Utility Authority water/sewer, SWA Palm Beach County trash) are listed as services but are not HOA fee amounts as stated in the sources. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.3)"
+    },
+    {
+      "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+      "retrieved_at": "2026-10-08T17:40:43.773066Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 3997.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "HOA fee per active MLS listing B26084181 (unit 503, asking $4,795,000, Leibowitz Realty Group, Beaches MLS; est. taxes $27,096/yr). Listing-site figure, not confirmed by the association - verify via estoppel certificate. Only concrete fee amount found in any source. (Same figure appears on movoto.com syndication of the same MLS listing.) retrieved_at 2026-10-08T12:00:00Z is a nominal session timestamp; page shows MLS data current as of Oct 2026."
+    },
+    {
+      "source_url": "https://www.movoto.com/palm-beach-gardens-fl/2700-donald-ross-rd-apt-503-palm-beach-gardens-fl-33410-435_rx-10612592/",
+      "retrieved_at": "2026-10-08T17:40:43.773078Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 3997.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "Movoto (Beaches MLS B26084181): HOA $3,997/month; 'HOA Fee Includes': common areas, insurance, maintenance/grounds, security, trash. Same underlying MLS listing as the raveis.com fact."
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:40:43.773083Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Florida state association directory (Azure Condo Association of Palm Beach Gardens): 'Association HOA Fee' field is blank - 'HOA Required Plus Fees'. Confirms HOA is mandatory but publishes no amount. Association legal name AZURE CONDOMINIUM ASSOCIATION OF PBG, INC., est. 06/26/2014, Federal ID 81-3264985."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/azure-condo",
+      "retrieved_at": "2026-10-08T17:40:43.773087Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA-Agent profile (updated Oct 8, 2026): 'AZURE CONDO's fee has not yet been verified by residents'; no assessment signals reported; 100 units; managed by FirstService Residential (per this site - conflicts with FPMS per state directory, see open_questions). Palm Beach Gardens average condo fee cited ~$641/mo (area context only)."
+    },
+    {
+      "source_url": "https://www.communitypay.us/directory/florida/palm-beach-gardens/azure-condominium-association-of-pbg-inc/",
+      "retrieved_at": "2026-10-08T17:40:43.773090Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 472.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "NOT Azure's fee: page labels this 'Area HOA Fees - Palm Beach County median $472/mo' (area benchmark only). Page also confirms condo registered/active since 2014 and 19 resale disclosures required under Fla. Stat. 718.116; risk rating 'Relatively High' per site."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189409Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Explicitly listed as a gated community. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189417Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189421Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189423Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189425Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189427Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189430Z",
+      "confidence": 0.5,
+      "amenity": "recreational_facilities",
+      "detail": "General recreational facilities listed. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189433Z",
+      "confidence": 0.5,
+      "amenity": "game_room",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189435Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189437Z",
+      "confidence": 0.5,
+      "amenity": "bbq_area",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189439Z",
+      "confidence": 0.5,
+      "amenity": "dock",
+      "detail": "Waterfront dock access. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189441Z",
+      "confidence": 0.5,
+      "amenity": "canal",
+      "detail": "Canal-front location. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189444Z",
+      "confidence": 0.5,
+      "amenity": "community_room",
+      "detail": "(retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189446Z",
+      "confidence": 0.5,
+      "amenity": "elevator",
+      "detail": "Elevator in the building. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.6)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:19:29.189448Z",
+      "confidence": 0.5,
+      "amenity": "pets_allowed",
+      "detail": "Listed under amenities; pet policy specifics not detailed in provided content. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.5)"
+    },
+    {
+      "source_url": "https://azurepalmbeaches.com/amenities/",
+      "retrieved_at": "2026-10-08T17:40:43.773097Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry_security",
+      "detail": "24/7 manned entry access gate on the 14-acre private gated community; MLS security features also list GatedWithGuard, security system, fire alarm/sprinkler system, on-site security guard."
+    },
+    {
+      "source_url": "https://azurepalmbeaches.com/amenities/",
+      "retrieved_at": "2026-10-08T17:40:43.773112Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "'Walk-in' resort pool surrounded by cabanas overlooking the Marina; poolside terrace with bar and catering kitchen, his-and-her dressing rooms, outdoor grilling areas, and a party fire pit."
+    },
+    {
+      "source_url": "https://azurepalmbeaches.com/amenities/",
+      "retrieved_at": "2026-10-08T17:40:43.773118Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center overlooking the water (also confirmed in MLS amenities list)."
+    },
+    {
+      "source_url": "https://azurepalmbeaches.com/amenities/",
+      "retrieved_at": "2026-10-08T17:40:43.773124Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_residents_club",
+      "detail": "Resident's club room; grand entrance lobby and concierge station; 'incomparable concierge lifestyle' (home page)."
+    },
+    {
+      "source_url": "https://azurepalmbeaches.com/amenities/",
+      "retrieved_at": "2026-10-08T17:40:43.773131Z",
+      "confidence": 0.5,
+      "amenity": "marina_dock",
+      "detail": "1,300 feet of waterfront on Loggerhead Marina (Intracoastal Waterway); yacht slips available up to 120 feet; on-site marina and fuel services; residents can dock in their own backyard."
+    },
+    {
+      "source_url": "https://azurepalmbeaches.com/amenities/",
+      "retrieved_at": "2026-10-08T17:40:43.773137Z",
+      "confidence": 0.5,
+      "amenity": "trails_landscaping",
+      "detail": "14 acres of gardens and fountains, walking paths, palm-lined paver drives; lush landscaping."
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:40:43.773142Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Listed among association amenities (also 'Spa/Hot Tub' in MLS amenities)."
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:40:43.773147Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Listed among association amenities; andresjara.com adds a steam room alongside the sauna in a large fitness center."
+    },
+    {
+      "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+      "retrieved_at": "2026-10-08T17:40:43.773152Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Golf simulator and putting green (MLS amenities)."
+    },
+    {
+      "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+      "retrieved_at": "2026-10-08T17:40:43.773158Z",
+      "confidence": 0.5,
+      "amenity": "billiard_room_game_room",
+      "detail": "Billiard room and game room in MLS amenities; state directory also lists Billiards and Game Room; andresjara.com adds a card room and social lounge."
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+      "retrieved_at": "2026-10-08T17:40:43.773164Z",
+      "confidence": 0.5,
+      "amenity": "bbq_area",
+      "detail": "Listed among association amenities."
+    },
+    {
+      "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+      "retrieved_at": "2026-10-08T17:40:43.773170Z",
+      "confidence": 0.5,
+      "amenity": "building_services",
+      "detail": "Elevators, private storage, bike storage, business center, community room, lobby, trash chute, manager on site; 5-story mid-rise buildings (2 buildings per official residences page); 2 assigned covered garage spaces per unit in active listing."
+    },
+    {
+      "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+      "retrieved_at": "2026-10-08T17:40:43.773175Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "MLS: 'Yes, Pet Restrictions Possible'; state directory lists 'Pets Allowed'; HOA-Agent marks pet rules Unknown - details unverified."
+    },
+    {
+      "source_url": "https://www.andresjara.com/building/azure-2700-2720/",
+      "retrieved_at": "2026-10-08T17:40:43.773181Z",
+      "confidence": 0.5,
+      "amenity": "additional_amenities_secondary_source",
+      "detail": "Two outdoor pools (resort-style + lap pool), two outdoor spas, poolside cabanas, large fitness center with sauna and steam rooms, private climate-controlled wine room, club room and card room, social lounge, business center, putting green, marina walking path, outdoor grilling area, 24/7 manned gate and concierge. Unit count 'around 101-120 residences' in two five-story buildings."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.zip-codes.com/zip-code/33410/zip-code-33410.asp",
+    "retrieved_at": "2026-10-08T17:40:43.773192Z",
+    "confidence": 0.5,
+    "median_age": 47.5,
+    "median_household_income": 94530.0,
+    "owner_occupancy_pct": 72.34,
+    "population": 36759,
+    "data_year": 2024,
+    "geography_level": "ZIP Code Tabulation Area (ZCTA) 33410, Palm Beach Gardens, FL - area surrounding the community; no census data exists at the 100-101 unit community level. Aggregator citing Census ACS; Census Reporter profile for 33410 lists population 36,759 (consistent)."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://statedemographics.com/florida/palm-beach-gardens/",
+      "retrieved_at": "2026-10-08T17:19:29.189453Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 60959,
+      "data_year": 2024,
+      "geography_level": "City — Palm Beach Gardens, FL (ZIP 33410 area), ACS 2020–2024 five-year estimates; NOT community-specific. Median age and owner-occupancy % not stated in provided content. (retrieved_at: 2025-01-01T00:00:00Z; confidence: 0.8)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://azurepalmbeaches.com/",
+      "retrieved_at": "2026-10-08T17:40:43.773202Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Donald Ross Plaza, The Gardens Mall, Abacoa Downtown, and the PGA Boulevard restaurants/shopping corridor (Juno Beach also cited)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.palmbeachhealthnetwork.com/locations/detail/palm-beach-gardens-medical-center",
+      "retrieved_at": "2026-10-08T17:40:43.773208Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Palm Beach Gardens Medical Center, 3360 Burns Rd, Palm Beach Gardens FL 33410 (199-bed acute care, 24-hour emergency care)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://my.clevelandclinic.org/locations/directions/232-palm-beach-gardens",
+      "retrieved_at": "2026-10-08T17:40:43.773218Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Cleveland Clinic Medical Outpatient Center, 4520 Donald Ross Rd, Palm Beach Gardens FL 33418 (outpatient imaging/radiology center on the same road as the community)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.pbclibrary.org/locations/gardens/",
+      "retrieved_at": "2026-10-08T17:40:43.773222Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Palm Beach County Public Library - Gardens Branch (neighborhood library serving the Palm Beach Gardens area); address 11303 Campus Dr per search snippet of this page - not in retrieved text",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+      "retrieved_at": "2026-10-08T17:40:43.773225Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Dwight D. Eisenhower K-8 (assigned elementary/middle school; K-8, grade A, enrollment 461 per district page; address 2926 Lone Pine Rd per search snippet of ddee.palmbeachschools.org)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.zillow.com/b/2700-palm-beach-gardens-fl-5Y4HtQ/",
+      "retrieved_at": "2026-10-08T17:40:43.773228Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Howell L. Watkins Middle School and William T. Dwyer High School (assigned schools for 2700 Donald Ross Rd per Zillow; same set per MLS listing)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Official HOA/CDD fee amounts are not published anywhere found: state association directory fee field is blank and HOA-Agent reports the fee 'has not yet been verified by residents'. The only figure found is $3,997/month on active MLS listing B26084181 (unit 503) syndicated via Beaches MLS (raveis.com, movoto.com) - treat as listing-level and confirm via estoppel certificate (19 disclosures required under Fla. Stat. 718.116).",
+    "The $472/month figure on CommunityPay is explicitly a Palm Beach County area-median benchmark, not Azure's fee - do not use as the community's HOA dues.",
+    "No CDD special-assessment data found in any source; HOA-Agent reports 'no assessment signals' as of its Oct 2026 update.",
+    "Management company conflict: HOA-Agent says FirstService Residential; the Florida state directory lists FPMS, 5600 Granada Dr, Sarasota FL 34231 (941-960-5000).",
+    "Exact distances (miles) to the hospital, library, and schools could not be verified from any page read; the official site only states residents live 'less than two miles' from Juno Beach, The Gardens Mall, Abacoa Downtown, Donald Ross Plaza, and PGA Boulevard shopping - recorded as null distances for that reason.",
+    "Nearest grocery store not specifically identified (The Gardens Mall and Abacoa are the cited shopping areas within ~2 miles).",
+    "Which Palm Beach County library branch is actually closest to 2700 Donald Ross Rd is unverified; Gardens Branch is identified as the neighborhood library for the Palm Beach Gardens area.",
+    "Demographic figures conflict between sources for ZCTA 33410 (different ACS vintages): zip-codes.com (2024 ACS: pop 36,759; median age 47.5; MHI $94,530; owner-occ 72.34%) vs andresjara.com (ACS per its page: pop 36,409; median age 44.9; owner-occ 72.3%; per-capita income $69,957; 48.3% bachelor's+). Reported as separate values; not reconciled.",
+    "Unit count conflict: official site says 101 residences; HOA-Agent says 100 units; amprorealty.com says 113 private gated-entry units at 2700/2720 Donald Ross Rd.",
+    "Pet restrictions detail is unknown (MLS: 'Pet Restrictions Possible'; HOA-Agent: Unknown). Short-term rental rules also unknown per HOA-Agent.",
+    "Census Reporter profile page for ZCTA 33410 returned only the population figure (36,759) due to JavaScript rendering; full ACS tables were taken from the zip-codes.com aggregator citing Census ACS instead."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/azure-condo",
+          "retrieved_at": "2026-10-08T17:19:29.189399+00:00"
+        },
+        {
+          "amount": 3997.0,
+          "period": "month",
+          "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410",
+          "retrieved_at": "2026-10-08T17:40:43.773066+00:00"
+        },
+        {
+          "amount": 3997.0,
+          "period": "month",
+          "source_url": "https://www.movoto.com/palm-beach-gardens-fl/2700-donald-ross-rd-apt-503-palm-beach-gardens-fl-33410-435_rx-10612592/",
+          "retrieved_at": "2026-10-08T17:40:43.773078+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N14000006128",
+          "retrieved_at": "2026-10-08T17:40:43.773083+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoa-agent.com/community/azure-condo",
+          "retrieved_at": "2026-10-08T17:40:43.773087+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T17:40:43.774262Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Dwight D. Eisenhower K-8 (assigned elementary/middle school; K-8, grade A, enrollment 461 per district page; address 2926 Lone Pine Rd per search snippet of ddee.palmbeachschools.org)",
+          "distance_miles": null,
+          "source_url": "https://www.raveis.com/prop/B26084181/2700-donald-ross-road-unit-503-palm-beach-gardens-fl-33410"
+        },
+        {
+          "nearest_name": "Howell L. Watkins Middle School and William T. Dwyer High School (assigned schools for 2700 Donald Ross Rd per Zillow; same set per MLS listing)",
+          "distance_miles": null,
+          "source_url": "https://www.zillow.com/b/2700-palm-beach-gardens-fl-5Y4HtQ/"
+        }
+      ],
+      "detected_at": "2026-10-08T17:40:43.774276Z"
+    }
+  ],
+  "created_at": "2026-10-08T17:19:29.189969Z",
+  "updated_at": "2026-10-08T17:40:43.774423Z"
+}

@@ -21,6 +21,26 @@
       "period": null,
       "currency": "USD",
       "note": "HOA fees, club dues, property taxes, insurance, and community association costs are identified as significant ongoing ownership expenses ('the acquisition price is truly just your entry ticket'), but NO specific dollar amounts are stated in the provided content. Verify current amounts with the community association/seller disclosures. Confidence reflects unquantified amounts (brokerage marketing content)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022762Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 53378.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "FICA master association dues (recent reference). Mandatory for all owners. Exact current fees not uniformly published; transfer fees, capital contributions, and special assessments handled per governing documents and not detailed in public sources."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022775Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "month or quarter",
+      "currency": "USD",
+      "note": "Building-specific condominium fees often in the thousands per month or quarter; vary by property and are not uniformly published publicly."
     }
   ],
   "amenities": [
@@ -65,20 +85,109 @@
       "confidence": 0.5,
       "amenity": "private_ferry_service",
       "detail": "Controlled/private ferry is the standard means of access; private yacht and authorized helicopter also permitted. No public bridge connects the island to Miami Beach."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022782Z",
+      "confidence": 0.5,
+      "amenity": "private_ferry_system",
+      "detail": "Primary access to the island by private ferry or yacht; no bridge or public road access."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022798Z",
+      "confidence": 0.5,
+      "amenity": "the_links_9_hole_golf_course",
+      "detail": "Golf course maintained for residents and club members."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022807Z",
+      "confidence": 0.5,
+      "amenity": "racquet_club",
+      "detail": "17 tennis courts and pickleball courts."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022814Z",
+      "confidence": 0.5,
+      "amenity": "beach_club",
+      "detail": "Private beach and pools."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022820Z",
+      "confidence": 0.5,
+      "amenity": "spa_internazionale_and_fitness_facilities",
+      "detail": "Spa and fitness center."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022828Z",
+      "confidence": 0.5,
+      "amenity": "marinas",
+      "detail": "Marina facilities on the island's private waterfront."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022833Z",
+      "confidence": 0.5,
+      "amenity": "vanderbilt_mansion",
+      "detail": "Pool and clubhouse areas."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022839Z",
+      "confidence": 0.5,
+      "amenity": "green_spaces",
+      "detail": "Maintained grounds on the island."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022845Z",
+      "confidence": 0.5,
+      "amenity": "aviary",
+      "detail": "On-island aviary."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022850Z",
+      "confidence": 0.5,
+      "amenity": "security_and_public_safety_services",
+      "detail": "Provided by FICA; includes sustainability and security features typical of high-end private enclaves."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022858Z",
+      "confidence": 0.5,
+      "amenity": "fisher_island_club_membership",
+      "detail": "Equity membership in the club is mandatory upon property purchase; access to amenities primarily for residents and club members."
     }
   ],
   "demographics": {
-    "source_url": "https://en.wikipedia.org/wiki/Fisher_Island,_Florida",
-    "retrieved_at": "2026-10-06T22:41:55.670237Z",
+    "source_url": "browser:google",
+    "retrieved_at": "2026-10-08T01:02:55.022867Z",
     "confidence": 0.5,
     "median_age": null,
     "median_household_income": null,
     "owner_occupancy_pct": null,
-    "population": 561,
-    "data_year": 2020,
-    "geography_level": "Census-designated place (CDP), ZIP 33109; density 2,330/sq mi (899/km2). Population is the 2020 U.S. Census figure. Median age, median household income, and owner-occupancy rate are NOT stated in the provided content (left null). Confidence 0.7 (reputable secondary source)."
+    "population": null,
+    "data_year": null,
+    "geography_level": "zip_code (33109)"
   },
-  "demographics_history": [],
+  "demographics_history": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Fisher_Island,_Florida",
+      "retrieved_at": "2026-10-06T22:41:55.670237Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 561,
+      "data_year": 2020,
+      "geography_level": "Census-designated place (CDP), ZIP 33109; density 2,330/sq mi (899/km2). Population is the 2020 U.S. Census figure. Median age, median household income, and owner-occupancy rate are NOT stated in the provided content (left null). Confidence 0.7 (reputable secondary source)."
+    }
+  ],
   "proximity": [
     {
       "source_url": "https://ivanandmike.com/miami-beach-real-estate/fisher-island/",
@@ -94,6 +203,14 @@
       "confidence": 0.5,
       "category": "other",
       "nearest_name": "South Pointe Park (directly across the water at the mouth of Government Cut)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T01:02:55.022875Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami (urban amenities)",
       "distance_miles": null
     }
   ],
@@ -111,11 +228,16 @@
           "nearest_name": "South Pointe Park (directly across the water at the mouth of Government Cut)",
           "distance_miles": null,
           "source_url": "https://www.allinmiami.com/blog/fisher-island-miami-faqs"
+        },
+        {
+          "nearest_name": "Miami (urban amenities)",
+          "distance_miles": null,
+          "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-06T22:41:55.671222Z"
+      "detected_at": "2026-10-08T01:05:01.675676Z"
     }
   ],
   "created_at": "2026-10-06T22:41:55.671150Z",
-  "updated_at": "2026-10-06T22:41:55.671460Z"
+  "updated_at": "2026-10-08T01:05:01.675756Z"
 }

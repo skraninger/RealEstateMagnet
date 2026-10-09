@@ -1,23 +1,776 @@
 {
-  "id": "7be0b582-82d4-4cc0-91c5-fb40406c76e5",
+  "id": "3522da31-acbf-422a-83e6-96178eda34e5",
   "identity": {
     "name": "Grey Oaks Country Club",
     "slug": "grey-oaks-country-club",
     "county_fips": null,
-    "city": "Naples",
-    "hoa_name": null,
+    "city": "Naples, Florida",
+    "hoa_name": "Grey Oaks Master Association",
     "cdd_name": null,
     "is_gated": true,
     "geo_point": null,
-    "notes": null
+    "notes": "Private luxury golf community in Naples, Florida, founded in the early 1990s by developer Bob Ollerenshaw with golf course architects Clifton, Ezell & Clifton. Features three golf courses (Pine, Palm, and Estuary) and a country club in which membership (Equity Golf or Equity Sports) has been mandatory by covenant for all buyers since June 1, 2014. Fee stack consists of three layers: master POA, neighborhood association, and club membership — with zero CDD."
   },
-  "fees": [],
-  "amenities": [],
-  "demographics": null,
-  "demographics_history": [],
-  "proximity": [],
+  "fees": [
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171210Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 6036.0,
+      "period": "yearly",
+      "currency": "USD",
+      "note": "Master POA (Grey Oaks side): $1,509/qtr (≈$6,036/yr), incl. bulk cable + internet, security monitoring, access control. Per official POA buyer-disclosure form, as of July 2026; verify via estoppel certificate for a specific home."
+    },
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171221Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 13380.0,
+      "period": "yearly",
+      "currency": "USD",
+      "note": "Master POA — Estuary (own POA): $3,345/qtr (≈$13,380/yr). Per official POA buyer-disclosure form, as of July 2026; verify via estoppel certificate for a specific home."
+    },
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171224Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Neighborhood association fee varies by enclave: ≈$706/yr (some Estates lots) to $4,381/qtr (Terra Verde condos). As of July 2026."
+    },
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171237Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 0.0,
+      "period": null,
+      "currency": "USD",
+      "note": "None — 'Tax District Type: Not Applicable'; no bond debt on the tax bill."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226760Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": "annual (exact amount not stated)",
+      "currency": "USD",
+      "note": "Master POA covers community-wide infrastructure: common grounds, roads and bridges, gated access and guardhouse staffing, irrigation, and bulk cable and internet. No dollar figure stated on page. A single address can sit under three separate billing entities at once (POA + neighborhood HOA + club). Source: Grey Oaks Has 19 HOAs: What Buyers Should Know (retrieved 2026-05-15T12:00:00Z)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226775Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "initiation cost + annual dues (amounts not stated)",
+      "currency": "USD",
+      "note": "Grey Oaks Country Club runs its own accounting separate from the POA and neighborhood HOAs. Ownership generally requires carrying at least a Social Membership, upgradable to Sports or Full Golf Membership subject to club availability and policies. Each tier carries its own initiation cost and annual dues on top of POA and neighborhood HOA bills. Source: Grey Oaks Has 19 HOAs: What Buyers Should Know (retrieved 2026-05-15T12:00:00Z)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:18:01.113762Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 375000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Full golf equity membership purchase price; provides ownership interest in the club plus access to golf and lifestyle amenities. A waitlist exists for new memberships; buyers of properties with a transferrable membership can skip the waitlist. Non-equity golf joining waitlist option also offered. (Stated as current, page references 2026 dues.) Confidence 0.95, retrieved 2026-01-01T00:00:00Z."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:18:01.113768Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 25286.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Annual golf dues for 2026, in addition to the one-time membership purchase. (Confidence 0.95, retrieved 2026-01-01T00:00:00Z.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760348Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA/neighborhood rules and fees vary by neighborhood association; confirm with the neighborhood association and the club before purchase. No community development district (CDD). No specific dollar amounts stated on the page."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://countryclubmag.com/florida/grey-oaks-country-club/",
+      "retrieved_at": "2026-10-08T02:07:54.171241Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Three golf courses: Pine Course, Palm Course, and Estuary Course. Pine Course designed by Clifton, Ezell & Clifton. Club established in the early 1990s by developer Bob Ollerenshaw in partnership with Clifton, Ezell & Clifton."
+    },
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171255Z",
+      "confidence": 0.5,
+      "amenity": "bulk_cable_internet",
+      "detail": "Included in master POA fee (Grey Oaks side)."
+    },
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171264Z",
+      "confidence": 0.5,
+      "amenity": "security_monitoring",
+      "detail": "Included in master POA fee (Grey Oaks side)."
+    },
+    {
+      "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+      "retrieved_at": "2026-10-08T02:07:54.171271Z",
+      "confidence": 0.5,
+      "amenity": "gated_access_access_control",
+      "detail": "Access control included in master POA fee; private country club community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226781Z",
+      "confidence": 0.5,
+      "amenity": "gated_access_with_guardhouse_staffing",
+      "detail": "Handled by the master POA as community-wide infrastructure."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226796Z",
+      "confidence": 0.5,
+      "amenity": "golf_course_championship_course_at_the_estuary_at_grey_oaks",
+      "detail": "The Estuary at Grey Oaks is the community's more exclusive enclave built around its own championship course."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226806Z",
+      "confidence": 0.5,
+      "amenity": "common_grounds_maintenance",
+      "detail": "Community-wide common grounds managed by the master POA."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226812Z",
+      "confidence": 0.5,
+      "amenity": "roads_and_bridges",
+      "detail": "Community roads and bridges maintained by the master POA."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226818Z",
+      "confidence": 0.5,
+      "amenity": "irrigation",
+      "detail": "Community-wide irrigation handled by the master POA."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226824Z",
+      "confidence": 0.5,
+      "amenity": "bulk_cable_and_internet",
+      "detail": "Bulk cable and internet infrastructure provided through the master POA."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:18:01.113771Z",
+      "confidence": 0.5,
+      "amenity": "three_championship_golf_courses",
+      "detail": "54 holes of golf total, a rarity even among Naples' top golf communities, offering varied playing experiences within the community. (Confidence 0.95, retrieved 2026-01-01T00:00:00Z.)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760358Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Three championship courses (Pine, Palm, Estuary), 54 holes total; Performance Center with Inrange technology for PGA instruction and club fitting. Equity members get unlimited year-round golf on all three courses."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760370Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Multiple venues: Pool Cafe, Point Grille, the Estuary, and Grab and Go; wine program with a master sommelier."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760373Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pools."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760376Z",
+      "confidence": 0.5,
+      "amenity": "racquet_sports",
+      "detail": "10 Har-Tru tennis courts, 8 pickleball courts, and bocce."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760380Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Two clubhouses: ~62,000-sq-ft East clubhouse (dining, ballroom, social spaces) and ~19,000-sq-ft West clubhouse (Estuary) overlooking the lake and golf course."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760383Z",
+      "confidence": 0.5,
+      "amenity": "wellness_center",
+      "detail": "30,000-square-foot wellness center offering personal training, group fitness, a spa, and a recovery center."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688184Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Three championship golf courses (Grey Oaks Country Club); views of golf courses available from properties."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688194Z",
+      "confidence": 0.5,
+      "amenity": "wellness_center",
+      "detail": "30,000-square-foot state-of-the-art wellness center."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688197Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Multiple dining venues / dining options at Grey Oaks Country Club."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688199Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis available within the community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688201Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Pickleball available within the community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688203Z",
+      "confidence": 0.5,
+      "amenity": "bocce",
+      "detail": "Bocce available within the community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688205Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.700995Z",
+      "confidence": 0.5,
+      "amenity": "fine_dining",
+      "detail": "At Grey Oaks Country Club, described as the heart of the neighborhood with world-class amenities for residents"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701005Z",
+      "confidence": 0.5,
+      "amenity": "state_of_the_art_wellness_center",
+      "detail": "Provided for residents at Grey Oaks Country Club"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701009Z",
+      "confidence": 0.5,
+      "amenity": "resort_style_pool",
+      "detail": "Provided for residents at Grey Oaks Country Club"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701011Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "At Grey Oaks Country Club"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701013Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "At Grey Oaks Country Club"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701015Z",
+      "confidence": 0.5,
+      "amenity": "three_championship_golf_courses",
+      "detail": "Community is surrounded by lush landscapes, shimmering lakes, and three championship golf courses"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:26:01.439120Z",
+      "confidence": 0.5,
+      "amenity": "parks_dining",
+      "detail": "Plenty to do around Grey Oaks, including shopping, dining, nightlife, and parks (data from Walk Score and Yelp). Nearest dining ~1.09 mi, nearest active/gym facilities ~0.68 mi, nearest beauty ~0.71 mi, with many options out to ~1.8 mi. (Page is a real estate/lifestyle guide for the Grey Oaks area; no specific country club amenities are listed.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "browser:google",
+    "retrieved_at": "2026-10-08T02:26:01.439133Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 747,
+    "data_year": null,
+    "geography_level": "neighborhood (Grey Oaks, Naples, FL); average individual income $156,523; 401 households, avg household size 2; population density 695/sq mi; largest age group 65+ (median age 68). No explicit data year or median household income stated."
+  },
+  "demographics_history": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:16:34.226832Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": 2026,
+      "geography_level": "community (market analysis of Naples golf communities through end of 2025; Estuary at Grey Oaks prices for 3 months ending May 2026; no population, age, income, or occupancy figures stated on page)"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701020Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 747,
+      "data_year": null,
+      "geography_level": "neighborhood"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:18:01.113782Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Naples white-sand beaches / Gulf of Mexico",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760389Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Walmart Neighborhood Market",
+      "distance_miles": 1.3
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760393Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Asia Market",
+      "distance_miles": 1.9
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760394Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Gordon Food Service Store",
+      "distance_miles": 2.1
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760396Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "TJ Maxx",
+      "distance_miles": 1.3
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760398Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Bealls",
+      "distance_miles": 1.4
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760400Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Ross",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760401Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Collier Neurologic Specialists",
+      "distance_miles": 0.4
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760403Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Kent V. Hasen, M.D.",
+      "distance_miles": 0.4
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760405Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "SWFL Pelvic Health Clinic",
+      "distance_miles": 0.4
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760406Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Poinciana Elementary School",
+      "distance_miles": 0.7
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760408Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Optima Academy Online",
+      "distance_miles": 1.8
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:20:13.760410Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Mason Classical Academy",
+      "distance_miles": 1.9
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688209Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Naples shopping districts",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688212Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Naples cultural attractions",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:21:28.688213Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Naples pristine beaches",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701024Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Waterside Shops",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701028Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Artis—Naples",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701029Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Old Naples / downtown Naples",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701030Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": 1.09
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701032Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": null,
+      "distance_miles": 0.68
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:24:00.701033Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": null,
+      "distance_miles": 0.71
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:26:01.439140Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Dining (nearest of 6 dining venues listed, 0.7–1.8 mi range)",
+      "distance_miles": 1.09
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:26:01.439144Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Active (nearest of 11 active/recreation venues listed)",
+      "distance_miles": 0.68
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T02:26:01.439145Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Beauty (nearest of 7 beauty venues listed)",
+      "distance_miles": 0.71
+    }
+  ],
   "open_questions": [],
-  "discrepancies": [],
-  "created_at": "2026-10-07T04:56:21.719460Z",
-  "updated_at": "2026-10-07T04:56:21.719498Z"
+  "discrepancies": [
+    {
+      "field": "fees.hoa_annual",
+      "values": [
+        {
+          "amount": 6036.0,
+          "period": "yearly",
+          "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+          "retrieved_at": "2026-10-08T02:07:54.171210+00:00"
+        },
+        {
+          "amount": 13380.0,
+          "period": "yearly",
+          "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+          "retrieved_at": "2026-10-08T02:07:54.171221+00:00"
+        },
+        {
+          "amount": null,
+          "period": "annual (exact amount not stated)",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-08T02:16:34.226760+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T02:26:01.440044Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://naplesliving.us/communities/grey-oaks/fees-and-membership/",
+          "retrieved_at": "2026-10-08T02:07:54.171224+00:00"
+        },
+        {
+          "amount": null,
+          "period": "initiation cost + annual dues (amounts not stated)",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-08T02:16:34.226775+00:00"
+        },
+        {
+          "amount": 375000.0,
+          "period": "one-time",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-08T02:18:01.113762+00:00"
+        },
+        {
+          "amount": 25286.0,
+          "period": "annual",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-08T02:18:01.113768+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-08T02:20:13.760348+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T02:26:01.440051Z"
+    },
+    {
+      "field": "proximity.grocery",
+      "values": [
+        {
+          "nearest_name": "Walmart Neighborhood Market",
+          "distance_miles": 1.3,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Asia Market",
+          "distance_miles": 1.9,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Gordon Food Service Store",
+          "distance_miles": 2.1,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-08T02:26:01.440055Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Naples white-sand beaches / Gulf of Mexico",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Collier Neurologic Specialists",
+          "distance_miles": 0.4,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Kent V. Hasen, M.D.",
+          "distance_miles": 0.4,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "SWFL Pelvic Health Clinic",
+          "distance_miles": 0.4,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Naples cultural attractions",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Naples pristine beaches",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Artis—Naples",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": null,
+          "distance_miles": 0.68,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": null,
+          "distance_miles": 0.71,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Dining (nearest of 6 dining venues listed, 0.7–1.8 mi range)",
+          "distance_miles": 1.09,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Active (nearest of 11 active/recreation venues listed)",
+          "distance_miles": 0.68,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Beauty (nearest of 7 beauty venues listed)",
+          "distance_miles": 0.71,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-08T02:26:01.440061Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Poinciana Elementary School",
+          "distance_miles": 0.7,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Optima Academy Online",
+          "distance_miles": 1.8,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Mason Classical Academy",
+          "distance_miles": 1.9,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-08T02:26:01.440063Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "TJ Maxx",
+          "distance_miles": 1.3,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Bealls",
+          "distance_miles": 1.4,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Ross",
+          "distance_miles": 1.5,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Naples shopping districts",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Waterside Shops",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Old Naples / downtown Naples",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": null,
+          "distance_miles": 1.09,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-08T02:26:01.440067Z"
+    }
+  ],
+  "created_at": "2026-10-08T02:07:54.172097Z",
+  "updated_at": "2026-10-08T02:26:01.440121Z"
 }

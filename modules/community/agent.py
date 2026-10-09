@@ -16,6 +16,7 @@ from typing import Any, Callable, Optional
 from pydantic_ai import Agent
 
 from .models import CommunityFacts, ResearchLogEntry
+from .streaming import run_agent_streamed
 from .tools import read_page as read_page_impl
 from .tools import take_screenshot as take_screenshot_impl
 from .tools import analyze_screenshot as analyze_screenshot_impl
@@ -172,6 +173,7 @@ class CommunityResearchAgent:
         max_tokens: int | None = None,
         enable_screenshot: bool = False,
         url_tracker: Any | None = None,
+        on_thinking: Callable[[str], None] | None = None,
     ) -> None:
         self.model = model
         self.model_name = model_name or os.environ.get("MODEL_NAME", "local")
@@ -185,6 +187,7 @@ class CommunityResearchAgent:
         self.max_tokens = max_tokens or int(os.environ.get("MODEL_MAX_TOKENS", "8192"))
         self.enable_screenshot = enable_screenshot or os.environ.get("ENABLE_SCREENSHOT", "").lower() in ("1", "true", "yes")
         self.url_tracker = url_tracker
+        self.on_thinking = on_thinking
 
     def _build_model(self) -> Any:
         if self.model is not None:
@@ -234,8 +237,12 @@ class CommunityResearchAgent:
             ),
         )
         prompt = self.build_prompt(identity)
-        result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})
-        facts: CommunityFacts = result.output
+        facts: CommunityFacts = await run_agent_streamed(
+            agent,
+            prompt,
+            model_settings={"max_tokens": self.max_tokens},
+            on_thinking=self.on_thinking,
+        )
         slug = identity.get("slug")
         log_entries = [
             ResearchLogEntry(

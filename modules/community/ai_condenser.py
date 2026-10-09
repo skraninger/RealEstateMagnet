@@ -46,6 +46,8 @@ from typing import Any, Callable, Optional
 
 from pydantic_ai import Agent
 
+from .streaming import run_agent_streamed
+
 # Enable Logfire observability for PydanticAI if available
 try:
     import logfire
@@ -192,6 +194,7 @@ class AICondenser:
         verbose: bool = False,
         show_thinking: bool = False,
         on_progress: Optional[Callable[[str], None]] = None,
+        on_thinking: Optional[Callable[[str], None]] = None,
         on_discovery: Optional[Callable[[CondensedCommunityItem], None]] = None,
         on_enrichment: Optional[Callable[[CondensedCommunityItem], None]] = None,
         enable_observability: bool = False,
@@ -209,6 +212,7 @@ class AICondenser:
         self.verbose = verbose
         self.show_thinking = show_thinking
         self.on_progress = on_progress
+        self.on_thinking = on_thinking
         self.on_discovery = on_discovery
         self.on_enrichment = on_enrichment
         self.enable_observability = enable_observability
@@ -287,9 +291,13 @@ class AICondenser:
 
         try:
             started = time.monotonic()
-            result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})
+            batch: CondensedCommunityBatch = await run_agent_streamed(
+                agent,
+                prompt,
+                model_settings={"max_tokens": self.max_tokens},
+                on_thinking=self.on_thinking,
+            )
             elapsed = time.monotonic() - started
-            batch: CondensedCommunityBatch = result.output
 
             if self.verbose:
                 self._report_progress("\n" + "=" * 80)
@@ -357,9 +365,13 @@ class AICondenser:
 
         try:
             started = time.monotonic()
-            result = await agent.run(prompt, model_settings={"max_tokens": self.max_tokens})
+            item: CondensedCommunityItem = await run_agent_streamed(
+                agent,
+                prompt,
+                model_settings={"max_tokens": self.max_tokens},
+                on_thinking=self.on_thinking,
+            )
             elapsed = time.monotonic() - started
-            item: CondensedCommunityItem = result.output
 
             if self.verbose:
                 self._report_progress("\n" + "=" * 80)

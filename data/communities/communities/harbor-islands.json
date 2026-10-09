@@ -1,0 +1,170 @@
+{
+  "id": "68179b14-ac92-4a4c-8855-b4470774b7f8",
+  "identity": {
+    "name": "Harbor Islands",
+    "slug": "harbor-islands",
+    "county_fips": null,
+    "city": "Hollywood",
+    "hoa_name": "HARBOR ISLANDS PROPERTY OWNERS' ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Private, gated luxury single-family community in Hollywood (Broward County), Florida, established December 6, 1993 (Federal ID 650464338). Features a 190+ slip private marina, direct Intracoastal Waterway and ocean access, 24/7 guard-gated entry, resort-style pools/spa, clubhouse, fitness center, lighted tennis/pickleball/basketball courts, and water-side walking/biking trails. HOA: (954) 433-1110, info@harborislands.org, 1501 S. Ocean Drive, Hollywood, FL 33019 (Mon-Fri 9AM-5PM). Association website: www.harborislandspoa.com; community site: www.harborislands.com."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-community.com/harbor-islands-hoa-hollywood-fl/",
+      "retrieved_at": "2026-10-08T21:17:31.593033Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "No specific HOA fee amount stated in the source content. Source advises verifying current dues with the association (HOA phone: (954) 433-1110, email: info@harborislands.org; management: (954) 454-1662). Per the source, monthly HOA costs usually cover landscaping, regular maintenance, management fees, clubhouse amenities such as pool, spa, workout room/gym, security and common-area electricity."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N93000005459",
+      "retrieved_at": "2026-10-08T21:17:31.593040Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No CDD special assessments or other recurring charges stated in the content; directory page references HOA fees section but provides no amounts."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593045Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Guard-gated entry staffed 24/7; controlled access throughout the community; peaceful, well-maintained environment."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593055Z",
+      "confidence": 0.5,
+      "amenity": "marina_boating",
+      "detail": "190+ slip private marina; private docks for select waterfront homes; direct access to the Intracoastal Waterway and ocean. Marina phone: (954) 457-8557."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593058Z",
+      "confidence": 0.5,
+      "amenity": "pool_spa",
+      "detail": "Resort-style pools and spa areas; community pool confirmed by association directory."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N93000005459",
+      "retrieved_at": "2026-10-08T21:17:31.593060Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Listed as a community amenity in the HOA directory."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593063Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with gathering spaces (phone: (954) 454-1662)."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593065Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fully equipped fitness center. Hours: Mon-Thurs 5AM-9PM, Fri 5AM-8PM, Sat-Sun & Holidays 5AM-7PM."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593068Z",
+      "confidence": 0.5,
+      "amenity": "tennis_pickleball_basketball_courts",
+      "detail": "Lighted tennis, pickleball & basketball courts, 7AM-10PM; reservations available."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593071Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking and biking trails along the water."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593073Z",
+      "confidence": 0.5,
+      "amenity": "parks_greenspaces",
+      "detail": "Pocket parks and shaded greenspaces; Joe Dimaggio Park (phone: 954-921-3404); picnic areas and playground-style spaces."
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593075Z",
+      "confidence": 0.5,
+      "amenity": "architectural_home_features",
+      "detail": "Mediterranean-inspired architecture; many homes with private pools and courtyards; high ceilings, open layouts, indoor-outdoor living."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593080Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Aventura Mall & Bal Harbour Shops",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593083Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Hollywood Broadwalk / local beaches (described as 'close')",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593085Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Gulfstream Park (entertainment, described as 'near')",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.harborislands.com/amenities",
+      "retrieved_at": "2026-10-08T21:17:31.593086Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fort Lauderdale-Hollywood Airport (described as 'convenient to')",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Hollywood Broadwalk / local beaches (described as 'close')",
+          "distance_miles": null,
+          "source_url": "https://www.harborislands.com/amenities"
+        },
+        {
+          "nearest_name": "Gulfstream Park (entertainment, described as 'near')",
+          "distance_miles": null,
+          "source_url": "https://www.harborislands.com/amenities"
+        },
+        {
+          "nearest_name": "Fort Lauderdale-Hollywood Airport (described as 'convenient to')",
+          "distance_miles": null,
+          "source_url": "https://www.harborislands.com/amenities"
+        }
+      ],
+      "detected_at": "2026-10-08T21:17:31.593592Z"
+    }
+  ],
+  "created_at": "2026-10-08T21:17:31.593567Z",
+  "updated_at": "2026-10-08T21:17:31.593677Z"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "1f150417-10ac-427d-af0a-87a0b4dbd59b",
+  "identity": {
+    "name": "Ballen Isles",
+    "slug": "ballen-isles",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Ballen Isles is a gated residential community in Palm Beach Gardens, Palm Beach County, Florida. Specific details on its HOA association, exact dues, and on-site amenities are not well documented in my knowledge base, so figures below are city-level approximations or clearly flagged low-confidence estimates. Proximity distances are rough because the community's precise location within Palm Beach Gardens is not known. Verify current dues and amenities with the HOA or the seller's disclosure packet."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023463Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Exact HOA dues not in my knowledge. Comparable gated single-family communities in Palm Beach Gardens commonly range roughly $100-$400/month (unverified estimate only, not a quote). No CDD/special assessment data available. Confirm with the HOA and check the plat for unassessed CDD obligations (stormwater, roads, parks)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023477Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Community is designated as gated; specific gate/security details (guard house, gate type, visitor policy) not in my knowledge. No verified info on pools, clubhouse, or other amenities."
+    }
+  ],
+  "demographics": {
+    "source_url": "ai:condensed",
+    "retrieved_at": "2026-10-08T15:52:06.023490Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": null,
+    "geography_level": "city (Palm Beach Gardens) - community-level data not available to me; figures are approximate city-wide values for context only, not community-specific statistics, population ~57,958 per 2020 Census, median age ~45, median household income ~$66,000, owner-occupancy ~67%. Treat as contextual estimates, not community statistics. Confirm via Census/ACS for the relevant tract or the community's own records."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023496Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "North Lake Mall, West Palm Beach (also local retail in Palm Beach Gardens)",
+      "distance_miles": 8.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023501Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix / Winn-Dixie locations within Palm Beach Gardens",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023503Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Palm Beach Gardens Branch, Palm Beach County Public Library",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023504Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Palm Beach West Medical Center (Palm Beach Gardens area)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T15:52:06.023506Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Local Palm Beach County Public Schools (various nearby)",
+      "distance_miles": 2.0
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T15:52:06.024095Z",
+  "updated_at": "2026-10-08T15:52:06.024250Z"
+}

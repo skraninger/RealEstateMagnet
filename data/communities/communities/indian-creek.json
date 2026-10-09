@@ -1,0 +1,143 @@
+{
+  "id": "a280bfd9-f863-42c2-84aa-793cf3519943",
+  "identity": {
+    "name": "Indian Creek",
+    "slug": "indian-creek",
+    "county_fips": null,
+    "city": "Indian Creek",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Indian Creek is an ultra-luxury, gated waterfront enclave on Biscayne Bay in northeastern Miami-Dade County. It comprises roughly 3,200-3,300 private waterfront homes on about 4,000+ acres. The community's only land access is a single drawbridge, which is controlled and monitored, giving it a reputation as one of the most private and exclusive communities in the United States, home to many celebrities, business leaders, and international residents."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460117Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA dues are substantial due to gate/drawbridge operation, security, and bayfront maintenance. Reported in the range of roughly $600-$1,500+/month depending on parcel size and location; no verified current schedule available. Residents also pay separate water/sewer (septic is common) and utility costs. No CDD assessment is generally associated with properties here, as community infrastructure is funded through association dues and historic capital contributions."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460131Z",
+      "confidence": 0.5,
+      "amenity": "gated_drawbridge_entrance",
+      "detail": "Single controlled drawbridge is the only road access into the community; access is restricted to residents, their guests, and service vehicles, with security monitoring at the bridge."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460146Z",
+      "confidence": 0.5,
+      "amenity": "yacht_club",
+      "detail": "Indian Creek Yacht Club is a historic, private social club within the community, one of its most famous features."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460153Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "Community boat basin/marina facilities for residents; nearly every home is waterfront on Biscayne Bay with private dock access."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460159Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Indian Creek Golf & Yacht Club golf course located within the community."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460164Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts maintained within the community."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460170Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Pickleball/paddle courts available in the community (popular with the active retiree demographic)."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460175Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_living",
+      "detail": "Approximately 3,200+ private waterfront homes, all with direct Biscayne Bay frontage; community is a premier boating and fishing destination."
+    }
+  ],
+  "demographics": {
+    "source_url": "ai:condensed",
+    "retrieved_at": "2026-10-08T16:16:49.460183Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": 2022,
+    "geography_level": "census-designated place (Indian Creek CDP), Miami-Dade County, FL; approximate Census/ACS figures for the community area only, not the surrounding unincorporated county land (Bayfront/Biscayne Park area is much larger and includes non-resident bayfront lots). Population estimate ~4,300 (2020 Census), median household income estimated ~$500,000 (among the highest in the U.S.), median age ~55 (skews older due to retiree/second-home owner base), owner-occupancy ~85%."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460191Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Indian Creek Elementary School (public, in-community)",
+      "distance_miles": 0.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460196Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix / Winn-Dixie (North Miami area)",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460200Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "North Bay Shopping Center (North Miami); Aventura Mall further out",
+      "distance_miles": 12.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460203Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library - North Miami branch (nearest M-DPL branch; Hollywood branch in Broward County is similar distance)",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460206Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Hollywood Memorial Hospital (Broward County)",
+      "distance_miles": 12.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T16:16:49.460209Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Biscayne Park / downtown Miami via Bayfront Drive or I-95; ~15-25 min drive",
+      "distance_miles": 15.0
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T16:16:49.461047Z",
+  "updated_at": "2026-10-08T16:16:49.461216Z"
+}

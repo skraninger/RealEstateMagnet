@@ -36,6 +36,7 @@ modules/community/        Workstream B — research, condensers, storage, pipeli
   full_pipeline.py        DB-first orchestration across all condensers
   migration.py            One-time legacy → pipeline-status schema migration
   url_tracker.py          URL registry + robot-friendly routing + review queue
+  streaming.py            Stream a PydanticAI agent's reasoning ("thinking")
   agent.py                PydanticAI research agent (web_search/read_page tools)
   research_engine.py      Per-community research orchestrator
   ai_condenser.py         Local-model knowledge (no web)
@@ -45,6 +46,8 @@ modules/community/        Workstream B — research, condensers, storage, pipeli
   vision_browser_agent.py Playwright vision loop + CAPTCHA handling
 modules/web/              FastAPI viewer (viewer.py + templates/); /communities/{slug}
                           drills into a community's fees/amenities/demographics/proximity
+                          and supports inline edit/delete of facts, pipeline status,
+                          condenser runs, and source URLs (see §6)
 scripts/                  PowerShell wrappers (run-full-pipeline.ps1, etc.)
 tests/                    pytest suite (offline; no network needed)
 data/                     Runtime data (tracked in git — see §7)
@@ -136,6 +139,7 @@ guarded by `count_condenser_runs() == 0`.
 .\scripts\run-full-pipeline.ps1 -Condensers "ai,web"
 .\scripts\run-full-pipeline.ps1 -Community "Pelican Bay"
 .\scripts\run-full-pipeline.ps1 -Reset              # clears progress, keeps data
+.\scripts\run-full-pipeline.ps1 -NoThinking         # thinking stream is ON by default
 
 # Direct module form (prints a harmless runpy RuntimeWarning — see §6)
 .venv\Scripts\python.exe -m modules.community.full_pipeline --status
@@ -170,8 +174,19 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   reads the real `data/communities` store and registers ~204 communities.
 - URL multi-community linking is covered in
   `tests/test_url_tracker.py::TestCommunityURLLinks`.
-- Current status: **303 passing** (web-viewer template tests run when
-  `fastapi`/`jinja2` are installed; they `importorskip` otherwise).
+- Viewer write endpoints (`tests/test_web_viewer.py::TestViewerWriteEndpoints`)
+  run against a **temp SQLite DB** via `fastapi.testclient` (form posts, no
+  network) and assert the DB was actually changed.
+- Thinking-streaming is covered by `tests/test_streaming.py` (fake streams/agents;
+  no model server) — incremental thinking/text deltas, the console reporter, and
+  the non-streaming fallback that replays captured thinking. The pipeline wiring
+  (`show_thinking` → reporter → runner) is covered by
+  `tests/test_full_pipeline.py::TestShowThinkingWiring`.
+- `scripts/show-model-thinking.py` is a standalone smoke test / demo: it probes
+  the server for `reasoning_content`, then streams an agent through the pipeline's
+  helper so you can see thinking without running the whole pipeline.
+- Current status: **323 passing** (web-viewer template + write-endpoint tests run
+  when `fastapi`/`jinja2`/`httpx` are installed; they `importorskip` otherwise).
 
 ---
 
@@ -218,6 +233,21 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   refreshed with `pip install -r requirements.txt` or `run-web-viewer` fails at
   import. The viewer template tests `importorskip` these deps so the core suite
   is unaffected when they're missing.
+- **Viewer edit/delete is config-driven and whitelisted.** `viewer.py` declares
+  `FACT_TABLES` / `PIPELINE_FIELDS` / `CONDENSER_RUN_FIELDS` / `URL_FIELDS`; the
+  endpoints build SQL only from those trusted literals (column/table names) and
+  always bind values. **Never derive a column or table name from request data.**
+  Add a column by extending the field list, then mirror it in the template.
+  `source_urls.url` is deliberately not editable (UNIQUE key).
+- **Inline-edit markup uses the HTML5 `form=` attribute.** A row's inputs point
+  at an empty `<form id="{table}-edit-{row_id}">` via `form="..."` so table
+  markup stays valid (a `<form>` cannot be a child of `<tr>`). Edit mode is
+  selected by the `?edit_table=<key>&edit_id=<row_id>` query params; the shared
+  `templates/_macros.html::actions` macro renders Edit/Delete or Save/Cancel.
+  Writes redirect with **303** so a refresh does not repost.
+- **Forms need `python-multipart` for FastAPI `Form`/multipart.** Added to
+  `requirements.txt`; `request.form()` is used (urlencoded by default), so an old
+  `.venv` should still work for the viewer but reinstall to be safe.
 - **runpy and CRLF warnings** appear on Windows; they are benign.
 - **Runtime data is tracked in git** (see §7) — `git add -A` is normal for data
   changes here, and captcha artifacts/community JSON are expected.
@@ -229,6 +259,20 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   `exceed_context_size_error`. The Qwen3.8-27B GGUF advertises a native context
   of 262144 tokens, so raise it further if VRAM allows (lower `-GpuLayers` if it
   fails to load). The server's own log is `logs/llama-server.log` (gitignored).
+- **Live "thinking" streaming is client-side, not the server console.** The
+  `llama-server` console never prints generated reasoning. Instead,
+  `start-model-server.ps1` now passes `--reasoning-format deepseek` (so thinking
+  arrives in the API's `reasoning_content` field) and `modules/community/streaming.py`
+  runs agents via `agent.run(..., event_stream_handler=...)`, forwarding
+  `ThinkingPart` deltas from **every** model response to the pipeline console.
+  (Do not switch this to `agent.run_stream()`: that only streams the final
+  response, so reasoning from tool-selection turns — the bulk of the research
+  agent's thinking — is lost.) **This is ON by default**; disable with
+  `run-full-pipeline.ps1 -NoThinking` / `--no-show-thinking` /
+  `PIPELINE_SHOW_THINKING=0`. PydanticAI splits both `reasoning_content` and
+  inline ` thinking...<｜end▁of▁thinking｜>` tags, so the client works either way; a
+  non-streaming fallback replays captured thinking if `run_stream` fails. If the
+  model doesn't think by default, start the server with `-Reasoning on`.
 - **Pipeline errors are logged.** `run-full-pipeline.ps1` streams the pipeline
   output live to the console while appending a full run log
   (`logs/run-full-pipeline_<timestamp>.log`, stdout+stderr) and a focused error

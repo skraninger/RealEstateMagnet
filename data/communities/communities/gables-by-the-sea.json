@@ -1,0 +1,514 @@
+{
+  "id": "f0e9067d-cfd2-4092-832d-d2eff8d437c4",
+  "identity": {
+    "name": "Gables by the Sea",
+    "slug": "gables-by-the-sea",
+    "county_fips": null,
+    "city": "Coral Gables / Pinecrest",
+    "hoa_name": "GABLES BY THE SEA HOMEOWNERS' ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Guard-gated, waterfront residential neighborhood established in 1957 along the southern coastal boundary of Coral Gables and Pinecrest, Miami-Dade County, FL. Comprises approximately 520 custom-built single-family estates with canal-front homes, private docks, and deep-water marine/bay access. The community is split between the City of Coral Gables and the Village of Pinecrest under a dual-municipal design. Entry price starts at $1.5M+ with a median sale price of $4.3M and trophy-tier bayfront estates up to $28M. The voluntary HOA (Florida not-for-profit corporation, active since 1964) focuses on security and neighborhood standards. HOA office: 944 San Pedro Ave, Miami FL 33156. Management company: FPMS, Sarasota FL. Website: gablesbythesea.org / gablesbytheseafl.com."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:16:01.592801Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 1350.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Modest annual amount referenced in some property listings; association described as voluntary with optional contributions rather than mandatory large dues. No special assessments or monthly/quarterly/transfer/capital contribution fees publicly detailed. Confidence limited — no official fee schedule found."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=707071",
+      "retrieved_at": "2026-10-09T03:16:01.592816Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee field listed in directory but no specific amount provided. Property Manager: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000. HOA est. 03/30/1964, Federal ID 592090965."
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431889Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "annually",
+      "currency": "USD",
+      "note": "Mandatory security guard assessment of $1,047 to $1,450 annually, levied through special taxing districts (1995 county-administered district was abolished by resident vote in 2022 and split into two municipal districts under Coral Gables and Pinecrest; dual guard houses at SW 128th and SW 134th Streets). No CDD identified in sources read; this is a municipal security tax district assessment, not a CDD charge. Range reported as-is; exact per-parcel amount varies and was not itemized on the page. Amount field left null because the page gives a range rather than a single figure. Voluntary HOA dues separately described as 'nominal' with no amount published (see second fee fact). Retrieved 2026-10-01 (approx.). Confidence 0.85 (official community site). HOA office per florida-hoa.net: 944 San Pedro Ave, Miami FL 33156; manager FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000; HOA website gablesbythesea.org (site itself could not be read). HOA is a Florida not-for-profit corp active since 1964 (FED ID 592090965)."
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431900Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Voluntary HOA: dues described only as 'nominal'; no dollar amount published on the official site. Association focuses on security and neighborhood standards without club-style amenities."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:37:39.431905Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 1350.0,
+      "period": "annually",
+      "currency": "USD",
+      "note": "HOA bulletin board summary: 'some property listings reference modest annual amounts around $1,350' while multiple sources describe the association as voluntary with optional contributions rather than mandatory dues. Exact current fee schedule not publicly detailed. A search snippet from the same site also claimed 'historically around $100-$150 per year on a volunteer basis', which I could not confirm in the page body I read; treat $1,350 and $100-150/yr as conflicting versions. Mailing address listed: P.O. Box 560927, Miami FL 33156."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:16:01.592823Z",
+      "confidence": 0.5,
+      "amenity": "guard_gated_entrance",
+      "detail": "24/7 resident-controlled guard security; community is a guard-gated waterfront neighborhood"
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:16:01.592838Z",
+      "confidence": 0.5,
+      "amenity": "deep_water_marine_access_private_docks",
+      "detail": "Canal-front homes with private docks and direct bay access; strategic position for yacht owners; canal-front properties trade $3.0M–$8.0M, trophy bayfront peninsulas up to $28M"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:16:01.592847Z",
+      "confidence": 0.5,
+      "amenity": "community_park",
+      "detail": "Features a playground, basketball courts, and tennis courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:16:01.592854Z",
+      "confidence": 0.5,
+      "amenity": "nearby_public_parks",
+      "detail": "Additional recreational options available at nearby public parks"
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431913Z",
+      "confidence": 0.5,
+      "amenity": "guard_gated_security",
+      "detail": "24/7 guard-gated community; dual guardhouse entries at SW 128th and SW 134th Streets; strictly pre-authorized visitor access; roving patrols. Established 1957; ~520 custom single-family estates split between Coral Gables and Pinecrest (dual-municipal)."
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431928Z",
+      "confidence": 0.5,
+      "amenity": "deep_water_marine_access_waterfront_lifestyle",
+      "detail": "Bridge-free direct access to Biscayne Bay from eastern saltwater canals; canal drafts up to 9 ft; private residential docks with up to 100+ linear feet of frontage on custom seawalls; $0 municipal slip fees; Miami-Dade DERM Class I permitting. Note: Section C freshwater canals are restricted by an earthen salinity dam."
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431938Z",
+      "confidence": 0.5,
+      "amenity": "security_tax_district_structure",
+      "detail": "Security historically managed under a single county-administered taxing district created in 1995; in 2022 residents voted to abolish it and split it into two distinct municipal districts (Coral Gables and Pinecrest), which maintain the dual guard houses."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+      "retrieved_at": "2026-10-09T03:37:39.431945Z",
+      "confidence": 0.5,
+      "amenity": "community_park",
+      "detail": "Amenities center on the gated entrance with 24/7 guard security and a community park featuring a playground, basketball, and tennis courts; no large-scale club-style amenities. HOA focuses on security, standards, and waterways advisory board participation."
+    },
+    {
+      "source_url": "https://jillszeder.com/communities/gables-by-the-sea/",
+      "retrieved_at": "2026-10-09T03:37:39.431952Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "'Families enjoy living in Gables by the Sea, thanks to a large playground for children'; described as one of the oldest gated waterfront communities within Coral Gables, just off scenic Old Cutler Road, bordered to the north by the R. Hardy Matheson County Preserve. Lots ~9,900-35,000+ sq ft; homes 1,661-9,295 sq ft built 1957-2018; resort-style pools, docks, spas typical in-home amenities."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/gables-by-the-sea-miami-faqs",
+      "retrieved_at": "2026-10-09T03:37:39.431958Z",
+      "confidence": 0.5,
+      "amenity": "no_in_community_commercial_or_club_amenities",
+      "detail": "'There are no shopping streets or public parks within the community itself'; not a traditional HOA with large monthly dues tied to shared amenities; no mandatory club memberships; residents rely on nearby Pinecrest, Coral Gables, and South Miami for dining, groceries, and errands."
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/gables-by-the-sea-miami-faqs",
+      "retrieved_at": "2026-10-09T03:37:39.431965Z",
+      "confidence": 0.5,
+      "amenity": "flood_zone_seawall_responsibility_ownership_considerations",
+      "detail": "Most properties are within FEMA-designated coastal flood zones; flood insurance typically required for financed purchases. Seawalls are generally the individual homeowner's responsibility, not the HOA's."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Gables-By-The-Sea-Coral-Bay-Demographics.html",
+    "retrieved_at": "2026-10-09T03:37:39.431974Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 1166,
+    "data_year": 2023,
+    "geography_level": "Gables By The Sea - Coral Bay (census populated-place micro-neighborhood within City of Coral Gables; does not exactly match the dual-municipal community boundary - Pinecrest side not separately profiled in sources read). Source: 2019-2023 ACS 5-year estimates as compiled by Point2Homes Research Team. Note: page states median household income is 2024 data per US Census Bureau while the underlying file is ACS 2019-2023. Also on page: 420 households (avg 3 members), 457 housing units, 58.2% detached single-family, median construction year 1973, median gross rent $1,951, 2.9% unemployment. A different point2homes page showed 32,582 residents/median age 42.1 for a similarly named area - treated as a data error; the 1,166 figure is used here. Confidence 0.6 (aggregator citing Census/ACS). City-level context: Coral Gables city population 49,802 (https://censusreporter.org/profiles/16000US1214250-coral-gables-fl/, confidence 0.7, data year not stated on page)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431983Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "South Miami Hospital",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431989Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Baptist Hospital of Miami",
+      "distance_miles": 6.1
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431992Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Pinecrest Elementary School",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431995Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Miami Palmetto Senior High School",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.431998Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "University of Miami",
+      "distance_miles": 5.1
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.432001Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "CocoWalk (Coconut Grove) - open-air retail/dining",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.432005Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Matheson Hammock Park (marina, atoll pool, trails)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.432007Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "The Biltmore Golf Course (championship course, central Coral Gables)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://gablesbytheseafl.com/",
+      "retrieved_at": "2026-10-09T03:37:39.432010Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Brickell Financial District (commute reference point)",
+      "distance_miles": 11.1
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/gables-by-the-sea-miami-florida-everything-you-want-to-know",
+      "retrieved_at": "2026-10-09T03:37:39.432012Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Howard Drive Elementary School (public zone, per allinmiami FAQ: Palmetto corridor - Howard Drive Elem., Palmetto Middle, Miami Palmetto Senior High; exact assignment depends on address)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432015Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Suniland Shopping Center, 11293-11535 S Dixie Hwy, Pinecrest FL 33156",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432018Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix, Trader Joe's, Whole Foods Market and Milam's at Suniland Shopping Center, Pinecrest (9-min drive per source)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432021Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Shops at Sunset Place, 5701 Sunset Dr, South Miami FL 33143 (9 min)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432024Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Pinecrest Place, 7800-7930 SW 104th St (Target, Whole Foods; 10 min)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432027Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Dadeland Mall, 7535 N Kendall Dr (10 min)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432029Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Falls, 8888 SW 136th St (10 min; includes Life Time fitness)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea",
+      "retrieved_at": "2026-10-09T03:37:39.432032Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Nicklaus Children's Hospital (source claims it is 'within the perimeter' of Suniland Shopping Center, Pinecrest)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.publix.com/locations/328-old-cutler-town-center",
+      "retrieved_at": "2026-10-09T03:37:39.432035Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix Old Cutler Town Center (store #328), 20425 Old Cutler Rd, Cutler Bay FL 33189 - on the Old Cutler corridor serving the community; no distance stated on page",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-pinecrest",
+      "retrieved_at": "2026-10-09T03:37:39.432039Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Pinecrest Branch Library, 5835 SW 111th St, Pinecrest FL 33156 (305-668-4571) - in the Village of Pinecrest, one of the two municipalities the community is split between; no distance stated on page",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-coral-gables",
+      "retrieved_at": "2026-10-09T03:37:39.432042Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Coral Gables Branch Library, 3443 Segovia St, Coral Gables FL 33134 (305-442-8706)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Official HOA website gablesbythesea.org could not be read (3 attempts, page would not render) - current dues schedule, bylaws, rules, and annual reports could not be verified directly; florida-hoa.net and floridacommunitynetwork.net list it as the association website and state 'HOA Fee Required' but publish no amount.",
+    "CommunityPay's search snippet claims 'Median fee $383/mo' and 'Very High' risk with 19 disclosures under Fla. Stat. 720.30851 for this HOA, but the page content I actually read showed only boilerplate compliance checklists with no fee figure - this conflicting fee claim is unverified and should be checked directly.",
+    "Exact per-parcel security assessment amount: official site gives only a $1,047-$1,450 annual range; current-year millage rates for the two post-2022 municipal security districts (Coral Gables / Pinecrest) were not found in sources read.",
+    "No CDD was identified for this community in any source read; the special assessment appears to be a municipal security tax district (created 1995 as county-administered, restructured 2022) rather than a Community Development District - confirm whether any CDD overlay exists.",
+    "Pet policy, rental restrictions, architectural/lot-coverage guidelines, and transfer fees are not published in the sources read (hoabulletinboard explicitly states these details are not publicly available) - request estoppel and rules from FPMS (941-960-5000) or the HOA office at 944 San Pedro Ave, Miami FL 33156 / P.O. Box 560927.",
+    "Residence count conflict: official site and buyer notes say ~520 estates; allinmiami.com and hoabulletinboard.com say ~360 custom homes (0.5 sq mi per allinmiami).",
+    "No community pool, clubhouse, fitness center, or golf course was found in any public source; recreation appears to rely on the small community park (playground, basketball, tennis) and nearby public venues such as Matheson Hammock Park's atoll pool (~5-7 min) - confirm with the HOA whether any private amenities exist.",
+    "Mile distances to the nearest grocery, shopping centers, and libraries were not stated on any page read (only drive times: Suniland/Publix-etc. ~9 min, Pinecrest Branch Library address confirmed but no distance); the ~2-3 mile estimates for Pinecrest Branch and Old Cutler Town Center Publix are geographic inferences, not sourced figures.",
+    "allinmiami's claim that Nicklaus Children's Hospital sits 'within the perimeter' of Suniland Shopping Center (Pinecrest) appears geographically wrong (Nicklaus is in NW Miami); treat hospital proximity per the official site (South Miami Hospital 5.0 mi, Baptist 6.1 mi) until verified.",
+    "Demographic data unit 'Gables By The Sea - Coral Bay' (pop. 1,166, median age 42, 73.6% owner-occupied, median HH income $137,076) is a census populated-place that does not exactly match the dual-municipal community; no ACS profile was found for the Pinecrest-side portion of the community.",
+    "hoabulletinboard cites ~360 homes and a location 'along Old Cutler Road near Matheson Hammock Park'; jillszeder says southeast of Pinecrest and north of Deering Bay - minor location descriptions differ; community footprint was not independently mapped in sources read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_annual",
+      "values": [
+        {
+          "amount": 1350.0,
+          "period": "annual",
+          "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+          "retrieved_at": "2026-10-09T03:16:01.592801+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://gablesbytheseafl.com/",
+          "retrieved_at": "2026-10-09T03:37:39.431900+00:00"
+        },
+        {
+          "amount": 1350.0,
+          "period": "annually",
+          "source_url": "https://www.hoabulletinboard.com/hoa/gbtscgfl/about_hoa/",
+          "retrieved_at": "2026-10-09T03:37:39.431905+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433078Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=707071",
+          "retrieved_at": "2026-10-09T03:16:01.592816+00:00"
+        },
+        {
+          "amount": null,
+          "period": "annually",
+          "source_url": "https://gablesbytheseafl.com/",
+          "retrieved_at": "2026-10-09T03:37:39.431889+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433092Z"
+    },
+    {
+      "field": "proximity.grocery",
+      "values": [
+        {
+          "nearest_name": "Publix, Trader Joe's, Whole Foods Market and Milam's at Suniland Shopping Center, Pinecrest (9-min drive per source)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        },
+        {
+          "nearest_name": "Publix Old Cutler Town Center (store #328), 20425 Old Cutler Rd, Cutler Bay FL 33189 - on the Old Cutler corridor serving the community; no distance stated on page",
+          "distance_miles": null,
+          "source_url": "https://www.publix.com/locations/328-old-cutler-town-center"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433103Z"
+    },
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "South Miami Hospital",
+          "distance_miles": 5.0,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Baptist Hospital of Miami",
+          "distance_miles": 6.1,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Nicklaus Children's Hospital (source claims it is 'within the perimeter' of Suniland Shopping Center, Pinecrest)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433109Z"
+    },
+    {
+      "field": "proximity.library",
+      "values": [
+        {
+          "nearest_name": "Pinecrest Branch Library, 5835 SW 111th St, Pinecrest FL 33156 (305-668-4571) - in the Village of Pinecrest, one of the two municipalities the community is split between; no distance stated on page",
+          "distance_miles": null,
+          "source_url": "https://mdpls.org/branch-pinecrest"
+        },
+        {
+          "nearest_name": "Coral Gables Branch Library, 3443 Segovia St, Coral Gables FL 33134 (305-442-8706)",
+          "distance_miles": null,
+          "source_url": "https://mdpls.org/branch-coral-gables"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433113Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "University of Miami",
+          "distance_miles": 5.1,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Matheson Hammock Park (marina, atoll pool, trails)",
+          "distance_miles": null,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "The Biltmore Golf Course (championship course, central Coral Gables)",
+          "distance_miles": null,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Brickell Financial District (commute reference point)",
+          "distance_miles": 11.1,
+          "source_url": "https://gablesbytheseafl.com/"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433120Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Pinecrest Elementary School",
+          "distance_miles": null,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Miami Palmetto Senior High School",
+          "distance_miles": null,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Howard Drive Elementary School (public zone, per allinmiami FAQ: Palmetto corridor - Howard Drive Elem., Palmetto Middle, Miami Palmetto Senior High; exact assignment depends on address)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/gables-by-the-sea-miami-florida-everything-you-want-to-know"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433125Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "CocoWalk (Coconut Grove) - open-air retail/dining",
+          "distance_miles": null,
+          "source_url": "https://gablesbytheseafl.com/"
+        },
+        {
+          "nearest_name": "Suniland Shopping Center, 11293-11535 S Dixie Hwy, Pinecrest FL 33156",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        },
+        {
+          "nearest_name": "The Shops at Sunset Place, 5701 Sunset Dr, South Miami FL 33143 (9 min)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        },
+        {
+          "nearest_name": "Pinecrest Place, 7800-7930 SW 104th St (Target, Whole Foods; 10 min)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        },
+        {
+          "nearest_name": "Dadeland Mall, 7535 N Kendall Dr (10 min)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        },
+        {
+          "nearest_name": "The Falls, 8888 SW 136th St (10 min; includes Life Time fitness)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-gables-by-the-sea"
+        }
+      ],
+      "detected_at": "2026-10-09T03:37:39.433132Z"
+    }
+  ],
+  "created_at": "2026-10-09T03:16:01.593597Z",
+  "updated_at": "2026-10-09T03:37:39.433254Z"
+}

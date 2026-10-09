@@ -1,0 +1,130 @@
+{
+  "id": "e8c84d7a-8e1a-4b15-acf3-6220524fa802",
+  "identity": {
+    "name": "Collier's Reserve",
+    "slug": "collier-s-reserve",
+    "county_fips": null,
+    "city": "Naples",
+    "hoa_name": "Collier's Reserve Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated, private single-family residential neighborhood in North Naples along the Cocohatchee River. 450-acre community of just 224 single-family homes, established 9/12/1992 (Association Federal ID 650380071). Association address: 1150 Dimock Ln, Naples, FL 34110. Managed by property manager FPMS (5600 Granada Dr, Sarasota, FL 34231; 941-960-5000). Official website: colliersreserve.com/neighborhood-hoa."
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N92000000684",
+      "retrieved_at": "2026-10-08T15:02:47.810543Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fee amounts not stated in the source content. Sources direct inquirers to contact the board or property manager (FPMS, 941-960-5000) for current dues, assessment status, and unpaid amounts on a specific home. Membership is mandatory for owners subject to the recorded declaration. Verify fees before purchase/lease; sale or lease may require board approval. Retrieved 2025-01-15."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N92000000684",
+      "retrieved_at": "2026-10-08T15:02:47.810555Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Listed among association amenities in florida-hoa.net listing for Colliers Reserve HOA (Naples, FL), corroborated on mail.florida-hoa.com listing. Retrieved 2025-01-15."
+    },
+    {
+      "source_url": "https://www.colliersreserve.com/hoa",
+      "retrieved_at": "2026-10-08T15:02:47.810569Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Official site describes Collier's Reserve as a 'gated, private residential neighborhood nestled peacefully along the Cocohatchee River.' Also listed as an amenity in the florida-hoa.net listing. Retrieved 2025-01-15."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N92000000684",
+      "retrieved_at": "2026-10-08T15:02:47.810573Z",
+      "confidence": 0.5,
+      "amenity": "golf_community",
+      "detail": "Listed as an association amenity in florida-hoa.net listing; official site notes 'private club services and amenities' for residents. Retrieved 2025-01-15."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N92000000684",
+      "retrieved_at": "2026-10-08T15:02:47.810576Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Listed among association amenities in florida-hoa.net listing for Colliers Reserve HOA. Retrieved 2025-01-15."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N92000000684",
+      "retrieved_at": "2026-10-08T15:02:47.810578Z",
+      "confidence": 0.5,
+      "amenity": "elevator",
+      "detail": "Listed among association amenities in florida-hoa.net listing (unusual for a single-family home association; treat with caution). Retrieved 2025-01-15."
+    },
+    {
+      "source_url": "https://www.colliersreserve.com/hoa",
+      "retrieved_at": "2026-10-08T15:02:47.810580Z",
+      "confidence": 0.5,
+      "amenity": "private_club_services",
+      "detail": "Official site: 'If you desire beautiful natural surroundings but also demand excellence in private club services and amenities, Collier's Reserve provides that rarely found combination for a small, select group of residents.' Retrieved 2025-01-15."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T15:39:46.980828Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Immediate golf membership available in the community, suggesting on-site golf facilities (e.g., the 12303 Colliers Reserve DR estate listing notes 'IMMEDIATE GOLF MEMBERSHIP AVAILABLE')."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T15:39:46.980854Z",
+      "confidence": 0.5,
+      "amenity": "audubon_international_signature_sanctuary",
+      "detail": "The community is described as an Audubon International Signature Sanctuary community."
+    }
+  ],
+  "demographics": {
+    "source_url": "browser:google",
+    "retrieved_at": "2025-06-15T00:00:00Z",
+    "confidence": 0.2,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 411000,
+    "data_year": 2025,
+    "geography_level": "county (Collier County, not the community)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2025-01-15T12:00:00Z",
+      "confidence": 0.4,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 333032,
+      "data_year": 2009,
+      "geography_level": "Collier County (population, median age); city of Naples (median household income) — area-level data, not community-specific"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T15:39:46.980864Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "The beach",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T15:39:46.980868Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T15:02:47.811268Z",
+  "updated_at": "2026-10-08T15:45:32.089367Z"
+}

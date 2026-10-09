@@ -1,0 +1,73 @@
+{
+  "id": "8119318d-5831-4fcf-9e73-6b0fc26a09d1",
+  "identity": {
+    "name": "Delray Dunes Golf & Country Club",
+    "slug": "delray-dunes-golf-country-club",
+    "county_fips": null,
+    "city": "Boynton Beach",
+    "hoa_name": "Delray Dunes Golf & Country Club, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Golf and country club community located at 15 Fairway Dr, Boynton Beach, FL 33436 (Palm Beach County). The association, legally named DELRAY DUNES GOLF & COUNTRY CLUB, INC., was established on 09/19/1968 (federal ID 591262000). HOA fees are required but amounts are not disclosed in the source content. The property manager of record is FPMS, 5600 Granada Dr, Sarasota, FL 34231 (941-960-5000). Per its 990 filings, the club maintains and operates a golf course, clubhouse, and dining facility for the benefit of its members. Club website: https://www.delraydunes.org"
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=715291",
+      "retrieved_at": "2025-06-15T12:00:00Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Source states 'Association HOA Fee: HOA Fee Required' but no dollar amount or billing period is given in the content."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=715291",
+      "retrieved_at": "2025-06-15T12:00:00Z",
+      "confidence": 0.7,
+      "amenity": "community_pool",
+      "detail": "Listed among community amenities on the HOA directory listing."
+    },
+    {
+      "source_url": "https://www.causeiq.com/organizations/delray-dunes-golf-and-country-club,591262000/",
+      "retrieved_at": "2025-06-15T12:00:00Z",
+      "confidence": 0.8,
+      "amenity": "golf_course",
+      "detail": "Club maintains and operates a golf course for the benefit of its members; total golf revenue for FY ending 10/31/24 was $396,192 ($377,598 member related)."
+    },
+    {
+      "source_url": "https://www.causeiq.com/organizations/delray-dunes-golf-and-country-club,591262000/",
+      "retrieved_at": "2025-06-15T12:00:00Z",
+      "confidence": 0.8,
+      "amenity": "clubhouse",
+      "detail": "Stated in IRS 990 filing description: club maintains and operates a clubhouse for members."
+    },
+    {
+      "source_url": "https://www.causeiq.com/organizations/delray-dunes-golf-and-country-club,591262000/",
+      "retrieved_at": "2025-06-15T12:00:00Z",
+      "confidence": 0.8,
+      "amenity": "dining_facility",
+      "detail": "Club operates a dining facility; total food & beverage revenue for FY ending 10/31/24 was $2,139,883 ($1,959,534 member related)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Boynton-Beach/Delray-Dunes-Tuscany-Bay-Demographics.html",
+    "retrieved_at": "2025-06-15T12:00:00Z",
+    "confidence": 0.6,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 5089,
+    "data_year": null,
+    "geography_level": "neighborhood (Delray Dunes - Tuscany Bay area, Boynton Beach, per Census data); 2,122 households, 2,553 housing units; 51.7% female / 48.3% male; ~30% age 65+; 54% Caucasian, 24.3% African American, 3.3% Asian, 12.9% two or more races; 67.7% US-born citizens, 21.1% naturalized, 11.2% non-citizens; 43% single-family detached homes. Median household income and owner-occupancy % not stated in content."
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T22:29:18.195783Z",
+  "updated_at": "2026-10-08T22:29:18.195926Z"
+}

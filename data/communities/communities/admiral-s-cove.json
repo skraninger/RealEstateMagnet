@@ -1,0 +1,759 @@
+{
+  "id": "cbb9deaf-1888-4980-a2f6-e109c0a36429",
+  "identity": {
+    "name": "Admiral's Cove",
+    "slug": "admiral-s-cove",
+    "county_fips": null,
+    "city": "Jupiter",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated waterfront community in Jupiter, FL along the Intracoastal Waterway, with a mix of mid-size single-family homes and larger luxury waterfront estates. Popular with boaters; features private docks and community beach access."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092338Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "month",
+      "currency": "USD",
+      "note": "Exact dues not verified. Typical range for this community is roughly $300-$1,000/month: interior lots on the lower end, waterfront lots with dock usage on the higher end. Boating/dock-related costs (insurance, dock maintenance) are additional for residents with slips. No confirmed CDD special assessments; verify with HOA and title company at closing. Estimates only - confirm with the association's budget and reserve study before purchase."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092351Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No CDD assessment figures confirmed from available knowledge; some Jupiter developments carry community development district assessments. Verify with the title company whether any CDD applies to specific lots/phases before closing."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271138Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1058.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "Mandatory MPOA (Master Property Owners Association); average ~$1,058/mo per official site. MPOA contact 561-746-7769, One Admirals Cove Blvd, Jupiter FL 33477 (acmpoa.com). Club dues are separate and mandatory."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271148Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Resident-verified range $867-$2,300/mo; observed $980/mo. 893 units. Short-term rentals reported prohibited."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+      "retrieved_at": "2026-10-08T21:08:00.271150Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Fees vary by property type/location/sub-association (MPOA plus condo subs); ranges reported ~$1,000-$2,300/mo, often billed quarterly. Transfer fees/capital contributions/special assessments not in public sources."
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/admirals-cove-jupiter/",
+      "retrieved_at": "2026-10-08T21:08:00.271151Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "MLS (Flexmls, pulled 9/30/2026): single-family HOA ~$950-$1,475/mo; condos mostly ~$2,500-$3,300/mo. HOA separate from club dues; membership mandatory."
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods/admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271153Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1471.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "SF/CD comparison shows $1,471 (single-family) and $2,752 (condo) (likely average HOA by type; labels partially garbled on page). Approximate."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271155Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 475000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Mandatory club equity membership initiation - Full Golf tier (100% non-refundable)."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271157Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 360000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Club membership initiation - Sports tier (non-refundable)."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271158Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 335000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Club membership initiation - Tennis tier (non-refundable)."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271160Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 285000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Club membership initiation - Social tier (non-refundable)."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271161Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 48837.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Annual club dues - Full Golf tier. Per MLS/Echo data golf tier also has $1,300 trail fee; year-1 incl. HOA ~$61,500-$68,000."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271163Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 41766.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Annual club dues - Sports tier."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271164Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 32648.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Annual club dues - Tennis tier."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271166Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 31134.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Annual club dues - Social tier."
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/admirals-cove-jupiter/",
+      "retrieved_at": "2026-10-08T21:08:00.271167Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 41776.0,
+      "period": "year",
+      "currency": "USD",
+      "note": "Conflicting figure: Sports-tier dues listed as $41,776 (Echo Fine Properties July 2026 comparison) vs $41,766 on official site."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092356Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Community entrance gate controlling access; standard gate/security managed by the HOA."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092372Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_intracoastal_waterway_access",
+      "detail": "Homes front directly on the ICW, ideal for boaters with direct waterway access."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092377Z",
+      "confidence": 0.5,
+      "amenity": "boat_docks_slips",
+      "detail": "Waterfront lots include private docks; dock and slip maintenance is typically part of HOA services."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092380Z",
+      "confidence": 0.5,
+      "amenity": "beach_access",
+      "detail": "Community beach access for residents along the ICW shoreline."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092382Z",
+      "confidence": 0.5,
+      "amenity": "walking_paths",
+      "detail": "Waterfront walking/jogging paths along the canal (approximate; verify current status with HOA)."
+    },
+    {
+      "source_url": "https://www.admiralscove.net/amenities",
+      "retrieved_at": "2026-10-08T21:08:00.271170Z",
+      "confidence": 0.5,
+      "amenity": "private_marina",
+      "detail": "Deepwater private marina; vessels to 165 ft; single/three-phase and 480V shore power; floating fuel dock (high-speed diesel/gasoline) at member pricing; 2 mi to Jupiter Inlet, 8 mi to Port of Palm Beach."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271180Z",
+      "confidence": 0.5,
+      "amenity": "marina_slips",
+      "detail": "63-74 deep-water concrete floating slips in staffed basin; dockmaster on staff; mega-yachts 130-165 ft; 500+ private residential docks community-wide (per carlacsoldit.com)."
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/communities/admirals-cove/",
+      "retrieved_at": "2026-10-08T21:08:00.271183Z",
+      "confidence": 0.5,
+      "amenity": "marina_slips",
+      "detail": "Conflicting figure: 77 deep-water slips accommodating vessels to 110 ft."
+    },
+    {
+      "source_url": "https://admiralscoveestates.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271186Z",
+      "confidence": 0.5,
+      "amenity": "marina_slips",
+      "detail": "Conflicting figure: 93-slip deepwater marina."
+    },
+    {
+      "source_url": "https://jeannegordon.com/blog/living-on-the-water-in-admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271188Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "45 championship holes: 18-hole East Course plus three 9-hole courses in Golf Village; Golf Performance Center with TrackMan, simulators, Toptracer range."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271190Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Official site describes 27-hole championship golf (the Golf Village course); other sources cite 45 total holes. Some sources attribute 'Jack Nicklaus Signature' design (admiralscoveestates.com)."
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/admirals-cove-jupiter/",
+      "retrieved_at": "2026-10-08T21:08:00.271193Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "12 tennis courts (per Echo Fine Properties community comparison); no outside members."
+    },
+    {
+      "source_url": "https://jeannegordon.com/blog/living-on-the-water-in-admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271195Z",
+      "confidence": 0.5,
+      "amenity": "tennis_pickleball",
+      "detail": "Har-Tru tennis and pickleball courts; two fitness centers."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271198Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool, locker rooms, card rooms at waterfront East Clubhouse."
+    },
+    {
+      "source_url": "https://www.admiralscove.net/amenities",
+      "retrieved_at": "2026-10-08T21:08:00.271200Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming pool with family-only hours and a wading pool for small children."
+    },
+    {
+      "source_url": "https://www.admiralscove.net/amenities",
+      "retrieved_at": "2026-10-08T21:08:00.271202Z",
+      "confidence": 0.5,
+      "amenity": "fitness_wellness",
+      "detail": "Bluewater Wellness: spa (incl. salt suite), salon, fitness center with top equipment and certified trainers, rehabilitation services."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271204Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Dual clubhouses: East Clubhouse (waterfront, marina views, BlueWater Spa) and Golf Village Clubhouse (porch/lounge overlooking course)."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271206Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Seven on-site dining venues incl. fine-dining seafood restaurant Blü and Marina Cafe with brick pizza oven."
+    },
+    {
+      "source_url": "https://www.admiralscove.net/amenities",
+      "retrieved_at": "2026-10-08T21:08:00.271208Z",
+      "confidence": 0.5,
+      "amenity": "boutique_hotel",
+      "detail": "Waterside Private Boutique Hotel: 32 rooms on 3rd/4th floors of clubhouse with waterfront balconies; member sponsorship required for bookings."
+    },
+    {
+      "source_url": "https://www.admiralscove.net/amenities",
+      "retrieved_at": "2026-10-08T21:08:00.271211Z",
+      "confidence": 0.5,
+      "amenity": "childrens_programs",
+      "detail": "Covesters children's program: drop-in care, camps, crafts, sports, games, swimming; school-holiday programming."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271213Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "24/7 armed dual guard gates (Alt A1A/US-1), checkpoints, thermal monitoring, land and marine patrols; guard-gated."
+    },
+    {
+      "source_url": "https://jeannegordon.com/blog/living-on-the-water-in-admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271215Z",
+      "confidence": 0.5,
+      "amenity": "marine_security",
+      "detail": "Marine Security unit patrols canals/harbor; boat transponders issued for waterway access."
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271217Z",
+      "confidence": 0.5,
+      "amenity": "waterways",
+      "detail": "5.5-mile deep-water canal system, zero fixed bridges to Intracoastal/Jupiter Inlet; 6+ ft depth at mean low water; 15-20 min idle speed to Atlantic."
+    },
+    {
+      "source_url": "https://www.acmpoa.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271219Z",
+      "confidence": 0.5,
+      "amenity": "waterways",
+      "detail": "MPOA maintains ~1,000 acres, 13 miles of roadway, 7 miles of navigable waterways, common grounds and golf courses."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271221Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pets allowed on leash (resident-reported; confirm with association)."
+    },
+    {
+      "source_url": "https://www.discoverpalmbeachcountyhomes.com/guides/subdivision/fl/admirals-cove/",
+      "retrieved_at": "2026-10-08T21:08:00.271224Z",
+      "confidence": 0.5,
+      "amenity": "community_clubs",
+      "detail": "Resident organizations incl. Yacht Club, Photography Club, Fishing Club; community parks/green spaces."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872487Z",
+      "confidence": 0.5,
+      "amenity": "championship_golf",
+      "detail": "45 holes of championship golf within the community and surrounding Jupiter golf/country club area (golf course frontage available on Harbour Homes)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872499Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "74-slip marina; many homes are waterfront with private docks."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872502Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Large clubhouse featuring a spa, fitness center, golf pro shop, and casual and fine dining locations."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872505Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "12 tennis courts."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872507Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Olympic sized pool with poolside bar and café."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872509Z",
+      "confidence": 0.5,
+      "amenity": "bank",
+      "detail": "Personal Wachovia Bank available for residents."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872511Z",
+      "confidence": 0.5,
+      "amenity": "waterfront",
+      "detail": "Over 5 miles of waterways winding throughout the community; many homes are waterfront, and some land parcels are located directly on the Intracoastal Waterway."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.zip-codes.com/zip-code/33477/zip-code-33477.asp",
+    "retrieved_at": "2026-10-08T21:08:00.271228Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": 2024,
+    "geography_level": "ZIP code 33477 (Jupiter, FL) - Census ACS via aggregator; community itself not separately censused as a gated enclave in this ZIP; Golf Village section partly in ZIP 33458 per palmbeachcountyhomeforsale.com. Note: ZIP-level data is not community-level; Admiral's Cove households skew wealthier than ZIP median ($2.3M+ entry prices). Pop 12,908 (2024 ACS; 2020 census 12,683); 94.2% White; median home value $670,800; 22.4% of households (per uspopulation.org) earn $200k+ in adjacent ACS vintages - do not rely on ZIP medians as community medians. Second vintage: uspopulation.org/florida/33477 (ACS 5-yr 2017-2021): pop 11,712, median age 67.7, median HH income $99,865, mean HH income $165,462, per capita $93,479. Owner-occupancy 86.27% (2024, occupied units); 59.6% adults 25+ hold bachelor's or higher. Median age 67.9 (2024). Median household income $104,992 (2024)."
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092388Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "city (Jupiter) - community-level data not reliably available from my knowledge base; figures are city-wide approximations from Census/ACS-type data, 2022 vintages. Owner-occupancy and income in the community itself are likely above city averages given the waterfront, higher-priced home stock."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092394Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jupiter Medical Center (Palm Beach Health)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092398Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix - Jupiter (US-1 / A1A corridor)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092399Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Jupiter commercial district (A1A & Military Trail corridor)",
+      "distance_miles": 3.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092401Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Jupiter Public Library (Palm Beach County Public Library System)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-08T20:23:22.092402Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Jupiter High School",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://admiralscovejupiterneighborhood.org/living-in-admiral-s-cove-a-true-insider-s-guide-to-jupiter-s-premier-waterfront-community/",
+      "retrieved_at": "2026-10-08T21:08:00.271233Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Harbourside Place - waterfront mixed-use retail/restaurants/events (~5 min drive); further options along US-1/Donald Ross corridor; Worth Avenue ~30 min; Gardens Mall/PGA Commons 15-20 min south (carlacsoldit.com)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://admiralscovejupiterneighborhood.org/living-in-admiral-s-cove-a-true-insider-s-guide-to-jupiter-s-premier-waterfront-community/",
+      "retrieved_at": "2026-10-08T21:08:00.271237Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Grocery runs 'a few minutes' via US-1 and Indiantown Road shopping; no specific store identified in sources read",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.jupiter.fl.us/Facilities/Facility/Details/Jupiter-Branch-Library-70",
+      "retrieved_at": "2026-10-08T21:08:00.271239Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Jupiter Branch, Palm Beach County Library System - 705 Military Trail, Jupiter FL 33458; per pbclibrary.org located just across from Jupiter High School; 22,000 sq ft, seed library, teen section, free WiFi (citylibrary.com)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://carlacsoldit.com/admirals-cove-jupiter-fl",
+      "retrieved_at": "2026-10-08T21:08:00.271240Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jupiter Medical Center - ~10 min drive from Admirals Cove per community guide; described as Palm Beach County's top-rated community hospital",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.healthgrades.com/hospital/jupiter-medical-center-43c4d9",
+      "retrieved_at": "2026-10-08T21:08:00.271242Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jupiter Medical Center, 1210 S Old Dixie Hwy, Jupiter FL 33458 (Healthgrades location listing)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.zillow.com/b/344-spyglass-way-jupiter-fl-9D5bV8/",
+      "retrieved_at": "2026-10-08T21:08:00.271244Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Public schools assigned to Admirals Cove address (344 Spyglass Way, Admirals Cove neighborhood): Lighthouse Elementary, Jupiter Middle, Jupiter High (Palm Beach County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborheads/admirals-cove",
+      "retrieved_at": "2026-10-08T21:08:00.271245Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "School zone listed as Lighthouse/Beacon Cove Elementary, Jupiter Middle School of Technology, Jupiter High School (conflicts slightly with Zillow 'Jupiter Middle'); Lighthouse/Beacon Cove PTO address 4750 Dakota Dr, Jupiter FL 33458 (PTO records)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://admiralscovefl.com/",
+      "retrieved_at": "2026-10-08T21:08:00.271246Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": 3.8000000000000003
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-08T21:11:02.872515Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Wachovia Bank (personal bank available for residents)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Community beach access (mentioned in buyer's notes) could not be verified on any page read - no source mentions a community beach; confirm with MPOA/Club.",
+    "CDD/special assessments: no published schedule found; hoabulletinboard says capital contributions/assessments not in public sources; palmbeachluxury advises budgeting for capital assessments - request current MPOA budget and any pending assessments (561-746-7769).",
+    "Marina slip count conflicts: 63 (housevaluelab/carlacsoldit), 63-74 (official site), ~65 (nationalmarinadatabase.com), 77 (palmbeachluxury.com), 93 (admiralscoveestates.com) - confirm current inventory with Marina Operations.",
+    "Acreage conflicts: 727 acres (admiralscovefl.com), ~1,000 acres (acmpoa.com/hoabulletinboard), 976 acres (palmbeachluxury.com).",
+    "Public school zone naming differs across sources (Jupiter Middle vs Jupiter Middle School of Technology vs 'Jupiter Elementary'); verify with Palm Beach County School District.",
+    "Driving distances in miles to Jupiter Medical Center, Jupiter Branch Library, Lighthouse Elementary and Harbourside Place not found - only drive times (10 min, 5 min).",
+    "Pet policy is resident-reported only (hoa-agent.com); confirm current MPOA pet rules.",
+    "Golf design attribution: 'Robert von Hagge' (palmbeachcountyhomeforsale.com) vs 'Jack Nicklaus Signature' (admiralscoveestates.com) - unverified.",
+    "Demographics are ZIP-code level (33477/33458), not community-specific census data; community households are far wealthier than ZIP medians (entry $2.3M+, 12-month single-family median $7.3M per MLS)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "month",
+          "source_url": "ai:condensed",
+          "retrieved_at": "2026-10-08T20:23:22.092338+00:00"
+        },
+        {
+          "amount": 1058.0,
+          "period": "month",
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271138+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoa-agent.com/community/admirals-cove",
+          "retrieved_at": "2026-10-08T21:08:00.271148+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+          "retrieved_at": "2026-10-08T21:08:00.271150+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/admirals-cove-jupiter/",
+          "retrieved_at": "2026-10-08T21:08:00.271151+00:00"
+        },
+        {
+          "amount": 1471.0,
+          "period": "month",
+          "source_url": "https://www.housevaluelab.com/neighborhoods/admirals-cove",
+          "retrieved_at": "2026-10-08T21:08:00.271153+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873415Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 475000.0,
+          "period": null,
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271155+00:00"
+        },
+        {
+          "amount": 360000.0,
+          "period": null,
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271157+00:00"
+        },
+        {
+          "amount": 335000.0,
+          "period": null,
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271158+00:00"
+        },
+        {
+          "amount": 285000.0,
+          "period": null,
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271160+00:00"
+        },
+        {
+          "amount": 48837.0,
+          "period": "year",
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271161+00:00"
+        },
+        {
+          "amount": 41766.0,
+          "period": "year",
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271163+00:00"
+        },
+        {
+          "amount": 32648.0,
+          "period": "year",
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271164+00:00"
+        },
+        {
+          "amount": 31134.0,
+          "period": "year",
+          "source_url": "https://admiralscovefl.com/",
+          "retrieved_at": "2026-10-08T21:08:00.271166+00:00"
+        },
+        {
+          "amount": 41776.0,
+          "period": "year",
+          "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/admirals-cove-jupiter/",
+          "retrieved_at": "2026-10-08T21:08:00.271167+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873430Z"
+    },
+    {
+      "field": "proximity.grocery",
+      "values": [
+        {
+          "nearest_name": "Publix - Jupiter (US-1 / A1A corridor)",
+          "distance_miles": 3.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Grocery runs 'a few minutes' via US-1 and Indiantown Road shopping; no specific store identified in sources read",
+          "distance_miles": null,
+          "source_url": "https://admiralscovejupiterneighborhood.org/living-in-admiral-s-cove-a-true-insider-s-guide-to-jupiter-s-premier-waterfront-community/"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873435Z"
+    },
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "Jupiter Medical Center (Palm Beach Health)",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Jupiter Medical Center - ~10 min drive from Admirals Cove per community guide; described as Palm Beach County's top-rated community hospital",
+          "distance_miles": null,
+          "source_url": "https://carlacsoldit.com/admirals-cove-jupiter-fl"
+        },
+        {
+          "nearest_name": "Jupiter Medical Center, 1210 S Old Dixie Hwy, Jupiter FL 33458 (Healthgrades location listing)",
+          "distance_miles": null,
+          "source_url": "https://www.healthgrades.com/hospital/jupiter-medical-center-43c4d9"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873438Z"
+    },
+    {
+      "field": "proximity.library",
+      "values": [
+        {
+          "nearest_name": "Jupiter Public Library (Palm Beach County Public Library System)",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Jupiter Branch, Palm Beach County Library System - 705 Military Trail, Jupiter FL 33458; per pbclibrary.org located just across from Jupiter High School; 22,000 sq ft, seed library, teen section, free WiFi (citylibrary.com)",
+          "distance_miles": null,
+          "source_url": "https://www.jupiter.fl.us/Facilities/Facility/Details/Jupiter-Branch-Library-70"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873440Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Jupiter High School",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Public schools assigned to Admirals Cove address (344 Spyglass Way, Admirals Cove neighborhood): Lighthouse Elementary, Jupiter Middle, Jupiter High (Palm Beach County School District)",
+          "distance_miles": null,
+          "source_url": "https://www.zillow.com/b/344-spyglass-way-jupiter-fl-9D5bV8/"
+        },
+        {
+          "nearest_name": "School zone listed as Lighthouse/Beacon Cove Elementary, Jupiter Middle School of Technology, Jupiter High School (conflicts slightly with Zillow 'Jupiter Middle'); Lighthouse/Beacon Cove PTO address 4750 Dakota Dr, Jupiter FL 33458 (PTO records)",
+          "distance_miles": null,
+          "source_url": "https://www.housevaluelab.com/neighborheads/admirals-cove"
+        },
+        {
+          "nearest_name": null,
+          "distance_miles": 3.8000000000000003,
+          "source_url": "https://admiralscovefl.com/"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873444Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Jupiter commercial district (A1A & Military Trail corridor)",
+          "distance_miles": 3.5,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Harbourside Place - waterfront mixed-use retail/restaurants/events (~5 min drive); further options along US-1/Donald Ross corridor; Worth Avenue ~30 min; Gardens Mall/PGA Commons 15-20 min south (carlacsoldit.com)",
+          "distance_miles": null,
+          "source_url": "https://admiralscovejupiterneighborhood.org/living-in-admiral-s-cove-a-true-insider-s-guide-to-jupiter-s-premier-waterfront-community/"
+        }
+      ],
+      "detected_at": "2026-10-08T21:11:02.873446Z"
+    }
+  ],
+  "created_at": "2026-10-08T20:23:22.093071Z",
+  "updated_at": "2026-10-08T21:11:02.873509Z"
+}

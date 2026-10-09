@@ -89,6 +89,11 @@ param(
     # GPU device (default Vulkan1 = Intel Arc Pro B70). Use --list-devices.
     [string]$Device = "Vulkan1",
 
+    # Reasoning/thinking mode for chat: on | off | auto (default auto = let the
+    # model's chat template decide). Passed to llama-server as --reasoning.
+    [ValidateSet("on", "off", "auto")]
+    [string]$Reasoning = "auto",
+
     # File receiving the server console output (default logs/llama-server.log).
     # Truncated on each launch; check it for load failures and HTTP 400 errors.
     [string]$ServerLog = ""
@@ -218,13 +223,16 @@ if (Test-Path -LiteralPath $ServerLog) {
     Remove-Item -LiteralPath $ServerLog -Force -ErrorAction SilentlyContinue
 }
 
-Write-Host "Starting llama-server in new window (port $Port, ctx $CtxSize, ngl $GpuLayers, alias $ModelAlias)"
+Write-Host "Starting llama-server in new window (port $Port, ctx $CtxSize, ngl $GpuLayers, alias $ModelAlias, reasoning $Reasoning)"
 Write-Host "Device: $Device (Intel Arc Pro B70)"
 Write-Host "GPU layers: $GpuLayers (99 = offload all layers to GPU)"
 Write-Host "Server log: $ServerLog"
 
-# Build argument list
-$argList = @("--model", $ModelPath, "--alias", $ModelAlias, "--port", "$Port", "-c", "$CtxSize", "-ngl", "$GpuLayers", "--device", $Device, "--log-file", $ServerLog)
+# Build argument list.
+# ``--reasoning-format deepseek`` returns chain-of-thought in the separate
+# ``reasoning_content`` field (rather than inline `` thinking`` tags), which is
+# what the pipeline's streaming client expects so it can print thinking live.
+$argList = @("--model", $ModelPath, "--alias", $ModelAlias, "--port", "$Port", "-c", "$CtxSize", "-ngl", "$GpuLayers", "--device", $Device, "--reasoning", $Reasoning, "--reasoning-format", "deepseek", "--log-file", $ServerLog)
 
 # Add mmproj if available
 if (-not [string]::IsNullOrWhiteSpace($MmprojPath)) {

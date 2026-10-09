@@ -1,0 +1,330 @@
+{
+  "id": "5a8cfe49-7022-4d17-a670-61c77f616cf0",
+  "identity": {
+    "name": "The Crimson",
+    "slug": "the-crimson",
+    "county_fips": null,
+    "city": "Miami",
+    "hoa_name": "The Crimson Condominium Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "The Crimson is a 19-20 story bayfront condominium building with 90 units at 601 NE 27th St, Miami, FL 33137 in the Edgewater neighborhood. Built in 2016 by McKafka Development Group and designed by IDEA, it is a LEED-certified waterfront property. Units range from 1 to 3 bedrooms, approximately 650 to 2,000 sq ft. Managed by The Crimson Condominium Association, Inc., which handles maintenance, amenities, security, and community standards."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498551Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 730.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Minimum monthly HOA fee. Fees vary by unit size, ranging from $730 to $2,340. Many 1-2 bedroom units fall in the $900-$1,300 range (roughly $0.90-$1.10 per square foot). Exact current fee structures unavailable without direct association records. Annual fees, transfer fees, capital contributions, or special assessments not publicly detailed."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498562Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 2340.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Maximum monthly HOA fee (larger units). Full range is $730-$2,340 depending on unit size."
+    },
+    {
+      "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1808-a12085031.htm",
+      "retrieved_at": "2026-10-08T18:10:05.746233Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1284.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "MLS listing A12085031 (Unit 1808, 1,169 sq ft), listed Sep 8 2026: Maintenance $1,284/month; taxes $12,352/yr. Listing-site figure; confirm with association. Implied ~$1.10/sq ft/mo for this unit size (not stated on page)."
+    },
+    {
+      "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1001-a12041752.htm",
+      "retrieved_at": "2026-10-08T18:10:05.746243Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1464.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "MLS listing A12041752 (Unit 1001, 1,187 sq ft), listed Jun 23 2026: Maintenance $1,464/month; taxes $10,873/yr; covered deeded parking. Conflicts with the $1,284 figure in the other listing - both reported as seen."
+    },
+    {
+      "source_url": "https://subdivisions.com/miami-fl/the-crimson-condos-for-sale",
+      "retrieved_at": "2026-10-08T18:10:05.746245Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "month",
+      "currency": "USD",
+      "note": "Page states: 'The current monthly maintenance fee at The Crimson is ~0.85 per unit SqFt.' Dues cover: Association Management, Amenities, Common Areas, Insurance, Legal Accounting, Maintenance Grounds, Pools, Reserve Fund, Roof, Sewer, Security, Trash, Cable TV, Maintenance Structure, Water, Parking, Hot Water, Internet. Aggregator estimate; lower confidence."
+    },
+    {
+      "source_url": "https://www.miamicondoinvestments.com/the-crimson-condos",
+      "retrieved_at": "2026-10-08T18:10:05.746247Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "FAQ: utilities are NOT included in the condominium association dues - 'Tenant is responsible for all utilities.'"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498569Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool at a bayfront/waterfront location"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498582Z",
+      "confidence": 0.5,
+      "amenity": "hot_tub_spa",
+      "detail": "Hot tub/spa amenity"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498590Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center available to residents"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498597Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_access",
+      "detail": "Bayfront waterfront property in Edgewater neighborhood"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+      "retrieved_at": "2026-10-08T17:47:42.498604Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Association handles security for the community"
+    },
+    {
+      "source_url": "https://miamiresidential.com/crimson/",
+      "retrieved_at": "2026-10-08T18:10:05.746252Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "8th Floor Pool Deck with expansive views of Biscayne Bay; 8th Floor Amenities Deck. Developer (Miami Residential Group) site. Also: concierge, business center, mini theater, cyber cafe, club room listed on same page."
+    },
+    {
+      "source_url": "https://www.miamicondoinvestments.com/the-crimson-condos",
+      "retrieved_at": "2026-10-08T18:10:05.746260Z",
+      "confidence": 0.5,
+      "amenity": "hot_tub_sundeck",
+      "detail": "Promenade sundeck, pool, and hot tub plus indoor/outdoor mini theatre on the 8th-floor amenity deck; yoga room/Pilates room; 24-hour security and concierge; exclusive 'C club'."
+    },
+    {
+      "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1808-a12085031.htm",
+      "retrieved_at": "2026-10-08T18:10:05.746264Z",
+      "confidence": 0.5,
+      "amenity": "heated_pool",
+      "detail": "MLS amenity list for the building includes Heated Pool, Business Center, Lobby, Elevator(s)."
+    },
+    {
+      "source_url": "https://www.condoblackbook.com/edgewater/the-crimson",
+      "retrieved_at": "2026-10-08T18:10:05.746267Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fully-equipped, technologically advanced fitness center; yoga studio; outdoor BBQ area."
+    },
+    {
+      "source_url": "https://www.condoblackbook.com/edgewater/the-crimson",
+      "retrieved_at": "2026-10-08T18:10:05.746270Z",
+      "confidence": 0.5,
+      "amenity": "movie_theater",
+      "detail": "Private state-of-the-art movie theater."
+    },
+    {
+      "source_url": "https://www.condoblackbook.com/edgewater/the-crimson",
+      "retrieved_at": "2026-10-08T18:10:05.746272Z",
+      "confidence": 0.5,
+      "amenity": "cyber_cafe_event_space",
+      "detail": "Cyber Cafe including event bar and catering kitchen; residential business center + conference room."
+    },
+    {
+      "source_url": "https://www.condoblackbook.com/edgewater/the-crimson",
+      "retrieved_at": "2026-10-08T18:10:05.746275Z",
+      "confidence": 0.5,
+      "amenity": "gated_park",
+      "detail": "Beautifully landscaped 20,000 SF gated park; building accented by water features; direct bayfront boardwalk access; 240 feet of waterfront."
+    },
+    {
+      "source_url": "https://www.condoblackbook.com/edgewater/the-crimson",
+      "retrieved_at": "2026-10-08T18:10:05.746278Z",
+      "confidence": 0.5,
+      "amenity": "parking_ev_charging",
+      "detail": "Electric car charging stations; valet + assigned covered self parking; private residential storage; state-of-the-art security access for all residents; premium concierge service."
+    },
+    {
+      "source_url": "https://miamiresidential.com/crimson/",
+      "retrieved_at": "2026-10-08T18:10:05.746280Z",
+      "confidence": 0.5,
+      "amenity": "club_room_business_center",
+      "detail": "Club Room and Business Center with high-speed internet (cyber cafe); storage included with each parking space."
+    },
+    {
+      "source_url": "https://www.miamicondos.com/the-crimson-condos-miami-edgewater/",
+      "retrieved_at": "2026-10-08T18:10:05.746284Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "'High-tech fitness center and spa', yoga studio, theater, business center, cyber cafe; double-height lobby with attendant; in-unit washers and dryers."
+    },
+    {
+      "source_url": "https://mail.florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N15000010806",
+      "retrieved_at": "2026-10-08T18:10:05.746286Z",
+      "confidence": 0.5,
+      "amenity": "elevator",
+      "detail": "Association amenities list (auto-generated site): Spa, Elevator, Community Pool, BBQ Area, Sauna, Clubhouse, Fitness Center, '55+ Community', Pets Allowed. Note: '55+ community' and sauna/clubhouse entries appear to be data errors - not corroborated by any other page read."
+    },
+    {
+      "source_url": "https://www.miamicondoinvestments.com/the-crimson-condos",
+      "retrieved_at": "2026-10-08T18:10:05.746288Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pet-friendly for owners and renters: no more than one (1) pet per residence, maximum weight 40 pounds; no pet fees upon move-in (per broker FAQ)."
+    },
+    {
+      "source_url": "https://www.hauteresidence.com/the-crimson-condos/",
+      "retrieved_at": "2026-10-08T18:10:05.746291Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy_alt_version",
+      "detail": "'Owners and renters may bring pets, while owners may accommodate larger companions.' Conflicts with the 40-lb limit in the broker FAQ."
+    },
+    {
+      "source_url": "https://www.condoblackbook.com/edgewater/the-crimson",
+      "retrieved_at": "2026-10-08T18:10:05.746294Z",
+      "confidence": 0.5,
+      "amenity": "leed_certification_gold",
+      "detail": "Described as LEED Gold certified building (also: Nordic architecture by IDEA, VRF cooling). Conflicts with 'LEED Silver' on other pages."
+    },
+    {
+      "source_url": "https://www.miamicondos.com/the-crimson-condos-miami-edgewater/",
+      "retrieved_at": "2026-10-08T18:10:05.746297Z",
+      "confidence": 0.5,
+      "amenity": "leed_certification_silver",
+      "detail": "Described as a LEED Silver certified building."
+    },
+    {
+      "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1001-a12041752.htm",
+      "retrieved_at": "2026-10-08T18:10:05.746300Z",
+      "confidence": 0.5,
+      "amenity": "in_unit_w_d_deeded_parking",
+      "detail": "Unit 1001 listing: W/D in unit, covered deeded parking; amenities: pool, fitness center, community room, trash chute, elevator(s)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.getzips.com/zip/33137.html",
+    "retrieved_at": "2026-10-19T12:00:00Z",
+    "confidence": 0.6,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 27300,
+    "data_year": 2023,
+    "geography_level": "ZIP code 33137, Miami, FL (ACS 2019-2023 5-Year Estimates per page); covers Edgewater/Midtown/Downtown edges - not building-specific. 12,545 households; median age 34.3; 50.9% of adults 25+ hold bachelor's+; poverty 11.4%; median home value $532,900; median rent $2,338/mo. Owner-occupancy computed from page's 73.3% renter share (3,351 owner households of 12,545 occupied)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.miamicondoinvestments.com/the-crimson-condos",
+      "retrieved_at": "2026-10-08T18:10:05.746314Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Midtown Miami shops & restaurants / Margaret Pace Park (adjacent bayfront)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1808-a12085031.htm",
+      "retrieved_at": "2026-10-08T18:10:05.746317Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Whole Foods (Downtown Miami) and Trader Joe's (Midtown) - described as 'within walking distance'",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-lemon-city",
+      "retrieved_at": "2026-10-08T18:10:05.746319Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library - Lemon City Branch, 430 NE 61st St, Miami, FL 33137 (same ZIP as the building); Tel 305-757-0662",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://npino.com/hospital/1477509446-cedars-medical-center/",
+      "retrieved_at": "2026-10-08T18:10:05.746320Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Cedars Medical Center (General Acute Care), 1400 NW 12th Ave, Miami, FL 33136",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.zipdatamaps.com/schools/florida/zipcode/map-of-33137-fl-elementary-school-attendance-zones",
+      "retrieved_at": "2026-10-08T18:10:05.746322Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Elementary schools within 33137: Hartner Elementary (378 students), Morningside K-8 Academy (472), North Beach Elementary (962, Miami Beach), Phyllis Wheatley Elementary (206), Toussaint L'Ouverture Elementary (337) - all Dade County School District",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "No official HOA/CDD fee schedule found. The association's 'HOA Fee' field on florida-condo-associations.com is blank, and the property manager is listed as FPMS (5600 Granada Dr, Sarasota, FL; 941-960-5000). Monthly dues seen only on MLS listings ($1,284 and $1,464 - conflicting) and one aggregator (~$0.85/sq ft/mo). Confirm current dues and what is included with the association before purchase.",
+    "CDD/special assessments: The Crimson is a condominium, and no CDD or CDD special assessment was found. Allioo.com states the building's SIRS (Structural Integrity & Reserve Study) is filed with the state; post-Surfside laws (SB 4D/SB 154) mandate full reserve funding, so verify reserve health and any planned special assessments with the board.",
+    "LEED certification level conflicts: CondoBlackBook and Haute Residence say LEED Gold; MiamiCondos.com and Miami Residential Group (developer) say LEED Silver.",
+    "Distance in miles from the building to the nearest grocery, shopping, library, hospital, and school could not be extracted - the only page with straight-line distances (allioo.com 'Nearest places') renders them via JavaScript and the figures were not readable. Only qualitative statements ('within walking distance'; 7 min to Design District, 18 min to South Beach, 20 min to MIA by car; 2 parks within 3.1 mi per a ForRent.com snippet that could not be opened) were confirmed. Verify distances on a map.",
+    "Which elementary school is zoned to 601 NE 27th St was not verified - the zipdatamaps.com list covers the entire 33137 ZIP. Check the MDCPS attendance boundary lookup for the exact address.",
+    "Demographic sources conflict on 33137 population/income: getzips.com (ACS 2019-2023): 27,300 pop / $82,798 median HH income; censusreporter.org: 29,414 pop; a zipcode-data.com search snippet claimed 25,283 pop / $71,348 median HH income but that page did not render those figures for verification. All figures are ZIP-level, not building-level.",
+    "Pet policy conflict: broker FAQ says max 1 pet at 40 lbs, no pet fees; Haute Residence says owners may keep larger pets. Verify the actual association pet rules and any breed restrictions.",
+    "The auto-generated association directory flags '55+ Community', 'Sauna', and 'Clubhouse' for this building - almost certainly data errors for a 2016 luxury condo; none corroborated elsewhere.",
+    "Allioo.com lists 46 building permits on file (Apr 2014-Sep 2026), 2 of them elevator work; permit history is partial. No red flags noted, but request the full permit and inspection history."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 730.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+          "retrieved_at": "2026-10-08T17:47:42.498551+00:00"
+        },
+        {
+          "amount": 2340.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/thcrmifl/about_hoa/",
+          "retrieved_at": "2026-10-08T17:47:42.498562+00:00"
+        },
+        {
+          "amount": 1284.0,
+          "period": "month",
+          "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1808-a12085031.htm",
+          "retrieved_at": "2026-10-08T18:10:05.746233+00:00"
+        },
+        {
+          "amount": 1464.0,
+          "period": "month",
+          "source_url": "https://www.miamiresidence.com/edgewater/crimson/condo-1001-a12041752.htm",
+          "retrieved_at": "2026-10-08T18:10:05.746243+00:00"
+        },
+        {
+          "amount": null,
+          "period": "month",
+          "source_url": "https://subdivisions.com/miami-fl/the-crimson-condos-for-sale",
+          "retrieved_at": "2026-10-08T18:10:05.746245+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T18:10:05.747520Z"
+    }
+  ],
+  "created_at": "2026-10-08T17:47:42.499362Z",
+  "updated_at": "2026-10-08T18:10:05.747608Z"
+}

@@ -1,0 +1,17 @@
+{# Shared inline-edit/delete controls.
+   ``edit_table`` / ``edit_id`` come from the current page's query string so the
+   same template can render either the display or the edit variant of a row.
+   Inputs elsewhere in the row connect to the (empty) edit form by its id via
+   the HTML5 ``form=`` attribute, which keeps table markup valid. #}
+{% macro actions(table, row_id, edit_url, delete_url, base_url, label, edit_table, edit_id) %}
+<form id="{{ table }}-edit-{{ row_id }}" method="post" action="{{ edit_url }}"></form>
+{% if edit_table == table and edit_id == row_id %}
+<button type="submit" form="{{ table }}-edit-{{ row_id }}" class="btn btn-save">Save</button>
+<a class="btn btn-cancel" href="{{ base_url }}">Cancel</a>
+{% else %}
+<a class="btn btn-edit" href="{{ base_url }}?edit_table={{ table }}&edit_id={{ row_id }}#{{ table }}">Edit</a>
+<form method="post" action="{{ delete_url }}" onsubmit="return confirm('Delete {{ label }}?');">
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+{% endif %}
+{% endmacro %}

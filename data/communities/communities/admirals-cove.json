@@ -1,0 +1,84 @@
+{
+  "id": "13d520d7-b6b4-48a7-8fae-3b283b9fdbc9",
+  "identity": {
+    "name": "Admirals Cove",
+    "slug": "admirals-cove",
+    "county_fips": null,
+    "city": "Jupiter, FL 33477",
+    "hoa_name": "Master Property Owners Association (MPOA) at Admirals Cove",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Luxury gated waterfront community in Jupiter, FL with approximately 893-900 residences (mixed single family, villas, and condos) on nearly 1,000 acres. Managed by the Master Property Owners Association (MPOA), which oversees multiple sub-associations (e.g., Waterside, Spyglass). Utilities: Florida Power & Light (electric), Town of Jupiter Utilities (water), Loxahatchee River District (sewer), Solid Waste Authority of Palm Beach County (trash). Rules: pets allowed on leash, short-term rentals prohibited, commercial vehicles prohibited."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/admirals-cove",
+      "retrieved_at": "2026-10-08T20:45:11.511742Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 980.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Observed median $980/mo; reported resident range $867-$2,300/mo (other sources cite ~$1,000-$2,300/mo). Fees vary by property type, waterfront vs. golf course location, and sub-association (MPOA plus condo associations); often billed quarterly. Verify with association directly. Transfer fees and special assessments not detailed in public sources (2 assessment signals noted)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+      "retrieved_at": "2026-10-08T20:45:11.511752Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "45 holes of golf (extensive golf facilities)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+      "retrieved_at": "2026-10-08T20:45:11.511759Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "Mega-yacht marina"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/admirals-cove",
+      "retrieved_at": "2026-10-08T20:45:11.511762Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/admirals-cove",
+      "retrieved_at": "2026-10-08T20:45:11.511764Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+      "retrieved_at": "2026-10-08T20:45:11.511765Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Multiple swimming pools"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+      "retrieved_at": "2026-10-08T20:45:11.511767Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Multiple clubhouses"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/acjufl/about_hoa/",
+      "retrieved_at": "2026-10-08T20:45:11.511769Z",
+      "confidence": 0.5,
+      "amenity": "fitness_wellness_center",
+      "detail": null
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T20:45:11.512324Z",
+  "updated_at": "2026-10-08T20:45:11.512419Z"
+}

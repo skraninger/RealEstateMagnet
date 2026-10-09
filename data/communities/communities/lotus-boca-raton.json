@@ -1,0 +1,162 @@
+{
+  "id": "9bcbf4a9-352d-4fa9-aa7a-64829fff77ec",
+  "identity": {
+    "name": "Lotus (Boca Raton)",
+    "slug": "lotus-boca-raton",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": "Lotus Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated luxury single-family community in west Boca Raton, FL 33434, developed by GL Homes. Launched in 2019 and completed in 2020, with approximately 804-805 homesites in two modern collections (Bali and Fiji), many on premium lakefront lots. Sold out and now trading exclusively as resale (generally $1.3M to $2.8M+). Managed by GRS Community Management. Note: two newer sibling communities exist on nearby Lyons Road - Lotus Palm (525 homes, resale) and Lotus Edge (649 homes, active new construction, $1.7M-$3M)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427112Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "HOA dues are billed quarterly; exact amounts are not published in the source content and vary over time. Sources (including the glennluxuryhomes.com blog) note fees changed after the builder handed the HOA over to homeowners, so sales-trailer quotes may be outdated. Verify current amounts with GRS Community Management, 561-641-8554, 3900 Woodlake Blvd. Suite 309, Lake Worth, FL 33463, https://www.grsmgt.com/association/l."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427119Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Capital contribution due at closing: two quarterly HOA assessments paid by the buyer at closing (new construction)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427122Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated luxury single-family community with controlled access"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427130Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "26,000+ sq ft clubhouse (GL Homes cites 39,000 sq ft for the larger Lotus Edge sibling community per glennluxuryhomes.com)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427132Z",
+      "confidence": 0.5,
+      "amenity": "pools",
+      "detail": "Resort-style pools including lap pool and whirlpool spa"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427134Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427137Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427139Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427141Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427143Z",
+      "confidence": 0.5,
+      "amenity": "indoor_sports_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427146Z",
+      "confidence": 0.5,
+      "amenity": "game_and_card_rooms",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427148Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Luna Bistro on-site restaurant in the clubhouse"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427150Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427152Z",
+      "confidence": 0.5,
+      "amenity": "party_pavilion",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+      "retrieved_at": "2026-10-08T19:53:34.427154Z",
+      "confidence": 0.5,
+      "amenity": "pro_shop",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.bocaratonrealestate.com/lotus/",
+      "retrieved_at": "2026-10-08T19:53:34.427157Z",
+      "confidence": 0.5,
+      "amenity": "lakefront_lots",
+      "detail": "Many homesites are premium lakefront lots with water views"
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": "quarterly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+          "retrieved_at": "2026-10-08T19:53:34.427112+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/loeapbrfl/about_hoa/",
+          "retrieved_at": "2026-10-08T19:53:34.427119+00:00"
+        }
+      ],
+      "detected_at": "2026-10-08T19:53:34.427665Z"
+    }
+  ],
+  "created_at": "2026-10-08T19:53:34.427640Z",
+  "updated_at": "2026-10-08T19:53:34.427769Z"
+}

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "started_at": "2026-10-06T17:19:32.650343+00:00",
-  "last_updated": "2026-10-07T20:33:38.906097+00:00",
+  "last_updated": "2026-10-09T15:47:29.337980+00:00",
   "condensers": [
     "ai",
     "web",
@@ -1435,6 +1435,27 @@
       "name": "Village of Indian Creek",
       "slug": "village-of-indian-creek",
       "city": "Indian Creek, Florida",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "Lotus (Boca Raton)",
+      "slug": "lotus-boca-raton",
+      "city": "Boca Raton",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "Eastern Shores Community Apartments Homeowners Association",
+      "slug": "eastern-shores-community-apartments-homeowners-association",
+      "city": "North Miami Beach, FL",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "Sans Souci Estates",
+      "slug": "sans-souci-estates",
+      "city": "North Miami",
       "county": null,
       "source": "database"
     }
@@ -12045,6 +12066,162 @@
       }
     },
     "village-of-indian-creek": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "lotus-boca-raton": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "eastern-shores-community-apartments-homeowners-association": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "sans-souci-estates": {
       "ai": {
         "status": "pending",
         "elapsed": 0.0,

@@ -9,6 +9,7 @@ A local web application for viewing and exploring the RealEstateMagnet database.
 - **Source URLs**: View all tracked URLs with data quality scores, robot-friendly status, and CAPTCHA detection results
 - **High Quality URLs**: Find URLs with the highest data quality scores (configurable threshold)
 - **Review Queue**: Identify URLs that failed with 4xx errors and need manual review
+- **Inline editing**: Edit and delete fact rows, pipeline status, condenser runs, and source URLs directly from the page (see [Editing and deleting rows](#editing-and-deleting-rows))
 
 ## Running the Viewer
 
@@ -103,6 +104,10 @@ table so the UI matches the database exactly:
 Empty sections are simply omitted, so a community with no fees yet shows no
 Fees card. If the slug is unknown the route returns HTTP 404.
 
+Every fact row (Fees, Amenities, Demographics, Proximity), the Pipeline Status
+row, and each Condenser Run row has **Edit** and **Delete** actions — see
+[Editing and deleting rows](#editing-and-deleting-rows).
+
 ### Source URLs (`/urls`)
 
 View all tracked URLs with:
@@ -110,6 +115,44 @@ View all tracked URLs with:
 - Filter by minimum quality score
 - Filter by whether the URL contains community data
 - View quality scores, data types found, robot-friendly status, CAPTCHA results
+- Edit a URL's metadata (title, status, quality, has-data, reviewed, review note,
+  failure info, etc.) or delete it — see
+  [Editing and deleting rows](#editing-and-deleting-rows)
+
+### Editing and deleting rows
+
+The viewer can modify the database, not just read it. Editing is **inline**: the
+row is replaced by a short form and a `Save`/`Cancel` pair.
+
+| Page | What you can edit / delete |
+|------|----------------------------|
+| `/communities/{slug}` | Fee, amenity, demographics, and proximity rows (all fields in `FACT_TABLES`) |
+| `/communities/{slug}` | The `community_pipeline_status` row (status, attempts, sort order, last error) — edit or delete |
+| `/communities/{slug}` | Each `community_condenser_runs` row (status, counts, sources, errors) — edit or delete |
+| `/urls` | `source_urls` metadata (title, domain, status, quality, has-data, reviewed, review note, failure category/detail, retryable, robot-friendly, community slug, HTTP status, data summary) — edit or delete. The `url` itself is read-only (it is the UNIQUE key); deleting also removes its `community_urls` links. |
+
+Implementation notes:
+
+- **Edit mode** is server-rendered from the query string
+  `?edit_table=<key>&edit_id=<row_id>` — no JavaScript required. The Edit link
+  sets these; Cancel/save returns to the plain page.
+- Controls are rendered by the shared macro
+  `templates/_macros.html::actions`. A row's inputs connect to an empty
+  `<form id="{table}-edit-{row_id}">` via the HTML5 `form="..."` attribute so a
+  `<form>` never has to sit inside a `<tr>`.
+- Writes accept only **whitelisted columns** defined in `modules/web/viewer.py`
+  (`FACT_TABLES`, `PIPELINE_FIELDS`, `CONDENSER_RUN_FIELDS`, `URL_FIELDS`); values
+  are always bound parameters. Enum fields (pipeline/condenser statuses) ignore
+  invalid values. A blank *required* field (e.g. fee type) is left unchanged
+  rather than nulled.
+- After a write the server responds **303 See Other**, redirecting back to the
+  page so refreshing does not resubmit.
+- There is **no authentication** — the viewer binds to `127.0.0.1` and is
+  intended for local use. Do not expose it to an untrusted network.
+- Endpoints: `POST /communities/{slug}/facts/{table}/{id}/edit|delete`,
+  `POST /communities/{slug}/pipeline/edit|delete`,
+  `POST /communities/{slug}/condenser-runs/{id}/edit|delete`,
+  `POST /urls/{id}/edit|delete`.
 
 ### High Quality URLs (`/high-quality`)
 
@@ -154,6 +197,8 @@ If optional tables (e.g. `source_urls`, `community_urls`, `community_pipeline_st
 All dependencies are already in `requirements.txt`:
 - `fastapi>=0.111.0`
 - `uvicorn[standard]>=0.29.0`
+- `jinja2>=3.1.0`
+- `python-multipart>=0.0.9` (form parsing for the edit/delete actions)
 
 ## Screenshots
 
@@ -187,7 +232,8 @@ Potential improvements:
 - Export data to CSV/JSON
 - Interactive charts for data quality trends
 - Map view for community locations
-- Edit capabilities for marking URLs as reviewed
+- Bulk edit/delete of multiple selected rows
+- Adding brand-new fact rows (currently rows are edit/delete only)
 - Real-time updates when pipeline is running
 - Advanced search with full-text search
 - API endpoints for programmatic access

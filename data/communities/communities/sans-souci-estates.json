@@ -1,0 +1,150 @@
+{
+  "id": "52a975ca-484b-40d9-93c5-30b18b34d09c",
+  "identity": {
+    "name": "Sans Souci Estates",
+    "slug": "sans-souci-estates",
+    "county_fips": null,
+    "city": "North Miami",
+    "hoa_name": "Sans Souci Gated Voluntary Homeowners Organization (SSGHOA / SSGHOA, Inc.)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated waterfront single-family home community in North Miami, FL 33181, with homes along canals providing boating access to Biscayne Bay. Governed by the voluntary Sans Souci Gated Voluntary Homeowners Organization (SSGHOA), which focuses on gate security, neighborhood events, and maintenance rather than mandatory fees or strict regulations. No detailed rules, architectural guidelines, or fee schedules are publicly documented."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275683Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Voluntary organization: no mandatory monthly, quarterly, or annual HOA fees are publicly documented. Contributions are described as voluntary, lower, and less restrictive than traditional HOAs; no transfer fees, capital contributions, or special assessments are publicly documented."
+    },
+    {
+      "source_url": "https://hoa-resource.com/sans-souci-estates-homeowners-association-north-miami-fl/",
+      "retrieved_at": "2026-10-09T02:14:03.275689Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee includes trash removal; exact fee amount not publicly available."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275693Z",
+      "confidence": 0.5,
+      "amenity": "gated_entrance",
+      "detail": "Gated community entrance with police-patrolled gate security"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275700Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_boating_access",
+      "detail": "Canal frontage with boating access to Biscayne Bay (no fixed bridges)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275703Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Penny Sugarman Tennis Center (Sans Souci Tennis Center) offers lessons and resident discounts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275706Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Nearby North Bayshore Park (dog park, fishing pier) and Alfred Besade Park (playground, picnic areas)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275707Z",
+      "confidence": 0.5,
+      "amenity": "community_events",
+      "detail": "Volunteer-run neighborhood events; meetings held at Scott Galvin Community Center"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Sans-Souci-Estates-Demographics.html",
+    "retrieved_at": "2026-10-09T02:14:03.275711Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 1360,
+    "data_year": null,
+    "geography_level": "community (Sans Souci Estates, North Miami, FL 33181), per most recent Census data via point2homes; 538 households (avg 2 members), 617 housing units (16.6% detached single-family); 48.8% male / 51.2% female; 32.2% Caucasian, 25.4% African American, 1.1% Asian, 30% two or more races; 42.4% US-born citizens, 29.5% naturalized, 28.2% non-citizens. Median household income and owner-occupancy rate not stated in content."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275715Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Penny Sugarman Tennis Center (Sans Souci Tennis Center)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275718Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "North Bayshore Park (dog park, fishing pier)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275719Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Alfred Besade Park (playground, picnic areas)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa",
+      "retrieved_at": "2026-10-09T02:14:03.275720Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Scott Galvin Community Center (community meeting venue)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Penny Sugarman Tennis Center (Sans Souci Tennis Center)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa"
+        },
+        {
+          "nearest_name": "North Bayshore Park (dog park, fishing pier)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa"
+        },
+        {
+          "nearest_name": "Alfred Besade Park (playground, picnic areas)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa"
+        },
+        {
+          "nearest_name": "Scott Galvin Community Center (community meeting venue)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ssenmfl/about_hoa"
+        }
+      ],
+      "detected_at": "2026-10-09T02:14:03.276166Z"
+    }
+  ],
+  "created_at": "2026-10-09T02:14:03.276144Z",
+  "updated_at": "2026-10-09T02:14:03.276236Z"
+}

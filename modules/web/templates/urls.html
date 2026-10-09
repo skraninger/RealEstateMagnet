@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% from "_macros.html" import actions %}
 
 {% block title %}URLs - RealEstateMagnet Viewer{% endblock %}
 
 {% block content %}
-<div class="card">
+<div class="card" id="urls">
     <h2>Source URLs ({{ urls|length }})</h2>
     
     <form method="get" class="filter-form">
@@ -34,14 +35,75 @@
                 <th>Status</th>
                 <th>Quality</th>
                 <th>Has Data</th>
-                <th>Communities</th>
+                <th>Reviewed</th>
                 <th>Data Types</th>
                 <th>Robot Friendly</th>
                 <th>CAPTCHA</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             {% for url in urls %}
+            {% if edit_table == 'urls' and edit_id == url.id %}
+            <tr>
+                <td colspan="10">
+                    <form method="post" action="/urls/{{ url.id }}/edit">
+                        <p class="text-small text-muted truncate">{{ url.url }}</p>
+                        <div class="edit-grid">
+                            <label>Title
+                                <input name="title" value="{{ url.title or '' }}">
+                            </label>
+                            <label>Domain
+                                <input name="domain" value="{{ url.domain or '' }}">
+                            </label>
+                            <label>Status
+                                <input name="status" value="{{ url.status or '' }}">
+                            </label>
+                            <label>HTTP Status
+                                <input type="number" name="http_status" value="{{ url.http_status if url.http_status is not none else '' }}">
+                            </label>
+                            <label>Quality Score
+                                <input type="number" step="any" name="data_quality_score" value="{{ url.data_quality_score if url.data_quality_score is not none else '' }}">
+                            </label>
+                            <label>Data Types
+                                <input name="data_types_found" value="{{ url.data_types_found or '' }}">
+                            </label>
+                            <label>Community Slug
+                                <input name="community_slug" value="{{ url.community_slug or '' }}">
+                            </label>
+                            <label>Failure Category
+                                <input name="failure_category" value="{{ url.failure_category or '' }}">
+                            </label>
+                            <label>Failure Detail
+                                <input name="failure_detail" value="{{ url.failure_detail or '' }}">
+                            </label>
+                            <label>Review Note
+                                <input name="review_note" value="{{ url.review_note or '' }}">
+                            </label>
+                            <label class="edit-grid-check">Has Data
+                                <input type="checkbox" name="has_community_data" {% if url.has_community_data %}checked{% endif %}>
+                            </label>
+                            <label class="edit-grid-check">Robot Friendly
+                                <input type="checkbox" name="robot_friendly" {% if url.robot_friendly %}checked{% endif %}>
+                            </label>
+                            <label class="edit-grid-check">Retryable
+                                <input type="checkbox" name="is_retryable" {% if url.is_retryable %}checked{% endif %}>
+                            </label>
+                            <label class="edit-grid-check">Reviewed
+                                <input type="checkbox" name="reviewed" {% if url.reviewed %}checked{% endif %}>
+                            </label>
+                        </div>
+                        <label style="display:block; margin-top:0.5rem;">Data Summary
+                            <textarea name="data_summary" rows="2">{{ url.data_summary or '' }}</textarea>
+                        </label>
+                        <div style="margin-top:0.75rem;">
+                            <button type="submit" class="btn btn-save">Save</button>
+                            <a class="btn btn-cancel" href="/urls">Cancel</a>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            {% else %}
             <tr>
                 <td class="truncate"><a href="{{ url.url }}" target="_blank">{{ url.url }}</a></td>
                 <td>{{ url.domain or '-' }}</td>
@@ -74,7 +136,13 @@
                     <span class="badge badge-warning">No</span>
                     {% endif %}
                 </td>
-                <td>{{ url.community_count or 0 }}</td>
+                <td>
+                    {% if url.reviewed %}
+                    <span class="badge badge-success">Yes</span>
+                    {% else %}
+                    <span class="badge badge-warning">No</span>
+                    {% endif %}
+                </td>
                 <td class="text-small">{{ url.data_types_found or '-' }}</td>
                 <td>
                     {% if url.robot_friendly %}
@@ -94,7 +162,11 @@
                     -
                     {% endif %}
                 </td>
+                <td class="row-actions">
+                    {{ actions('urls', url.id, '/urls/' ~ url.id ~ '/edit', '/urls/' ~ url.id ~ '/delete', '/urls', 'this URL', edit_table, edit_id) }}
+                </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
     </table>

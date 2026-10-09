@@ -1,0 +1,93 @@
+{
+  "id": "35503a82-a3dd-4f99-bc00-d0983e03b8e3",
+  "identity": {
+    "name": "San Souci Estates",
+    "slug": "san-souci-estates",
+    "county_fips": null,
+    "city": "North Miami",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Historic residential enclave in the Norland district of North Miami, known for its older (mostly mid-20th-century) single-family homes on quiet, tree-lined streets. The name is French for \"sans souci\" (without worry). The community is entered through a controlled gate on San Souci Road."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006404Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Some lots pay a community-association/common-area charge (gate operation, street/common-area upkeep), but no reliable published figure is available. Confirm current dues directly with the San Souci community association or a listing agent before purchase. No CDD special assessment is known to apply to this older neighborhood."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006410Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Monthly HOA figure not reliably documented in public sources; treat as unknown rather than quoting a number."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006413Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Single controlled entry gate with guard/entry monitoring at the main entrance along San Souci Road; otherwise a residential street-based neighborhood rather than a planned CDD, so there is no known clubhouse, pool, or golf facility within the community itself."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006423Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Aventura Mall",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006426Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix (Aventura, Biscayne Blvd) / Whole Foods (Aventura)",
+      "distance_miles": 3.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006428Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library - North Miami Branch (11701 NW 20th St)",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006429Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jackson Memorial Hospital (downtown Miami)",
+      "distance_miles": 8.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T02:10:09.006430Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Norland Middle School (North Miami)",
+      "distance_miles": 1.5
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-09T02:10:09.006920Z",
+  "updated_at": "2026-10-09T02:10:09.007029Z"
+}

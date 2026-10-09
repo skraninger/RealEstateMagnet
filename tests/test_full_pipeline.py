@@ -35,6 +35,7 @@ from modules.community.models import (
     ProximityMetric,
 )
 from modules.community.store import CommunityStore
+from modules.community.url_tracker import URLTracker
 
 
 def make_db(tmp_path: Path) -> CommunityDatabase:
@@ -723,6 +724,65 @@ class TestDbFirstPipeline:
             c: "done" for c in ALL_CONDENSERS
         }
         assert database.get_pipeline_status("bravo") == "completed"
+
+
+class TestShowThinkingWiring:
+    """`show_thinking` must create a reporter and hand it to each runner."""
+
+    def _pipeline(self, tmp_path: Path, show_thinking: bool) -> FullPipeline:
+        db = make_db(tmp_path)
+        return FullPipeline(
+            database=db,
+            url_tracker=URLTracker(db),
+            show_thinking=show_thinking,
+            on_progress=lambda msg: None,
+        )
+
+    def test_reporter_is_passed_and_closed(self, tmp_path: Path, monkeypatch) -> None:
+        import modules.community.full_pipeline as fp
+
+        captured: dict[str, Any] = {}
+
+        class FakeReporter:
+            produced = True
+
+            def __call__(self, delta: str) -> None:
+                captured.setdefault("deltas", []).append(delta)
+
+            def close(self) -> None:
+                captured["closed"] = True
+
+        monkeypatch.setattr(
+            fp, "console_thinking_reporter", lambda label, **kw: FakeReporter()
+        )
+
+        pipeline = self._pipeline(tmp_path, show_thinking=True)
+        info = CommunityInfo(name="Test", slug="test", city="Naples", source="test")
+
+        async def fake_runner(
+            info, store, database, *, url_tracker, on_progress=None, on_thinking=None
+        ):
+            on_thinking("the model's reasoning")
+            return CondenserStepResult(status="done")
+
+        result = asyncio.run(pipeline._run_with_heartbeat(fake_runner, info, "ai"))
+        assert result.status == "done"
+        assert captured["deltas"] == ["the model's reasoning"]
+        assert captured["closed"] is True
+
+    def test_disabled_passes_none(self, tmp_path: Path) -> None:
+        pipeline = self._pipeline(tmp_path, show_thinking=False)
+        info = CommunityInfo(name="Test", slug="test", city="Naples", source="test")
+        seen: dict[str, Any] = {}
+
+        async def fake_runner(
+            info, store, database, *, url_tracker, on_progress=None, on_thinking=None
+        ):
+            seen["on_thinking"] = on_thinking
+            return CondenserStepResult(status="done")
+
+        asyncio.run(pipeline._run_with_heartbeat(fake_runner, info, "ai"))
+        assert seen["on_thinking"] is None
 
 
 if __name__ == "__main__":

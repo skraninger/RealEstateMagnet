@@ -17,7 +17,8 @@ The Full Pipeline automatically discovers all known communities and processes ea
 ✅ **Resumable**: Each community is flagged `processing` → `completed`; a restart begins at the first community not completed  
 ✅ **URL Attribution**: Every URL inspected for a community is linked to it in the `community_urls` table  
 ✅ **Error Handling**: Continues processing even if individual condensers fail (the community stays `partial` for retry)  
-✅ **Progress Tracking**: Detailed per-community, per-condenser status (queryable from the database)
+✅ **Progress Tracking**: Detailed per-community, per-condenser status (queryable from the database)  
+✅ **Live Thinking** (on by default): stream the local model's reasoning to the console (disable with `-NoThinking`)
 
 ## Quick Start
 
@@ -55,6 +56,43 @@ This will:
 # Only Research Agent
 .\scripts\run-full-pipeline.ps1 -Condensers "research"
 ```
+
+### See the model thinking (live reasoning)
+
+The model's chain-of-thought is streamed to the console **by default**, indented
+under a `🧠 <community> / <condenser> — thinking:` header, as the local model
+produces it — so the console shows progress instead of looking frozen.
+
+```powershell
+# Default run: thinking is streamed
+.\scripts\run-full-pipeline.ps1
+
+# Turn it off for a run (e.g. to keep the log small)
+.\scripts\run-full-pipeline.ps1 -NoThinking
+```
+
+This requires a reasoning-capable local model: `start-model-server.ps1` launches
+llama.cpp with `--reasoning-format deepseek`, which returns thinking in a separate
+`reasoning_content` field. Force it on with `start-model-server.ps1 -Reasoning on`
+if the model does not think by default.
+
+The run log records the setting as `[CONFIG] ... Thinking=True/False`. On the
+Python side it can be disabled with `--no-show-thinking` or by setting
+`PIPELINE_SHOW_THINKING=0` in the process environment (`.env` is **not**
+auto-loaded by the pipeline). If a step emits no reasoning, the console logs
+`(no reasoning emitted by the model for this step)`. Only the local-model
+condensers (`ai`, `web`, `research`, `browser`) emit thinking; Gemini is API-side.
+
+To confirm streaming works (or to see thinking without running the pipeline):
+
+```powershell
+.venv\Scripts\python.exe scripts\show-model-thinking.py
+```
+
+It probes the server for `reasoning_content`, then streams an agent through the
+same helper the pipeline uses. Reasoning is forwarded from **every** model turn,
+so tool-using condensers (research/browser) show their reasoning during tool
+selection as well as the final answer.
 
 ### Start fresh (discard previous state)
 

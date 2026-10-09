@@ -4,12 +4,13 @@ Run with: python -m modules.web.viewer
 Then open: http://localhost:8000
 """
 
+import json
 import sqlite3
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 from fastapi import FastAPI, Request, Query
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
@@ -21,6 +22,165 @@ templates = Jinja2Templates(directory=str(templates_dir))
 
 # Database path
 DB_PATH = Path("data/communities.db")
+
+
+# ── editable table definitions ──────────────────────────────────────────────
+#
+# The viewer's edit/delete endpoints are config-driven: each table declares the
+# columns that may be written and how to coerce them from an HTML form. Column
+# and table names below are trusted literals (never request input), so building
+# the SQL from them is safe; values are always bound as parameters.
+#
+# field types: text | int | float | bool | json
+
+FACT_TABLES: dict[str, dict[str, Any]] = {
+    "fees": {
+        "table": "community_fees",
+        "title": "Fee",
+        "fields": [
+            {"name": "fee_type", "label": "Fee Type", "type": "text", "required": True},
+            {"name": "amount", "label": "Amount", "type": "float"},
+            {"name": "period", "label": "Period", "type": "text"},
+            {"name": "currency", "label": "Currency", "type": "text"},
+            {"name": "source_url", "label": "Source", "type": "text"},
+            {"name": "confidence", "label": "Confidence", "type": "float"},
+            {"name": "note", "label": "Note", "type": "text"},
+        ],
+    },
+    "amenities": {
+        "table": "community_amenities",
+        "title": "Amenity",
+        "fields": [
+            {"name": "amenity", "label": "Amenity", "type": "text", "required": True},
+            {"name": "detail", "label": "Detail", "type": "text"},
+            {"name": "source_url", "label": "Source", "type": "text"},
+            {"name": "confidence", "label": "Confidence", "type": "float"},
+        ],
+    },
+    "demographics": {
+        "table": "community_demographics",
+        "title": "Demographics",
+        "fields": [
+            {"name": "median_age", "label": "Median Age", "type": "float"},
+            {"name": "median_household_income", "label": "Median Income", "type": "float"},
+            {"name": "owner_occupancy_pct", "label": "Owner Occupancy %", "type": "float"},
+            {"name": "population", "label": "Population", "type": "int"},
+            {"name": "data_year", "label": "Data Year", "type": "int"},
+            {"name": "geography_level", "label": "Geography Level", "type": "text"},
+            {"name": "source_url", "label": "Source", "type": "text"},
+            {"name": "confidence", "label": "Confidence", "type": "float"},
+        ],
+    },
+    "proximity": {
+        "table": "proximity_metrics",
+        "title": "Proximity",
+        "fields": [
+            {"name": "category", "label": "Category", "type": "text", "required": True},
+            {"name": "nearest_name", "label": "Nearest", "type": "text"},
+            {"name": "distance_miles", "label": "Distance (miles)", "type": "float"},
+            {"name": "source_url", "label": "Source", "type": "text"},
+            {"name": "confidence", "label": "Confidence", "type": "float"},
+        ],
+    },
+}
+
+PIPELINE_STATUSES = ("pending", "processing", "partial", "completed", "failed")
+CONDENSER_RUN_STATUSES = ("pending", "running", "done", "error", "skipped")
+
+PIPELINE_FIELDS: list[dict[str, Any]] = [
+    {"name": "status", "label": "Status", "type": "text", "choices": PIPELINE_STATUSES},
+    {"name": "attempts", "label": "Attempts", "type": "int"},
+    {"name": "sort_order", "label": "Sort Order", "type": "int"},
+    {"name": "last_error", "label": "Last Error", "type": "text"},
+]
+
+CONDENSER_RUN_FIELDS: list[dict[str, Any]] = [
+    {"name": "status", "label": "Status", "type": "text", "choices": CONDENSER_RUN_STATUSES},
+    {"name": "elapsed", "label": "Elapsed (s)", "type": "float"},
+    {"name": "fees", "label": "Fees", "type": "int"},
+    {"name": "amenities", "label": "Amenities", "type": "int"},
+    {"name": "proximity", "label": "Proximity", "type": "int"},
+    {"name": "demographics_present", "label": "Demographics", "type": "bool"},
+    {"name": "sources_consulted", "label": "Sources", "type": "int"},
+    {"name": "errors", "label": "Errors (JSON list)", "type": "json"},
+]
+
+# ``url`` is intentionally omitted: it is UNIQUE (the canonical key) so it is
+# shown read-only and only the metadata around it is editable.
+URL_FIELDS: list[dict[str, Any]] = [
+    {"name": "title", "label": "Title", "type": "text"},
+    {"name": "domain", "label": "Domain", "type": "text"},
+    {"name": "status", "label": "Status", "type": "text"},
+    {"name": "failure_category", "label": "Failure Category", "type": "text"},
+    {"name": "failure_detail", "label": "Failure Detail", "type": "text"},
+    {"name": "is_retryable", "label": "Retryable", "type": "bool"},
+    {"name": "reviewed", "label": "Reviewed", "type": "bool"},
+    {"name": "review_note", "label": "Review Note", "type": "text"},
+    {"name": "robot_friendly", "label": "Robot Friendly", "type": "bool"},
+    {"name": "has_community_data", "label": "Has Data", "type": "bool"},
+    {"name": "data_quality_score", "label": "Quality Score", "type": "float"},
+    {"name": "data_types_found", "label": "Data Types", "type": "text"},
+    {"name": "data_summary", "label": "Data Summary", "type": "text"},
+    {"name": "community_slug", "label": "Community Slug", "type": "text"},
+    {"name": "http_status", "label": "HTTP Status", "type": "int"},
+]
+
+
+def _coerce_value(field: dict[str, Any], raw: Any) -> Any:
+    """Convert a raw form value to the Python type the column expects."""
+    ftype = field["type"]
+    if ftype == "bool":
+        return 1 if raw is not None and str(raw).strip().lower() in ("1", "true", "on", "yes") else 0
+    if raw is None:
+        return None
+    text = str(raw).strip()
+    if text == "":
+        return None
+    if ftype == "int":
+        try:
+            return int(float(text))
+        except ValueError:
+            return None
+    if ftype == "float":
+        try:
+            return float(text)
+        except ValueError:
+            return None
+    if ftype == "json":
+        json.loads(text)  # raises ValueError when invalid; caller skips the field
+        return text
+    return text
+
+
+def _apply_fields(
+    conn: sqlite3.Connection,
+    table: str,
+    fields: list[dict[str, Any]],
+    form: Any,
+    where_sql: str,
+    where_params: list[Any],
+) -> None:
+    """Apply a whitelisted set of field updates and commit."""
+    sets: list[str] = []
+    params: list[Any] = []
+    for field in fields:
+        raw = form.get(field["name"])
+        if field.get("required") and (raw is None or str(raw).strip() == ""):
+            continue  # leave a required column untouched rather than null it
+        choices = field.get("choices")
+        if choices is not None and str(raw if raw is not None else "").strip() not in choices:
+            continue  # ignore invalid/blank enum values
+        try:
+            value = _coerce_value(field, raw)
+        except (ValueError, TypeError):
+            continue  # invalid JSON/number: leave the column unchanged
+        sets.append(f'{field["name"]} = ?')
+        params.append(value)
+    if not sets:
+        return
+    params.extend(where_params)
+    conn.execute(f'UPDATE {table} SET {", ".join(sets)} WHERE {where_sql}', params)
+    conn.commit()
 
 
 def _ensure_schema() -> None:
@@ -241,8 +401,13 @@ async def communities_list(
 
 
 @app.get("/communities/{slug}", response_class=HTMLResponse)
-async def community_detail(request: Request, slug: str):
-    """Detailed view of a single community."""
+async def community_detail(
+    request: Request,
+    slug: str,
+    edit_table: Optional[str] = None,
+    edit_id: Optional[int] = None,
+):
+    """Detailed view of a single community, with inline edit/delete support."""
     conn = get_db()
     cursor = conn.cursor()
     
@@ -305,7 +470,7 @@ async def community_detail(request: Request, slug: str):
     try:
         cursor.execute(
             """
-            SELECT condenser, status, elapsed, fees, amenities, proximity,
+            SELECT id, condenser, status, elapsed, fees, amenities, proximity,
                    demographics_present, sources_consulted, errors, finished_at
             FROM community_condenser_runs
             WHERE community_slug = ?
@@ -362,8 +527,180 @@ async def community_detail(request: Request, slug: str):
             "source_urls": source_urls,
             "pipeline_status": pipeline_status,
             "condenser_runs": condenser_runs,
+            "edit_table": edit_table,
+            "edit_id": edit_id,
+            "pipeline_status_options": PIPELINE_STATUSES,
+            "condenser_run_status_options": CONDENSER_RUN_STATUSES,
         }
     )
+
+
+# ── write endpoints: community facts ────────────────────────────────────────
+
+
+@app.post("/communities/{slug}/facts/{table}/{row_id}/edit")
+async def edit_fact_row(request: Request, slug: str, table: str, row_id: int):
+    """Update one whitelisted fact row (fee/amenity/demographic/proximity)."""
+    spec = FACT_TABLES.get(table)
+    if spec is None:
+        return HTMLResponse("<h1>Unknown table</h1>", status_code=404)
+
+    form = await request.form()
+    conn = get_db()
+    try:
+        exists = conn.execute(
+            f'SELECT 1 FROM {spec["table"]} WHERE id = ? AND community_slug = ?',
+            (row_id, slug),
+        ).fetchone()
+        if exists is None:
+            return HTMLResponse("<h1>Row not found</h1>", status_code=404)
+        _apply_fields(
+            conn,
+            spec["table"],
+            spec["fields"],
+            form,
+            where_sql="id = ? AND community_slug = ?",
+            where_params=[row_id, slug],
+        )
+    finally:
+        conn.close()
+    return RedirectResponse(f"/communities/{slug}", status_code=303)
+
+
+@app.post("/communities/{slug}/facts/{table}/{row_id}/delete")
+async def delete_fact_row(slug: str, table: str, row_id: int):
+    """Delete one whitelisted fact row."""
+    spec = FACT_TABLES.get(table)
+    if spec is None:
+        return HTMLResponse("<h1>Unknown table</h1>", status_code=404)
+
+    conn = get_db()
+    try:
+        conn.execute(
+            f'DELETE FROM {spec["table"]} WHERE id = ? AND community_slug = ?',
+            (row_id, slug),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return RedirectResponse(f"/communities/{slug}", status_code=303)
+
+
+# ── write endpoints: pipeline status & condenser runs ───────────────────────
+
+
+@app.post("/communities/{slug}/pipeline/edit")
+async def edit_pipeline_status(request: Request, slug: str):
+    form = await request.form()
+    conn = get_db()
+    try:
+        exists = conn.execute(
+            "SELECT 1 FROM community_pipeline_status WHERE community_slug = ?",
+            (slug,),
+        ).fetchone()
+        if exists is None:
+            return HTMLResponse("<h1>Pipeline status not found</h1>", status_code=404)
+        _apply_fields(
+            conn,
+            "community_pipeline_status",
+            PIPELINE_FIELDS,
+            form,
+            where_sql="community_slug = ?",
+            where_params=[slug],
+        )
+    finally:
+        conn.close()
+    return RedirectResponse(f"/communities/{slug}", status_code=303)
+
+
+@app.post("/communities/{slug}/pipeline/delete")
+async def delete_pipeline_status(slug: str):
+    conn = get_db()
+    try:
+        conn.execute(
+            "DELETE FROM community_pipeline_status WHERE community_slug = ?", (slug,)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return RedirectResponse(f"/communities/{slug}", status_code=303)
+
+
+@app.post("/communities/{slug}/condenser-runs/{run_id}/edit")
+async def edit_condenser_run(request: Request, slug: str, run_id: int):
+    form = await request.form()
+    conn = get_db()
+    try:
+        exists = conn.execute(
+            "SELECT 1 FROM community_condenser_runs WHERE id = ? AND community_slug = ?",
+            (run_id, slug),
+        ).fetchone()
+        if exists is None:
+            return HTMLResponse("<h1>Condenser run not found</h1>", status_code=404)
+        _apply_fields(
+            conn,
+            "community_condenser_runs",
+            CONDENSER_RUN_FIELDS,
+            form,
+            where_sql="id = ? AND community_slug = ?",
+            where_params=[run_id, slug],
+        )
+    finally:
+        conn.close()
+    return RedirectResponse(f"/communities/{slug}", status_code=303)
+
+
+@app.post("/communities/{slug}/condenser-runs/{run_id}/delete")
+async def delete_condenser_run(slug: str, run_id: int):
+    conn = get_db()
+    try:
+        conn.execute(
+            "DELETE FROM community_condenser_runs WHERE id = ? AND community_slug = ?",
+            (run_id, slug),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return RedirectResponse(f"/communities/{slug}", status_code=303)
+
+
+# ── write endpoints: source URLs ────────────────────────────────────────────
+
+
+@app.post("/urls/{url_id}/edit")
+async def edit_source_url(request: Request, url_id: int):
+    form = await request.form()
+    conn = get_db()
+    try:
+        exists = conn.execute(
+            "SELECT 1 FROM source_urls WHERE id = ?", (url_id,)
+        ).fetchone()
+        if exists is None:
+            return HTMLResponse("<h1>URL not found</h1>", status_code=404)
+        _apply_fields(
+            conn,
+            "source_urls",
+            URL_FIELDS,
+            form,
+            where_sql="id = ?",
+            where_params=[url_id],
+        )
+    finally:
+        conn.close()
+    return RedirectResponse("/urls", status_code=303)
+
+
+@app.post("/urls/{url_id}/delete")
+async def delete_source_url(url_id: int):
+    conn = get_db()
+    try:
+        # Remove the community links too (FKs are not enforced by SQLite).
+        conn.execute("DELETE FROM community_urls WHERE url_id = ?", (url_id,))
+        conn.execute("DELETE FROM source_urls WHERE id = ?", (url_id,))
+        conn.commit()
+    finally:
+        conn.close()
+    return RedirectResponse("/urls", status_code=303)
 
 
 @app.get("/urls", response_class=HTMLResponse)
@@ -372,8 +709,10 @@ async def urls_list(
     status: Optional[str] = None,
     min_quality: Optional[float] = None,
     has_data: Optional[bool] = None,
+    edit_table: Optional[str] = None,
+    edit_id: Optional[int] = None,
 ):
-    """List all source URLs with quality metrics."""
+    """List all source URLs with quality metrics, with inline edit/delete."""
     conn = get_db()
     cursor = conn.cursor()
     
@@ -389,10 +728,13 @@ async def urls_list(
 
         query = f"""
             SELECT 
-                su.url, su.domain, su.status, su.title, 
+                su.id, su.url, su.domain, su.status, su.title, 
                 su.data_quality_score, su.has_community_data, 
                 su.data_types_found, su.data_summary,
                 su.robot_friendly, su.captcha_detected, su.captcha_solved,
+                su.reviewed, su.review_note, su.failure_category,
+                su.failure_detail, su.is_retryable, su.http_status,
+                su.community_slug,
                 su.discovered_at, su.accessed_at,
                 {links_select}
             FROM source_urls su
@@ -434,6 +776,8 @@ async def urls_list(
             "status": status,
             "min_quality": min_quality,
             "has_data": has_data,
+            "edit_table": edit_table,
+            "edit_id": edit_id,
         }
     )
 

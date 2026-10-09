@@ -94,6 +94,17 @@ param(
     # running any collection.
     [switch]$Status,
 
+    # Stream each condenser's model reasoning ("thinking") to the console while
+    # it runs. ON BY DEFAULT. Requires a reasoning-capable model server (see
+    # start-model-server.ps1).
+    #
+    # Kept for backward compatibility; thinking is already on unless -NoThinking.
+    [switch]$ShowThinking,
+
+    # Turn the thinking stream off for this run (it is on by default). Useful to
+    # keep the log small or when the model's reasoning is very long.
+    [switch]$NoThinking,
+
     # JSON file that mirrors progress for humans and feeds the one-time legacy
     # migration. The SQLite database is the source of truth, NOT this file.
     [string]$StatePath = "data/pipeline_state.json",
@@ -188,8 +199,19 @@ Write-Host "====================================================================
 Write-Host ""
 Write-Log "[LOG] Full run log:  $LogPath"
 Write-Log "[LOG] Error report:  $ErrorLogPath"
-Write-Log "[CONFIG] Community='$Community' Condensers='$Condensers' Reset=$Reset Status=$Status"
+# Thinking stream: on by default; -NoThinking disables, -ShowThinking forces on.
+$ThinkingEnabled = $true
+if ($NoThinking) {
+    $ThinkingEnabled = $false
+} elseif ($ShowThinking) {
+    $ThinkingEnabled = $true
+}
+
+Write-Log "[CONFIG] Community='$Community' Condensers='$Condensers' Reset=$Reset Status=$Status Thinking=$ThinkingEnabled"
 Write-Log "[CONFIG] StatePath='$StatePath' DbPath='$DbPath' LogLevel='$LogLevel'"
+if (-not $ThinkingEnabled) {
+    Write-Log "[CONFIG] Thinking stream is OFF (-NoThinking)"
+}
 
 # Check if model server is running
 Write-Host "[CHECK] Verifying model server..." -ForegroundColor Yellow
@@ -254,6 +276,12 @@ if ($Reset) {
 
 if ($Status) {
     $Args += "--status"
+}
+
+if ($ThinkingEnabled) {
+    $Args += "--show-thinking"
+} else {
+    $Args += "--no-show-thinking"
 }
 
 $Args += "--state-path"

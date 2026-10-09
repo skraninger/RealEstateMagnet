@@ -65,9 +65,12 @@ class CommunityResearchEngine:
         store: CommunityStore | None = None,
         agent: CommunityResearchAgent | None = None,
         url_tracker: Any | None = None,
+        on_thinking: Any | None = None,
     ) -> None:
         self.store = store or CommunityStore()
-        self.agent = agent or CommunityResearchAgent(url_tracker=url_tracker)
+        self.agent = agent or CommunityResearchAgent(
+            url_tracker=url_tracker, on_thinking=on_thinking
+        )
 
     async def research_one(self, seed: dict[str, Any]) -> CommunityResearchReport:
         report = CommunityResearchReport(

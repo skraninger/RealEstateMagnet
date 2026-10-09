@@ -1,0 +1,174 @@
+{
+  "id": "05546f62-c92e-4ce9-bf77-9b0e3d81bcc3",
+  "identity": {
+    "name": "The Sanctuary at Pinecrest",
+    "slug": "the-sanctuary-at-pinecrest",
+    "county_fips": null,
+    "city": "Pinecrest",
+    "hoa_name": "THE SANCTUARY AT PINECREST MAINTENANCE ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Boutique single-family gated community of only 12 residences in the northern part of the Village of Pinecrest (Miami-Dade County), HOA established July 5, 1994. Known for distinctive architecture, beautifully finished homes, pools, and sizable lots. Centrally situated between Coral Gables and Palmetto Bay, minutes from Downtown Miami. HOA address: 11061 SW 59th Ct, Miami, FL 33156; Federal ID 650781214; managed by FPMS (5600 Granada Dr, Sarasota, FL 34231, 941-960-5000)."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-resource.com/sanctuary-at-pinecrest-homeowners-association-pinecrest-fl/",
+      "retrieved_at": "2026-10-09T03:47:57.230505Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Exact HOA dues amount NOT stated in sources. Per hoa-resource.com, HOA fees include: reserves, security gate, trash removal, common hot water, and common heat. Amounts should be verified directly with the HOA/property manager (FPMS, 941-960-5000). No CDD assessments or other charges mentioned in provided content."
+    },
+    {
+      "source_url": "https://hoa-resource.com/sanctuary-at-pinecrest-homeowners-association-pinecrest-fl/",
+      "retrieved_at": "2026-10-09T03:47:57.230516Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fees cover common hot water and common heat (utilities included in dues) per hoa-resource.com; no separate amounts provided."
+    },
+    {
+      "source_url": "https://www.anniasalazar.net/real-estate/11062-sw-59th-ct-pinecrest-fl-33156/a11425830/139968681",
+      "retrieved_at": "2026-10-09T16:27:56.135516Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1500.0,
+      "period": "Semi (MLS 'Association Fee Frequency: Semi' — possibly semi-annual; unconfirmed)",
+      "currency": "USD",
+      "note": "Miami REALTORS MLS record (A11425830, 11062 SW 59th Ct, sold 12/11/2023 for $4.5M): Association Fee $1,500; Mandatory HOA; Maintenance Includes: common area maintenance; Card/Electric Gate; Gated Community; Type of Association: Homeowners; Restrictions: Assoc Approval Required, Ok To Lease; annual taxes $34,818 (2022). One property's record, not a community-wide schedule; confirm via estoppel with manager FPMS (941-960-5000). Listing-site data, medium confidence per MLS source attribution on page (updated 10/9/2026).\", \"confidence\": 0.5, "
+    },
+    {
+      "source_url": "https://subdivisions.com/property/11062-sw-59th-ct-pinecrest-fl-33156-a11425830",
+      "retrieved_at": "2026-10-09T16:27:56.135530Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1500.0,
+      "period": "monthly (as displayed by site)",
+      "currency": "USD",
+      "note": "Subdivisions.com displays the same MLS record (A11425830, 11062 SW 59th Ct) as '$1,500/mo HOA' — conflicts with the MLS frequency field shown as 'Semi' on the MLS data page; both versions reported as separate facts per rules. Maintenance includes: CommonAreaMaintenance; SecurityGate/GatedCommunity. Listing-site interpretation, lower confidence.\", \"confidence\": 0.5, }, {"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
+      "retrieved_at": "2026-10-09T03:47:57.230523Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Community described by brokerage as featuring 'lovely swimming pools' (community pool)."
+    },
+    {
+      "source_url": "https://hoa-resource.com/sanctuary-at-pinecrest-homeowners-association-pinecrest-fl/",
+      "retrieved_at": "2026-10-09T03:47:57.230538Z",
+      "confidence": 0.5,
+      "amenity": "security_gate",
+      "detail": "Gated entry; security gate listed as included in HOA fees per hoa-resource.com."
+    },
+    {
+      "source_url": "https://hoa-resource.com/sanctuary-at-pinecrest-homeowners-association-pinecrest-fl/",
+      "retrieved_at": "2026-10-09T03:47:57.230545Z",
+      "confidence": 0.5,
+      "amenity": "trash_removal",
+      "detail": "Trash removal included in HOA fees per hoa-resource.com."
+    },
+    {
+      "source_url": "https://hoa-resource.com/sanctuary-at-pinecrest-homeowners-association-pinecrest-fl/",
+      "retrieved_at": "2026-10-09T03:47:57.230552Z",
+      "confidence": 0.5,
+      "amenity": "common_hot_water_heat",
+      "detail": "Common hot water and common heat included in HOA fees per hoa-resource.com."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
+    "retrieved_at": "2026-10-09T03:47:57.230561Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 19460,
+    "data_year": null,
+    "geography_level": "Village of Pinecrest (municipality, not community-level); ~8 sq mi, incorporated March 12, 1996. Community itself has only 12 residences. Median age, income, and owner-occupancy not stated in sources."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
+      "retrieved_at": "2026-10-09T03:47:57.230569Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
+      "retrieved_at": "2026-10-09T03:47:57.230575Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
+      "retrieved_at": "2026-10-09T03:47:57.230578Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Coral Gables / Palmetto Bay",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://hoa-resource.com/sanctuary-at-pinecrest-homeowners-association-pinecrest-fl/",
+          "retrieved_at": "2026-10-09T03:47:57.230505+00:00"
+        },
+        {
+          "amount": 1500.0,
+          "period": "Semi (MLS 'Association Fee Frequency: Semi' — possibly semi-annual; unconfirmed)",
+          "source_url": "https://www.anniasalazar.net/real-estate/11062-sw-59th-ct-pinecrest-fl-33156/a11425830/139968681",
+          "retrieved_at": "2026-10-09T16:27:56.135516+00:00"
+        },
+        {
+          "amount": 1500.0,
+          "period": "monthly (as displayed by site)",
+          "source_url": "https://subdivisions.com/property/11062-sw-59th-ct-pinecrest-fl-33156-a11425830",
+          "retrieved_at": "2026-10-09T16:27:56.135530+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T16:27:56.393006Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Downtown Miami",
+          "distance_miles": null,
+          "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm"
+        },
+        {
+          "nearest_name": "Miami International Airport",
+          "distance_miles": null,
+          "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm"
+        },
+        {
+          "nearest_name": "Coral Gables / Palmetto Bay",
+          "distance_miles": null,
+          "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm"
+        }
+      ],
+      "detected_at": "2026-10-09T16:27:56.393021Z"
+    }
+  ],
+  "created_at": "2026-10-09T03:47:57.231336Z",
+  "updated_at": "2026-10-09T16:27:56.393218Z"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "cac7e139-dd46-42f9-8324-6bf338f5fff5",
+  "identity": {
+    "name": "BallenIsles",
+    "slug": "ballenisles",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "BallenIsles Community Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated private club community in Palm Beach Gardens, Palm Beach County, Florida, made up of 1,575 residences (patio homes, golf villas, courtyard homes, and condominiums) across 33 neighborhoods. Bordered by PGA Boulevard (north), Military Trail (east), Northlake Boulevard (south), and Florida's Turnpike (west). Features three championship golf courses at the BallenIsles Country Club — former headquarters of the PGA of America and host of the PGA Championship, Senior PGA Championship, and Men's Golf World Cup. Awarded a five-star rating by Platinum Clubs of America and ranked among the Top 100 residential clubs in America. Governing HOA (BallenIsles Community Association, Inc.) has been registered in Florida since 1989."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.communitypay.us/directory/florida/palm-beach-gardens/ballenisles-community-association-inc/",
+      "retrieved_at": "2026-10-08T15:55:34.339327Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No specific HOA dues, CDD assessments, or other fee amounts are stated in the provided content. BallenIsles is governed by BallenIsles Community Association, Inc. (active since 1989, report filed 2026); reserve studies are required every 10 years under Fla. Stat. §718.112. Fees must be verified directly with the association via a Resale Certificate (paid-through date and itemized assessments required under Fla. Stat. §720.30851)."
+    },
+    {
+      "source_url": "https://www.ballenisles.org/amenities",
+      "retrieved_at": "2026-10-08T15:55:34.339335Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "As a private club community, members typically pay club dues in addition to HOA assessments, but no amounts were stated in the content."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/BallenIsles",
+      "retrieved_at": "2026-10-08T15:55:34.339339Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Three championship golf courses at BallenIsles Country Club; former PGA of America headquarters and former home of PGA Tour Qualifying School (through 1971); host of PGA Championship, Senior PGA Championship, and Men's Golf World Cup; voted Best Country Club & Best Golf Course 2022 in Palm Beach County; Board Room Magazine / Forbes Distinguished Clubs designation (2013)."
+    },
+    {
+      "source_url": "https://www.ballenisles.org/amenities",
+      "retrieved_at": "2026-10-08T15:55:34.339347Z",
+      "confidence": 0.5,
+      "amenity": "tennis_racquets",
+      "detail": "Top-ranked racquets facility by the USTA."
+    },
+    {
+      "source_url": "https://www.ballenisles.org/amenities",
+      "retrieved_at": "2026-10-08T15:55:34.339350Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_member_clubs",
+      "detail": "Private club lifestyle with Member Clubs offering small-group social activities and a warm, intimate social environment; five-star rated by Platinum Clubs of America and ranked among the Top 100 residential clubs in America."
+    },
+    {
+      "source_url": "https://www.ballenisles.org/amenities",
+      "retrieved_at": "2026-10-08T15:55:34.339353Z",
+      "confidence": 0.5,
+      "amenity": "lakes_and_botanical_gardens",
+      "detail": "Most properties overlook shimmering lakes, botanical gardens, and the three golf layouts."
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/BallenIsles",
+      "retrieved_at": "2026-10-08T15:55:34.339357Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community with controlled entrances: north entrance on PGA Boulevard, south entrance on Northlake Boulevard, and east entrance on Military Trail (via East Island Ave); main road is BallenIsles Drive."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://en.wikipedia.org/wiki/BallenIsles",
+    "retrieved_at": "2026-10-08T15:55:34.339361Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 1575,
+    "data_year": null,
+    "geography_level": "Residences within BallenIsles (33 neighborhoods) — count of residences, not persons; median age, income, and owner-occupancy not stated in content"
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-08T15:55:34.339860Z",
+  "updated_at": "2026-10-08T15:55:34.339959Z"
+}

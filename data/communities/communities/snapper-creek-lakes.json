@@ -1,0 +1,74 @@
+{
+  "id": "c5d37140-fcc7-422d-912f-a2932541710a",
+  "identity": {
+    "name": "Snapper Creek Lakes",
+    "slug": "snapper-creek-lakes",
+    "county_fips": null,
+    "city": "Coral Gables",
+    "hoa_name": "None",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated residential community in Coral Gables, Miami-Dade County, Florida. Community-specific HOA/CDD fees and on-site amenities could not be confirmed from available AI knowledge; the demographics and proximity figures below reflect city-level (Coral Gables) context where community-specific data was unavailable."
+  },
+  "fees": [],
+  "amenities": [],
+  "demographics": {
+    "source_url": "ai:condensed",
+    "retrieved_at": "2025-06-01T00:00:00Z",
+    "confidence": 0.4,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 22000,
+    "data_year": 2020,
+    "geography_level": "city (Coral Gables), not community-specific"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T15:24:48.144194Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Baptist Hospital of Miami",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T15:24:48.144200Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Coral Gables Square",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T15:24:48.144202Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": null,
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T15:24:48.144203Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Coral Gables Public Library",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T15:24:48.144205Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "University of Miami",
+      "distance_miles": 6.0
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-09T15:24:48.144876Z",
+  "updated_at": "2026-10-09T15:24:48.145040Z"
+}

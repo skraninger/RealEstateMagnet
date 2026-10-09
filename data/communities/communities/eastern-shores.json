@@ -1,0 +1,358 @@
+{
+  "id": "2a5843e1-792c-4e8a-8e15-22ebaa642af0",
+  "identity": {
+    "name": "Eastern Shores",
+    "slug": "eastern-shores",
+    "county_fips": null,
+    "city": "North Miami Beach",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated residential community in North Miami Beach, Miami-Dade County, Florida. Publicly documented specifics on this community (exact HOA/CDD fees, amenity list, community-level demographics) are not well established in my knowledge base, so no fee or amenity facts are reported. Demographics and proximity items provided are city/area-level approximations for the North Miami Beach area and are flagged with low confidence."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.easternshorespoa.com/payments",
+      "retrieved_at": "2026-10-09T00:19:35.534647Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 50.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Official ESPOA (Eastern Shores Property Owners' Association) site FAQ: 'members pay their $50 annual dues'; dues typically due at beginning of calendar year; no late fees. Dues cover community management, common area maintenance, communications, event coordination, advocacy at city meetings, and shared neighborhood infrastructure maintenance. This is the POA/neighborhood dues, separate from any condominium building association fees. Conflicts with third-party aggregators claiming 'no traditional HOA fees' for most single-family homes (see other fee facts). Also note: a separate 'Eastern Shores Community Apartments HOA' (co-op, 3741 NE 170th St, est. 1960) exists per florida-hoa.net - different association from ESPOA. No CDD assessments found in any source reviewed. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/esmnbfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:19:35.534659Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Aggregator (hoabulletinboard): 'Public sources indicate no traditional HOA fees for most single-family homes; fees apply to condominium sub-associations. Exact figures for the POA are unavailable from public records.' Conflicts with official ESPOA site's $50 annual dues. ESPOA registered address 16422 NE 34 Avenue, NMB 33160; city admin/guardhouse hotline 305-354-4420; email easternshoresadmin@citynmb.com. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wesnmbfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:19:35.534662Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Aggregator reporting listing-site figures: 'Condo fees in the area vary, e.g., monthly dues reported around $427-$986 in listings' for condominium sub-associations within Eastern Shores. Unverified listing data; confirm with individual building associations. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=700989",
+      "retrieved_at": "2026-10-09T00:19:35.534664Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "For the separate 'Eastern Shores Community Apartments HOA' (EASTERN SHORES COMMUNITY APTS INC, co-op, est. 1960, 3741 NE 170th St, NMB 33160): 'Association HOA Fee: HOA Fee Required' - amount not published. Property manager: FPMS, Sarasota FL, 941-960-5000. Amenities listed: Community Pool, Gated Community. (Retrieved ~2026-10-05.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/esmnbfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:19:35.534668Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Guard-gated peninsula community; 24/7 manned guard gate installed 1997; dedicated on-site fire rescue station; administered via City of North Miami Beach Eastern Shores Administration (305-354-4420). (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/eastern-shores-miami-faqs",
+      "retrieved_at": "2026-10-09T00:19:35.534679Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Buyer FAQ: 'Access is limited to a single staffed entrance off NE 35th Avenue, which keeps traffic patterns controlled and through-traffic minimal.' (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.easternshorespoa.com/payments",
+      "retrieved_at": "2026-10-09T00:19:35.534681Z",
+      "confidence": 0.5,
+      "amenity": "hoa_dues_coverage",
+      "detail": "Annual ESPOA dues cover community management, common area maintenance, communications, event coordination, advocacy at city meetings, and maintenance of shared neighborhood infrastructure; online payment via member portal; no late fees. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.easternshorespoa.com/",
+      "retrieved_at": "2026-10-09T00:19:35.534685Z",
+      "confidence": 0.5,
+      "amenity": "other_community_services",
+      "detail": "Monthly bulk trash pickup (curbside, 3rd Thursday of each month, city-scheduled); community portal with documents/CC&Rs, maintenance requests, events; 500+ Eastern Shores homeowners per board site. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.buysouthflorida.com/neighborhood/eastern-shores-florida",
+      "retrieved_at": "2026-10-09T00:19:35.534688Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Listing-site amenity list: 24/7 security, community center, private boat docks, swimming pools, iPic Theater. Also: 300 total homes, 2,900-9,340 sqft, Gated: Yes, Pet Restrictions: Pets Allowed, Year Built 1950, HOA: No (note: 'HOA No' conflicts with official ESPOA existence). (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/eastern-shores-miami-faqs",
+      "retrieved_at": "2026-10-09T00:19:35.534690Z",
+      "confidence": 0.5,
+      "amenity": "private_boat_docks_waterfront",
+      "detail": "Single-family homes sit along deep-water canals; most lots have direct navigable access to the Intracoastal Waterway via Maule Lake with no fixed bridges; ocean access via Haulover Inlet typically 10-20 minutes by boat; lots usually ~7,000-10,000 sqft. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.citynmb.com/653/Eastern-Shores",
+      "retrieved_at": "2026-10-09T00:19:35.534694Z",
+      "confidence": 0.5,
+      "amenity": "playground_tot_lot",
+      "detail": "Official City of North Miami Beach page: shelter and benches installed at the tot lot at NE 166th St & NE 35th Ave (completed Nov 2001); 4-foot sidewalks east of 35th Ave; decorative bus shelters; street light upgrades. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wesnmbfl/about_hoa/",
+      "retrieved_at": "2026-10-09T00:19:35.534696Z",
+      "confidence": 0.5,
+      "amenity": "recreation_court_playground",
+      "detail": "'Amenities center on the gated entrance, security features, and shared recreational spaces such as a basketball court and playground near the guardhouse. Many properties feature private docks and waterfront access.' (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://www.buysouthflorida.com/neighborhood/eastern-shores-florida",
+      "retrieved_at": "2026-10-09T00:19:35.534700Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "'Pet Restrictions: Pets Allowed' (listing-site data; no detailed breed/size rules published in sources reviewed). Trulia resident reviews also describe the area as dog-friendly. (Retrieved ~2026-10-05.)"
+    },
+    {
+      "source_url": "https://grokipedia.com/page/eastern_shores_north_miami_beach",
+      "retrieved_at": "2026-10-09T00:19:35.534703Z",
+      "confidence": 0.5,
+      "amenity": "fire_rescue_station_recreation",
+      "detail": "Low-confidence (AI-generated wiki): community facilities include a dedicated fire rescue station, basketball court, playground, and shaded tot lot; 322-acre peninsula; over 2,000 housing units; adjacent to Oleta River State Park. (Retrieved ~2026-10-05.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/North-Miami-Beach-Demographics.html",
+    "retrieved_at": "2026-10-09T00:19:35.534709Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 43898,
+    "data_year": 2023,
+    "geography_level": "City (North Miami Beach, FL) - NOT community-specific; Eastern Shores is a neighborhood within the city. Source states data from 2019-2023 ACS 5-year estimates (citing U.S. Census Bureau). Median age 39; 15,303 households; 52.2% owner-occupied / 47.8% renter; average household income $83,227 (2024); median gross rent $1,750; ~40.4% Black, ~28.5% two-or-more races, ~20.8% White per page. (Retrieved ~2026-10-05.)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2025-01-15T00:00:00Z",
+      "confidence": 0.5,
+      "median_age": 44.0,
+      "median_household_income": 64000.0,
+      "owner_occupancy_pct": 46.0,
+      "population": 88761,
+      "data_year": 2020,
+      "geography_level": "city: Miami Beach (area-level approximation, not community-specific)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T00:02:44.967245Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library, North Miami Beach Branch",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T00:02:44.967252Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Mount Sinai Medical Center (Hialeah)",
+      "distance_miles": 9.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T00:02:44.967255Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mid-Beach / Collins Avenue retail corridor",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-09T00:02:44.967258Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Miami Beach Senior High School (West Miami Beach)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-eastern-shores",
+      "retrieved_at": "2026-10-09T00:19:35.534716Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Intracoastal Mall, 3881 NE 163rd St, North Miami Beach FL 33160 (3-minute drive per source)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-eastern-shores",
+      "retrieved_at": "2026-10-09T00:19:35.534720Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Winn-Dixie (anchor tenant, Intracoastal Mall) - 3-minute drive per source; Publix at Biscayne Commons (14681 Biscayne Blvd, 7-minute drive) and Publix at Town Center Aventura (18701 Biscayne Blvd, 9-minute drive) also listed",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-eastern-shores",
+      "retrieved_at": "2026-10-09T00:19:35.534722Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Bal Harbour Shops, 9700 Collins Ave, Bal Harbour FL 33154 (10-minute drive per source); also Aventura Mall (19501 Biscayne Blvd, 10 min) and Town Center Aventura (9 min)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-sunny-isles-beach",
+      "retrieved_at": "2026-10-09T00:19:35.534723Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library System - Sunny Isles Beach Branch, 18070 Collins Avenue, Sunny Isles Beach FL 33160 (305-682-0726) - nearest branch, directly south of the community across NE 163rd St; distance in miles not stated on page",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-northeast-dade-aventura",
+      "retrieved_at": "2026-10-09T00:19:35.534725Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library System - Northeast Dade (Aventura) Branch, 2930 Aventura Blvd, FL 33180 (305-931-5512) - alternative branch; distance not stated on page",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://rehabilitation.jacksonhealth.org/locations/jackson-north-medical-center/",
+      "retrieved_at": "2026-10-09T00:19:35.534726Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jackson North Medical Center, 160 N.W. 170th Street, North Miami Beach FL 33169 - 382-bed full-service hospital, 24/7 adult and pediatric ER, primary stroke center; located just north of the community's NE 171st St boundary; distance in miles not stated on page",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/best-schools-near-eastern-shores",
+      "retrieved_at": "2026-10-09T00:19:35.534727Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Fulford Elementary (PK-5), 16140 NE 18th Ave, North Miami Beach FL 33162 - 8 minutes from Eastern Shores per source; 461 students, 16:1 ratio",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/best-schools-near-eastern-shores",
+      "retrieved_at": "2026-10-09T00:19:35.534728Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Norman S. Edelcup Sunny Isles Beach K-8, 182nd Dr, Sunny Isles Beach FL 33160 - 9 minutes from Eastern Shores per source; 2,231 students, public K-8",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.allinmiami.com/blog/best-schools-near-eastern-shores",
+      "retrieved_at": "2026-10-09T00:19:35.534730Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Allison Academy (6-12, private), 1881 NE 164th St, NMB - 8 min; SLAM!-North Campus (6-12 public), 16551 NE 16th Ave - 10 min; Aventura Learning Center (PK-5), 2320 NE 171 St - 8 min (all per source)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Fee conflict: official ESPOA site states a $50 annual dues for members, while hoabulletinboard.com (two pages) says 'no traditional HOA fees for most single-family homes; fees apply to condominium sub-associations.' Could not reconcile - verify current dues directly with ESPOA (305-354-4420 or easternshoresadmin@citynmb.com) or the board.",
+    "Condominium sub-association monthly fees reported only as a '$427-$986' range from listing sites via an aggregator - not verified against any individual building's association documents.",
+    "No CDD (Community Development District) or special assessment information found for Eastern Shores in any source reviewed; unknown whether a CDD exists for the area.",
+    "The allinmiami.com buyer FAQ's 'Are there HOA fees in Eastern Shores?' section was truncated in my page read (cut off at 'Most...') - full answer could not be captured.",
+    "Distances in miles were not published on any source I could read; shopping/grocery/school proximity is given as drive minutes only (3-10 min). Jackson Memorial Hospital is reportedly ~13 miles from North Miami Beach per a Rome2rio search snippet, but that page could not be read to verify.",
+    "Community-level demographics not found: no Census tract or neighborhood-level ACS data for Eastern Shores itself was located. City of North Miami Beach figures (pop ~43,898, median age ~39.1, median HH income $63,280, 52.2% owner-occupied, 2019-2023 ACS via point2homes.com; corroborated by florida-demographics.com) are used as area-level approximations only. Grokipedia claims a 2010 Census neighborhood population of 5,756 (47.26% Hispanic, $39,902 per capita income) but that is an unverified AI-generated source.",
+    "Homes.com and flyhomes.com neighborhood guides (which would have had neighborhood demographics) were blocked/unreadable; Trulia's guide only provided resident sentiment (93% say walkable to restaurants, 73% say walkable to grocery stores, 73% say dog friendly).",
+    "Resident count conflicts: buysouthflorida.com lists 300 homes; ESPOA's site advertises to '500+ Eastern Shores homeowners'; Grokipedia claims 2,000+ housing units - actual count unverified.",
+    "iPic Theater is listed as an 'on-site' amenity by buysouthflorida.com, but iPic North Miami Beach appears to be a tenant inside Intracoastal Mall (3-minute drive) per the allinmiami shopping guide - likely nearby rather than on-site.",
+    "Pet policy details (breed/size restrictions, condo vs single-family differences) not published in sources reviewed; only 'Pets Allowed' from listing data."
+  ],
+  "discrepancies": [
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "Mount Sinai Medical Center (Hialeah)",
+          "distance_miles": 9.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Jackson North Medical Center, 160 N.W. 170th Street, North Miami Beach FL 33169 - 382-bed full-service hospital, 24/7 adult and pediatric ER, primary stroke center; located just north of the community's NE 171st St boundary; distance in miles not stated on page",
+          "distance_miles": null,
+          "source_url": "https://rehabilitation.jacksonhealth.org/locations/jackson-north-medical-center/"
+        }
+      ],
+      "detected_at": "2026-10-09T00:19:35.535365Z"
+    },
+    {
+      "field": "proximity.library",
+      "values": [
+        {
+          "nearest_name": "Miami-Dade Public Library, North Miami Beach Branch",
+          "distance_miles": 1.5,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Miami-Dade Public Library System - Sunny Isles Beach Branch, 18070 Collins Avenue, Sunny Isles Beach FL 33160 (305-682-0726) - nearest branch, directly south of the community across NE 163rd St; distance in miles not stated on page",
+          "distance_miles": null,
+          "source_url": "https://mdpls.org/branch-sunny-isles-beach"
+        },
+        {
+          "nearest_name": "Miami-Dade Public Library System - Northeast Dade (Aventura) Branch, 2930 Aventura Blvd, FL 33180 (305-931-5512) - alternative branch; distance not stated on page",
+          "distance_miles": null,
+          "source_url": "https://mdpls.org/branch-northeast-dade-aventura"
+        }
+      ],
+      "detected_at": "2026-10-09T00:19:35.535369Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Miami Beach Senior High School (West Miami Beach)",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Fulford Elementary (PK-5), 16140 NE 18th Ave, North Miami Beach FL 33162 - 8 minutes from Eastern Shores per source; 461 students, 16:1 ratio",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/best-schools-near-eastern-shores"
+        },
+        {
+          "nearest_name": "Norman S. Edelcup Sunny Isles Beach K-8, 182nd Dr, Sunny Isles Beach FL 33160 - 9 minutes from Eastern Shores per source; 2,231 students, public K-8",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/best-schools-near-eastern-shores"
+        },
+        {
+          "nearest_name": "Allison Academy (6-12, private), 1881 NE 164th St, NMB - 8 min; SLAM!-North Campus (6-12 public), 16551 NE 16th Ave - 10 min; Aventura Learning Center (PK-5), 2320 NE 171 St - 8 min (all per source)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/best-schools-near-eastern-shores"
+        }
+      ],
+      "detected_at": "2026-10-09T00:19:35.535372Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Mid-Beach / Collins Avenue retail corridor",
+          "distance_miles": 2.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Intracoastal Mall, 3881 NE 163rd St, North Miami Beach FL 33160 (3-minute drive per source)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-eastern-shores"
+        },
+        {
+          "nearest_name": "Bal Harbour Shops, 9700 Collins Ave, Bal Harbour FL 33154 (10-minute drive per source); also Aventura Mall (19501 Biscayne Blvd, 10 min) and Town Center Aventura (9 min)",
+          "distance_miles": null,
+          "source_url": "https://www.allinmiami.com/blog/top-5-shopping-spots-near-eastern-shores"
+        }
+      ],
+      "detected_at": "2026-10-09T00:19:35.535374Z"
+    }
+  ],
+  "created_at": "2026-10-09T00:02:44.968009Z",
+  "updated_at": "2026-10-09T00:19:35.535473Z"
+}

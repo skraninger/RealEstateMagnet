@@ -105,6 +105,14 @@ param(
     # keep the log small or when the model's reasoning is very long.
     [switch]$NoThinking,
 
+    # Write OpenTelemetry spans (agent runs, model calls, tool calls) as local
+    # JSONL, with nothing sent to the cloud. -Trace uses a timestamped default
+    # under logs\; -TraceFile sets an explicit path. Off by default.
+    [switch]$Trace,
+
+    # Explicit path for the trace JSONL file (implies -Trace).
+    [string]$TraceFile = "",
+
     # JSON file that mirrors progress for humans and feeds the one-time legacy
     # migration. The SQLite database is the source of truth, NOT this file.
     [string]$StatePath = "data/pipeline_state.json",
@@ -207,10 +215,19 @@ if ($NoThinking) {
     $ThinkingEnabled = $true
 }
 
-Write-Log "[CONFIG] Community='$Community' Condensers='$Condensers' Reset=$Reset Status=$Status Thinking=$ThinkingEnabled"
+# Trace file: -Trace (timestamped default) or -TraceFile (explicit path).
+$EffectiveTraceFile = $TraceFile
+if (-not $EffectiveTraceFile -and $Trace) {
+    $EffectiveTraceFile = Join-Path $LogsDir "traces_$RunTimestamp.jsonl"
+}
+
+Write-Log "[CONFIG] Community='$Community' Condensers='$Condensers' Reset=$Reset Status=$Status Thinking=$ThinkingEnabled Trace='$EffectiveTraceFile'"
 Write-Log "[CONFIG] StatePath='$StatePath' DbPath='$DbPath' LogLevel='$LogLevel'"
 if (-not $ThinkingEnabled) {
     Write-Log "[CONFIG] Thinking stream is OFF (-NoThinking)"
+}
+if (-not $EffectiveTraceFile) {
+    Write-Log "[CONFIG] Tracing is OFF (pass -Trace to write local JSONL spans)"
 }
 
 # Check if model server is running
@@ -282,6 +299,11 @@ if ($ThinkingEnabled) {
     $Args += "--show-thinking"
 } else {
     $Args += "--no-show-thinking"
+}
+
+if ($EffectiveTraceFile) {
+    $Args += "--trace-file"
+    $Args += $EffectiveTraceFile
 }
 
 $Args += "--state-path"

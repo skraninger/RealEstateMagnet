@@ -37,6 +37,7 @@ modules/community/        Workstream B — research, condensers, storage, pipeli
   migration.py            One-time legacy → pipeline-status schema migration
   url_tracker.py          URL registry + robot-friendly routing + review queue
   streaming.py            Stream a PydanticAI agent's reasoning ("thinking")
+  observability.py        Local file span processor (OTel JSONL tracing)
   agent.py                PydanticAI research agent (web_search/read_page tools)
   research_engine.py      Per-community research orchestrator
   ai_condenser.py         Local-model knowledge (no web)
@@ -140,6 +141,7 @@ guarded by `count_condenser_runs() == 0`.
 .\scripts\run-full-pipeline.ps1 -Community "Pelican Bay"
 .\scripts\run-full-pipeline.ps1 -Reset              # clears progress, keeps data
 .\scripts\run-full-pipeline.ps1 -NoThinking         # thinking stream is ON by default
+.\scripts\run-full-pipeline.ps1 -Trace              # write local OTel spans (logs/traces_*.jsonl)
 
 # Direct module form (prints a harmless runpy RuntimeWarning — see §6)
 .venv\Scripts\python.exe -m modules.community.full_pipeline --status
@@ -185,7 +187,10 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
 - `scripts/show-model-thinking.py` is a standalone smoke test / demo: it probes
   the server for `reasoning_content`, then streams an agent through the pipeline's
   helper so you can see thinking without running the whole pipeline.
-- Current status: **323 passing** (web-viewer template + write-endpoint tests run
+- Local file tracing (`modules/community/observability.py`,
+  `tests/test_observability.py`) is tested offline with a real OTel
+  `TracerProvider` — no network, no backend.
+- Current status: **327 passing** (web-viewer template + write-endpoint tests run
   when `fastapi`/`jinja2`/`httpx` are installed; they `importorskip` otherwise).
 
 ---
@@ -273,6 +278,18 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   inline ` thinking...<｜end▁of▁thinking｜>` tags, so the client works either way; a
   non-streaming fallback replays captured thinking if `run_stream` fails. If the
   model doesn't think by default, start the server with `-Reasoning on`.
+- **Local file tracing is opt-in and never sends data anywhere.**
+  `modules/community/observability.py::FileSpanProcessor` appends each finished
+  span as one JSON object per line. Enable with `run-full-pipeline.ps1 -Trace`
+  (→ `logs/traces_<timestamp>.jsonl`) or `--trace-file PATH` /
+  `PIPELINE_TRACE_FILE`. It configures Logfire with `send_to_logfire=False` and
+  `console=False`, using Logfire only as the PydanticAI instrumentation hook.
+  Spans carry `pydantic_ai.all_messages` (including thinking) and tool-call
+  events. Note: `logfire.configure` is reconfigurable, so `setup_file_tracing`
+  guards against double-registration with a module flag; `logfire.is_configured`
+  does **not exist** in logfire 5.x. The old `AICondenser(enable_observability=...)`
+  branch (broken `pydantic_ai.logfire` import) has been removed — use
+  `--trace-file` instead.
 - **Pipeline errors are logged.** `run-full-pipeline.ps1` streams the pipeline
   output live to the console while appending a full run log
   (`logs/run-full-pipeline_<timestamp>.log`, stdout+stderr) and a focused error

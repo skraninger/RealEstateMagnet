@@ -94,6 +94,38 @@ same helper the pipeline uses. Reasoning is forwarded from **every** model turn,
 so tool-using condensers (research/browser) show their reasoning during tool
 selection as well as the final answer.
 
+### Local tracing (OpenTelemetry spans)
+
+For a structured, queryable record of what the agent did — every model request,
+tool call, token count, latency, and error — write spans to a local JSONL file.
+Nothing is sent to any cloud service.
+
+```powershell
+# Timestamped default: logs/traces_<timestamp>.jsonl
+.\scripts\run-full-pipeline.ps1 -Trace
+
+# Explicit path
+.\scripts\run-full-pipeline.ps1 -TraceFile logs\my-run.jsonl
+```
+
+Under the hood this uses `modules/community/observability.py::FileSpanProcessor`,
+a tiny OTel `SpanProcessor` that appends one JSON object per span, e.g.:
+
+```json
+{"name": "chat local", "trace_id": "…", "span_id": "…", "parent_span_id": "…",
+ "duration_ms": 8155.9, "status": "OK", "scope": "pydantic-ai",
+ "attributes": {"gen_ai.system": "openai", "gen_ai.request.model": "…"},
+ "events": [{"name": "tool_call", "attributes": {"tool": "web_search"}}]}
+```
+
+It configures Logfire locally (`send_to_logfire=False`, console off) only as the
+PydanticAI instrumentation hook, and routes spans to the file processor. The
+same option is available standalone:
+
+```powershell
+.venv\Scripts\python.exe scripts\show-model-thinking.py --trace-file logs\traces.jsonl
+```
+
 ### Start fresh (discard previous state)
 
 ```powershell

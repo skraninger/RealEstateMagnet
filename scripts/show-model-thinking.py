@@ -4,6 +4,7 @@ Run it (with the model server already started):
 
     .venv\\Scripts\\python.exe scripts\\show-model-thinking.py
     .venv\\Scripts\\python.exe scripts\\show-model-thinking.py "your own question"
+    .venv\\Scripts\\python.exe scripts\\show-model-thinking.py --trace-file logs\\traces.jsonl
 
 What it does:
   1. Probes the server directly and reports whether it returns ``reasoning_content``
@@ -11,6 +12,8 @@ What it does:
   2. Streams a tiny agent through the SAME helper the pipeline uses
      (``modules.community.streaming.run_agent_streamed`` + ``ThinkingReporter``),
      printing the reasoning as it is produced, then the answer.
+  3. Optionally (``--trace-file``) writes OpenTelemetry spans as local JSONL via
+     the custom ``FileSpanProcessor`` — nothing is sent to the cloud.
 
 If nothing streams, the probe line above tells you whether the *server* produced
 reasoning at all. Start the server with ``scripts/start-model-server.ps1`` (add
@@ -121,10 +124,33 @@ async def stream_demo(prompt: str) -> None:
     print(output)
 
 
+def _parse_argv(argv: list[str]) -> tuple[str | None, str]:
+    """Split out ``--trace-file PATH``; everything else is the prompt."""
+    trace_file: str | None = None
+    rest: list[str] = []
+    i = 0
+    while i < len(argv):
+        if argv[i] == "--trace-file" and i + 1 < len(argv):
+            trace_file = argv[i + 1]
+            i += 2
+        else:
+            rest.append(argv[i])
+            i += 1
+    return trace_file, " ".join(rest).strip()
+
+
 def main() -> None:
-    prompt = " ".join(sys.argv[1:]).strip() or DEFAULT_PROMPT
+    trace_file, prompt = _parse_argv(sys.argv[1:])
+    prompt = prompt or DEFAULT_PROMPT
+
     print(f"Model:  {_model_name()} @ {_base_url()}")
     print(f"Prompt: {prompt}\n")
+
+    if trace_file:
+        from modules.community.observability import setup_file_tracing
+
+        setup_file_tracing(Path(trace_file))
+        print(f"[trace] writing spans (local JSONL) to {trace_file}\n")
 
     probe_raw(prompt)
     asyncio.run(stream_demo(prompt))

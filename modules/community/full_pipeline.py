@@ -1223,6 +1223,13 @@ async def _main(argv: Optional[list[str]] = None) -> None:
              "Env: PIPELINE_SHOW_THINKING=0.",
     )
     parser.add_argument(
+        "--trace-file",
+        default=os.environ.get("PIPELINE_TRACE_FILE", ""),
+        help="Write OpenTelemetry spans (agent runs, model calls, tool calls) "
+             "as local JSONL to this file. Empty = disabled. "
+             "Env: PIPELINE_TRACE_FILE.",
+    )
+    parser.add_argument(
         "--state-path",
         default=str(DEFAULT_STATE_PATH),
         help=f"Path to state file (default: {DEFAULT_STATE_PATH})",
@@ -1235,6 +1242,18 @@ async def _main(argv: Optional[list[str]] = None) -> None:
         level=getattr(logging, args.log_level.upper(), logging.INFO),
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
+
+    if args.trace_file:
+        try:
+            from .observability import setup_file_tracing
+
+            setup_file_tracing(Path(args.trace_file))
+            print(
+                f"[PIPELINE] Tracing to {args.trace_file} "
+                "(local JSONL, nothing sent to the cloud)"
+            )
+        except Exception as exc:  # pragma: no cover - tracing must never abort a run
+            logging.getLogger(__name__).warning("File tracing disabled: %s", exc)
 
     database = CommunityDatabase(args.db_path)
     database.create_tables()

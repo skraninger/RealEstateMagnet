@@ -47,15 +47,6 @@ from typing import Any, Callable, Optional
 from pydantic_ai import Agent
 
 from .streaming import run_agent_streamed
-
-# Enable Logfire observability for PydanticAI if available
-try:
-    import logfire
-    from pydantic_ai.logfire import LogfireLogfire
-    logfire_available = True
-except ImportError:
-    logfire_available = False
-
 from .database import CommunityDatabase
 from .models import (
     AI_SOURCE_URL,
@@ -175,10 +166,9 @@ class AICondenser:
     - on_progress: Callback function for progress updates
     - on_discovery: Callback when a community is discovered
     - on_enrichment: Callback when a community is enriched
-    
-    Observability:
-    - enable_observability: If True, enables Logfire for live monitoring of agent activity
-      (requires logfire package and LOGFIRE_TOKEN environment variable for cloud logging)
+
+    For local observability, use ``modules.community.observability`` or the
+    pipeline's ``--trace-file`` option.
     """
 
     def __init__(
@@ -197,7 +187,6 @@ class AICondenser:
         on_thinking: Optional[Callable[[str], None]] = None,
         on_discovery: Optional[Callable[[CondensedCommunityItem], None]] = None,
         on_enrichment: Optional[Callable[[CondensedCommunityItem], None]] = None,
-        enable_observability: bool = False,
     ) -> None:
         self.model = model
         self.model_name = model_name or os.environ.get("MODEL_NAME", "local")
@@ -215,13 +204,6 @@ class AICondenser:
         self.on_thinking = on_thinking
         self.on_discovery = on_discovery
         self.on_enrichment = on_enrichment
-        self.enable_observability = enable_observability
-        
-        # Initialize Logfire if observability is enabled
-        if enable_observability and logfire_available:
-            if not logfire.is_configured():
-                logfire.configure()
-            self._report_progress("Logfire observability enabled for PydanticAI")
 
     def _build_model(self) -> Any:
         if self.model is not None:

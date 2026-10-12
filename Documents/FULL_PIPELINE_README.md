@@ -94,6 +94,34 @@ same helper the pipeline uses. Reasoning is forwarded from **every** model turn,
 so tool-using condensers (research/browser) show their reasoning during tool
 selection as well as the final answer.
 
+### Prompt & sampling settings
+
+Local model calls use low-temperature sampling — `MODEL_TEMPERATURE=0.2` and
+`MODEL_TOP_P=0.95` — to keep structured extraction deterministic and avoid
+re-generations. The research agent's system prompt states an explicit **search
+budget** (≤5 searches / ≤5 pages), query templates, a source-priority list and a
+stop condition, so the model stops once it has the facts. `RESEARCH_MAX_RESULTS`
+(default **5**) caps results per search, and page text is trimmed by
+`truncate_relevant`, which keeps keyword-bearing lines (fees/amenities/…) instead
+of a blind prefix.
+
+Thinking stays **on** for every call by default (see above). To trade visibility
+for speed, set `MODEL_DISABLE_THINKING=1` (off everywhere) or `=auto` (off for
+localhost endpoints only); `0` is the default (on). Only the local-model
+condensers honour this — Gemini is API-side.
+
+### Clean up duplicate demographics
+
+`community_demographics` is deduplicated on **values** at write time (median age,
+median income, owner-occupancy %, population, data year; geography/source are not
+part of the key). To remove historical duplicates from both the SQLite table and
+the JSON `demographics_history` (idempotent, keeps the first/lowest id):
+
+```powershell
+.venv\Scripts\python.exe scripts\dedupe_demographics.py --dry-run   # preview
+.venv\Scripts\python.exe scripts\dedupe_demographics.py             # apply
+```
+
 ### Local tracing (OpenTelemetry spans)
 
 For a structured, queryable record of what the agent did — every model request,
@@ -462,6 +490,7 @@ Potential improvements:
 - `modules/community/database.py` - Schema + all database access
 - `modules/community/migration.py` / `migrate_database.py` - Schema migration
 - `scripts/run-full-pipeline.ps1` - PowerShell wrapper
+- `scripts/dedupe_demographics.py` - Remove duplicate demographics rows/history
 - `tests/test_full_pipeline.py`, `tests/test_migration.py` - Test suites
 - `data/communities.db` - Source of truth (`community_pipeline_status`,
   `community_condenser_runs`, `community_urls`)

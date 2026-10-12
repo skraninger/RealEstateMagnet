@@ -704,6 +704,20 @@ run standalone:
 Override the destinations with `-LogPath` and `-ErrorLogPath`. The paths are also
 printed at the end of every run. When a run fails, open the error report first.
 
+**Database maintenance:**
+
+`scripts/dedupe_demographics.py` removes duplicate demographics data (rows that
+agree on median age, median income, owner-occupancy %, population and data year —
+geography/source are not part of the key), keeping the first, from both
+`community_demographics` and the JSON `demographics_history`. It is idempotent and
+safe to re-run:
+
+```powershell
+.venv\Scripts\python.exe scripts\dedupe_demographics.py --dry-run   # preview
+.venv\Scripts\python.exe scripts\dedupe_demographics.py             # apply
+.venv\Scripts\python.exe scripts\dedupe_demographics.py --skip-files   # DB only
+```
+
 **Live progress:**
 
 Pipeline output is streamed to the console line-by-line *as it happens* (not
@@ -1039,6 +1053,13 @@ MODEL_NAME=qwen3.8-27b
 MODEL_API_KEY=local
 MODEL_MAX_TOKENS=8192
 
+# Extraction sampling (all condensers + research agent)
+MODEL_TEMPERATURE=0.2
+MODEL_TOP_P=0.95
+# Thinking: 0 = on everywhere (default, keeps reasoning visible);
+# 1 = off everywhere; auto = off for localhost endpoints only.
+MODEL_DISABLE_THINKING=0
+
 # For Gemini (alternative)
 # MODEL_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai
 # MODEL_NAME=gemini-3.8-flash
@@ -1046,7 +1067,7 @@ MODEL_MAX_TOKENS=8192
 
 # Search settings
 SEARCH_PROVIDER=duckduckgo
-RESEARCH_MAX_RESULTS=8
+RESEARCH_MAX_RESULTS=5
 RESEARCH_PAGE_MAX_CHARS=8000
 
 # Crawler settings

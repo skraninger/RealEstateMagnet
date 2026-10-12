@@ -236,8 +236,9 @@ Build order: M0 → M1 → M2 → M3 → M4 → M6 (report first, file-based) �
 ## 8. Conventions
 
 - Reuse existing stack: Python 3.12, Pydantic v2 for extraction/storage models, stdlib logging,
-  python-dotenv config (`MODEL_BASE_URL`, `MODEL_NAME`, `RESEARCH_MAX_RESULTS`,
-  `RESEARCH_PAGE_MAX_CHARS`). New deps in `requirements.txt`: `pydantic-ai`, `ddgs`, `trafilatura`.
+  python-dotenv config (`MODEL_BASE_URL`, `MODEL_NAME`, `MODEL_TEMPERATURE`, `MODEL_TOP_P`,
+  `RESEARCH_MAX_RESULTS`, `RESEARCH_PAGE_MAX_CHARS`). New deps in `requirements.txt`: `pydantic-ai`,
+  `ddgs`, `trafilatura`.
   No new HTTP scraping libraries — page reads go through the agent's tools.
 - All writes to the store are code-side (agent proposes JSON; code validates + persists) so the
   audit trail and schema guarantees hold regardless of model behavior.

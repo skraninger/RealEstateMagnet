@@ -97,7 +97,7 @@ Uses the local LLM to discover communities from web pages. Searches for director
 **Status**: Implemented
 
 ### Description
-Per-community deep research agent. Searches for and reads multiple pages about a specific community, extracting fees, amenities, demographics, and proximity data.
+Per-community deep research agent. Searches for and reads multiple pages about a specific community, extracting fees, amenities, demographics, and proximity data. Works to an explicit **search budget** (≤5 searches, ≤5 pages) with query templates and a source-priority list, and stops once it has the facts — keeping each run bounded.
 
 ### Strengths
 - Most thorough data collection
@@ -106,7 +106,7 @@ Per-community deep research agent. Searches for and reads multiple pages about a
 - Detects discrepancies between sources
 
 ### Limitations
-- Slow (multiple searches per community)
+- Slower than the knowledge-only/bulk condensers (searches + page reads per community)
 - Resource-intensive
 - Depends on web search quality
 

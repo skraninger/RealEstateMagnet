@@ -104,6 +104,12 @@ table so the UI matches the database exactly:
 Empty sections are simply omitted, so a community with no fees yet shows no
 Fees card. If the slug is unknown the route returns HTTP 404.
 
+Demographics rows are deduplicated on **values** (median age, median income,
+owner-occupancy %, population, data year) — `geography_level` and `source_url`
+are not part of the key — so the same figures are not listed repeatedly. If
+historical duplicates exist, run `scripts/dedupe_demographics.py` (see
+`Documents/FULL_PIPELINE_README.md`).
+
 Every fact row (Fees, Amenities, Demographics, Proximity), the Pipeline Status
 row, and each Condenser Run row has **Edit** and **Delete** actions — see
 [Editing and deleting rows](#editing-and-deleting-rows).

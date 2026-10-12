@@ -206,6 +206,15 @@ The full pipeline is **database-first and community-oriented**:
 `source_urls` remains the canonical URL registry (deduplicated by URL); its legacy
 `community_slug` column is retained and backfilled into `community_urls`.
 
+**Demographics dedupe invariant.** `community_demographics` keeps one row per
+*distinct value set* per community. Two rows are duplicates when they agree on
+`median_age`, `median_household_income`, `owner_occupancy_pct`, `population` and
+`data_year` — `geography_level` and `source_url` are deliberately **not** part of
+the key. `upsert_record` merges on this identity instead of appending, and
+`scripts/dedupe_demographics.py` cleans any historical duplicates (keeping the
+first/lowest id). `merge_facts` applies the same identity to the JSON
+`demographics_history` so the file store cannot accumulate duplicates either.
+
 ---
 
 ## 4. Implementation Instructions for Claude Code

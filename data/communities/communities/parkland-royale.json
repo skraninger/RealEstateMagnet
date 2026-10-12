@@ -1,0 +1,236 @@
+{
+  "id": "d8c0fb49-3382-4ddc-a8a8-6ac01d61b9b5",
+  "identity": {
+    "name": "Parkland Royale",
+    "slug": "parkland-royale",
+    "county_fips": null,
+    "city": "Parkland",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Guard-gated, master-planned single-family community built by Lennar on 76.85 acres (just under 77 acres) in northwest Parkland, FL 33076, near the intersection of Loxahatchee Road and Bishop Road. 205 homesites across two collections: Crown (estate-scale, 4 plans ~3,400–4,400 sq ft, 3-car garages, 4–6 bedrooms, from ~$1.16M) and Monarch (lower price point), with an optional Next Gen suite on select plans for multigenerational living. Lennar's Everything's Included program bundles quartz counters, stainless appliances, and impact windows into base price. Official price range $1,099,990–$1,630,865; 8 homes available at time of listing. Sales center at 9520 Majestic Way. Positioned as a suburb of Miami, roughly an hour from the metro area."
+  },
+  "fees": [
+    {
+      "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+      "retrieved_at": "2026-10-10T15:42:17.712388Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA dues are required in addition to purchase price, but no exact monthly/annual amount is stated in the provided content."
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-royale-lennar-review-2026/",
+      "retrieved_at": "2026-10-10T15:42:17.712397Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "CDD payments are required on top of purchase price, but no exact amount is stated in the provided content."
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+      "retrieved_at": "2026-10-10T15:47:26.974286Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fee exists and funds gate staffing, common-area landscaping, amenity center upkeep, and community management. Exact amount not stated on page; article says figures shift by build-out phase and must be confirmed with the sales center at 9520 Majestic Way. (A CommunityPay directory search snippet claimed a median fee of $383/mo, but the figure did not appear in the page text retrieved, so it is unverified.) Confidence 0.6 (reputable buyer-guide blog, not official HOA)."
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+      "retrieved_at": "2026-10-10T15:47:26.974302Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Separate CDD assessment exists (financed infrastructure, roads, utilities, amenities; paid via property tax bill). Exact amount and payoff term (e.g., 30 years vs. upfront) not stated; article says amounts vary by phase/section and should be confirmed per homesite. Confidence 0.6 (reputable buyer-guide blog, not official CDD)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712401Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Future clubhouse (not yet built at time of listing)"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712415Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712418Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712421Z",
+      "confidence": 0.5,
+      "amenity": "splash_park",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712423Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Scenic park"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712425Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Lakes throughout the community"
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-royale-lennar-review-2026/",
+      "retrieved_at": "2026-10-10T15:42:17.712428Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Guard-gated perimeter"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:47:26.974314Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Listed as a 'future clubhouse' (planned, not yet built per Lennar's own wording). Official builder site. Confidence 0.85 (official)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:47:26.974328Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Swimming pool listed among community amenities. Official builder site. Confidence 0.85 (official)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:47:26.974336Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center listed among community amenities. Official builder site. Confidence 0.85 (official)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:47:26.974342Z",
+      "confidence": 0.5,
+      "amenity": "splash_park",
+      "detail": "Splash park listed among community amenities. Official builder site. Confidence 0.85 (official)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:47:26.974349Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Scenic park throughout the community. Official builder site. Confidence 0.85 (official)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:47:26.974355Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Lakes throughout the community for scenic views. Official builder site. Confidence 0.85 (official)."
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+      "retrieved_at": "2026-10-10T15:47:26.974362Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Guard-gated, master-planned single-family community (205 homesites, ~77 acres). Lennar's site describes it as an 'exclusive gated community'. Confidence 0.6 (reputable buyer-guide blog; Lennar confirms gated)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.census.gov/quickfacts/fact/table/parklandcityflorida/PST045222",
+    "retrieved_at": "2026-02-10T12:00:00Z",
+    "confidence": 0.95,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 39186,
+    "data_year": 2024,
+    "geography_level": "city (Parkland, FL) — population is July 1, 2025 estimate (V2025); income and owner-occupancy are ACS 2020-2024 (5-year). Median age not present on the page read; left null. 2020 Census population was 34,670. Also observed: median value of owner-occupied units $983,000; 13.0% of persons 65+; 30.3% under 18; 16.5% Hispanic/Latino; 71.0% bachelor's degree or higher (25+)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/ft-lauderdale/parkland/parkland-royale",
+      "retrieved_at": "2026-10-10T15:42:17.712433Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+      "retrieved_at": "2026-10-10T15:47:26.974386Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Coral Springs (via Sawgrass Expressway)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact HOA monthly fee amount unverified. A CommunityPay directory search snippet claimed 'Median fee $383/mo' for Parkland Royale HOA, Inc., but the figure did not appear in the page text retrieved; treat as unverified until confirmed with the HOA/sales center.",
+    "Exact CDD assessment amount, term, and per-phase variation unverified (southflinsider says figures shift through build-out phases; confirm per homesite at 9520 Majestic Way).",
+    "Median age of Parkland residents not found on the Census QuickFacts page read (a third-party site's search snippet claimed 37.9, unverified).",
+    "Nearest hospital, library, and grocery with distances not verified — no such page was read within budget. Community sits near Loxahatchee Rd/Bishop Rd in NW Parkland (33076); Broward County Library operates a branch in Parkland per city site (not read).",
+    "Specific school names/district and distances not verified (Lennar only says 'highly rated school district').",
+    "Pet policy not found on any page read.",
+    "Clubhouse, pool, fitness center, and splash park are described by Lennar as 'future' amenities — confirm construction status/timeline with sales center.",
+    "Community is still in build-out (second phase per southflinsider); amenity and fee conditions may change."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.cdd_assessment",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://southflinsider.com/blogs/parkland-royale-lennar-review-2026/",
+          "retrieved_at": "2026-10-10T15:42:17.712397+00:00"
+        },
+        {
+          "amount": null,
+          "period": "annual",
+          "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+          "retrieved_at": "2026-10-10T15:47:26.974302+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T15:47:26.975263Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+          "retrieved_at": "2026-10-10T15:42:17.712388+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://southflinsider.com/blogs/is-parkland-royale-worth-it-2026/",
+          "retrieved_at": "2026-10-10T15:47:26.974286+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T15:47:26.975275Z"
+    }
+  ],
+  "created_at": "2026-10-10T15:42:17.713056Z",
+  "updated_at": "2026-10-10T15:47:26.975548Z"
+}

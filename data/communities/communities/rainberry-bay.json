@@ -1,0 +1,467 @@
+{
+  "id": "c3ecee03-8a13-4648-8157-24dcef874d68",
+  "identity": {
+    "name": "Rainberry Bay",
+    "slug": "rainberry-bay",
+    "county_fips": null,
+    "city": "Delray Beach",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Rainberry Bay is a 55+ gated community in Delray Beach, Florida (ZIP 33444, Palm Beach County), built between 1977 and 1989. It consists of approximately 901 residences (single-family and attached/townhouse), resale-only. The community features a clubhouse with theater and stage, outdoor pools, tennis courts, bocce ball courts, basketball courts, a fitness center, sauna, arts and crafts studio, and other resort-style amenities. An activity director is on site. A smaller sub-association called 'Rainberry BAY' (13 townhouse units) is tracked separately with a resident-verified HOA fee of $595/mo. Median closed sale price (Oct 2025 - Sep 2026) was $245,500 for 20 townhouses/villas; median asking price as of Oct 10, 2026 was $288,450 for 12 active listings."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113155Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 595.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-verified fee for the Rainberry BAY sub-association (13 townhouse units, Delray Beach FL 33444, Palm Beach County). Based on 1 data point from resident submissions and public records. Not a guaranteed fee; verify with the association directly. No special assessment signals reported yet. Leasing prohibited first 2 years; short-term rentals prohibited; rental approval requires application and buyer approval; pets allowed with number and size limits. Utilities: Electric - Florida Power & Light; Water/Sewer - City of Delray Beach Utilities; Trash - City of Delray Beach Sanitation Division (Solid Waste Authority of Palm Beach County). Manager on site. Internet included in HOA fee per resident-reported amenities. 0 reviews, 0 signals. Data combines public records and resident-submitted data; unverified data clearly marked. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (resident-submitted, 1 data point, unverified)."
+    },
+    {
+      "source_url": "https://www.pbprealestate.com/hoa-fees-delray-beach/rainberry-bay/",
+      "retrieved_at": "2026-10-10T19:13:10.113164Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 632.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Median monthly-equivalent HOA fee among 12 active Rainberry Bay listings with a usable fee, as of October 10, 2026. This is 33% above the Delray Beach townhouse and villa median of $476. Fees are as accurate as the brokerage that provided them in individual MLS listings; deemed reliable but not guaranteed. The association fee is fixed at sale. 20 Rainberry Bay townhouses and villas closed October 2025 to September 2026 at a median $245,500, a median 7% under their original asking price (92.9% of original asking price). 12 active listings at median asking price $288,450; 6 of 12 show a current asking price below original (50%). 1 more under contract. 47% of active townhouse and villa listings in Delray Beach have a recorded asking price below their original list price. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.75 (MLS-based brokerage data, reputable source, multiple listings)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113167Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 223.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Lower bound of HOA dues range ($223 - $632/mo) reported by 55places.com for Rainberry Bay, Delray Beach, FL. The range likely reflects different unit types or sub-associations within the 901-home community. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.6 (community listing site, aggregated data)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T19:19:12.388577Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Master association (Rainberry Bay Master Association, Inc., FirstService on-site) monthly HOA fees typically range ~$223-$632+ depending on property type and services; exact current amounts, transfer fees, and special assessments not detailed in public sources. Corroborated by 55places.com ('HOA dues: $223 - $632/mo'). Fee covers exterior-home maintenance, lawn mowing, common area upkeep per 55places.com listing text. Verify with association at (561) 272-6560 / myrainberrybay.com before purchase. No CDD/special assessment data found in sources read (hoa-agent.com reports 'no assessment signals' for the 13-unit sub-association). Confidence 0.55 (aggregator). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113170Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Central hub of social engagement; features a theater and stage, indoor features, and serves as the main gathering space for residents. Also confirmed by hoa-agent.com (resident-verified). Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.7 (multiple sources confirm)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113178Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Outdoor pools (resort-style). Also confirmed by hoa-agent.com (resident-verified). Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.7 (multiple sources confirm)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113181Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis court(s). Also confirmed by 55places.com. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.7 (multiple sources confirm)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113184Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball court(s). Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113186Z",
+      "confidence": 0.5,
+      "amenity": "bocce_ball",
+      "detail": "Bocce ball court(s). Also confirmed by 55places.com. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.7 (multiple sources confirm)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113189Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard_court",
+      "detail": "Shuffleboard court. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113191Z",
+      "confidence": 0.5,
+      "amenity": "spa_hot_tub",
+      "detail": "Spa/Hot Tub. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113194Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center complete with cardiovascular and strength-training equipment. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.65 (community listing site)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113196Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Sauna available for residents to relax after workouts. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.65 (community listing site)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113197Z",
+      "confidence": 0.5,
+      "amenity": "billiard_room",
+      "detail": "Billiard Room. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113200Z",
+      "confidence": 0.5,
+      "amenity": "community_room",
+      "detail": "Community Room. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113202Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113204Z",
+      "confidence": 0.5,
+      "amenity": "arts_crafts_studio",
+      "detail": "Arts and crafts studio available for homeowners to express their creative side. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.65 (community listing site)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113207Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball courts. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.65 (community listing site)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113209Z",
+      "confidence": 0.5,
+      "amenity": "internet_included",
+      "detail": "Internet included in HOA dues. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113211Z",
+      "confidence": 0.5,
+      "amenity": "manager_on_site",
+      "detail": "Manager on site. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113213Z",
+      "confidence": 0.5,
+      "amenity": "parking",
+      "detail": "Parking available. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.55 (single source, resident-reported)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113215Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community (gated: Yes). Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.7 (community listing site, explicit)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113217Z",
+      "confidence": 0.5,
+      "amenity": "activity_director",
+      "detail": "Activity director on site. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.65 (community listing site)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113220Z",
+      "confidence": 0.5,
+      "amenity": "locker_rooms",
+      "detail": "Locker rooms available for residents. Retrieved: 2026-01-15T00:00:00Z. Confidence: 0.65 (community listing site)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388597Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Large clubhouse with theater and stage; fitness center, arts & crafts studio, billiards/card rooms, conference and multi-purpose rooms; central hub for social clubs and events. Confidence 0.6 (reputable listing). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388610Z",
+      "confidence": 0.5,
+      "amenity": "theater",
+      "detail": "Theater and stage for concerts, plays, shows and other entertainment. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388617Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Main outdoor pool and spa plus five satellite pools throughout the community. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T19:19:12.388622Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Five heated swimming pools and spas (conflicting count vs 55places.com 'main + 5 satellite'). Confidence 0.55 (aggregator). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388627Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center with cardiovascular and strength-training equipment; EEZY fitness classes; locker rooms. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388633Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Sauna in clubhouse. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388639Z",
+      "confidence": 0.5,
+      "amenity": "arts_crafts_studio",
+      "detail": "Arts and crafts studio; painting classes, jewelry/beading workshops. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388645Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiards and card rooms; table tennis, pool, bridge. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388650Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "12 tennis courts. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T19:19:12.388655Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "10 Har-Tru tennis courts with pro shop and teams (conflicting count vs 55places.com '12 courts'). Confidence 0.55 (aggregator). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T19:19:12.388660Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "8 lighted pickleball courts. Confidence 0.55 (aggregator). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388666Z",
+      "confidence": 0.5,
+      "amenity": "bocce_courts",
+      "detail": "Bocce ball courts. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388671Z",
+      "confidence": 0.5,
+      "amenity": "basketball_courts",
+      "detail": "Basketball courts. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388676Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Walking and biking trails surrounding the community; scenic stocked fishing lake. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T19:19:12.388681Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour manned gated security with roving security; park-like setting with lakes and wildlife. Confidence 0.55 (aggregator). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388687Z",
+      "confidence": 0.5,
+      "amenity": "activity_director",
+      "detail": "Activity director on site; active clubs (bicycle, women's, Yiddish heritage), movie nights, aqua yoga. Confidence 0.6. Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T19:19:12.388692Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library in clubhouse. Confidence 0.55 (aggregator). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388697Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pets allowed with number limit and size limit; short-term rentals prohibited; leasing requires application and buyer approval. Confidence 0.5 (resident-submitted). Retrieved 2026-10-10T00:00:00Z (UTC)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33444-33444/",
+    "retrieved_at": "2026-10-10T19:19:12.388704Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 22737,
+    "data_year": null,
+    "geography_level": "ZIP 33444 (Delray Beach, FL; community ZIP per user notes is 33444, some sources cite 33445 for the office address 2801 Rainberry Circle S)}"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113224Z",
+      "confidence": 0.6,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": 2026,
+      "geography_level": "community (Rainberry Bay, Delray Beach, FL 33444, Palm Beach County, FL). 55+ age-restricted community. Total homes: 901 (per 55places.com); a smaller sub-association 'Rainberry BAY' has 13 townhouse units (per hoa-agent.com). Home types: Single-Family and Attached (townhouse/villa). Years built: 1977-1989. Resale homes only (no new construction). Price range: Mid $200ks - Mid $500ks. Median closed sale price (Oct 2025 - Sep 2026): $245,500 for 20 townhouses/villas. Median asking price (as of Oct 10, 2026): $288,450 for 12 active listings. 25 homes for sale per 55places.com. Rating: 4.5 (2 reviews) per 55places.com. No specific median age, median household income, or owner-occupancy percentage data found in the provided content. Sources: 55places.com, pbprealestate.com, hoa-agent.com. Retrieved: 2026-01-15T00:00:00Z."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2025-06-01T00:00:00Z",
+      "confidence": 0.7,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 5924,
+      "data_year": 2024,
+      "geography_level": "neighborhood (Rainberry Bay, Delray Beach, FL) — per U.S. Census data; 45% male / 54.9% female; 57.2% Caucasian, 24.8% African American, 3.1% Asian, 12.8% two or more races; 71.1% US-born citizens, 19.2% naturalized, 9.8% non-citizens; 2,623 households (avg 2 members, 50.1% families); 3,212 housing units (33.1% detached single-family, 15.9% attached, 1.3% mobile homes), median construction year 1983; median housing cost $1,585/month, median gross rent $2,045; average annual household income $110,666 (2024, +4.5% YoY), median $78,163 (+10.5% YoY); 88.6% above poverty line; 3,040 working residents (87.3% professional/administrative, 12.7% service); average commute 4 minutes, 92.7% by personal vehicle"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113230Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Atlantic Avenue, Delray Beach",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113233Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Nearby beaches and oceanfront parks",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:13:10.113235Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Golf courses (nearby)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+      "retrieved_at": "2026-10-10T19:19:12.388714Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Atlantic Avenue shops/restaurants ('a few minutes'); Shops of San Marco, Gulf Atlantic Plaza, Boynton Beach Mall",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA fee schedule by property type (master association) not published in sources read; only the ~$223-$632/mo range is documented. Verify with Rainberry Bay Master Association, Inc. at (561) 272-6560 or myrainberrybay.com.",
+    "CDD/special assessments: no data found in any source read; hoa-agent.com reports no assessment signals for the 13-unit sub-association only.",
+    "Median age, median household income, and owner-occupancy % for ZIP 33444 could not be verified: the Census Reporter page returned only population (22,737). A CensusEasy search snippet showed median household income of $72,925 for 33444 but the page was not read/verified.",
+    "Nearest hospital, public library, and school with distances were not found in sources read; only qualitative proximity (minutes to downtown Delray Beach, I-95 access, ~25 min to Palm Beach, ~49 min to Fort Lauderdale per 55places.com).",
+    "Community's own amenities page (rainberrybaydelraybeach.com/amenities.html) could not be read (page failed to load).",
+    "ZIP discrepancy: user notes and hoa-agent.com say 33444, while hoabulletinboard.com lists the office address as 33445."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 595.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/rainberry-bay",
+          "retrieved_at": "2026-10-10T19:13:10.113155+00:00"
+        },
+        {
+          "amount": 632.0,
+          "period": "monthly",
+          "source_url": "https://www.pbprealestate.com/hoa-fees-delray-beach/rainberry-bay/",
+          "retrieved_at": "2026-10-10T19:13:10.113164+00:00"
+        },
+        {
+          "amount": 223.0,
+          "period": "monthly",
+          "source_url": "https://www.55places.com/florida/communities/rainberry-bay",
+          "retrieved_at": "2026-10-10T19:13:10.113167+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/rbdbfl/about_hoa/",
+          "retrieved_at": "2026-10-10T19:19:12.388577+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T19:21:47.418871Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Nearby beaches and oceanfront parks",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/rainberry-bay"
+        },
+        {
+          "nearest_name": "Golf courses (nearby)",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/rainberry-bay"
+        }
+      ],
+      "detected_at": "2026-10-10T19:21:47.418877Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Downtown Atlantic Avenue, Delray Beach",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/rainberry-bay"
+        },
+        {
+          "nearest_name": "Downtown Atlantic Avenue shops/restaurants ('a few minutes'); Shops of San Marco, Gulf Atlantic Plaza, Boynton Beach Mall",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/rainberry-bay"
+        }
+      ],
+      "detected_at": "2026-10-10T19:21:47.418880Z"
+    }
+  ],
+  "created_at": "2026-10-10T19:13:10.113785Z",
+  "updated_at": "2026-10-10T19:21:47.418936Z"
+}

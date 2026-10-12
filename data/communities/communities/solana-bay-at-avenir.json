@@ -1,0 +1,298 @@
+{
+  "id": "3e6c8e5a-544d-42a4-8fa9-23a46471f589",
+  "identity": {
+    "name": "Solana Bay at Avenir",
+    "slug": "solana-bay-at-avenir",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Solana Bay at Avenir is an intimate gated enclave of 118 modern single-family homes by Akel Homes, located on Avenir's largest lake in Palm Beach Gardens, FL. One- and two-story residences range from 2,274 to 4,200 sq ft with 3-6 bedrooms and 3-7 bathrooms. Starting from $948.9K. Features a trio of cascading waterfalls at the entrance and lakefront setting."
+  },
+  "fees": [
+    {
+      "source_url": "https://akelhomes.com/solana-bay/faqs/",
+      "retrieved_at": "2026-10-10T23:02:46.958050Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 258.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official Akel Homes FAQ: 'the community Solana Bay at Avenir has a homeowners' association (HOA) fee of $258 per month.' Covers common area maintenance, landscaping, community amenities, and security per builder marketing pages. Note: residents also pay a separate Avenir CDD assessment on the property tax bill (amount unverified). Confidence 0.9 (official builder source). Retrieved 2026-02-10T12:00:00Z. (Confidence field set below.)"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/solana-bay-at-avenir-by-akel-homes/156066",
+      "retrieved_at": "2026-10-10T23:02:46.958062Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 200.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Listing-site FAQ: 'fees typically range from $200-350 monthly depending on your specific section within the community.' Conflicts with official $258 figure; reported as separate version. Confidence 0.5 (reputable listing site, unverified)."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/solana-bay-at-avenir-by-akel-homes/156066",
+      "retrieved_at": "2026-10-10T23:02:46.958064Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 300.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Second FAQ entry on same listing page (dated Dec 28, 2023): 'HOA fees in Solana Bay typically range from $300-500 monthly, covering community amenities, landscaping, and common area maintenance.' Conflicts with both the official $258 figure and the $200-350 range; reported as separate version. Confidence 0.5."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788193Z",
+      "confidence": 0.5,
+      "amenity": "gated",
+      "detail": "Gated community with entrance featuring trio of cascading waterfalls"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788211Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Sparkling swimming pools at Avenir Clubhouse"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788218Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "8-person spa with waterfall"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788223Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness facility with dedicated spin/yoga room"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788230Z",
+      "confidence": 0.5,
+      "amenity": "sport_courts",
+      "detail": "Multiple sport courts"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788237Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Avenir Clubhouse with pools, spa, cabanas, and poolside seating"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788243Z",
+      "confidence": 0.5,
+      "amenity": "cabanas",
+      "detail": "Shaded cabanas and poolside seating"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788249Z",
+      "confidence": 0.5,
+      "amenity": "lakefront",
+      "detail": "Lakefront location on Avenir's largest lake"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788254Z",
+      "confidence": 0.5,
+      "amenity": "shopping",
+      "detail": "Avenir Town Center with 400,000+ sq ft retail: coffee shops, cafes, restaurants, boutiques"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788259Z",
+      "confidence": 0.5,
+      "amenity": "office_space",
+      "detail": "1.8 million sq ft class A office space approved at Town Center"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788265Z",
+      "confidence": 0.5,
+      "amenity": "golf_cart_lifestyle",
+      "detail": "Golf cart friendly with palm lined streets"
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958068Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated entry with Envera Virtual Gate Attendant (virtual gate assistant); contemporary lighting at entrance. Confidence 0.9 (official builder site)."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958078Z",
+      "confidence": 0.5,
+      "amenity": "mailbox_pavilion",
+      "detail": "Elegant mailbox pavilion at community entrance. Confidence 0.9."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958082Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Playground within Solana Bay. Confidence 0.9."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958084Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Access to Avenir's completed clubhouse with resort-style community amenities and social spaces. Confidence 0.9."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958086Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool at Avenir clubhouse (BHS listing describes it as heated with lap pool; unverified here). Confidence 0.9."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958088Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center at Avenir clubhouse. Confidence 0.9."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958091Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis and pickleball courts at Avenir. Confidence 0.9."
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/quick-move-in/",
+      "retrieved_at": "2026-10-10T23:02:46.958093Z",
+      "confidence": 0.5,
+      "amenity": "kids_facilities",
+      "detail": "Kids' facilities at Avenir (per builder FAQ). Confidence 0.9."
+    },
+    {
+      "source_url": "https://solanabayatavenir.sites.townsq.io/",
+      "retrieved_at": "2026-10-10T23:02:46.958096Z",
+      "confidence": 0.5,
+      "amenity": "waterfalls",
+      "detail": "Trio of cascading waterfalls at the community entrance. Confidence 0.8 (community HOA site)."
+    },
+    {
+      "source_url": "https://solanabayatavenir.sites.townsq.io/",
+      "retrieved_at": "2026-10-10T23:02:46.958098Z",
+      "confidence": 0.5,
+      "amenity": "lakefront",
+      "detail": "Lakefront setting on Avenir's largest lake; many homesites offer lake or garden views. Confidence 0.8."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1254075-palm-beach-gardens-fl/",
+    "retrieved_at": "2026-10-10T23:02:46.958103Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 60959,
+    "data_year": null,
+    "geography_level": "city (Palm Beach Gardens, FL CDP/city profile on Census Reporter, sourced from Census/ACS)}"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://akelhomes.com/solana-bay/",
+      "retrieved_at": "2026-10-10T22:57:38.788280Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Avenir Town Center",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/faqs/",
+      "retrieved_at": "2026-10-10T23:02:46.958108Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Pierce Hammock Elementary School (Grades PK-5)",
+      "distance_miles": 1.8
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/faqs/",
+      "retrieved_at": "2026-10-10T23:02:46.958112Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Osceola Creek Middle School (Grades 6-8)",
+      "distance_miles": 6.5
+    },
+    {
+      "source_url": "https://akelhomes.com/solana-bay/faqs/",
+      "retrieved_at": "2026-10-10T23:02:46.958113Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Palm Beach Gardens High School (Grades 9-12)",
+      "distance_miles": 8.6
+    }
+  ],
+  "open_questions": [
+    "Avenir CDD annual assessment amount: Avenir CDD (established 2017 under Chapter 190, Florida Statutes) collects annual assessments via the Palm Beach County Tax Collector, appearing in the non-ad valorem section of the property tax bill. Candidate sources found but NOT read (read budget exhausted): avenircdd.org, lillyluxuryliving.com, southflinsider.com, wolfeofrealestate.com. Amount unverified.",
+    "Demographic detail (median age, median household income, owner-occupancy %, data year) for Palm Beach Gardens: Census Reporter profile page loaded only partially (population 60,959; 59.2 sq mi; 1,029 people/sq mi confirmed); detailed tables did not render.",
+    "Nearest shopping, grocery, library, and hospital distances: not found on any page read; a targeted search returned no results. Community is ~7 miles west of I-95 Exit 77 (Northlake Blvd) per builder FAQ.",
+    "Additional Avenir amenities listed on miamirealgroup.com (lap pool, 8-person spa, dog park, working farm + nature trails, 2 tot lots + kid's room, 8 tennis + 6 pickleball courts, splash pad, cafe + outdoor dining, Avenir Town Center) were NOT verified on a read page.",
+    "Conflicting HOA fee figures: official builder FAQ says $258/month; newhomesource.com lists $200-350/month and separately $300-500/month. All versions reported as separate fee facts.",
+    "Pet policy: not found on any page read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 258.0,
+          "period": "monthly",
+          "source_url": "https://akelhomes.com/solana-bay/faqs/",
+          "retrieved_at": "2026-10-10T23:02:46.958050+00:00"
+        },
+        {
+          "amount": 200.0,
+          "period": "monthly",
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/solana-bay-at-avenir-by-akel-homes/156066",
+          "retrieved_at": "2026-10-10T23:02:46.958062+00:00"
+        },
+        {
+          "amount": 300.0,
+          "period": "monthly",
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/solana-bay-at-avenir-by-akel-homes/156066",
+          "retrieved_at": "2026-10-10T23:02:46.958064+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T23:02:46.958716Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Pierce Hammock Elementary School (Grades PK-5)",
+          "distance_miles": 1.8,
+          "source_url": "https://akelhomes.com/solana-bay/faqs/"
+        },
+        {
+          "nearest_name": "Osceola Creek Middle School (Grades 6-8)",
+          "distance_miles": 6.5,
+          "source_url": "https://akelhomes.com/solana-bay/faqs/"
+        },
+        {
+          "nearest_name": "Palm Beach Gardens High School (Grades 9-12)",
+          "distance_miles": 8.6,
+          "source_url": "https://akelhomes.com/solana-bay/faqs/"
+        }
+      ],
+      "detected_at": "2026-10-10T23:02:46.958721Z"
+    }
+  ],
+  "created_at": "2026-10-10T22:57:38.789151Z",
+  "updated_at": "2026-10-10T23:02:46.958845Z"
+}

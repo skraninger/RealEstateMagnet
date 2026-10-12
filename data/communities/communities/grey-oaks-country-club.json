@@ -344,17 +344,6 @@
       "population": null,
       "data_year": 2026,
       "geography_level": "community (market analysis of Naples golf communities through end of 2025; Estuary at Grey Oaks prices for 3 months ending May 2026; no population, age, income, or occupancy figures stated on page)"
-    },
-    {
-      "source_url": "browser:google",
-      "retrieved_at": "2026-10-08T02:24:00.701020Z",
-      "confidence": 0.5,
-      "median_age": null,
-      "median_household_income": null,
-      "owner_occupancy_pct": null,
-      "population": 747,
-      "data_year": null,
-      "geography_level": "neighborhood"
     }
   ],
   "proximity": [
@@ -772,5 +761,5 @@
     }
   ],
   "created_at": "2026-10-08T02:07:54.172097Z",
-  "updated_at": "2026-10-08T02:26:01.440121Z"
+  "updated_at": "2026-10-12T19:26:48.235564Z"
 }

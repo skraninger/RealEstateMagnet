@@ -1,0 +1,325 @@
+{
+  "id": "d81b24e9-7dab-4c6c-bffd-c42fad5d34d7",
+  "identity": {
+    "name": "The Club at Ibis",
+    "slug": "the-club-at-ibis",
+    "county_fips": null,
+    "city": "West Palm Beach",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "A small, upscale gated community in the Ibis area of West Palm Beach, situated near the Intracoastal Waterway and Ibis Park. It is a low-density, single-family enclave known for its quiet, waterfront-adjacent setting."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256732Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Exact amount unknown; comparable gated communities in West Palm Beach typically charge approximately $300-$700/month. No specific CDD assessment identified for this community in available knowledge."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/the-club-at-ibis-property-owners-association-inc",
+      "retrieved_at": "2026-10-12T17:03:14.834732Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 485.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "NOT community-specific: this is the average monthly HOA fee for West Palm Beach citywide per hoa-agent.com. The Club at Ibis fee itself is listed as 'not yet verified by residents' — no verified community HOA amount found. Community is managed by FirstService Residential; utilities via FPL (electric) and City of West Palm Beach (water/sewer/trash). No CDD assessment info found. An official club membership fee schedule (Nov 2024–Oct 2025) exists at u.realgeeks.media/pbcoastal/Ibis_2025_membership_fees_.pdf but the PDF could not be parsed (binary). Club membership is separate from HOA dues and is mandatory per hoabulletinboard.com (unverified). Confidence low because the amount is a citywide average, not the community's fee. Verify directly with the association/club before purchase. (Retrieved 2026-10-11T00:00:00Z, confidence 0.3.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256750Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated entry with security control at the community entrance."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256759Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community swimming pool (reported; unverified)."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256761Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse implied by community name; unverified."
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834745Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "3 Nicklaus-family-designed courses: The Heritage (Jack Nicklaus II), The Tradition (Steve Nicklaus), The Legend (Jack Nicklaus); 1,923-acre community with ~2,000 residences in 33 neighborhoods (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834754Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Large Mediterranean-style clubhouse with library, game rooms, ballroom, outdoor terrace, and multiple dining venues (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834757Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Conflicting counts on same page: body text says 15 Har-Tru hydrogrid courts plus a cushioned hard court; amenities sidebar says 14 clay/hard courts (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834759Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Conflicting counts on same page: body text says 4 pickleball courts; amenities sidebar says 16 hard courts (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834762Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "15,000 sq ft fitness facility with cardio/strength equipment, classes, and personal trainers (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834764Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool with waterfall, lap pool, kids' splash zone, and hot tub (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834767Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa with massages, facials, manicures (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834768Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Nature trails, lakes, and green spaces within the community (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834770Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated entrance with round-the-clock manned security (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834772Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Poolside dining, bar & lounge, casual pub, fine dining, tableside dinner show, wine tasting (retrieved 2026-10-11T00:00:00Z, confidence 0.6)"
+    },
+    {
+      "source_url": "https://www.clubatibis.com/real-estate",
+      "retrieved_at": "2026-10-12T17:03:14.834775Z",
+      "confidence": 0.5,
+      "amenity": "nature_preserve_adjacency",
+      "detail": "Secure gated collection of 33 neighborhoods adjacent to Grassy Waters Nature Preserve; fairway views, water scenes, wildlife (retrieved 2026-10-11T00:00:00Z, confidence 0.8)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1276600-west-palm-beach-fl/",
+    "retrieved_at": "2026-10-12T17:03:14.834779Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 127733,
+    "data_year": null,
+    "geography_level": "city (West Palm Beach, FL — the community is within the city; no tract-level data retrieved; page returned only partial content so median age/income/owner-occupancy were not captured; data year not visible on the portion retrieved (retrieved 2026-10-11T00:00:00Z, confidence 0.9 for population as Census-sourced)}"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256766Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Palm Beach Regional Medical Center (Nova Health System), West Palm Beach",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256769Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "West Palm Beach-Palm Beach County Public Library (main branch), S. Flagler Dr.",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256770Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown West Palm Beach retail/dining corridor",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256771Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Local grocery stores, West Palm Beach",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:50:05.256772Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "West Palm Beach public schools (elementary/middle)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834786Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Palm Beach historic downtown (shopping & dining just outside the community)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834789Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "24-hour emergency care and doctor's offices nearby (no specific facility named)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834790Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Schools nearby (none named)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834791Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "I-95 (highway access)",
+      "distance_miles": 7.0
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis",
+      "retrieved_at": "2026-10-12T17:03:14.834793Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Atlantic Coast / beaches",
+      "distance_miles": 12.0
+    }
+  ],
+  "open_questions": [
+    "HOA fee amount for The Club at Ibis is unverified — hoa-agent.com shows no resident-verified fee (citywide WPB average ~$485/mo only). Verify with the association (managed by FirstService Residential).",
+    "Official club membership fee schedule (Nov 2024–Oct 2025) exists at u.realgeeks.media/pbcoastal/Ibis_2025_membership_fees_.pdf but the PDF returned raw binary and could not be parsed; club dues are separate from HOA dues.",
+    "No CDD special assessment information found.",
+    "Pet policy unknown (hoa-agent.com lists pets as 'Unknown').",
+    "Demographic detail (median age, median household income, owner-occupancy %) not captured — censusreporter.org page returned only partial content (population 127,733 for the city of West Palm Beach).",
+    "No specific distances or names for nearest hospital, library, or school found; homes.com neighborhood guide (which likely had this) denied access.",
+    "Possible identity mismatch: the brief describes a 'small, upscale gated community near the Intracoastal Waterway and Ibis Park,' but all sources describe The Club at Ibis as a large 1,923-acre country club community of 33 neighborhoods (~2,000 homes) at 8225 Ibis Boulevard, adjacent to Grassy Waters Nature Preserve (ZIPs 33401/33412). If the buyer means a different small enclave with a similar name, this research may not match it."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "ai:condensed",
+          "retrieved_at": "2026-10-12T16:50:05.256732+00:00"
+        },
+        {
+          "amount": 485.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/the-club-at-ibis-property-owners-association-inc",
+          "retrieved_at": "2026-10-12T17:03:14.834732+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T17:03:14.835366Z"
+    },
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "Palm Beach Regional Medical Center (Nova Health System), West Palm Beach",
+          "distance_miles": 5.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "24-hour emergency care and doctor's offices nearby (no specific facility named)",
+          "distance_miles": null,
+          "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis"
+        }
+      ],
+      "detected_at": "2026-10-12T17:03:14.835373Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "I-95 (highway access)",
+          "distance_miles": 7.0,
+          "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis"
+        },
+        {
+          "nearest_name": "Atlantic Coast / beaches",
+          "distance_miles": 12.0,
+          "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis"
+        }
+      ],
+      "detected_at": "2026-10-12T17:03:14.835376Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "West Palm Beach public schools (elementary/middle)",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Schools nearby (none named)",
+          "distance_miles": null,
+          "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis"
+        }
+      ],
+      "detected_at": "2026-10-12T17:03:14.835378Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Downtown West Palm Beach retail/dining corridor",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Palm Beach historic downtown (shopping & dining just outside the community)",
+          "distance_miles": null,
+          "source_url": "https://www.luxury-communities.com/community/the-club-at-ibis"
+        }
+      ],
+      "detected_at": "2026-10-12T17:03:14.835380Z"
+    }
+  ],
+  "created_at": "2026-10-12T16:50:05.257323Z",
+  "updated_at": "2026-10-12T17:03:14.835472Z"
+}

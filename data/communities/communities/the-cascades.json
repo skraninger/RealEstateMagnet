@@ -1,0 +1,341 @@
+{
+  "id": "a6ec458c-d589-4ef2-8ddc-a198d92f7795",
+  "identity": {
+    "name": "The Cascades",
+    "slug": "the-cascades",
+    "county_fips": null,
+    "city": "Boynton Beach",
+    "hoa_name": "THE CASCADES RESIDENTS' ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "The Cascades is a 55+ guard-gated single-family community in Boynton Beach, FL, established in 1997. It features 928 homes built by Northstar Homes (1997-2000) with a 24,000 sq ft clubhouse, resort-style pool, fitness center, tennis facility, and scenic lakes. Managed by Castle Management (Castle Group)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328262Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 256.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA dues range from $256 to $616/month depending on home type/size. Exact amount varies by unit; confirm with HOA for specific home assessment status and unpaid amounts before purchase."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:17:47.062808Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Directory lists 'Association HOA Fee: HOA Fee Required' but no dollar amount. Association: THE CASCADES RESIDENTS' ASSOCIATION, INC., 6856 W Liseron, Boynton Beach FL 33437; managed by Castle Management (Castle Group), 800-337-5850. Request estoppel for current dues. No CDD/special assessment info found on any page read. Confidence 0.5 (third-party directory, not official). Retrieved 2026-09-10T00:00:00Z, confidence 0.5."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328276Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Resort-style swimming pool"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328290Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness center in 24,000 sq ft clubhouse"
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:12:42.328297Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Guard-gated community"
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:12:42.328304Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328309Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Large tennis facility"
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:12:42.328315Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": null
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:12:42.328320Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Men's and women's saunas"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328325Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "24,000 square-foot clubhouse with hobby rooms, game rooms, and cafe"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328330Z",
+      "confidence": 0.5,
+      "amenity": "cafe",
+      "detail": "Community cafe for meals"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328336Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Neighboring golf course winds throughout the community; many homesites enjoy views of it"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328342Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Scenic lakes throughout the community; many homesites set around them"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328346Z",
+      "confidence": 0.5,
+      "amenity": "activity_director",
+      "detail": "Community activity director available"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062822Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Recently refurbished clubhouse emulating country-club living; full-service cafe and ballroom with Broadway-style entertainment inside/on site. (Task notes cite 24,000 sq ft, not verified on this page.)"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062832Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062834Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts with onsite pro offering lessons"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062837Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": null
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062839Z",
+      "confidence": 0.5,
+      "amenity": "bocce",
+      "detail": null
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062841Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Well-equipped gym plus instructor-led fitness classes"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062845Z",
+      "confidence": 0.5,
+      "amenity": "cafe",
+      "detail": "Full-service cafe"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062847Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Fabulously appointed ballroom for Broadway-style entertainment"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062850Z",
+      "confidence": 0.5,
+      "amenity": "theater",
+      "detail": "Resident professionally directed theatre group"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062852Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour-manned gatehouse (guard-gated)"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062855Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Lushly landscaped grounds with sidewalks and paths for biking and walking; borders Westchester Golf Course grounds"
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062857Z",
+      "confidence": 0.5,
+      "amenity": "age_restricted_55",
+      "detail": "55-plus community, 928 Mediterranean-style homes"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:17:47.062860Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": null
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+      "retrieved_at": "2026-10-10T21:17:47.062863Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": null
+    }
+  ],
+  "demographics": {
+    "source_url": "https://statedemographics.com/florida/boynton-beach/",
+    "retrieved_at": "2026-10-10T21:17:47.062868Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 81435,
+    "data_year": 2024,
+    "geography_level": "City of Boynton Beach, FL (ACS 2020-2024 5-year estimates; not community-specific to The Cascades census tract(s))"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328355Z",
+      "confidence": 0.7,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": 2024,
+      "geography_level": "community"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328364Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Boynton Beach shopping and dining district",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/the-cascades",
+      "retrieved_at": "2026-10-10T21:12:42.328370Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Boynton Beach recreational attractions",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062875Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062878Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062879Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://ourcascades.com/about-the-cascades/",
+      "retrieved_at": "2026-10-10T21:17:47.062881Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Kravis Center (New York theatre), per community site",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "HOA fee amount (monthly/annual) not found on any page read; florida-hoa.net only states 'HOA Fee Required'. Verify via estoppel from Castle Management (800-337-5850) or the board.",
+    "No CDD or special assessment information found for The Cascades.",
+    "Exact distances (miles) to nearest shopping, grocery, library, hospital, and school not verified; community site only says these are 'minutes away' / 'just outside the gatehouse'.",
+    "Nearest library, hospital, and school names not verified (homes.com neighborhood guide was access-denied).",
+    "Pet policy not found on any page read.",
+    "Clubhouse size (24,000 sq ft) from task notes not verified on a page read.",
+    "Population discrepancy: censusreporter.org profile page showed 83,095 (page content otherwise JS-limited) vs 81,435 in ACS 2020-2024 used above."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 256.0,
+          "period": "monthly",
+          "source_url": "https://www.55places.com/florida/communities/the-cascades",
+          "retrieved_at": "2026-10-10T21:12:42.328262+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N97000000160",
+          "retrieved_at": "2026-10-10T21:17:47.062808+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T21:17:47.063511Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Boynton Beach recreational attractions",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/the-cascades"
+        },
+        {
+          "nearest_name": "Kravis Center (New York theatre), per community site",
+          "distance_miles": null,
+          "source_url": "https://ourcascades.com/about-the-cascades/"
+        }
+      ],
+      "detected_at": "2026-10-10T21:17:47.063517Z"
+    }
+  ],
+  "created_at": "2026-10-10T21:12:42.329224Z",
+  "updated_at": "2026-10-10T21:17:47.063632Z"
+}

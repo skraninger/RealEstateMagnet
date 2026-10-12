@@ -81,20 +81,137 @@
       "confidence": 0.5,
       "amenity": "common_hot_water_heat",
       "detail": "Common hot water and common heat included in HOA fees per hoa-resource.com."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019519Z",
+      "confidence": 0.5,
+      "amenity": "gated_entrance",
+      "detail": "Secured gated entrance to the community"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019543Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pools",
+      "detail": "All homes feature pool; lovely swimming pools throughout community"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019551Z",
+      "confidence": 0.5,
+      "amenity": "landscaping",
+      "detail": "Lushly landscaped community with cozy and serene surroundings"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019557Z",
+      "confidence": 0.5,
+      "amenity": "architecture",
+      "detail": "Distinctive, stunning architecture; beautifully finished boutique-style homes"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:53.825356Z",
+      "confidence": 0.5,
+      "amenity": "gated_controlled_access_entrance",
+      "detail": "Homes sit behind controlled access; unapproved visitors are not admitted without permission (\"stress will be confiscated at the gate along with unapproved visitors\"). The gate creates privacy from the public street and through-traffic disappears inside the community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:53.825369Z",
+      "confidence": 0.5,
+      "amenity": "private_pools",
+      "detail": "Homes include private pools (plus pump, heater, deck, plumbing, and screen enclosure) as part of the estate features, alongside large lots."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:53.825372Z",
+      "confidence": 0.5,
+      "amenity": "large_deep_estate_lots",
+      "detail": "Large estates and deep lots create the feel of permanent separation from noise and clutter; twelve estate homes total in the community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:53.825375Z",
+      "confidence": 0.5,
+      "amenity": "mature_trees_and_tropical_landscaping",
+      "detail": "Mature trees provide privacy and beauty (pruning, storm prep, arborist visits required); pool decks are screened with tropical landscaping."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452676Z",
+      "confidence": 0.5,
+      "amenity": "private_pools",
+      "detail": "Each of the 12 estates features private pools amidst meticulously landscaped surroundings, sweeping lawns, and courtyards."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452689Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "A private, gated boutique community known as one of Pinecrest's most exclusive communities."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452692Z",
+      "confidence": 0.5,
+      "amenity": "expansive_lots_1_acre_each",
+      "detail": "Each of the 12 estates rests on nearly an acre of land, maximizing seclusion."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452696Z",
+      "confidence": 0.5,
+      "amenity": "mediterranean_contemporary_and_colonial_architecture",
+      "detail": "Homes blend Mediterranean, contemporary, and colonial architectural styles amidst verdant landscaping."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452699Z",
+      "confidence": 0.5,
+      "amenity": "meticulously_landscaped_surroundings",
+      "detail": "Lush landscaping with sweeping lawns and courtyards create a tropical oasis feel."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:46.800105Z",
+      "confidence": 0.8,
+      "amenity": "swimming_pool",
+      "detail": "Community features a swimming pool"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:46.800117Z",
+      "confidence": 0.8,
+      "amenity": "assigned_parking",
+      "detail": "Homes feature assigned parking"
     }
   ],
   "demographics": {
-    "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
-    "retrieved_at": "2026-10-09T03:47:57.230561Z",
+    "source_url": "browser:google",
+    "retrieved_at": "2026-10-09T20:21:13.452704Z",
     "confidence": 0.5,
     "median_age": null,
     "median_household_income": null,
     "owner_occupancy_pct": null,
-    "population": 19460,
+    "population": 40,
     "data_year": null,
-    "geography_level": "Village of Pinecrest (municipality, not community-level); ~8 sq mi, incorporated March 12, 1996. Community itself has only 12 residences. Median age, income, and owner-occupancy not stated in sources."
+    "geography_level": "community"
   },
-  "demographics_history": [],
+  "demographics_history": [
+    {
+      "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
+      "retrieved_at": "2026-10-09T03:47:57.230561Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 19460,
+      "data_year": null,
+      "geography_level": "Village of Pinecrest (municipality, not community-level); ~8 sq mi, incorporated March 12, 1996. Community itself has only 12 residences. Median age, income, and owner-occupancy not stated in sources."
+    }
+  ],
   "proximity": [
     {
       "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm",
@@ -118,6 +235,134 @@
       "confidence": 0.5,
       "category": "other",
       "nearest_name": "Coral Gables / Palmetto Bay",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019573Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami / Financial District",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019579Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:19:02.019583Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Coral Gables and Palmetto Bay (community sits centrally between the two)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452711Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Dadeland Mall",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452715Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Falls",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452717Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fairchild Tropical Botanic Garden",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452718Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Pinecrest Gardens",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452719Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Matheson Hammock Park",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452720Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Suniland Park",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452722Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Evelyn Greer",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452723Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Coral Pine Park",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452725Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Village Green",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452726Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Banyan Drive",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452727Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Lowe Museum",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452728Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Coral Gables Museum",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T20:21:13.452729Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Dennis C. Moss Cultural Arts Center",
       "distance_miles": null
     }
   ],
@@ -145,7 +390,7 @@
           "retrieved_at": "2026-10-09T16:27:56.135530+00:00"
         }
       ],
-      "detected_at": "2026-10-09T16:27:56.393006Z"
+      "detected_at": "2026-10-09T20:21:46.801116Z"
     },
     {
       "field": "proximity.other",
@@ -164,11 +409,97 @@
           "nearest_name": "Coral Gables / Palmetto Bay",
           "distance_miles": null,
           "source_url": "https://dienerproperties.com/sanctuary-pinecrest.htm"
+        },
+        {
+          "nearest_name": "Downtown Miami / Financial District",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Miami International Airport",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Coral Gables and Palmetto Bay (community sits centrally between the two)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Fairchild Tropical Botanic Garden",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Pinecrest Gardens",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Matheson Hammock Park",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Suniland Park",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Evelyn Greer",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Coral Pine Park",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Village Green",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Banyan Drive",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Lowe Museum",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Coral Gables Museum",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Dennis C. Moss Cultural Arts Center",
+          "distance_miles": null,
+          "source_url": "browser:google"
         }
       ],
-      "detected_at": "2026-10-09T16:27:56.393021Z"
+      "detected_at": "2026-10-09T20:21:46.801124Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Dadeland Mall",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "The Falls",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-09T20:21:46.801127Z"
     }
   ],
   "created_at": "2026-10-09T03:47:57.231336Z",
-  "updated_at": "2026-10-09T16:27:56.393218Z"
+  "updated_at": "2026-10-12T19:26:48.245202Z"
 }

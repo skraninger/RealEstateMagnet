@@ -28,8 +28,10 @@ Usage::
 from __future__ import annotations
 
 import logging
+import os
 import sys
 from typing import Any, AsyncIterable, Callable, Optional
+from urllib.parse import urlsplit
 
 from pydantic_ai.messages import (
     PartDeltaEvent,
@@ -41,6 +43,62 @@ from pydantic_ai.messages import (
 logger = logging.getLogger(__name__)
 
 ThinkingCallback = Callable[[str], None]
+
+_LOCAL_HOSTS = {"localhost", "127.0.0.1", "0.0.0.0", "::1"}
+
+
+def _is_local_endpoint(base_url: Optional[str]) -> bool:
+    if not base_url:
+        return False
+    try:
+        host = urlsplit(base_url).hostname or ""
+    except ValueError:
+        return False
+    return host in _LOCAL_HOSTS
+
+
+def thinking_disabled(base_url: Optional[str] = None) -> bool:
+    """Whether reasoning should be switched off for a model call.
+
+    **Default is on** (thinking stays enabled), so the pipeline console keeps
+    streaming the model's reasoning — that live trace is what makes prompt
+    quality observable. Set ``MODEL_DISABLE_THINKING=1`` to force reasoning off
+    for latency, ``=auto`` to disable it only for localhost endpoints (via the
+    llama.cpp/Qwen ``chat_template_kwargs.enable_thinking=false`` field), or
+    ``=0`` (the default) to keep it on everywhere.
+    """
+    mode = os.environ.get("MODEL_DISABLE_THINKING", "0").strip().lower()
+    if mode in ("1", "true", "yes", "on"):
+        return True
+    if mode in ("0", "false", "no", "off"):
+        return False
+    return _is_local_endpoint(base_url)
+
+
+def sampling_settings(
+    *,
+    max_tokens: Optional[int] = None,
+    temperature: Optional[float] = None,
+    top_p: Optional[float] = None,
+    disable_thinking: bool = False,
+) -> dict[str, Any]:
+    """Assemble a PydanticAI ``model_settings`` dict for a single model call.
+
+    Only the supplied keys are included, so callers cannot accidentally clobber
+    defaults they meant to leave alone. ``disable_thinking`` adds the llama.cpp
+    ``chat_template_kwargs.enable_thinking=false`` switch (harmless no-op on
+    endpoints that ignore it).
+    """
+    settings: dict[str, Any] = {}
+    if max_tokens is not None:
+        settings["max_tokens"] = max_tokens
+    if temperature is not None:
+        settings["temperature"] = temperature
+    if top_p is not None:
+        settings["top_p"] = top_p
+    if disable_thinking:
+        settings["extra_body"] = {"chat_template_kwargs": {"enable_thinking": False}}
+    return settings
 
 
 class ThinkingReporter:

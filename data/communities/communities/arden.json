@@ -1,0 +1,241 @@
+{
+  "id": "b0d8f6fa-e39c-42ef-8b40-a5c6b116ba87",
+  "identity": {
+    "name": "Arden",
+    "slug": "arden",
+    "county_fips": null,
+    "city": "Loxahatchee",
+    "hoa_name": "Arden Homeowners Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Arden is a gated, master-planned residential community in Loxahatchee, Florida (Palm Beach County), situated in the rural/suburban area near the Loxahatchee River and the Loxahatchee National Wildlife Refuge. It offers a clubhouse, resort-style pool, tennis, and trails, with a gated entry providing controlled access."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026909Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Approximate range $250-$400/month; varies by lot and which sub-association applies. Covers clubhouse, pool, tennis, landscaping, and gate/security. Verify current dues with the HOA before purchase. CDD/special assessments not confirmed for this community."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028265Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 250.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported range ~$250-$373/month depending on source and home type; some listings show ~$978/quarter (billed quarterly). Exact current fee schedule not publicly confirmed; verify with HOA/manager (CCMC). Source is a secondary HOA-info site, not official HOA documentation. Range low end recorded here; high end $373/month per same source. Confidence low due to secondary source and conflicting reports (e.g., hoa-agent.com lists fees managed by CCMC but no figure seen)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028273Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Page states 'no CDD fees in many reports' for Arden; not independently verified against county/CDD records. Treat as unconfirmed."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026925Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Community clubhouse with meeting/social space"
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026940Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style swimming pool"
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026945Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts"
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026952Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking/biking trails and landscaped green space"
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026957Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated entry with controlled access"
+    },
+    {
+      "source_url": "https://www.myardenfl.com/amenities-1/",
+      "retrieved_at": "2026-10-10T18:15:23.028278Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool flowing over two levels: peaceful upper pool with cabanas, lower play pool with swim lanes and adjacent hot tub; open year-round, dawn to dusk; children under 13 must be accompanied by adult; no private rental of pool/deck. Splash pad and fountains at lower pool (per ardenpalmbeach.com)."
+    },
+    {
+      "source_url": "https://www.myardenfl.com/amenities-1/",
+      "retrieved_at": "2026-10-10T18:15:23.028286Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness facility open daily 4 AM-10 PM; dedicated exercise rooms and large workout area with cardio and muscle-building equipment; large group fitness room with on-demand Wellbeats workouts; 14-15 year olds allowed with orientation and waiver."
+    },
+    {
+      "source_url": "https://ardenpalmbeach.com/arden/amenities/",
+      "retrieved_at": "2026-10-10T18:15:23.028290Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "9,900 sq ft community clubhouse: fitness center, cafe/tea & coffee bar ('the Hub'), high-speed WiFi, multiple event venues, outdoor patio overlooking the pool, floor-to-ceiling windows."
+    },
+    {
+      "source_url": "https://ardenpalmbeach.com/arden/amenities/",
+      "retrieved_at": "2026-10-10T18:15:23.028292Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Dozens of miles of well-marked, mapped walking and biking trails encircling Arden Lake and looping through every neighborhood; virtually every homesite abuts a park, greenway or nature trail."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028294Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis and pickleball courts (also basketball and playgrounds per myardenfl.com amenities page)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028296Z",
+      "confidence": 0.5,
+      "amenity": "working_farm",
+      "detail": "5-acre working farm (agrihood concept) with resident produce access."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028299Z",
+      "confidence": 0.5,
+      "amenity": "lake_access",
+      "detail": "Lakes for kayaking/fishing (Arden Lake)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028301Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour manned gated entrance providing controlled access; community is gated across 1,200+ acres."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:15:23.028303Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pet limits typically up to 3 pets; also architectural review via Design Review Board, landscaping guidelines, no commercial vehicles, rental and noise standards."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://relocationgenius.net/location/loxahatchee/fl/people/",
+    "retrieved_at": "2026-10-10T18:15:23.028307Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 2391,
+    "data_year": 2026,
+    "geography_level": "city (Loxahatchee, FL 33470, Palm Beach County); page states figures sourced from U.S. Census Bureau ACS 5-year estimates, updated Feb 2026, but is a third-party aggregator, not the Census itself"
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026965Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "city (Loxahatchee, FL) - approximate, not community-specific census figures for Arden itself"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026973Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Loxahatchee High School",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026978Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Loxahatchee Branch Library (Palm Beach County Library System)",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026982Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "St. Mary's Medical Center (Boynton Beach)",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T18:03:03.026985Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Local Loxahatchee shopping / Lake Worth & Boynton Beach retail",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "https://ardenpalmbeach.com/arden/amenities/",
+      "retrieved_at": "2026-10-10T18:15:23.028313Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Lake Okeechobee (fishing/bird-watching)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA fee schedule: only a secondary-reported range of ~$250-$373/month (or ~$978/quarter) was found; confirm with Arden HOA / management company CCMC (phone (561) 461-5501 per hoabulletinboard.com).",
+    "CDD assessment status: 'no CDD fees in many reports' is unverified against Palm Beach County property appraiser or CDD records.",
+    "Nearest shopping center, grocery store, library, hospital, and school with distances were not verified on any page read; Arden sits off Southern Boulevard near 20-Mile Bend, so services are likely in Loxahatchee/Loxahatchee Groves or West Palm Beach, but no distances were observed.",
+    "Demographics are from a third-party aggregator (relocationgenius.net) citing ACS; direct Census/ACS figures for the City of Loxahatchee (e.g., via censusreporter.org) were not obtained, and owner-occupancy % was not seen on any page read (an unread snippet suggested ~88%).",
+    "hoa-agent.com lists Arden HOA fees/reviews but the page was not read; figures there were not recorded."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "ai:condensed",
+          "retrieved_at": "2026-10-10T18:03:03.026909+00:00"
+        },
+        {
+          "amount": 250.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+          "retrieved_at": "2026-10-10T18:15:23.028265+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T18:15:23.028883Z"
+    }
+  ],
+  "created_at": "2026-10-10T18:03:03.027917Z",
+  "updated_at": "2026-10-10T18:15:23.028980Z"
+}

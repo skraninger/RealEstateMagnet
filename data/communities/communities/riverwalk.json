@@ -1,0 +1,183 @@
+{
+  "id": "fb558f1b-af23-4fc2-aa5a-ff89dbfa2b47",
+  "identity": {
+    "name": "RiverWalk",
+    "slug": "riverwalk",
+    "county_fips": null,
+    "city": "West Palm Beach",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated residential community in West Palm Beach situated along the Intracoastal Waterway near the Riverwalk district and downtown West Palm Beach. Specific HOA fee schedules, amenity details, and census-level demographic data for this community are not reliably documented in my knowledge base, so those fields are left blank rather than estimated."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.riverwalkofwpb.com/faq/",
+      "retrieved_at": "2026-10-10T21:52:07.055948Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Quarterly Assessment Fees (no dollar amount published). Determined each year during budgeting (starts mid-August, finalized by Board in November), effective January 1; Operating budget + Reserve contributions divided among 1,367 units by home type, then divided by 4. Due Jan 1, Apr 1, Jul 1, Oct 1; payable via ClickPay auto-pay. Managed by FirstService Residential. Verify current amount with the association/estoppel letter before purchase. City-wide reference only: West Palm Beach townhouse/villa median HOA fee ~$443-485/month (not RiverWalk-specific). Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/faq/",
+      "retrieved_at": "2026-10-10T21:52:07.055960Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Capital Contributions are explicitly NOT part of Quarterly Assessment Fees, implying a separate capital contribution charge exists; amount not published on the page. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:41:45.311323Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Controlled gated entry; waterfront location along the Intracoastal Waterway near the Riverwalk promenade district. Other amenities (pool, clubhouse, etc.) not confirmed in available knowledge and left unreported rather than guessed. (retrieved_at: 2025-01-15T00:00:00Z, confidence: 0.6)"
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.055967Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Three heated pools including a lap pool, exclusive to residents; part of Town Center/Sports Center complex. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.055980Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center in the Town Center. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.055987Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Sports Center with eight lighted Har-Tru courts, six dedicated to tennis. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.055994Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Two of the eight Sports Center courts converted to four pickleball courts. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.056000Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "12 miles of pedestrian bridges and pathways for walking, running, and cycling. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.056005Z",
+      "confidence": 0.5,
+      "amenity": "town_center",
+      "detail": "Town Center includes meeting rooms, activities rooms, cafe restaurant, post office, hair salon, and a full-service real estate office. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/amenities/",
+      "retrieved_at": "2026-10-10T21:52:07.056011Z",
+      "confidence": 0.5,
+      "amenity": "cafe_restaurant",
+      "detail": "Centanni Cafe, Italian restaurant in the Town Center (chef Fidel Alvarez); open Tue-Sun 11am-9pm, closed Mondays; phone 561-815-5060. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/faq/",
+      "retrieved_at": "2026-10-10T21:52:07.056016Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community; guest and vendor gate access managed via ISN GateKeeper (International Security Networks) guest/vendor list. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:52:07.056022Z",
+      "confidence": 0.5,
+      "amenity": "activities_program",
+      "detail": "Onsite management and full-time activities director; community TV channel 63, weekly emails, monthly newsletter. Confidence 0.9 (official HOA site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:41:45.311336Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown West Palm Beach (Worth Avenue / Clematis Street retail)",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:41:45.311344Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix, downtown West Palm Beach (Clematis Street area)",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:41:45.311346Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "West Palm Beach–Palm Beach County Main Library (101 Clematis St)",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:41:45.311348Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "St. Mary's Medical Center, West Palm Beach",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:41:45.311349Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Royal Palm Beach High School / West Park Elementary (West Palm Beach public schools)",
+      "distance_miles": 3.0
+    }
+  ],
+  "open_questions": [
+    "Specific HOA fee dollar amounts (monthly/quarterly/annual) for RiverWalk were not published on any page read; the official FAQ describes the quarterly fee mechanism only. City-wide West Palm Beach townhouse/villa medians (~$443-485/month) are not community-specific. Request an estoppel letter or current budget from FirstService Residential (property manager).",
+    "No CDD/special assessment data found. PBP Real Estate's MLS report (as of Oct 10, 2026) notes 0 of 4 active RiverWalk listings mention a special assessment, age restriction, or membership requirement in agent remarks - unverified by the association.",
+    "Demographics (median age, median household income, owner-occupancy %, population) for the RiverWalk community or its census tract were not obtained within search budget; no Census/ACS page was read.",
+    "Proximity distances to nearest shopping, grocery, library, hospital, and school were not verified on any page read (a PBP Real Estate PDF fact sheet reportedly contains nearby distances but was not accessible).",
+    "Unit count conflict: official HOA site states 1,367 units; hoa-agent.com lists RiverWalk as a 66-unit townhouse community (ZIP 33411) - likely an aggregator data error or a different sub-association; verify with the association.",
+    "Pet policy and short-term rental rules unknown (hoa-agent.com marks both as unknown).",
+    "hoa-agent.com identifies the association entity as RIVERWALK ASSOCIATION, INC. (entity number 8266), managed by FirstService Residential; utilities are FPL (electric) and City of West Palm Beach (water/sewer/trash) - useful for verification but not a fee or amenity."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": "quarterly",
+          "source_url": "https://www.riverwalkofwpb.com/faq/",
+          "retrieved_at": "2026-10-10T21:52:07.055948+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.riverwalkofwpb.com/faq/",
+          "retrieved_at": "2026-10-10T21:52:07.055960+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T21:52:07.056896Z"
+    }
+  ],
+  "created_at": "2026-10-10T21:41:45.311908Z",
+  "updated_at": "2026-10-10T21:52:07.057058Z"
+}

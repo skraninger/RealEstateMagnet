@@ -36,6 +36,7 @@ from .models import (
     ProximityMetric,
 )
 from .store import CommunityStore, slugify
+from .streaming import sampling_settings, thinking_disabled
 from .tools import google_search, read_page
 
 logger = logging.getLogger(__name__)
@@ -324,7 +325,15 @@ Be accurate - only extract data that is explicitly stated."""
             )
 
             try:
-                result_obj = await agent.run(prompt)
+                result_obj = await agent.run(
+                    prompt,
+                    model_settings=sampling_settings(
+                        max_tokens=int(os.environ.get("MODEL_MAX_TOKENS", "4096")),
+                        temperature=float(os.environ.get("MODEL_TEMPERATURE", "0.2")),
+                        top_p=float(os.environ.get("MODEL_TOP_P", "0.95")),
+                        disable_thinking=thinking_disabled("http://localhost:8080/v1"),
+                    ),
+                )
                 extracted = result_obj.output
 
                 for item in extracted.communities:

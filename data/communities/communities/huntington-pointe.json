@@ -1,0 +1,249 @@
+{
+  "id": "ede39346-449f-4d77-8222-8e0618d24bd0",
+  "identity": {
+    "name": "Huntington Pointe",
+    "slug": "huntington-pointe",
+    "county_fips": null,
+    "city": "Delray Beach, FL 33444",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": false,
+    "geo_point": null,
+    "notes": "55+ villa community in Delray Beach, FL (ZIP 33444), Palm Beach County. Profile combines public records and resident-submitted data; unit count and management company unknown. No special assessment signals reported."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672618Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1024.66,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-verified, 1 data point; observed range $1024.66/mo. Not a guaranteed fee — verify with the association directly. No CDD/special assessment signals reported yet."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672635Z",
+      "confidence": 0.5,
+      "amenity": "cafe_restaurant",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672651Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672658Z",
+      "confidence": 0.5,
+      "amenity": "indoor_pool",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672665Z",
+      "confidence": 0.5,
+      "amenity": "jogging_path",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672672Z",
+      "confidence": 0.5,
+      "amenity": "manager_on_site",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672678Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672683Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:18:44.672689Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Resident-verified; confirm with association"
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450650Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Newly renovated 62,000 sq ft clubhouse (card rooms, billiards, gym, fitness studio, locker rooms, ceramics room, theater). Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450657Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Main swimming pool with hot tub plus 3 heated satellite pools. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450659Z",
+      "confidence": 0.5,
+      "amenity": "indoor_pool",
+      "detail": "Enclosed heated indoor pool attached to clubhouse. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450662Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Newly equipped state-of-the-art gym plus fitness studio; men's and women's locker rooms with showers, sauna and steam rooms. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450665Z",
+      "confidence": 0.5,
+      "amenity": "theater",
+      "detail": "Professionally equipped theater seating over 600 (concerts, shows, movies). Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450667Z",
+      "confidence": 0.5,
+      "amenity": "card_rooms",
+      "detail": "Multiple card rooms. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450669Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiards room. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450671Z",
+      "confidence": 0.5,
+      "amenity": "ceramics",
+      "detail": "Ceramics room with kilns. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450673Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450675Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball courts. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450677Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Bocce courts. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450679Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball court. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450681Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard",
+      "detail": "Shuffleboard. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450683Z",
+      "confidence": 0.5,
+      "amenity": "cornhole",
+      "detail": "Corn hole. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450685Z",
+      "confidence": 0.5,
+      "amenity": "cafe",
+      "detail": "Newly renovated cafe open 8am-3pm daily; breakfast and lunch, weekly specials, pickup/delivery, catering. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450687Z",
+      "confidence": 0.5,
+      "amenity": "walking_paths",
+      "detail": "Walking paths surrounding two lakes. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://huntingtonpointe.net/about/",
+      "retrieved_at": "2026-10-10T18:24:10.450689Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour manned gated community. Confidence 0.9 (official community site). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:24:10.450691Z",
+      "confidence": 0.5,
+      "amenity": "on_site_manager",
+      "detail": "Manager on site (resident-reported amenity list). Confidence 0.5 (aggregator). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/huntington-pointe",
+      "retrieved_at": "2026-10-10T18:24:10.450693Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": "Sidewalks (resident-reported amenity list). Confidence 0.5 (aggregator). Retrieved 2026-06-25T12:00:00Z."
+    },
+    {
+      "source_url": "https://hoa-community.com/huntington-pointe-hoa-delray-beach-fl/",
+      "retrieved_at": "2026-10-10T18:24:10.450695Z",
+      "confidence": 0.5,
+      "amenity": "media_room",
+      "detail": "Media room listed under community features. Confidence 0.5 (third-party HOA info site). Retrieved 2026-06-25T12:00:00Z."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33444-33444/",
+    "retrieved_at": "2026-10-10T18:24:10.450699Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 22737,
+    "data_year": null,
+    "geography_level": "ZIP 33444 (Delray Beach, FL ZIP code tabulation area; community sits within this ZIP, not a community-level figure). Confidence 0.9 (Census Reporter). Retrieved 2026-06-25T12:00:00Z. Median age, median household income, and owner-occupancy % were not extractable from the page read and are left null."
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [
+    "Demographics: median age, median household income, and owner-occupancy % for ZIP 33444 could not be verified on a page read (Census Reporter page returned only population/density). Search snippets suggested median household income ~$72,869-$74,803 and median age ~41.3 (censuseasy.com, areazine.com, palavir.co, ACS 2023 5-yr) but those pages were not read; treat as unverified.",
+    "Proximity: no verified distances to nearest hospital, library, school, or grocery. A homes.com listing snippet (page returned Access Denied) claimed Lynn University is 8.2 miles / 17 minutes away and Wakodahatchee Wetlands preserve is ~1.5 miles away; unverified.",
+    "Fees: hoa-agent.com shows a single resident-verified data point of $1,024.66/mo; search snippets from hoa-community.com and mycleancondo.com suggested a $700-$1,073/mo range (and homes.com snippet $700-$800/mo, $620-$668 with capital contribution) but those figures were not visible on pages read. Confirm current dues with the HOA.",
+    "CDD/special assessments: hoa-agent.com reports 'no assessment signals' for this community; no CDD assessment amount found.",
+    "Management company: hoa-agent.com lists Campbell Property Management; unit count unknown (hoa-agent.com).",
+    "Pet/rental rules: hoa-agent.com reports pet breed restrictions and rental application/buyer approval required; not independently verified.",
+    "Data year for the Census Reporter population figure was not displayed on the page read (likely recent ACS 5-year estimates)."
+  ],
+  "discrepancies": [],
+  "created_at": "2026-10-10T18:18:44.673622Z",
+  "updated_at": "2026-10-10T18:24:10.451318Z"
+}

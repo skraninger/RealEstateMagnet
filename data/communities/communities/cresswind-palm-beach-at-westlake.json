@@ -1,0 +1,513 @@
+{
+  "id": "1418767e-e06b-4b18-a010-8c26a0b69419",
+  "identity": {
+    "name": "Cresswind Palm Beach at Westlake",
+    "slug": "cresswind-palm-beach-at-westlake",
+    "county_fips": null,
+    "city": "Westlake",
+    "hoa_name": "Cresswind Palm Beach HOA Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated 55+ active adult community in Westlake, FL 33470, developed by Kolter Homes. The only actively selling gated 55+ community in Westlake, Florida's newest master-planned city. Features 2-5 bedroom homes (1,840-2,776 sq ft) starting from $556,990. Pet-friendly with resort-style amenities centered on Club Cresswind."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107544Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 335.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Monthly HOA fee per Kolter Homes listing. Older data combines Cresswind Palm Beach Association and Westlake Master Association fees. Recent listings suggest range of $335-$425/month; exact current figures vary and are unavailable in detailed public breakdowns. No information on transfer fees, capital contributions, or special assessments available publicly."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107556Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 425.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Upper end of reported range ($366-$425) based on recent property listings. Exact current amounts vary by source and listing."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107560Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 366.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Lower end of recent listing range ($366-$425)."
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881438Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 335.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Total HOA: Cresswind Palm Beach Association fee $288/mo + Westlake Master Association fee $47/mo. Cresswind fee covers access-control gate entry, community landscaping/irrigation, clubhouse & recreation center, home lawn care/irrigation, and high-speed internet. As of article writing (published Dec 2021, updated Feb 2025). Exact current figures not publicly confirmed elsewhere in this range of sources; other sources report up to $425/mo on recent listings. No CDD special assessment found in public sources checked. Management: older references to Lang Management; current manager unconfirmed. Sales center: 5287 Siesta Key Lane, Westlake FL 33470, (561) 476-0051. HOA entity mailing address: 5615 Saint Armands Way, Loxahatchee FL 33470-2209. Gated 55+ community, Kolter Homes, ~800 homes on 270 acres. Homes 1,434-2,776 sq ft, 2-5 bed, 10 floorplans; starting prices reported from high-$300ks (2021) to $556,990-$588,990 (2025-26 listings). Pet-friendly (dog park on site). Westlake ER (Wellington Regional Medical Center, opened 2019, 24/7) is inside the master community. Unincorporated-area tax advantage cited: ~$1,200-$1,500/yr savings on a $600K home vs Boynton/Delray. Beach 25-35 min east; Turnpike access 5 min; I-95 15 min. Resale history limited (new community). Price range within community reported $400K-$2M (nova55living, unverified). Town Center with Publix/retail still under development per nova55living (unverified)."
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881447Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 288.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Cresswind Palm Beach Association fee component (of $335 total)."
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881449Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 47.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Westlake Master Association fee component (of $335 total)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:54:49.881451Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 335.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported range approx $335/mo (older combined fees) to $366-$425/mo based on recent listings; exact current figures unavailable publicly. Transfer fees, capital contributions, and special assessments not available from public sources."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/plan/lila-kolter-homes-westlake-fl/2819173",
+      "retrieved_at": "2026-10-12T15:54:49.881453Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 335.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Listing for Lila floorplan, Cresswind Palm Beach at Westlake, from $588,990."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107567Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Club Cresswind - resident-exclusive clubhouse with arts & crafts rooms, Card Room, and event spaces. Full-time Lifestyle Director on staff."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107579Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "SmartFit Training Center equipped with state-of-the-art EGYM equipment."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107587Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool with cabanas and resistance pools."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107592Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107599Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Community pickleball courts."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107604Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Bocce courts."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107610Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": "Dog parks."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107616Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Walking trails."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107621Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Lake access."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107626Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_lots",
+      "detail": "Waterfront lots available."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107632Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community entrance."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107637Z",
+      "confidence": 0.5,
+      "amenity": "master_community_access",
+      "detail": "Access to Westlake master community features including Adventure Park."
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881456Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Club Cresswind, resident-exclusive clubhouse and recreation center"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881465Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool and spa; poolside sun decks and cabanas"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881468Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resistance pool (in addition to resort-style pool)"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881470Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "SmartFit Training Center with EGYM technology; personal training, yoga, group fitness"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881473Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Yoga/aerobics studio"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881475Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "8 pickleball courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:54:49.881477Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "2 tennis courts"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881479Z",
+      "confidence": 0.5,
+      "amenity": "bocce_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881482Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": "Pet-friendly community; dog park on site"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881484Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Walking trails through preserved natural areas"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881486Z",
+      "confidence": 0.5,
+      "amenity": "event_space",
+      "detail": "Multi-purpose event room; event plaza with food truck court; open outdoor loggias"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881488Z",
+      "confidence": 0.5,
+      "amenity": "art_room",
+      "detail": "Art room with ceramic kiln"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881490Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Access-control gate entry (covered by HOA fee)"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881492Z",
+      "confidence": 0.5,
+      "amenity": "lifestyle_program",
+      "detail": "Full-time Lifestyle Director; 'Set Yourself FREE' program (Fitness, Relationships, Education, Entertainment) with clubs, events, and fitness classes"
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881494Z",
+      "confidence": 0.5,
+      "amenity": "high_speed_internet",
+      "detail": "Included in Cresswind Palm Beach Association fee"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:54:49.881497Z",
+      "confidence": 0.5,
+      "amenity": "master_community_access",
+      "detail": "Access to Westlake master community features such as Adventure Park"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1276417-westlake-fl/",
+    "retrieved_at": "2026-10-12T15:54:49.881502Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 4237,
+    "data_year": null,
+    "geography_level": "city (Westlake, FL, Palm Beach County, 6.4 sq mi, 665.6 people/sq mi); community itself is a new ~800-home section, so city-level data is the closest available proxy"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:49:47.107646Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "community"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107654Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Golden Grove Elementary School",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+      "retrieved_at": "2026-10-12T15:49:47.107659Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Kolter Homes Sales Center (5287 Siesta Key Lane, Westlake, FL 33470)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881506Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Wellington Regional Medical Center (15 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881509Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Palm Beach Gardens Medical Center (20 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+      "retrieved_at": "2026-10-12T15:54:49.881511Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Westlake ER, owned/operated by Wellington Regional Medical Center, inside Westlake master community (opened 2019, 24/7, 11 treatment spaces)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881512Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Mall at Wellington Green (15 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881513Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Gardens Mall (25 min drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881514Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Several Publix grocery stores (10-15 min drive); Westlake Town Center with Publix planned/under development",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/",
+      "retrieved_at": "2026-10-12T15:54:49.881516Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Florida's Turnpike access (5 min); I-95 (15 min); Palm Beach International Airport (25 min); Kravis Center for the Performing Arts, West Palm Beach (25 min); several golf courses (15-20 min)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA fee: sources conflict between $335/mo (2021-2025 sources) and $366-$425/mo (recent listings per hoabulletinboard); no official HOA/CDD fee schedule found publicly.",
+    "CDD special assessments: no information found in public sources checked; transfer fees and capital contributions also unverified.",
+    "Demographics: median age, median household income, and owner-occupancy % for Westlake, FL could not be retrieved (censusreporter page rendered only the population header); only population 4,237 captured. Data year not displayed on the page.",
+    "Nearest library (Palm Beach County Library System branch) and nearest school with distances were not found; Westlake master plan includes schools but none verified for Cresswind.",
+    "Pet policy specifics (breed/weight limits, pet fees) not verified beyond 'pet-friendly' and on-site dog park.",
+    "Current HOA management company unconfirmed (older references to Lang Management).",
+    "Proximity distances are drive times, not miles; mile distances not available from sources read.",
+    "Claims from nova55living.com (price range $400K-$2M, unincorporated tax savings $1,200-$1,500/yr, Town Center still under construction) are from a single unverified blog and were not independently confirmed."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 335.0,
+          "period": "monthly",
+          "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241",
+          "retrieved_at": "2026-10-12T15:49:47.107544+00:00"
+        },
+        {
+          "amount": 425.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+          "retrieved_at": "2026-10-12T15:49:47.107556+00:00"
+        },
+        {
+          "amount": 366.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+          "retrieved_at": "2026-10-12T15:49:47.107560+00:00"
+        },
+        {
+          "amount": 335.0,
+          "period": "monthly",
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+          "retrieved_at": "2026-10-12T15:54:49.881438+00:00"
+        },
+        {
+          "amount": 288.0,
+          "period": "monthly",
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+          "retrieved_at": "2026-10-12T15:54:49.881447+00:00"
+        },
+        {
+          "amount": 47.0,
+          "period": "monthly",
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/",
+          "retrieved_at": "2026-10-12T15:54:49.881449+00:00"
+        },
+        {
+          "amount": 335.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/cwlfl/about_hoa/",
+          "retrieved_at": "2026-10-12T15:54:49.881451+00:00"
+        },
+        {
+          "amount": 335.0,
+          "period": "monthly",
+          "source_url": "https://www.newhomesource.com/plan/lila-kolter-homes-westlake-fl/2819173",
+          "retrieved_at": "2026-10-12T15:54:49.881453+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T15:54:49.882068Z"
+    },
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "Wellington Regional Medical Center (15 min drive)",
+          "distance_miles": null,
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/"
+        },
+        {
+          "nearest_name": "Palm Beach Gardens Medical Center (20 min drive)",
+          "distance_miles": null,
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/"
+        },
+        {
+          "nearest_name": "Westlake ER, owned/operated by Wellington Regional Medical Center, inside Westlake master community (opened 2019, 24/7, 11 treatment spaces)",
+          "distance_miles": null,
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach/"
+        }
+      ],
+      "detected_at": "2026-10-12T15:54:49.882075Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Kolter Homes Sales Center (5287 Siesta Key Lane, Westlake, FL 33470)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/westlake/cresswind-palm-beach-at-westlake-by-kolter-homes/150241"
+        },
+        {
+          "nearest_name": "Florida's Turnpike access (5 min); I-95 (15 min); Palm Beach International Airport (25 min); Kravis Center for the Performing Arts, West Palm Beach (25 min); several golf courses (15-20 min)",
+          "distance_miles": null,
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/"
+        }
+      ],
+      "detected_at": "2026-10-12T15:54:49.882077Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "The Mall at Wellington Green (15 min drive)",
+          "distance_miles": null,
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/"
+        },
+        {
+          "nearest_name": "The Gardens Mall (25 min drive)",
+          "distance_miles": null,
+          "source_url": "https://www.floridaforboomers.com/cresswind-palm-beach-review/"
+        }
+      ],
+      "detected_at": "2026-10-12T15:54:49.882080Z"
+    }
+  ],
+  "created_at": "2026-10-12T15:49:47.108514Z",
+  "updated_at": "2026-10-12T15:54:49.882179Z"
+}

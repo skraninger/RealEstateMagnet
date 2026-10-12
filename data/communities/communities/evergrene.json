@@ -1,0 +1,418 @@
+{
+  "id": "ce2b3483-1750-4675-b8ee-08d516014541",
+  "identity": {
+    "name": "Evergrene",
+    "slug": "evergrene",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Evergrene Master Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Evergrene is one of the largest gated non-country club communities in Palm Beach Gardens, Florida, spanning 400 acres with large lakes and preserved natural areas. It is an Audubon International Gold-Rated Signature Sanctuary, with over 50% of its land devoted to upland preserves, landscaped buffers, common area green space, and water bodies including 3.2 miles of shoreline. The community features a 20,000 sq ft clubhouse, resort-style heated pool, and extensive recreational amenities. HOA fees are notably higher than most other communities in the area."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244815Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fees are described as 'noticeably higher than in most other communities in the area' but no exact amount is stated. Residents say the fees buy 'a fabulous country club living at a greatly reduced cost.'"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000008777",
+      "retrieved_at": "2026-10-12T17:33:47.244823Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fee field is present but value not displayed in the source. Association: EVERGRENE MASTER ASSOCIATION, INC., established 12/14/2001, Federal ID 010548995. Property Manager: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000."
+    },
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Palm-Beach-Gardens/Evergrene-Demographics.html",
+      "retrieved_at": "2026-10-12T17:33:47.244825Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 2012.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Median housing costs in the neighborhood are $2,012/month per census data. Median gross rent approximately $2,2xx (figure truncated in source)."
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084440Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 569.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Listed as '$569 (SF)' in Munara/housevaluelab key features, presumably single-family HOA dues; page context is ambiguous and the site describes Evergrene fees only as 'noticeably higher than most other communities in the area'. Not verified against the association. For reference, hoa-agent.com states the average monthly HOA fee in Palm Beach Gardens is ~$641 and that Evergrene Master Association's fee has not yet been verified by residents (managed by Castle Group). No CDD special assessment data found on any page read (hoa-agent reports 'no assessment signals')."
+    },
+    {
+      "source_url": "https://hoa-agent.com/community/evergrene-master-association-inc",
+      "retrieved_at": "2026-10-12T17:39:23.084453Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No specific Evergrene fee amount published; profile (updated Aug 3, 2026) marks fee as unverified. Utilities: FPL electric, Seacoast Utility Authority water/sewer, Solid Waste Authority of Palm Beach County trash."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244829Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "20,000 square foot clubhouse with banquet hall, library, billiard room, and room for small children"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244837Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fully-equipped fitness center and aerobics room within the clubhouse"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244841Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Enormous resort-style heated swimming pool"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244843Z",
+      "confidence": 0.5,
+      "amenity": "hot_tub",
+      "detail": "Two hot tubs"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244845Z",
+      "confidence": 0.5,
+      "amenity": "tiki_bar",
+      "detail": "Tiki bar at the pool area"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244848Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball court"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244850Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Four pickleball courts"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244853Z",
+      "confidence": 0.5,
+      "amenity": "putting_green",
+      "detail": "Putting green"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244855Z",
+      "confidence": 0.5,
+      "amenity": "beach_volleyball",
+      "detail": "Beach volleyball area next to 36-acre lake"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244857Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "36-acre lake with its own wooden pier; 3.2 miles of shoreline community-wide"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244859Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Community playground for children"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244861Z",
+      "confidence": 0.5,
+      "amenity": "splash_park",
+      "detail": "Kids' splash park"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000008777",
+      "retrieved_at": "2026-10-12T17:33:47.244864Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis court (listed by Florida HOA database)"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000008777",
+      "retrieved_at": "2026-10-12T17:33:47.244866Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community with gate/security"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:33:47.244868Z",
+      "confidence": 0.5,
+      "amenity": "nature_preserves",
+      "detail": "Over 50% of land area devoted to upland preserves, landscaped buffers, common area green space and water bodies; Audubon International Gold-Rated Signature Sanctuary"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084460Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "20,000 sq ft clubhouse on the shoreline of Lake Dorothy; 1,500 sq ft private dining room reservable for events; social events year-round (Easter egg hunt, wine tastings, etc.)"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084474Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "165,000-gallon infinity-edged resort-style pool, described as one of the largest in Palm Beach County"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084481Z",
+      "confidence": 0.5,
+      "amenity": "heated_pool",
+      "detail": "Described as an 'enormous resort-style heated swimming pool'"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084487Z",
+      "confidence": 0.5,
+      "amenity": "hot_tub",
+      "detail": "Two jacuzzis overlooking Lake Dorothy"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084493Z",
+      "confidence": 0.5,
+      "amenity": "tiki_bar",
+      "detail": "Tiki Restaurant and Bar with fully stocked bar, live local music on some Fridays/Saturdays, weekly game nights"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084499Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Four 44-foot pickleball courts with sub-surface watering; rackets/balls available at clubhouse"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084505Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Full-length professionally constructed court with three hoops (polymeric rubber surface)"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084510Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Playground with slides/swings, water park and kiddie pool, reservable kids' room for parties"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084515Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Workout center with cardio, weight, and aerobics rooms; free weights, surround sound, TVs; men's/women's locker areas"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084521Z",
+      "confidence": 0.5,
+      "amenity": "beach",
+      "detail": "Sandy beach area on Lake Dorothy"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084526Z",
+      "confidence": 0.5,
+      "amenity": "volleyball_court",
+      "detail": "Professional-grade beach volleyball court on the Lake Dorothy beach"
+    },
+    {
+      "source_url": "https://evergrene.com/Amenities",
+      "retrieved_at": "2026-10-12T17:39:23.084531Z",
+      "confidence": 0.5,
+      "amenity": "pier",
+      "detail": "Pier extending over Lake Dorothy at the clubhouse; rentable for dinner parties and wedding receptions"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084536Z",
+      "confidence": 0.5,
+      "amenity": "putting_green",
+      "detail": "Putting green listed among community amenities"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084542Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Clubhouse library"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084547Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiard room in clubhouse"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084552Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "One of the largest gated non-country club communities in Palm Beach Gardens; 400 acres, Audubon International Gold-Rated Signature Sanctuary, 3.2 miles of shoreline, 963 residences (2-3BR condo-townhomes to 5BR custom single-family)"
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084557Z",
+      "confidence": 0.5,
+      "amenity": "banquet_hall",
+      "detail": "Expansive banquet hall in clubhouse"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1254075-palm-beach-gardens-fl/",
+    "retrieved_at": "2026-10-12T17:39:23.084565Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 60959,
+    "data_year": null,
+    "geography_level": "city (Palm Beach Gardens, FL; community ZIP 33410, Palm Beach County; area 59.2 sq mi, 1,029 people/sq mi per same page). Community-level (Evergrene) census data not available; city-level figures used as proxy. Full profile (age/income/tenure) did not render on the page read, so those fields are null rather than estimated."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Palm-Beach-Gardens/Evergrene-Demographics.html",
+      "retrieved_at": "2026-10-12T17:33:47.244873Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 2078,
+      "data_year": null,
+      "geography_level": "neighborhood (Evergrene, Palm Beach Gardens, FL) per most recent Census data via Point2Homes"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084574Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Marsh Pointe Elementary School",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084580Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Watson Duncan Middle School",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+      "retrieved_at": "2026-10-12T17:39:23.084583Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "William T. Dwyer High School",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact HOA dues for Evergrene Master Association and its 6 sub-communities: no verified amount found. hoa-agent.com marks the fee unverified (managed by Castle Group); the only figure seen was $569/month for single-family in Munara listing data with ambiguous context. Community fees are described as 'noticeably higher' than the ~$641/month Palm Beach Gardens average.",
+    "CDD special assessments: no data found on any page read (hoa-agent reports no assessment signals).",
+    "Median age, median household income, and owner-occupancy % for Palm Beach Gardens: Census Reporter profile page did not render its data tables on read (only population/area captured); data year also not displayed.",
+    "Distances to nearest hospital, library, and shopping: not verified. Searches surfaced the Palm Beach County Library System Gardens Branch (neighborhood library for Palm Beach Gardens) and nearby hospitals (e.g., JFK ER on PGA Blvd per Yelp snippet), but those pages were not read, so no facts recorded.",
+    "Manned gate security: a listing snippet (palmbeachluxury.com) describes Evergrene as 'gated with manned security', but that page was not read.",
+    "Pet policy: listed as 'Unknown' on hoa-agent.com.",
+    "Community population/household count: housevaluelab states 963 residences but its key-features list shows 2,235 (SF) and 1,478 (TH) figures of unclear meaning (possibly home counts by type); not reconciled."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+          "retrieved_at": "2026-10-12T17:33:47.244815+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000008777",
+          "retrieved_at": "2026-10-12T17:33:47.244823+00:00"
+        },
+        {
+          "amount": 569.0,
+          "period": "monthly",
+          "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene",
+          "retrieved_at": "2026-10-12T17:39:23.084440+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T17:39:23.085467Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 2012.0,
+          "period": "monthly",
+          "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Palm-Beach-Gardens/Evergrene-Demographics.html",
+          "retrieved_at": "2026-10-12T17:33:47.244825+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://hoa-agent.com/community/evergrene-master-association-inc",
+          "retrieved_at": "2026-10-12T17:39:23.084453+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T17:39:23.085480Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Marsh Pointe Elementary School",
+          "distance_miles": null,
+          "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene"
+        },
+        {
+          "nearest_name": "Watson Duncan Middle School",
+          "distance_miles": null,
+          "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene"
+        },
+        {
+          "nearest_name": "William T. Dwyer High School",
+          "distance_miles": null,
+          "source_url": "https://www.housevaluelab.com/neighborhoods-gardens/evergrene"
+        }
+      ],
+      "detected_at": "2026-10-12T17:39:23.085489Z"
+    }
+  ],
+  "created_at": "2026-10-12T17:33:47.245423Z",
+  "updated_at": "2026-10-12T17:39:23.085627Z"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "503076b0-eb2d-4eeb-bc71-683d97742aae",
+  "identity": {
+    "name": "Hillsboro Shores",
+    "slug": "hillsboro-shores",
+    "county_fips": null,
+    "city": "Pompano Beach, FL",
+    "hoa_name": "Hillsboro Shores Homeowners Association",
+    "cdd_name": null,
+    "is_gated": false,
+    "geo_point": null,
+    "notes": "Hillsboro Shores is a homeowners association community in Pompano Beach, FL (Broward County). HOA fees cover management, trash removal, and water/sewer. Community features include a clubhouse, pool, and greenbelt. Note: the official community website (hillsboro-shores.org) was deactivated due to non-payment to its hosting provider, so no official fee amounts or additional details could be confirmed."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:12:06.567153Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee amount not stated. Per hoa-resource.com, the HOA fee includes management fee, trash removal, and water/sewer. Verify current dues with the association or management company."
+    },
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:16:42.858885Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No dollar amount found (official site hillsboro-shores.org deactivated). Per hoa-resource.com, Hillsboro Shores HOA dues cover management fee, trash removal, and water/sewer. Billing period (monthly vs annual) unconfirmed. florida-hoa.net lists related associations 'Hillsboro Shores Improvement Condo Association' (est. 1967) and 'Hillsboro Shores Executive Club Condo Association' (est. 1971) but no fee amounts were visible in search snippets; pages not read due to budget. No CDD assessment information found in any source read. Confidence low: aggregator site, not official HOA source. Verify with HOA/property manager before purchase. (Retrieved 2025-06-01T12:00:00Z; confidence 0.5.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:12:06.567165Z",
+      "confidence": 0.55,
+      "amenity": "clubhouse",
+      "detail": "Listed as a community feature by hoa-resource.com"
+    },
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:12:06.567177Z",
+      "confidence": 0.55,
+      "amenity": "pool",
+      "detail": "Listed as a community feature by hoa-resource.com"
+    },
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:12:06.567183Z",
+      "confidence": 0.55,
+      "amenity": "greenbelt",
+      "detail": "Listed as a community feature by hoa-resource.com"
+    },
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:16:42.858900Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Listed as a community feature of Hillsboro Shores HOA, Pompano Beach, FL (Broward County). (Retrieved 2025-06-01T12:00:00Z; confidence 0.5.)"
+    },
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:16:42.858914Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Listed as a community feature of Hillsboro Shores HOA, Pompano Beach, FL (Broward County). (Retrieved 2025-06-01T12:00:00Z; confidence 0.5.)"
+    },
+    {
+      "source_url": "https://hoa-resource.com/hillsboro-shores-homeowners-association-pompano-beach-fl/",
+      "retrieved_at": "2026-10-10T16:16:42.858921Z",
+      "confidence": 0.5,
+      "amenity": "greenbelt",
+      "detail": "Listed as a community feature of Hillsboro Shores HOA, Pompano Beach, FL (Broward County). (Retrieved 2025-06-01T12:00:00Z; confidence 0.5.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.census.gov/quickfacts/fact/table/pompanobeachcityflorida/PST045225",
+    "retrieved_at": "2026-10-10T16:16:42.858929Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 117211,
+    "data_year": 2024,
+    "geography_level": "city (Pompano Beach, FL, Broward County) - 2020-2024 ACS; population is July 1, 2025 estimate (2020 Census: 112,046). Median age not shown on page read. (Retrieved 2025-06-01T12:00:00Z; confidence 0.9.)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.wholefoodsmarket.com/stores/pompanobeach",
+      "retrieved_at": "2026-10-10T16:16:42.858939Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Whole Foods Market, Pompano Beach (2411 N. Federal Highway, Pompano Beach, FL 33064)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.broward.org/library/Locations",
+      "retrieved_at": "2026-10-10T16:16:42.858946Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Pompano Beach Library and Cultural Center (Broward County Library)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "HOA fee amount (monthly or annual) could not be confirmed - official community website hillsboro-shores.org is deactivated; only fee coverage (management, trash removal, water/sewer) verified via aggregator hoa-resource.com.",
+    "No CDD special assessment information found for Hillsboro Shores in any source read.",
+    "Median age for Pompano Beach not present on the Census QuickFacts page read (age brackets only: 19.3% are 65+).",
+    "Approximate distances from Hillsboro Shores to grocery, library, hospital, and school could not be verified; nearest hospital and nearest school not identified.",
+    "Gate/security details and pet policy for Hillsboro Shores not found in sources read.",
+    "Relationship between 'Hillsboro Shores Homeowners Association' (per task notes) and the 'Hillsboro Shores Improvement Condo Association' / 'Hillsboro Shores Executive Club Condo Association' entries on florida-hoa.net could not be clarified (pages not read due to budget)."
+  ],
+  "discrepancies": [],
+  "created_at": "2026-10-10T16:12:06.567936Z",
+  "updated_at": "2026-10-10T16:16:42.860000Z"
+}

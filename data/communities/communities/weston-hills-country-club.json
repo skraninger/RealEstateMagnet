@@ -1,0 +1,240 @@
+{
+  "id": "33a35dc0-ec68-4c5b-afe3-d0ae55a8db6e",
+  "identity": {
+    "name": "Weston Hills Country Club",
+    "slug": "weston-hills-country-club",
+    "county_fips": null,
+    "city": "Weston",
+    "hoa_name": "W.H. Maintenance Association, Inc. (master); multiple sub-associations (Hills Maintenance, North Hills Maintenance, etc.)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Large guard-gated master-planned community in Weston, FL 33332. Not a single HOA — consists of multiple independent maintenance associations (W.H. Maintenance, Hills Maintenance, North Hills Maintenance) all managed by Castle Group. The master W.H. Maintenance Association oversees main thoroughfares, gates, monuments, landscaping, and four community parks, while sub-associations handle their specific districts. Features 24-hour security, lakes, and trails. The private Club at Weston Hills (separate membership) offers two Robert Trent Jones Jr. golf courses, clubhouse, tennis, fitness, and pools."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whccwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:41:57.849307Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 130.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Lower end of range for single-family homes; covers common area maintenance and security. Fees vary significantly by sub-association and property type. Condo/townhome fees can reach ~$885/mo including building insurance. Exact current fees, transfer fees, capital contributions, and special assessments unavailable publicly; contact Castle Group: (954) 792-6000, Rnunez@castlegroup.com. Governed by FL Statute Ch. 720. No special assessment signals reported yet."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/weston-hills",
+      "retrieved_at": "2026-10-10T16:41:57.849315Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 867.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Upper end of resident-verified observed range ($130-$867/mo). Single-family typically $130-$500/mo; condos/townhomes higher (~$885/mo in some cases) including building insurance and structural maintenance. Not a guaranteed fee; verify with association directly."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/weston-hills",
+      "retrieved_at": "2026-10-10T16:46:22.606632Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-submitted/public-records range $130-$867 per month; community is gated and managed by Castle Group; fees vary by sub-association (W.H. Maintenance master, Hills Maintenance, North Hills Maintenance, etc.) and property type. Not a guaranteed fee; verify with the association directly. No special-assessment signals reported for this community on this page. Profile last updated July 11, 2026 (page states Palm Beach County; community is in Broward County per other sources). Confidence 0.5 (aggregator, resident-submitted)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606645Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Single-family homes often range $130-$500 per month based on real estate listings; townhomes/condos higher. Exact master-association fees not publicly detailed; fees vary significantly by sub-association and property type. Transfer fees, capital contributions, and special assessments unavailable from public sources. Confidence 0.5 (aggregator summarizing listings)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://arcisgolf.com/clubs/the-club-at-weston-hills/home",
+      "retrieved_at": "2026-10-10T16:41:57.849319Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two Robert Trent Jones Jr. championship golf courses at The Club at Weston Hills (separate membership from HOA)"
+    },
+    {
+      "source_url": "https://arcisgolf.com/clubs/the-club-at-weston-hills/home",
+      "retrieved_at": "2026-10-10T16:41:57.849328Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse for member dining, socializing, themed dinners, wine tastings, league activities, holiday parties, and fundraising events"
+    },
+    {
+      "source_url": "https://arcisgolf.com/clubs/the-club-at-weston-hills/home",
+      "retrieved_at": "2026-10-10T16:41:57.849330Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts at The Club at Weston Hills"
+    },
+    {
+      "source_url": "https://arcisgolf.com/clubs/the-club-at-weston-hills/home",
+      "retrieved_at": "2026-10-10T16:41:57.849333Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming facilities/pools at The Club at Weston Hills"
+    },
+    {
+      "source_url": "https://arcisgolf.com/clubs/the-club-at-weston-hills/home",
+      "retrieved_at": "2026-10-10T16:41:57.849335Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center and wellness programs at The Club at Weston Hills"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whccwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:41:57.849338Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "24-hour guard-gated security with controlled access"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whccwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:41:57.849340Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Four community parks maintained by master W.H. Maintenance Association"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whccwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:41:57.849342Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Community trails"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whccwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:41:57.849345Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Lakes within the community"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606651Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24/7 guard-gated security; master association maintains gatehouse systems, gated entrances, monuments, and common roads/landscaping/irrigation along main thoroughfares. ~2,133 single-family homes across multiple sub-associations managed by Castle Group, Inc. (master: W.H. Maintenance Association, Inc.)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606666Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Four community parks maintained by the master association."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606673Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Lakeside setting; community lakes."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606678Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two 18-hole golf courses at the separate Club at Weston Hills (community nestled between them); club membership required and NOT included in HOA dues."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606685Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Club at Weston Hills clubhouse; separate membership required, not included in HOA dues."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606690Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis at Club at Weston Hills; separate membership required, not included in HOA dues."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606695Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Pools at Club at Weston Hills; separate membership required, not included in HOA dues."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606701Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness facilities at Club at Weston Hills; separate membership required, not included in HOA dues."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:46:22.606706Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Trails noted in buyer notes; not explicitly confirmed on the page read (page emphasizes parks, lakes, golf-course proximity)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33332-33332/",
+    "retrieved_at": "2026-10-10T16:46:22.606713Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 10920,
+    "data_year": null,
+    "geography_level": "ZIP code 33332 (Weston Hills area), FL; 34.3 sq mi, 318.1 people/sq mi. City of Weston (censusreporter.org/profiles/16000US1276582-weston-fl/) population 70,672, 24.6 sq mi. Median age, median household income, and owner-occupancy % were not retrievable from the pages read (extraction returned only population/density)."
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [
+    "Exact current HOA dues for each sub-association (W.H. Maintenance master vs Hills Maintenance vs North Hills Maintenance) are not publicly detailed; contact Castle Group, Inc., (954) 792-6000, c/o 12270 SW 3rd Street, Suite 200, Plantation, FL 33325 (GM Rey Nunez, LCAM).",
+    "CDD/special assessments: no assessment signals reported on HOA Agent; transfer fees and capital contributions unavailable from public sources.",
+    "Club at Weston Hills membership initiation fee and recurring dues not verified (a search snippet from countryofclubs.com suggested ~$20,000 initiation fee; page not read).",
+    "Demographic detail (median age, median household income, owner-occupancy %, data year) for ZIP 33332 and City of Weston: Census Reporter pages returned only population figures in the extracted text.",
+    "Proximity distances unverified: nearest hospital (Cleveland Clinic Weston Hospital, formerly Weston Regional Medical Center), library (Weston Branch Library, Broward County Library), shopping (Weston Town Center), and schools are all in Weston but no distances were confirmed on a page read; the City of Weston community-resources page (westonfl.org) returned Access Denied.",
+    "Pet policy and short-term-rental rules: listed as Unknown on HOA Agent; not published in public sources per HOA Bulletin Board.",
+    "Trails: mentioned in buyer notes but not explicitly confirmed on pages read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 130.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/whccwefl/about_hoa/",
+          "retrieved_at": "2026-10-10T16:41:57.849307+00:00"
+        },
+        {
+          "amount": 867.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/weston-hills",
+          "retrieved_at": "2026-10-10T16:41:57.849315+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/weston-hills",
+          "retrieved_at": "2026-10-10T16:46:22.606632+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/whcwfl/about_hoa/",
+          "retrieved_at": "2026-10-10T16:46:22.606645+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T16:46:22.607549Z"
+    }
+  ],
+  "created_at": "2026-10-10T16:41:57.849933Z",
+  "updated_at": "2026-10-10T16:46:22.607782Z"
+}

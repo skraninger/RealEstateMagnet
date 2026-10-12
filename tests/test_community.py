@@ -121,6 +121,28 @@ class TestStore:
         assert loaded[0].query == "fees"
         assert loaded[1].url == "https://x.example.com"
 
+    def test_dedupe_demographics_history(self, tmp_path):
+        from datetime import datetime, timezone
+
+        store = CommunityStore(tmp_path)
+        record = store.upsert_identity(SEED)
+        record.demographics = Demographics(
+            median_age=50.0,
+            source_url="https://a.example.com",
+            retrieved_at=datetime(2026, 9, 1, tzinfo=timezone.utc),
+        )
+        record.demographics_history = [
+            Demographics(median_age=50.0, source_url="https://b.example.com"),  # dup of current
+            Demographics(median_age=48.0, source_url="https://c.example.com"),  # distinct
+        ]
+        store.save_community(record)
+
+        assert store.dedupe_demographics_history(dry_run=True) == 1
+        assert store.dedupe_demographics_history() == 1
+        reloaded = store.load_community("pelican-bay")
+        assert reloaded is not None
+        assert [d.median_age for d in reloaded.demographics_history] == [48.0]
+
     def test_committed_target_list_has_at_least_ten_seeds(self):
         path = REPO_ROOT / "data" / "communities" / "target_list.json"
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -179,6 +201,25 @@ class TestMergeFacts:
         assert record.demographics.source_url == "https://new.example.com"
         assert [d.source_url for d in record.demographics_history] == ["https://old.example.com"]
 
+    def test_demographics_identical_values_do_not_duplicate_history(self, tmp_path):
+        from datetime import datetime, timezone
+
+        record = _record(tmp_path)
+        older = Demographics(
+            median_age=50.0, source_url="https://old.example.com",
+            retrieved_at=datetime(2026, 1, 1, tzinfo=timezone.utc),
+        )
+        newer_same_values = Demographics(
+            median_age=50.0, source_url="https://new.example.com",
+            retrieved_at=datetime(2026, 9, 1, tzinfo=timezone.utc),
+            geography_level="census tract",
+        )
+        merge_facts(record, CommunityFacts(demographics=older))
+        merge_facts(record, CommunityFacts(demographics=newer_same_values))
+        # Same values (only source/geography differ) must not stack history rows.
+        assert record.demographics.source_url == "https://new.example.com"
+        assert record.demographics_history == []
+
     def test_proximity_conflict_flagged(self, tmp_path):
         record = _record(tmp_path)
         merge_facts(
@@ -226,6 +267,21 @@ class _FakeDDGS:
 
 
 class TestTools:
+    def test_truncate_relevant_keeps_keyword_passage(self):
+        filler = "Lorem ipsum dolor sit amet. " * 60  # pushes the fee line past the head
+        text = f"{filler}\nHOA monthly fee is $450.\n{filler}"
+        out = community_tools.truncate_relevant(text, max_chars=200)
+        assert len(out) <= 200
+        assert "HOA monthly fee is $450." in out
+
+    def test_truncate_relevant_noop_when_short(self):
+        assert community_tools.truncate_relevant("short text", max_chars=100) == "short text"
+
+    def test_truncate_relevant_hard_caps_without_keywords(self):
+        text = "x" * 500
+        out = community_tools.truncate_relevant(text, max_chars=50)
+        assert len(out) <= 50
+
     def test_web_search_returns_results(self, monkeypatch):
         rows = [
             {"href": "https://a.example.com", "title": "A", "body": "snippet a"},
@@ -355,6 +411,19 @@ class TestAgent:
             {"name": "Pelican Bay", "city": "Key Biscayne", "hoa_name": "PB HOA"}
         )
         assert "Pelican Bay" in prompt and "Key Biscayne" in prompt and "PB HOA" in prompt
+
+    def test_build_prompt_includes_county_and_budget(self):
+        prompt = CommunityResearchAgent.build_prompt(
+            {"name": "Pelican Bay", "city": "Key Biscayne", "county": "Miami-Dade"}
+        )
+        assert "Miami-Dade" in prompt
+        assert "budget" in prompt.lower()
+
+    def test_system_prompt_states_strategy_and_enums(self):
+        from modules.community.agent import SYSTEM_PROMPT
+
+        for token in ("hoa_monthly", "cdd_assessment", "censusreporter", "budget"):
+            assert token in SYSTEM_PROMPT
 
     @pytest.mark.asyncio
     async def test_research_community_happy_path(self):
@@ -871,6 +940,61 @@ class TestDatabase:
         assert loaded is not None
         assert loaded.demographics is not None
         assert loaded.demographics.median_age == 52.0
+
+    def test_reupsert_same_demographics_not_duplicated(self, tmp_path):
+        from sqlalchemy import text
+
+        from modules.community.database import CommunityDatabase
+
+        db = CommunityDatabase(tmp_path / "test.db")
+        db.create_tables()
+        record = CommunityRecord(
+            identity=CommunityIdentity(name="Demo Community", slug="demo-community"),
+            demographics=Demographics(
+                median_age=52.0, population=3000, source_url="https://census.example.com"
+            ),
+        )
+        db.upsert_record(record)
+        # Same values, only source/geography differ — must not add a second row.
+        record.demographics = Demographics(
+            median_age=52.0, population=3000,
+            geography_level="census tract", source_url="https://other.example.com",
+        )
+        db.upsert_record(record)
+        with db.session() as session:
+            n = session.execute(
+                text("SELECT COUNT(*) FROM community_demographics")
+            ).scalar()
+        assert n == 1
+
+    def test_dedupe_demographics_keeps_first(self, tmp_path):
+        from sqlalchemy import text
+
+        from modules.community.database import CommunityDatabase
+
+        db = CommunityDatabase(tmp_path / "test.db")
+        db.create_tables()
+        with db.session() as session:
+            for _ in range(3):
+                session.execute(text(
+                    "INSERT INTO community_demographics (community_slug, population, source_url) "
+                    "VALUES ('x', 3000, 'https://u.example.com')"
+                ))
+            session.execute(text(
+                "INSERT INTO community_demographics (community_slug, population, source_url) "
+                "VALUES ('x', 4000, 'https://u.example.com')"
+            ))
+            session.commit()
+
+        assert db.dedupe_demographics(dry_run=True) == 2
+        assert db.dedupe_demographics() == 2
+        with db.session() as session:
+            rows = session.execute(
+                text("SELECT id, population FROM community_demographics ORDER BY id")
+            ).all()
+        # Kept the first (lowest id) of the duplicates, and the distinct row.
+        assert [r.id for r in rows] == [1, 4]
+        assert {r.population for r in rows} == {3000, 4000}
 
     def test_query_by_county(self, tmp_path):
         from modules.community.database import CommunityDatabase

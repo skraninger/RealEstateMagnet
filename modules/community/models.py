@@ -40,9 +40,20 @@ FLORIDA_COUNTIES = [
 class SourceFact(BaseModel):
     """Base for every fact recorded by the research assistant."""
 
-    source_url: str = Field(min_length=1)
-    retrieved_at: datetime = Field(default_factory=utcnow)
-    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+    source_url: str = Field(
+        min_length=1,
+        description="URL where this fact was actually observed (http/https, or ai:/browser: for synthesized data).",
+    )
+    retrieved_at: datetime = Field(
+        default_factory=utcnow,
+        description="When the fact was retrieved (UTC).",
+    )
+    confidence: float = Field(
+        default=0.5,
+        ge=0.0,
+        le=1.0,
+        description="0-1 confidence based on source quality: 0.8-1.0 official (HOA/CDD/census), 0.5-0.8 reputable listing/news, <0.5 forums/unverified.",
+    )
 
     @field_validator("source_url")
     @classmethod
@@ -53,16 +64,33 @@ class SourceFact(BaseModel):
 
 
 class FeeFact(SourceFact):
-    fee_type: FeeType
-    amount: Optional[float] = Field(default=None, ge=0)
-    period: Optional[str] = None
-    currency: str = "USD"
-    note: Optional[str] = None
+    fee_type: FeeType = Field(
+        description="Fee category: 'hoa_monthly' | 'hoa_annual' | 'cdd_assessment' | 'other'.",
+    )
+    amount: Optional[float] = Field(
+        default=None,
+        ge=0,
+        description="Numeric amount in `currency` (e.g. 350 for $350/month). Omit if the amount is unknown.",
+    )
+    period: Optional[str] = Field(
+        default=None,
+        description="Billing period for the amount, e.g. 'monthly' or 'annual'.",
+    )
+    currency: str = Field(default="USD", description="ISO currency code (default USD).")
+    note: Optional[str] = Field(
+        default=None,
+        description="Any context: a range, what the fee covers, or which sub-association it applies to.",
+    )
 
 
 class AmenityFact(SourceFact):
-    amenity: str
-    detail: Optional[str] = None
+    amenity: str = Field(
+        description="Short amenity name; use short normalized keys like 'clubhouse', 'golf_course', 'fitness_center'.",
+    )
+    detail: Optional[str] = Field(
+        default=None,
+        description="Optional qualifying detail, e.g. '18-hole, semi-private' or 'heated, resort-style'.",
+    )
 
     @field_validator("amenity")
     @classmethod
@@ -74,28 +102,56 @@ class AmenityFact(SourceFact):
 
 
 class Demographics(SourceFact):
-    median_age: Optional[float] = None
-    median_household_income: Optional[float] = Field(default=None, ge=0)
-    owner_occupancy_pct: Optional[float] = Field(default=None, ge=0, le=100)
-    population: Optional[int] = Field(default=None, ge=0)
-    data_year: Optional[int] = None
-    geography_level: Optional[str] = None
+    median_age: Optional[float] = Field(
+        default=None, description="Median resident age in years."
+    )
+    median_household_income: Optional[float] = Field(
+        default=None, ge=0, description="Median household income in USD."
+    )
+    owner_occupancy_pct: Optional[float] = Field(
+        default=None, ge=0, le=100, description="Owner-occupied housing share, 0-100."
+    )
+    population: Optional[int] = Field(
+        default=None, ge=0, description="Total population for the stated geography."
+    )
+    data_year: Optional[int] = Field(
+        default=None, description="Year the demographic data describes (e.g. 2023 ACS)."
+    )
+    geography_level: Optional[str] = Field(
+        default=None, description="Geography the figures cover, e.g. 'census tract', 'city', 'ZIP'.",
+    )
 
 
 class ProximityMetric(SourceFact):
-    category: ProximityCategory
-    nearest_name: Optional[str] = None
-    distance_miles: Optional[float] = Field(default=None, ge=0)
+    category: ProximityCategory = Field(
+        description="Facility type: 'shopping' | 'grocery' | 'library' | 'hospital' | 'school' | 'other'.",
+    )
+    nearest_name: Optional[str] = Field(
+        default=None, description="Name of the nearest facility of this category."
+    )
+    distance_miles: Optional[float] = Field(
+        default=None, ge=0, description="Approximate distance to the facility in miles."
+    )
 
 
 class CommunityFacts(BaseModel):
     """Structured output produced by the research agent for one community."""
 
-    fees: list[FeeFact] = Field(default_factory=list)
-    amenities: list[AmenityFact] = Field(default_factory=list)
-    demographics: Optional[Demographics] = None
-    proximity: list[ProximityMetric] = Field(default_factory=list)
-    open_questions: list[str] = Field(default_factory=list)
+    fees: list[FeeFact] = Field(
+        default_factory=list, description="Every distinct HOA/CDD/recurring fee found."
+    )
+    amenities: list[AmenityFact] = Field(
+        default_factory=list, description="Community amenities (each listed once)."
+    )
+    demographics: Optional[Demographics] = Field(
+        default=None, description="Demographic profile, preferably from Census/ACS."
+    )
+    proximity: list[ProximityMetric] = Field(
+        default_factory=list, description="Nearby services/facilities with distances."
+    )
+    open_questions: list[str] = Field(
+        default_factory=list, description="Anything you could not verify; leave blank if none."
+    )
 
 
 class CommunityIdentity(BaseModel):

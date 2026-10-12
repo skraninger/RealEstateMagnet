@@ -1,0 +1,246 @@
+{
+  "id": "3e09504f-760e-4bf8-8eb6-21e8a195472b",
+  "identity": {
+    "name": "Jupiter Farms",
+    "slug": "jupiter-farms",
+    "county_fips": null,
+    "city": "Jupiter",
+    "hoa_name": "Jupiter Farms Residents Association Inc",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated single-family residential community in Jupiter, Palm Beach County, FL (ZIP 33458/33478), nicknamed \"The Farms.\" Homes built 1942–2026, 3+ beds, 2+ baths, avg 2,112 sq ft. Median sold price $855,000 ($431/sq ft); 47% have private pools, 85% have garages. HOA established 07/07/2015, managed by FPMS (Sarasota). 4,700 sales in past 2 years, prices $585K–$3.25M, 55 avg days on market."
+  },
+  "fees": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008186Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 40.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Average HOA fee per horizonpalmrealty.com. florida-hoa.net confirms HOA fee required but lists no amount. hoa-agent.com cites Jupiter city-wide avg of ~$735/mo (not community-specific). Verify with association directly. PM: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000. Assoc website: jupiterfarmsresidents.com. No special assessment signals reported."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008199Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 4580.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Average annual property taxes per horizonpalmrealty.com (separate from HOA dues)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:01:01.887160Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Most properties in Jupiter Farms have no mandatory HOA fees; described as a rural community with a voluntary residents association. Some small sub-areas (e.g., Jupiter Farms Center) may have separate associations with their own fees. Conflicts with buyer notes describing a gated community with an active HOA (Jupiter Farms Residents Association Inc, est. 07/07/2015). Roads/drainage handled by South Indian River Water Control District via annual assessments on tax bills (no amount stated). Retrieved 2026-05-19T12:00:00Z, confidence 0.5 (aggregator site, not official HOA)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/jupiter-farms-residents-association-inc",
+      "retrieved_at": "2026-10-10T18:01:01.887173Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Jupiter Farms Residents Association Inc (entity N15000006731, ZIP 33458) fee has not yet been verified by residents; no amount published. Page notes the average monthly HOA fee in Jupiter (citywide) is approximately $735, which is not community-specific. No CDD/special assessment signals reported. Retrieved 2026-05-19T12:00:00Z, confidence 0.5 (public records + resident submissions, unverified)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008206Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Community trails"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008219Z",
+      "confidence": 0.5,
+      "amenity": "picnic_area",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008226Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008232Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008236Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008241Z",
+      "confidence": 0.5,
+      "amenity": "sports_fields",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008247Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008252Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008257Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008262Z",
+      "confidence": 0.5,
+      "amenity": "gate",
+      "detail": "Gated community entrance"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+      "retrieved_at": "2026-10-10T17:56:46.008267Z",
+      "confidence": 0.5,
+      "amenity": "private_pool",
+      "detail": "47% of homes include a private pool"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:01:01.887181Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Jupiter Farms Park (public county park): athletic fields, playground, picnic areas, equestrian facilities, and pavilion. No traditional HOA-managed clubhouse or pool identified for the broader community. Retrieved 2026-05-19T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:01:01.887193Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Nearby Riverbend Park provides extensive trails and recreation. Retrieved 2026-05-19T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://nextdoor.com/neighborhood/jupiterfarms--jupiter--fl/",
+      "retrieved_at": "2026-10-10T18:01:01.887201Z",
+      "confidence": 0.5,
+      "amenity": "equestrian_trails",
+      "detail": "Neighborhood known for large lots, equestrian trails, and natural beauty; equestrian-friendly lifestyle. Retrieved 2026-05-19T12:00:00Z, confidence 0.4 (community forum)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33458-33458/",
+    "retrieved_at": "2026-10-10T18:01:01.887211Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 55512,
+    "data_year": null,
+    "geography_level": "ZIP 33458 (Jupiter, FL; covers Jupiter Farms area per buyer notes ZIP 33458/33478). Area 20.4 sq mi, density 2,727 people/sq mi. Median age, median household income, and owner-occupancy % did not render on the page and could not be captured. Retrieved 2026-05-19T12:00:00Z, confidence 0.9 (Census Reporter)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:01:01.887220Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Jupiter Farms Park (public county park)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:01:01.887226Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Riverbend Park (trails/recreation)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://nextdoor.com/neighborhood/jupiterfarms--jupiter--fl/",
+      "retrieved_at": "2026-10-10T18:01:01.887229Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Urgent Care of Jupiter Farms (per Yelp listing in search results; page not read, distance unverified)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Actual HOA dues for Jupiter Farms Residents Association Inc (est. 07/07/2015, managed by FPMS per buyer notes) are unverified — HOA Agent shows no resident-verified fee; HOA Bulletin Board says most properties have no mandatory HOA. Sources conflict on whether the HOA is mandatory; verify directly with the association (jfresidents@gmail.com, (561) 320-1537 per HOA Bulletin Board).",
+    "CDD/special assessment amounts: no assessment signals reported by HOA Agent, but no official CDD figures found within budget.",
+    "Gate/security details: buyer notes describe a gated community, but none of the pages read confirmed a gate or security arrangement.",
+    "Median age, median household income, and owner-occupancy % for ZIP 33458 from Census/ACS: the Census Reporter page did not render full statistics; Nextdoor (neighborhood-level, lower confidence) reports avg age 52, avg income $96K, 89% homeowners, 8,319 residents 'per US Census Data'.",
+    "Distances to nearest hospital, library, and school could not be verified within the search budget (a Jupiter Internal Medicine office off University Boulevard and an Urgent Care of Jupiter Farms appeared in search results but were not read).",
+    "Pet policy and short-term rental rules: listed as 'Unknown' on HOA Agent.",
+    "Sub-association fees/amenities for Jupiter Farms Center Property Owners Association (est. 09/18/1996) not researched."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 40.0,
+          "period": "monthly",
+          "source_url": "https://horizonpalmrealty.com/community/jupiter-farms-jupiter-fl",
+          "retrieved_at": "2026-10-10T17:56:46.008186+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoa-agent.com/community/jupiter-farms-residents-association-inc",
+          "retrieved_at": "2026-10-10T18:01:01.887173+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T18:01:01.888117Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Jupiter Farms Park (public county park)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/"
+        },
+        {
+          "nearest_name": "Riverbend Park (trails/recreation)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/jfjufl/about_hoa/"
+        },
+        {
+          "nearest_name": "Urgent Care of Jupiter Farms (per Yelp listing in search results; page not read, distance unverified)",
+          "distance_miles": null,
+          "source_url": "https://nextdoor.com/neighborhood/jupiterfarms--jupiter--fl/"
+        }
+      ],
+      "detected_at": "2026-10-10T18:01:01.888126Z"
+    }
+  ],
+  "created_at": "2026-10-10T17:56:46.009112Z",
+  "updated_at": "2026-10-10T18:01:01.888349Z"
+}

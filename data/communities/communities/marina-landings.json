@@ -1,0 +1,337 @@
+{
+  "id": "25e70e9c-474d-4d21-9012-d88de2847af0",
+  "identity": {
+    "name": "Marina Landings",
+    "slug": "marina-landings",
+    "county_fips": null,
+    "city": "Fort Lauderdale",
+    "hoa_name": "Marina Landings Community Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated community of 34 brand-new construction single-family homes at 2300 SW 15th Ave, Fort Lauderdale, FL, in the family-friendly River Oaks neighborhood, minutes from downtown Fort Lauderdale, Las Olas Blvd, and the beach. Homes (Catamaran or Ketch floor plans) offer 4 beds, 3 baths, 2-car garage, and 2,731–2,779 sq ft; pricing from $1,199,000 (NewHomeSource) / $1,235,000 (official site). HOA established 09/12/2023; property manager FPMS (Sarasota, FL)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211432Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 275.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Monthly HOA fee per NewHomeSource listing. florida-hoa.net confirms HOA fee is required but lists no amount. HOA: Marina Landings Community Association, Inc. (est. 09/12/2023, Broward County; Federal ID 934450517). Property manager: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000. Verify current dues with the association/property manager before purchase; only 1-2 homes remain and pricing/fees are subject to change."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N23000010908",
+      "retrieved_at": "2026-10-10T16:08:27.372752Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Aggregator page states 'HOA Fee Required' for Marina Landings Community Association, Inc. (Broward County, Fort Lauderdale) but does not publish a dollar amount."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211442Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Fort Lauderdale's only gated community of 34 new single-family homes (per NewHomeSource listing; official site also markets gated access)."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211451Z",
+      "confidence": 0.5,
+      "amenity": "beach",
+      "detail": "Listed as a community amenity on NewHomeSource; community is minutes from the beach."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211454Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "Listed as a community amenity on NewHomeSource; near Lauderdale Marine Center."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211456Z",
+      "confidence": 0.5,
+      "amenity": "outdoor_recreation",
+      "detail": "Listed as a community amenity on NewHomeSource."
+    },
+    {
+      "source_url": "https://marina-landings.com/location/",
+      "retrieved_at": "2026-10-10T16:04:26.211460Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Easy access to Brightline train for travel between Fort Lauderdale and Miami (official community site)."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372756Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Gated community of 34 single-family homes; described as Fort Lauderdale's only gated community of brand-new construction homes in the River Oaks neighborhood."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372765Z",
+      "confidence": 0.5,
+      "amenity": "lawn_care",
+      "detail": "Lawn care and landscaping included in community services/perks."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372768Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "Listed as a local point of interest near the community (not confirmed as a community-owned facility)."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372771Z",
+      "confidence": 0.5,
+      "amenity": "beach",
+      "detail": "Listed as a local point of interest; community is minutes from the beach per listing."
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372773Z",
+      "confidence": 0.5,
+      "amenity": "outdoor_recreation",
+      "detail": "Listed as a local point of interest near the community."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33301-33301/",
+    "retrieved_at": "2026-10-10T16:08:27.372778Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 19503,
+    "data_year": null,
+    "geography_level": "ZIP code 33301 (Fort Lauderdale, FL; community address 2300 SW 15th Ave is in this ZIP; no census-tract-level data retrieved)}"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211464Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Croissant Park Elementary School (Broward County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211468Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Harbordale Elementary School (Broward County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211469Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Tropical Elementary School (Broward County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211471Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Plantation Park Elementary School (Broward County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:04:26.211472Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Bayview Elementary School (Broward County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://marina-landings.com/location/",
+      "retrieved_at": "2026-10-10T16:04:26.211473Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Las Olas / Las Olas Blvd",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://marina-landings.com/location/",
+      "retrieved_at": "2026-10-10T16:04:26.211474Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Brightline train station (Fort Lauderdale)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://marina-landings.com/location/",
+      "retrieved_at": "2026-10-10T16:04:26.211476Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami (approx. 40-minute drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://marina-landings.com/location/",
+      "retrieved_at": "2026-10-10T16:04:26.211477Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Boca Raton (approx. 30-minute drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://marina-landings.com/location/",
+      "retrieved_at": "2026-10-10T16:04:26.211478Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "West Palm Beach (approx. 55-minute drive)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372783Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Croissant Park Elementary School (Broward County Public Schools, PK-5), 1800 SW 4th Ave, Fort Lauderdale, FL 33315",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372786Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Harbordale Elementary School (Broward County Public Schools, PK-5), 900 SE 15th St, Fort Lauderdale, FL 33316",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+      "retrieved_at": "2026-10-10T16:08:27.372788Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Bayview Elementary School (Broward County Public Schools, KG-5), 1175 Middle River Dr, Fort Lauderdale, FL 33304",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.broward.org/library/Locations?location=fort-lauderdale-reading-center-fl",
+      "retrieved_at": "2026-10-10T16:08:27.372789Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Broward County Library - Fort Lauderdale Reading Center, 1300 E Sunrise Boulevard, Fort Lauderdale, FL 33304",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "No CDD or special assessment information found; confirm with Broward County property appraiser or the HOA (FPMS, 941-960-5000) whether a CDD applies to the 34-home site.",
+    "No community pool, clubhouse, golf, tennis, trails, or fitness center were listed on the pages read (official site marina-landings.com and NewHomeSource); verify amenity list with the HOA.",
+    "Pet policy not found on any page read.",
+    "Demographic detail (median age, median household income, owner-occupancy %) for ZIP 33301 could not be extracted from the Census Reporter profile page (only population 19,503 was returned); data year not stated on page.",
+    "Nearest hospital (e.g., Broward Health facilities) and nearest grocery/shopping distances were not verified on any page read.",
+    "Driving distances to downtown Fort Lauderdale, Las Olas Blvd, and the beach are described only qualitatively ('minutes') in the listing; no mile figures were published.",
+    "HOA fee of $275/month is from a third-party listing site; confirm current amount with the association (est. 09/12/2023)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 275.0,
+          "period": "monthly",
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952",
+          "retrieved_at": "2026-10-10T16:04:26.211432+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N23000010908",
+          "retrieved_at": "2026-10-10T16:08:27.372752+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T16:08:27.373345Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Brightline train station (Fort Lauderdale)",
+          "distance_miles": null,
+          "source_url": "https://marina-landings.com/location/"
+        },
+        {
+          "nearest_name": "Miami (approx. 40-minute drive)",
+          "distance_miles": null,
+          "source_url": "https://marina-landings.com/location/"
+        },
+        {
+          "nearest_name": "Boca Raton (approx. 30-minute drive)",
+          "distance_miles": null,
+          "source_url": "https://marina-landings.com/location/"
+        },
+        {
+          "nearest_name": "West Palm Beach (approx. 55-minute drive)",
+          "distance_miles": null,
+          "source_url": "https://marina-landings.com/location/"
+        }
+      ],
+      "detected_at": "2026-10-10T16:08:27.373353Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Croissant Park Elementary School (Broward County School District)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Harbordale Elementary School (Broward County School District)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Tropical Elementary School (Broward County School District)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Plantation Park Elementary School (Broward County School District)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Bayview Elementary School (Broward County School District)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Croissant Park Elementary School (Broward County Public Schools, PK-5), 1800 SW 4th Ave, Fort Lauderdale, FL 33315",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Harbordale Elementary School (Broward County Public Schools, PK-5), 900 SE 15th St, Fort Lauderdale, FL 33316",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        },
+        {
+          "nearest_name": "Bayview Elementary School (Broward County Public Schools, KG-5), 1175 Middle River Dr, Fort Lauderdale, FL 33304",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/fort-lauderdale/marina-landings-by-13th-floor-homes/191952"
+        }
+      ],
+      "detected_at": "2026-10-10T16:08:27.373359Z"
+    }
+  ],
+  "created_at": "2026-10-10T16:04:26.212030Z",
+  "updated_at": "2026-10-10T16:08:27.373466Z"
+}

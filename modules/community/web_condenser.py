@@ -44,8 +44,8 @@ from .models import (
     utcnow,
 )
 from .store import CommunityStore, merge_facts, slugify
-from .streaming import run_agent_streamed
-from .tools import read_page, web_search
+from .streaming import run_agent_streamed, sampling_settings, thinking_disabled
+from .tools import read_page, truncate_relevant, web_search
 
 logger = logging.getLogger(__name__)
 
@@ -153,6 +153,8 @@ class WebAICondenser:
         )
         self.api_key = api_key or os.environ.get("MODEL_API_KEY", "local")
         self.max_tokens = max_tokens or int(os.environ.get("MODEL_MAX_TOKENS", "8192"))
+        self.temperature = float(os.environ.get("MODEL_TEMPERATURE", "0.2"))
+        self.top_p = float(os.environ.get("MODEL_TOP_P", "0.95"))
         self.store = store or CommunityStore()
         self.database = database or CommunityDatabase()
         self.url_tracker = url_tracker
@@ -245,7 +247,9 @@ class WebAICondenser:
         
         self._report_progress(f"Read {len(page_contents)} pages successfully")
         
-        # Step 3: Compile page contents for the model
+        # Step 3: Compile page contents for the model. Keep the instruction
+        # *after* the long content — small local models attend to the task better
+        # when it follows the pages.
         combined_content = "\n\n" + "=" * 80 + "\n\n".join(page_contents)
         
         # Step 4: Have the local model analyze the page content
@@ -257,8 +261,9 @@ class WebAICondenser:
         )
         
         prompt = (
-            f"Analyze these web pages and extract gated communities:\n\n"
-            f"{combined_content[:8000]}"
+            f"{combined_content[:8000]}\n\n"
+            f"---\nAnalyze the web pages above and extract every gated community "
+            f"they mention."
         )
         
         if self.verbose:
@@ -272,7 +277,12 @@ class WebAICondenser:
         batch: CondensedCommunityBatch = await run_agent_streamed(
             agent,
             prompt,
-            model_settings={"max_tokens": self.max_tokens},
+            model_settings=sampling_settings(
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                disable_thinking=thinking_disabled(self.base_url),
+            ),
             on_thinking=self.on_thinking,
         )
         elapsed = time.monotonic() - started
@@ -324,7 +334,9 @@ class WebAICondenser:
                 # Read the page content
                 page_text = await read_page(sr.url, max_chars=8000)
                 if page_text:
-                    all_content.append(f"Source: {sr.url}\n{page_text[:2000]}")
+                    all_content.append(
+                        f"Source: {sr.url}\n{truncate_relevant(page_text, 2000)}"
+                    )
                     sources_consulted += 1
                     # Update URL with quality score after successful read
                     if self.url_tracker:
@@ -356,8 +368,8 @@ class WebAICondenser:
         
         content_text = "\n\n---\n\n".join(all_content)
         prompt = (
-            f"Extract detailed information about {name} from this web content:\n\n"
-            f"{content_text[:6000]}"
+            f"{content_text[:6000]}\n\n"
+            f"---\nExtract detailed facts about {name} from the web content above."
         )
         
         if self.verbose:
@@ -371,7 +383,12 @@ class WebAICondenser:
         item: CondensedCommunityItem = await run_agent_streamed(
             agent,
             prompt,
-            model_settings={"max_tokens": self.max_tokens},
+            model_settings=sampling_settings(
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                disable_thinking=thinking_disabled(self.base_url),
+            ),
             on_thinking=self.on_thinking,
         )
         elapsed = time.monotonic() - started

@@ -1,0 +1,261 @@
+{
+  "id": "f88afadc-c228-4b2d-81f2-b30e22feeeb1",
+  "identity": {
+    "name": "Old Palm Golf Club",
+    "slug": "old-palm-golf-club",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Old Palm Foundation, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Luxury gated golf community in Palm Beach Gardens, FL 33418, featuring a Raymond Floyd-designed 18-hole championship course on ~650 acres with ~316 homesites. Governed by Old Palm Foundation, Inc. (management involves RealManage), with a separate Old Palm Community Development District (CDD) handling infrastructure. Club membership is often required and is separate from POA fees."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:41:43.527212Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1970.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "POA fees reported in listings as approximately $1,970-$2,304/month (some sources cite $2,000-$3,000 range), varying by property; separate from club membership fees. Exact current amounts require direct association verification by address. Management involves RealManage; full current details unavailable without direct association contact. (Aggregator source - moderate confidence.)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:41:43.527221Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "CDD assessments appear on property tax bills; maintenance portion around $2,094-$2,383 per unit in recent years, plus debt service varying by parcel. Exact current amounts unavailable without specific address verification. (Aggregator source - moderate confidence.)"
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433570Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 25104.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "HOA fee reported as $25,104/year (second-highest in the PBG corridor); covers common-area landscaping, gated security, road maintenance, and access to club amenities. Does NOT include annual club dues, food & beverage minimums, or golf cart fees (separate club charges). Total annual carrying cost incl. HOA, property tax, club dues, F&B minimums, insurance estimated $130,000-$180,000 at market median home price. Source is a brokerage market guide, not the HOA itself - verify with association. (A search snippet from the same site also showed $28,164/year, but the page body attributes that figure to Frenchman's Creek, not Old Palm.)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:47:19.433583Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 2137.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "POA fees reported in real estate listings as approximately $1,970-$2,304 per month (or quarterly equivalents), varying by property; some sources note $2,000-$3,000/month range. Amount shown is midpoint of the reported range. Separate from club membership fees. Exact current amounts require per-address verification with Old Palm Foundation, Inc. / RealManage."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:47:19.433588Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 2238.5,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Old Palm CDD levies assessments collected on property tax bills. Listings report maintenance portion around $2,094-$2,383 per unit in recent years, plus debt service varying by parcel. Amount shown is midpoint of reported maintenance range. The official 2024 CDD audit PDF on flauditor.gov returned a 404 and could not be verified directly."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:47:19.433592Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Private club membership (Old Palm Golf Club) is often required for properties per membership plan and deed covenants, and is billed separately from POA fees (equity + annual dues + F&B minimums + golf cart fees). A 2024 club schedule PDF surfaced in search results (equity $350k, annual dues $38,500, renovation assessment $258.33/month for 20 years) but that page was not read/verified - see open_questions."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.luxury-communities.com/community/old-palm-golf-club",
+      "retrieved_at": "2026-10-12T16:41:43.527225Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "18-hole Raymond Floyd-designed championship course on ~650 acres; well-maintained greens and tropical landscaping (also confirmed by hoabulletinboard.com and hoa-community.com)."
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/old-palm-golf-club",
+      "retrieved_at": "2026-10-12T16:41:43.527233Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with dining and lounge rooms (also listed by hoa-community.com)."
+    },
+    {
+      "source_url": "https://hoa-community.com/old-palm-golf-club-golf-estate-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T16:41:43.527236Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool; resort-style features (also listed by luxury-communities.com and hoabulletinboard.com)."
+    },
+    {
+      "source_url": "https://hoa-community.com/old-palm-golf-club-golf-estate-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T16:41:43.527238Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness facility / gym-exercise room (also listed by luxury-communities.com)."
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/old-palm-golf-club",
+      "retrieved_at": "2026-10-12T16:41:43.527241Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis courts (also listed by hoabulletinboard.com)."
+    },
+    {
+      "source_url": "https://hoa-community.com/old-palm-golf-club-golf-estate-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T16:41:43.527243Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Sauna listed as community feature."
+    },
+    {
+      "source_url": "https://www.luxury-communities.com/community/old-palm-golf-club",
+      "retrieved_at": "2026-10-12T16:41:43.527246Z",
+      "confidence": 0.5,
+      "amenity": "golf_academy",
+      "detail": "Old Palm Golf Academy providing golf teaching and practice facilities to residents and members."
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433598Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Raymond Floyd-designed 18-hole championship course on ~650 acres; community is golf-first; no marina and no private beach club"
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433612Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse includes dining facilities, member events, dining programs, and seasonal social programming"
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433618Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center in the clubhouse; equipment/programming varies with management"
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433624Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool"
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433629Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa services at the club"
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/old-palm-living-guide/",
+      "retrieved_at": "2026-10-12T16:47:19.433634Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated community; gated security funded by the HOA fee"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:47:19.433640Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis courts listed among community facilities"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:47:19.433646Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pet restrictions include leash requirements and breed considerations; short-term rentals restricted, long-term rentals may require approval; architectural review for exterior modifications"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1254075-palm-beach-gardens-fl/",
+    "retrieved_at": "2026-10-12T16:47:19.433654Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 60959,
+    "data_year": null,
+    "geography_level": "city (Palm Beach Gardens, FL - the city containing the community; community/tract-level figures not retrieved)}"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.luxury-communities.com/community/old-palm-golf-club",
+      "retrieved_at": "2026-10-12T16:41:43.527250Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:47:19.433662Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": null,
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Proximity: could not verify distances to nearest shopping, grocery, library, hospital, or school. Only verified fact is that the community is centrally located near I-95 and PGA Boulevard (hoabulletinboard). No page read provided specific facility names or mileages.",
+    "Demographics: censusreporter page returned only city population (60,959) even with JS enabled; median age, median household income, and owner-occupancy % for Palm Beach Gardens (or the community's census tract) were not retrieved. Qualitative profile from the brokerage guide (practitioner observation, not census data): residents skew to executives/entrepreneurs in their 50s-60s and semi-retired/retired golf households; ~87% of transactions cash (95% in 2025); ~300 single-family estate homes, median home 7,352 sq ft; roughly half to two-thirds of households likely seasonal (primary residence elsewhere, present Oct-Apr).",
+    "Club membership costs: a 2024 Old Palm Golf Club schedule PDF (u.realgeeks.media) surfaced in search results stating membership equity $350k, 2024 annual dues $38,500, and a renovation assessment of $258.33/month for 20 years - NOT verified by reading the page; confirm with the club.",
+    "CDD assessment: official 2024 Old Palm CDD audit/budget PDF on flauditor.gov returned a 404; the $2,094-$2,383 maintenance figure comes from a listings aggregator (hoabulletinboard) and should be confirmed against the CDD's current budget (oldpalmcdd.com/auditbudgets) or the county property appraiser for a specific parcel.",
+    "Exact current POA fee per parcel: sources conflict between ~$1,970-$2,304/month (listings via hoabulletinboard) and $25,104/year (palmbeachluxury guide); verify with Old Palm Foundation, Inc. / RealManage (561-775-2120).",
+    "Whether club membership is currently required for all homesites or only per membership plan/deed covenants for newer properties."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.cdd_assessment",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:41:43.527221+00:00"
+        },
+        {
+          "amount": 2238.5,
+          "period": "annual",
+          "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:47:19.433588+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:47:19.434517Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 1970.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:41:43.527212+00:00"
+        },
+        {
+          "amount": 2137.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/oppbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:47:19.433583+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:47:19.434530Z"
+    }
+  ],
+  "created_at": "2026-10-12T16:41:43.527816Z",
+  "updated_at": "2026-10-12T16:47:19.434677Z"
+}

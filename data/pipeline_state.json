@@ -1,7 +1,7 @@
 {
   "version": 1,
   "started_at": "2026-10-06T17:19:32.650343+00:00",
-  "last_updated": "2026-10-09T15:47:29.337980+00:00",
+  "last_updated": "2026-10-12T15:23:41.165834+00:00",
   "condensers": [
     "ai",
     "web",
@@ -1456,6 +1456,34 @@
       "name": "Sans Souci Estates",
       "slug": "sans-souci-estates",
       "city": "North Miami",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "Arden Homeowners Association",
+      "slug": "arden-homeowners-association",
+      "city": "Loxahatchee",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "Parkside at Boca Trail Homeowners Association",
+      "slug": "parkside-at-boca-trail-homeowners-association",
+      "city": "Boca Raton",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "RiverWalk of the Palm Beaches",
+      "slug": "riverwalk-of-the-palm-beaches",
+      "city": "West Palm Beach, FL",
+      "county": null,
+      "source": "database"
+    },
+    {
+      "name": "Walnut Creek HOA",
+      "slug": "walnut-creek-hoa",
+      "city": "Pembroke Pines",
       "county": null,
       "source": "database"
     }
@@ -12222,6 +12250,214 @@
       }
     },
     "sans-souci-estates": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "arden-homeowners-association": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "parkside-at-boca-trail-homeowners-association": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "riverwalk-of-the-palm-beaches": {
+      "ai": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "web": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "research": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "browser": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      },
+      "gemini": {
+        "status": "pending",
+        "elapsed": 0.0,
+        "fees": 0,
+        "amenities": 0,
+        "proximity": 0,
+        "demographics_present": false,
+        "sources_consulted": 0,
+        "errors": []
+      }
+    },
+    "walnut-creek-hoa": {
       "ai": {
         "status": "pending",
         "elapsed": 0.0,

@@ -1,0 +1,274 @@
+{
+  "id": "949b7b1f-a446-4024-9406-a86d3b8ee499",
+  "identity": {
+    "name": "Valencia Reserve",
+    "slug": "valencia-reserve",
+    "county_fips": null,
+    "city": "Boynton Beach (West Boynton Beach)",
+    "hoa_name": "Valencia Reserve Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Upscale 55+ active adult community of 1,060 single-family Mediterranean-style homes built by GL Homes between 2009 and 2014. Homes range 1,300–3,500 sq ft with 2–4 bedrooms, 2–4 bathrooms, and 2–3 car garages. Situated along a series of lakes, most homes have water views. Pet friendly (aggressive dog breeds prohibited); leasing permitted with HOA approval once per year for a minimum 7-month term."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677494Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 607.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Covers cable, lawn care, 24-hour gate security, and recreational facilities. From real-ativity.com listing; hoa-agent.com shows no verified fee range, so verify with the association directly. No special assessment signals reported for this community. (ZIP 33426, Boynton Beach, FL 33426, Palm Beach County.)"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576554Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 754.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Page states '$753 to $755 per month. Recent public fee examples.' Conflicts with the $607/month figure from real-ativity.com; verify current fee via estoppel/association budget."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677505Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "41,000 sq ft clubhouse with full-time social director, large social hall, and 100+ social clubs/organizations (computers to fishing)"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677513Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Lakefront resort-style swimming pool"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677517Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour gate security (included in HOA fee)"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677520Z",
+      "confidence": 0.5,
+      "amenity": "lake_views",
+      "detail": "Community situated along a series of sparkling lakes; most homes have water views"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677522Z",
+      "confidence": 0.5,
+      "amenity": "lawn_care",
+      "detail": "Lawn care included in HOA fee; perfectly manicured community"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576558Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "41,000 sq ft clubhouse with ballroom, social hall, card rooms, game room, aerobics, arts and crafts, teaching kitchen, library and computer room, pool room, meeting space; full-time social/lifestyle director; 50+ clubs (real-ativity.com cites 100+ social clubs)"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576567Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort pool, lap pool, resistance pool, and hot tub; lakefront resort-style pool per real-ativity.com"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576569Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center plus two exercise studios"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576573Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Nine lighted tennis courts with racquet professionals and organized events"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576576Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Five pickleball courts (older descriptions give different totals)"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576578Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Two bocce courts"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576581Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard",
+      "detail": "Shuffleboard courts"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576583Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Half basketball court"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576586Z",
+      "confidence": 0.5,
+      "amenity": "cafe",
+      "detail": "Cafe serving breakfast, lunch, and take-home dinners"
+    },
+    {
+      "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+      "retrieved_at": "2026-10-10T20:44:44.576588Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Clubhouse library and computer room"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:44:44.576590Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Guard-gated community with 24-hour gate security (covered by HOA fee)"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:44:44.576593Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pet friendly; aggressive dog breeds strictly prohibited; only service animals allowed in recreational areas"
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:44:44.576595Z",
+      "confidence": 0.5,
+      "amenity": "rental_policy",
+      "detail": "Leasing permitted with HOA approval once per year, minimum 7-month term"
+    },
+    {
+      "source_url": "https://hoa-community.com/valencia-reserve-hoa-boynton-beach-fl/",
+      "retrieved_at": "2026-10-10T20:44:44.576598Z",
+      "confidence": 0.5,
+      "amenity": "media_room",
+      "detail": "Listed among community features (gym/exercise room, clubhouse, media room, pool); directory site, unverified"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1207875-boynton-beach-fl/",
+    "retrieved_at": "2026-10-10T20:44:44.576602Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 83095,
+    "data_year": null,
+    "geography_level": "city (Boynton Beach, FL, Palm Beach County); community itself is a 1,060-home subdivision, no tract-level data found"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Boynton-Beach/Valencia-Reserve-Demographics.html",
+      "retrieved_at": "2026-10-10T20:34:36.677527Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 12844,
+      "data_year": null,
+      "geography_level": "neighborhood/census area (broader than the 1,060-home community itself; 5,141 households, avg 2 members/household, median construction year 2006, median housing cost $1,790/mo, median gross rent $2,444/mo, 40.5% of residents 65+ per point2homes census data)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677533Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Delray Marketplace (open-air mall with boutiques, eateries, gastropubs)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:34:36.677536Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Hospitals nearby (no specific facility named)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:44:44.576607Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Delray Marketplace (open-air mall with boutiques, eateries, movie theatre/bowling alley)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+      "retrieved_at": "2026-10-10T20:44:44.576610Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Florida Turnpike (I-95 access)",
+      "distance_miles": 2.0
+    }
+  ],
+  "open_questions": [
+    "HOA fee conflict: $607/month (real-ativity.com) vs $753-$755/month (paulsapersteinhomes.com, 'recent public fee examples'); a search snippet for real-ativity.com also said approx. $585/month. Confirm current fee and inclusions via estoppel/association budget.",
+    "No CDD or special assessment information found for Valencia Reserve; confirm assessment status via estoppel, budget, and meeting minutes.",
+    "Nearest hospital, library, and school not verified with names/distances. An unread activerain.com blog snippet listed Delray Medical Center, Bethesda Memorial Hospital, JFK Medical Center, West Boynton Hospital, and Boca Raton Regional Hospital as 'within driving distance' but this was not verified on a read page.",
+    "Demographic detail (median age, median household income, owner-occupancy %) for Boynton Beach could not be extracted: the Census Reporter profile page rendered only population (83,095) and area; data year not stated on the page. No census-tract-level data for the Valencia Reserve subdivision itself was found.",
+    "Club count discrepancy: real-ativity.com says 100+ social clubs; paulsapersteinhomes.com says 50+ clubs."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 607.0,
+          "period": "monthly",
+          "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/",
+          "retrieved_at": "2026-10-10T20:34:36.677494+00:00"
+        },
+        {
+          "amount": 754.0,
+          "period": "monthly",
+          "source_url": "https://paulsapersteinhomes.com/articles/valencia-reserve",
+          "retrieved_at": "2026-10-10T20:44:44.576554+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T20:44:44.577188Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Delray Marketplace (open-air mall with boutiques, eateries, gastropubs)",
+          "distance_miles": null,
+          "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/"
+        },
+        {
+          "nearest_name": "Delray Marketplace (open-air mall with boutiques, eateries, movie theatre/bowling alley)",
+          "distance_miles": 5.0,
+          "source_url": "https://www.real-ativity.com/homesforsale/valencia-reserve/"
+        }
+      ],
+      "detected_at": "2026-10-10T20:44:44.577195Z"
+    }
+  ],
+  "created_at": "2026-10-10T20:34:36.678095Z",
+  "updated_at": "2026-10-10T20:44:44.577301Z"
+}

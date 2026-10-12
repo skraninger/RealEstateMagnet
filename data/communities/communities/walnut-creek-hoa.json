@@ -1,0 +1,149 @@
+{
+  "id": "50e63159-4ccc-4114-96f0-be3d61a09bfc",
+  "identity": {
+    "name": "Walnut Creek HOA",
+    "slug": "walnut-creek-hoa",
+    "county_fips": null,
+    "city": "Pembroke Pines",
+    "hoa_name": "Walnut Creek Community Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated community of 895 single-family homes and townhouses in Pembroke Pines, FL 33024, built primarily 2000–2004. Managed by Campbell Property Management (per HOA Bulletin Board) or Hawthorne Management (per HOA Agent). Governed by Florida Statute Chapter 720. Supported by a CDD that maintains eight lakes, common grounds, storm drains, and security. Centrally located near major highways, airports, and beaches."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/walnut-creek-hoa",
+      "retrieved_at": "2026-10-10T16:27:06.638965Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 250.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-verified fee per HOA Agent profile. Single resident report; may not reflect current dues. Verify with association directly."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638972Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 298.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Lower end of typical range $298–$350/month for single-family homes per recent real estate listings. Higher fees may apply for condos. Exact current fees, transfer fees, capital contributions, and special assessments not detailed in public sources."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638975Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "A CDD (Community Development District) exists and maintains common areas, lakes, and security, implying separate CDD assessments in addition to HOA dues. No specific CDD assessment amount found in the provided content."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638979Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with banquet hall"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638986Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Pools and heated spa"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638989Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Gym and aerobics room"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638992Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638994Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638996Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated with manned security and patrol; CDD responsible for security"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.638998Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Eight lakes maintained by CDD"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.639000Z",
+      "confidence": 0.5,
+      "amenity": "common_grounds",
+      "detail": "Common grounds maintained by CDD"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+    "retrieved_at": "2026-10-10T16:27:06.639004Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 895,
+    "data_year": null,
+    "geography_level": "community (895 homes, not residents)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:27:06.639010Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Major highways, airports, and beaches",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 250.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/walnut-creek-hoa",
+          "retrieved_at": "2026-10-10T16:27:06.638965+00:00"
+        },
+        {
+          "amount": 298.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+          "retrieved_at": "2026-10-10T16:27:06.638972+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T16:27:06.639551Z"
+    }
+  ],
+  "created_at": "2026-10-10T16:27:06.639524Z",
+  "updated_at": "2026-10-10T16:27:06.639644Z"
+}

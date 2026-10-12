@@ -1,0 +1,507 @@
+{
+  "id": "facff92b-9e67-47a7-b490-3eb1124d816c",
+  "identity": {
+    "name": "Parkland Bay",
+    "slug": "parkland-bay",
+    "county_fips": null,
+    "city": "Parkland, FL 33076",
+    "hoa_name": "Parkland Bay HOA",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Parkland Bay is a gated master-planned HOA community in Parkland, Broward County, FL (33076) featuring luxury single-family homes centered on a 178-acre lake. Built primarily by Lennar and GL Homes between 2018 and 2023, the 550-home community offers 4+ bedrooms and 4+ bathrooms with an average of 3,347 sq ft. Homes are organized into five collections (Waterfront, Signature, Classic, Estates, and Executive) with Mediterranean-inspired architecture ranging from 2,254 sq ft to 6,600+ sq ft. Managed by Campbell Property Management (754-714-5710, ParklandBayPM@campbellproperty.com, 8535 Parkland Bay Drive), the community features a 16,000 sq ft clubhouse and extensive recreational amenities. Median sold price is $1,400,000 ($405/sq ft); 141 homes sold in the past 2 years. Annual property taxes average $15,061."
+  },
+  "fees": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/parkland-bay-parkland-fl",
+      "retrieved_at": "2026-10-10T02:56:55.888955Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 613.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Average monthly HOA fee per HorizonPalm Realty listing data. Range approximately $300-$700 depending on specific home collection and lot. Exact current fees, transfer fees, capital contributions, and special assessments are not publicly detailed. Annual property taxes average $15,061 (separate from HOA). Full lawn maintenance included in some collections. Management: Campbell Property Management, 8535 Parkland Bay Drive, Parkland, FL 33076, 754-714-5710, ParklandBayPM@campbellproperty.com, parklandbayhoa.com. Office hours not publicly available. Rules, architectural guidelines, landscaping standards, parking rules, pet policies, rental restrictions, noise regulations, and trash collection rules not publicly available in searchable sources."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+      "retrieved_at": "2026-10-10T02:56:55.888964Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 300.0,
+      "period": "monthly (lower range)",
+      "currency": "USD",
+      "note": "Lower bound of typical monthly HOA fee range ($300-$700) per hoabulletinboard.com. Range varies by home collection and lot. Exact current fees not publicly detailed."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791742Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 538.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "BEX Realty community page: 'The $538 monthly HOA fees provide for' the 16,000 sq ft clubhouse (grand lobby with cafe, pavilion/bar, meeting room), fitness center with sauna and yoga studio, resort-style pool, tennis courts, and kiddie playground. Listing-site figure; verify with HOA before offer. Retrieved 2026-10-15T12:00:00Z, confidence 0.6 (reputable listing site)."
+    },
+    {
+      "source_url": "https://www.zillow.com/homedetails/8590-W-Parkland-Bay-Trl-Parkland-FL-33076/246618993_zpid/",
+      "retrieved_at": "2026-10-10T03:14:14.791750Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 676.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Zillow home details for 8590 W Parkland Bay Trail, Parkland FL 33076 (5 bed/7 bath, 6,030 sq ft, built 2022) lists '$676/mo HOA'. Listing-site figure; may vary by lot/collection. Retrieved 2026-10-15T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.neighborhoods.com/parkland-bay-parkland-fl",
+      "retrieved_at": "2026-10-10T03:14:14.791752Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 640.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Neighborhoods.com Parkland Bay quick facts: 'Association Fee Ranges: $640 to $698/mo' (lower bound recorded here as amount; full range in note). Listing-aggregator figure. Retrieved 2026-10-15T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://comeliveinflorida.com/neighborhoods/parkland-bay",
+      "retrieved_at": "2026-10-10T03:14:14.791754Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 424.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Pre-construction-era page (WCI/Lennar, ~2017): 'Homeowner fees (HOA) are expected to be $424 per month'; HOA stated to include lawn maintenance and watering. Historical/expected figure, superseded by current listing figures. Retrieved 2026-10-15T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:14:14.791756Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA Bulletin Board (secondary aggregator): monthly HOA fees 'typically range from approximately $300 to $700 depending on the specific home collection and lot'; exact current fees, transfer fees, capital contributions, and special assessments are not publicly detailed. Management: Campbell Property Management, 754-714-5710, ParklandBayPM@campbellproperty.com, 8535 Parkland Bay Drive. Retrieved 2026-10-15T12:00:00Z, confidence 0.5."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/parkland-bay/",
+      "retrieved_at": "2026-10-10T02:56:55.888969Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_club_grande",
+      "detail": "16,000 sq ft clubhouse with culinary demonstration café. Contact: 754-714-5710. Part of resort-style amenity package. Verified across hoabulletinboard.com, horizonpalmrealty.com, and homesofparkland.com."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/parkland-bay-parkland-fl",
+      "retrieved_at": "2026-10-10T02:56:55.888979Z",
+      "confidence": 0.5,
+      "amenity": "resort_style_swimming_pool",
+      "detail": "Resort-style pool. 34% of homes also include private pools. Verified across multiple sources."
+    },
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/parkland-bay/",
+      "retrieved_at": "2026-10-10T02:56:55.888982Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness center located in the 16,000 sq ft clubhouse. Verified across hoabulletinboard.com, horizonpalmrealty.com, and homesofparkland.com."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+      "retrieved_at": "2026-10-10T02:56:55.888985Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Community tennis courts. Verified across hoabulletinboard.com and horizonpalmrealty.com."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+      "retrieved_at": "2026-10-10T02:56:55.888987Z",
+      "confidence": 0.5,
+      "amenity": "gated_security_24_hour_staffed",
+      "detail": "24-hour gated security with staffed entrance. Master-planned gated community. Verified across all three sources."
+    },
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/parkland-bay/",
+      "retrieved_at": "2026-10-10T02:56:55.888990Z",
+      "confidence": 0.5,
+      "amenity": "lake_system_178_acre_lake",
+      "detail": "Centered on a 178-acre lake with water-oriented site plan. Waterfront living options available. Multiple lakes/ponds throughout the community. Verified across hoabulletinboard.com and homesofparkland.com."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/parkland-bay-parkland-fl",
+      "retrieved_at": "2026-10-10T02:56:55.888993Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Community playground. Verified across hoabulletinboard.com and horizonpalmrealty.com."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/parkland-bay-parkland-fl",
+      "retrieved_at": "2026-10-10T02:56:55.888996Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Community basketball court. Verified via horizonpalmrealty.com."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/parkland-bay-parkland-fl",
+      "retrieved_at": "2026-10-10T02:56:55.888998Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": "Community sidewalks. Verified via horizonpalmrealty.com."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+      "retrieved_at": "2026-10-10T02:56:55.889001Z",
+      "confidence": 0.5,
+      "amenity": "community_park",
+      "detail": "Community park/open spaces. Verified via hoabulletinboard.com."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+      "retrieved_at": "2026-10-10T02:56:55.889003Z",
+      "confidence": 0.5,
+      "amenity": "lawn_maintenance_some_collections",
+      "detail": "Full lawn maintenance included in some home collections at no additional stated charge. Verified via hoabulletinboard.com."
+    },
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/parkland-bay/",
+      "retrieved_at": "2026-10-10T02:56:55.889006Z",
+      "confidence": 0.5,
+      "amenity": "culinary_demonstration_caf",
+      "detail": "Located within the 16,000 sq ft clubhouse. Verified via homesofparkland.com."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791760Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "16,000 sq ft clubhouse ('Club Grande' per HOA Bulletin Board) with contemporary grand lobby featuring a cafe, a pavilion/bar, and a meeting room. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791768Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center with sauna and yoga studio. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791771Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool with expansive deck integrated with a fire pit; community summary also lists spa/hot tub and cabanas. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://buyselldiva.com/neighborhoods/parkland-bay",
+      "retrieved_at": "2026-10-10T03:14:14.791774Z",
+      "confidence": 0.5,
+      "amenity": "lap_pool",
+      "detail": "'Resort Pool + Lap Pool - Resort pool overlooks the 178-acre lake. Separate lap pool for the actual swimmers.' Retrieved 2026-10-15T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791776Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis courts at the clubhouse. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791779Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_basketball_courts",
+      "detail": "Sports facilities include tennis courts, pickleball courts, and a basketball court. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791782Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Kiddie's playground at the clubhouse; community park and playground also listed in the community summary. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.parklandparrot.com/parkland/parkland-bay-homes-for-sale/",
+      "retrieved_at": "2026-10-10T03:14:14.791784Z",
+      "confidence": 0.5,
+      "amenity": "culinary_cafe_pavilion",
+      "detail": "Resort-style beach-entry pool with lap lanes, culinary demonstration cafe, entertainment pavilion, and tot lot centered around the clubhouse. Retrieved 2026-10-15T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791787Z",
+      "confidence": 0.5,
+      "amenity": "dining_gathering_spaces",
+      "detail": "Onsite dining venues: restaurant, community kitchen, picnic area, barbecue area; plus billiards room, hobby room, and business center in the clubhouse. Retrieved 2026-10-15T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791789Z",
+      "confidence": 0.5,
+      "amenity": "trails_park",
+      "detail": "Walking or jogging trails and a community park. Retrieved 2026-10-15T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://buyselldiva.com/neighborhoods/parkland-bay",
+      "retrieved_at": "2026-10-10T03:14:14.791791Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "'24-Hour Manned Gate - Single entrance, staffed gatehouse, guest log. One of the tighter access controls in Parkland.' Retrieved 2026-10-15T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://comeliveinflorida.com/neighborhoods/parkland-bay",
+      "retrieved_at": "2026-10-10T03:14:14.791794Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Pre-construction page: 'Manned gate security 24x7'; 'Enter through a grand gated entrance featuring spectacular water and fire displays'; wide avenues with rich landscaping. Retrieved 2026-10-15T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://comeliveinflorida.com/neighborhoods/parkland-bay",
+      "retrieved_at": "2026-10-10T03:14:14.791796Z",
+      "confidence": 0.5,
+      "amenity": "club_membership_lawn_maintenance",
+      "detail": "'NO EQUITY CLUB MEMBERSHIP! You don't pay $50,000 or more for equity membership. Membership is included in your monthly HOA fees.' HOA includes lawn maintenance and watering. Retrieved 2026-10-15T12:00:00Z, confidence 0.5."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791799Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "'The Parkland Bay HOA rules do allow homeowners to have pets although there are certain breed restrictions. There is a limit of how many pets you may have, and there is a restriction on pet size.' Exact CC&R language not verified. Retrieved 2026-10-15T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://parklandpowerteam.com/new-construction/parkland-bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791802Z",
+      "confidence": 0.5,
+      "amenity": "cabanas",
+      "detail": "Pre-construction page: clubhouse features 'a state of the art gym and private cabanas'; clubhouse also has grand lobby, culinary/demonstration cafe, pavilion with bar, fitness center, meeting room; pool overlooks the 178-acre lake with fire pit. Retrieved 2026-10-15T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791803Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Community centered on a 178-acre lake in Parkland, FL 33076, with water views from many lots. Retrieved 2026-10-15T12:00:00Z, confidence 0.8."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://statedemographics.com/florida/parkland",
+    "retrieved_at": "2026-10-10T03:14:14.791807Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 37178,
+    "data_year": 2024,
+    "geography_level": "Parkland city, Florida (US Census Bureau ACS 5-Year Estimates 2020-2024); community-level ACS data not available for Parkland Bay itself. Median household income $198,669; median age 37.9 years; 85.1% of occupied housing units owner-occupied; poverty rate 4.3%. Retrieved 2026-10-15T12:00:00Z, confidence 0.7 (aggregator citing Census ACS; not the census.gov site directly)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://parklandbayhouse.com/",
+      "retrieved_at": "2026-10-10T03:14:14.791813Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Heron Heights Elementary (A+ rated, PK-5)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "https://parklandbayhouse.com/",
+      "retrieved_at": "2026-10-10T03:14:14.791816Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Westglades Middle School (A+ rated, grades 6-8)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "https://parklandbayhouse.com/",
+      "retrieved_at": "2026-10-10T03:14:14.791817Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Marjory Stoneman Douglas High School (A+ rated, grades 9-12)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "https://www.parklandparrot.com/parkland/parkland-bay-homes-for-sale/",
+      "retrieved_at": "2026-10-10T03:14:14.791819Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Private options near Parkland Bay include Mary Help of Christians Catholic School (Pre-K-8) and Kol Tikvah Jewish Day School (K-12); most Parkland Bay children start at Heron Heights, then Westglades Middle, then MSD High per neighborhood guides",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.parklandparrot.com/parkland/parkland-bay-homes-for-sale/",
+      "retrieved_at": "2026-10-10T03:14:14.791820Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Shops at Parkland (shopping, dining, fitness, groceries, everyday conveniences)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.cityofparkland.org/248/Business-Centers-in-Parkland",
+      "retrieved_at": "2026-10-10T03:14:14.791822Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Parkland's five business centers per City of Parkland: Waterways Shoppes (7501-7679 N State Road 7), Parkland Commons (7805-8095 University Dr), Parkland Town Center (6604-6682 Parkside Dr), Riverstone Shoppes (7251-7391 N State Road 7), Shoppes of Parkland (5901-7203 W Hillsboro Blvd - closest to Parkland Bay, just south off Hillsboro Rd)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791823Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.broward.org/library/LocationSchedules",
+      "retrieved_at": "2026-10-10T03:14:14.791824Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Weston Branch Library, Broward County Library (4205 Bonaventure Blvd, Weston, FL) - no Broward County Library branch exists in Parkland per the official county location list; Weston Branch and Margate Catharine Young Branch (5810 Park Dr, Margate) are the nearest listed branches",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.healthgrades.com/hospital-directory/fl-florida/parkland",
+      "retrieved_at": "2026-10-10T03:14:14.791825Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "West Boca Medical Center (Boca Raton, FL) and Broward Health Coral Springs (Coral Springs, FL) among 71 hospitals listed near Parkland, FL within 50 miles; exact nearest facility and distance not stated on the page read",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://thecoastalrealm.com/blog/parkland-schools-and-neighborhood-guide-for-homebuyers",
+      "retrieved_at": "2026-10-10T03:14:14.791827Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Boca Raton (~18 miles) and Pompano Beach (~17 miles) per buyer guide; Parkland Bay averages ~$1.24M per the same source",
+      "distance_miles": 18.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+      "retrieved_at": "2026-10-10T03:14:14.791828Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Airports per BEX Realty: Fort Lauderdale-Hollywood (FLL) 21 miles, Palm Beach International (PBI) 27 miles, Miami International (MIA) 38 miles; private airports (FXE, BCT, PMP, HWO) all within 24 miles",
+      "distance_miles": 21.0
+    }
+  ],
+  "open_questions": [
+    "No official current HOA fee schedule found: parklandbayhoa.com is only a placeholder page, and Campbell Property Management's fee schedule requires direct inquiry. Figures conflict by source: $424/mo (pre-construction 'expected', ~2017), $538/mo (BEX Realty), $640-$698/mo (neighborhoods.com range), $676/mo (Zillow, one specific home). Verify with the HOA before an offer.",
+    "CDD/special assessment details unverified: a Keller Williams blog (palmbeachcountyhomeforsale.com) advises confirming 'any CDD or additional assessment applies' in writing, but no CDD amount or existence was found on any page read.",
+    "No specific grocery store name or distance from Parkland Bay was found on pages read (BEX Realty only notes 'supermarkets' among nearby services).",
+    "No verified mile distances to shopping centers, the Weston Branch library, or hospitals (West Boca Medical Center / Broward Health Coral Springs) - only qualitative descriptors ('minutes', 'nearby').",
+    "School distances are a single listing-site claim ('within 3 miles' for Heron Heights Elementary, Westglades Middle, MSD High); exact zoned schools for a specific Parkland Bay address should be verified at browardschools.com (per buyselldiva.com and thecoastalrealm.com).",
+    "Community-level demographics unavailable; Parkland city ACS 2020-2024 figures used instead. A realtor site (buyselldiva.com) claims 84% owner-occupancy for Parkland Bay itself - unverified.",
+    "Pet policy specifics (restricted breeds, pet counts/size limits) come from a listing site summary; official CC&Rs not found publicly.",
+    "Pre-construction descriptions mention a 'spa' and 'culinary arts center' at the clubhouse (comeliveinflorida.com); post-construction pages describe a culinary cafe, sauna, and yoga studio - confirm current facility list with the HOA.",
+    "Homes.com local guide for Parkland Bay (demographics, best schools, attractions with distances) and Zillow neighborhood pages were blocked/JS-gated and could not be read for additional distance data."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 613.0,
+          "period": "monthly",
+          "source_url": "https://horizonpalmrealty.com/community/parkland-bay-parkland-fl",
+          "retrieved_at": "2026-10-10T02:56:55.888955+00:00"
+        },
+        {
+          "amount": 300.0,
+          "period": "monthly (lower range)",
+          "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+          "retrieved_at": "2026-10-10T02:56:55.888964+00:00"
+        },
+        {
+          "amount": 538.0,
+          "period": "monthly",
+          "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/",
+          "retrieved_at": "2026-10-10T03:14:14.791742+00:00"
+        },
+        {
+          "amount": 676.0,
+          "period": "monthly",
+          "source_url": "https://www.zillow.com/homedetails/8590-W-Parkland-Bay-Trl-Parkland-FL-33076/246618993_zpid/",
+          "retrieved_at": "2026-10-10T03:14:14.791750+00:00"
+        },
+        {
+          "amount": 640.0,
+          "period": "monthly",
+          "source_url": "https://www.neighborhoods.com/parkland-bay-parkland-fl",
+          "retrieved_at": "2026-10-10T03:14:14.791752+00:00"
+        },
+        {
+          "amount": 424.0,
+          "period": "monthly",
+          "source_url": "https://comeliveinflorida.com/neighborhoods/parkland-bay",
+          "retrieved_at": "2026-10-10T03:14:14.791754+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/pbplfl/about_hoa/",
+          "retrieved_at": "2026-10-10T03:14:14.791756+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T03:14:14.792502Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Downtown Boca Raton (~18 miles) and Pompano Beach (~17 miles) per buyer guide; Parkland Bay averages ~$1.24M per the same source",
+          "distance_miles": 18.0,
+          "source_url": "https://thecoastalrealm.com/blog/parkland-schools-and-neighborhood-guide-for-homebuyers"
+        },
+        {
+          "nearest_name": "Airports per BEX Realty: Fort Lauderdale-Hollywood (FLL) 21 miles, Palm Beach International (PBI) 27 miles, Miami International (MIA) 38 miles; private airports (FXE, BCT, PMP, HWO) all within 24 miles",
+          "distance_miles": 21.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Parkland/Parkland-Bay/"
+        }
+      ],
+      "detected_at": "2026-10-10T03:14:14.792509Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Heron Heights Elementary (A+ rated, PK-5)",
+          "distance_miles": 3.0,
+          "source_url": "https://parklandbayhouse.com/"
+        },
+        {
+          "nearest_name": "Westglades Middle School (A+ rated, grades 6-8)",
+          "distance_miles": 3.0,
+          "source_url": "https://parklandbayhouse.com/"
+        },
+        {
+          "nearest_name": "Marjory Stoneman Douglas High School (A+ rated, grades 9-12)",
+          "distance_miles": 3.0,
+          "source_url": "https://parklandbayhouse.com/"
+        },
+        {
+          "nearest_name": "Private options near Parkland Bay include Mary Help of Christians Catholic School (Pre-K-8) and Kol Tikvah Jewish Day School (K-12); most Parkland Bay children start at Heron Heights, then Westglades Middle, then MSD High per neighborhood guides",
+          "distance_miles": null,
+          "source_url": "https://www.parklandparrot.com/parkland/parkland-bay-homes-for-sale/"
+        }
+      ],
+      "detected_at": "2026-10-10T03:14:14.792513Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "The Shops at Parkland (shopping, dining, fitness, groceries, everyday conveniences)",
+          "distance_miles": null,
+          "source_url": "https://www.parklandparrot.com/parkland/parkland-bay-homes-for-sale/"
+        },
+        {
+          "nearest_name": "Parkland's five business centers per City of Parkland: Waterways Shoppes (7501-7679 N State Road 7), Parkland Commons (7805-8095 University Dr), Parkland Town Center (6604-6682 Parkside Dr), Riverstone Shoppes (7251-7391 N State Road 7), Shoppes of Parkland (5901-7203 W Hillsboro Blvd - closest to Parkland Bay, just south off Hillsboro Rd)",
+          "distance_miles": null,
+          "source_url": "https://www.cityofparkland.org/248/Business-Centers-in-Parkland"
+        }
+      ],
+      "detected_at": "2026-10-10T03:14:14.792515Z"
+    }
+  ],
+  "created_at": "2026-10-10T02:56:55.889551Z",
+  "updated_at": "2026-10-10T03:14:14.792609Z"
+}

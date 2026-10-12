@@ -1,0 +1,305 @@
+{
+  "id": "0384f089-1757-4447-91e8-9fe752d156ee",
+  "identity": {
+    "name": "Banyan Cay Resort Community Plat",
+    "slug": "banyan-cay-resort-community-plat",
+    "county_fips": null,
+    "city": "West Palm Beach",
+    "hoa_name": "Residences at Banyan Cay Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Luxury gated residential community in West Palm Beach, FL 33401, part of the larger Banyan Cay Resort & Club development. Homes built 2018–2022, 3+ bedrooms, 3+ bathrooms, avg 2,431 sq ft. Median sold price $1,250,000 ($448/sq ft). Managed by Sea Breeze Community Management Services. Supported by the Banyan Cay CDD (est. 2019). Access to Jack Nicklaus Signature Golf Course and full resort amenities."
+  },
+  "fees": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589493Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 479.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Average HOA fee per Horizon Palm Realty; HOA Bulletin Board reports recent sales showing range of ~$475–$614/mo. Capital/resale assessments required upon sale per governing documents. Transfer fees and special assessments details unavailable in public sources. Managed by Sea Breeze CMS. CDD assessments (Banyan Cay CDD, est. 2019) appear separately on property tax bills for operations, maintenance, and debt service. Annual property taxes average $7,995."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/bcrwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T18:16:26.589508Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Banyan Cay Community Development District (CDD), established 2019. Assessments for operations, maintenance, and debt service collected via property tax bills. Specific dollar amount not stated in reviewed sources."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231413Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 900.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Listing-aggregator estimate: 'The community has an HOA with fees averaging $900 monthly.' Not confirmed by the HOA or its manager (Sea Breeze Community Management Services). Residences at Banyan Cay HOA (est. 05/02/2018) requires HOA fees per florida-hoa.net, but no amount was posted there. Verify via estoppel from the manager (561-626-0917)."
+    },
+    {
+      "source_url": "https://banyancaycdd.org/",
+      "retrieved_at": "2026-10-12T18:28:27.231420Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Banyan Cay CDD (est. Jan 28, 2019, City Ordinance 4823-19) levies annual assessments in two components: O&M of improvements and debt service (principal & interest) on capital improvement bonds. Collected by Palm Beach County Tax Collector; appears in the non-ad valorem section of the property tax bill. Fiscal year Oct 1 - Sep 30. Dollar amount not stated on the page (budget/assessment roll available via district files)."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231423Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 25172.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Average annual property taxes for the community per listing aggregator (includes ad valorem + non-ad valorem CDD assessments)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/bcrwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T18:16:26.589514Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Jack Nicklaus Signature Golf Course, part of Banyan Cay Resort & Club"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589529Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589536Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589542Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589548Z",
+      "confidence": 0.5,
+      "amenity": "spa_hot_tub",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589554Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589560Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589565Z",
+      "confidence": 0.5,
+      "amenity": "restaurant",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589569Z",
+      "confidence": 0.5,
+      "amenity": "business_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589575Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/bcrwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T18:16:26.589580Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community entry"
+    },
+    {
+      "source_url": "https://golfweek.usatoday.com/story/sports/golf/2024/04/24/banyan-cay-resort-golf-west-palm-beach-florida/73438459007/",
+      "retrieved_at": "2026-10-12T18:28:27.231427Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Jack Nicklaus Signature 18-hole course at Banyan Cay Resort & Club (250-acre property; course opened 2017, being redone by new owners Witkoff Group/Access Industries/PPG, now branded Dutchman's Pipe Golf Club). Access for residents is via the resort/club; club initiation fees reported at $300,000-$350,000 for new members."
+    },
+    {
+      "source_url": "https://golfweek.usatoday.com/story/sports/golf/2024/04/24/banyan-cay-resort-golf-west-palm-beach-florida/73438459007/",
+      "retrieved_at": "2026-10-12T18:28:27.231436Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with pro shop, restaurant/lounge, and lockers with showers for men and women."
+    },
+    {
+      "source_url": "https://golfweek.usatoday.com/story/sports/golf/2024/04/24/banyan-cay-resort-golf-west-palm-beach-florida/73438459007/",
+      "retrieved_at": "2026-10-12T18:28:27.231438Z",
+      "confidence": 0.5,
+      "amenity": "practice_range",
+      "detail": "Full-scale practice area with driving range, short game area, and putting green; driving range being redone to allow 300+ yard hits."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231441Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Listed among community amenities by listing aggregator."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231443Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Listed among community amenities by listing aggregator."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231446Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Listed among community amenities by listing aggregator; golfweek also reports planned tennis, pickleball, and padel courts at the resort."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231448Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Listed among community amenities by listing aggregator."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231450Z",
+      "confidence": 0.5,
+      "amenity": "spa_hot_tub",
+      "detail": "Listed among community amenities by listing aggregator."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231453Z",
+      "confidence": 0.5,
+      "amenity": "restaurant",
+      "detail": "Listed among community amenities by listing aggregator; resort plans include three dining venues led by Chef Julian Jouhannaud (per golfweek)."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231455Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": "Listed among community amenities by listing aggregator."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:28:27.231457Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Described as a 'gated residential community' in West Palm Beach, Palm Beach County."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33401-33401/",
+    "retrieved_at": "2026-10-12T18:28:27.231461Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 33698,
+    "data_year": null,
+    "geography_level": "ZIP 33401 (West Palm Beach, FL), 5.1 sq mi, 6,639.4 people/sq mi"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+      "retrieved_at": "2026-10-12T18:16:26.589589Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "community plat"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://golfweek.usatoday.com/story/sports/golf/2024/04/24/banyan-cay-resort-golf-west-palm-beach-florida/73438459007/",
+      "retrieved_at": "2026-10-12T18:28:27.231466Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Tanger Outlets shopping mall",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact HOA monthly fee amount: only an aggregator estimate of ~$900/month found; the HOA directory page (florida-hoa.net, Residences at Banyan Cay HOA, est. 05/02/2018, manager Sea Breeze Community Management Services, 4227 Northlake Blvd, Palm Beach Gardens FL 33410, 561-626-0917) confirms fees are required but lists no amount. Request an estoppel from the manager.",
+    "CDD assessment dollar amount per parcel: banyancaycdd.org describes the O&M + debt-service structure but no figures on the page; the 2023-2024 Final Assessment Roll (emma.msrb.org/P21925850.pdf) and district budget were not read.",
+    "Demographics beyond ZIP population: Census Reporter page for 33401 returned only partial content (population 33,698); median age, median household income, and owner-occupancy % were not captured.",
+    "Distances to nearest hospital, library, and school were not found on any page read.",
+    "Pet policy not found on any page read.",
+    "Scope discrepancy: buyer notes describe the 'Banyan Cay Resort Community Plat' (built 2018-2022, 3+ bed/3+ bath, avg 2,431 sq ft, median sold $1,250,000 / $448 sq ft), while the listing page for the broader 'Banyan Cay Resort' community reports homes built 2021-2026, 4+ bed/4+ bath, avg 3,259 sq ft, median sold $1,300,000 / $399 sq ft. Figures likely reflect different property sets; verify which applies to the specific plat.",
+    "Resort hotel (150-room, planned fitness center, pool, cabanas, tennis center, spa) was still unfinished per April 2024 golfweek report; completion status and whether residential owners get resort access/fees were not verified."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.cdd_assessment",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/bcrwpbfl/about_hoa/",
+          "retrieved_at": "2026-10-12T18:16:26.589508+00:00"
+        },
+        {
+          "amount": null,
+          "period": "annual",
+          "source_url": "https://banyancaycdd.org/",
+          "retrieved_at": "2026-10-12T18:28:27.231420+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T18:28:27.232221Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 479.0,
+          "period": "monthly",
+          "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-community-plat-west-palm-beach-fl",
+          "retrieved_at": "2026-10-12T18:16:26.589493+00:00"
+        },
+        {
+          "amount": 900.0,
+          "period": "monthly",
+          "source_url": "https://horizonpalmrealty.com/community/banyan-cay-resort-west-palm-beach-fl",
+          "retrieved_at": "2026-10-12T18:28:27.231413+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T18:28:27.232227Z"
+    }
+  ],
+  "created_at": "2026-10-12T18:16:26.590468Z",
+  "updated_at": "2026-10-12T18:28:27.232305Z"
+}

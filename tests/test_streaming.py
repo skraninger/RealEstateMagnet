@@ -28,7 +28,45 @@ from modules.community.streaming import (  # noqa: E402
     ThinkingReporter,
     forward_events,
     run_agent_streamed,
+    sampling_settings,
+    thinking_disabled,
 )
+
+
+class TestSamplingSettings:
+    def test_only_includes_supplied_keys(self):
+        assert sampling_settings() == {}
+        assert sampling_settings(max_tokens=512) == {"max_tokens": 512}
+        assert sampling_settings(temperature=0.1, top_p=0.8) == {
+            "temperature": 0.1,
+            "top_p": 0.8,
+        }
+
+    def test_disable_thinking_sets_template_kwarg(self):
+        settings = sampling_settings(max_tokens=256, disable_thinking=True)
+        assert settings["extra_body"] == {
+            "chat_template_kwargs": {"enable_thinking": False}
+        }
+
+
+class TestThinkingDisabled:
+    def test_default_keeps_thinking_on(self, monkeypatch):
+        monkeypatch.delenv("MODEL_DISABLE_THINKING", raising=False)
+        assert thinking_disabled("http://localhost:8080/v1") is False
+        assert thinking_disabled("https://api.openai.com/v1") is False
+
+    def test_auto_disables_only_for_local(self, monkeypatch):
+        monkeypatch.setenv("MODEL_DISABLE_THINKING", "auto")
+        assert thinking_disabled("http://localhost:8080/v1") is True
+        assert thinking_disabled("http://127.0.0.1:8080/v1") is True
+        assert thinking_disabled("https://api.openai.com/v1") is False
+        assert thinking_disabled(None) is False
+
+    def test_env_override(self, monkeypatch):
+        monkeypatch.setenv("MODEL_DISABLE_THINKING", "1")
+        assert thinking_disabled("https://api.openai.com/v1") is True
+        monkeypatch.setenv("MODEL_DISABLE_THINKING", "0")
+        assert thinking_disabled("http://localhost:8080/v1") is False
 
 
 async def _agen(items):

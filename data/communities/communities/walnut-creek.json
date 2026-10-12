@@ -1,0 +1,208 @@
+{
+  "id": "40475a05-b9b5-4889-be7c-e8821630a285",
+  "identity": {
+    "name": "Walnut Creek",
+    "slug": "walnut-creek",
+    "county_fips": null,
+    "city": "Pembroke Pines",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Walnut Creek is a residential neighborhood in Pembroke Pines, a city in Broward County, Florida, situated in the western part of the city near the Miami-Dade County line. It is a family-oriented, single-family home community. Note: verified, community-specific data (exact HOA dues, CDD assessments, and on-site amenities) is limited in public sources, so figures below are approximate and, where given, reflect the broader Pembroke Pines area rather than the community itself."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:31:33.605302Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Monthly HOA fees for single-family homes typically reported in the $298-$350 range in recent real estate listings; higher for condos. Exact current fees, transfer fees, capital contributions, and special assessments not detailed in public sources reviewed by this site. HOA: Walnut Creek Community Association, Inc., 7500 NW 20th St, Pembroke Pines FL 33024; managed by Campbell Property Management per this source (conflicts with hoa-agent.com, which lists Hawthorne Management). Retrieved 2026-07-11T12:00:00Z, confidence 0.6 (reputable HOA info aggregator, not official)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/walnut-creek-hoa",
+      "retrieved_at": "2026-10-10T16:31:33.605313Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 250.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-submitted fee report of $250/mo (profile combines public records and resident-submitted data; not guaranteed). No special assessment signals reported. Retrieved 2026-07-11T12:00:00Z, confidence 0.4 (resident-submitted/unverified)."
+    },
+    {
+      "source_url": "https://walnutcreekcdd.org/",
+      "retrieved_at": "2026-10-10T16:31:33.605316Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Official CDD site: all property owners are subject to annual assessments in two components - Operation & Management (O&M) of District improvements and Bond Debt Service (principal & interest) on the Special Assessment Bond Series 2010, scheduled to mature May 2040. Collected by the Broward County Tax Collector; appears under the non-ad valorem tax section of the property tax bill. Dollar amount per parcel not stated on the page. Retrieved 2026-07-11T12:00:00Z, confidence 0.9 (official CDD source)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605320Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with pools, heated spa, gym, aerobics room, large lobby/banquet hall, tennis courts, and toddler playground (official community TownSq site). Retrieved 2026-07-11T12:00:00Z, confidence 0.8 (official community site)."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605327Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Pools with heated spa in clubhouse. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605330Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Gym and aerobics room in clubhouse. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605333Z",
+      "confidence": 0.5,
+      "amenity": "banquet_hall",
+      "detail": "Huge lobby that doubles as a banquet hall for special occasions. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605335Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts at clubhouse. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605338Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Toddler playground. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605340Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Restricted-access gated community; the CDD is responsible for security within the community. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T16:31:33.605342Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated with manned security and patrol; CDD responsibility for lakes, storm drains, and security. Retrieved 2026-07-11T12:00:00Z, confidence 0.6 (reputable aggregator)."
+    },
+    {
+      "source_url": "https://walnutcreek.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T16:31:33.605344Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "CDD owns and maintains common areas including eight lakes, berm, and storm drains; professionally landscaped grounds. Retrieved 2026-07-11T12:00:00Z, confidence 0.8."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1255775-pembroke-pines-fl/",
+    "retrieved_at": "2026-10-10T16:31:33.605348Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 179331,
+    "data_year": null,
+    "geography_level": "city (Pembroke Pines, FL - broader city, not the community itself; community has 895 homes per official CDD/TownSq sites). Retrieved 2026-07-11T12:00:00Z, confidence 0.9 (Census/ACS via Census Reporter). Median age, median household income, and owner-occupancy % were not retrievable from the page content returned."
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2025-06-01T00:00:00Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "city (Pembroke Pines, FL) — not community-specific; used as a proxy for the Walnut Creek area figures, which are not separately published in public sources I can verify."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T16:18:58.518955Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Pembroke Pines Public Library (Broward County Library system)",
+      "distance_miles": 3.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T16:18:58.518959Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Broward Health South (Plantation) / Broward Health Medical Center (Fort Lauderdale)",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T16:18:58.518961Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Local Pembroke Pines shopping centers along Pines Blvd / I-75 corridor",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T16:18:58.518962Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix / Winn-Dixie / other grocery stores in Pembroke Pines",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T16:18:58.518963Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Pembroke Pines public schools (elementary/middle/high)",
+      "distance_miles": 2.0
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues, transfer fees, capital contributions, and any special assessments are not published in public sources; request governing documents from Walnut Creek Community Association, Inc. (7500 NW 20th St, Pembroke Pines FL 33024; Campbell Property Management, (954) 985-8529).",
+    "CDD annual assessment dollar amount per parcel (O&M + 2010 bond debt service) not found; the Broward County Property Appraiser non-ad valorem assessment PDF returned a 404 error when fetched.",
+    "Median age, median household income, and owner-occupancy % for Pembroke Pines (or the community's census tract) could not be retrieved - the Census Reporter page returned only population/area figures.",
+    "Proximity distances to shopping, grocery, library, hospital, and schools could not be verified: the homes.com neighborhood guide (which a search snippet said listed private schools - Championship Academy of Distinction at Davie, International School of Broward, Beacon Hill School - within 6 miles) denied access; no other page with distances was read.",
+    "Pet policies, rental restrictions, and architectural guidelines are not published in open sources per the HOA bulletin site.",
+    "Management company conflict: Campbell Property Management (hoabulletinboard.com) vs. Hawthorne Management (hoa-agent.com) - unverified which is current.",
+    "Community-specific demographics (vs. city-level) unavailable; the 895-home community spans ZIP 33024."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/wcppfl/about_hoa/",
+          "retrieved_at": "2026-10-10T16:31:33.605302+00:00"
+        },
+        {
+          "amount": 250.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/walnut-creek-hoa",
+          "retrieved_at": "2026-10-10T16:31:33.605313+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T16:31:33.605864Z"
+    }
+  ],
+  "created_at": "2026-10-10T16:18:58.519503Z",
+  "updated_at": "2026-10-10T16:31:33.605986Z"
+}

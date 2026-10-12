@@ -1,0 +1,316 @@
+{
+  "id": "afb4e8fe-8cc2-46f9-92b7-aff9788bd00e",
+  "identity": {
+    "name": "Merrick Square",
+    "slug": "merrick-square",
+    "county_fips": null,
+    "city": "Pembroke Pines, FL 33027",
+    "hoa_name": "Merrick Square Homeowners' Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated D.R. Horton townhome community of approximately 211 two-story units across 4 floor plans (1,738–1,962 sq ft, 3–4 bedrooms, 2.5–3 baths, 1-car garage), located off 172nd Avenue just south of Pines Boulevard in Pembroke Pines, FL 33027. New construction priced in the mid-$600K to low-$800K range. HOA managed by RealManage (C/O 11784 West Sample Road, Coral Springs, FL 33065; resident support 1-866-473-2573); a Community Development District (CDD) established in 2021 works alongside the HOA to manage common areas and improvements."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/msppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T05:00:15.302402Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported in various sources as approximately $135–$240/month (often $150–$182), covering common area maintenance, gated entry, clubhouse, pool, fitness center, and tot lot (lawn maintenance included in some descriptions). Exact current fees, transfer fees, capital contributions, and special assessments are not publicly available. HOA association ID N21000014314; managed by RealManage (no community-specific public phone/email found). Detailed architectural, landscaping, parking, pet, rental, noise, and trash rules not publicly detailed. The HOA's own website (merricksquarehoa.com) is currently suspended. Confidence: 0.6, retrieved_at: 2025-06-01T12:00:00Z"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/msppfl/about_hoa/",
+      "retrieved_at": "2026-10-10T05:00:15.302412Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "CDD established 2021; works alongside HOA to manage common areas and improvements. Assessment amounts not publicly available. Confidence: 0.5, retrieved_at: 2025-06-01T12:00:00Z"
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485188Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 150.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Buyer guide states HOA runs approximately $150/month; covers common areas, gated entry system, clubhouse, swimming pool, fitness center, and tot lot. Does NOT cover interior maintenance, unit insurance, or utilities. Fees may adjust as reserves build in this new community. Verify with HOA (RealManage). Conflicting figure: median listed fee $182/mo (see separate fact). Pet policy and rental restrictions not stated in source; check HOA docs before closing. Confidence 0.6 (reputable listing/broker site, not official HOA). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.pbprealestate.com/hoa-fees-pembroke-pines/merrick-square/",
+      "retrieved_at": "2026-10-10T15:37:33.485199Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 182.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Median monthly-equivalent HOA fee across 5 active Merrick Square listings with a usable fee, per PBP Real Estate's daily analysis of BeachesMLS data as of October 10, 2026. 25% below the Pembroke Pines townhouse/villa median of $244/mo. Broker-entered MLS data, not an official HOA figure; small sample (5 listings). 0 of 5 listings mention a special assessment in public remarks. Confidence 0.6 (reputable MLS-data site, not official HOA). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://merricksquarecdd.net/faqs",
+      "retrieved_at": "2026-10-10T15:37:33.485201Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Merrick Square CDD is a special-purpose government entity established October 20, 2021 by Pembroke Pines City Commission Ordinance No. 1976; its Board may levy taxes, special assessments, fees, and user charges for district facilities. Specific per-parcel annual CDD tax/assessment amount NOT verified on this page. An FY2025 adopted budget with an Assessment Summary is published at emma.msrb.org/P21994084.pdf (not read). Confidence 0.8 (official CDD site) for existence/authority; amount unknown. Retrieved 2026-10-10T12:00:00Z (approx)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302417Z",
+      "confidence": 0.85,
+      "amenity": "gated_entrance",
+      "detail": null
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302427Z",
+      "confidence": 0.85,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302429Z",
+      "confidence": 0.85,
+      "amenity": "swimming_pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302432Z",
+      "confidence": 0.85,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302435Z",
+      "confidence": 0.85,
+      "amenity": "tot_lot_playground",
+      "detail": null
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302438Z",
+      "confidence": 0.8,
+      "amenity": "professionally_designed_landscaping",
+      "detail": "Common areas maintained by HOA"
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302441Z",
+      "confidence": 0.7,
+      "amenity": "pvc_fenced_yards",
+      "detail": "Builder-listed standard feature for townhomes"
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T15:37:33.485207Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community (controlled-access gate); buyer guide describes it as a real controlled-access gate, not cosmetic. HOA covers the gated entry system. Confidence 0.9 (official community/builder site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T15:37:33.485223Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse available for community events and resident use; covered by HOA. Confidence 0.9 (official community/builder site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T15:37:33.485225Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming pool; covered by HOA. Confidence 0.9 (official community/builder site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T15:37:33.485227Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center; covered by HOA. Confidence 0.9 (official community/builder site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T15:37:33.485230Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Tot lot (playground) for young children; covered by HOA. Confidence 0.9 (official community/builder site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485232Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "NOT present — community has no golf course, no tennis courts, and no water feature (per buyer guide). Confidence 0.6 (reputable listing/broker site). Retrieved 2026-10-10T12:00:00Z (approx)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33027-33027/",
+    "retrieved_at": "2026-10-10T15:37:33.485239Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 65116,
+    "data_year": null,
+    "geography_level": "ZIP code 33027 (Pembroke Pines area containing Merrick Square); 13.4 sq mi, 4,873.8 people/sq mi per same page. Median age, median household income, and owner-occupancy % were NOT retrievable (page returned minimal content). City of Pembroke Pines total population ~179,331 per censusreporter city profile (not read in full). Confidence 0.9 (Census Reporter). Retrieved 2026-10-10T12:00:00Z (approx)."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302446Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 160000,
+      "data_year": null,
+      "geography_level": "city (Pembroke Pines) — not community-specific; community itself is ~211 townhome units. City age distribution: 25.6% under 18, 6.4% ages 18–24, 33.5% ages 25–44, 19.3% ages 45–64, 15.2% age 65+. Median age, income, and owner-occupancy not stated. Confidence: 0.5, retrieved_at: 2025-06-01T12:00:00Z"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://merricksquarepembrokepines.com/",
+      "retrieved_at": "2026-10-10T05:00:15.302453Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Broward County Public Schools (district serving Pembroke Pines; several charter schools also in city)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485245Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Panther Run Elementary School (K-5, zoned)",
+      "distance_miles": 0.4
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485249Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Silver Trail Middle School (6-8, zoned)",
+      "distance_miles": 1.8
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485251Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "West Broward High School (zoned)",
+      "distance_miles": 3.4
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485252Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Somerset Academy (K-12 charter, alternative option)",
+      "distance_miles": 3.2
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485254Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Memorial Hospital West (major healthcare anchor for western Pembroke Pines)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485255Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Sedano's (grocery; 'close by', other grocery options nearby)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+      "retrieved_at": "2026-10-10T15:37:33.485256Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Shops at Pembroke Gardens and Broward Mall (both accessible without a highway)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues and full coverage: sources conflict (~$150/mo per buyer guide vs $182/mo median of 5 active MLS listings per PBP Real Estate, Oct 10 2026). Confirm with HOA manager RealManage (1-866-473-2573) and request budget/reserve study.",
+    "CDD annual tax/assessment amount per parcel: CDD FY2025 adopted budget with Assessment Summary exists at emma.msrb.org/P21994084.pdf but was not read; amount unverified.",
+    "Pet policy and rental restrictions: not found in any source read; check HOA rules and regulations.",
+    "Median age, median household income, and owner-occupancy % for ZIP 33027: Census Reporter profile page returned only population (65,116); finer fields not retrievable within budget.",
+    "Exact distances to Memorial Hospital West, Sedano's, and shopping centers: sources say 'close'/'accessible' without mile figures.",
+    "CDD contact details are limited publicly (per hoabulletinboard summary); CDD board/manager contact not verified."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/msppfl/about_hoa/",
+          "retrieved_at": "2026-10-10T05:00:15.302402+00:00"
+        },
+        {
+          "amount": 150.0,
+          "period": "monthly",
+          "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/",
+          "retrieved_at": "2026-10-10T15:37:33.485188+00:00"
+        },
+        {
+          "amount": 182.0,
+          "period": "monthly",
+          "source_url": "https://www.pbprealestate.com/hoa-fees-pembroke-pines/merrick-square/",
+          "retrieved_at": "2026-10-10T15:37:33.485199+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T15:37:33.486013Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Broward County Public Schools (district serving Pembroke Pines; several charter schools also in city)",
+          "distance_miles": null,
+          "source_url": "https://merricksquarepembrokepines.com/"
+        },
+        {
+          "nearest_name": "Panther Run Elementary School (K-5, zoned)",
+          "distance_miles": 0.4,
+          "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/"
+        },
+        {
+          "nearest_name": "Silver Trail Middle School (6-8, zoned)",
+          "distance_miles": 1.8,
+          "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/"
+        },
+        {
+          "nearest_name": "West Broward High School (zoned)",
+          "distance_miles": 3.4,
+          "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/"
+        },
+        {
+          "nearest_name": "Somerset Academy (K-12 charter, alternative option)",
+          "distance_miles": 3.2,
+          "source_url": "https://www.soflohomelistings.com/blog/merrick-square-pembroke-pines-dr-horton-townhomes-buyer-guide/"
+        }
+      ],
+      "detected_at": "2026-10-10T15:37:33.486023Z"
+    }
+  ],
+  "created_at": "2026-10-10T05:00:15.303022Z",
+  "updated_at": "2026-10-10T15:37:33.486144Z"
+}

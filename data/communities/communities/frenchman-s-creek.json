@@ -1,0 +1,264 @@
+{
+  "id": "ac452c13-0bbf-4aa7-a2c7-c4dc70f0f1e0",
+  "identity": {
+    "name": "Frenchman's Creek",
+    "slug": "frenchman-s-creek",
+    "county_fips": null,
+    "city": "Palm Beach Gardens, FL 33410",
+    "hoa_name": "Frenchman's Creek Property Owners Association (POA/HOA)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "A 720-acre residents-only, private gated luxury beach & country club community at 13495 Tournament Drive, Palm Beach Gardens, FL 33410, with 606 single-family homes (est. 600-700 homes), two championship golf courses, a private oceanfront beach club on Juno Beach, and navigable deep-water Intracoastal canal access on select homesites. Club membership is mandatory."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:14:03.191986Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1500.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Typical range $1,500-$2,500/month; varies by property type (patio, townhome, villa, waterfront). Exact current fees require direct verification with the POA/club; some details unavailable publicly. ARB approval required for exterior modifications; rules cover shutters, irrigation, security hookups, trash, maintenance, pet breed/size limits, and rental restrictions per governing documents/ARB Manual/declarations (full details not public). Retrieved 2026-09-24T00:00:00Z, confidence 0.6 (reputable HOA/agent sources, ranges not exact)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:14:03.191995Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 175000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Mandatory club membership with equity initiation fee historically around $175,000-$300,000 with partial refundability. Exact current figure requires direct verification. Retrieved 2026-09-24T00:00:00Z, confidence 0.5 (historical range, unverified current)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:14:03.191997Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 29000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Annual club dues approximately $29,000-$48,000 plus minimums and capital charges. Exact current figures and any special assessments unavailable in public sources without direct verification. Retrieved 2026-09-24T00:00:00Z, confidence 0.5 (historical range, unverified current)."
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/insights/frenchmans-creek-market-data/",
+      "retrieved_at": "2026-10-12T16:18:54.580462Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1912.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Median monthly HOA fee per MLS-based market analysis (195 closed sales, Jan 2020–Mar 2026); described as 3x Mirasol and 3.4x Old Marsh Golf Club. Third-party estimate, not an official HOA figure. The premium funds the concierge model, beach club, and capital reserve that funded the $90M clubhouse rebuild. Board approved an equity membership fee increase Dec 18, 2025, effective Mar 1, 2026 (per same site's membership page, unverified). Confidence 0.6 (reputable listing/analysis site). Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://www.frenchmanscreek.com/membership/club-membership",
+      "retrieved_at": "2026-10-12T16:18:54.580473Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Official club site: members are billed annual club dues and POA maintenance fees established by the annual operating budget. Amounts not published; club shares current schedule with applicants directly. Country club membership is mandatory for community residents. Confidence 0.9 (official HOA/club source). Retrieved 2026-09-25T00:00:00Z. Confidence: 0.9"
+    },
+    {
+      "source_url": "https://www.frenchmanscreek.com/membership/club-membership",
+      "retrieved_at": "2026-10-12T16:18:54.580475Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Official club site: members pay an equity fee when a home is purchased, which includes a contribution to the Capital Reserve Fund. Equity club structure — each member owns part of the club. Amount not published. Confidence 0.9 (official HOA/club source). Retrieved 2026-09-25T00:00:00Z. Confidence: 0.9"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.palmbeachluxury.com/communities/frenchmans-creek/",
+      "retrieved_at": "2026-10-12T16:14:03.192000Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two championship golf courses designed by Jim Fazio and Robert Cupp. Retrieved 2026-09-24T00:00:00Z, confidence 0.7 (multiple reputable real-estate sources)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:14:03.192010Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "26 Har-Tru/stadium tennis, pickleball, and bocce courts. Retrieved 2026-09-24T00:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/communities/frenchmans-creek/",
+      "retrieved_at": "2026-10-12T16:14:03.192013Z",
+      "confidence": 0.5,
+      "amenity": "beach_club",
+      "detail": "Private oceanfront beach club on Juno Beach (residents-only). Retrieved 2026-09-24T00:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/communities/frenchmans-creek/",
+      "retrieved_at": "2026-10-12T16:14:03.192015Z",
+      "confidence": 0.5,
+      "amenity": "marina",
+      "detail": "Deep-water marina; navigable deep-water Intracoastal canal access on select homesites. Retrieved 2026-09-24T00:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:14:03.192018Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "New large clubhouse. Retrieved 2026-09-24T00:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:14:03.192020Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "24/7 fitness center with spa/salon; partnership with Jupiter Medical Center. Retrieved 2026-09-24T00:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://www.palmbeachluxury.com/communities/frenchmans-creek/",
+      "retrieved_at": "2026-10-12T16:14:03.192023Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Private gated community (gated entry). Retrieved 2026-09-24T00:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580480Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two championship golf courses (36 holes); golf course, lake, preserve, and deep-water canal views common throughout the 700-acre community. Confidence 0.6 (reputable listing site). Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580489Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "16 Har-Tru clay courts, 9 lit for evening play; USPTA-certified pros, daily clinics, PBCWTA league teams, singles ladders. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580491Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "New 10-court LED-lit pickleball complex; 26 total racquet courts. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580494Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "110,000 sq ft clubhouse with multiple dining venues and year-round social calendar (recently rebuilt at ~$90M per market analysis). Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580496Z",
+      "confidence": 0.5,
+      "amenity": "beach_club",
+      "detail": "Private oceanfront beach club at 400 Celestial Way, Juno Beach — private ocean access, beachside dining, waterfront amenities. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580498Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Comprehensive cardio and strength equipment, personal training, group fitness classes. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580501Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa services in the clubhouse wellness facilities. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580502Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style outdoor pool complex adjacent to the clubhouse. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580504Z",
+      "confidence": 0.5,
+      "amenity": "boating",
+      "detail": "Deep-water canal access and yacht-access lots; navigable Intracoastal Waterway access on select homesites (waterfront segment commands a structural premium). Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    },
+    {
+      "source_url": "https://palmbeachtennishomes.com/tennis-community/frenchmans-creek-beach-country-club/",
+      "retrieved_at": "2026-10-12T16:18:54.580506Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Private gated community, ~700 acres, 606 homes (est. 1986), residents-only; on-site real estate services at 13699 Tournament Drive. Confidence 0.6. Retrieved 2026-09-25T00:00:00Z. Confidence: 0.6"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1254075-palm-beach-gardens-fl/",
+    "retrieved_at": "2026-10-12T16:18:54.580511Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 60959,
+    "data_year": null,
+    "geography_level": "city (Palm Beach Gardens, FL — community sits in this city, ZIP 33410); no community-level census geography available. Confidence 0.9 (Census/ACS via Census Reporter). Retrieved 2026-09-25T00:00:00Z. Confidence: 0.9"
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [
+    "Exact current fee amounts: official club site states annual club dues + POA maintenance fees are set by the annual operating budget and shared directly with applicants; the $1,912/month figure is a third-party MLS-based median, not an official HOA number. Equity membership fee amount also unpublished (board approved an increase effective Mar 1, 2026 per third-party report).",
+    "Demographics: median age, median household income, and owner-occupancy % could not be extracted — the Census Reporter profile page returned only population (60,959) and area/density. No community- or ZIP-level (33410) census geography exists for the gated enclave itself.",
+    "Proximity: no verified distances. Unverified search snippets (not read/confirmed) suggest The Gardens Mall ~2 miles south and William T. Dwyer High School ~2 miles west (mapcarta.com); Jupiter Medical Center was mentioned only in a philanthropy context. Nearest hospital, library, grocery, and school distances need direct verification.",
+    "Clubhouse size conflict: 110,000 sq ft (palmbeachtennishomes.com, read) vs 90,000 sq ft with 24,000 sq ft fitness center (thegolflifeagent.com, snippet only, not read).",
+    "Pet policy: not found on any page read.",
+    "Gate/security staffing details (e.g., manned gate) not verified on a read page."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 1500.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:14:03.191986+00:00"
+        },
+        {
+          "amount": 1912.0,
+          "period": "monthly",
+          "source_url": "https://www.palmbeachluxury.com/insights/frenchmans-creek-market-data/",
+          "retrieved_at": "2026-10-12T16:18:54.580462+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:18:54.581012Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 175000.0,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:14:03.191995+00:00"
+        },
+        {
+          "amount": 29000.0,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/fcpbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:14:03.191997+00:00"
+        },
+        {
+          "amount": null,
+          "period": "one-time",
+          "source_url": "https://www.frenchmanscreek.com/membership/club-membership",
+          "retrieved_at": "2026-10-12T16:18:54.580475+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:18:54.581019Z"
+    }
+  ],
+  "created_at": "2026-10-12T16:14:03.192576Z",
+  "updated_at": "2026-10-12T16:18:54.581123Z"
+}

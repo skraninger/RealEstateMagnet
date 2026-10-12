@@ -101,6 +101,41 @@ class CommunityStore:
             raise
         return path
 
+    # ── demographics maintenance ───────────────────────────────────────────
+
+    def dedupe_demographics_history(self, dry_run: bool = False) -> int:
+        """Drop duplicate value entries from every stored ``demographics_history``.
+
+        Uses the same value identity as :func:`merge_facts` (ignoring geography
+        level and source), and also drops history entries equal to the current
+        ``demographics``. Returns the number of entries removed (or that *would*
+        be removed when ``dry_run`` is true).
+        """
+        if not self.communities_dir.exists():
+            return 0
+        removed = 0
+        for path in sorted(self.communities_dir.glob("*.json")):
+            record = CommunityRecord.model_validate_json(
+                path.read_text(encoding="utf-8")
+            )
+            seen: set[tuple] = set()
+            if record.demographics is not None:
+                seen.add(_demographics_key(record.demographics))
+            kept: list[Demographics] = []
+            file_removed = 0
+            for entry in record.demographics_history:
+                key = _demographics_key(entry)
+                if key in seen:
+                    file_removed += 1
+                    continue
+                seen.add(key)
+                kept.append(entry)
+            removed += file_removed
+            if file_removed and not dry_run:
+                record.demographics_history = kept
+                self.save_community(record)
+        return removed
+
     # ── research log ───────────────────────────────────────────────────────
 
     def append_research_log(self, entries: list[ResearchLogEntry]) -> None:
@@ -134,6 +169,17 @@ def _amenity_key(a: AmenityFact) -> tuple:
 
 def _proximity_key(p: ProximityMetric) -> tuple:
     return (p.category, p.nearest_name or "", round(p.distance_miles or 0.0, 2), p.source_url)
+
+
+def _demographics_key(d: Demographics) -> tuple:
+    """Value identity of a demographics entry (ignores geography_level/source)."""
+    return (
+        d.median_age,
+        d.median_household_income,
+        d.owner_occupancy_pct,
+        d.population,
+        d.data_year,
+    )
 
 
 def detect_discrepancies(record: CommunityRecord) -> list[Discrepancy]:
@@ -207,11 +253,17 @@ def merge_facts(record: CommunityRecord, facts: CommunityFacts) -> list[Discrepa
     if facts.demographics is not None:
         incoming = facts.demographics
         current = record.demographics
+        incoming_key = _demographics_key(incoming)
         if current is None or incoming.retrieved_at >= current.retrieved_at:
-            if current is not None:
-                record.demographics_history.append(current)
+            if current is not None and _demographics_key(current) != incoming_key:
+                if _demographics_key(current) not in {
+                    _demographics_key(h) for h in record.demographics_history
+                }:
+                    record.demographics_history.append(current)
             record.demographics = incoming
-        else:
+        elif incoming_key != _demographics_key(current) and incoming_key not in {
+            _demographics_key(h) for h in record.demographics_history
+        }:
             record.demographics_history.append(incoming)
 
     proximity_keys = {_proximity_key(p) for p in record.proximity}

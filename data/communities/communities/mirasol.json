@@ -1,0 +1,115 @@
+{
+  "id": "77490a18-c8fd-4afc-afa1-822494c8b96f",
+  "identity": {
+    "name": "Mirasol",
+    "slug": "mirasol",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Mirasol Club & Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Master-planned gated golf community in Palm Beach Gardens, FL 33418 spanning ~2,300 acres across 23 neighborhoods, with 36 holes of golf and the private Country Club at Mirasol. Governed primarily by Mirasol Club & Association, Inc. (mandatory membership, established 04/11/2000, address 115 Olivera Way, West Palm Beach, FL 33418), plus a Mirasol Master Maintenance Association and village/sub-HOAs (e.g., Mirabella at Mirasol Homeowners' Association, Inc.)."
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N00000002392",
+      "retrieved_at": "2026-10-12T16:23:52.690143Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fee required (mandatory membership in Mirasol Club & Association, Inc.). Specific monthly/quarterly master and village fees, transfer fees, capital contributions, and special assessments vary by membership category (Golf, Sports, Social) and neighborhood; figures not uniformly published in public sources — verify directly with the association/property manager (FPMS, 5600 Granada Dr, Sarasota, FL 34231, 941-960-5000)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690156Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two 18-hole championship golf courses (36 holes total) at the private Country Club at Mirasol (mirasolcc.com)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690164Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Large clubhouse with dining"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690167Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis and pickleball courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690170Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Tennis and pickleball courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690172Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690174Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690176Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Multiple pools, including community pool"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690178Z",
+      "confidence": 0.5,
+      "amenity": "sports_complex",
+      "detail": "Sports complex with additional recreational facilities"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690181Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Natural preserves and walking areas"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:23:52.690183Z",
+      "confidence": 0.5,
+      "amenity": "gate",
+      "detail": "Gated community"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Palm-Beach-County/Palm-Beach-Gardens/Mirasol-Demographics.html",
+    "retrieved_at": "2026-10-12T16:23:52.690187Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 4346,
+    "data_year": null,
+    "geography_level": "neighborhood (Mirasol, Palm Beach Gardens, FL 33418, Palm Beach County, FL)"
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-12T16:23:52.690805Z",
+  "updated_at": "2026-10-12T16:23:52.690914Z"
+}

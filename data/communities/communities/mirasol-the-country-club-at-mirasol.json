@@ -1,0 +1,305 @@
+{
+  "id": "7924cf68-bb54-4518-b640-9b184f254640",
+  "identity": {
+    "name": "Mirasol (The Country Club at Mirasol)",
+    "slug": "mirasol-the-country-club-at-mirasol",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Mirasol Homeowners Association / The Country Club at Mirasol HOA",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Mirasol is a large master-planned community in Palm Beach Gardens, Florida. The Country Club at Mirasol is the golf-oriented portion of the community, centered around an 18-hole golf course. The community features multiple neighborhoods, gated entry, and a range of recreational amenities. It is one of the larger planned communities in the Palm Beach Gardens area."
+  },
+  "fees": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819799Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA dues for the golf community portion are typically higher than non-golf sections. Estimated range $300–$700/month depending on lot type and whether golf privileges are included. Exact amounts vary by sub-association and should be verified with the HOA directly. Confidence is low due to lack of a specific verified figure. Confidence: 0.40 (approximate range only)."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819808Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Mirasol has a Community Development District (CDD) that levies annual assessments to service infrastructure and debt. Typical CDD assessments for communities of this type and age range from approximately $300–$900/year, decreasing over time as bonds are paid down. Exact current amount should be verified with the CDD or county property appraiser. Confidence: 0.40 (approximate range only)."
+    },
+    {
+      "source_url": "https://trolto.com/agent/tara-pressley/blog/hoa-fees-palm-beach-gardens-communities-mirasol-frenchmans-creek",
+      "retrieved_at": "2026-10-12T16:26:56.481834Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 900.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fees typically run $900-$1,400/month depending on the specific village and home square footage (range low end). Fees change annually; verify with HOA. Source is a realtor blog (Sept 2026)."
+    },
+    {
+      "source_url": "https://trolto.com/agent/tara-pressley/blog/hoa-fees-palm-beach-gardens-communities-mirasol-frenchmans-creek",
+      "retrieved_at": "2026-10-12T16:26:56.481842Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 1400.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "High end of the typical $900-$1,400/month HOA fee range reported for Mirasol villages."
+    },
+    {
+      "source_url": "https://trolto.com/agent/tara-pressley/blog/hoa-fees-palm-beach-gardens-communities-mirasol-frenchmans-creek",
+      "retrieved_at": "2026-10-12T16:26:56.481844Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 75000.0,
+      "period": null,
+      "currency": "USD",
+      "note": "Mandatory club membership: equity membership initiation fees have historically ranged from $75,000 to over $100,000, with monthly club dues layered on top of the HOA fee (low end of initiation range)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:26:56.481846Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Three-layer governance (club, master, village) plus special district assessments apply; specific CDD/special assessment amounts are not published in public sources and vary by sub-association. Verify directly with the HOA."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819813Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "18-hole golf course at the heart of The Country Club at Mirasol; the community is named for and organized around this course. Confidence: 0.75."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819822Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Golf clubhouse with dining and event space. Confidence: 0.70."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819824Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community swimming pool(s) for residents. Confidence: 0.65."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819827Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness/exercise center available to residents. Confidence: 0.60."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819829Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking and nature trails throughout the community. Confidence: 0.60."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819831Z",
+      "confidence": 0.5,
+      "amenity": "gate",
+      "detail": "Gated community entry with security. Confidence: 0.80."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819833Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis and/or pickleball courts available in the community. Confidence: 0.50."
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481850Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "36 holes of championship golf: two 18-hole courses designed by Arthur Hills and Tom Fazio; has hosted the PGA Tour Honda Classic four times"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481858Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Dedicated Tennis Center / racquet sports"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481861Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "The Esplanade - fitness, spa, and aquatics destination"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481863Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa at The Esplanade"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481865Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Aquatics at The Esplanade; multiple pools per club descriptions"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481867Z",
+      "confidence": 0.5,
+      "amenity": "sports_complex",
+      "detail": "Family-friendly Sports Complex"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481869Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Superb dining and social offerings at the club"
+    },
+    {
+      "source_url": "https://mirasolcc.com/",
+      "retrieved_at": "2026-10-12T16:26:56.481871Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Private, gated enclave"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:26:56.481873Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Natural preserves and walking areas; ~850 acres of Audubon Cooperative Sanctuary certified preserve"
+    },
+    {
+      "source_url": "https://hoa-community.com/mirasol-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T16:26:56.481875Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Listed among community features (gym/exercise room, clubhouse, pool, sauna, golf)"
+    }
+  ],
+  "demographics": {
+    "source_url": "ai:condensed",
+    "retrieved_at": "2026-10-12T16:21:13.819837Z",
+    "confidence": 0.35,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": null,
+    "geography_level": "community (approximate, not a formal census geography)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819842Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Palm Beach Gardens shopping centers (e.g., areas along Military Trail and Royal Palm Boulevard)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819844Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Grocery stores in Palm Beach Gardens (e.g., Publix, Winn-Dixie, or similar chains along major corridors)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819846Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Palm Beach Gardens Public Library",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819847Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Area hospitals in Palm Beach Gardens / West Palm Beach (e.g., Palm Beach Gardens Medical Center or West Palm Beach area facilities)",
+      "distance_miles": 8.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T16:21:13.819848Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Palm Beach Gardens School District schools (elementary through high school)",
+      "distance_miles": 2.0
+    }
+  ],
+  "open_questions": [
+    "Demographics (median age, median household income, owner-occupancy %, population) for Mirasol or Palm Beach Gardens could not be verified: censusreporter.org search returned no results and a direct profile URL guess 404'd. Search budget exhausted.",
+    "Proximity to shopping, grocery, library, hospital, and schools with distances could not be verified within the search budget.",
+    "Exact current HOA fee amounts vary by village/sub-association and membership category (Golf, Sports, Social); only the $900-$1,400/month range from a realtor blog was found. Verify via estoppel from Mirasol Club & Association, Inc. (11600 Mirasol Way, Palm Beach Gardens, FL 33418; (561) 776-4949).",
+    "CDD/special district assessment amounts are not published in public sources; confirm with the HOA or Palm Beach County property appraiser.",
+    "Club membership initiation fee ($75,000-$100,000+) and monthly club dues are historical figures from a blog; current amounts unverified.",
+    "Pet policy specifics could not be verified (rules managed at master/village levels per aggregator)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.cdd_assessment",
+      "values": [
+        {
+          "amount": null,
+          "period": "annual",
+          "source_url": "ai:condensed",
+          "retrieved_at": "2026-10-12T16:21:13.819808+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/mirpbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T16:26:56.481846+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:26:56.482377Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "ai:condensed",
+          "retrieved_at": "2026-10-12T16:21:13.819799+00:00"
+        },
+        {
+          "amount": 900.0,
+          "period": "monthly",
+          "source_url": "https://trolto.com/agent/tara-pressley/blog/hoa-fees-palm-beach-gardens-communities-mirasol-frenchmans-creek",
+          "retrieved_at": "2026-10-12T16:26:56.481834+00:00"
+        },
+        {
+          "amount": 1400.0,
+          "period": "monthly",
+          "source_url": "https://trolto.com/agent/tara-pressley/blog/hoa-fees-palm-beach-gardens-communities-mirasol-frenchmans-creek",
+          "retrieved_at": "2026-10-12T16:26:56.481842+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:26:56.482385Z"
+    }
+  ],
+  "created_at": "2026-10-12T16:21:13.820399Z",
+  "updated_at": "2026-10-12T16:26:56.482518Z"
+}

@@ -1,0 +1,400 @@
+{
+  "id": "644fbe79-7abd-4865-a348-fe49010386a5",
+  "identity": {
+    "name": "Doral Estates",
+    "slug": "doral-estates",
+    "county_fips": null,
+    "city": "Doral, FL",
+    "hoa_name": "Doral Estates Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Doral Estates is an exclusive gated community within the City of Doral, Florida, comprising three residential areas: The Homes of Doral Estates, Doral Colony Townhomes, and The Fairway Villas. The ~71.3-acre community (HOA registered 1979) is set among lakes and the six golf courses of the Doral Country Club, where residents may drive to the club in their own golf carts. It is known for spacious single-family homes, quiet streets, and proximity to Downtown Doral, major expressways, and nearby shopping and fine dining."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.communitypay.us/directory/florida/miami/doral-estates-homeowners-association-inc/",
+      "retrieved_at": "2026-10-09T20:31:11.182330Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA (Doral Estates Homeowners Association, Inc., est. 1979) resale-certificate disclosures confirm regular periodic assessments are levied, but no specific dollar amount is stated in the directory content; amount fields are left blank in the disclosed template. No management company on file; agent of record is Frank Perez-Siam P.A."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817049Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 498.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "BEX Realty: HOA fees for Doral Estates homes range $498-$848 (varies by home). Includes common area maintenance, grounds, building maintenance, roof repair/replacement, security, property insurance, trash removal, cable TV & internet, parking, recreation facilities. Listing-site figure; confirm via HOA estoppel (mgmt 305-591-8715). No CDD/special assessment data found in public sources. Conflicting range reported separately in next fee fact (per source-conflict rule)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dedofl/about_hoa/",
+      "retrieved_at": "2026-10-09T20:52:27.817060Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 300.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA Bulletin Board aggregator: monthly HOA fees typically ~$300-$848 or higher depending on property type and size; exact amounts vary and specific schedules/assessments not in public sources. Aggregator site, lower confidence; do not reconcile with BEX range."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=749026",
+      "retrieved_at": "2026-10-09T20:52:27.817062Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Florida HOA registry: Doral Estates Homeowners Association, Inc. (est. 09/21/1979, Federal ID 592112599, single-family association at 5494 NW 94th Doral Pl, Miami FL 33178) - 'HOA Fee Required' (no dollar amount published). Registry lists property manager as 'DORAL MANAGEMENT COMPANY' (3300 NW 112 Ave Ste 13, Doral FL 33172, 305-591-8715); hoabulletinboard instead names 'Unlimited Property Management' - same address/phone, name discrepancy to confirm."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182339Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Gated entry confirmed by multiple sources; 24-hour security guard on site."
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182347Z",
+      "confidence": 0.7,
+      "amenity": "24_hr_security_guard",
+      "detail": null
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182350Z",
+      "confidence": 0.7,
+      "amenity": "pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182352Z",
+      "confidence": 0.7,
+      "amenity": "covered_and_uncovered_parking",
+      "detail": null
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182355Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Access to the six golf courses of the Doral Country Club; residents may drive to the club in their own golf carts."
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182357Z",
+      "confidence": 0.5,
+      "amenity": "lakes_and_walking_areas",
+      "detail": "Residential areas walk through lakes along the Doral Country Club grounds."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=749026",
+      "retrieved_at": "2026-10-09T20:52:27.817066Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "HOA registry lists 'Gated Community' among Doral Estates amenities."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817075Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "BEX Realty lists a championship golf course among sports facilities; community is a golf community (adjacent to Doral Country Club / Trump National Doral per other sources)."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817078Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming pool listed among Doral Estates amenities (also confirmed by hoa-resource.com 'Pool' feature)."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817079Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse listed as a Doral Estates amenity."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817082Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness center listed as a Doral Estates amenity."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817084Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts listed as a Doral Estates sports facility."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817086Z",
+      "confidence": 0.5,
+      "amenity": "hobby_room",
+      "detail": "Hobby room listed as a Doral Estates amenity."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817088Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Community park listed among Doral Estates amenities."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/dedofl/about_hoa/",
+      "retrieved_at": "2026-10-09T20:52:27.817114Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "HOA Bulletin Board lists walking trails, plus 24/7 gated security, lake/golf views, and access to nearby golf facilities for Doral Estates."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817117Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "BEX Realty: Doral Estates HOA rules allow pets, with a limitation on pet size. Exact breed/size limits not published - obtain full rules from HOA."
+    },
+    {
+      "source_url": "https://www.echofineproperties.com/communities/doral/doral-estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817131Z",
+      "confidence": 0.5,
+      "amenity": "membership_dues_structure",
+      "detail": "Echo Fine Properties: gated entrance with controlled access; no mandatory club or recreational memberships; HOA fees typically cover gate maintenance, common areas, and community management (amount varies)."
+    },
+    {
+      "source_url": "https://www.pgatour.com/article/news/needtoknow/2026/4/27/five-things-to-know-trump-national-doral-golf-course-cadillac-championship-miami-signature-event-blue-monster-scottie-scheffler",
+      "retrieved_at": "2026-10-09T20:52:27.817133Z",
+      "confidence": 0.5,
+      "amenity": "golf_adjacent_club",
+      "detail": "PGA Tour: the Doral Country Club (founding name of the six-course complex surrounding Doral Estates) was renamed Trump National Doral after 2012 acquisition; residents' cart access to the club is per buyer notes, not confirmed on this page."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://statedemographics.com/florida/doral/",
+    "retrieved_at": "2026-10-09T20:52:27.817144Z",
+    "confidence": 0.5,
+    "median_age": 37.1,
+    "median_household_income": 94164.0,
+    "owner_occupancy_pct": 46.5,
+    "population": 79216,
+    "data_year": 2024,
+    "geography_level": "City of Doral, FL (ACS 5-year 2020-2024; Doral Estates has no separate Census geography). Cross-checked: Point2 (ACS 2019-2023) shows same population 79,216, median age 37, owner-occupancy 46.5%, median income $94,164. Census Reporter shows Doral pop 83,620 (newer vintage) - discrepancy noted in open questions. City is 85.5% Hispanic/Latino per this source."
+  },
+  "demographics_history": [
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-02-10T12:00:00Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 66416,
+      "data_year": 2024,
+      "geography_level": "city (Doral, FL — used as proxy; page does not describe a Doral Estates community specifically). Median age 38.7; population growth 178.2% from 2009–2024; largest generation Millennials (29–44) at 26.3% of residents; women 51.2%, men 48.8%; median household income $93,986 (about 26% above Florida average of $74,580); unemployment rate 3.1%; median home price $1,080,754; median rent $2,676/mo; 51.4% of residents have a bachelor's degree or higher; average household size 3.08; life expectancy 82.8 years; one-way commute 23.3 min (round trip 46.7 min)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2025-07-11T00:00:00Z",
+      "confidence": 0.8,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 75874,
+      "data_year": 2020,
+      "geography_level": "City (Doral, Florida) - U.S. Census Bureau QuickFacts, 2020-2024 ACS estimates where noted. Population estimate July 1, 2025: 81,634. Hispanic or Latino: 85.5%. Foreign-born: 70.3%. Median value of owner-occupied housing: $562,800. Median gross rent: $2,669. Median household income: $94,164 (in 2024 dollars). Owner-occupied rate: 46.5%. Households: 26,138. Persons per household: 3.03. Persons 65+: 8.9%. Persons under 18: 24.5%. Bachelor's degree or higher (25+): 59.2%."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182362Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Doral (shopping and fine dining)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182365Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Doral Country Club (six golf courses)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://faccinmiami.com/development/?d=-313",
+      "retrieved_at": "2026-10-09T20:31:11.182366Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Major expressways",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.cushmanwakefield.com/en/united-states/news/2026/08/doral-marketplace-investment-sale",
+      "retrieved_at": "2026-10-09T20:52:27.817151Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Doral Marketplace (Whole Foods-anchored, 83,365 sq ft; also Ulta, J. Crew, Warby Parker)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.sedanos.com/stores/doral-33",
+      "retrieved_at": "2026-10-09T20:52:27.817155Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Sedano's Supermarkets #33, 10780 NW 58th St, Doral FL 33178 (open 7AM-10PM daily; pet department, cafeteria)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-doral",
+      "retrieved_at": "2026-10-09T20:52:27.817157Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library System, Doral Branch, 8551 NW 53 Street A107, Doral FL 33166 (305-716-9598)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.wellness.com/dir/6752457/hospital/baptist-health-hospital-doral/doral/fl/directions/9500-nw-58-st-doral-fl/33178",
+      "retrieved_at": "2026-10-09T20:52:27.817158Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Baptist Health Hospital | Doral, 9500 NW 58 St, Doral FL 33178 (24/7 emergency care, imaging, surgery; 43,000 sq ft, off Palmetto Expressway)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.rubendarioms.com/contact-us/",
+      "retrieved_at": "2026-10-09T20:52:27.817159Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Ruben Dario Middle School (MDCPS, grades 6-8), 350 NW 97th Ave, Miami/Doral FL 33172",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://ronaldwreagandoralshs.net/contact-us/",
+      "retrieved_at": "2026-10-09T20:52:27.817161Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Ronald W. Reagan/Doral Senior High School (MDCPS, magnet/AICE), 8600 NW 107th Ave, Doral FL 33178",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817162Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport (MIA)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+      "retrieved_at": "2026-10-09T20:52:27.817163Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fort Lauderdale-Hollywood International Airport (FLL)",
+      "distance_miles": 21.0
+    }
+  ],
+  "open_questions": [
+    "Exact per-parcel HOA dues: sources conflict (BEX $498-$848/mo; hoabulletinboard ~$300-$848+/mo; an alexialtuve.com article's search snippet cited ~$400-$1,373/mo but that page could not be loaded/verified). Obtain estoppel certificate from Doral Estates HOA (mgmt 305-591-8715) before purchase.",
+    "No CDD or special-assessment information found for Doral Estates; confirm whether any CDD district or upcoming assessments exist.",
+    "Management company name discrepancy: 'Unlimited Property Management' (hoabulletinboard) vs 'Doral Management Company' (florida-hoa.net), same address/phone - confirm current manager.",
+    "Demographics are at City of Doral level only; Doral Estates itself (71.3 acres) has no Census geography. Census Reporter shows Doral population 83,620 (2024 vintage) vs ACS 79,216 - vintages differ.",
+    "School zone assignment for Doral Estates not verified: homes.com search snippets list John I. Smith K-8 Center, Ruben Dario Middle, and Reagan/Doral SHS as 'nearby schools' for Doral Estates addresses, but the homes.com pages blocked reading; John I. Smith K-8's address was not independently verified. Confirm zoned schools with MDCPS.",
+    "Mile distances to the library, hospital, schools, and shopping centers were not published on any page read (only addresses confirmed); the only explicit distances seen were airports (MIA 4 mi, FLL 21 mi per BEX).",
+    "Resident golf-cart access to Doral Country Club / Trump National Doral is stated in buyer notes but not confirmed on a readable source; BEX lists a 'championship golf course' and florida-hoa.net lists 'Golf Community' as amenities - clarify what golf access is included in dues vs club membership.",
+    "Pet policy specifics (size/breed limits) beyond 'limitation on pet size' (BEX) not found - obtain full HOA rules.",
+    "Whole Foods Doral address at Doral Marketplace: Cushman & Wakefield confirms the center at 10800 NW 41st St, Doral FL 33178, but the Whole Foods store page itself did not display an address."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 498.0,
+          "period": "monthly",
+          "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/",
+          "retrieved_at": "2026-10-09T20:52:27.817049+00:00"
+        },
+        {
+          "amount": 300.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/dedofl/about_hoa/",
+          "retrieved_at": "2026-10-09T20:52:27.817060+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T21:00:30.609883Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Doral Country Club (six golf courses)",
+          "distance_miles": null,
+          "source_url": "https://faccinmiami.com/development/?d=-313"
+        },
+        {
+          "nearest_name": "Major expressways",
+          "distance_miles": null,
+          "source_url": "https://faccinmiami.com/development/?d=-313"
+        },
+        {
+          "nearest_name": "Miami International Airport (MIA)",
+          "distance_miles": 4.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/"
+        },
+        {
+          "nearest_name": "Fort Lauderdale-Hollywood International Airport (FLL)",
+          "distance_miles": 21.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Doral/Doral-Estates/"
+        }
+      ],
+      "detected_at": "2026-10-09T21:00:30.609888Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Ruben Dario Middle School (MDCPS, grades 6-8), 350 NW 97th Ave, Miami/Doral FL 33172",
+          "distance_miles": null,
+          "source_url": "https://www.rubendarioms.com/contact-us/"
+        },
+        {
+          "nearest_name": "Ronald W. Reagan/Doral Senior High School (MDCPS, magnet/AICE), 8600 NW 107th Ave, Doral FL 33178",
+          "distance_miles": null,
+          "source_url": "https://ronaldwreagandoralshs.net/contact-us/"
+        }
+      ],
+      "detected_at": "2026-10-09T21:00:30.609890Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Downtown Doral (shopping and fine dining)",
+          "distance_miles": null,
+          "source_url": "https://faccinmiami.com/development/?d=-313"
+        },
+        {
+          "nearest_name": "Doral Marketplace (Whole Foods-anchored, 83,365 sq ft; also Ulta, J. Crew, Warby Parker)",
+          "distance_miles": null,
+          "source_url": "https://www.cushmanwakefield.com/en/united-states/news/2026/08/doral-marketplace-investment-sale"
+        }
+      ],
+      "detected_at": "2026-10-09T21:00:30.609892Z"
+    }
+  ],
+  "created_at": "2026-10-09T20:31:11.182951Z",
+  "updated_at": "2026-10-09T21:00:30.609953Z"
+}

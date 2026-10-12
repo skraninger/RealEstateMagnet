@@ -1,0 +1,275 @@
+{
+  "id": "ad711ee2-ffaa-498d-91a3-9edf820c76ab",
+  "identity": {
+    "name": "Four Seasons Residences Naples (Naples Beach Club Residences)",
+    "slug": "four-seasons-residences-naples-naples-beach-club-residences",
+    "county_fips": null,
+    "city": "Naples, Florida",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "No extractable details available. The HOA fee comparison table excerpt only listed communities alphabetically from Andalucia through Bay Colony (cut off before the \"F\" entries), so no Four Seasons fee data was present. All fourseasons.com source pages (magazine feature and services-and-amenities) returned \"Access Denied\" (403) errors and contained no content."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060195Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 2.52,
+      "period": "per sq ft per month",
+      "currency": "USD",
+      "note": "Pre-sale estimate from a 2021 developer newsletter cited by the listing site: HOA dues ~$2.52/sq ft/month. Page flags this as a rough early estimate that may evolve; no current post-delivery figure was published on any page read. Dues reportedly cover resort services, amenities, maintenance, landscaping and building systems, plus access to hotel/resort facilities. Listing-site sourced, low confidence until confirmed with the association/developer. No CDD assessment data found."
+    },
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060207Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 150000.0,
+      "period": "one-time initiation (est.)",
+      "currency": "USD",
+      "note": "Vertical/club membership structure: estimated ~$150,000 initiation fee to access certain club/golf privileges; only residents (not the general public) may buy the membership. 2021 pre-sale newsletter estimate via listing site."
+    },
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060210Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 40000.0,
+      "period": "annual (est.)",
+      "currency": "USD",
+      "note": "Estimated ~$40,000/year club dues associated with the vertical membership structure (2021 pre-sale newsletter estimate via listing site)."
+    },
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060212Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 200000.0,
+      "period": "one-time initiation (est.)",
+      "currency": "USD",
+      "note": "Separate golf club membership projected at ~$200,000 entrance (2021 pre-sale newsletter estimate via listing site)."
+    },
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060213Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 27500.0,
+      "period": "annual (est.)",
+      "currency": "USD",
+      "note": "Estimated ~$27,500/year golf club membership dues (2021 pre-sale newsletter estimate via listing site)."
+    },
+    {
+      "source_url": "https://www.agent4naples.com/naples-beach-club-market-report/",
+      "retrieved_at": "2026-10-09T22:02:17.060215Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No dollar figures published, but this market report confirms the ownership-cost stack has multiple layers: building condominium fees, master-community obligations, Four Seasons residential-service charges (concierge, valet, housekeeping, optional services, possible additional usage charges), operating budgets, reserve funding, master insurance/deductibles, developer-controlled association provisions, plus separately purchased Club/golf membership (initiation, dues, transfer provisions). Buyers are advised not to rely on a single advertised fee figure."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.naplescondoboutique.com/residences-at-naples-beach-club/",
+      "retrieved_at": "2026-10-09T22:02:17.060220Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Residential amenities include two pools with jacuzzis, an outdoor bar and restaurant, spa, fitness center, member lounge and concierge services; residents also get access to resort amenities including six tennis courts, a two-story spa (treatment rooms, Finnish saunas, vitality pools, cold plunge zones, experiential showers, rooftop pool) and five restaurants (two beachfront). A Tom Fazio-designed championship golf course is planned."
+    },
+    {
+      "source_url": "https://www.whatahotel.com/hotels/6813/Four-Seasons-Naples-Beach-Club.html",
+      "retrieved_at": "2026-10-09T22:02:17.060232Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "30,000 sq ft tri-level Sanctuary Spa with 16 treatment rooms (incl. 3 VIP couples suites), thermal circuit with aromatherapy steam rooms, Finnish saunas, ice rooms, vitality pools, plus rooftop lap pool."
+    },
+    {
+      "source_url": "https://www.whatahotel.com/hotels/6813/Four-Seasons-Naples-Beach-Club.html",
+      "retrieved_at": "2026-10-09T22:02:17.060235Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "24-hour fitness center with Technogym equipment, free weights and personal-training spaces."
+    },
+    {
+      "source_url": "https://www.whatahotel.com/hotels/6813/Four-Seasons-Naples-Beach-Club.html",
+      "retrieved_at": "2026-10-09T22:02:17.060238Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "New 18-hole Tom Fazio-designed course 'The Gardens' (~100 acres) with practice facilities, scheduled to open late 2026; described as a members-only experience (membership required, separate from condo ownership)."
+    },
+    {
+      "source_url": "https://www.whatahotel.com/hotels/6813/Four-Seasons-Naples-Beach-Club.html",
+      "retrieved_at": "2026-10-09T22:02:17.060241Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Racquet Club with six championship Har-Tru clay tennis courts; also beach volleyball and water sports (kayaking, paddleboarding, eFoiling, boogie boarding, WaveRunner, private fishing charters)."
+    },
+    {
+      "source_url": "https://justinfalta.com/blog/four-seasons-residences-at-naples-beach-club-what-is-open-as-of-october-2026",
+      "retrieved_at": "2026-10-09T22:02:17.060243Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_residents_beach_club",
+      "detail": "Private Residents' Beach Club with indoor-outdoor dining, member lounge, spa and fitness, separate from hotel guests; Residents' Beach House with adult and family pools, beach concierge and coastal dining; resort access includes six tennis courts, two-story spa and rooftop pool; Market Square adds retail, a sports pub with bowling and a first-run cinema."
+    },
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060246Z",
+      "confidence": 0.5,
+      "amenity": "market_square_shops_dining_recreation",
+      "detail": "Central walkable hub designed with shops, cafes, casual dining, cinema, kids' club, bowling, fire pits, leisure lawns, gathering porch/ice-cream pavilion and indoor/outdoor movie programming; plus dedicated Beachside Residents' lounge, private dining rooms, wine room and card/event rooms."
+    },
+    {
+      "source_url": "https://www.whatahotel.com/hotels/6813/Four-Seasons-Naples-Beach-Club.html",
+      "retrieved_at": "2026-10-09T22:02:17.060250Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Five restaurants/bars: The Merchant Room (two-time James Beard Award winner Gavin Kaysen), HB's on the Gulf, Sunset Bar, The Wager lobby bar, and 24-hour in-room dining."
+    },
+    {
+      "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+      "retrieved_at": "2026-10-09T22:02:17.060253Z",
+      "confidence": 0.5,
+      "amenity": "beach",
+      "detail": "About 1,000 feet of white-sand Gulf frontage; resort maintains beach services (chairs, umbrellas, cabanas) and beach concierge; owners have direct beach access."
+    },
+    {
+      "source_url": "https://www.naplescondoboutique.com/residences-at-naples-beach-club/",
+      "retrieved_at": "2026-10-09T22:02:17.060255Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy_rental_restrictions",
+      "detail": "Owners allowed up to two pets with a maximum weight limit of 90 pounds per pet. Rentals are NOT allowed at the Residences at Naples Beach Club."
+    },
+    {
+      "source_url": "https://www.whatahotel.com/hotels/6813/Four-Seasons-Naples-Beach-Club.html",
+      "retrieved_at": "2026-10-09T22:02:17.060258Z",
+      "confidence": 0.5,
+      "amenity": "kids_teen_programming_events",
+      "detail": "FIN's Club for ages 4-12 (beach games, crafts, treasure hunts), Teen Centre with movies/video games, 32,000+ sq ft of meeting/event space, and complimentary luxury e-bikes for exploring Old Naples."
+    },
+    {
+      "source_url": "https://www.naplescondoboutique.com/residences-at-naples-beach-club/",
+      "retrieved_at": "2026-10-09T22:02:17.060261Z",
+      "confidence": 0.5,
+      "amenity": "concierge_services",
+      "detail": "Four Seasons concierge services and full-service branded-residence environment; per market-report coverage, the residential service program includes concierge, valet and optional housekeeping (details to be verified against the current residential-services schedule)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Naples/Coquina-Sands-Demographics.html",
+    "retrieved_at": "2026-10-09T22:02:17.060267Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 817,
+    "data_year": 2023,
+    "geography_level": "Census neighborhood: Coquina Sands, Naples, FL (ACS 2019-2023 5-year estimates). The Four Seasons Residences community itself is new construction (2025-2029) and has no Census data of its own; this describes the surrounding neighborhood (Gulf Shore Blvd N, Coquina Sands/Old Naples). Conflicting figures exist: population 1,607 per sandraedwardsnaples.com (U.S. Census Bureau) and ~1,254 per proximitii.com; median age 63 per proximitii.com. See open_questions. Point2 page also reports: average household income $274,736 (2024), 51.5% of population 65+, 402 households, median gross rent $1,675/mo, median construction year 1979. sandraedwardsnaples.com reports 1,607 population, median age 66, average individual income $135,056, 866 households. proximitii.com adds: home values ~$1,398,734, average rent $1,751, 10-15 minute drive to downtown Naples, median household income $150,193 (snippet)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://sandraedwardsnaples.com/neighborhoods/coquina-sands",
+      "retrieved_at": "2026-10-09T22:02:17.060280Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": 0.67
+    },
+    {
+      "source_url": "https://sandraedwardsnaples.com/neighborhoods/coquina-sands",
+      "retrieved_at": "2026-10-09T22:02:17.060284Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": 0.82
+    },
+    {
+      "source_url": "https://www.proximitii.com/usa/fl/naples/coquina+sands/",
+      "retrieved_at": "2026-10-09T22:02:17.060285Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix (listed among nearest groceries in Coquina Sands; also Jimmy P's Butcher Shop & Deli; no mileage given on page)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://library.collier.gov/About-Us/Locations/Naples-Regional-Branch",
+      "retrieved_at": "2026-10-09T22:02:17.060287Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Collier County Public Library - Naples Regional Branch, 650 Central Ave, Naples, FL 34102 (downtown, between 3rd St S and 5th Ave S; no distance from the community stated on page)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hospitalsandclinics.net/hospital/naples-community-hospital-5179",
+      "retrieved_at": "2026-10-09T22:02:17.060288Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Naples Community Hospital (NCH), 350 7th St N, Naples, FL - acute care, 532 beds, 24/7 ER; no distance from the community stated on page",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.proximitii.com/usa/fl/naples/coquina+sands/",
+      "retrieved_at": "2026-10-09T22:02:17.060290Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Nearby top-rated schools listed without distances: Gulfview Middle School (255 6th St S), Lake Park Elementary (1295 14th Ave N), Naples High School (1100 Golden Eagle Cir), St. Ann School (542 8th Ave S), Beacon High School (3710 Estey Ave). Which is nearest to Gulf Shore Blvd N is not stated on the page.",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "CURRENT FEE FIGURES UNVERIFIED: No post-delivery (2025-2026) HOA/condo fee amounts were published on any page read. The only numbers found are pre-sale (2021 newsletter) estimates via a listing site: ~$2.52/sq ft/month HOA, ~$150K club initiation + ~$40K/yr, ~$200K golf entry + ~$27.5K/yr. The realtyofnaplesfl.com HOA fee comparison table (20 communities) does NOT include Four Seasons/Naples Beach Club. Buyer should request current association budget, reserve study and residential-services schedule from the developer/association.",
+    "OFFICIAL SOURCES BLOCKED: All fourseasons.com pages tried (residences/private_residences/naplesbeachclub and naplesbeachclub/getting-here) returned 'Access Denied' (403, Akamai edge), so official fee, amenity and distance statements could not be verified first-hand.",
+    "GATE/SECURITY: No explicit 'gated' or gatehouse/24-hour-guard documentation was found on any page read; the community is described as a private, walkable 125-acre coastal village with a Four Seasons security/service program. Confirm gated access and security staffing with the HOA.",
+    "MILE DISTANCES: No page read stated distances in miles from the community to 5th Avenue South, grocery, hospital, library or schools - only qualitative claims ('walking distance to 5th Avenue South and 3rd Street South', 'close to 5th Avenue South', '10-15 minute drive to Downtown Naples'). The only mile figures found are Coquina Sands-neighborhood Yelp-derived distances (shopping 0.67-0.82 mi, dining 0.69 mi, beauty 0.51-0.8 mi).",
+    "DEMOGRAPHIC CONFLICTS (Coquina Sands neighborhood): population 817 (Point2, ACS 2019-2023) vs 1,607 (sandraedwardsnaples.com) vs ~1,254 (proximitii.com); median age 66 vs 63; median household income $130,929 (Point2) vs $150,193 (proximitii snippet). Community-specific demographics do not exist yet (new construction).",
+    "RESIDENCE COUNT/SIZE CONFLICTS: 153 residences (most sources) vs 160 (theluxuryteam.com); minimum unit size 2,100-2,400 sq ft (naplesjamie.com, justinfalta.com) vs smallest 5,782 sq ft (theluxuryteam.com).",
+    "GOLF COURSE OPENING DATE CONFLICTS: fall/Q4 2026 (justinfalta.com, whatahotel.com, naplescoastalconnection.com) vs 2027 (bowersgroupnaples.com, citing Four Seasons materials as of May 2026).",
+    "PET POLICY: naplescondoboutique.com states up to 2 pets, max 90 lbs each, no rentals; naplescoastalconnection.com says definitive pet-friendliness confirmation was not found in its sources. Verify against final condo documents.",
+    "CONTEXT ONLY: Resort room rates from $1,100+/night standard, $3,000-5,000+ suites (floridacustomhomes.com); beachside pricing mid-$20M to $50M+, golfside ~$6.5M-$25M (listing sites) - not ownership fees."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 150000.0,
+          "period": "one-time initiation (est.)",
+          "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+          "retrieved_at": "2026-10-09T22:02:17.060207+00:00"
+        },
+        {
+          "amount": 40000.0,
+          "period": "annual (est.)",
+          "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+          "retrieved_at": "2026-10-09T22:02:17.060210+00:00"
+        },
+        {
+          "amount": 200000.0,
+          "period": "one-time initiation (est.)",
+          "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+          "retrieved_at": "2026-10-09T22:02:17.060212+00:00"
+        },
+        {
+          "amount": 27500.0,
+          "period": "annual (est.)",
+          "source_url": "https://www.naplescoastalconnection.com/naples-beach-club-condos-the-four-seasons-naples/",
+          "retrieved_at": "2026-10-09T22:02:17.060213+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.agent4naples.com/naples-beach-club-market-report/",
+          "retrieved_at": "2026-10-09T22:02:17.060215+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T22:02:17.061057Z"
+    }
+  ],
+  "created_at": "2026-10-09T21:39:41.249533Z",
+  "updated_at": "2026-10-09T22:02:17.061182Z"
+}

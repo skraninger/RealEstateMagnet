@@ -1,0 +1,299 @@
+{
+  "id": "f49dc81c-83be-46a6-8015-403dd84b5df9",
+  "identity": {
+    "name": "Boca Woods Country Club",
+    "slug": "boca-woods-country-club",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": "Boca Woods Country Club Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated single-family country club community in West Boca Raton along Boca Woods Lane (ZIP 33428), with about 645 homes built mainly in the 1980s, arranged around two golf courses. The HOA (established 07/22/1986; legal name BOCA WOODS COUNTRY CLUB ASSOCIATION, INC.; federal ID 592720777; address 10831 White Aspen Ln, Boca Raton FL 33428) maintains the gate, community pool, tennis courts, and common areas, while owners maintain their homes and yards. Property manager: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000. Third-party census-based data for the area: 6,476 residents, 2,245 households (avg 3 members), median construction year 1987, 53.9% Caucasian / 8.9% African American / 5.1% Asian, 49.6% male / 50.4% female, 16.7% age 65+, median housing cost ~$1,986/mo (truncated in source)."
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15995",
+      "retrieved_at": "2026-10-10T20:14:40.188428Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No specific HOA dues amount stated in available web content. Sources direct buyers to contact the property manager (FPMS, 941-960-5000) or the board for current fees, budget, and reserve study; confirm assessment status for the specific home before purchase."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983374Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 25045.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Full Golf annual dues 2025-2026: $25,045 to $25,543 depending on payment plan (6 or 12 months), plus 7% sales tax. Mandatory golf membership for most homes; some legacy homes may carry Social/Tennis-only membership (largely terminated to new purchasers). Effective March 3, 2026 per page (headline lists $150,000 total 2025-2026 fees). Realtor-published figures; verify with association (FPMS, 941-960-5000). Official HOA 'Schedule of Fees' PDFs (2022-2023, 2015-2016) exist on community/MLS media but could not be parsed (binary PDF). Confidence 0.6 (reputable listing, not official)."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983385Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 11724.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Associate Golf annual dues 2025-2026: $11,724 to $11,957 depending on payment plan (applies to family members over 25 still at home or a 3rd resident such as an in-law). Realtor-published; verify with association."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983387Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 125.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Monthly service charge $125 + tax (Single Service Charge $100 + tax). Realtor-published; verify with association."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983389Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 149000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Initiation fee for Full Golf membership, non-refundable (2025-2026). Realtor-published; verify with association."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983392Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Membership Certificate (Full Golf), $1,000, refundable upon future sale of the home. Realtor-published; verify with association."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983393Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 2000.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Annual dining room minimum: $2,000 + tax per membership ($1,000 + tax per single membership). Realtor-published; verify with association."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983395Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 182.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Monthly capital assessments for golf members: $84.00 (Golf Facilities Enhancement 2018) + $98.00 (Woods Course 2023 Assessment) = $182.00/mo. Social/Tennis members pay $50.40 + $58.80 = $109.20/mo. These are club capital assessments, not CDD assessments. Realtor-published; verify with association."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=751431",
+      "retrieved_at": "2026-10-10T20:14:40.188438Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Gated country club community around two golf courses (golf community designation per association listing)."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15995",
+      "retrieved_at": "2026-10-10T20:14:40.188446Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Community pool maintained by the association."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15995",
+      "retrieved_at": "2026-10-10T20:14:40.188449Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts maintained by the association."
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=751431",
+      "retrieved_at": "2026-10-10T20:14:40.188452Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center/gym referenced in community description."
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=751431",
+      "retrieved_at": "2026-10-10T20:14:40.188454Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse anchoring the pool, gym, and tennis facilities."
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15995",
+      "retrieved_at": "2026-10-10T20:14:40.188456Z",
+      "confidence": 0.5,
+      "amenity": "gate",
+      "detail": "Gated neighborhood; the association keeps the gate and enforces written standards."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983399Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two 18-hole championship golf courses (36 holes total) - The Woods and The Lakes (course names per isabellascott.com); The Woods renovated by Rees Jones, reopened Dec 2024, 7,000+ yards (per bocawoodscc.com/golf search snippet). Mandatory golf membership for most homes per isabellascott.com. Official community site; confidence 0.9."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983409Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24/7 gated access (gated community with controlled access). Official community site; confidence 0.9."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983412Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Premier tennis and pickleball courts. Official community site; confidence 0.9."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983414Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with 5-star country club dining; recently remodeled clubhouse, pool, and patio (per golfcoursehome.com search snippet). Official community site; confidence 0.9."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983417Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness and spa wellness offerings. Official community site; confidence 0.9."
+    },
+    {
+      "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+      "retrieved_at": "2026-10-10T20:20:44.983419Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "New Fitness and Spa 'Social Health Hub' with grand lobby, new Pro Golf and Tennis Shops, and new 2nd-floor fitness center and spa (recent renovations). Realtor-published; confidence 0.6."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983421Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "37 tranquil lakes on the property. Official community site; confidence 0.9."
+    },
+    {
+      "source_url": "https://www.bocawoodscc.com/",
+      "retrieved_at": "2026-10-10T20:20:44.983424Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool maintained by the HOA (per task notes; pool remodel referenced in golfcoursehome.com search snippet). Not explicitly detailed on pages read; confidence 0.5."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1207300-boca-raton-fl/",
+    "retrieved_at": "2026-10-10T20:20:44.983429Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 102235,
+    "data_year": null,
+    "geography_level": "city (Boca Raton, FL) - community-level figures not available on page read; page returned only headline stats (population 102,235; 29.2 sq mi; 3,503.9 people/sq mi). Census Reporter; confidence 0.9 for city population only."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Boca-Raton/Boca-Woods-County-Club-Demographics.html",
+      "retrieved_at": "2026-10-10T20:14:40.188460Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 6476,
+      "data_year": null,
+      "geography_level": "neighborhood (Boca Woods County Club area, Boca Raton FL 33428, per third-party census-based data; 2,245 households, median construction year 1987, 53.9% Caucasian, 8.9% African American, 5.1% Asian, 49.6% male / 50.4% female, 16.7% age 65+). Median household income and owner-occupancy rate not stated in source content (median housing cost cited as $1,986/mo, truncated)."
+    }
+  ],
+  "proximity": [],
+  "open_questions": [
+    "Official HOA 'Schedule of Fees' PDFs (2022-2023 and 2015-2016) located on community/MLS media (s3.amazonaws.com/flexmls-apidc-media) but returned raw binary and could not be parsed; exact current dues for the HOA's non-club obligations (gate, community pool, tennis courts, common areas) are unverified. All fee figures above are from a realtor's membership page and should be confirmed with the association (FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000).",
+    "hoa-agent.com profile conflicts with task notes: lists only 78 units (vs ~645 homes), entity number 5995 (vs federal ID 592720777), incorporation 02/29/1980 (vs 07/22/1986), and no resident-verified fees; pets/rental/commercial-vehicle restrictions listed as 'Unknown'.",
+    "Demographics: only city-level population (102,235, Boca Raton) could be verified. The area-level figures supplied in task notes (6,476 residents, 2,245 households, avg 3 members, median construction year 1987, 53.9% Caucasian/8.9% African American/5.1% Asian, 49.6% male/50.4% female, 16.7% age 65+, median housing cost ~$1,986/mo) could not be verified on any page read and are therefore not recorded as facts.",
+    "Proximity: no verified distances to shopping, grocery, library, hospital, or school. West Boca Medical Center (21644 State Road 7, Boca Raton FL 33428 - same ZIP as the community) appeared in a search result snippet as a nearby hospital but the page was not read, so it is not recorded as a verified fact.",
+    "Pet policy: no written policy found; Trulia resident survey shows 93% of locals say the area is 'dog friendly' (survey, not policy).",
+    "Community pool details (size, hours, heated or not) not verified on pages read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_annual",
+      "values": [
+        {
+          "amount": 25045.0,
+          "period": "annual",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983374+00:00"
+        },
+        {
+          "amount": 11724.0,
+          "period": "annual",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983385+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T20:20:44.984011Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15995",
+          "retrieved_at": "2026-10-10T20:14:40.188428+00:00"
+        },
+        {
+          "amount": 125.0,
+          "period": "monthly",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983387+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T20:20:44.984018Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 149000.0,
+          "period": "one-time",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983389+00:00"
+        },
+        {
+          "amount": 1000.0,
+          "period": "one-time",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983392+00:00"
+        },
+        {
+          "amount": 2000.0,
+          "period": "annual",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983393+00:00"
+        },
+        {
+          "amount": 182.0,
+          "period": "monthly",
+          "source_url": "https://isabellascott.com/boca-woods-country-club-membership/",
+          "retrieved_at": "2026-10-10T20:20:44.983395+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T20:20:44.984025Z"
+    }
+  ],
+  "created_at": "2026-10-10T20:14:40.188993Z",
+  "updated_at": "2026-10-10T20:20:44.984125Z"
+}

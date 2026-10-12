@@ -1,0 +1,345 @@
+{
+  "id": "a70c11be-dcfb-4e78-b947-eeeb3fe90b3d",
+  "identity": {
+    "name": "Frenchman's Reserve",
+    "slug": "frenchman-s-reserve",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Frenchman's Reserve Master Property Owners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Private equity country club community in Palm Beach Gardens, FL 33410, featuring ~447 Mediterranean Revival-style homes around an Arnold Palmer Signature 18-hole golf course. Governed by the Frenchman's Reserve Master Property Owners Association, Inc. (est. 02/13/2001, Federal ID 020589883), separate from the country club entity. Club membership is equity-required and separate from POA fees."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/frpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T17:55:14.491181Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 959.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Monthly equivalent range ~$959-$1,510 depending on home type. Quarterly dues: ~$3,369 single-family, ~$4,530 coach homes, ~$2,877 certain custom homes. One-time capital contribution equal to one quarter of dues collected at closing. Dues cover security, landscaping (most homes), cable/internet, and alarm monitoring. Exact current fees, transfer fees, and special assessments unavailable without direct contact to POA. Club membership is equity-required and separate from POA fees."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/frpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T17:55:14.491189Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 13476.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Approximate annual equivalent for single-family homes (4 x $3,369/quarter). Coach homes ~$18,120/yr; custom homes ~$11,508/yr."
+    },
+    {
+      "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+      "retrieved_at": "2026-10-12T18:02:05.313025Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 275000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Mandatory club equity membership initiation fee - Full Golf category (effective Feb 1, 2026), non-refundable; every owner must hold an equity membership (Full Golf or Social/Sport), separate from POA/HOA fees. Full Golf equity capped at 349 memberships by by-laws; includes unlimited golf, 7-day tee-time sign-up, tennis, pickleball, pool, fitness, spa, social use, all greens/court fees included. Family privileges for spouse/domestic partner and unmarried children under 30 living at home or in full-time school. Tenant use only with 90+ day lease, club approval 30+ days ahead, 2 tenants/year cap, 2-year lifetime limit per tenant; owner privileges reduced to dining only during lease term. Source is a real-estate agent blog, not the club's official site - verify with club membership office. (Also observed: TTM ~16 closings, avg sale ~$3.01M / ~$612 psf, ~78 DOM; median list ~$3.35M as of Mar 2026 vs trailing median sale ~$2.775M, +~7% YoY.) Community is a Toll Brothers build of ~448 Mediterranean homes (2002-2013): 341 single-family, 56 coach, 50 custom; clubhouse runs 45,000 sq ft per this source (club site confirms Grande Clubhouse but not size). Social/Sport equity: unlimited tennis/pickleball/pool/fitness/spa/social plus limited golf; only available on homes already carrying a Social/Sport equity; upgrades to Full Golf subject to the 349-cap and must be confirmed in writing. Equity contribution refundability: page cut off before answering - unverified. (Retrieved 2026-09-15T12:00:00Z, confidence 0.55.)"
+    },
+    {
+      "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+      "retrieved_at": "2026-10-12T18:02:05.313035Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 140000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Mandatory club equity membership initiation fee - Social/Sport category (effective Feb 1, 2026), non-refundable. (Retrieved 2026-09-15T12:00:00Z, confidence 0.55.)"
+    },
+    {
+      "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+      "retrieved_at": "2026-10-12T18:02:05.313037Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "POA capital contribution at settlement: one-time payment equal to one quarter of annual dues, paid into the community's capital reserves. (Retrieved 2026-09-15T12:00:00Z, confidence 0.55.)"
+    },
+    {
+      "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+      "retrieved_at": "2026-10-12T18:02:05.313039Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1500.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Annual capital charge per membership tied to the club improvement program, scheduled through 2026; applies to both Full Golf and Social/Sport equity. (Retrieved 2026-09-15T12:00:00Z, confidence 0.55.)"
+    },
+    {
+      "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+      "retrieved_at": "2026-10-12T18:02:05.313040Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Annual club dues on a November-to-October cycle, plus an annual food-and-beverage minimum counting a la carte spend across the Grille, Main Dining, Parc, the Turn Station, and the Pool Window. Specific dollar amounts not stated in source. (Retrieved 2026-09-15T12:00:00Z, confidence 0.55.)"
+    },
+    {
+      "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+      "retrieved_at": "2026-10-12T18:02:05.313042Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA dues (Frenchman's Reserve Master Property Owners Association) sit on top of, and separate from, all club charges; specific amount not stated in source. (Retrieved 2026-09-15T12:00:00Z, confidence 0.55.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491194Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "18-hole Arnold Palmer Signature course with practice range, putting green, chipping green, and short game practice area"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491203Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "45,000 sq ft Grand Clubhouse with main dining room, veranda, grille room & bar, library & terrace, East Room/banquet hall, golf pro shop, men's and women's card rooms, private wine room, 18-seat full service bar, outdoor water feature"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491206Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style swimming pool & Jacuzzi"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491208Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Full service spa & salon with steam and locker rooms"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491210Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Machine weights, free weights, state-of-the-art cardiovascular equipment, aerobics/multi-purpose studios, spin & Pilates studios, personal training & specialty classes"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491213Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "7 lighted Har-Tru clay tennis courts with tennis pro shop"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491216Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "4 permanent pickleball courts plus multi-sport court (pickleball, basketball)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491218Z",
+      "confidence": 0.5,
+      "amenity": "childrens_facility",
+      "detail": "Children's Activity Center and Children's Playground"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/amenities",
+      "retrieved_at": "2026-10-12T17:55:14.491221Z",
+      "confidence": 0.5,
+      "amenity": "restaurant",
+      "detail": "Parc Restaurant with complimentary continental breakfast, indoor & outdoor a la carte dining, open kitchen concept, pool bistro window service, turn station service"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/frpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T17:55:14.491223Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community with security included in POA dues"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313045Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Arnold Palmer Signature 18-hole championship golf course (Platinum Club of America since 2016, ranked #84 of 4000+ private clubs per club site; course rating 72.9 / slope 139, par 72 per Golf Frontier listing snippet - not read in full). (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313054Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "State-of-the-art Grande Clubhouse (45,000 sq ft per moodypbg.com blog). (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313056Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Rejuvenating Spa and Fitness Center (spa and fitness combined offering). (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313058Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Spa and Fitness Center. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313061Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Formal and casual dining options (Grille, Main Dining, Parc, Turn Station, Pool Window per moodypbg.com blog). (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313063Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Seven lighted Hydrogrid clay tennis courts. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313065Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Four pickleball courts. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313067Z",
+      "confidence": 0.5,
+      "amenity": "multi_sport_court",
+      "detail": "Multi-sport court. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313070Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style outdoor pool and whirlpool. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313072Z",
+      "confidence": 0.5,
+      "amenity": "childrens_activity_center",
+      "detail": "Children's activity center. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313074Z",
+      "confidence": 0.5,
+      "amenity": "card_rooms",
+      "detail": "Men's and women's card rooms. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://www.frenchmansreservecc.com/public/about-us/our-club",
+      "retrieved_at": "2026-10-12T18:02:05.313076Z",
+      "confidence": 0.5,
+      "amenity": "guest_suites",
+      "detail": "Beautifully appointed guest suites for club and out-of-town guests. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33410-33410/",
+    "retrieved_at": "2026-10-12T18:02:05.313080Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 36759,
+    "data_year": null,
+    "geography_level": "ZIP (33410, Palm Beach Gardens, FL - community ZIP; not community-specific census geography; page also shows 11.4 sq mi, 3,233.1 people/sq mi). (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/frpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-12T17:55:14.491227Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "community"
+    }
+  ],
+  "proximity": [],
+  "open_questions": [
+    "Specific HOA dues amount (monthly or annual) for Frenchman's Reserve Master Property Owners Association - source confirms HOA is separate from club dues but gives no dollar figure; florida-hoa.net/hoa-community.com directories reference a ~$641 average for Palm Beach Gardens generally (city-wide average, not community-specific, and pages not read).",
+    "Specific dollar amounts for annual club dues (Nov-Oct cycle) and the annual food-and-beverage minimum.",
+    "Median age, median household income, and owner-occupancy % for ZIP 33410 - Census Reporter profile page rendered only the population header (36,759) even with JavaScript; full ACS profile not retrievable.",
+    "Distances to nearest shopping, grocery, library, hospital, and school - no page with verified distances was read within budget.",
+    "Gate/security details and pet policy - not stated on pages read (club site references 'privacy of your own community' but no explicit gate description).",
+    "CDD special assessments - no CDD-specific assessment found; the $1,500 annual charge is a club improvement-program charge, not a CDD assessment.",
+    "Whether the equity membership contribution is refundable - source page cut off before answering.",
+    "Data year for the Census Reporter population figure was not visible in the rendered fragment."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 959.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/frpbgfl/about_hoa/",
+          "retrieved_at": "2026-10-12T17:55:14.491181+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+          "retrieved_at": "2026-10-12T18:02:05.313042+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T18:02:05.313611Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 275000.0,
+          "period": "one-time",
+          "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+          "retrieved_at": "2026-10-12T18:02:05.313025+00:00"
+        },
+        {
+          "amount": 140000.0,
+          "period": "one-time",
+          "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+          "retrieved_at": "2026-10-12T18:02:05.313035+00:00"
+        },
+        {
+          "amount": null,
+          "period": "one-time",
+          "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+          "retrieved_at": "2026-10-12T18:02:05.313037+00:00"
+        },
+        {
+          "amount": 1500.0,
+          "period": "annual",
+          "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+          "retrieved_at": "2026-10-12T18:02:05.313039+00:00"
+        },
+        {
+          "amount": null,
+          "period": "annual",
+          "source_url": "https://moodypbg.com/blog/what-the-list-price-hides-at-frenchmans-reserve",
+          "retrieved_at": "2026-10-12T18:02:05.313040+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T18:02:05.313621Z"
+    }
+  ],
+  "created_at": "2026-10-12T17:55:14.491787Z",
+  "updated_at": "2026-10-12T18:02:05.313719Z"
+}

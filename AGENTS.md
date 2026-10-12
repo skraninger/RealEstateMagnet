@@ -190,7 +190,7 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
 - Local file tracing (`modules/community/observability.py`,
   `tests/test_observability.py`) is tested offline with a real OTel
   `TracerProvider` — no network, no backend.
-- Current status: **327 passing** (web-viewer template + write-endpoint tests run
+- Current status: **341 passing** (web-viewer template + write-endpoint tests run
   when `fastapi`/`jinja2`/`httpx` are installed; they `importorskip` otherwise).
 
 ---
@@ -254,6 +254,48 @@ Positional args use forward-compatible flags (`--community`, `--condensers`,
   `requirements.txt`; `request.form()` is used (urlencoded by default), so an old
   `.venv` should still work for the viewer but reinstall to be safe.
 - **runpy and CRLF warnings** appear on Windows; they are benign.
+- **Prompt efficiency knobs (model_settings).** All model calls share the helpers
+  in `streaming.py`: `sampling_settings(max_tokens, temperature, top_p,
+  disable_thinking)` builds the PydanticAI `model_settings` dict, and
+  `thinking_disabled(base_url)` decides whether to switch reasoning off.
+  Env defaults: `MODEL_TEMPERATURE=0.2`, `MODEL_TOP_P=0.95` (extraction is
+  near-deterministic). `MODEL_DISABLE_THINKING` defaults to **`0` = thinking stays
+  on for every call**, so the console keeps streaming the model's reasoning —
+  that live trace is the main signal for judging prompt quality. Set `1` to force
+  it off, or `auto` to disable it only for **localhost** endpoints (via
+  `chat_template_kwargs.enable_thinking=false`, a llama.cpp/Qwen switch; a cloud
+  `MODEL_BASE_URL` is never sent that field). The research agent ignores the
+  switch anyway — it needs reasoning to choose tools.
+  `RESEARCH_MAX_RESULTS` default dropped 8 → **5** and the research
+  `SYSTEM_PROMPT` now states a search budget (≤5 searches / ≤5 pages), query
+  templates, a source priority list, the fee/proximity enums, anti-repetition
+  rules, and a stop condition. `CommunityFacts`/`FeeFact`/… now carry
+  `Field(description=...)` so the constrained-decoding JSON schema guides the
+  local model and cuts `retries=2` re-generations.
+- **`truncate_relevant(text, max_chars)` (tools.py)** replaces blind
+  `text[:max_chars]` slices in `read_page` and the condensers: it keeps the page
+  head plus the keyword-bearing lines (fees/amenities/demographics/proximity)
+  so the fee table below the fold survives the extraction budget. Result never
+  exceeds `max_chars`.
+- **Extraction prompts put the instruction AFTER the content.** Small local
+  models attend to the task better when it follows a long page blob; the
+  web-condenser/pipeline extraction prompts are ordered content-then-instruction.
+- **Demographics rows dedupe on value, not source.** `upsert_record` merges into
+  an existing community via `_update_row`, which (like fees/amenities/proximity)
+  now skips a demographics row whose *values* already exist for the slug —
+  identity is `(median_age, median_household_income, owner_occupancy_pct,
+  population, data_year)`, i.e. `geography_level` / `source_url` / `confidence` /
+  `retrieved_at` are ignored. The old `_update_row` appended a demographics row
+  unconditionally, so every re-run ballooned `community_demographics` (the real
+  DB had 3715 rows collapsing to 182). `merge_facts` applies the same value
+  identity so `demographics_history` in the JSON files cannot stack duplicates.
+  `DEMOGRAPHICS_VALUE_COLUMNS` (database.py) is the single source of truth for
+  the key. Cleanup: **`python scripts/dedupe_demographics.py [--dry-run]`**
+  removes existing duplicates (keeps the lowest `id` = first) from both the
+  `community_demographics` table and every stored `demographics_history`; it is
+  idempotent. Backed by `CommunityDatabase.dedupe_demographics()` and
+  `CommunityStore.dedupe_demographics_history()`.
+
 - **Runtime data is tracked in git** (see §7) — `git add -A` is normal for data
   changes here, and captcha artifacts/community JSON are expected.
 - **Environment quirk:** some hosts (e.g. `ocfl.maps.arcgis.com`) fail DNS on

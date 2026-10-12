@@ -1,0 +1,467 @@
+{
+  "id": "c0c613f1-9a3d-421a-bc52-86b16cde5efc",
+  "identity": {
+    "name": "Lakes of Delray",
+    "slug": "lakes-of-delray",
+    "county_fips": null,
+    "city": "Delray Beach",
+    "hoa_name": "Lakes of Delray Homeowners Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Lakes of Delray is a gated 55+ condominium community in Delray Beach, Florida (Palm Beach County), located off Atlantic Avenue between Military Trail and Jog Road, minutes from downtown Delray and the beach. It comprises approximately 1,400 resale condos built 1982–1994 by Lennar Homes in six building styles, with price range in the low-to-mid $200ks. The community features a large clubhouse, multiple pools, extensive sports courts, an activity director, weekly events, nearly 30 clubs, and community bus transit."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875943Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 198.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA dues range from $198 to $662 per month depending on unit/association (per 55places.com listing). Exact amount should be verified with the HOA/management company; hoa-resource.com notes special assessments may apply for condo/roof/pool repairs (no specific assessment amounts stated)."
+    },
+    {
+      "source_url": "https://hoa-resource.com/lakes-of-delray-homeowners-association-delray-beach-fl/",
+      "retrieved_at": "2026-10-10T19:27:02.875953Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA fee includes: common area maintenance, water, gas, snow removal (as listed by hoa-resource.com; snow removal likely a template error for a Florida community — verify with HOA)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.875958Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Spacious, well-appointed clubhouse with ballroom (stage, sound and lighting systems), card rooms, meeting rooms, conference room, billiards room, catering kitchen, arts & crafts studio, ceramics studio, library, locker rooms"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875967Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Exercise room/gym in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875971Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Saunas in clubhouse"
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.875973Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Roomy heated/cooled pool with sizable pool deck, plus two satellite pool areas"
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.875976Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Oversized jacuzzi/spa on pool deck"
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.875978Z",
+      "confidence": 0.5,
+      "amenity": "bbq_area",
+      "detail": "Well-equipped BBQ area and patio on pool deck"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875981Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts among multiple sports courts"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875984Z",
+      "confidence": 0.5,
+      "amenity": "bocce",
+      "detail": "Bocce ball courts"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875986Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard",
+      "detail": "Shuffleboard courts"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875989Z",
+      "confidence": 0.5,
+      "amenity": "racquetball",
+      "detail": "Racquetball courts"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875991Z",
+      "confidence": 0.5,
+      "amenity": "basketball",
+      "detail": "Basketball court"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875994Z",
+      "confidence": 0.5,
+      "amenity": "golf_driving_range",
+      "detail": "Golf driving range"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875997Z",
+      "confidence": 0.5,
+      "amenity": "horseshoe",
+      "detail": "Horseshoe pits"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.875999Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876002Z",
+      "confidence": 0.5,
+      "amenity": "card_room",
+      "detail": "Card rooms in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876005Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiards room in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876007Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Ballroom with stage and latest sound and lighting systems for community events and shows"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876009Z",
+      "confidence": 0.5,
+      "amenity": "arts_crafts_studio",
+      "detail": "Arts and crafts studio and ceramics studio"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876012Z",
+      "confidence": 0.5,
+      "amenity": "catering_kitchen",
+      "detail": "Catering kitchen in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876014Z",
+      "confidence": 0.5,
+      "amenity": "community_bus",
+      "detail": "Community bus transit for residents to get around town for shopping"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876016Z",
+      "confidence": 0.5,
+      "amenity": "car_wash",
+      "detail": "Car wash area"
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.876019Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour manned gate for guest access; gated community"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876021Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Scenic lakes and ponds with lush landscaping"
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.876024Z",
+      "confidence": 0.5,
+      "amenity": "activity_programs",
+      "detail": "Activity director on staff, weekly events, and nearly 30 resident clubs"
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:56:01.192187Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Spacious clubhouse with sizable pool deck, heated/cooled pool, oversized jacuzzi, and well-equipped BBQ area; 6 building styles, 37 individual condo options. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192197Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Olympic-size heated and cooled swimming pool with large spa; large patio/pool deck with furniture, tables, umbrellas, shade awning. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192200Z",
+      "confidence": 0.5,
+      "amenity": "satellite_pools",
+      "detail": "Two satellite pools with bathhouses and shuffleboard courts. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192204Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community with 24-hour security guard; 24-hour manned gate for guest access (per home page). Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192207Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Health room with a variety of exercise equipment. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192209Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis and pickleball courts. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192211Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard_courts",
+      "detail": "Six shuffleboard courts (plus courts at satellite pools). Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192214Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball court. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192216Z",
+      "confidence": 0.5,
+      "amenity": "racquetball_court",
+      "detail": "Racquetball court. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192219Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Bocce court. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192221Z",
+      "confidence": 0.5,
+      "amenity": "horseshoe_court",
+      "detail": "Horseshoe court. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192224Z",
+      "confidence": 0.5,
+      "amenity": "golf_driving_net",
+      "detail": "Golf driving net. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192226Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiard room: 5 pool tables, 2 snooker tables, 1 billiard table, and darts. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192228Z",
+      "confidence": 0.5,
+      "amenity": "card_rooms",
+      "detail": "Large and small card rooms with poker and bridge tables. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192231Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Grand ballroom with stage, piano, dance floor, stage lift, and state-of-the-art sound and lighting. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192233Z",
+      "confidence": 0.5,
+      "amenity": "community_library",
+      "detail": "On-site library with books, magazines, DVDs. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192235Z",
+      "confidence": 0.5,
+      "amenity": "art_ceramic_room",
+      "detail": "Ceramic room / art room. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192238Z",
+      "confidence": 0.5,
+      "amenity": "conference_meeting_rooms",
+      "detail": "Conference room and two meeting rooms with movie screen/chalk boards, available to all clubs. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:56:01.192241Z",
+      "confidence": 0.5,
+      "amenity": "bbq_area",
+      "detail": "Well-equipped BBQ area (grills, microwave, refrigerator, sink, shade awning, tables). Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192244Z",
+      "confidence": 0.5,
+      "amenity": "bathhouse_sauna",
+      "detail": "Men's and ladies' bathhouses with saunas and showers. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192246Z",
+      "confidence": 0.5,
+      "amenity": "wifi",
+      "detail": "Wi-Fi throughout clubhouse and main pool area. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192249Z",
+      "confidence": 0.5,
+      "amenity": "car_wash",
+      "detail": "Car wash area with hose reels, vacuum, air compressor. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192250Z",
+      "confidence": 0.5,
+      "amenity": "table_tennis",
+      "detail": "Table tennis. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192252Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "No pets allowed. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/copy-of-hours",
+      "retrieved_at": "2026-10-10T19:56:01.192255Z",
+      "confidence": 0.5,
+      "amenity": "community_bus",
+      "detail": "Palm Beach County bus service with 13 stops in the community. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:56:01.192257Z",
+      "confidence": 0.5,
+      "amenity": "social_clubs_events",
+      "detail": "Nearly 30 clubs (tennis, bowling, fishing, golf, pickleball, etc.), weekly events (bingo, movies, bridge), bi-monthly shows, monthly dance socials, classes (yoga, water aerobics, Zumba, ceramics, computer). Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (official HOA site)."
+    },
+    {
+      "source_url": "https://www.delraybeachrealestate.com/lakes-of-delray/",
+      "retrieved_at": "2026-10-10T19:56:01.192260Z",
+      "confidence": 0.5,
+      "amenity": "putting_green",
+      "detail": "Putting greens at clubhouse complex. Retrieved 2025-06-01T12:00:00Z, confidence 0.7 (reputable local real-estate site)."
+    },
+    {
+      "source_url": "https://www.delraybeachrealestate.com/lakes-of-delray/",
+      "retrieved_at": "2026-10-10T19:56:01.192263Z",
+      "confidence": 0.5,
+      "amenity": "catering_kitchen",
+      "detail": "Catering kitchen in clubhouse complex. Retrieved 2025-06-01T12:00:00Z, confidence 0.7 (reputable local real-estate site)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1217100-delray-beach-fl/",
+    "retrieved_at": "2026-10-10T19:56:01.192268Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 70133,
+    "data_year": null,
+    "geography_level": "city (Delray Beach, FL, Palm Beach County); community-level figures not available from sources read. Retrieved 2025-06-01T12:00:00Z, confidence 0.9 (Census Reporter). Median age, median household income, and owner-occupancy % were not present in the extracted page content and are left null; see open_questions. Data year not displayed in extracted content (Census Reporter typically uses recent ACS 5-year estimates)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.lakesofdelray.org/",
+      "retrieved_at": "2026-10-10T19:27:02.876029Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Delray Beach and the beach (described as 'minutes from popular downtown Delray and the beach'; no specific distance given)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/lakes-of-delray",
+      "retrieved_at": "2026-10-10T19:27:02.876032Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Local shopping accessible via community bus transit (no specific facility or distance stated)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.delraybeachrealestate.com/lakes-of-delray/",
+      "retrieved_at": "2026-10-10T19:56:01.192274Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Downtown Atlantic Avenue, Delray Beach (restaurants, shops, attractions)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "HOA fee dollar amount (monthly or annual) not found on any page read; hoa-resource.com lists what the fee includes (common area maintenance, water, gas, snow removal) but no amount, and its content appears auto-generated. Verify with Lakes of Delray HOA directly.",
+    "CDD / special assessment status not found in any source read.",
+    "Demographics: only city-level population (70,133) verified from Census Reporter; median age, median household income, and owner-occupancy % were not in the extracted page content (page extraction was sparse). Community-level (55+ condo) demographics not available from sources read.",
+    "Distances (miles) to nearest hospital, public library, school, and grocery/shopping not verified. A search-result snippet from apartments.com suggested Lynn University is ~7.0 miles / 14 minutes away, but that page was not read, so it is unverified.",
+    "Activity director mentioned in buyer notes was not explicitly confirmed on pages read (weekly events and ~30 clubs were confirmed)."
+  ],
+  "discrepancies": [
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Local shopping accessible via community bus transit (no specific facility or distance stated)",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/lakes-of-delray"
+        },
+        {
+          "nearest_name": "Downtown Atlantic Avenue, Delray Beach (restaurants, shops, attractions)",
+          "distance_miles": null,
+          "source_url": "https://www.delraybeachrealestate.com/lakes-of-delray/"
+        }
+      ],
+      "detected_at": "2026-10-10T19:56:01.208542Z"
+    }
+  ],
+  "created_at": "2026-10-10T19:27:02.876623Z",
+  "updated_at": "2026-10-10T19:56:01.208654Z"
+}

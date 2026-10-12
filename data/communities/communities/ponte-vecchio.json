@@ -1,0 +1,328 @@
+{
+  "id": "8f5fc7db-21ea-4797-8bbf-72a2041d88b4",
+  "identity": {
+    "name": "Ponte Vecchio",
+    "slug": "ponte-vecchio",
+    "county_fips": null,
+    "city": "Boynton Beach",
+    "hoa_name": "Ponte Vecchio Homeowners Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated 55+ single-family neighborhood in Boynton Beach, FL (ZIP 33472), west of Jog Road. 647 Mediterranean-style homes built 2000–2003 by Ansca Homes and Levitt & Sons; resale only, price range mid $500ks–low $600ks. HOA established 03/12/1999 with an elected board. Features a staffed gate, renovated clubhouse, 24-hour fitness center, resort-sized pool and spa, and a new $1M sports complex (6 pickleball courts, 3 tennis courts, 2 bocce lanes, putting green and driving range) opened July 10, 2026."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712232Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA dues range $233–$677/month depending on home/lot (per 55places.com listing); exact amount for a specific home not stated. Association established 03/12/1999 (per florida-hoa.com); no CDD assessments mentioned in sources reviewed."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983068Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 588.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Public listing example; exact amount varies by home/phase (other listing examples: $615, $623, $677/month). Verify with HOA/FirstService estoppel for the specific home. Dues reportedly cover landscaping, maintenance, management, clubhouse amenities, security, common-area electricity; one listing also includes exterior painting and roof/landscape cleaning. A capital contribution equal to 3 months of HOA dues is due at closing per one Redfin listing; another listing references a $3,738 capital contribution and $300 application fee with buyer approval and no leasing for first two years (one-time/closing costs, not recurring). No CDD special assessment found in sources read. Source is a realtor blog citing public listings (not official HOA). Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/ponte-vecchio/",
+      "retrieved_at": "2026-10-10T21:39:16.983076Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 475.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Conflicting figure: 'HOA dues are approx. $475 per month' per real-ativity.com community page. Retrieved 2026-07-09T12:00:00Z, confidence 0.5."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712241Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Staffed gate; secure gated neighborhood (also confirmed by florida-hoa.com listing)."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712249Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Elegant newly-renovated clubhouse."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712252Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art 24-hour access fitness center, newly upgraded."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712255Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-sized swimming pool and spa."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712256Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Three regulation tennis courts in new $1M sports complex opened July 10, 2026."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712258Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Six dedicated pickleball courts in new $1M sports complex opened July 10, 2026."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712260Z",
+      "confidence": 0.5,
+      "amenity": "bocce",
+      "detail": "Two bocce lanes in new sports complex."
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712262Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Professionally designed golf putting green and driving range in new sports complex."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712264Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiards room in clubhouse."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712266Z",
+      "confidence": 0.5,
+      "amenity": "card_rooms",
+      "detail": "Three card rooms in clubhouse."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712268Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library and computers in clubhouse."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712270Z",
+      "confidence": 0.5,
+      "amenity": "media_room",
+      "detail": "Media room for watching movies with neighbors."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712272Z",
+      "confidence": 0.5,
+      "amenity": "social_hall",
+      "detail": "Large social hall with entertainment stage for activities, shows, parties, and dances."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712274Z",
+      "confidence": 0.5,
+      "amenity": "activity_rooms",
+      "detail": "Arts and crafts activity rooms."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+      "retrieved_at": "2026-10-10T21:34:18.712277Z",
+      "confidence": 0.5,
+      "amenity": "activity_director",
+      "detail": "Community has an activity director."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983080Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Renovated clubhouse with billiards, card rooms, library and media room, arts-and-crafts space; social/recreational programming. Per community website as cited by realtor blog. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983088Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "24-hour fitness center. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983091Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool and spa. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983093Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983095Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Pickleball courts. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983097Z",
+      "confidence": 0.5,
+      "amenity": "bocce",
+      "detail": "Bocce. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983099Z",
+      "confidence": 0.5,
+      "amenity": "golf_putting_range",
+      "detail": "Golf putting range. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983102Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24/7 guarded gate security; guests and vendors must be registered in advance; volunteer Citizen Observer Patrol. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+      "retrieved_at": "2026-10-10T21:39:16.983104Z",
+      "confidence": 0.5,
+      "amenity": "utilities_communications",
+      "detail": "Hotwire Communications, Fision TV, ADT security, community Wi-Fi included. Retrieved 2026-07-09T12:00:00Z, confidence 0.6."
+    },
+    {
+      "source_url": "https://www.real-ativity.com/homesforsale/ponte-vecchio/",
+      "retrieved_at": "2026-10-10T21:39:16.983107Z",
+      "confidence": 0.5,
+      "amenity": "social_clubs",
+      "detail": "Active-adult clubs: cards, books, crafts, tennis, pickleball, photography. Retrieved 2026-07-09T12:00:00Z, confidence 0.5."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://florida.hometownlocator.com/zip-codes/data,zipcode,33472.cfm",
+    "retrieved_at": "2026-10-10T21:39:16.983111Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 18885,
+    "data_year": 2024,
+    "geography_level": "ZIP code 33472 (Boynton Beach, Palm Beach County, FL) — 2020-2024 American Community Survey 5-Year Estimates, via aggregator (not census.gov directly). Median household income $101,959; per capita income $64,955; median home value $446,200; 8,023 households, avg size 2.32. Retrieved 2026-07-09T12:00:00Z, confidence 0.6 (aggregator citing ACS). Median age not found on page read; community-level (not ZIP-level) demographics not available within budget. Note: ZIP 33472 covers a much larger area than the 647-home Ponte Vecchio community itself (a 55+ community, so its resident age profile would skew older than the ZIP median)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712282Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Atlantic Ocean beaches",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712285Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "I-95 / Florida Turnpike",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712286Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Golf courses, city parks, fishing and boating",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.pontevecchiohoa.com/home/",
+      "retrieved_at": "2026-10-10T21:34:18.712288Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Restaurants, bistros, specialty shops, art galleries, cultural museums",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues for a specific home: sources conflict ($475/mo per real-ativity vs $588-$677/mo per public listings cited by susanbemis.com); confirm via FirstService portal/HOA estoppel before purchase.",
+    "CDD special assessments: no CDD assessment information found in any source read; unclear whether the community is in a CDD.",
+    "The $1M sports complex (6 pickleball courts, 3 tennis courts, 2 bocce lanes, putting green, driving range, opened July 10, 2026) was provided in the task notes but could not be independently verified on pages read; pages I read confirm tennis, pickleball, bocce, and a putting range exist but give no court counts, no driving range, and no opening date.",
+    "Proximity to shopping/grocery, library, hospital, and schools with distances: not verified within search budget (the one candidate page, unitedstateszipcodes.org/33472, failed to load).",
+    "Home count discrepancy: task notes say 647 homes; real-ativity.com says 'around 900' homes.",
+    "Median age for ZIP 33472 or the community itself: not found on pages read.",
+    "Pet policy: not found in sources read.",
+    "One-time closing costs (capital contribution of 3 months' dues or $3,738 + $300 application fee, buyer approval, no leasing first two years) come from individual listings cited by a realtor blog; confirm in writing for the specific property."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.55places.com/florida/communities/ponte-vecchio",
+          "retrieved_at": "2026-10-10T21:34:18.712232+00:00"
+        },
+        {
+          "amount": 588.0,
+          "period": "monthly",
+          "source_url": "https://susanbemis.com/blog/living-with-an-hoa-in-ponte-vecchio-boynton-beach",
+          "retrieved_at": "2026-10-10T21:39:16.983068+00:00"
+        },
+        {
+          "amount": 475.0,
+          "period": "monthly",
+          "source_url": "https://www.real-ativity.com/homesforsale/ponte-vecchio/",
+          "retrieved_at": "2026-10-10T21:39:16.983076+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T21:39:16.983637Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Atlantic Ocean beaches",
+          "distance_miles": null,
+          "source_url": "https://www.pontevecchiohoa.com/home/"
+        },
+        {
+          "nearest_name": "I-95 / Florida Turnpike",
+          "distance_miles": null,
+          "source_url": "https://www.pontevecchiohoa.com/home/"
+        },
+        {
+          "nearest_name": "Golf courses, city parks, fishing and boating",
+          "distance_miles": null,
+          "source_url": "https://www.pontevecchiohoa.com/home/"
+        }
+      ],
+      "detected_at": "2026-10-10T21:39:16.983643Z"
+    }
+  ],
+  "created_at": "2026-10-10T21:34:18.712815Z",
+  "updated_at": "2026-10-10T21:39:16.983741Z"
+}

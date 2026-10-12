@@ -1,0 +1,276 @@
+{
+  "id": "f3038c26-ed66-4af7-aa8d-e00a6aa5b92f",
+  "identity": {
+    "name": "Palm Beach Country Estates",
+    "slug": "palm-beach-country-estates",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Palm Beach Country Estates Landowners Association (voluntary, NOT a POA or HOA)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "A 2,000-acre large-lot residential community in Palm Beach Gardens, FL 33418, featuring approximately 1,500 custom single-family homes on minimum 1-acre wooded lots. The community has NO mandatory HOA or POA; instead, the voluntary Palm Beach Country Estates Landowners Association (founded 1980) provides community support, maintenance, and events without enforcement authority. Emphasizes equestrian-friendly, flexible rural-suburban living."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.pbce.org/",
+      "retrieved_at": "2026-10-10T20:00:51.938746Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 50.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Voluntary contribution to PBCE Landowners Association (NOT mandatory). Gives landowners a vote and voice; helps pay for community services. No mandatory HOA or POA fees exist. County zoning and building codes apply instead of HOA rules. (Confirmed by pbce.org official site and hoabulletinboard.com)"
+    },
+    {
+      "source_url": "https://grokipedia.com/page/Palm_Beach_Country_Estates",
+      "retrieved_at": "2026-10-10T20:06:00.376000Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 50.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Voluntary minimum annual contribution to the Palm Beach Country Estates Landowners Association (founded 1980); grants voting rights and funds maintenance, events, and improvements. NOT a mandatory HOA/POA fee — there is no mandatory HOA in this community. Contributions above $50 can be directed to specific funds (e.g., sidewalk repairs). Source is an AI-generated encyclopedia; verify with the association (pbce.org, pbcegroup@gmail.com). Rejected 2006 referendum for $1,000/lot/yr road paving (20 yrs) was NOT adopted (58% voted no)."
+    },
+    {
+      "source_url": "https://grokipedia.com/page/Palm_Beach_Country_Estates",
+      "retrieved_at": "2026-10-10T20:06:00.376011Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 780.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "SIRWCD (South Indian River Water Control District) potable water system assessment: $780 per lot per year over 25 years, approved 2006 (63% of votes), water system built 2006-2007, total project cost $18.6M. 25-year term would run to ~2032; confirm current status with SIRWCD/county. Source is an AI-generated encyclopedia; verify before relying on it."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbcepbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:00:51.938762Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Margaret Berman Memorial Park with playground, courts, trails, and disc golf (community-supported, not HOA-managed)"
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:00:51.938776Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Bike trails and walking trails; nearby Riverbend Park access"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbcepbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:00:51.938782Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Security cameras at entrance and intersections; entrance and intersection maintenance by voluntary association"
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:00:51.938788Z",
+      "confidence": 0.5,
+      "amenity": "equestrian",
+      "detail": "Equestrian-friendly community; many properties feature private equestrian facilities"
+    },
+    {
+      "source_url": "https://www.pbce.org/",
+      "retrieved_at": "2026-10-10T20:00:51.938794Z",
+      "confidence": 0.5,
+      "amenity": "events",
+      "detail": "Annual community events and bi-monthly association meetings (second Tuesday); newsletter 'Countryside Living'"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbcepbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:00:51.938799Z",
+      "confidence": 0.5,
+      "amenity": "no_clubhouse",
+      "detail": "No clubhouse, no community pool, no golf course, no fitness center — traditional centralized HOA amenities are unavailable"
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:00:51.938807Z",
+      "confidence": 0.5,
+      "amenity": "no_hoa",
+      "detail": "No mandatory HOA — freedom to build, expand, or use space for boats, RVs, workshops, home-based businesses; private pools and guest houses on individual lots"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbcepbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:06:00.376014Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Margaret Berman Memorial Park: playground, pavilions, basketball/racquetball/pickleball courts, disc golf, trails, fitness equipment; open sunrise to sunset. Primary community amenity; no centralized clubhouse or pool exists in the community per this source (verified absence)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbcepbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:06:00.376022Z",
+      "confidence": 0.5,
+      "amenity": "equestrian_trails",
+      "detail": "Horse trails within the community; equestrian-friendly living with access to nearby Riverbend Park trails."
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:06:00.376026Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Bike trails; nearby Riverbend Park for nature/outdoor recreation."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/pbcepbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:06:00.376028Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Gated entrance with entrance and intersection maintenance and security cameras, supported by the voluntary Landowners Association (no enforcement authority; county zoning/building codes apply)."
+    },
+    {
+      "source_url": "https://grokipedia.com/page/Palm_Beach_Country_Estates",
+      "retrieved_at": "2026-10-10T20:06:00.376030Z",
+      "confidence": 0.5,
+      "amenity": "community_events",
+      "detail": "Annual events sponsored by the Landowners Association: Fourth of July parade and picnic, Trunk or Treat Halloween fundraiser, Holiday in the Park, Christmas home decorations tour; bi-monthly landowner meetings; newsletter 'Countryside Living'."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33418-33418/",
+    "retrieved_at": "2026-10-10T20:06:00.376034Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 43676,
+    "data_year": null,
+    "geography_level": "ZIP code 33418 (Palm Beach Gardens area, where PBCE is located; community itself is ~1,500 homes on ~2,000 acres, so ZIP figures cover a much larger area than the community alone)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.pbce.org/",
+      "retrieved_at": "2026-10-10T20:00:51.938816Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 1500,
+      "data_year": null,
+      "geography_level": "community (approx. 1,500 custom homes built on ~2,000 acres, min 1-acre lots)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.pbce.org/",
+      "retrieved_at": "2026-10-10T20:00:51.938826Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "I-95 / Donald Ross Road",
+      "distance_miles": 1.0
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:00:51.938832Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Abacoa (shopping/dining district)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:00:51.938835Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Top-rated schools (unspecified)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:00:51.938838Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Riverbend Park",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:06:00.376038Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Abacoa (shopping district)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:06:00.376041Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://grokipedia.com/page/Palm_Beach_Country_Estates",
+      "retrieved_at": "2026-10-10T20:06:00.376043Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown West Palm Beach",
+      "distance_miles": 10.0
+    },
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates",
+      "retrieved_at": "2026-10-10T20:06:00.376044Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Riverbend Park",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Median age, median household income, and owner-occupancy % for ZIP 33418 could not be extracted (censusreporter page returned only population/area/density); re-check https://censusreporter.org/profiles/86000US33418-33418/ directly.",
+    "No specific distances found to the nearest hospital, library, or named school; only qualitative 'minutes from top-rated schools, shopping, I-95, and Abacoa' (Meyer Lucas) and '10-12 miles north of downtown West Palm Beach' (Grokipedia, recorded as 10).",
+    "Community's own website (palmbeachcountryestates.com) could not be read; official fee/amenity confirmation should come from the Landowners Association (pbce.org, pbcegroup@gmail.com, 15610 69th Drive N, Palm Beach Gardens FL 33418).",
+    "Whether the $780/lot/yr SIRWCD water assessment (25-year term from ~2007) is still being collected should be confirmed with SIRWCD or the Palm Beach County property appraiser.",
+    "Gated entrance is stated in the buyer's brief and implied by 'entrance maintenance + security cameras' (hoabulletinboard), but no page read explicitly confirmed a physical gate.",
+    "Grokipedia is an AI-generated source (low confidence, 0.4); its fee and history details should be independently verified before use in a purchase decision."
+  ],
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "I-95 / Donald Ross Road",
+          "distance_miles": 1.0,
+          "source_url": "https://www.pbce.org/"
+        },
+        {
+          "nearest_name": "Riverbend Park",
+          "distance_miles": 3.0,
+          "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates"
+        },
+        {
+          "nearest_name": "Downtown West Palm Beach",
+          "distance_miles": 10.0,
+          "source_url": "https://grokipedia.com/page/Palm_Beach_Country_Estates"
+        },
+        {
+          "nearest_name": "Riverbend Park",
+          "distance_miles": null,
+          "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates"
+        }
+      ],
+      "detected_at": "2026-10-10T20:06:00.376572Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Abacoa (shopping/dining district)",
+          "distance_miles": 5.0,
+          "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates"
+        },
+        {
+          "nearest_name": "Abacoa (shopping district)",
+          "distance_miles": null,
+          "source_url": "https://meyerlucas.com/neighborhoods/palm-beach-county-estates"
+        }
+      ],
+      "detected_at": "2026-10-10T20:06:00.376576Z"
+    }
+  ],
+  "created_at": "2026-10-10T20:00:51.939716Z",
+  "updated_at": "2026-10-10T20:06:00.376670Z"
+}

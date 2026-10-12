@@ -46,7 +46,7 @@ from typing import Any, Callable, Optional
 
 from pydantic_ai import Agent
 
-from .streaming import run_agent_streamed
+from .streaming import run_agent_streamed, sampling_settings, thinking_disabled
 from .database import CommunityDatabase
 from .models import (
     AI_SOURCE_URL,
@@ -195,6 +195,8 @@ class AICondenser:
         )
         self.api_key = api_key or os.environ.get("MODEL_API_KEY", "local")
         self.max_tokens = max_tokens or int(os.environ.get("MODEL_MAX_TOKENS", "8192"))
+        self.temperature = float(os.environ.get("MODEL_TEMPERATURE", "0.2"))
+        self.top_p = float(os.environ.get("MODEL_TOP_P", "0.95"))
         self.batch_size = batch_size or int(os.environ.get("CONDENSER_BATCH_SIZE", "20"))
         self.store = store or CommunityStore()
         self.database = database or CommunityDatabase()
@@ -276,7 +278,12 @@ class AICondenser:
             batch: CondensedCommunityBatch = await run_agent_streamed(
                 agent,
                 prompt,
-                model_settings={"max_tokens": self.max_tokens},
+                model_settings=sampling_settings(
+                    max_tokens=self.max_tokens,
+                    temperature=self.temperature,
+                    top_p=self.top_p,
+                    disable_thinking=thinking_disabled(self.base_url),
+                ),
                 on_thinking=self.on_thinking,
             )
             elapsed = time.monotonic() - started
@@ -350,7 +357,12 @@ class AICondenser:
             item: CondensedCommunityItem = await run_agent_streamed(
                 agent,
                 prompt,
-                model_settings={"max_tokens": self.max_tokens},
+                model_settings=sampling_settings(
+                    max_tokens=self.max_tokens,
+                    temperature=self.temperature,
+                    top_p=self.top_p,
+                    disable_thinking=thinking_disabled(self.base_url),
+                ),
                 on_thinking=self.on_thinking,
             )
             elapsed = time.monotonic() - started

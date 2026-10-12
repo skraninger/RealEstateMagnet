@@ -1,0 +1,81 @@
+{
+  "id": "843bce6e-bd09-45d6-912a-2323c5369181",
+  "identity": {
+    "name": "Artistry Wellington",
+    "slug": "artistry-wellington",
+    "county_fips": null,
+    "city": "Wellington, FL",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": null
+  },
+  "fees": [],
+  "amenities": [
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062731Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated, all-ages community; 579 planned single-family homes; opens summer 2027 (not yet built)."
+    },
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062743Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Planned private clubhouse and amenity campus with indoor and outdoor spaces."
+    },
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062746Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming and poolside use described in announcement; no pool specs published yet."
+    },
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062748Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Amenity campus intended for fitness and recreation; no facility specs published yet."
+    },
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062751Z",
+      "confidence": 0.5,
+      "amenity": "courts",
+      "detail": "Court sports mentioned in announcement; court type not specified."
+    },
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062753Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "15 lakes spanning about 116 acres planned on site."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://floridarealestatewire.com/kolters-579-home-artistry-wellington-community-set-for-2027/",
+      "retrieved_at": "2026-10-10T19:03:08.062757Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Wellington area (parks, golf, shopping, dining, outdoor recreation)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "HOA/CDD fees: not yet announced. Community is a new Kolter Homes development slated to open summer 2027; pricing and release details are forthcoming.",
+    "Demographics: no Census/ACS data exists for the community because it has not been built; no population, income, or occupancy figures available.",
+    "Proximity: no specific distances or named facilities (grocery, library, hospital, school) were found; only a general statement that the Wellington area offers parks, golf, shopping, dining, and outdoor recreation.",
+    "Detailed amenity list (pool size, court type, fitness center, trails, pet policy) not yet published by Kolter Homes.",
+    "Kolter Homes website pages (kolterhomes.com/new-homes/artistry-wellington/ and the news page) could not be loaded for verification; facts above come from Florida Real Estate Wire coverage of the announcement."
+  ],
+  "discrepancies": [],
+  "created_at": "2026-10-10T18:46:42.057762Z",
+  "updated_at": "2026-10-10T19:03:08.063330Z"
+}

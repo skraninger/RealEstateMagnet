@@ -1,0 +1,409 @@
+{
+  "id": "d4ffeda1-53f1-4564-9ab2-bab671ef0d89",
+  "identity": {
+    "name": "Miami Lakes",
+    "slug": "miami-lakes",
+    "county_fips": null,
+    "city": "Miami Lakes, FL",
+    "hoa_name": "None",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Miami Lakes is a neighborhood in Florida containing multiple HOA-governed communities, including 3rd Addn to Royal Oaks, Anchorage at Miami Lakes, Anchorage, Aspen, Celebration Point (Condos and single-family), and Coral Gate East (Condos and single-family). The provided web sources consist almost entirely of generic boilerplate language from hoa-community.com and an unrelated hotel website (miamilakeshotel.com). No specific HOA fee amounts, confirmed amenities, demographic statistics, or proximity data are stated in the content. The generic text notes that HOA fees in such communities \"usually cover landscaping, regular maintenance, management fees, any clubhouse amenities such as: pool, spa, workout room/gym, security and/or common area electricity,\" but these are general statements, not community-specific facts."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-community.com/anchorage-at-miami-lakes-hoa-miami-lakes-fl/",
+      "retrieved_at": "2025-07-11T00:00:00Z",
+      "confidence": 0.2,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Source confirms an 'HOA Fee' section exists for Anchorage at Miami Lakes and other HOAs in the area, but no specific dollar amount is stated anywhere in the provided content. All HOA pages contain identical boilerplate language without fee figures."
+    },
+    {
+      "source_url": "https://www.miamilakes-fl.gov/departments/std/",
+      "retrieved_at": "2026-10-09T21:31:11.075837Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": "annual (billed in advance each tax year, itemized on the property tax bill)",
+      "currency": "USD",
+      "note": "Town of Miami Lakes operates six active Special Taxing Districts serving ~2,400 households; services are security guard and lake maintenance, funded by non-ad valorem assessments. Dollar rates are set annually and were not published on the page (public hearing on proposed rates scheduled June 16, 2026 at Town Hall). No CDD identified in the town; STD is the recurring special-assessment mechanism. Unpaid assessments create a lien on the property. (Closest enum to a CDD assessment; this is a municipal special taxing district.) Confidence high - official town site. Second source: https://www.miamilakes-fl.gov/stdassesmentrate/ (notice only, no rates)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075847Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 150.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Royal Oaks HOA: annual fees reported around $150 for dry lots (2021 data per aggregator; official site does not publish fees). Low confidence - aggregator site."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075850Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 200.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Royal Oaks HOA: annual fees reported around $200 for lakefront properties (2021 data per aggregator). Low confidence - aggregator site."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075851Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Royal Oaks HOA: recent (2024-2026) real estate listings show approximately $150-$195 annually per the aggregator. Low confidence - listings via aggregator."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075853Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "CONFLICT: same aggregator page also reports recent listings at approximately $16-$17 monthly, which is inconsistent with the $150-$195 annual range; both versions recorded as published. Low confidence."
+    },
+    {
+      "source_url": "https://miamilaker.com/Community/our-neighborhoods-the-anchorage",
+      "retrieved_at": "2026-10-09T21:31:11.075854Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 160.0,
+      "period": "period not stated in article (assumed monthly)",
+      "currency": "USD",
+      "note": "The Anchorage (213 townhomes, late-1990s, gated): local town newspaper (Mar 5, 2020) reports 'Owners pay a $160 homeowners association fee.' Period not explicitly stated. Medium confidence - local newspaper."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/amlmlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075856Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "The Anchorage at Miami Lakes HOA: specific fees not detailed in public/official sources; some real estate listings reference monthly fees in the approximate range $160-$218 (per aggregator, unverified). Official site: theanchoragehoa.com; manager: The Capin Group (786) 433-3700."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cpmlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075858Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Celebration Point (condos, ~434 units): exact fees not published by the association; recent real estate listings indicate approximately $363-$620/month depending on unit size/type (per aggregator). Low confidence - listings via aggregator."
+    },
+    {
+      "source_url": "http://www.celebrationpointmca.com/",
+      "retrieved_at": "2026-10-09T21:31:11.075860Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 299.0,
+      "period": "one-time (transaction)",
+      "currency": "USD",
+      "note": "Celebration Point one-time fees charged by manager Neighborhood Property Management: estoppel certificate $299 (rush +$119); if delinquent amount owed, additional estoppel certificate fee $179 at closing; condo questionnaire $250 regular / $350 rush; attorney-referred units $150. Not recurring dues - transaction costs for buyers."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://hoa-community.com/anchorage-at-miami-lakes-hoa-miami-lakes-fl/",
+      "retrieved_at": "2025-07-11T00:00:00Z",
+      "confidence": 0.3,
+      "amenity": "pool",
+      "detail": "Mentioned only in generic boilerplate: 'Monthly HOA costs usually cover...any clubhouse amenities such as: pool, spa, workout room/gym, security.' Not confirmed as a specific amenity of any Miami Lakes community."
+    },
+    {
+      "source_url": "https://hoa-community.com/anchorage-at-miami-lakes-hoa-miami-lakes-fl/",
+      "retrieved_at": "2025-07-11T00:00:00Z",
+      "confidence": 0.3,
+      "amenity": "clubhouse",
+      "detail": "Referenced generically in HOA fee boilerplate text. Not confirmed as a specific facility at any named Miami Lakes community."
+    },
+    {
+      "source_url": "https://hoa-community.com/anchorage-at-miami-lakes-hoa-miami-lakes-fl/",
+      "retrieved_at": "2025-07-11T00:00:00Z",
+      "confidence": 0.3,
+      "amenity": "workout_room_gym",
+      "detail": "Mentioned only in generic boilerplate about what HOA fees 'usually cover.' Not confirmed for any specific community."
+    },
+    {
+      "source_url": "https://hoa-community.com/anchorage-at-miami-lakes-hoa-miami-lakes-fl/",
+      "retrieved_at": "2025-07-11T00:00:00Z",
+      "confidence": 0.3,
+      "amenity": "security",
+      "detail": "Referenced generically in HOA fee boilerplate. Not confirmed as a specific gated/security feature of any named community."
+    },
+    {
+      "source_url": "https://royaloakshoa.com/",
+      "retrieved_at": "2026-10-09T21:31:11.075865Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Royal Oaks (official HOA site): gated residential community; 'each guard house in the community equipped with license plate readers and a security guard.' Community dates back to 1983; custom homes on oversized lots, oak-tree avenues. Managed by GRS Management, Inc. (305) 823-0072."
+    },
+    {
+      "source_url": "https://royaloakshoa.com/",
+      "retrieved_at": "2026-10-09T21:31:11.075874Z",
+      "confidence": 0.5,
+      "amenity": "community",
+      "detail": "Royal Oaks: family-oriented HOA serving a portion of the community; HOA site provides member portal for bylaws/documents; no fee schedule published."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075877Z",
+      "confidence": 0.5,
+      "amenity": "park_play",
+      "detail": "Royal Oaks (aggregator, low confidence): tot lot; lakes and pocket parks maintained for lakefront properties; HOA serves approx. 650-667 of ~1,200 single-family homes in the broader Royal Oaks area; nearby Royal Oaks Park offers athletic fields, trails, playgrounds (per The Miami Laker 2014: Royal Oaks Park is 18 acres)."
+    },
+    {
+      "source_url": "https://theanchoragehoa.com/",
+      "retrieved_at": "2026-10-09T21:31:11.075880Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "The Anchorage at Miami Lakes (official HOA site): 'gated enclave with 213 homes with views to a beautiful lake with a swimming pool and spa'; developed in the late 1990s; office 7787 NW 146th St, Miami Lakes, FL 33016, (786) 433-3700."
+    },
+    {
+      "source_url": "https://miamilaker.com/Community/our-neighborhoods-the-anchorage",
+      "retrieved_at": "2026-10-09T21:31:11.075882Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "The Anchorage (local newspaper, Mar 2020): entrance on Oak Lane at NW 82nd Ave - first guard house serves several communities, vehicles screened, visitors' tags documented; second guard house serves The Anchorage, guards screen cars and call homeowners before granting access."
+    },
+    {
+      "source_url": "https://miamilaker.com/Community/our-neighborhoods-the-anchorage",
+      "retrieved_at": "2026-10-09T21:31:11.075884Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "The Anchorage: community pool for residents with lake view; visitor parking; 213 townhomes (Luxcom Builders, late 1990s); some homes have water views at SW corner of Graham Dairy Lake."
+    },
+    {
+      "source_url": "https://miamilaker.com/Community/our-neighborhoods-the-anchorage",
+      "retrieved_at": "2026-10-09T21:31:11.075886Z",
+      "confidence": 0.5,
+      "amenity": "park_play",
+      "detail": "The Anchorage is in walking distance to Picnic Park West - town magnet with Saturday Farmer's Market, free yoga classes, and evening movies; community close to Park Centre Shops, Palmetto Expressway, and I-75."
+    },
+    {
+      "source_url": "http://www.celebrationpointmca.com/",
+      "retrieved_at": "2026-10-09T21:31:11.075888Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Celebration Point (official community site): 'offers its residents the following amenities: Beautifully Maintained Pool, Soothing Hot Tub...' (amenity list partially rendered on page). Community dates from 1986, part of Graham family/Lester Collins master plan; private residential community with lake views and landscaped water fountains. Mailing address 15517 Miami Lakeway N (per aggregator)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/cpmlfl/about_hoa/",
+      "retrieved_at": "2026-10-09T21:31:11.075889Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Celebration Point (aggregator): condominium community, approx. 434 units across 22 buildings, 33014, built 1986 (Graham Companies master plan); amenities: maintained pool, hot tub, clubhouse, picnic and BBQ areas, walking/jogging paths, lush courtyards with water fountains, lake views; 24-hour onsite security (NOT gated); governed by Celebration Point Master Association, Inc.; managed by Neighborhood Property Management."
+    },
+    {
+      "source_url": "https://hoa-resource.com/aspen-homeowners-association-miami-lakes-fl/",
+      "retrieved_at": "2026-10-09T21:31:11.075892Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Aspen HOA (aggregator, very low confidence): only community feature listed is 'Golf'. No fee or other amenity data found; no official Aspen site identified."
+    },
+    {
+      "source_url": "https://commonelements.com/directory/associations/coral-gate-east-condo-miami-lakes-fl",
+      "retrieved_at": "2026-10-09T21:31:11.075894Z",
+      "confidence": 0.5,
+      "amenity": "community",
+      "detail": "Coral Gate East Condo Association (public record aggregator): 356-unit condominium in Miami Lakes, FL; recertification due Dec 31, 2024; no management company on public record; no fee or amenity details listed. (Search snippet also indicated FEMA flood zone AE - not confirmed in page text read.)"
+    },
+    {
+      "source_url": "https://www.miamilakes-fl.gov/departments/parks-recreation/",
+      "retrieved_at": "2026-10-09T21:31:11.075897Z",
+      "confidence": 0.5,
+      "amenity": "park_play",
+      "detail": "Town of Miami Lakes Parks & Recreation (official): playgrounds, sports fields, picnic areas; recreational programs; rentable baseball/softball and football/soccer fields (resident 3-hour day rental $60, non-resident $120; lighting/prep extra); Miami Lakes Youth Center ('The Spot') with Open Hang Nights, field trips, life-skills workshops; town operates ~18,000 tree canopy; town publishes a pet-ownership resources page ('everything you need to know about dogs in Miami Lakes') - specific pet rules not shown on page read."
+    },
+    {
+      "source_url": "https://miamilaker.com/Community/did-you-know-town-parks",
+      "retrieved_at": "2026-10-09T21:31:11.075902Z",
+      "confidence": 0.5,
+      "amenity": "trail",
+      "detail": "Town parks (The Miami Laker, 2014): 101 parks totaling ~125 acres (claimed most parks per 1,000 residents of any Florida municipality); 41 tot-lot parks, two active/athletic parks, two community centers, six lakefront beaches, 2 greenways (avg 20 ft wide), two trails (NW 170 Street trail is 1 mile along the canal), a marina; 27 dog stations; Miami Lakes Optimist Park 30 acres, Royal Oaks Park 18 acres."
+    },
+    {
+      "source_url": "https://www.miamilakesgolf.com/",
+      "retrieved_at": "2026-10-09T21:31:11.075905Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Miami Lakes Golf Club (official site): semi-private classic-style 18-hole, Par 72 championship course; over 500 tree-shaded acres; designed by Bill Watts 1962, updated by Kipp Schulties 1998; driving range, practice areas, pro shop; Town of Miami Lakes resident rates $110 (Mon-Thu) / $130 (Fri-Sun/holidays); located between MIA and FLL airports."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T21:32:48.890949Z",
+      "confidence": 0.5,
+      "amenity": "lakefront_homes_on_community_lakes",
+      "detail": "Many homes back onto community lakes and lake-view lots are common in current listings; this is inland lake frontage, not Intracoastal water. Page also notes 55+ communities like this typically pair lower-maintenance homes with a clubhouse, pool, fitness center, and social calendar (generic, not confirmed for this community)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.census.gov/quickfacts/fact/table/miamilakestownflorida/INC110224",
+    "retrieved_at": "2026-10-09T21:31:11.075909Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 30467,
+    "data_year": 2024,
+    "geography_level": "Town of Miami Lakes (incorporated town, Miami-Dade County, FL) - 2020 Census population; income/owner-occupancy from ACS 2020-2024 (in 2024 dollars); population estimate 33,067 as of July 1, 2025 also published on this page (V2025). Median age NOT on this page (see Wikipedia record: 43.1, 2020 Census). Also: 89.0% Hispanic or Latino; 15.1% age 65+; median home value $626,400; median gross rent $2,120; per capita income $45,751; 6.0% poverty; 48.2% foreign-born (2020-2024). Incorporated Dec 6, 2000 (31st Miami-Dade municipality); ZIP 33014/33016/33018; 6.51 sq mi; ~1,100 businesses; 15 miles NW of downtown Miami (per Wikipedia). NOTE: 'Miami Lakes' is an incorporated town containing multiple HOA communities, not a single gated community - hence 'HOA: None' at the town level is correct. Corroborating source: https://en.wikipedia.org/wiki/Miami_Lakes,_Florida (2020 census 30,467; median age 43.1; 18.2% under 18; 16.7% 65+; 84.14% Hispanic/Latino; 11,238 households; 12,090 housing units, 7.0% vacant; racial/ethnic composition tables for 2000/2010/2020)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.healthgrades.com/hospital/promise-hospital-of-miami-ca4d05",
+      "retrieved_at": "2026-10-09T21:31:11.075916Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Promise Hospital of Miami - 14001 NW 82nd Ave, Miami Lakes, FL 33016 (located WITHIN the town; listed first among 'Hospitals Near Miami Lakes' in the Healthgrades directory)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.publix.com/locations/1129-publix-at-miami-lakes",
+      "retrieved_at": "2026-10-09T21:31:11.075920Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix at Miami Lakes (store #1129), 15000 Miami Lakes Dr E, Miami Lakes, FL 33014 - WITHIN the town; pharmacy, drive-thru, curbside pickup; open 7am-10pm daily (address per Publix's own listing; store page read confirms store #1129, hours, services)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-miami-lakes",
+      "retrieved_at": "2026-10-09T21:31:11.075922Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library System - Miami Lakes Branch, 6699 Windmill Gate Road, Miami Lakes, FL 33014, (305) 822-6520 - WITHIN the town; branch opened 1981 (per hoopla.mdpls.com). CAUTION: official page carries patron notice that the branch will be closed for approximately 24 months beginning Monday, March 23 for interior/exterior construction and renovation (year not stated on page).",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mlk8center.org/",
+      "retrieved_at": "2026-10-09T21:31:11.075924Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Miami Lakes K-8 Center (M-DCPS school #3281; grades Pre-K through 8) - WITHIN the town; self-described 'A' School, SILVER STEAM Designated School, EVERGLADES GOLD Champion School, FIVE STAR School of Excellence; town also operates school crossing guards there and at Bob Graham Education Center (K-8 charter, state 'A' grade per The Miami Laker)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Hialeah-Miami_Lakes_Senior_High_School",
+      "retrieved_at": "2026-10-09T21:31:11.075925Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Hialeah-Miami Lakes Senior High School (grades 9-12, M-DCPS), 7977 West 12th Avenue, Hialeah, FL 33014 - 'on the boundary with the town of Miami Lakes'; built 1971 'to serve the newly formed community of Miami Lakes'; enrollment 1,311 (2024-25); state grade B (2024-25). Feeder pattern includes Miami Lakes K-8 Center and Miami Lakes Middle.",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Miami_Lakes,_Florida",
+      "retrieved_at": "2026-10-09T21:31:11.075927Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Neighborhood shopping centers and the 'Main Street' town center WITHIN Miami Lakes (original development is a New Urbanism model with shopping/services within walking distance of residences); The Anchorage neighborhood is close to Park Centre Shops (per The Miami Laker)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Approximate distances in miles: no page read stated a mile distance for the hospital, Publix, library, schools, or shopping; all distance fields left null rather than estimated.",
+    "Aspen HOA: no fees, no amenities (beyond a single 'Golf' feature tag on the low-quality aggregator hoa-resource.com), no official website identified. Needs direct HOA inquiry.",
+    "3rd Addn to Royal Oaks: listed as a separate HOA on hoa-community.com but no fee or amenity data found anywhere; appears to be boilerplate-only pages.",
+    "Coral Gate East: no HOA fee amount and no amenity list found (hoa-community.com page is boilerplate; homes.com blocked with 'Access Denied'); 356 units per commonelements.com; built 1974 per Compass (unverified - page not read); FEMA flood zone AE appears only in a search snippet, unverified.",
+    "'Anchorage HOA' (hoa-community.com / hoa-resource.com) vs 'The Anchorage at Miami Lakes' could not be distinguished - aggregator pages are boilerplate; all concrete data came from the official site (theanchoragehoa.com) and The Miami Laker for The Anchorage (213 townhomes).",
+    "Royal Oaks current official dues: official site (royaloakshoa.com) publishes no fee schedule; the $150-$195/yr and $16-$17/mo figures come from an aggregator citing 2021 data and recent listings, and the two versions conflict.",
+    "The Miami Laker's $160 Anchorage fee: billing period not stated in the article (assumed monthly, 2020 vintage - verify with The Capin Group).",
+    "Town Special Taxing District dollar rates: rates are set annually (public hearing June 16, 2026) and were not published on the town pages read; which districts (of six, ~2,400 households) a given property falls in requires the Town's district map.",
+    "No Community Development District (CDD) was identified for Miami Lakes; the recurring special assessment mechanism found is the town's Special Taxing Districts (security guard + lake maintenance services).",
+    "Celebration Point official amenity list only partially rendered (page text cut off after 'following amenities:'); the fuller list (clubhouse, picnic/BBQ, paths, 24-hour security, 22 buildings) comes from aggregator/listing sources - verify with Neighborhood Property Management (305-825-9413).",
+    "Pet policies: no community-specific pet rules found for any HOA; the town publishes a general pet-ownership resources page. HOA pet policies (Royal Oaks, The Anchorage, Celebration Point, Coral Gate East, Aspen) unverified.",
+    "MDPLS Miami Lakes Branch closure notice says 'approximately 24 months beginning Monday, March 23' without a year - confirm reopening schedule.",
+    "Population figures differ by vintage: 30,467 (2020 Census) vs 33,067 (July 1, 2025 estimate, Census V2025) - both from the same QuickFacts page.",
+    "Median age (43.1, 2020) is sourced via Wikipedia citing the 2020 Census; the ACS 2020-2024 median age figure was not present on the QuickFacts page read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_annual",
+      "values": [
+        {
+          "amount": 150.0,
+          "period": "annual",
+          "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+          "retrieved_at": "2026-10-09T21:31:11.075847+00:00"
+        },
+        {
+          "amount": 200.0,
+          "period": "annual",
+          "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+          "retrieved_at": "2026-10-09T21:31:11.075850+00:00"
+        },
+        {
+          "amount": null,
+          "period": "annual",
+          "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+          "retrieved_at": "2026-10-09T21:31:11.075851+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T21:34:55.100825Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://hoa-community.com/anchorage-at-miami-lakes-hoa-miami-lakes-fl/",
+          "retrieved_at": "2025-07-11T00:00:00+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/romlfl/about_hoa/",
+          "retrieved_at": "2026-10-09T21:31:11.075853+00:00"
+        },
+        {
+          "amount": 160.0,
+          "period": "period not stated in article (assumed monthly)",
+          "source_url": "https://miamilaker.com/Community/our-neighborhoods-the-anchorage",
+          "retrieved_at": "2026-10-09T21:31:11.075854+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/amlmlfl/about_hoa/",
+          "retrieved_at": "2026-10-09T21:31:11.075856+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/cpmlfl/about_hoa/",
+          "retrieved_at": "2026-10-09T21:31:11.075858+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T21:34:55.100833Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Miami Lakes K-8 Center (M-DCPS school #3281; grades Pre-K through 8) - WITHIN the town; self-described 'A' School, SILVER STEAM Designated School, EVERGLADES GOLD Champion School, FIVE STAR School of Excellence; town also operates school crossing guards there and at Bob Graham Education Center (K-8 charter, state 'A' grade per The Miami Laker)",
+          "distance_miles": null,
+          "source_url": "https://mlk8center.org/"
+        },
+        {
+          "nearest_name": "Hialeah-Miami Lakes Senior High School (grades 9-12, M-DCPS), 7977 West 12th Avenue, Hialeah, FL 33014 - 'on the boundary with the town of Miami Lakes'; built 1971 'to serve the newly formed community of Miami Lakes'; enrollment 1,311 (2024-25); state grade B (2024-25). Feeder pattern includes Miami Lakes K-8 Center and Miami Lakes Middle.",
+          "distance_miles": null,
+          "source_url": "https://en.wikipedia.org/wiki/Hialeah-Miami_Lakes_Senior_High_School"
+        }
+      ],
+      "detected_at": "2026-10-09T21:34:55.100837Z"
+    }
+  ],
+  "created_at": "2026-10-09T21:06:52.338798Z",
+  "updated_at": "2026-10-09T21:34:55.100896Z"
+}

@@ -1,0 +1,315 @@
+{
+  "id": "547f5509-7626-40c5-a132-160fedbd4369",
+  "identity": {
+    "name": "Huntington Lakes",
+    "slug": "huntington-lakes",
+    "county_fips": null,
+    "city": "Naples",
+    "hoa_name": "HUNTINGTON LAKES RESIDENTS' ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Huntington Lakes is a gated residential condo community in Naples, FL (Collier County), established on 11/07/1995. Located at 6900 Huntington Lakes Cir, Naples, FL 34119. Managed by First Service Residential. The community features a clubhouse with multiple amenities, three pools, tennis courts, and a 2-mile walking/biking perimeter."
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N95000005282",
+      "retrieved_at": "2026-10-10T20:25:14.313749Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fees are required (listed as 'HOA Required Plus Fees') but specific amounts are not stated in the available content. Contact the property manager (First Service Residential, 954-926-2921) for current fee amounts."
+    },
+    {
+      "source_url": "https://spacerentguide.com/condo/huntington-lakes-naples-fl.html",
+      "retrieved_at": "2026-10-10T20:29:44.927570Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 194.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Aggregator-reported 'average HOA fee' for Huntington Lakes condos; not confirmed by the HOA or property manager. Verify with First Service Residential before purchase. A separate unverified snippet (communitypay.us) cited a median fee of $538/mo for the sub-association 'Huntington Lakes Two Condominium Association, Inc.' — page not read, treat as unconfirmed. No CDD special assessment figures found in sources read. (Retrieved 2026-09-15T12:00:00Z, confidence 0.4.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N95000005282",
+      "retrieved_at": "2026-10-10T20:25:14.313759Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Gated community entrance with security access"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313767Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Har-Tru tennis courts located across from the Clubhouse; open 7 a.m. to 10 p.m.; court reservations via reservemycourt.com"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313769Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Clubhouse Pool (dawn to dusk), Pool 2 on west side of Aspen Creek Lane, and Pool 3 in back west corner of Huntington Lakes Circle; open 7 a.m. to 10 p.m."
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313772Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse contains Exercise Room, Saunas, Billiard Room, Library/Card Room, and a Ballroom with Kitchen, Stage, and Dance Floor; free WiFi; open 7 a.m. to 10 p.m."
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313774Z",
+      "confidence": 0.5,
+      "amenity": "billiard_room",
+      "detail": "Pool tables located in the Clubhouse; open 7 a.m. to 10 p.m."
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313776Z",
+      "confidence": 0.5,
+      "amenity": "bocce_courts",
+      "detail": "Located across from the Clubhouse; open 7 a.m. to 10 p.m.; in-season November 1 to March 31 with scheduled Ladies' and Men's Bocce"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313778Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Jacuzzi Spa on the Clubhouse Pool Deck; open 7 a.m. to 10 p.m."
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313780Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Exercise Room in the Clubhouse; open 7 a.m. to 10 p.m.; persons under 12 not permitted"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313782Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library/Game/Card Room in the Clubhouse; books, jigsaw puzzles, card games; no check-in/check-out; open 7 a.m. to 10 p.m."
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:25:14.313784Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking and biking along the perimeter of Huntington Lakes Circle, approximately 2 miles; pedestrians on sidewalks, bicycles follow rules of the road"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927588Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Contains exercise room, saunas, billiard room, library/card room, and ballroom with kitchen, stage and dance floor; free WiFi; hours 7 a.m.–10 p.m. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927602Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Three pools: Clubhouse Pool (dawn to dusk), Pool 2 on west side of Aspen Creek Lane, Pool 3 in back west corner of Huntington Lakes Circle (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927608Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Jacuzzi spa on Clubhouse Pool Deck, 7 a.m.–10 p.m. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927614Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Exercise room in clubhouse, open all day; persons under 12 not permitted (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927620Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Har-Tru courts across from clubhouse; reservations via reservemycourt.com; 7 a.m.–10 p.m. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927627Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Across from clubhouse; organized ladies'/men's bocce Nov 1–Mar 31 (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927633Z",
+      "confidence": 0.5,
+      "amenity": "billiard_room",
+      "detail": "Pool tables in clubhouse, 7 a.m.–10 p.m. (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927639Z",
+      "confidence": 0.5,
+      "amenity": "library_card_room",
+      "detail": "Library/Game/Card room in clubhouse, no check-in/out (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://huntingtonlakes.fswp3.net/amenities/",
+      "retrieved_at": "2026-10-10T20:29:44.927645Z",
+      "confidence": 0.5,
+      "amenity": "walking_biking_trail",
+      "detail": "Perimeter of Huntington Lakes Circle is approximately 2 miles for walking/biking (Retrieved 2026-09-15T12:00:00Z, confidence 0.9.)"
+    },
+    {
+      "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N95000005282",
+      "retrieved_at": "2026-10-10T20:29:44.927650Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Listed as a gated community; association is HUNTINGTON LAKES RESIDENTS' ASSOCIATION, INC., est. 11/07/1995, managed by First Service Residential (Retrieved 2026-09-15T12:00:00Z, confidence 0.6.)"
+    },
+    {
+      "source_url": "https://www.naplescondoboutique.com/huntington-lakes/",
+      "retrieved_at": "2026-10-10T20:29:44.927656Z",
+      "confidence": 0.5,
+      "amenity": "picnic_area",
+      "detail": "Mentioned among community activities (Retrieved 2026-09-15T12:00:00Z, confidence 0.6.)"
+    },
+    {
+      "source_url": "https://www.naplescondoboutique.com/huntington-lakes/",
+      "retrieved_at": "2026-10-10T20:29:44.927661Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard",
+      "detail": "Mentioned among community activities (Retrieved 2026-09-15T12:00:00Z, confidence 0.6.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US34119-34119/",
+    "retrieved_at": "2026-10-10T20:29:44.927669Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 36807,
+    "data_year": null,
+    "geography_level": "ZIP 34119 (Naples, FL — the ZIP containing Huntington Lakes; not community-specific census data; no tract-level data found in budget)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes",
+      "retrieved_at": "2026-10-10T20:29:44.927679Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mercato (notable shopping & dining)",
+      "distance_miles": 4.3
+    },
+    {
+      "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes",
+      "retrieved_at": "2026-10-10T20:29:44.927685Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Quail Creek Country Club (golf)",
+      "distance_miles": 1.1
+    },
+    {
+      "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes",
+      "retrieved_at": "2026-10-10T20:29:44.927688Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "North Collier Regional Park",
+      "distance_miles": 1.3
+    },
+    {
+      "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes",
+      "retrieved_at": "2026-10-10T20:29:44.927691Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Vanderbilt Beach (closest beach)",
+      "distance_miles": 5.6
+    },
+    {
+      "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes",
+      "retrieved_at": "2026-10-10T20:29:44.927694Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "RSW Airport",
+      "distance_miles": 17.4
+    },
+    {
+      "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes",
+      "retrieved_at": "2026-10-10T20:29:44.927697Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Naples (5th Avenue South)",
+      "distance_miles": 10.3
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues for the master association (Huntington Lakes Residents' Association, Inc.) could not be verified — only an aggregator 'average' of $194/month was found; a search snippet from communitypay.us cited a median $538/mo for sub-association 'Huntington Lakes Two Condominium Association, Inc.' but that page was not read. Confirm with First Service Residential (954-926-2921).",
+    "No CDD special assessment or other recurring charge figures found in sources read.",
+    "Median age, median household income, and owner-occupancy % for ZIP 34119 were not captured — the Census Reporter page returned only population/area/density in the readable content.",
+    "Nearest grocery store, library, hospital, and school with distances were not found in sources read (yournaplesexpert page lists shopping/beach/golf/park/airport distances only; distances there are approximate straight-line).",
+    "Pet policy and leasing/age-restriction rules not found; yournaplesexpert advises verifying current rules with the specific association.",
+    "Demographic data is at ZIP 34119 level (pop. 36,807), not community- or tract-specific; data year not stated on the page read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=N95000005282",
+          "retrieved_at": "2026-10-10T20:25:14.313749+00:00"
+        },
+        {
+          "amount": 194.0,
+          "period": "monthly",
+          "source_url": "https://spacerentguide.com/condo/huntington-lakes-naples-fl.html",
+          "retrieved_at": "2026-10-10T20:29:44.927570+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T20:29:44.928588Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Quail Creek Country Club (golf)",
+          "distance_miles": 1.1,
+          "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes"
+        },
+        {
+          "nearest_name": "North Collier Regional Park",
+          "distance_miles": 1.3,
+          "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes"
+        },
+        {
+          "nearest_name": "Vanderbilt Beach (closest beach)",
+          "distance_miles": 5.6,
+          "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes"
+        },
+        {
+          "nearest_name": "RSW Airport",
+          "distance_miles": 17.4,
+          "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes"
+        },
+        {
+          "nearest_name": "Downtown Naples (5th Avenue South)",
+          "distance_miles": 10.3,
+          "source_url": "https://www.yournaplesexpert.com/communities/huntington-lakes"
+        }
+      ],
+      "detected_at": "2026-10-10T20:29:44.928599Z"
+    }
+  ],
+  "created_at": "2026-10-10T20:25:14.314319Z",
+  "updated_at": "2026-10-10T20:29:44.928746Z"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "0b6cdb48-5716-4eca-9b74-fefe7d4890ed",
+  "identity": {
+    "name": "Ave Maria",
+    "slug": "ave-maria",
+    "county_fips": null,
+    "city": "Ave Maria / Naples, Collier County",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": null
+  },
+  "fees": [],
+  "amenities": [],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-12T19:22:08.977742Z",
+  "updated_at": "2026-10-12T19:22:08.977780Z"
+}

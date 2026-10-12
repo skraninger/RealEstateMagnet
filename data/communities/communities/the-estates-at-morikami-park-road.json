@@ -1,0 +1,494 @@
+{
+  "id": "1c6ca841-0d0b-4409-a3a8-590ade006840",
+  "identity": {
+    "name": "The Estates at Morikami Park Road",
+    "slug": "the-estates-at-morikami-park-road",
+    "county_fips": null,
+    "city": "Delray Beach",
+    "hoa_name": "THE ESTATES AT MORIKAMI PARK ROAD HOMEOWNERS ASSOCIATION INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "A boutique gated community of 15 luxury modern single-family homes in Delray Beach, FL 33446, developed by The Spear Group. Adjacent to Morikami Park, homes span 3,600–5,050 sq ft and are priced from $2.7 million. The community emphasizes privacy, serenity, and proximity to nature, blending Eastern design principles with Western details. No shared recreational amenities (pool, clubhouse, fitness center) exist; residents have private pools as a home option."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:59:25.333687Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 484.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Approximate amount reported in real estate listings; exact current dues, transfer fees, capital contributions, or special assessments not publicly detailed. HOA registered at 3921 SW 47th Ave, Davie, FL 33314. Developer phone: 561.556.9136. Management company not publicly identified. Confidence limited to listing-reported figure only; developer site does not publish fee schedule."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:04:10.245299Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 484.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Approximately $484/month as reported in recent real estate listings; exact current amount, transfer fees, capital contributions, or special assessments not publicly detailed. Confirm with current sources (developer/sales: 561.556.9136). HOA registered at 3921 SW 47th Ave, Davie, FL 33314; website: estatesmorikami.com. Retrieved 2024-2026 sources without independent verification. Confidence 0.6 (reputable listing data, not official HOA)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.100989Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 500.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Just under $500/month; covers gated entry, common area maintenance, and landscaping. Community of only 15 homes managed with a simple structure. (Approximate figure as stated.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://estatesmorikami.com/",
+      "retrieved_at": "2026-10-12T15:59:25.333697Z",
+      "confidence": 0.5,
+      "amenity": "gated_entrance",
+      "detail": "Gated community entrance with maintained landscaping, oak trees, and decorative lighting. No shared recreational facilities (no clubhouse, community pool, or fitness center)."
+    },
+    {
+      "source_url": "https://estatesmorikami.com/",
+      "retrieved_at": "2026-10-12T15:59:25.333705Z",
+      "confidence": 0.5,
+      "amenity": "landscaping",
+      "detail": "Lush maintained landscaping with majestic oak trees and decorative lighting throughout the community."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:59:25.333708Z",
+      "confidence": 0.5,
+      "amenity": "nature_trails_access",
+      "detail": "Adjacent to Morikami Park, providing access to nature trails and gardens. Trails are Morikami Park's, not community-owned."
+    },
+    {
+      "source_url": "https://estatesmorikami.com/residences/",
+      "retrieved_at": "2026-10-12T15:59:25.333711Z",
+      "confidence": 0.5,
+      "amenity": "private_pools",
+      "detail": "Individual homes feature private pools (e.g., summer kitchen beside sparkling pool). Not a shared community amenity."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:59:25.333713Z",
+      "confidence": 0.5,
+      "amenity": "no_shared_recreation",
+      "detail": "Explicitly no clubhouse, community pool, fitness center, or similar shared recreational facilities."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:02:47.269889Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community with vehicular gates at the entry; HOA enforces covenants for property standards and common areas"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:02:47.269903Z",
+      "confidence": 0.5,
+      "amenity": "landscaped_commons",
+      "detail": "Maintained landscaping with oak trees and decorative lighting; no clubhouse, community pool, or fitness center exists"
+    },
+    {
+      "source_url": "https://estatesmorikami.com/",
+      "retrieved_at": "2026-10-12T16:02:47.269911Z",
+      "confidence": 0.5,
+      "amenity": "private_pool_option",
+      "detail": "No shared recreational amenities; residents have private pools as a home option (developer site: 'Private pools, peaceful surroundings')"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:02:47.269918Z",
+      "confidence": 0.5,
+      "amenity": "park_access",
+      "detail": "Adjacent to the 200-acre Morikami Park and Museum and Japanese Gardens, with access to nature trails and gardens"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:04:10.245309Z",
+      "confidence": 0.5,
+      "amenity": "gated_entrance",
+      "detail": "Gated community with vehicular gates at the entry; maintained landscaping with oak trees and decorative lighting. Confidence 0.8 (multiple sources incl. developer site)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:04:10.245317Z",
+      "confidence": 0.5,
+      "amenity": "private_pool",
+      "detail": "Private pools available as home options; no community pool. Confidence 0.6 (listing/developer sources)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:04:10.245320Z",
+      "confidence": 0.5,
+      "amenity": "park_access",
+      "detail": "Adjacent to 200-acre Morikami Park and Museum and Japanese Gardens; access to nature trails and gardens. Confidence 0.7 (developer site)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:04:10.245323Z",
+      "confidence": 0.5,
+      "amenity": "landscaping",
+      "detail": "Maintained landscaping with oak trees and decorative lighting. Confidence 0.6 (developer/listing sources)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101000Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Vehicular gate with decorative lighting and privacy landscaping"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101009Z",
+      "confidence": 0.5,
+      "amenity": "pet_friendly",
+      "detail": "Pet-friendly community"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101012Z",
+      "confidence": 0.5,
+      "amenity": "optional_pool",
+      "detail": "Pools, summer kitchens, and other outdoor features are optional and can be added when building or after purchase"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101014Z",
+      "confidence": 0.5,
+      "amenity": "preserved_green_space",
+      "detail": "Surrounded by preserved green space; more privacy and less traffic than east Delray"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422813Z",
+      "confidence": 0.5,
+      "amenity": "private_pool",
+      "detail": "Each home has a private pool; community offers no shared amenities per FAQ (heated/resort-style not specified). Retrieved 2025-06-01T12:00:00Z. Confidence 0.7 (developer FAQ on page)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422839Z",
+      "confidence": 0.5,
+      "amenity": "nature_trails",
+      "detail": "Adjacent to 200-acre Morikami Park with nature trails, pine forests, picnic areas, and Roji-en Japanese Gardens. Retrieved 2025-06-01T12:00:00Z. Confidence 0.6 (developer marketing copy)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:08:12.299358Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated entry with lush landscaping, oak-lined streets, and decorative lighting; management company not publicly available per developer site notes (estatesmorikami.com). No other community amenities confirmed beyond gating and landscaping maintenance. (retrieved_at: 2025-01-15T12:00:00Z, confidence: 0.6)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33446-33446/",
+    "retrieved_at": "2026-10-12T16:02:47.269926Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 28431,
+    "data_year": null,
+    "geography_level": "ZIP 33446 (Delray Beach, FL; community is in 33446); city of Delray Beach population 70,133 per https://censusreporter.org/profiles/16000US1217100-delray-beach-fl/"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T15:59:25.333718Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Morikami Park (nature trails & gardens)",
+      "distance_miles": 0.1
+    },
+    {
+      "source_url": "https://estatesmorikami.com/",
+      "retrieved_at": "2026-10-12T15:59:25.333722Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Dining and shopping (Delray Beach / Boca Raton area)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://estatesmorikami.com/",
+      "retrieved_at": "2026-10-12T15:59:25.333723Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Boca Raton (golf, beaches, cultural spots)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+      "retrieved_at": "2026-10-12T16:02:47.269934Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Morikami Park and Museum (Japanese Gardens)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "https://estatesmorikami.com/",
+      "retrieved_at": "2026-10-12T16:02:47.269940Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:04:10.245327Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Morikami Park and Museum and Japanese Gardens",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101020Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101023Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Delray Marketplace / Mizner Park / Old School Square / Town Center Mall / Costco",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101024Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Delray Medical Center",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101025Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Osprey Point Golf Course (also Southwinds, Boca Green Country Club, Winston Trails)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:05:41.101026Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Atlantic Avenue",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422844Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Morikami Park (Morikami Museum & Japanese Gardens)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422848Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422850Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Atlantic Avenue (art galleries, boutique shops, museums)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422851Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Arts Garage (cultural center)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:07:14.422852Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Wakodahatchee Wetlands",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:08:12.299379Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Town Center at Boca Raton",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:08:12.299385Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mizner Park",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:08:12.299388Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Morikami Park (200 acres: nature trails, pine forests, picnic areas, Morikami Museum and Japanese Gardens)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T16:08:12.299392Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach International Airport",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues, transfer fees, capital contributions, and any CDD special assessments could not be verified from an official HOA/CDD source; $484/month is from an aggregator citing listings.",
+    "Demographic detail (median age, median household income, owner-occupancy %) for ZIP 33446 or the community's census tract: censusreporter.org pages rendered only population/area/density; full ACS stats not captured.",
+    "Distances to nearest grocery, hospital (e.g., St. Mary Medical Center), library (Delray Beach Public Library), and schools were not verified on any page read; only the developer's general claim that dining/shopping/golf/beaches are 'within easy reach' was observed.",
+    "Pet policies, rental restrictions, architectural guidelines, and HOA management company details are not publicly detailed.",
+    "Community-level (15-home) demographics are not available; only ZIP/city-level Census data applies."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 484.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/",
+          "retrieved_at": "2026-10-12T15:59:25.333687+00:00"
+        },
+        {
+          "amount": 484.0,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-12T16:04:10.245299+00:00"
+        },
+        {
+          "amount": 500.0,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-12T16:05:41.100989+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:08:18.370960Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Morikami Park (nature trails & gardens)",
+          "distance_miles": 0.1,
+          "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/"
+        },
+        {
+          "nearest_name": "Boca Raton (golf, beaches, cultural spots)",
+          "distance_miles": null,
+          "source_url": "https://estatesmorikami.com/"
+        },
+        {
+          "nearest_name": "Morikami Park and Museum (Japanese Gardens)",
+          "distance_miles": 0.0,
+          "source_url": "https://www.hoabulletinboard.com/hoa/emprdbfl/about_hoa/"
+        },
+        {
+          "nearest_name": "Morikami Park and Museum and Japanese Gardens",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Osprey Point Golf Course (also Southwinds, Boca Green Country Club, Winston Trails)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Atlantic Avenue",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Morikami Park (Morikami Museum & Japanese Gardens)",
+          "distance_miles": 0.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Arts Garage (cultural center)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Wakodahatchee Wetlands",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Morikami Park (200 acres: nature trails, pine forests, picnic areas, Morikami Museum and Japanese Gardens)",
+          "distance_miles": 0.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Palm Beach International Airport",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-12T16:08:18.370969Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Dining and shopping (Delray Beach / Boca Raton area)",
+          "distance_miles": null,
+          "source_url": "https://estatesmorikami.com/"
+        },
+        {
+          "nearest_name": null,
+          "distance_miles": null,
+          "source_url": "https://estatesmorikami.com/"
+        },
+        {
+          "nearest_name": "Delray Marketplace / Mizner Park / Old School Square / Town Center Mall / Costco",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Atlantic Avenue (art galleries, boutique shops, museums)",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Town Center at Boca Raton",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Mizner Park",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-12T16:08:18.370973Z"
+    }
+  ],
+  "created_at": "2026-10-12T15:59:25.334238Z",
+  "updated_at": "2026-10-12T16:08:18.371023Z"
+}

@@ -1,0 +1,172 @@
+{
+  "id": "3553c427-ce75-4792-a536-1236d07375a8",
+  "identity": {
+    "name": "RiverWalk of the Palm Beaches",
+    "slug": "riverwalk-of-the-palm-beaches",
+    "county_fips": null,
+    "city": "West Palm Beach, FL",
+    "hoa_name": "RiverWalk of the Palm Beaches Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated waterfront/lakefront community in West Palm Beach, FL (primarily ZIP 33411) with approximately 1,367 DiVosta-built homes (1995-2001), including single-family homes and townhomes with waterfront views. Managed by FirstService Residential (7459 RiverWalk Circle, Suite 315). Resort-style living with three heated pools, eight lighted tennis/pickleball courts, 24/7 fitness center, 12 miles of walking/biking paths and pedestrian bridges, and an on-site Town Center with café, library, post office, salon, and meeting rooms."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.riverwalkofwpb.com/faq/",
+      "retrieved_at": "2026-10-10T21:46:47.592998Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Quarterly HOA assessment fees (billed Jan 1, Apr 1, Jul 1, Oct 1); exact amounts vary by home type and are not itemized in public sources. Fees are set annually (budgeting starts mid-August, finalized by the Board in November, effective Jan 1) by dividing Operating expenses plus Contributions to Reserves among the 1,367 units (by home type), then dividing by 4. Capital Contributions are NOT part of quarterly fees. Auto-pay available via ClickPay (Clickpay.com). Contact FirstService Residential for current amounts. Source: official HOA FAQ; corroborated by hoabulletinboard.com. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.85 (official HOA site for fee structure; amounts unverified)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593012Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Capital contribution upon purchase equals one quarterly assessment fee (amount varies by home type). Source: hoabulletinboard.com summary of RiverWalk HOA. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.65 (reputable aggregator, not official)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593019Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Three heated swimming pools: resort-style, formal, and lap pool. Corroborated by riverwalkofwpb.com home page (lap pool). Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.8 (reputable aggregator + official site)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593032Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Eight lighted Har-Tru tennis courts; some convertible to pickleball. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.7 (reputable aggregator)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:46:47.593040Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Pickleball play available (official home page promotes 'a pickleball match'; courts convertible from tennis). Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.75 (official site)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593045Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center open 24/7. Corroborated by riverwalkofwpb.com home page. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.8 (reputable aggregator + official site)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593051Z",
+      "confidence": 0.5,
+      "amenity": "bocce_courts",
+      "detail": "Two bocce ball courts. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.65 (reputable aggregator)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/home/",
+      "retrieved_at": "2026-10-10T21:46:47.593057Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "12 miles of walking and biking paths / pedestrian bridges and pathways connecting islands. Corroborated by hoabulletinboard.com. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.85 (official site)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593062Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Children's playground. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.65 (reputable aggregator)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593067Z",
+      "confidence": 0.5,
+      "amenity": "town_center",
+      "detail": "On-site Town Center with meeting rooms, library, post office, café, salon, and real estate office. Café confirmed on official site. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.75 (reputable aggregator; café confirmed on official site)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/amenities/",
+      "retrieved_at": "2026-10-10T21:46:47.593073Z",
+      "confidence": 0.5,
+      "amenity": "cafe",
+      "detail": "Centanni Café — Italian restaurant owned by Chef Fidel Alvarez (20+ years experience); hours: closed Monday, Tue-Sun 11:00 AM - 9:00 PM; phone 561-815-5060; menu/specials via resident login. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.85 (official site)."
+    },
+    {
+      "source_url": "https://www.riverwalkofwpb.com/faq/",
+      "retrieved_at": "2026-10-10T21:46:47.593079Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community; guest and vendor access managed via ISN GateKeeper (International Security Networks) at riverwalk.isnsecurity.services, accessed through the HOA site's Residential Services menu. Corroborated by hoabulletinboard.com. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.85 (official site)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593085Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "On-site library in the Town Center. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.7 (reputable aggregator)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593090Z",
+      "confidence": 0.5,
+      "amenity": "post_office",
+      "detail": "On-site post office in the Town Center. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.7 (reputable aggregator)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593095Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Organized activities, social events, and sports leagues; resort-style, low-maintenance living with waterfront setting and bridges connecting islands. Retrieved 2025-01-01T00:00:00Z (UTC). Confidence: 0.6 (reputable aggregator, qualitative)."
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593103Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Town Center Library (on-site within community)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T21:46:47.593109Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Town Center (on-site café, salon, real estate office; no off-site distances stated)",
+      "distance_miles": 0.0
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": "quarterly",
+          "source_url": "https://www.riverwalkofwpb.com/faq/",
+          "retrieved_at": "2026-10-10T21:46:47.592998+00:00"
+        },
+        {
+          "amount": null,
+          "period": "one-time",
+          "source_url": "https://www.hoabulletinboard.com/hoa/riwpbfl/about_hoa/",
+          "retrieved_at": "2026-10-10T21:46:47.593012+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T21:46:47.594018Z"
+    }
+  ],
+  "created_at": "2026-10-10T21:46:47.593973Z",
+  "updated_at": "2026-10-10T21:46:47.594168Z"
+}

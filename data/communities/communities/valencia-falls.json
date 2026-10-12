@@ -1,0 +1,216 @@
+{
+  "id": "7547fed5-6843-4ba9-b8ea-e4ab6f712480",
+  "identity": {
+    "name": "Valencia Falls",
+    "slug": "valencia-falls",
+    "county_fips": null,
+    "city": "Delray Beach, FL 33444",
+    "hoa_name": "Valencia Falls Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "55+ single-family community in Delray Beach, FL with 705 units. HOA established 08/17/2000 (Federal ID 651046132), located at 7084 Prado Lake Dr, Delray Beach, FL 33446. Managed by FirstService Residential (2950 N 28th Ter, Hollywood, FL 33020; 954-926-2921). Association website: valenciafalls.org. Utilities: FPL (electric), City of Delray Beach (water, sewer, trash)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488614Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 817.33,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-verified observed range $817.33/mo (1 data point); not a guaranteed fee — verify with the association. No CDD/special assessment signals reported yet. Rental rule: application required; buyer approval required (55+ community). Median housing cost in the area is $1,416/mo (separate from HOA)."
+    },
+    {
+      "source_url": "https://hoa-resource.com/valencia-falls-homeowners-association-delray-beach-fl/",
+      "retrieved_at": "2026-10-10T21:03:01.549011Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Template listing claims HOA fee includes water, gas, and snow removal; unverified boilerplate (snow removal in FL is implausible) - treat as unreliable and confirm what the $817.33/mo dues actually cover via estoppel/budget."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488632Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool (resident-verified; also listed by florida-hoa.net)"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488645Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis court(s) (resident-verified; also listed by florida-hoa.net)"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488653Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball court(s)"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488660Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488665Z",
+      "confidence": 0.5,
+      "amenity": "cafe_restaurant",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488671Z",
+      "confidence": 0.5,
+      "amenity": "community_room",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488677Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488682Z",
+      "confidence": 0.5,
+      "amenity": "game_room",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488687Z",
+      "confidence": 0.5,
+      "amenity": "jogging_path",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488692Z",
+      "confidence": 0.5,
+      "amenity": "picnic_area",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488698Z",
+      "confidence": 0.5,
+      "amenity": "internet_included",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488703Z",
+      "confidence": 0.5,
+      "amenity": "manager_on_site",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488709Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T20:58:35.488714Z",
+      "confidence": 0.5,
+      "amenity": "street_lights",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T21:03:01.549018Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Resident-verified amenity list; also corroborated by hoa-resource.com"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T21:03:01.549030Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resident-verified; also corroborated by hoa-resource.com"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T21:03:01.549037Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis court(s)"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T21:03:01.549066Z",
+      "confidence": 0.5,
+      "amenity": "cafe_restaurant",
+      "detail": "On-site cafe/restaurant"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T21:03:01.549082Z",
+      "confidence": 0.5,
+      "amenity": "internet_included",
+      "detail": "Internet included in dues per resident report"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/valencia-falls",
+      "retrieved_at": "2026-10-10T21:03:01.549104Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated 55+ community (HOPA); rental restrictions: application required, buyer approval required. Pet policy listed as Unknown on this source."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Delray-Beach/Valencia-Falls-Demographics.html",
+    "retrieved_at": "2026-10-10T20:58:35.488723Z",
+    "confidence": 0.5,
+    "median_age": 67.0,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 1335,
+    "data_year": null,
+    "geography_level": "neighborhood (Valencia Falls, Delray Beach, FL 33444/33446 area, Palm Beach County, FL)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.city-data.com/zips/33444.html",
+      "retrieved_at": "2026-10-10T12:00:00Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 23706,
+      "data_year": 2024,
+      "geography_level": "ZIP code 33444 (Delray Beach, FL; 98.5% of ZIP is Delray Beach, Palm Beach County). NOTE: ZIP-level, not community-level - Valencia Falls is a 55+ community, so actual resident ages will skew older than the ZIP median. Census Reporter separately shows 33444 population of 22,737 (censusreporter.org/profiles/86000US33444-33444/). Median household income could not be verified on a page actually read (search snippets suggested ~$72,869-$72,925 from zipcode-data.com and censuseasy.com, unverified). Other ZIP stats seen: 48% renter-occupied, median home value $513,096 (2024 est.), 39.2% bachelor's degree or higher (25+)."
+    }
+  ],
+  "proximity": [],
+  "open_questions": [
+    "Proximity: no verified distances to nearest hospital, library, school, or shopping were found within budget - no page read contained this data. Recommend checking distances from 7084 Prado Lake Dr / 33444 to e.g. Delray Beach Public Library, Palm Beach County health/hospital facilities, and local schools.",
+    "Median household income for ZIP 33444: search snippets showed ~$72,869 (zipcode-data.com/33444) and ~$72,925 (censuseasy.com/zip/33444) but those pages were not read/verified; city-data page showed 2020 average AGI of $92,311 instead.",
+    "Exact current HOA dues: $817.33/mo is a single resident-submitted data point from an aggregator; obtain an estoppel certificate from FirstService Residential (954-926-2921) for the authoritative figure and what dues cover (water/sewer/trash are City of Delray Beach services; electric is FPL).",
+    "CDD/special assessments: no assessment signals reported on HOA Agent, but no CDD or county property-appraiser page was read to confirm absence of CDD assessments.",
+    "Pet policy: listed as Unknown on HOA Agent - confirm with the HOA.",
+    "harveydubov.com/valencia-falls/ (listing site claiming 724 homes built 2001-2004, 1,682-3,244 sq ft) could not be read; unit count differs from the 705 in buyer notes and HOA Agent.",
+    "Demographics are ZIP-level only; community-level (55+) age/income profile not available from sources read.",
+    "Gated entry/security details (gate type, hours, guard) not described on any page read - confirm with the HOA."
+  ],
+  "discrepancies": [],
+  "created_at": "2026-10-10T20:58:35.489611Z",
+  "updated_at": "2026-10-10T21:03:01.550098Z"
+}

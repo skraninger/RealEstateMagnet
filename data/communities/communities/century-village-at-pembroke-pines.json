@@ -1,0 +1,387 @@
+{
+  "id": "8b219875-5672-4326-afa6-8ef9aa83e9cc",
+  "identity": {
+    "name": "Century Village at Pembroke Pines",
+    "slug": "century-village-at-pembroke-pines",
+    "county_fips": null,
+    "city": "Pembroke Pines",
+    "hoa_name": "Century Village of Pembroke Pines (CVP) Master Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Master-planned community in Pembroke Pines, Florida, structured as dozens of individual condo associations operating under the CVP master umbrella. Each building is its own legal entity with its own board, budget, insurance, reserve fund, and monthly fee. Owners pay two bills: the CVP recreational fee and their building's condo association fee."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792637Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 238.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "CVP master association recreational fee, approximately $238–$276/month in 2026 (varies by unit size and assessment category). Covers clubhouse, pools, security, courtesy bus, cable, internet, and water. Relatively uniform across all units in the community. Example totals: Buckingham building total ~$789/month; Plymouth total ~$623/month (CVP fee + building fee). Building-level condo association fees range roughly $280–$550/month depending on building age, roof condition, reserve fund health, and master insurance premium. Buildings that deferred maintenance may face a one-time special assessment of $15,000–$25,000 per unit for SB 4-D / HB 913 structural reserve compliance. Florida law (SB 4-D / HB 913) requires condo associations to maintain funded reserves for eight structural components. Master property insurance is the largest budget line item: a 100+ unit building may pay $300,000–$500,000 annually (good condition) up to $800,000–$1.5M+ (older roof, claims history), passed through to owners via the monthly fee (e.g., $500K premium ≈ $417/month per unit on a 100-unit building; $1.2M ≈ $1,000/month per unit)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792649Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 513.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Example building-level condo association fee for the Buckingham buildings (~$513/month), making total monthly obligation ~$789 including the CVP recreational fee. Building fees vary widely across the community (roughly $280–$550/month) based on insurance, reserves, roof condition, and age."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792652Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 385.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Example building-level condo association fee for Plymouth (~$385/month), making total monthly obligation ~$623 including the CVP recreational fee. The $166/month (~$1,992/year) difference vs. Buckingham is driven by building age, roof condition, reserve fund health, and master insurance premium."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792654Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 20000.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "Potential one-time special assessment of $15,000–$25,000 per unit for SB 4-D / HB 913 structural reserve compliance, applicable to buildings that deferred maintenance for a decade. Not a recurring fee; amount is a range and depends on the specific building's reserve fund health."
+    },
+    {
+      "source_url": "https://www.nova55living.com/blog/century-village-pembroke-pines-hoa-by-building",
+      "retrieved_at": "2026-10-12T19:21:52.689361Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 276.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "CVP (master association) recreational fee, approximately $238-$276/month in 2026; difference depends on unit size and specific CVP assessment categories. Every unit owner pays this plus their building's separate condo association fee (two bills total). Fee data per MLS disclosures/listing descriptions as of spring 2026; verify with the specific building association. Covers community-wide amenities (clubhouse, pools, security). Not an official HOA source - blog citing MLS disclosures, so confidence moderate. No CDD assessment found; community is condo-association based, not CDD-based (see open_questions)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/blog/century-village-pembroke-pines-hoa-by-building",
+      "retrieved_at": "2026-10-12T19:21:52.689372Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 530.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Total combined monthly fee (CVP + building condo fee) for a low-fee building; mid-fee building ~$650/month; high-fee building ~$789/month. Building-level fees diverge dramatically by insurance premium, reserve fund health, building age, unit count, and management."
+    },
+    {
+      "source_url": "https://www.nova55living.com/blog/century-village-pembroke-pines-hoa-by-building",
+      "retrieved_at": "2026-10-12T19:21:52.689374Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": 9468.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Buckingham building annual HOA (~$789/month) vs ~$5,880/year for a newer-era building - a $3,588/year difference. Fees change annually."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689376Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 701.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "55places lists HOA dues range $174-$701/mo. Conflicts with nova55living's combined totals of ~$530-$789/mo; both versions reported as-is."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792659Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Community-wide clubhouse covered by the CVP recreational fee; shared across all buildings in the master community."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792667Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pools (plural) covered by the CVP recreational fee; shared across all buildings."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792670Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Community security covered by the CVP recreational fee; implies gated/controlled access to the master community."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792672Z",
+      "confidence": 0.5,
+      "amenity": "courtesy_bus",
+      "detail": "Courtesy bus service covered by the CVP recreational fee; shared across all buildings."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792674Z",
+      "confidence": 0.5,
+      "amenity": "cable",
+      "detail": "Cable service included in the CVP recreational fee."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792677Z",
+      "confidence": 0.5,
+      "amenity": "internet",
+      "detail": "Internet service included in the CVP recreational fee."
+    },
+    {
+      "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+      "retrieved_at": "2026-10-12T19:16:40.792679Z",
+      "confidence": 0.5,
+      "amenity": "water",
+      "detail": "Water service included in the CVP recreational fee."
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689380Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "135,000 sq. ft. clubhouse (official community site)"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689391Z",
+      "confidence": 0.5,
+      "amenity": "theater",
+      "detail": "1,042-seat theater in the clubhouse"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689394Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Grand ballroom; 55places lists it as a 900-seat ballroom"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689396Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Indoor and outdoor heated pools; 55places adds a wave walking pool at the Health Center plus satellite pools throughout the community"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689398Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Par 71 golf course; 55places notes automatic golf club membership with year-round discount golf"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689401Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Club Health: state-of-the-art exercise equipment, daily scheduled classes and group exercise; 55places adds cardio room and sauna"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689404Z",
+      "confidence": 0.5,
+      "amenity": "card_room",
+      "detail": "Billiard and card rooms; bingo, arts & crafts, music, ceramics, computer classes offered"
+    },
+    {
+      "source_url": "https://centuryvillage-ppines.com/",
+      "retrieved_at": "2026-10-12T19:21:52.689406Z",
+      "confidence": 0.5,
+      "amenity": "meeting_rooms",
+      "detail": "Variety of meeting rooms in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689409Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Community library in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689412Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis courts (satellite amenities throughout community)"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689414Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Pickleball courts"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689417Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard_courts",
+      "detail": "Shuffleboard courts"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689420Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking & biking trails"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689422Z",
+      "confidence": 0.5,
+      "amenity": "nail_salon",
+      "detail": "Nail salon, art room, and sewing room in clubhouse"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689425Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Gated community; secured buildings with emergency buttons in primary bedrooms for police/fire/security; resident review mentions 24-hr roaming patrol"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689427Z",
+      "confidence": 0.5,
+      "amenity": "trolley",
+      "detail": "In-community bus/trolley service included in HOA fee"
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689429Z",
+      "confidence": 0.5,
+      "amenity": "age_restriction",
+      "detail": "55+ community; ~7,700 condos in 2-4 story mid-rise buildings built 1970-1995; studios (600 sq ft) to 2BR/2BA (1,500 sq ft)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1255775-pembroke-pines-fl/",
+    "retrieved_at": "2026-10-12T19:21:52.689434Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 179331,
+    "data_year": null,
+    "geography_level": "city (Pembroke Pines, FL, Broward County); community itself not separately profiled - city-level proxy only"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689440Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "The Fresh Market / Whole Foods Market / Trader Joe's",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689443Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Walgreens / CVS (pharmacies)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689445Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Pines Care Medical Center / Century Medical Center / South Florida Medical Center (health care providers)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+      "retrieved_at": "2026-10-12T19:21:52.689446Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fort Lauderdale-Hollywood International Airport",
+      "distance_miles": 23.0
+    }
+  ],
+  "open_questions": [
+    "Median age, median household income, and owner-occupancy % for Pembroke Pines could not be verified: census.gov QuickFacts page failed to load and the Census Reporter page returned only a population snippet. City population 179,331 confirmed; data year not visible on the page read.",
+    "No CDD special assessment found - the community is structured as condo associations under the CVP master umbrella, not a CDD; if a CDD assessment exists it was not surfaced in sources read.",
+    "Exact CVP recreational fee for a specific unit ($238-$276 range) and each building's condo fee vary by building/unit and change annually - must be verified with the specific building association and CVP before purchase.",
+    "Fee ranges conflict across sources: 55places says $174-$701/mo; nova55living says combined totals ~$530-$789/mo (2026 MLS data). Both reported; not reconciled.",
+    "Distances in miles to nearest public library, hospital, and school not verified. A trolley schedule snippet (not read) suggests Walmart, Publix, and Memorial Hospital West are on the community's express bus route, but this is unverified.",
+    "Pet policy not found in sources read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 238.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+          "retrieved_at": "2026-10-12T19:16:40.792637+00:00"
+        },
+        {
+          "amount": 513.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+          "retrieved_at": "2026-10-12T19:16:40.792649+00:00"
+        },
+        {
+          "amount": 385.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/communities/century-village-pembroke-pines-fl",
+          "retrieved_at": "2026-10-12T19:16:40.792652+00:00"
+        },
+        {
+          "amount": 276.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/blog/century-village-pembroke-pines-hoa-by-building",
+          "retrieved_at": "2026-10-12T19:21:52.689361+00:00"
+        },
+        {
+          "amount": 530.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/blog/century-village-pembroke-pines-hoa-by-building",
+          "retrieved_at": "2026-10-12T19:21:52.689372+00:00"
+        },
+        {
+          "amount": 701.0,
+          "period": "monthly",
+          "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines",
+          "retrieved_at": "2026-10-12T19:21:52.689376+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T19:21:52.690047Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Walgreens / CVS (pharmacies)",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines"
+        },
+        {
+          "nearest_name": "Pines Care Medical Center / Century Medical Center / South Florida Medical Center (health care providers)",
+          "distance_miles": null,
+          "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines"
+        },
+        {
+          "nearest_name": "Fort Lauderdale-Hollywood International Airport",
+          "distance_miles": 23.0,
+          "source_url": "https://www.55places.com/florida/communities/century-village-at-pembroke-pines"
+        }
+      ],
+      "detected_at": "2026-10-12T19:21:52.690054Z"
+    }
+  ],
+  "created_at": "2026-10-12T19:16:40.793252Z",
+  "updated_at": "2026-10-12T19:21:52.690234Z"
+}

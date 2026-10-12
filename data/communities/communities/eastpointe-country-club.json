@@ -1,0 +1,297 @@
+{
+  "id": "1749dc1a-ff29-453d-9b1b-584a7adae37d",
+  "identity": {
+    "name": "Eastpointe Country Club",
+    "slug": "eastpointe-country-club",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Country Club Association, Inc. (Entity #7486) — sub-association of Eastpointe Home Owners' Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated single-family sub-community of 33 units in Palm Beach Gardens, FL 33418, part of the larger Eastpointe Home Owners' Association. Residents have access to the Eastpointe Country Club, a private club featuring two Fazio-designed championship golf courses (36 holes total), resort-style pools, tennis, fitness, dining, and a year-round social calendar. The East Course (par-72, 7,011 yds) was refurbished in 2025; the West Course (par-70, 6,068 yds) is a Tom Fazio original. Club is Audubon-certified. Memberships available to both residents and non-residents."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/eastpointe-country-club",
+      "retrieved_at": "2026-10-12T17:20:15.841880Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "No specific HOA fee amounts found in available sources. HOA Agent profile shows no observed range or normalized median. Fees must be verified directly with Country Club Association, Inc. (Entity #7486) or the parent Eastpointe Home Owners' Association, Inc. before purchasing. Club membership fees are separate from HOA dues and are available to residents and non-residents alike (Young Executive Golf and Resident Social tiers mentioned)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/eastpointe-country-club",
+      "retrieved_at": "2026-10-12T17:24:09.288583Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No verified fee amount for Eastpointe Country Club (Country Club Association, Inc., entity #7486); page states fee 'has not yet been verified by residents.' Page cites the average monthly HOA fee in Palm Beach Gardens as approximately $641 (citywide average, not this community). Managed by Seacrest Services, Inc. No CDD/special assessment signals reported for this community."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:27:51.621857Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 641.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Citywide average monthly HOA fee for Palm Beach Gardens, FL — not community-specific. Eastpointe Country Club PL 7B's own fee has not yet been verified by residents (observed range and normalized median both blank). Verify with the association directly. Management company: Castle Group. Utilities: FPL (electric), Seacoast Utility Authority (water/sewer), Solid Waste Authority of Palm Beach County (trash). Short-term rental, pet, commercial vehicle, and rental approval restrictions all listed as Unknown. No special assessment signals reported. Data combines public records and resident submissions; not guaranteed accurate."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.eastpointe-cc.com/",
+      "retrieved_at": "2026-10-12T17:20:15.841890Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two Fazio-designed championship courses, 36 holes total. East Course: par-72, 7,011 yds, George Fazio, refurbished 2025. West Course: par-70, 6,068 yds, Tom Fazio, narrow fairways and water hazards. Audubon-certified. Premier practice facilities included. Access to 36 holes of championship golf for members."
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/",
+      "retrieved_at": "2026-10-12T17:20:15.841900Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pools (multiple)"
+    },
+    {
+      "source_url": "https://hoa-community.com/eastpointe-country-club-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T17:20:15.841903Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse with dining and social calendar"
+    },
+    {
+      "source_url": "https://hoa-community.com/eastpointe-country-club-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T17:20:15.841905Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Gym/exercise room and fitness facilities"
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/",
+      "retrieved_at": "2026-10-12T17:20:15.841908Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts"
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/",
+      "retrieved_at": "2026-10-12T17:20:15.841910Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Exceptional dining at the club"
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/",
+      "retrieved_at": "2026-10-12T17:20:15.841912Z",
+      "confidence": 0.5,
+      "amenity": "golf_practice_facilities",
+      "detail": "Premier practice facilities including driving range and short game areas"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/eastpointe-country-club",
+      "retrieved_at": "2026-10-12T17:20:15.841915Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated sub-community"
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/golf",
+      "retrieved_at": "2026-10-12T17:24:09.288593Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "East Course: par-72, 7,011 yards, designed by George and Tom Fazio, fully restored in 2025 (enhanced greens, redesigned bunkers, Bermuda grass, lakes); Audubon-certified. PGA-certified instruction, Junior Golf Program, Pro Shop (On Pointe Apparel & Equipment). Confidence: official club site (0.9). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/golf",
+      "retrieved_at": "2026-10-12T17:24:09.288602Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "West Course: par-70, 6,068 yards, Tom Fazio original; narrow fairways, water hazards, small well-bunkered greens; Audubon-certified. Confidence: official club site (0.9). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/Amenities",
+      "retrieved_at": "2026-10-12T17:24:09.288605Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis and pickleball courts with private lessons, group clinics, and social matches. Confidence: official club site (0.9). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/Amenities",
+      "retrieved_at": "2026-10-12T17:24:09.288608Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Modern fitness center with machines, free weights, specialized training areas, group fitness classes, certified trainers. Confidence: official club site (0.9). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.eastpointe-cc.com/Amenities",
+      "retrieved_at": "2026-10-12T17:24:09.288611Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "On-site restaurants; indoor and al fresco dining. Confidence: official club site (0.9). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288613Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "2,800 sq ft heated swimming pool. Confidence: reputable listing site (0.6). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288615Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "16 Har-Tru tennis courts. Confidence: reputable listing site (0.6). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288617Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Grand clubhouse; also two fitness centers and three card rooms. Confidence: reputable listing site (0.6). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288619Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Scenic bike trails. Confidence: reputable listing site (0.6). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/eastpointe-country-club",
+      "retrieved_at": "2026-10-12T17:24:09.288621Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community with controlled access; single-family sub-community of 33 units, part of Eastpointe Home Owners' Association, Inc. Confidence: aggregator of public records (0.6). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288624Z",
+      "confidence": 0.5,
+      "amenity": "membership",
+      "detail": "Social membership required for ownership; full golf membership includes summer reciprocity at nearby clubs; active social calendar with 'clubs within the club' (book, cultural, social, young professionals, knitting). Confidence: reputable listing site (0.6). Retrieved 2026-04-24T12:00:00Z (approx)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459466Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Two Fazio-designed championship courses: East Course (par-72, 7,011 yards, refurbished 2025) and West Course (par-70, 6,068 yards, narrow fairways and water hazards); Audubon-certified, 36 holes total; memberships available to residents and non-residents including Young Executive Golf and Resident Social options (no fee amounts listed). Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459479Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pools. Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459483Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis facilities included in membership benefits. Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459487Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness facilities included in membership benefits. Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459490Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Exceptional/unforgettable dining venues. Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459492Z",
+      "confidence": 0.5,
+      "amenity": "practice_facility",
+      "detail": "Premier golf practice facilities. Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-12T17:29:08.459494Z",
+      "confidence": 0.5,
+      "amenity": "event_venue",
+      "detail": "Versatile venues for weddings and corporate gatherings with catering and décor services. Confidence 0.8 (official club website). Retrieved 2025-06-15T00:00:00Z (UTC)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+    "retrieved_at": "2026-10-12T17:24:09.288628Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 1469,
+    "data_year": null,
+    "geography_level": "Eastpointe Country Club neighborhood (per U.S. Census Bureau, as cited by listing site; data year not stated on page; 739 households, avg household size 2; average individual income $90,588 per person, not household income; owner-occupancy not provided). ZIP 33418 population 43,676 per censusreporter.org (https://censusreporter.org/profiles/86000US33418-33418/). Confidence: 0.5 (listing site citing Census). Retrieved 2026-04-24T12:00:00Z (approx)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288633Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mirasol Walk shopping complex (anchored by Publix); The Gardens Mall, Downtown at the Gardens, and Abacoa Town Center described as a short 10-minute drive",
+      "distance_miles": 1.72
+    },
+    {
+      "source_url": "https://burroughsteam.com/neighborhoods/eastpointe",
+      "retrieved_at": "2026-10-12T17:24:09.288636Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix at Mirasol Walk (access enhanced by completed Jog Road); exact distance not stated on page",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact HOA dues for Country Club Association, Inc. (entity #7486) and the parent Eastpointe Home Owners' Association, Inc. could not be verified; hoa-agent.com shows no resident-verified amount (only a ~$641/month citywide Palm Beach Gardens average).",
+    "Club membership initiation fee and recurring dues: countryofclubs.com lists figures for Eastpointe Country Club membership, but the page could not be read within the search budget.",
+    "CDD/special assessment status: no assessment signals reported on hoa-agent.com; no CDD documentation found.",
+    "Demographic data year and owner-occupancy rate unavailable; censusreporter.org 33418 page returned only population/area/density in extraction (pop 43,676, 45.8 sq mi, 952.6/sq mi).",
+    "Nearest hospital, library, and school with distances were not found on pages read.",
+    "Pet policy unknown (hoa-agent.com lists pets as 'Unknown').",
+    "Median household income (vs. the $90,588 average individual income reported) not verified."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/eastpointe-country-club",
+          "retrieved_at": "2026-10-12T17:20:15.841880+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.hoa-agent.com/community/eastpointe-country-club",
+          "retrieved_at": "2026-10-12T17:24:09.288583+00:00"
+        },
+        {
+          "amount": 641.0,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-12T17:27:51.621857+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T17:29:19.554422Z"
+    }
+  ],
+  "created_at": "2026-10-12T17:20:15.842513Z",
+  "updated_at": "2026-10-12T17:29:19.554475Z"
+}

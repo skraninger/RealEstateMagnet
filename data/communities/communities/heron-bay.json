@@ -1,0 +1,350 @@
+{
+  "id": "88d1d31b-fcca-43b1-a065-301cb33e729a",
+  "identity": {
+    "name": "Heron Bay",
+    "slug": "heron-bay",
+    "county_fips": null,
+    "city": "Parkland, FL",
+    "hoa_name": "Heron Bay Community Association, Inc. (HBCA)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Master-planned gated community in Parkland, FL (ZIP 33076), established 1998 and completed 2017. Over 3,025 residences across 34 distinct neighborhoods spanning Parkland and Coral Springs. Managed by KW Property Management & Consulting (KWPMC). Features over 100 acres of lakes and wetlands, two renovated clubhouses, and 24/7 gated security with manned gatehouse and patrols. One of South Florida's most impressive master-planned communities with resort-style amenities. Median home price approximately $960,000."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/heron-bay",
+      "retrieved_at": "2026-10-10T15:52:32.716365Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 450.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-verified range of $400–$500/mo. A second source (hoabulletinboard.com) reports $345–$400/mo depending on property type and sub-association. Exact current amounts, transfer fees, capital contributions, and special assessments are not detailed in publicly available sources. No special assessment signals reported. Verify directly with the association (KWPMC, (954) 575-2200)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716381Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 372.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported range of $345–$400/mo depending on property type and sub-association. Exact current amounts, transfer fees, capital contributions, and special assessments not detailed in publicly available sources."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/heron-bay",
+      "retrieved_at": "2026-10-10T15:57:56.584147Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 400.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-submitted range $400-$500/mo per HOA Agent aggregator (profile updated Jul 11, 2026); not official HBCA figure. No special assessment signals reported for this community on that site. Managed by KWPMC (KW Property Management & Consulting). Verify with the association directly. (Range upper bound $500.)"
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/",
+      "retrieved_at": "2026-10-10T15:57:56.584160Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 300.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Local real-estate blog: monthly dues typically $300-$550 depending on sub-village and whether the section has extra private amenities (range upper bound $550). Fee covers master clubhouse, resort-style pools, tennis and pickleball courts, fitness center, and 24-hour guard-gated entry. Community is HOA-based, not CDD-based."
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/",
+      "retrieved_at": "2026-10-10T15:57:56.584165Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No CDD assessment: Heron Bay is HOA-based, not CDD-based (per local blog). CDD assessments apply to newer Parkland construction (e.g., MiraLago), not to Heron Bay."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716389Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Resort-style clubhouse with fitness center and spa; two clubhouses total (North and South)"
+    },
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/heron-bay/",
+      "retrieved_at": "2026-10-10T15:52:32.716404Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "North Clubhouse (modernized 2020, accommodates up to 250 guests, resort-style amenities and entertainment spaces) and South Clubhouse (own set of recreational facilities)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716411Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Multiple swimming pools including resort-style pool, children's pool, and splash pad"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716416Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center in clubhouse"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716424Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa facility in clubhouse"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716430Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Tennis courts"
+    },
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/heron-bay/",
+      "retrieved_at": "2026-10-10T15:52:32.716436Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Pickleball courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716442Z",
+      "confidence": 0.5,
+      "amenity": "basketball_courts",
+      "detail": "Basketball courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716448Z",
+      "confidence": 0.5,
+      "amenity": "soccer_field",
+      "detail": "Soccer field"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716455Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Extensive walking and biking trails connecting various neighborhoods"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716460Z",
+      "confidence": 0.5,
+      "amenity": "lakes_wetlands",
+      "detail": "Over 100 acres of lakes and wetlands with preserved natural areas and water features"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716466Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "24-hour gated security with manned gatehouse and patrols; multiple gates and long boulevards create a park-like setting"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584172Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Two clubhouses: Plaza Del Lago (north end, Osprey Trail) and The Commons (south end, Heron Bay Blvd); both renovated, hours Mon-Fri 5am-9:50pm, Sat/Sun 7am-9:50pm; men's and women's locker rooms at both. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584185Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style heated pool with kids' spray park, waterfall feature, poolside chairs/umbrellas, and grill area at Plaza Del Lago; spacious swimming pool with Jacuzzi, cabana bar, and island-style water features at The Commons. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584191Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Modern fitness centers at both clubhouses with state-of-the-art cardio and strength equipment; aerobics studio with weekly classes at Plaza Del Lago. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584199Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Sauna and treatment rooms at Plaza Del Lago. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584204Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "The Commons: ten Hydro-Grid clay courts plus two hard-surface courts, tennis shop, two full-time tennis professionals, monthly round-robin tournaments; expanded tennis and pickleball facilities. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584211Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Expanded pickleball facilities at The Commons. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584216Z",
+      "confidence": 0.5,
+      "amenity": "racquetball_court",
+      "detail": "Indoor racquetball court at The Commons. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584222Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball courts at both Plaza Del Lago and The Commons. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584228Z",
+      "confidence": 0.5,
+      "amenity": "banquet_hall",
+      "detail": "Banquet ball rooms at Plaza Del Lago seating up to 250 guests; party/ballroom with catering kitchen and meeting room at The Commons. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/heronbay/Heron-Bay/Facilities-Amenities",
+      "retrieved_at": "2026-10-10T15:57:56.584233Z",
+      "confidence": 0.5,
+      "amenity": "waterpark",
+      "detail": "Newly opened waterpark at Plaza Del Lago. (Official HOA site.)"
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/",
+      "retrieved_at": "2026-10-10T15:57:56.584239Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24-hour guard-gated entry (covered by HOA dues); community is a collection of gated sub-villages inside one larger gated perimeter. (Local real-estate blog; buyer notes also cite manned gatehouse and patrols.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.census.gov/quickfacts/parklandcityflorida",
+    "retrieved_at": "2026-10-10T15:57:56.584247Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 39186,
+    "data_year": 2025,
+    "geography_level": "city (Parkland, FL) - population estimate July 1, 2025; 2020 Census count was 34,670. Heron Bay itself spans Parkland and Coral Springs; no community-level census figures found. Median household income and owner-occupancy from ACS 2020-2024 (in 2024 dollars). Median age not captured in page extraction (QuickFacts snippet reported 37.9, unverified)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://homesofparkland.com/parkland-communities/heron-bay/",
+      "retrieved_at": "2026-10-10T15:52:32.716476Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Sawgrass (area)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+      "retrieved_at": "2026-10-10T15:52:32.716483Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Coral Springs amenities and major highways",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/",
+      "retrieved_at": "2026-10-10T15:57:56.584257Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Heron Heights Elementary",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/",
+      "retrieved_at": "2026-10-10T15:57:56.584264Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Westglades Middle",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "HOA fee ranges conflict across sources: $400-$500/mo (HOA Agent, resident-submitted), $300-$550/mo (South FL Insider blog), and $345-$400/mo (HOA Bulletin Board search snippet, page not read). Verify current dues with HBCA/KWPMC ((954) 575-2200 per HOA Bulletin Board snippet).",
+    "Golf course: a realtor marketing site (homesatheronbayparkland.com, snippet only) claims an 18-hole championship golf course, but the local blog states there is NO golf course inside Heron Bay (often confused with neighboring Parkland Golf & Country Club) and the official HOA amenities page does not mention golf. Needs verification.",
+    "Median age: Census QuickFacts search snippet reported 37.9 years for Parkland, but the figure did not appear in the page content I read; left null.",
+    "No verified distances to nearest hospital, library, grocery, or shopping center. Parkland has no downtown commercial corridor by design (per local blog); residents drive to Coral Springs or small commercial pockets for errands.",
+    "Pet policy, short-term rental restrictions, and rental approval rules: unknown (HOA Agent lists all as unknown).",
+    "Demographics are for the City of Parkland, not the Heron Bay community itself (which also spans Coral Springs); no tract-level or community-level census data found within budget.",
+    "CDD: no CDD assessment found; community reported as HOA-based, not CDD-based (local blog)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 450.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/heron-bay",
+          "retrieved_at": "2026-10-10T15:52:32.716365+00:00"
+        },
+        {
+          "amount": 372.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/",
+          "retrieved_at": "2026-10-10T15:52:32.716381+00:00"
+        },
+        {
+          "amount": 400.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/heron-bay",
+          "retrieved_at": "2026-10-10T15:57:56.584147+00:00"
+        },
+        {
+          "amount": 300.0,
+          "period": "monthly",
+          "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/",
+          "retrieved_at": "2026-10-10T15:57:56.584160+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T15:57:56.585182Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Sawgrass (area)",
+          "distance_miles": null,
+          "source_url": "https://homesofparkland.com/parkland-communities/heron-bay/"
+        },
+        {
+          "nearest_name": "Coral Springs amenities and major highways",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/hbcafl/about_hoa/"
+        }
+      ],
+      "detected_at": "2026-10-10T15:57:56.585192Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Heron Heights Elementary",
+          "distance_miles": null,
+          "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/"
+        },
+        {
+          "nearest_name": "Westglades Middle",
+          "distance_miles": null,
+          "source_url": "https://southflinsider.com/blogs/parkland-neighborhoods-2026/"
+        }
+      ],
+      "detected_at": "2026-10-10T15:57:56.585198Z"
+    }
+  ],
+  "created_at": "2026-10-10T15:52:32.717476Z",
+  "updated_at": "2026-10-10T15:57:56.585332Z"
+}

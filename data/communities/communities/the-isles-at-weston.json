@@ -1,0 +1,343 @@
+{
+  "id": "17c58a2b-204f-4f65-b28d-b0f93473f5fd",
+  "identity": {
+    "name": "The Isles at Weston",
+    "slug": "the-isles-at-weston",
+    "county_fips": null,
+    "city": "Weston (Fort Lauderdale area), Florida",
+    "hoa_name": "Isles at Weston Homeowners' Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated single-family neighborhood in eastern Weston, FL (ZIP 33332) with approximately 655 Mediterranean-style homes in three sections: The Falls, The Gardens, and The Shore. Association established August 15, 2001; managed by Castle Group, Inc. (954-318-5100). Features lakes/waterscapes, resort-like amenities, and a sales/leasing screening process (Property Code 11626). Median real estate price approximately $1,078,081 and average rental price $4,981 (NeighborhoodScout)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250420Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 375.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "Approximate monthly HOA fees in the $350-$400 range per real estate listings; may include cable and internet. Exact current fees not publicly available - verify directly with the HOA/management (954-318-5100). Transfer/capital contribution fees not publicly detailed. Amount reported as midpoint of stated range."
+    },
+    {
+      "source_url": "https://web.archive.org/web/2024/https://www.theislesweston.com/",
+      "retrieved_at": "2026-10-10T04:22:10.737787Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Official community website (archived copy): 'The reasonable monthly hoa fee includes, 24 hour guarded entrance, fitness facilities, basic cable and internet services.' No dollar amount is published on the official site or the HOA's public TownSq portal (pages checked: About, Sales/Leasing, Amenities, Architectural Review, Governing Docs, Management Contacts). Confirm current amount via estoppel/resale certificate or Castle Group, Inc. (954-318-5100)."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:22:10.737797Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Aggregator summary: 'real estate listings indicate approximate monthly fees in the $350-$400 range that may include cable and internet (verify directly with the HOA).' Not confirmed against the HOA budget; listing-derived only. No transfer/capital contribution fee amounts or CDD special assessments found in public sources."
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000005797",
+      "retrieved_at": "2026-10-10T04:22:10.737799Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "September 2026 overview: 'Assessments cover the gate, clubhouse, pool, courts, and common grounds.' Buyers advised to read the current budget and reserve study. No specific amounts or scheduled special assessments disclosed. Association established 08/15/2001; managed by Castle Group, Inc. (954-318-5100)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000005797",
+      "retrieved_at": "2026-10-10T03:33:12.250430Z",
+      "confidence": 0.5,
+      "amenity": "staffed_guard_gate",
+      "detail": "Gated entry with staffed guard post; association maintains the gate, clubhouse, pool, courts, play area, and lakes."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250439Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Modern community clubhouse with clubhouse policy on file."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250442Z",
+      "confidence": 0.5,
+      "amenity": "olympic_pool",
+      "detail": "Olympic-style community pool."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250445Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness room with posted fitness room policy."
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000005797",
+      "retrieved_at": "2026-10-10T03:33:12.250448Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N01000005797",
+      "retrieved_at": "2026-10-10T03:33:12.250450Z",
+      "confidence": 0.5,
+      "amenity": "volleyball_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250452Z",
+      "confidence": 0.5,
+      "amenity": "children_s_play_area",
+      "detail": "Children's tot lot/playroom."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250455Z",
+      "confidence": 0.5,
+      "amenity": "billiard_room",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250457Z",
+      "confidence": 0.5,
+      "amenity": "lakes_and_waterscapes",
+      "detail": "Multiple lakes with lake views; conservation land assigned to the association."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T03:33:12.250460Z",
+      "confidence": 0.5,
+      "amenity": "landscaped_common_areas",
+      "detail": "Resort-like Mediterranean-inspired setting maintained by the association."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737803Z",
+      "confidence": 0.5,
+      "amenity": "community_clubhouse_modernized",
+      "detail": "HOA official TownSq portal amenities page: 'Modernized Clubhouse and Billiard Room | Fitness Center | Olympic Pool | Children's Tot Lot | Basket Ball and Volley Ball Courts | Children's Playroom'. Clubhouse reachable by foot or bike from anywhere in the community per official website (archived)."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737815Z",
+      "confidence": 0.5,
+      "amenity": "billiard_room",
+      "detail": "Listed on HOA official TownSq amenities page; also referenced as 'clubhouse with fitness room and billiards' by browardneighborhoods.com."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737818Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Listed on HOA official TownSq amenities page; official website notes fitness facilities are included in the monthly HOA fee."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737821Z",
+      "confidence": 0.5,
+      "amenity": "olympic_pool_resort_style_community_swimming_pool",
+      "detail": "HOA portal lists 'Olympic Pool'; official website (archived) describes 'a luxurious free-form swimming pool'. A 2024 MLS listing on the official site's listings page (web.archive.org/web/2024/http://theislesweston.com/listings.html) claims '2 SWIMMING POOLS' - discrepancy unresolved."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737825Z",
+      "confidence": 0.5,
+      "amenity": "children_s_tot_lot",
+      "detail": "Listed on HOA official TownSq amenities page."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737828Z",
+      "confidence": 0.5,
+      "amenity": "children_s_playroom",
+      "detail": "Listed on HOA official TownSq amenities page."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737831Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Listed on HOA official TownSq amenities page."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/2",
+      "retrieved_at": "2026-10-10T04:22:10.737833Z",
+      "confidence": 0.5,
+      "amenity": "volleyball_court",
+      "detail": "Listed on HOA official TownSq amenities page."
+    },
+    {
+      "source_url": "https://web.archive.org/web/2024/https://www.theislesweston.com/",
+      "retrieved_at": "2026-10-10T04:22:10.737836Z",
+      "confidence": 0.5,
+      "amenity": "staffed_guard_gate_24_hour_guarded_entrance",
+      "detail": "Official community website: guard gated community; 24-hour guarded entrance included in monthly HOA fee. florida-hoa.com overview (Sep 2026) describes 'a staffed guard gate' and says guest entry follows the current access process."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/0",
+      "retrieved_at": "2026-10-10T04:22:10.737840Z",
+      "confidence": 0.5,
+      "amenity": "lakes_and_waterscapes",
+      "detail": "HOA official TownSq 'About': 655-home luxury gated community with large lakes, beautiful waterscapes, Mediterranean-inspired architecture, and a clubhouse. florida-hoa.com adds conservation land assigned to the association; many homes have lake view (browardneighborhoods.com)."
+    },
+    {
+      "source_url": "https://condosandcondos.com/home-for-sale/Weston/4339-W-WHITEWATER-AVENUE",
+      "retrieved_at": "2026-10-10T04:22:10.737843Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Mentioned only in a 2024 MLS listing description ('resort-style community amenities featuring a clubhouse, sparkling swimming pool, fitness center, and tennis courts'); NOT listed on the HOA's own amenities page - unconfirmed."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/1",
+      "retrieved_at": "2026-10-10T04:22:10.737845Z",
+      "confidence": 0.5,
+      "amenity": "sales_and_leasing_screening_process",
+      "detail": "HOA official TownSq portal: all prospective owners and tenants must complete an online application and obtain association approval before moving in; home must be free of deficiencies and account current. Use PROPERTY CODE 11626 to access the application portal. Estoppel requests available via portal link."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/3",
+      "retrieved_at": "2026-10-10T04:22:10.737848Z",
+      "confidence": 0.5,
+      "amenity": "architectural_review_exterior_modification_approval",
+      "detail": "HOA official TownSq portal: streamlined online application for exterior modifications; online approved paint Color Schemes available; exterior modifications require approval."
+    },
+    {
+      "source_url": "https://islesatweston.sites.townsq.io/5",
+      "retrieved_at": "2026-10-10T04:22:10.737852Z",
+      "confidence": 0.5,
+      "amenity": "professional_management_castle_group_inc",
+      "detail": "HOA official TownSq portal management contacts: Castle Group office 954-318-5100, hours Mon-Fri 9:00 AM-5:30 PM EST; Property Manager Bianka Ardon; Administrative Assistant Isaiah Williams. Formal requests via TownSq member portal."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://nextdoor.com/neighborhood/islesatweston--weston--fl/",
+    "retrieved_at": "2026-10-10T04:22:10.737859Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 1002,
+    "data_year": null,
+    "geography_level": "neighborhood (Isles at Weston, Weston, FL 33332); Nextdoor cites US Census Data but does not state the year or tract boundaries (NeighborhoodScout groups this as 'Isles At Weston / Windmill Lake Estates')"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://web.archive.org/web/2024/https://www.yellowpages.com/weston-fl/mip/manatee-bay-elementary-school-12216840",
+      "retrieved_at": "2026-10-10T04:22:10.737865Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Manatee Bay Elementary School, 19200 Manatee Isles Dr, Weston, FL 33332 (Broward County Public Schools)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.realtor.com/local/market/florida/fort-lauderdale/isles-at-weston",
+      "retrieved_at": "2026-10-10T04:22:10.737869Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Falcon Cove Middle School (2,083 students) and Cypress Bay High School (4,380 students) - listed as the neighborhood's comparison schools; browardneighborhoods.com says community is 'just moments from' both",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://librarytechnology.org/library/16079",
+      "retrieved_at": "2026-10-10T04:22:10.737870Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Weston Branch Library (Broward County Library), 4205 Bonaventure Blvd, Weston, FL 33332, phone 954-389-2046",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://opennpi.com/provider/1083644033",
+      "retrieved_at": "2026-10-10T04:22:10.737872Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Cleveland Clinic Weston Hospital, 3100 Weston Rd, Weston, FL 33331 (full-service hospital campus with 24-hour emergency department per clevelandclinic.org)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.storeopeninghours.com/publix-laguna-isles-fort-lauderdale-fl",
+      "retrieved_at": "2026-10-10T04:22:10.737873Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix Supermarket at Laguna Isles, 19441 Sheridan St, FL 33332 (same ZIP as the community; florida-hoa.com says residents 'a short drive to Publix at Laguna Isles')",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://westontowncenter.com/contact/",
+      "retrieved_at": "2026-10-10T04:22:10.737875Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Weston Town Center - 'Fine Dining & Shopping' district in Weston (on/near Weston Rd; florida-hoa.com notes everyday shopping is along Sheridan Street, Weston Road, and Weston Town Center)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues (monthly/annual dollar amount) are NOT published by the association - the official TownSq portal and website give no figure. One aggregator (hoabulletinboard.com) reports real estate listings indicating roughly $350-$400/month that may include cable and internet. Verify via estoppel/resale certificate or Castle Group, Inc. at 954-318-5100.",
+    "CDD special assessments or other recurring charges (transfer/resale fees, separate cable/internet charges) could not be found in any public source.",
+    "Pet policy details unavailable - the Rules & Regulations and pet rules are accessible only to members via the TownSq portal; a florida-hoa.com overview states only that 'pets follow the written rules.' Leasing likewise 'follows the written rules' (details not public).",
+    "Median household income not verified from a readable page: Nextdoor lists 'Average income: $107K' and 'Homeowners: 72%'; a Homes.com search snippet (page blocked by bot protection, not read) claims average household income $185,425, median age 37, and 90.2% college graduates - conflicting with Nextdoor's 'Average age: 46'. Census/ACS tract-level data for the specific neighborhood could not be located.",
+    "Home count discrepancy: archived official website says 654 one- and two-story homes; the HOA's TownSq portal and multiple other sources say approximately 655 homes.",
+    "Exact driving distances in miles to nearest shopping, grocery, library, hospital, and schools could not be verified from any readable page; nearest facilities were identified by name and address instead. The official site says Manatee Bay Elementary is within walking distance and browardneighborhoods.com calls the community 'adjacent to' it.",
+    "Pool configuration discrepancy: a 2024 MLS listing on the official site's listings page claims the community has 2 swimming pools, while the HOA's amenities page lists a single Olympic pool. Pool hours, guest limits, and court rules are stated to be on the current association calendar (not verified).",
+    "NeighborhoodScout context (page read; neighborhood defined as 'Isles At Weston / Windmill Lake Estates'): median real estate price $1,078,081; average rental price $4,981; vacancy rate 2.7%; 43.1% of adults hold advanced degrees; 69.1% married; 87.7% of homes built 2000 or later; 30.6% attached/rowhouse stock; 40.5% South American ancestry; 2.4% speak Portuguese at home; 60.8% foreign-born; 8.6% of children below federal poverty line; 'most of the residential real estate is owner occupied' (no percentage given).",
+    "Market context from realtor.com local market page: median listing price $1.1M ($1,099,950), median rent $5.6K/month, median 70 days on market, $389/sqft; ZIP 33332 median list $1,285,000, median rent $4,887/month. A 2024 MLS sample home in the community showed property taxes of $16,525 (taxes, not HOA fees)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 375.0,
+          "period": "month",
+          "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+          "retrieved_at": "2026-10-10T03:33:12.250420+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://web.archive.org/web/2024/https://www.theislesweston.com/",
+          "retrieved_at": "2026-10-10T04:22:10.737787+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/tiawwfl/about_hoa/",
+          "retrieved_at": "2026-10-10T04:22:10.737797+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T04:22:11.105631Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Manatee Bay Elementary School, 19200 Manatee Isles Dr, Weston, FL 33332 (Broward County Public Schools)",
+          "distance_miles": null,
+          "source_url": "https://web.archive.org/web/2024/https://www.yellowpages.com/weston-fl/mip/manatee-bay-elementary-school-12216840"
+        },
+        {
+          "nearest_name": "Falcon Cove Middle School (2,083 students) and Cypress Bay High School (4,380 students) - listed as the neighborhood's comparison schools; browardneighborhoods.com says community is 'just moments from' both",
+          "distance_miles": null,
+          "source_url": "https://www.realtor.com/local/market/florida/fort-lauderdale/isles-at-weston"
+        }
+      ],
+      "detected_at": "2026-10-10T04:22:11.105638Z"
+    }
+  ],
+  "created_at": "2026-10-10T03:33:12.250983Z",
+  "updated_at": "2026-10-10T04:22:11.105731Z"
+}

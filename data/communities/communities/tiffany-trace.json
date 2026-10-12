@@ -1,0 +1,198 @@
+{
+  "id": "9b3862ad-0d04-4dd5-9b8b-31b04621354f",
+  "identity": {
+    "name": "Tiffany Trace",
+    "slug": "tiffany-trace",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Tiffany Trace is a small, gated residential neighborhood in Boca Raton, Palm Beach County, Florida, composed primarily of single-family homes. It is a quiet, low-density enclave within the city. Publicly documented specifics on HOA dues, CDD assessments, and community amenities are limited, so figures below are approximate or city-level."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/",
+      "retrieved_at": "2026-10-12T18:11:14.170318Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 433.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Range $433-$507/month per recent real estate listings (2024-2026 data); typically covers grounds maintenance, security, trash, water, sewer, sometimes cable/internet. Exact current fee, transfer fees, capital contributions, and special assessments not detailed in public sources. HOA managed by Allied Property Management Group, Inc. (1711 Worthington Rd, Suite 103, West Palm Beach, FL 33409). Amount recorded as low end of range; see note for full range. No CDD assessment found in any source read (community appears to be a plain HOA, not CDD-backed)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770773Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community entrance with controlled access; typical of small Boca Raton enclaves. No documented clubhouse, pool, or golf facilities specific to this community were found in available sources (may rely on nearby public facilities). Confidence is moderate — amenity list is likely incomplete rather than exhaustive-verified-absent. (ai-knowledge data, not from a specific web page.)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/",
+      "retrieved_at": "2026-10-12T18:11:14.170333Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated entrance with 24-hour manned security; single-family gated community, ~64 homes built ~1987-1990, part of the Boca Country Club area (ZIP 33487)"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/",
+      "retrieved_at": "2026-10-12T18:11:14.170346Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse listed among community amenities; specific community pool or fitness center details vary by source and were not verified"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/",
+      "retrieved_at": "2026-10-12T18:11:14.170353Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Access to golf course views and facilities via non-mandatory, non-equity membership at Boca Country Club; homes often feature golf/lake views and private pools"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/",
+      "retrieved_at": "2026-10-12T18:11:14.170359Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Pet restrictions (e.g., no aggressive breeds); architectural approval required for exterior changes; HOA enforces landscaping and property upkeep standards"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://worldpopulationreview.com/us-cities/florida/boca-raton",
+    "retrieved_at": "2026-10-12T18:11:14.170368Z",
+    "confidence": 0.5,
+    "median_age": 46.0,
+    "median_household_income": 106273.0,
+    "owner_occupancy_pct": null,
+    "population": 102502,
+    "data_year": 2026,
+    "geography_level": "city (Boca Raton, FL; 2020 census population was 98,240; poverty rate 9.98%)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770789Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "city (Boca Raton — no community-level census data available; city figures shown as a proxy for the area where Tiffany Trace is located). (ai-knowledge data, not from a specific web page.)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770795Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "St. Mary Medical Center (Boca Raton)",
+      "distance_miles": 5.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770798Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Town Center Boca Raton",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770800Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix (Boca Raton)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770801Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Boca Raton Main Library",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-12T18:04:35.770803Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Boca Raton High School (public high school)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/",
+      "retrieved_at": "2026-10-12T18:11:14.170377Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mizner Park / Boca Raton Town Center",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Boca_Raton_Public_Library",
+      "retrieved_at": "2026-10-12T18:11:14.170383Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Boca Raton Public Library (Downtown branch, 400 NW 2nd Ave, Boca Raton 33432; Spanish River branch, 1501 NW Spanish River Blvd, 33431)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.bocaluxuryhomefinder.com/listings/subdivision/Tiffany-Trace/",
+      "retrieved_at": "2026-10-12T18:11:14.170386Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues, transfer fees, capital contributions, and any special assessments are not publicly documented; verify with the HOA manager (Allied Property Management Group, Inc.) or via estoppel letter.",
+    "No CDD assessment found for Tiffany Trace in any source read; unclear whether any CDD applies.",
+    "Whether the community has its own pool or fitness center is unverified (sources say details vary by source).",
+    "Nearest hospital not identified in sources read (city-level options exist but were not verified).",
+    "Approximate distances (miles) to shopping, library, and schools were not stated in any source read.",
+    "Demographics are city-level (Boca Raton), not neighborhood/ZIP 33487 level; owner-occupancy rate was not found in sources read.",
+    "Specific school names/zones for Tiffany Trace not verified."
+  ],
+  "discrepancies": [
+    {
+      "field": "proximity.library",
+      "values": [
+        {
+          "nearest_name": "Boca Raton Main Library",
+          "distance_miles": 3.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Boca Raton Public Library (Downtown branch, 400 NW 2nd Ave, Boca Raton 33432; Spanish River branch, 1501 NW Spanish River Blvd, 33431)",
+          "distance_miles": null,
+          "source_url": "https://en.wikipedia.org/wiki/Boca_Raton_Public_Library"
+        }
+      ],
+      "detected_at": "2026-10-12T18:11:14.171248Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Town Center Boca Raton",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Mizner Park / Boca Raton Town Center",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ttyhmm/about_hoa/"
+        }
+      ],
+      "detected_at": "2026-10-12T18:11:14.171256Z"
+    }
+  ],
+  "created_at": "2026-10-12T18:04:35.771354Z",
+  "updated_at": "2026-10-12T18:11:14.171412Z"
+}

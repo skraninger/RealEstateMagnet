@@ -1,0 +1,304 @@
+{
+  "id": "da208c81-b434-44f2-8959-d2d8d4c4ac47",
+  "identity": {
+    "name": "Cascade Lakes",
+    "slug": "cascade-lakes",
+    "county_fips": null,
+    "city": "Boynton Beach, FL",
+    "hoa_name": "Cascade Lakes Residents Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "55+ gated active adult community of 600 single-family homes in Boynton Beach, FL (ZIP 33437/33426), built 2000-2002. Located between West Palm Beach and Boca Raton on Military Trail, south of Woolbright Road. Homes are set adjacent to eight scenic lakes. Price range: high $300ks to mid $600ks. Resale homes only."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:49:27.078681Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 555.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Range $555-$636/month depending on property. hoa-agent.com reports $636/mo as observed range; 55places.com reports $268-$636/mo. One-time capital contribution of ~$1,665 (one quarter of monthly dues) applies at closing. No special assessments reported. Verify with association directly."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:49:27.078688Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1665.0,
+      "period": "one-time",
+      "currency": "USD",
+      "note": "One-time capital contribution equal to one quarter of monthly HOA dues, due at closing."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:53:45.604369Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 636.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported range $555-$636/month depending on property; hoa-agent.com lists $636/mo. Self-managed HOA (Cascade Lakes Residents Association, Inc.). Exact current fee schedule not published on official HOA site; confirm with HOA at (561) 737-9986 before purchase. No CDD assessment found in sources checked (community may not have a CDD). One-time capital contribution at closing equal to one quarter of monthly dues (around $1,665) applies per same source. Leasing prohibited in first year of ownership and requires HOA approval thereafter; commercial vehicles, RVs, and boats prohibited (per same source). Clubhouse closed for renovations as of Sept 2026 per same source - may affect amenity access/fees context. MLS-verified closed sales trailing 12 months: 33 sales ranging $270,000-$633,000 (as of Sept 2026) per palmbeachcountyhomeforsale.com guide. 24/7 manned guard gate controls access per same guide. 55+ age restriction enforced. Pet policy: up to two pets, 25-lb weight limit, aggressive-breed restrictions (per hoabulletinboard). Homes: 600 single-family, 1,525-3,206 sq ft, built 2000-2002, three collections (Classic/Grand/Premier), all single-story, adjacent to 8 lakes. Distinct from nearby 'The Cascades' (928 homes off Jog Road) - do not conflate. HOA address: 5075 Cascade Lakes Blvd, Boynton Beach, FL 33437; website cascadelakeshoa.net. Location: Military Trail, south of Woolbright Rd, between West Palm Beach and Boca Raton. Price range per buyer notes: high $300ks to mid $600ks, resale only. Amenities: 28,000 sq ft clubhouse (library with computers, card room, billiards, arts & crafts studio, ballroom with stage, fully-equipped fitness center, aerobics room, saunas), indoor-outdoor resort-style pool and spa, 7 lighted Har-Tru tennis courts, pickleball courts, bocce courts, walking and biking trails around 8 lakes. Country-club-style amenities without equity/membership fees. Strong resident club/event culture per hoabulletinboard. Proximity: near beaches, golf, shopping, major highways per hoabulletinboard (no specific distances verified). Demographics for ZIP 33437: population 37,229 (Census Reporter); median age, median household income, and owner-occupancy % could not be extracted from the page (content truncated). No specific distances to nearest shopping, grocery, library, hospital, or school verified - generic hospital-finder tools and an unread hoabulletinboard schools page were the only candidates found. Open questions: (1) exact current HOA fee schedule and whether any CDD/special assessments exist; (2) ZIP 33437 median age, median household income, owner-occupancy % (Census Reporter page returned only population); (3) distances to nearest hospital (e.g., in Boynton Beach/West Palm Beach), library (Boynton Beach Public Library), grocery, and schools; (4) clubhouse renovation completion status; (5) whether the $1,665 capital contribution is still in effect at closing. Budget note: 4 of 5 searches and 5 of 5 page reads used; censusreporter.org/profiles/86000US33437-33437/ read twice (plain + JS) both returned only header stats. Recommend follow-up: read hoabulletinboard.com/hoa/clbbfl/schools/ and a Census Reporter ACS page for 33437, plus the official HOA budget presentation (Oct 2026) for current dues. Sources: cascadelakeshoa.net/home (news only), palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach (amenities, pricing, gate), hoabulletinboard.com/hoa/clbbfl/about_hoa (fees, pet policy, security, rules), censusreporter.org 33437 profile (population)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078692Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "28,000 sq ft clubhouse with library, card room, billiard tables, arts and crafts studio, ballroom with stage, fitness center, aerobics room, and saunas. Currently closed for renovations."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078699Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style indoor and outdoor pools with spa, surrounded by palm trees and scenic patio."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078701Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "7 lighted Har-Tru tennis courts."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:49:27.078705Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball courts available."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078708Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fully-equipped fitness center and aerobics room."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078710Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Bocce courts."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078713Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking and biking paths along 8 scenic lakes."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078715Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Elegant ballroom with stage."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078717Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiard tables in clubhouse."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078719Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library with computers in clubhouse."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078721Z",
+      "confidence": 0.5,
+      "amenity": "arts_crafts",
+      "detail": "Arts and crafts studio/rooms."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078723Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Saunas in clubhouse."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078725Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa/hot tub attached to resort-style pool."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078727Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": "Sidewalks throughout community."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078729Z",
+      "confidence": 0.5,
+      "amenity": "activity_director",
+      "detail": "Community activity director on staff."
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604390Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "28,000 sq ft clubhouse: library with computers, card room, billiard tables, arts and crafts studio, ballroom with stage, fully-equipped fitness center, aerobics room, saunas; closed for renovations as of Sept 2026 per hoabulletinboard.com"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604405Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Indoor-outdoor resort-style pool and spa"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604412Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fully-equipped fitness center plus aerobics room in clubhouse"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604420Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "7 lighted Har-Tru tennis courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:53:45.604429Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Pickleball courts (also listed on official HOA about-us page)"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604438Z",
+      "confidence": 0.5,
+      "amenity": "bocce_courts",
+      "detail": "Bocce courts"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604446Z",
+      "confidence": 0.5,
+      "amenity": "sauna",
+      "detail": "Saunas in clubhouse (hot tub also listed on official HOA site)"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604453Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Ballroom with stage"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604459Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Community library with computers in clubhouse"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604465Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiard tables"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604472Z",
+      "confidence": 0.5,
+      "amenity": "arts_crafts_studio",
+      "detail": "Arts and crafts studio"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604482Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking and biking trails around the community's 8 scenic lakes"
+    },
+    {
+      "source_url": "https://www.palmbeachcountyhomeforsale.com/blog/cascade-lakes-boynton-beach/",
+      "retrieved_at": "2026-10-10T20:53:45.604488Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "24/7 manned guard gate controls community access"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+      "retrieved_at": "2026-10-10T20:53:45.604497Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Up to two pets, 25-lb weight limit, restrictions on aggressive breeds; leasing prohibited in first year of ownership and requires HOA approval; commercial vehicles, RVs, boats prohibited"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33437-33437/",
+    "retrieved_at": "2026-10-10T20:53:45.604507Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 37229,
+    "data_year": null,
+    "geography_level": "ZIP 33437 (Boynton Beach, FL - community ZIP per notes; community also spans 33426 per hoa-agent.com listing data)"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/cascade-lakes",
+      "retrieved_at": "2026-10-10T20:49:27.078734Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Military Trail / Woolbright Road corridor (between West Palm Beach and Boca Raton)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA fee schedule: sources give a $555-$636/month range (aggregators); official HOA site (cascadelakeshoa.net) did not publish fees on the pages read - confirm with HOA at (561) 737-9986",
+    "Whether the community has a CDD or any special assessments - none found in sources checked",
+    "Whether the ~$1,665 one-time capital contribution at closing is still in effect",
+    "Demographics: median age, median household income, and owner-occupancy % for ZIP 33437 could not be extracted (Census Reporter page returned only population 37,229 and area/density); data year not confirmed",
+    "Proximity: no verified distances to nearest shopping, grocery, library, hospital, or school - search results only surfaced generic hospital-finder tools and an unread hoabulletinboard schools page; recommend follow-up reads of hoabulletinboard.com/hoa/clbbfl/schools/ and a map-based distance check",
+    "Clubhouse renovation status: reported closed as of Sept 2026 - confirm completion date and amenity access",
+    "HOA budget committee presentation (Oct 2026) on official site may contain current dues but was not accessible in the pages read"
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 555.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+          "retrieved_at": "2026-10-10T20:49:27.078681+00:00"
+        },
+        {
+          "amount": 636.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/clbbfl/about_hoa/",
+          "retrieved_at": "2026-10-10T20:53:45.604369+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T20:53:45.605434Z"
+    }
+  ],
+  "created_at": "2026-10-10T20:49:27.079276Z",
+  "updated_at": "2026-10-10T20:53:45.605687Z"
+}

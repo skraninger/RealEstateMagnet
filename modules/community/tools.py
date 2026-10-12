@@ -101,6 +101,62 @@ def _extract_text(html: str, url: str) -> str:
     return soup.get_text(" ", strip=True)
 
 
+# Terms that mark the passages a community researcher actually needs. Used by
+# ``truncate_relevant`` to keep the fee table / amenity list when a page is
+# longer than the extraction budget.
+_EXTRACTION_KEYWORDS = (
+    "hoa", "fee", "fees", "dues", "assessment", "cdd", "monthly", "annual",
+    "amenity", "amenities", "clubhouse", "pool", "golf", "tennis", "pickleball",
+    "gym", "fitness", "trail", "gate", "gated", "security", "pet",
+    "population", "median", "income", "age", "census", "household",
+    "school", "hospital", "library", "shopping", "grocery", "mile",
+)
+
+
+def truncate_relevant(
+    text: str,
+    max_chars: int,
+    keywords: tuple[str, ...] = _EXTRACTION_KEYWORDS,
+) -> str:
+    """Trim ``text`` to ``max_chars`` while preserving head + keyword passages.
+
+    A blind ``text[:max_chars]`` slice frequently drops the fee table or amenity
+    list that sits below the fold. This keeps the opening text (context) and
+    then appends the keyword-bearing lines, in order, until the budget is spent.
+    The result never exceeds ``max_chars``.
+    """
+    if max_chars <= 0:
+        return ""
+    if len(text) <= max_chars:
+        return text
+
+    head_len = max(1, int(max_chars * 0.5))
+    head = text[:head_len]
+    joiner = "\n"
+    budget = max_chars - len(head) - len(joiner)
+    if budget <= 0:
+        return text[:max_chars]
+
+    parts: list[str] = []
+    for raw_line in text[head_len:].splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        if not any(kw in line.lower() for kw in keywords):
+            continue
+        snippet = line if len(line) <= budget else line[:budget]
+        if not snippet:
+            continue
+        parts.append(snippet)
+        budget -= len(snippet) + len(joiner)
+        if budget <= 0:
+            break
+
+    if not parts:
+        return text[:max_chars]
+    return head + joiner + joiner.join(parts)
+
+
 def _detect_captcha(text: str, html: str = "") -> dict:
     """Detect if page contains a CAPTCHA challenge.
     
@@ -397,7 +453,7 @@ async def read_page(url: str, max_chars: int = 12_000, use_js: bool = False) -> 
         text = _extract_text(html, url)
         if text and len(text) > 100:
             logger.debug("read_page succeeded with static fetch for %s", url)
-            return text[:max_chars]
+            return truncate_relevant(text, max_chars)
         logger.info("Static fetch returned insufficient content for %s, trying JS render", url)
     except Exception as exc:
         logger.info("Static fetch failed for %s: %s, trying JS render", url, exc)
@@ -407,7 +463,7 @@ async def read_page(url: str, max_chars: int = 12_000, use_js: bool = False) -> 
         text = await _read_page_js(url)
         if text and len(text) > 100:
             logger.debug("read_page succeeded with JS render for %s", url)
-            return text[:max_chars]
+            return truncate_relevant(text, max_chars)
         logger.info("JS render returned insufficient content for %s", url)
     except Exception as exc:
         logger.info("JS render failed for %s: %s", url, exc)
@@ -425,7 +481,7 @@ async def read_page(url: str, max_chars: int = 12_000, use_js: bool = False) -> 
         text = await _read_page_pdf(url)
         if text and len(text) > 100:
             logger.debug("read_page succeeded with PDF capture for %s", url)
-            return text[:max_chars]
+            return truncate_relevant(text, max_chars)
         logger.warning("PDF capture returned insufficient content for %s", url)
     except Exception as exc:
         logger.warning("PDF capture failed for %s: %s", url, exc)

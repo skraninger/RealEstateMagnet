@@ -1,0 +1,296 @@
+{
+  "id": "f305e334-74b7-4d17-bc64-a883fe135a2c",
+  "identity": {
+    "name": "The Estates at Lotis Wellington",
+    "slug": "the-estates-at-lotis-wellington",
+    "county_fips": null,
+    "city": "Wellington",
+    "hoa_name": "LOTIS WELLINGTON PROPERTY OWNER'S ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "New single-family homes and townhomes by Lennar in Wellington, FL (ZIP 33414), priced $599,900–$1,199,567. Offers walkable access to The Square at Lotis Wellington for dining, shopping, and trails, plus proximity to Wellington International polo grounds and Palm Beach."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/lotis-wellington-property-owner-s-association-inc-2",
+      "retrieved_at": "2026-10-12T15:25:42.302080Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fee not stated in available sources. HOA Agent profile for LOTIS WELLINGTON PROPERTY OWNER'S ASSOCIATION, INC. shows no verified fee amount (resident-verified field is empty). Verify directly with the association."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/lotis-wellington-property-owner-s-association-inc-2",
+      "retrieved_at": "2026-10-12T15:30:11.870776Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 262.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Wellington city-wide AVERAGE monthly HOA fee per hoa-agent.com; the specific fee for LOTIS WELLINGTON PROPERTY OWNER'S ASSOCIATION, INC. is listed as unverified/not yet submitted by residents. Not community-specific — verify with the association. Fees may differ between townhome and single-family sections per wellingtonhometeam.com guide (no amounts given). No CDD special assessment signals reported for this community on hoa-agent.com (as of page update Oct 12, 2026). No other recurring charges found on pages reviewed (utilities: FPL electric, Village of Wellington water/sewer, FCC Environmental Services trash). Confidence low: aggregator, unverified data. (Retrieved 2026-10-12T12:00:00Z, confidence 0.4.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302091Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Exclusive clubhouse (Lennar marketing page)"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302099Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming pool"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302101Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Scenic 18-acre lake"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302104Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball court"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302107Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking/biking trails"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302109Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": "Dog park"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302111Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Community parks"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302113Z",
+      "confidence": 0.5,
+      "amenity": "shopping_dining",
+      "detail": "Walkable access to The Square at Lotis Wellington (Foxtail Coffee Co., Cooper's Hawk Winery & Restaurant, Kura Sushi, boutiques, wellness destinations)"
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:30:11.870792Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Resort-style/exclusive clubhouse (per Lennar community page; wellingtonhometeam.com describes it as resort-style with pool). Retrieved 2026-10-12T12:00:00Z, confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:30:11.870803Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Resort-style swimming pool. Retrieved 2026-10-12T12:00:00Z, confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:30:11.870806Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Scenic 18-acre lake at the heart of the community, with walking paths. Retrieved 2026-10-12T12:00:00Z, confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:30:11.870808Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball court. Retrieved 2026-10-12T12:00:00Z, confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:30:11.870811Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking trails (Lennar); wellingtonhometeam.com adds sidewalks and bike trails throughout the community. Retrieved 2026-10-12T12:00:00Z, confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:30:11.870813Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": "Dog park. Retrieved 2026-10-12T12:00:00Z, confidence 0.9."
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870816Z",
+      "confidence": 0.5,
+      "amenity": "parks_playground",
+      "detail": "Parks and children's playground. Retrieved 2026-10-12T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870819Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated single-family home and townhome community (gate/security staffing details not specified). Retrieved 2026-10-12T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870821Z",
+      "confidence": 0.5,
+      "amenity": "mixed_use_retail_dining",
+      "detail": "The Square at Lotis Wellington: ~90,000 sq ft of dining, shopping, entertainment and workspaces, walkable from homes (Foxtail Coffee Co., Cooper's Hawk, Kura Sushi per Lennar). Retrieved 2026-10-12T12:00:00Z, confidence 0.7."
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870824Z",
+      "confidence": 0.5,
+      "amenity": "medical_professional_offices",
+      "detail": "The Pavilions: ~60,000 sq ft of medical and professional offices plus rental residences. Retrieved 2026-10-12T12:00:00Z, confidence 0.7."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33414-33414/",
+    "retrieved_at": "2026-10-12T15:30:11.870830Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 60184,
+    "data_year": null,
+    "geography_level": "ZIP 33414 (Wellington, FL area; ZIP covers 28.3 sq mi, density 2,123.3/sq mi). City of Wellington population is 62,146 per https://censusreporter.org/profiles/16000US1275812-wellington-fl/ (45.1 sq mi). Median age, median household income, and owner-occupancy % were not retrievable from the pages read (content truncated). Data year not stated on page. Retrieved 2026-10-12T12:00:00Z, confidence 0.9 (Census Reporter)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302119Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Square at Lotis Wellington",
+      "distance_miles": 0.3
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington",
+      "retrieved_at": "2026-10-12T15:25:42.302123Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Wellington International (polo, show jumping, seasonal events)",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870851Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Square at Lotis Wellington (on-site, ~90,000 sq ft dining/shopping/entertainment; walkable per Lennar)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870854Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Elbridge Gale Elementary (zoned school per community guide; distance not stated)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870855Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Emerald Cove Middle School (zoned school per community guide; distance not stated)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/",
+      "retrieved_at": "2026-10-12T15:30:11.870856Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Palm Beach Central High School (zoned school per community guide; distance not stated)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Actual HOA fee amounts for The Estates at Lotis Wellington (monthly/annual, townhome vs single-family sections) — no verified figures found; hoa-agent.com shows the fee as unverified and only cites a ~$262/month Wellington city average.",
+    "CDD special assessments — no information found on any page reviewed.",
+    "Pet policy — listed as 'Unknown' on hoa-agent.com; not stated on Lennar or wellingtonhometeam pages.",
+    "Median age, median household income, and owner-occupancy % for ZIP 33414 / Wellington — censusreporter pages returned only population figures when read.",
+    "Distance to nearest hospital (e.g., Wellington Regional Medical Center) — not verified on a page read.",
+    "Distance to nearest public library (Wellington Public Library) — not verified on a page read.",
+    "Distance to nearest grocery store — not verified on a page read.",
+    "Gate/security details (staffed guard post vs. automated gate) — community is described as gated but staffing not specified.",
+    "Community is new construction (Lennar); HOA fee schedule may not be fully established/published yet."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/lotis-wellington-property-owner-s-association-inc-2",
+          "retrieved_at": "2026-10-12T15:25:42.302080+00:00"
+        },
+        {
+          "amount": 262.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/lotis-wellington-property-owner-s-association-inc-2",
+          "retrieved_at": "2026-10-12T15:30:11.870776+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T15:30:11.871563Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Elbridge Gale Elementary (zoned school per community guide; distance not stated)",
+          "distance_miles": null,
+          "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/"
+        },
+        {
+          "nearest_name": "Emerald Cove Middle School (zoned school per community guide; distance not stated)",
+          "distance_miles": null,
+          "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/"
+        },
+        {
+          "nearest_name": "Palm Beach Central High School (zoned school per community guide; distance not stated)",
+          "distance_miles": null,
+          "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/"
+        }
+      ],
+      "detected_at": "2026-10-12T15:30:11.871572Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "The Square at Lotis Wellington",
+          "distance_miles": 0.3,
+          "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/wellington/the-estates-at-lotis-wellington"
+        },
+        {
+          "nearest_name": "The Square at Lotis Wellington (on-site, ~90,000 sq ft dining/shopping/entertainment; walkable per Lennar)",
+          "distance_miles": 0.0,
+          "source_url": "https://wellingtonhometeam.com/communities/lotis-wellington/"
+        }
+      ],
+      "detected_at": "2026-10-12T15:30:11.871575Z"
+    }
+  ],
+  "created_at": "2026-10-12T15:25:42.302808Z",
+  "updated_at": "2026-10-12T15:30:11.871708Z"
+}

@@ -1,0 +1,288 @@
+{
+  "id": "b225c460-ffcf-4afd-bc14-15588eb4ae0b",
+  "identity": {
+    "name": "Sea Ranch Lakes",
+    "slug": "sea-ranch-lakes",
+    "county_fips": null,
+    "city": "Fort Lauderdale / Lauderdale-by-the-Sea",
+    "hoa_name": "Sea Ranch Lakes Beach Club Homeowners Association (SEA RANCH LAKES BEACH CLUB, INC.)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Sea Ranch Lakes is an incorporated village and private, guard-gated residential community in Broward County, FL (ZIP 33308), with approximately 200-350 single-family homes. The private Sea Ranch Lakes Beach Club (originating from the 1939 Sea Ranch Cabana Club) owns and maintains all village roads, lakes, parks, and common areas. Incorporated in 1959, the village has its own police department. Beach Club membership is limited to property owners, who pay annual dues in addition to property taxes. HOA established 05/21/1963; Federal ID 590880463. Property manager: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000. Village phone: (954) 943-8862. Beach Club: 5300 N Ocean Blvd. HOA: 27 Winnebago Rd."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/srlflfl/about_hoa/",
+      "retrieved_at": "2026-10-10T17:16:37.394897Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 341.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Approximate monthly fee for single-family homes; some listings cite ~$1,025 quarterly. Exact current fees, transfer fees, capital contributions, and special assessments are not uniformly published. Annual Beach Club membership dues are separate from property taxes and not fully detailed in public sources. Verify directly with village at (954) 943-8862 or searanchlakesfl.org."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/srlflfl/about_hoa/",
+      "retrieved_at": "2026-10-10T17:16:37.394905Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 1025.0,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Quarterly fee cited in some listings, likely equivalent to the ~$341/month figure. Varies by source and property type."
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988761Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_annual",
+      "amount": null,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Official Beach Club site: membership limited to property owners; residents pay annual dues in addition to property taxes. Dues fund roads, landscaping, street lighting, and beachfront facilities. No dollar amount published on the site. HOA established 05/21/1963 (per florida-hoa.com listing). Property manager: FPMS, Sarasota FL, 941-960-5000 (per task notes). No separate CDD assessment found; the Beach Club itself owns/maintains all village roads and common areas, so its dues serve the CDD function. Confidence 0.8 (official HOA site)."
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988771Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Community marketing site reports mandatory HOA of ~$1,025-$1,200 quarterly (~$340-$400/month) covering beach club, grounds, and security. Unverified against official HOA budget; treat as indicative range only. Confidence 0.5 (reputable listing/marketing site, not official)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:16:37.394909Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Oceanfront clubhouse at 5300 N Ocean Blvd, with dining and social facilities (originally the 1939 Sea Ranch Cabana Club with private cabanas). Beautifully maintained grounds."
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:16:37.394917Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Swimming pool / community pool at the Beach Club."
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:16:37.394920Z",
+      "confidence": 0.5,
+      "amenity": "beach_access",
+      "detail": "Direct oceanfront beach access; exclusive beachfront amenities."
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:16:37.394923Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "24/7 guard-gated security with controlled access; highly private neighborhood."
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:16:37.394926Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Dedicated village police department; exceptional maintenance and security."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/srlflfl/about_hoa/",
+      "retrieved_at": "2026-10-10T17:16:37.394928Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Central lakes within the village, privately owned and maintained by the Beach Club."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/srlflfl/about_hoa/",
+      "retrieved_at": "2026-10-10T17:16:37.394930Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Parks and green spaces throughout the village, privately owned by the Beach Club."
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988774Z",
+      "confidence": 0.5,
+      "amenity": "beach_access",
+      "detail": "Private Atlantic Ocean beach access; 300 ft of private sand (per community site); club at 5300 N Ocean Blvd, founded from 1939 Sea Ranch Cabana Club"
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988783Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Oceanfront clubhouse with clubhouse amenities"
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988786Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Oceanfront swimming pool; described as heated on community marketing site"
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988788Z",
+      "confidence": 0.5,
+      "amenity": "cabanas",
+      "detail": "Cabanas and lounge areas"
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988790Z",
+      "confidence": 0.5,
+      "amenity": "grounds",
+      "detail": "Beautifully maintained, landscaped grounds"
+    },
+    {
+      "source_url": "https://searanchbeachclub.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988792Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "Security and controlled access; 24/7 private police, single guarded gate, perimeter wall, and private road network (per community site); village has its own police department"
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988794Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Two spring-fed freshwater lakes (Seneca and Cayuga) inside the gates; non-motorized watercraft only"
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988796Z",
+      "confidence": 0.5,
+      "amenity": "dock",
+      "detail": "Private deepwater docks (100+ ft) with shore power on Intracoastal-fronting estates; ~28 Intracoastal lots and ~47 lakeside sites"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://en.wikipedia.org/wiki/Sea_Ranch_Lakes,_Florida",
+    "retrieved_at": "2026-10-10T17:21:13.988800Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 540,
+    "data_year": 2020,
+    "geography_level": "village (Census place), Broward County, FL (0.19 sq mi; ZIP 33308; FIPS 12-64725); 175 households, 145 families (2020 Census). Median age 57 and median household income $62,813 are from the 2000 Census (see open_questions). Census Reporter profile shows a more recent population of 466 (year not visible on loaded page). Owner-occupancy % not found on pages read. Confidence 0.8 (Wikipedia citing U.S. Census)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988806Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Sea Ranch Center (Publix & CVS)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988809Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix at Sea Ranch Center",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988810Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Broward Health Imperial Point",
+      "distance_miles": 1.9
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988812Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Providence Holy Cross Medical Center",
+      "distance_miles": 2.3
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988813Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "McNab Elementary School (public, PK-5, 'A'-rated); also Pine Crest School, Westminster Academy, Cardinal Gibbons HS, Northeast HS within ~8-12 min drive",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://searanchlakesfl.com/",
+      "retrieved_at": "2026-10-10T17:21:13.988814Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Lauderdale-by-the-Sea Center (dining/boutiques)",
+      "distance_miles": 0.5
+    }
+  ],
+  "open_questions": [
+    "Exact current annual Beach Club dues amount: official site confirms annual dues but publishes no figure; only the marketing-site range of ~$340-$400/month (~$1,025-$1,200/quarter) was found. Verify with FPMS property manager (941-960-5000) or the Beach Club board.",
+    "Current ACS median household income, median age, and owner-occupancy %: Census Reporter profile page loaded only the population header (466); detailed tables did not render. Wikipedia's median age (57) and median household income ($62,813) are 2000 Census vintages.",
+    "Population discrepancy: 2020 Census = 540 (Wikipedia) vs. 466 on Census Reporter (likely newer ACS estimate; year not visible on loaded page).",
+    "Nearest library not identified on pages read (Broward County Library system likely serves the area; distance unverified).",
+    "Pet policy not found on any page read.",
+    "School distances given in drive minutes (5-12 min) rather than miles on the source page; mile figures not recorded to avoid estimation.",
+    "Sea Ranch Center (Publix/CVS) described as 'adjacent / 1-2 min walk' rather than in miles; distance left null."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 341.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/srlflfl/about_hoa/",
+          "retrieved_at": "2026-10-10T17:16:37.394897+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://searanchlakesfl.com/",
+          "retrieved_at": "2026-10-10T17:21:13.988771+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T17:21:13.989330Z"
+    },
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "Broward Health Imperial Point",
+          "distance_miles": 1.9,
+          "source_url": "https://searanchlakesfl.com/"
+        },
+        {
+          "nearest_name": "Providence Holy Cross Medical Center",
+          "distance_miles": 2.3,
+          "source_url": "https://searanchlakesfl.com/"
+        }
+      ],
+      "detected_at": "2026-10-10T17:21:13.989336Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Sea Ranch Center (Publix & CVS)",
+          "distance_miles": null,
+          "source_url": "https://searanchlakesfl.com/"
+        },
+        {
+          "nearest_name": "Lauderdale-by-the-Sea Center (dining/boutiques)",
+          "distance_miles": 0.5,
+          "source_url": "https://searanchlakesfl.com/"
+        }
+      ],
+      "detected_at": "2026-10-10T17:21:13.989339Z"
+    }
+  ],
+  "created_at": "2026-10-10T17:16:37.395524Z",
+  "updated_at": "2026-10-10T17:21:13.989443Z"
+}

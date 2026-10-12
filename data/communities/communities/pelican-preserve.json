@@ -1,0 +1,468 @@
+{
+  "id": "1ee50e93-72ff-42b4-86c4-6b3e23df0c31",
+  "identity": {
+    "name": "Pelican Preserve",
+    "slug": "pelican-preserve",
+    "county_fips": null,
+    "city": "Cape Coral",
+    "hoa_name": "Pelican Preserve Master Association (with separate sub-associations per neighborhood/building)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "A 55+ gated community in Cape Coral, Florida, with multiple housing types (carriage homes, cottage duplexes, single-family Grand Cottage/Estate homes, and condos). Features a Town Center (Plaza del Sol), 38-acre nature preserve, extensive recreational amenities, and multiple sub-associations. Post-Hurricane Ian insurance has significantly increased carrying costs."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+      "retrieved_at": "2026-10-12T18:55:00.496501Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 550.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Overall HOA fee range $550–$750/month depending on unit type (the figure quoted in listings/brochures). Breakdown by unit type: Carriage Homes ~$580–$680/mo (master + sub-assoc: exterior maintenance, landscaping); Cottage Duplexes ~$600–$700/mo (master + sub-assoc: landscaping, amenity access); Single-Family Grand Cottage/Estate ~$620–$750/mo (master only — owner maintains own exterior and carries own insurance). Master association covers Town Center, gated access, community amenities, management. Condo/carriage home sub-association fees include master policy covering building exterior and roof; personal HO-6 covers contents/interior. True monthly carrying cost (HOA + CDD + taxes + post-Ian insurance) runs $1,700–$2,700+ before mortgage. Post-Ian Lee County homeowners insurance is the most expensive line item for single-family owners. CDD assessment appears on tax bill, not HOA statement. Golf club is a separate membership. Lee County property taxes and senior exemptions mentioned but no specific figures given. Fees change with annual budgeting — request current budget/estoppel to confirm."
+    },
+    {
+      "source_url": "https://www.nova55living.com/blog/pelican-preserve-true-cost-fort-myers",
+      "retrieved_at": "2026-10-12T18:55:00.496511Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 150.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Master HOA fee historically $150–$200/month (base layer every owner pays regardless of housing type; funds gates/security, common areas, Town Center Plaza del Sol, 38-acre nature preserve and boardwalk trail, community roads, shared landscaping). Condo sub-association fee runs $250–$450/month on top of master (covers building exterior, roof, elevators, pest control, often cable/internet)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+      "retrieved_at": "2026-10-12T18:55:00.496515Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "CDD assessment exists and appears on property tax bill (not HOA statement). CDD financed construction of community infrastructure. Specific dollar amount not stated in available content."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+      "retrieved_at": "2026-10-12T19:00:08.511664Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 600.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Estimated HOA range by unit type (master + sub-association combined): condos (Napoli etc.) ~$550-650/mo; carriage homes ~$580-680/mo; cottage duplexes ~$600-700/mo; single-family Grand Cottage/Estate ~$620-750/mo (master assoc. only). Third-party guide estimates, not official HOA figures. Master fee covers Town Center, gated access, community amenities, management; sub-assoc fees cover exterior maintenance, landscaping, building insurance on attached units. $600 shown as midpoint of overall $550-750 range quoted in listings/brochures/55places.com per this source. Post-Ian true carrying cost cited as $1,700-2,700+/mo before mortgage incl. CDD, taxes, insurance. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.55 (reputable third-party guide, not official)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+      "retrieved_at": "2026-10-12T19:00:08.511677Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 2500.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "CDD annual debt service (municipal bonds financing Town Center and infrastructure) appears as non-ad valorem assessment on Lee County tax bill. Typical range $1,800-$3,200/yr ($150-$267/mo), varies by phase and lot; older sections may be nearly paid off. $2,500 shown as midpoint. Verify exact line via leepa.org parcel lookup / last two years of tax bills. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.55 (third-party guide estimate)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+      "retrieved_at": "2026-10-12T19:00:08.511682Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 6500.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Post-Hurricane Ian insurance estimates: single-family wind/homeowners insurance $4,000-$9,000/yr; flood insurance (if required/chosen) $1,500-$4,000/yr; combined $6,000-$13,000/yr for typical single-family home. Condos/carriage homes with HOA master policy: HO-6 interior policy typically $800-$2,000/yr. Premiums 50-150% higher than 2021 rates per source. $6,500 shown as midpoint of combined single-family range. Estimates, not quotes. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.5 (third-party guide estimate)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+      "retrieved_at": "2026-10-12T19:00:08.511686Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 4500.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "OPTIONAL Pelican Preserve Golf Club membership (separate from HOA): source states membership typically $3,000-$6,000/yr by level (social, intermediate, full golf) plus cart fees and dining minimums; non-member green fees $50-$100+/round. $4,500 shown as midpoint. Conflicts with amenities page figure (see separate fact). Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.5 (third-party guide estimate)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/amenities",
+      "retrieved_at": "2026-10-12T19:00:08.511690Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 5000.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "OPTIONAL golf club membership per amenities page: social memberships $1,500-$2,500/yr (clubhouse dining/social, no course access); full golf memberships $4,000-$6,000/yr (unlimited or limited rounds by tier); cart fees additional. $5,000 shown as midpoint of full-golf range. Conflicts with costs page range ($3,000-$6,000); both reported. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.5 (third-party guide estimate)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511694Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 678.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "55places.com lists HOA dues as $65-$678/mo (aggregated third-party data, unverified by HOA). $678 shown as upper bound. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.5 (listing aggregator, self-declared unverified)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.nova55living.com/blog/pelican-preserve-true-cost-fort-myers",
+      "retrieved_at": "2026-10-12T18:55:00.496518Z",
+      "confidence": 0.5,
+      "amenity": "gated_access",
+      "detail": "Community gates and security funded by master HOA"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496528Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Town Center (Plaza del Sol) — live music performances under the stars, arts and crafts studios, pool, poolside bar and food service, adjacent lap pool (adults only)"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496531Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Indoor and outdoor pools with aquatic offerings; adjacent lap pool for adults only; poolside bar and food service"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496533Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Eight lighted Har-Tru tennis courts"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496536Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Twelve pickleball courts"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496538Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Cardio machines and weights for all levels; fitness studios offering Yoga, Spin, Pilates, and Zumba"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496540Z",
+      "confidence": 0.5,
+      "amenity": "indoor_track",
+      "detail": "Indoor track, locker rooms, sauna and steam rooms, spa treatment rooms"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496543Z",
+      "confidence": 0.5,
+      "amenity": "theater",
+      "detail": "Movie theater in Town Center"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496545Z",
+      "confidence": 0.5,
+      "amenity": "card_room",
+      "detail": "Bridge, mahjong, poker, and other card games"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496548Z",
+      "confidence": 0.5,
+      "amenity": "craft_studios",
+      "detail": "Sewing, wood-working, art lessons, billiards, computers; arts and crafts studios"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496550Z",
+      "confidence": 0.5,
+      "amenity": "nature_preserve",
+      "detail": "38-acre nature preserve with boardwalk trail, cypress and pine, sparkling lakes; butterfly garden"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496552Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Sidewalks and walking trails throughout community"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496554Z",
+      "confidence": 0.5,
+      "amenity": "dog_park",
+      "detail": "Dog parks"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496557Z",
+      "confidence": 0.5,
+      "amenity": "fishing_pier",
+      "detail": "Fishing pier"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496559Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Community library"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496561Z",
+      "confidence": 0.5,
+      "amenity": "restaurant",
+      "detail": "Flip-Flops outdoor bar and grill; poolside bar and food service"
+    },
+    {
+      "source_url": "https://www.pelicanpreservelifestyles.com/amenities",
+      "retrieved_at": "2026-10-12T18:55:00.496563Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa treatment rooms, sauna and steam rooms"
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/amenities",
+      "retrieved_at": "2026-10-12T19:00:08.511699Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "70,000 sq ft Town Center (Plaza del Sol) is the centerpiece; hub of social activity, included in HOA. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.55 (third-party guide)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/amenities",
+      "retrieved_at": "2026-10-12T19:00:08.511712Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "27-hole Chip Powell-designed course at Pelican Preserve Golf Club, operated separately from HOA; membership optional (unlike Gulf Harbour). Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.55 (third-party guide)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/amenities",
+      "retrieved_at": "2026-10-12T19:00:08.511720Z",
+      "confidence": 0.5,
+      "amenity": "golf_clubhouse",
+      "detail": "24,485 sq ft Golf Clubhouse with private spa, fitness center, full-service dining, pro shop; spa services, dining, personal training, lessons cost extra. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.55 (third-party guide)."
+    },
+    {
+      "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/amenities",
+      "retrieved_at": "2026-10-12T19:00:08.511726Z",
+      "confidence": 0.5,
+      "amenity": "nature_preserve",
+      "detail": "38-acre nature preserve with boardwalk trail system through the community; wildlife viewing (herons, egrets, anhinga, osprey, occasional alligators); shaded trails usable year-round. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.55 (third-party guide)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511731Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "State-of-the-art fitness center in Town Center (plus separate fitness center in golf clubhouse). Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511737Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool plus adults-only lap pool; indoor and outdoor pools listed. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511742Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Har-Tru tennis courts. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511747Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Twelve pickleball courts. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511753Z",
+      "confidence": 0.5,
+      "amenity": "movie_theater",
+      "detail": "100-seat movie theater in Town Center. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511758Z",
+      "confidence": 0.5,
+      "amenity": "restaurant",
+      "detail": "On-site restaurant with indoor/al fresco dining; bar and restaurant called Flip-Flops. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511763Z",
+      "confidence": 0.5,
+      "amenity": "sauna_steam",
+      "detail": "Sauna and steam rooms in Town Center. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511769Z",
+      "confidence": 0.5,
+      "amenity": "hobby_rooms",
+      "detail": "Card rooms, hobby room, woodworking shop, art room, sewing machine room. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511774Z",
+      "confidence": 0.5,
+      "amenity": "pet_park",
+      "detail": "Pet park (pet-friendly amenity). Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511780Z",
+      "confidence": 0.5,
+      "amenity": "garden",
+      "detail": "Butterfly garden, garden plots, and fishing pier in the 38-acre nature preserve. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511784Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": "Library listed among community amenities. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511789Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking and biking trails; indoor walking track. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511794Z",
+      "confidence": 0.5,
+      "amenity": "gated_access",
+      "detail": "Gated: Yes; full-time activity director and amenity managers; community events (concerts, pool parties, nature walks, holiday parties). Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511799Z",
+      "confidence": 0.5,
+      "amenity": "ballroom",
+      "detail": "Ballroom in golf clubhouse; also bocce, horseshoe pits, lawn bowling listed. Retrieved 2026-02-10T12:00:00Z (UTC). Confidence 0.6 (listing aggregator)."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1210275-cape-coral-fl/",
+    "retrieved_at": "2026-10-12T19:00:08.511807Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 233025,
+    "data_year": null,
+    "geography_level": "city (Cape Coral, FL); ZIP 33913 (community's ZIP) population 31,538 per https://censusreporter.org/profiles/86000US33913-33913/ (read 2026-02-10T12:00:00Z UTC). Median age, median household income, and owner-occupancy % were not retrievable from the pages read (content truncated to population/area/density only). Data year not displayed on the pages read. Confidence 0.9 (Census Reporter / Census data)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511816Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Gulf Coast Medical Center (also near: Lee Memorial Hospital, Cape Coral Hospital)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+      "retrieved_at": "2026-10-12T19:00:08.511821Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Nearby parks/greenspaces: Buckingham Community Park, Lakes Park, Six Mile Cypress Preserve; golf: The Plantation Golf & Country Club, Seven Lakes Golf Course, Cypress Lake Golf Club",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Official HOA dues by sub-association (master vs. each neighborhood/building sub-association) not verified from HOA/CDD documents; all fee figures are third-party guide estimates (nova55living.com) or unverified aggregator data (55places.com).",
+    "Exact CDD assessment for a specific parcel/phase — varies by lot; requires Lee County Property Appraiser (leepa.org) parcel lookup or seller's last two years of tax bills.",
+    "Demographic detail (median age, median household income, owner-occupancy %) for Cape Coral city or ZIP 33913 — Census Reporter pages returned only population/area/density; data year also not displayed.",
+    "Distances (miles) to nearest shopping center, grocery store, public library, and school — not found on pages read; only hospital names and nearby parks were listed without distances.",
+    "Post-Ian insurance premium figures ($4,000-$9,000 wind, $1,500-$4,000 flood) are guide estimates, not actual quotes; actual premiums depend on home size, age, construction, roof, and carrier.",
+    "Golf club membership fee ranges conflict between two pages of the same site: $3,000-$6,000/yr (costs page) vs. social $1,500-$2,500/yr and full golf $4,000-$6,000/yr (amenities page).",
+    "Community is marketed as Cape Coral, FL but most sources list it as Fort Myers, FL (ZIP 33913); exact municipal boundary not verified."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.cdd_assessment",
+      "values": [
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+          "retrieved_at": "2026-10-12T18:55:00.496515+00:00"
+        },
+        {
+          "amount": 2500.0,
+          "period": "annual",
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+          "retrieved_at": "2026-10-12T19:00:08.511677+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T19:00:08.512691Z"
+    },
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 550.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+          "retrieved_at": "2026-10-12T18:55:00.496501+00:00"
+        },
+        {
+          "amount": 150.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/blog/pelican-preserve-true-cost-fort-myers",
+          "retrieved_at": "2026-10-12T18:55:00.496511+00:00"
+        },
+        {
+          "amount": 600.0,
+          "period": "monthly",
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+          "retrieved_at": "2026-10-12T19:00:08.511664+00:00"
+        },
+        {
+          "amount": 678.0,
+          "period": "monthly",
+          "source_url": "https://www.55places.com/florida/communities/pelican-preserve",
+          "retrieved_at": "2026-10-12T19:00:08.511694+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T19:00:08.512709Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": 6500.0,
+          "period": "annual",
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+          "retrieved_at": "2026-10-12T19:00:08.511682+00:00"
+        },
+        {
+          "amount": 4500.0,
+          "period": "annual",
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/costs",
+          "retrieved_at": "2026-10-12T19:00:08.511686+00:00"
+        },
+        {
+          "amount": 5000.0,
+          "period": "annual",
+          "source_url": "https://www.nova55living.com/cape-coral-fl/pelican-preserve/amenities",
+          "retrieved_at": "2026-10-12T19:00:08.511690+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T19:00:08.512722Z"
+    }
+  ],
+  "created_at": "2026-10-12T18:55:00.497125Z",
+  "updated_at": "2026-10-12T19:00:08.512867Z"
+}

@@ -1,0 +1,638 @@
+{
+  "id": "092b1567-5bc8-4139-a29e-c74e8ee83094",
+  "identity": {
+    "name": "SilverLakes",
+    "slug": "silverlakes",
+    "county_fips": null,
+    "city": "Pembroke Pines",
+    "hoa_name": "SilverLakes Community Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "SilverLakes is a gated community established in 1990 in Southwest Broward County (Pembroke Pines), Florida. It is governed by a master HOA covering 39 communities, managed by Pines Property Management, with security provided by FPI - SilverLakes Security. The community emphasizes preserving natural resources, wildlife, open space, wetlands, and tree-lined streets."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoa-agent.com/community/silverlakes-community-association",
+      "retrieved_at": "2026-10-10T02:09:06.641583Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-reported range of $180–$295/month per hoa-agent.com (resident-submitted data; explicitly noted as not a guaranteed fee). No special assessment signals reported. Verify with the association directly. Official site has an Assessments page but no amounts were stated in the provided content."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/assessments.html",
+      "retrieved_at": "2026-10-10T02:30:50.895509Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Master HOA (SilverLakes Community Association) maintenance assessment is billed quarterly (due Jan 1, Apr 1, Jul 1, Oct 1), budgeted and subject to annual change. Exact dollar amount is NOT published on the official site and varies by parcel. 15-day grace period before late fee (per Pines Property Management). Paid via resident portal (engage.goenumerate.com / portal.pinespropertymanagement.com) or check to Pines Property Management, PO Box 522395, Miami FL 33152. Obtain current amount via estoppel letter from Pines Property Management, 6941 SW 196 Ave Ste 27, Pembroke Pines FL 33332, (954) 438-6570 (estoppel letter page: silverlakes.net/estoppel-letter.html). Confidence high on structure, amount unknown/unverified here (see hoa-agent resident-submitted range below). Related: pinespropertymanagement.zendesk.com article 217141758 confirms quarterly due dates and 15th-of-quarter late-fee cutoff; silverlakes.net/estoppel-letter.html gives the estoppel/management contact address and phone 954-438-6570; silverlakes.net/pines-property-management-contacts.html lists office hours and payment portal info (all read)."
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/silverlakes-community-association",
+      "retrieved_at": "2026-10-10T02:30:50.895520Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 180.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Resident-submitted observed HOA fee range of $180-$295/month (site labels it 'resident-verified' but also 'not a guaranteed fee; always verify with the association directly'). Low confidence - unverified resident submissions; treat as indicative only. No special assessment signals reported on the page."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/assessments.html",
+      "retrieved_at": "2026-10-10T02:30:50.895523Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "varies",
+      "currency": "USD",
+      "note": "Most residents ALSO pay a separate sub-association assessment (39 sub-associations) for exclusive amenities such as community pools, landscaping, entrance gates, manned gates, and overflow parking. Billed separately by each sub-association; amounts vary by community and are not published in aggregate."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/assessments.html",
+      "retrieved_at": "2026-10-10T02:30:50.895524Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "billed with quarterly assessment",
+      "currency": "USD",
+      "note": "Discounted bulk cable TV and internet (Blue Stream Fiber) is a resident amenity billed along with the SilverLakes quarterly assessments. Experience center: The Shoppes of SilverLakes, 18215 Pines Blvd, Pembroke Pines FL 33029, phone 844-644-3030 (per silverlakes.net/bluestream-fiber.html). Rate not stated."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/parks--recreation.html",
+      "retrieved_at": "2026-10-10T02:30:50.895526Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 50.0,
+      "period": "per rental",
+      "currency": "USD",
+      "note": "SilverLakes Community Park pavilion (925 NW 178 Ave) can be reserved by current homeowners for $50 per event; contact Pines Property Management (954) 438-6570. Also confirmed on silverlakes.net/faqs.html."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375145Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Master association assessments billed quarterly and subject to annual change; exact amounts vary by property type and sub-association and are not published in aggregate. Sub-association fees are billed separately. Transfer fees, capital contributions, and special assessments unavailable from public sources."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.silverlakes.net/silverlakes-amenities.html",
+      "retrieved_at": "2026-10-10T02:09:06.641596Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "The SilverLakes Community Pool (see official amenities page for details)"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/silverlakes-amenities.html",
+      "retrieved_at": "2026-10-10T02:09:06.641605Z",
+      "confidence": 0.5,
+      "amenity": "community_park",
+      "detail": "Community Park listed on official SilverLakes amenities page"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/silverlakes-amenities.html",
+      "retrieved_at": "2026-10-10T02:09:06.641608Z",
+      "confidence": 0.5,
+      "amenity": "boater_s_park",
+      "detail": "Boater's Park listed on official SilverLakes amenities page"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/silverlakes-amenities.html",
+      "retrieved_at": "2026-10-10T02:09:06.641611Z",
+      "confidence": 0.5,
+      "amenity": "community_hall",
+      "detail": "West Broward Hall listed on official SilverLakes amenities page"
+    },
+    {
+      "source_url": "https://www.hoa-agent.com/community/silverlakes-community-association",
+      "retrieved_at": "2026-10-10T02:09:06.641613Z",
+      "confidence": 0.5,
+      "amenity": "gated_controlled_access",
+      "detail": "Gated community with controlled access; security provided by FPI - SilverLakes Security (per official site contacts)"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/",
+      "retrieved_at": "2026-10-10T02:09:06.641616Z",
+      "confidence": 0.5,
+      "amenity": "parks_wetlands_and_open_space",
+      "detail": "Community dedicated to preserving open space, lush parks, vibrant wetlands, and tree-lined streets"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/silverlakes-amenities.html",
+      "retrieved_at": "2026-10-10T02:09:06.641620Z",
+      "confidence": 0.5,
+      "amenity": "community_tv_channel",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.silverlakes.net/silverlakes-amenities.html",
+      "retrieved_at": "2026-10-10T02:09:06.641623Z",
+      "confidence": 0.5,
+      "amenity": "bluestream_fiber",
+      "detail": "Fiber internet service referenced on official site"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/parks--recreation.html",
+      "retrieved_at": "2026-10-10T02:30:50.895531Z",
+      "confidence": 0.5,
+      "amenity": "community_pool_master_level",
+      "detail": "SilverLakes Community Park, 925 NW 178 Avenue, Pembroke Pines FL 33029 - private park for SilverLakes residents only. Resort-style swimming pool, playground, sand beach, volleyball area, exercise equipment, barbeque station, boardwalk, large field, and an outdoor pavilion reservable for parties. Pool access is by bluetooth smart device via the Open Path app, dawn to dusk; limited to property owners, tenants (association-approved lease on file) and their guests; private parties not permitted on pool deck grounds."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/parks--recreation.html",
+      "retrieved_at": "2026-10-10T02:30:50.895544Z",
+      "confidence": 0.5,
+      "amenity": "private_boater_s_parks",
+      "detail": "Three private resident-only boater's parks: North (1001 NW 182 Way - boat ramp, large picnic area), West (SW 182 Ave - playground, 2 small picnic pavilions, exercise equipment), South (1401 SW 178 Ave - 3 small picnic pavilions, barbeque station, basketball court, volleyball area)."
+    },
+    {
+      "source_url": "https://pinespropertymanagement.zendesk.com/hc/en-us/articles/6182246631309-Clubhouse-Silverlakes",
+      "retrieved_at": "2026-10-10T02:30:50.895548Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Silverlakes Clubhouse is managed by West Broward Hall, 927 NW 178th Ave, Pembroke Pines FL 33029, (954) 538-3755. The HOA board meets quarterly there (per thewilsonrealestategroup.com community guide, which describes West Broward Hall at SilverLakes Community Park)."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/fpi---silverlakes-security.html",
+      "retrieved_at": "2026-10-10T02:30:50.895551Z",
+      "confidence": 0.5,
+      "amenity": "security",
+      "detail": "SilverLakes Security is provided by FPI Security Patrol, 1771 N Flamingo Road, Pembroke Pines FL 33028. Emergency: dial 911; report security issues to FPI Security directly. (Patrol hours not stated on the page; see open questions.)"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/assessments.html",
+      "retrieved_at": "2026-10-10T02:30:50.895553Z",
+      "confidence": 0.5,
+      "amenity": "gates_gated_entry",
+      "detail": "SilverLakes is gated at the sub-association level: sub-association-owned amenities include entrance gates and manned gates (varies by sub-community), maintained with separately billed sub-association assessments."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/pets-in-silverlakes.html",
+      "retrieved_at": "2026-10-10T02:30:50.895557Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "Residents permitted up to three (3) domesticated pets per household. Dogs must be on a leash; residents must pick up after pets; Pit Bulls are not permitted (AKC/UKC-conforming breeds). Pet waste stations installed around the community; 10% discount at Natural K9 with code EARTH10. (Per Declaration & Protective Covenants pp.199-200.)"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/assessments.html",
+      "retrieved_at": "2026-10-10T02:30:50.895561Z",
+      "confidence": 0.5,
+      "amenity": "cable_internet_amenity",
+      "detail": "SilverLakes negotiates a discounted bulk cable TV/internet rate (Blue Stream Fiber) for all residents, billed with the quarterly assessment. Experience center at The Shoppes of SilverLakes, 18215 Pines Blvd (per silverlakes.net/bluestream-fiber.html)."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/parks--recreation.html",
+      "retrieved_at": "2026-10-10T02:30:50.895563Z",
+      "confidence": 0.5,
+      "amenity": "tennis_sports_courts_city_parks_within_community",
+      "detail": "City-managed parks within/around the community: SilverLakes North Park (2300 NW 172nd Ave - tennis courts, basketball, volleyball, playground); SilverLakes South Park (17601 SW 2nd St - tennis courts, baseball field, playground, pool); SilverLakes Tennis Center (3302 SW 176th Terrace - tennis courts, basketball court, play area); SilverLakes Sports Complex (17540 SW 23rd St, Miramar - baseball/softball, concessions, walking trail)."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/parks--recreation.html",
+      "retrieved_at": "2026-10-10T02:30:50.895567Z",
+      "confidence": 0.5,
+      "amenity": "golf_nearby_not_in_community",
+      "detail": "Pembroke Lakes Golf & Racquet Club, 10500 Taft Street, Pembroke Pines FL 33026, (954) 431-4144 - 18-hole golf course, restaurant, 9 hard tennis courts, 5 clay tennis courts, pool. Listed on the official HOA parks page as a nearby recreation option."
+    },
+    {
+      "source_url": "https://thewilsonrealestategroup.com/welcome-to-silverlakes-community/",
+      "retrieved_at": "2026-10-10T02:30:50.895570Z",
+      "confidence": 0.5,
+      "amenity": "bicycle_walking_path_parks",
+      "detail": "Realtor community guide states SilverLakes 'contains a bicycle/walking path' and is home to three parks and a tennis center on community property, plus 13 dog waste stations along 178th Avenue. (Realtor-sourced; medium confidence.)"
+    },
+    {
+      "source_url": "https://www.silverlakes.net/about-silverlakes.html",
+      "retrieved_at": "2026-10-10T02:30:50.895574Z",
+      "confidence": 0.5,
+      "amenity": "natural_areas_wetlands_wildlife",
+      "detail": "Established 1990 on a former limestone mine site; 5,186 homes and 319 commercial parcels on ~2,400 privately owned acres of parks, lakes, and wetlands; 750 acres of lakes and waterways, 276 acres of replanted wetlands, 30 miles of shoreline, 19 mini-parks and 3 large parks; Waterfowl Habitat Designation awarded by State of Florida Bureau of Mine Reclamation in 1999 (per silverlakes.net/parks--recreation.html, Commemorative Cove section)."
+    },
+    {
+      "source_url": "https://www.silverlakes.net/parks--recreation.html",
+      "retrieved_at": "2026-10-10T02:30:50.895577Z",
+      "confidence": 0.5,
+      "amenity": "west_broward_lodge_253_event_venue",
+      "detail": "Privately owned facility at the south end of SilverLakes Community Park, available for rental via Party Explosion (954) 538-3755."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:31:58.162558Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Lush parks mentioned as part of the community's open space and natural features."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:31:58.162569Z",
+      "confidence": 0.5,
+      "amenity": "wetlands",
+      "detail": "Vibrant wetlands highlighted as a natural feature residents appreciate."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:31:58.162572Z",
+      "confidence": 0.5,
+      "amenity": "open_space",
+      "detail": "Benefits of open space emphasized in the community's mission."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:31:58.162575Z",
+      "confidence": 0.5,
+      "amenity": "tree_lined_streets",
+      "detail": "Lovely tree-lined streets noted as a community feature."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:31:58.162578Z",
+      "confidence": 0.5,
+      "amenity": "wildlife_habitat",
+      "detail": "Abundant wildlife and natural resources the community is dedicated to preserving."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375153Z",
+      "confidence": 0.5,
+      "amenity": "resort_style_pool",
+      "detail": "At private SilverLakes Community Park maintained by the master association"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375161Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "SilverLakes Community Park; additional playgrounds at boater's parks"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375164Z",
+      "confidence": 0.5,
+      "amenity": "sand_beach",
+      "detail": "SilverLakes Community Park"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375166Z",
+      "confidence": 0.5,
+      "amenity": "volleyball_court",
+      "detail": "SilverLakes Community Park"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375168Z",
+      "confidence": 0.5,
+      "amenity": "exercise_equipment",
+      "detail": "SilverLakes Community Park and boater's parks"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375170Z",
+      "confidence": 0.5,
+      "amenity": "bbq_areas",
+      "detail": "SilverLakes Community Park"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375172Z",
+      "confidence": 0.5,
+      "amenity": "boardwalk",
+      "detail": "SilverLakes Community Park"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375174Z",
+      "confidence": 0.5,
+      "amenity": "large_fields",
+      "detail": "SilverLakes Community Park"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375176Z",
+      "confidence": 0.5,
+      "amenity": "reservable_pavilion",
+      "detail": "SilverLakes Community Park"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375178Z",
+      "confidence": 0.5,
+      "amenity": "boater_s_parks_with_boat_ramps",
+      "detail": "Boat ramps, picnic pavilions, playgrounds, and exercise equipment"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375181Z",
+      "confidence": 0.5,
+      "amenity": "picnic_pavilions",
+      "detail": "Boater's parks"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375183Z",
+      "confidence": 0.5,
+      "amenity": "bulk_cable_internet",
+      "detail": "Community-wide amenity via Blue Stream Fiber"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:33:23.375185Z",
+      "confidence": 0.5,
+      "amenity": "preserved_natural_areas_lakes_and_waterfowl_habitat",
+      "detail": "Suburban master-planned environment with emphasis on family living and community events"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497748Z",
+      "confidence": 0.5,
+      "amenity": "parking",
+      "detail": "At Silver Lakes North Park, adjacent to the community; lots of spaces to park; RV parking mentioned in listing form fields."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497760Z",
+      "confidence": 0.5,
+      "amenity": "pavilions",
+      "detail": "At Silver Lakes North Park; available first come, first serve basis."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497762Z",
+      "confidence": 0.5,
+      "amenity": "soccer_fields_sports_areas",
+      "detail": "Park is used for kids soccer games; variety of areas to enjoy."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497766Z",
+      "confidence": 0.5,
+      "amenity": "pets_allowed",
+      "detail": "Listed under Destination Details for Silver Lakes North Park."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497769Z",
+      "confidence": 0.5,
+      "amenity": "restrooms",
+      "detail": "Listed under Destination Details for Silver Lakes North Park."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497771Z",
+      "confidence": 0.5,
+      "amenity": "wifi",
+      "detail": "Listed under Destination Details for Silver Lakes North Park."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497773Z",
+      "confidence": 0.5,
+      "amenity": "wheelchair_accessible",
+      "detail": "Listed under Destination Details for Silver Lakes North Park."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:35:58.009069Z",
+      "confidence": 0.5,
+      "amenity": "gated_community_access",
+      "detail": "Page highlights 'comunidades cerradas' (gated communities) as a key benefit of living in SilverLakes, Pembroke Pines. Specific building/community amenities are said to be provided on request and are not listed here. (Original: 'Vivir en SilverLakes es acceder a lo mejor de Pembroke Pines: escuelas reconocidas y comunidades cerradas.')"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:38:29.965323Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Described as having 'beautiful parks' as part of its family-friendly amenities per the neighborhood overview; no specific parks named or distances given. Also noted for good schools and nearby shopping centers (see proximity). No pool, clubhouse, or other community amenities mentioned on this page. Nextdoor scores: family 97, affordability 95, friendliness 94; considered walkable by neighbors. (Note: 'Marbella Homeowners' group with 91 members appears in the page's group list but is not explicitly tied to this community.) Confidence lowered because amenities are described generally rather than itemized. retrieved_at set to extraction date; source is the Nextdoor neighborhood page for Silverlakes/Phase I, Pembroke Pines, FL (© Nextdoor 2026). US Census Data cited for resident count. No explicit mention of gated entry, so is_gated set false with low confidence. Average income $102K, average age 52, homeowners 89%, 2,643 residents (US Census Data via Nextdoor). No fee information (HOA/CDD) present on page. Top reasons neighbors love the area: beautiful, clean, community, family friendly, neighbors, peaceful, restaurants, safe, walking, well maintained. For fun: home improvement & diy, gardening & landscape, walking, dogs, travel, live music, cooking, biking & cycling, bbq & grilling, local & regional issues. For sale listings visible on page include Queen Size Bed Frame with Mattress ($100), Fresh Artisan Sourdough Bread ($15), and a free Beautiful Custom White Coral Wall Unit, among others. Local events listed include Bar & Bat Mitzvah Showcase (October 11, 2026, Marriott Dania Pointe) and Bingo for the animals. Businesses voted most loved by Pembroke Pines locals are referenced but not listed in the extracted text. Nextdoor Neighbors in Silverlakes/Phase I rate their top interests as home improvement & diy, gardening & landscape, walking, dogs, travel, seeing live music, cooking, biking & cycling, bbq & grilling, and local & regional issues. The top reasons Nextdoor Neighbors love Silverlakes/Phase I are: beautiful, clean, community, family friendly, neighbors, peaceful, restaurants, safe, walking, and well maintained. According to US Census Data, there are 2,643 residents in Silverlakes/Phase I. Silverlakes/Phase I is considered a walkable neighborhood by Nextdoor Neighbors. Silverlakes/Phase I is a neighborhood north-east of Sunset Lakes and north-west of Spring Valley in Pembroke Pines. © Nextdoor 2026 Nextdoor Neighbors Partners Industries Legal. Page title: Silverlakes/Phase I, Pembroke Pines. URL: https://www.google.com/goto?url=CAESgwEB6zswFQRZxrV-yTur1e_uRpTkPDvjLhlrwMJejy6RBw_bPQi0VuJy3VnL4x7hPFWMd77VcWd7DHw4ObUEyPkaY2nPVpGQA5LgRuKW1jRdJ8eq3qBPo3EVnjdctp9RxY6ZPasy-dYreKnYNQzl1JL_h_6F--csIkk7v56QA-vh-YnKag. 2025Winner Silverlakes/Phase I is a peaceful neighborhood in Pembroke Pines, FL, known for its well-maintained homes and friendly community. It's a family-friendly area with beautiful parks, good schools, and convenient shopping centers nearby. Residents:2,643 Friendliness:94 Affordability:95 Family:97 Average income:$102K Average age:52 Homeowners:89% Where is this data from? Trick-or-treat near Silverlakes/Phase ISee which houses are handing out candy and decorating for Halloween with Nextdoor's Treat Map. Garage Sale 510 members South Florida Real Estate🏡 109 members Marbella Homeowners 91 members For sale Queen Size Bed Frame with Mattress $100 · Silverlakes/Phase I Fresh Artisan Sourdough Bread $15 · Silverlakes/Phase I Sold Leather Sofa Recently Sold · Silverlakes/Phase I Free Beautiful Custom White Coral Wall Unit. Free · Silverlakes/Phase I Solid Wood Queen Bedroom Set Brown Faux Leather Reclining Sofa Set Bar & Bat Mitzvah Showcase October 11, 2026 at Marriott Dania Pointe 1 person attending Bingo for the animals 3 people attending Businesses that are voted most loved by Pembroke Pines locals What do people in Silverlakes/Phase I, Pembroke Pines like to do for fun? Nextdoor Neighbors in Silverlakes/Phase I rate their top interests as home improvement & diy, gardening & landscape, walking, dogs, travel, seeing live music, cooking, biking & cycling, bbq & grilling, and local & regional issues. Is Silverlakes/Phase I, Pembroke Pines a good neighborhood to live? The top reasons Nextdoor Neighbors love Silverlakes/Phase I are: beautiful, clean, community, family friendly, neighbors, peaceful, restaurants, safe, walking, and well maintained. What is the population of Silverlakes/Phase I, Pembroke Pines? According to US Census Data, there are 2,643 residents in Silverlakes/Phase I. Is Silverlakes/Phase I, Pembroke Pines walkable? Silverlakes/Phase I is considered a walkable neighborhood by Nextdoor Neighbors. Is Silverlakes/Phase I a neighborhood of Pembroke Pines? Silverlakes/Phase I is a neighborhood north-east of Sunset Lakes and north-west of Spring Valley in Pembroke Pines. © Nextdoor 2026 Nextdoor Neighbors Partners Industries Legal"
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:39:23.599716Z",
+      "confidence": 0.5,
+      "amenity": "scenic_lakes",
+      "detail": "Neighborhood is known for its scenic lakes and well-maintained homes; considered walkable by Nextdoor Neighbors."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:39:23.599728Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Conveniently close to parks nearby."
+    }
+  ],
+  "demographics": {
+    "source_url": "browser:google",
+    "retrieved_at": "2026-10-10T02:39:23.599732Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 985,
+    "data_year": null,
+    "geography_level": "neighborhood (US Census data via Nextdoor); Nextdoor stats for Silver Lakes South, Pembroke Pines, FL (2025 Winner neighborhood profile). Average income $104K, average age 49, homeowners 85%. Friendliness 87, Affordability 95, Family 96. Retrieved 2026-02-10T00:00:00Z. Confidence 0.75."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://demographics-us.com/zips/33029",
+      "retrieved_at": "2026-10-10T02:30:50.895584Z",
+      "confidence": 0.5,
+      "median_age": 39.8,
+      "median_household_income": 125817.0,
+      "owner_occupancy_pct": 90.5,
+      "population": 45177,
+      "data_year": 2021,
+      "geography_level": "ZIP code 33029 (Pembroke Pines / Miramar / Southwest Ranches; the ZIP covering most of SilverLakes) - census-derived estimates; owner-occupancy = 11,903 owner-occupied of 13,150 occupied units. Conflicting/newer figures: ACS 2024 5-year median household income for 33029 is $146,237 (avg $161,874, per-capita $52,371, 31.4% of households >$200k) per incomebyzipcode.com (census-sourced, downloaded Jan 29, 2026); Census Reporter lists ZIP 33029 population 44,070; community itself per official site: 5,186 homes, ~2,400 acres (realtor guide claims 5,500 homes / 23,000+ residents). Pembroke Pines city (2020 Census): population 171,178, median household income $68,683 (ppines.com). Note: no census geography exists at the community level, so ZIP 33029 is the closest standard boundary."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:38:29.965345Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 2643,
+      "data_year": 2025,
+      "geography_level": "neighborhood (US Census Data via Nextdoor, 2025 winner badge on page; © Nextdoor 2026). Extracted 2026-01-15. Silverlakes/Phase I, Pembroke Pines, FL — neighborhood north-east of Sunset Lakes and north-west of Spring Valley. Page content: 2025Winner; Silverlakes/Phase I is a peaceful neighborhood in Pembroke Pines, FL, known for its well-maintained homes and friendly community; family-friendly area with beautiful parks, good schools, convenient shopping centers nearby; Residents 2,643; Friendliness 94; Affordability 95; Family 97; Average income $102K; Average age 52; Homeowners 89%; Nextdoor groups: Garage Sale (510), South Florida Real Estate (109), Marbella Homeowners (91); for-sale items: Queen Size Bed Frame with Mattress $100, Fresh Artisan Sourdough Bread $15, Free Beautiful Custom White Coral Wall Unit; sold: Leather Sofa; events: Bar & Bat Mitzvah Showcase October 11, 2026 at Marriott Dania Pointe (1 attending), Bingo for the animals (3 attending); top neighbor interests: home improvement & diy, gardening & landscape, walking, dogs, travel, seeing live music, cooking, biking & cycling, bbq & grilling, local & regional issues; top reasons loved: beautiful, clean, community, family friendly, neighbors, peaceful, restaurants, safe, walking, well maintained; population per US Census Data: 2,643 residents; considered walkable by Nextdoor Neighbors. © Nextdoor 2026."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.silverlakes.net/neighborhood-info.html",
+      "retrieved_at": "2026-10-10T02:30:50.895602Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "In-community commercial areas: Shoppes of SilverLakes (18341 Pines Blvd), SilverLakes Plaza (17201 Pines Blvd), SilverLakes Center (18310 Pines Blvd - Walmart, Starbucks), SilverLakes Campus (17720 Pines Blvd), SilverLakes Village (17900 NW 5th St) - all in Pembroke Pines FL 33029",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.silverlakes.net/neighborhood-info.html",
+      "retrieved_at": "2026-10-10T02:30:50.895605Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix supermarket at The Shoppes of SilverLakes, 18341 Pines Blvd, Pembroke Pines FL 33029 (in community). Also CVS Pharmacy at SilverLakes Plaza, 17201 Pines Blvd.",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.goriverwalk.com/locations/broward-county-library-south-regional",
+      "retrieved_at": "2026-10-10T02:30:50.895607Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Broward County Library - South Regional, 7300 Pines Blvd, Pembroke Pines FL 33024",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://web.miramarpembrokepines.org/HOSPITALS/Memorial-Hospital-Miramar-3912",
+      "retrieved_at": "2026-10-10T02:30:50.895609Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Memorial Hospital Miramar (Memorial Healthcare System, acute care), 1901 SW 172nd Avenue, Miramar FL 33029 - same ZIP as SilverLakes; (954) 538-5000. Realtor guide also cites Memorial Hospital West as a nearby major medical center.",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.silverlakes.net/neighborhood-info.html",
+      "retrieved_at": "2026-10-10T02:30:50.895610Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Zoned public schools (official HOA page): Silver Lakes Elementary, 2300 SW 173rd Ave, Miramar FL (754-323-7400); Panther Run Elementary, 801 172nd Ave, Pembroke Pines; Silver Trail Middle, 18300 Sheridan St, Pembroke Pines; Glades Middle, 16700 SW 48th Ct, Miramar; West Broward High, 500 NW 209th Ave, Pembroke Pines; Everglades High, 17100 SW 48th Ct, Miramar FL 33027. All within/near the community (ZIP 33029/33027).",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:34:34.497777Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Silver Lakes North Park (neighborhood park with lake, pavilions, soccer areas)",
+      "distance_miles": 0.0
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:35:58.009083Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:38:29.965354Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:38:29.965358Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Marriott Dania Pointe",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-10T02:39:23.599741Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Parks",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current master-HOA assessment dollar amount is not published on silverlakes.net or the management company site (amounts vary by parcel and change annually). Must be confirmed via an estoppel letter from Pines Property Management, (954) 438-6570, 6941 SW 196 Ave Ste 27, Pembroke Pines FL 33332. The only numeric figure found is a resident-submitted $180-$295/month range on hoa-agent.com (unverified).",
+    "Sub-association assessment amounts (e.g., Brittany, Pelican Isle, Sapphire Shores) - billed separately, vary by community; not published in aggregate.",
+    "No CDD (Community Development District) or CDD special assessment for SilverLakes was found in any source checked; unclear whether one applies. hoabulletinboard.com notes transfer fees/capital contributions/special assessments are 'unavailable from public sources.'",
+    "FPI security patrol hours: the official FPI page gives only the address and 'contact FPI directly.' A 2020 board-minutes PDF (silverlakes.net/uploads/.../bod_minutes_9.21.20.pdf, snippet only) mentions the FPI contract renewal and reducing the 24-hour shift (7:30pm-7:30am) to 12 hours for 120 complimentary hours, and a Sapphire Shores sub-association PDF (sapphireshores.org/pdf/slhm.pdf, snippet only) states '24-hour roving security through the local police departments' with detail lines (954) 205-1873 (Pembroke Pines) / (954) 205-1872 (Miramar). Both PDFs could not be parsed as text, so these details are unverified.",
+    "Driving distances in miles from the community to shopping/library/hospital/schools were not stated on any page read; distance_miles left null rather than estimated.",
+    "Address discrepancy for The Shoppes of SilverLakes: 18215 Pines Blvd (official BlueStream Fiber page) vs 18341 Pines Blvd (official Neighborhood Info page).",
+    "Home count discrepancy: official About page says 5,186 homes; realtor guide (thewilsonrealestategroup.com) says 5,500 homes and 23,000+ residents.",
+    "Pool hours: official page says the pool access system operates 'from dawn to dusk'; formal posted pool hours/cabana hours not found.",
+    "Rental restrictions exist at master level and may be stricter per sub-association (rental-restriction page exists on silverlakes.net); specifics not read in full."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/silverlakes-community-association",
+          "retrieved_at": "2026-10-10T02:09:06.641583+00:00"
+        },
+        {
+          "amount": 180.0,
+          "period": "monthly",
+          "source_url": "https://www.hoa-agent.com/community/silverlakes-community-association",
+          "retrieved_at": "2026-10-10T02:30:50.895520+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T02:39:23.600792Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": "quarterly",
+          "source_url": "https://www.silverlakes.net/assessments.html",
+          "retrieved_at": "2026-10-10T02:30:50.895509+00:00"
+        },
+        {
+          "amount": null,
+          "period": "varies",
+          "source_url": "https://www.silverlakes.net/assessments.html",
+          "retrieved_at": "2026-10-10T02:30:50.895523+00:00"
+        },
+        {
+          "amount": null,
+          "period": "billed with quarterly assessment",
+          "source_url": "https://www.silverlakes.net/assessments.html",
+          "retrieved_at": "2026-10-10T02:30:50.895524+00:00"
+        },
+        {
+          "amount": 50.0,
+          "period": "per rental",
+          "source_url": "https://www.silverlakes.net/parks--recreation.html",
+          "retrieved_at": "2026-10-10T02:30:50.895526+00:00"
+        },
+        {
+          "amount": null,
+          "period": "quarterly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-10T02:33:23.375145+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T02:39:23.600799Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Silver Lakes North Park (neighborhood park with lake, pavilions, soccer areas)",
+          "distance_miles": 0.0,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Marriott Dania Pointe",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Parks",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-10T02:39:23.600804Z"
+    }
+  ],
+  "created_at": "2026-10-10T02:09:06.642296Z",
+  "updated_at": "2026-10-10T02:39:23.600861Z"
+}

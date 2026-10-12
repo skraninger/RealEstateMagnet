@@ -1,0 +1,145 @@
+{
+  "id": "3bc1d405-64d3-4e14-8b83-22b3b5b48c86",
+  "identity": {
+    "name": "Arden Homeowners Association",
+    "slug": "arden-homeowners-association",
+    "county_fips": null,
+    "city": "Loxahatchee",
+    "hoa_name": "Arden Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Master-planned agrihood HOA community in Loxahatchee, FL 33470, featuring a working farm, resort amenities, and gated access across 1,200+ acres. Established April 9, 2015. Located off Southern Boulevard near 20-Mile Bend. Approximately 2,000+ homes. Principal address: 2835 Arden Park Drive. Property manager: FPMS, 5600 Granada Dr, Sarasota FL 34231, 941-960-5000."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191573Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 250.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Range of approximately $250-$373 monthly depending on source and home type; often billed quarterly (e.g., ~$978/quarter in some listings). Exact current fees, transfer fees, capital contributions, and special assessments not publicly detailed. Reports from various sources, not confirmed by HOA directly."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15000003575",
+      "retrieved_at": "2026-10-10T18:11:03.191589Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N15000003575",
+      "retrieved_at": "2026-10-10T18:11:03.191603Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191610Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pools with splash pad and cabanas"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191617Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center in Lakehouse clubhouse"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191624Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Lakehouse clubhouse with fitness center and cafe"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191629Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191636Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_court",
+      "detail": "Pickleball courts"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191643Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "20+ miles of trails"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191648Z",
+      "confidence": 0.5,
+      "amenity": "farm",
+      "detail": "Working farm with produce access"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191653Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Lakes for kayaking and fishing"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191659Z",
+      "confidence": 0.5,
+      "amenity": "parks_playgrounds",
+      "detail": "Parks and playgrounds"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191665Z",
+      "confidence": 0.5,
+      "amenity": "event_spaces",
+      "detail": "Event spaces"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191671Z",
+      "confidence": 0.5,
+      "amenity": "gated_access",
+      "detail": "Gated community access"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.neighborhoodscout.com/fl/loxahatchee/demographics",
+    "retrieved_at": "2026-10-10T18:11:03.191681Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": null,
+    "geography_level": "city"
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arlofl/about_hoa/",
+      "retrieved_at": "2026-10-10T18:11:03.191690Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Southern Boulevard near 20-Mile Bend",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-10T18:11:03.192651Z",
+  "updated_at": "2026-10-10T18:11:03.192846Z"
+}

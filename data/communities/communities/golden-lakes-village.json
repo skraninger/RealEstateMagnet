@@ -1,0 +1,293 @@
+{
+  "id": "5746b0e3-a14d-4bd3-b101-f70697d3d03a",
+  "identity": {
+    "name": "Golden Lakes Village",
+    "slug": "golden-lakes-village",
+    "county_fips": null,
+    "city": "West Palm Beach",
+    "hoa_name": "Golden Lakes Village Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "55+ age-restricted gated community in West Palm Beach, FL 33411, comprising Phase A (~1,088 units) and Phase B (~800 homes) under a master corporation. Villas and condos built 1974–1992. HOA established 12/21/1972. Managed by Anzen Group (Phase B) and FPMS (property management)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762617Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 177.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Range approximately $177–$647/month depending on unit type and phase (Phase A vs Phase B). Exact amounts, transfer fees, capital contributions, and special assessments vary and require direct inquiry to the association or property manager (Anzen Group: 561-689-8966; FPMS: 941-960-5000)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.764996Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 177.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA dues listed as $177-$647/mo; range varies by unit type (villa vs condo) and phase. Third-party listing site, unverified by HOA. (Upper bound $647/mo.) Retrieved via page summary; see also hoabulletinboard.com which cites the same ~$177-$647 range depending on unit type and phase under the master corporation (Phase A ~1,088 units / Phase B ~800 homes). No CDD special assessments found in sources reviewed. HOA fee per hoa-community.com covers: common area maintenance, exterior maintenance, common insurance, reserves, trash removal, water, sewer (no dollar amount stated). Average WPB condo HOA ~$485/mo per hoa-agent.com (area average, not community-specific). Confidence 0.5-0.6 (reputable listing/aggregator, not official)."
+    },
+    {
+      "source_url": "https://hoa-community.com/golden-lakes-village-hoa-west-palm-beach-fl/",
+      "retrieved_at": "2026-10-10T21:27:58.765005Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "No dollar amount published; page states fee includes common area maintenance, exterior maintenance, common insurance, reserves, trash removal, water, sewer. Community features listed: clubhouse, pool. Unaffiliated aggregator; verify with HOA/manager (Anzen Group for Phase B, FPMS property management)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762630Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Two clubhouses across Phase A and Phase B"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762638Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Multiple swimming pools including Olympic-sized pool"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=725100",
+      "retrieved_at": "2026-10-10T21:22:58.762641Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=725100",
+      "retrieved_at": "2026-10-10T21:22:58.762644Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=725100",
+      "retrieved_at": "2026-10-10T21:22:58.762647Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762649Z",
+      "confidence": 0.5,
+      "amenity": "library",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762651Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiards rooms"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762653Z",
+      "confidence": 0.5,
+      "amenity": "card_room",
+      "detail": "Card rooms"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762655Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Lakes/ponds on community grounds"
+    },
+    {
+      "source_url": "https://florida-hoa.net/fhhoa_list.php?mastertable=fhtitle&masterkey1=725100",
+      "retrieved_at": "2026-10-10T21:22:58.762658Z",
+      "confidence": 0.5,
+      "amenity": "gated",
+      "detail": "Gated community with master corporation overseeing common areas"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+      "retrieved_at": "2026-10-10T21:22:58.762660Z",
+      "confidence": 0.5,
+      "amenity": "organized_activities",
+      "detail": "Social events, fitness classes, entertainment coordinated by a lifestyle director"
+    },
+    {
+      "source_url": "https://goldenlakes.org/facilities-and-amenities/",
+      "retrieved_at": "2026-10-10T21:27:58.765010Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Olympic-size pool & spa, plus 5 satellite pools throughout the community (official Phase B HOA site, managed by Anzen Group LLC)."
+    },
+    {
+      "source_url": "https://goldenlakes.org/facilities-and-amenities/",
+      "retrieved_at": "2026-10-10T21:27:58.765017Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Beautiful surrounding lakes within the community (official Phase B site)."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765020Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Two clubhouses with billiards room, card room, on-site library, and multipurpose gathering spaces for activities, clubs, and classes."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765022Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis courts; tennis listed as a resident club/activity."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765026Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated community (55+ age-restricted); lock-and-leave condo lifestyle."
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765028Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Full-time activities director; outdoor patios; scenic ponds and waterways."
+    },
+    {
+      "source_url": "https://mygoldenlakesvillage.com/",
+      "retrieved_at": "2026-10-10T21:27:58.765031Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "Phase A (1,088 condos/villas, built mid-1970s): social activities director with shows, dances, trips; exercise classes, water aerobics, bridge/card clubs, knitting, bingo; bus service several days a week for non-drivers."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33411-33411/",
+    "retrieved_at": "2026-10-10T21:27:58.765035Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 76863,
+    "data_year": null,
+    "geography_level": "ZIP code 33411 (West Palm Beach, FL) - community sits in this ZIP; not community-specific census data (no census tract data retrieved). Median household income $83,770 and population 73,919 also cited by zipcode-data.com/33411 (ACS 5-year estimates, third-party aggregator, confidence ~0.5). Median age and owner-occupancy % not retrieved (page content truncated). Confidence 0.9 for census population figure; 0.5 for income figure from aggregator."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Golden_Lakes,_Florida",
+      "retrieved_at": "2026-10-10T21:22:58.762664Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 6694,
+      "data_year": 2000,
+      "geography_level": "CDP (Golden Lakes, Palm Beach County — broader area than the community itself)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765040Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix Super Market (also ALDI, Walmart, Whole Foods, Sprouts Farmers Market nearby; CVS/Walgreens 'a few minutes away')",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765043Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Palm Beach Outlets (plus Route 1 / Florida's Turnpike retail corridor)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+      "retrieved_at": "2026-10-10T21:27:58.765044Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Palms West Hospital (also Royal Palm Medical Center, Wellington Regional Hospital, Good Samaritan Medical Center, JFK Medical Center in the area)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mygoldenlakesvillage.com/",
+      "retrieved_at": "2026-10-10T21:27:58.765046Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach International Airport (PBI)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "https://mygoldenlakesvillage.com/",
+      "retrieved_at": "2026-10-10T21:27:58.765047Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown West Palm Beach (off Okeechobee Blvd)",
+      "distance_miles": 7.0
+    }
+  ],
+  "open_questions": [
+    "Exact HOA dues by unit type/phase: only third-party ranges found ($177-$647/mo per 55places.com and hoabulletinboard.com); no official HOA budget or estoppel reviewed. Verify with Anzen Group (Phase B manager) / FPMS.",
+    "CDD special assessments: no CDD assessment information found in any source reviewed.",
+    "Demographics: median age and owner-occupancy % for ZIP 33411 not retrieved (censusreporter page returned only population/area/density); no community-specific census tract data located.",
+    "Nearest public library (e.g., Palm Beach County Public Library branch) and nearest school with distances: not verified in sources read.",
+    "Pet policy: not found in sources reviewed.",
+    "Distance figures for grocery/hospital/shopping not stated on sources read (only 'a few minutes away' / 'close to'); mile distances left null rather than estimated.",
+    "Phase A vs Phase B amenity/fee differences: Phase A site (mygoldenlakesvillage.com) and Phase B site (goldenlakes.org) describe amenities separately; combined list above may conflate the two phases."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 177.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/glakv/about_hoa/",
+          "retrieved_at": "2026-10-10T21:22:58.762617+00:00"
+        },
+        {
+          "amount": 177.0,
+          "period": "monthly",
+          "source_url": "https://www.55places.com/florida/communities/golden-lakes-village",
+          "retrieved_at": "2026-10-10T21:27:58.764996+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://hoa-community.com/golden-lakes-village-hoa-west-palm-beach-fl/",
+          "retrieved_at": "2026-10-10T21:27:58.765005+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T21:27:58.765579Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Palm Beach International Airport (PBI)",
+          "distance_miles": 4.0,
+          "source_url": "https://mygoldenlakesvillage.com/"
+        },
+        {
+          "nearest_name": "Downtown West Palm Beach (off Okeechobee Blvd)",
+          "distance_miles": 7.0,
+          "source_url": "https://mygoldenlakesvillage.com/"
+        }
+      ],
+      "detected_at": "2026-10-10T21:27:58.765586Z"
+    }
+  ],
+  "created_at": "2026-10-10T21:22:58.763263Z",
+  "updated_at": "2026-10-10T21:27:58.765687Z"
+}

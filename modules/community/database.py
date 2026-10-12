@@ -42,6 +42,7 @@ from sqlalchemy import (
     event,
     func,
     select,
+    text,
 )
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import (
@@ -68,6 +69,18 @@ from .store import slugify
 logger = logging.getLogger(__name__)
 
 DEFAULT_DB_PATH = Path("data") / "communities.db"
+
+# Columns that define demographic *values*. Two ``community_demographics`` rows
+# that agree on every one of these are considered duplicates; ``geography_level``,
+# ``source_url``, ``confidence`` and ``retrieved_at`` are deliberately ignored.
+DEMOGRAPHICS_VALUE_COLUMNS = (
+    "community_slug",
+    "median_age",
+    "median_household_income",
+    "owner_occupancy_pct",
+    "population",
+    "data_year",
+)
 
 
 class Base(DeclarativeBase):
@@ -571,17 +584,35 @@ class CommunityDatabase:
 
         if record.demographics is not None:
             d = record.demographics
-            row.demographics_entries.append(DemographicsRow(
-                median_age=d.median_age,
-                median_household_income=d.median_household_income,
-                owner_occupancy_pct=d.owner_occupancy_pct,
-                population=d.population,
-                data_year=d.data_year,
-                geography_level=d.geography_level,
-                source_url=d.source_url,
-                retrieved_at=d.retrieved_at,
-                confidence=d.confidence,
-            ))
+            existing_demo_keys = {
+                (
+                    e.median_age,
+                    e.median_household_income,
+                    e.owner_occupancy_pct,
+                    e.population,
+                    e.data_year,
+                )
+                for e in row.demographics_entries
+            }
+            key = (
+                d.median_age,
+                d.median_household_income,
+                d.owner_occupancy_pct,
+                d.population,
+                d.data_year,
+            )
+            if key not in existing_demo_keys:
+                row.demographics_entries.append(DemographicsRow(
+                    median_age=d.median_age,
+                    median_household_income=d.median_household_income,
+                    owner_occupancy_pct=d.owner_occupancy_pct,
+                    population=d.population,
+                    data_year=d.data_year,
+                    geography_level=d.geography_level,
+                    source_url=d.source_url,
+                    retrieved_at=d.retrieved_at,
+                    confidence=d.confidence,
+                ))
 
         existing_prox_keys = {
             (p.category, p.nearest_name, round(p.distance_miles or 0, 2), p.source_url)
@@ -599,6 +630,38 @@ class CommunityDatabase:
                     confidence=prox.confidence,
                 ))
                 existing_prox_keys.add(key)
+
+    def dedupe_demographics(self, dry_run: bool = False) -> int:
+        """Delete duplicate ``community_demographics`` rows, keeping the earliest.
+
+        Duplicates are rows that share ``community_slug`` and every value column
+        in :data:`DEMOGRAPHICS_VALUE_COLUMNS` (geography_level/source_url/
+        confidence/retrieved_at are ignored). The lowest ``id`` for each group —
+        the first inserted — is kept. Returns the number of rows removed (or that
+        *would* be removed when ``dry_run`` is true).
+        """
+        group_by = ", ".join(DEMOGRAPHICS_VALUE_COLUMNS)
+        with self.session() as session:
+            total = session.execute(
+                text("SELECT COUNT(*) FROM community_demographics")
+            ).scalar() or 0
+            groups = session.execute(
+                text(
+                    "SELECT MIN(id) FROM community_demographics "
+                    f"GROUP BY {group_by}"
+                )
+            ).scalars().all()
+            removable = total - len(groups)
+            if dry_run or removable <= 0:
+                return removable
+            session.execute(
+                text(
+                    "DELETE FROM community_demographics WHERE id NOT IN "
+                    f"(SELECT MIN(id) FROM community_demographics GROUP BY {group_by})"
+                )
+            )
+            session.commit()
+            return removable
 
     def load_record(self, slug: str) -> Optional[CommunityRecord]:
         with self.session() as session:

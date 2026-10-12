@@ -475,8 +475,12 @@ async def _run_browser_condenser(
     from pydantic_ai.models.openai import OpenAIChatModel
     from pydantic_ai.providers.openai import OpenAIProvider
 
-    from .streaming import run_agent_streamed
-    from .tools import google_search, read_page
+    from .streaming import (
+        run_agent_streamed,
+        sampling_settings,
+        thinking_disabled,
+    )
+    from .tools import google_search, read_page, truncate_relevant
 
     started = time.monotonic()
     result = CondenserStepResult(status="running")
@@ -564,11 +568,11 @@ async def _run_browser_condenser(
                 )
 
                 extraction_prompt = (
-                    f"Extract information about '{info.name}' from this page.\n\n"
                     f"Page: {sr.title}\nURL: {sr.url}\n\n"
-                    f"{page_text[:4000]}\n\n"
-                    f"Extract fees, amenities, demographics, and proximity data "
-                    f"for this community. Use '{BROWSER_SOURCE_URL}' as source_url."
+                    f"{truncate_relevant(page_text, 4000)}\n\n"
+                    f"---\nExtract fees, amenities, demographics, and proximity data "
+                    f"for the community '{info.name}' from the page above. "
+                    f"Use '{BROWSER_SOURCE_URL}' as source_url."
                 )
 
                 agent = Agent(
@@ -586,7 +590,12 @@ async def _run_browser_condenser(
                     item = await run_agent_streamed(
                         agent,
                         extraction_prompt,
-                        model_settings={"max_tokens": 4096},
+                        model_settings=sampling_settings(
+                            max_tokens=4096,
+                            temperature=float(os.environ.get("MODEL_TEMPERATURE", "0.2")),
+                            top_p=float(os.environ.get("MODEL_TOP_P", "0.95")),
+                            disable_thinking=thinking_disabled("http://localhost:8080/v1"),
+                        ),
                         on_thinking=on_thinking,
                     )
                     # Set source URLs

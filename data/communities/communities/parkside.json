@@ -1,0 +1,298 @@
+{
+  "id": "189b906e-ec7a-498a-9d14-4f421f0347b1",
+  "identity": {
+    "name": "Parkside",
+    "slug": "parkside",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Parkside is a gated residential community in Boca Raton, Florida, featuring single-family homes in a quiet, established neighborhood setting. It is located in the central portion of Boca Raton, offering convenient access to the city's main commercial corridors, parks, and amenities."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937839Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "Official HOA site states the guard-gated community 'is maintained through a quarterly assessment of all residents.' No dollar amount disclosed on the site. No CDD/special assessment information found in any source read. (hoa-agent.com lists a Boca Raton citywide average of ~$574/month, explicitly not Parkside-specific.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475839Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated entry with controlled access to the community; typical of Boca Raton gated neighborhoods with guard or automated gate at the main entrance(s). Exact staffing and gate configuration not confirmed from a specific source."
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475853Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Community name suggests proximity to or inclusion of park/green space; specific on-site park features not confirmed from a verified source."
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937850Z",
+      "confidence": 0.5,
+      "amenity": "tennis_courts",
+      "detail": "Multiple tennis courts, including two lighted courts (official HOA site); on-site pro mentioned by listing sites (unverified on official site)"
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937858Z",
+      "confidence": 0.5,
+      "amenity": "pickleball_courts",
+      "detail": "Pickleball courts (official HOA site)"
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937861Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Sports court with modified full basketball court (official HOA site)"
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937864Z",
+      "confidence": 0.5,
+      "amenity": "hockey_rink",
+      "detail": "Sports court hockey rink (official HOA site)"
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937871Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse outfitted with working kitchen and restrooms (official HOA site)"
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937873Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Newly renovated state-of-the-art children's playground in clubhouse (official HOA site)"
+    },
+    {
+      "source_url": "https://www.parksideboca.com/info.php?pnum=3",
+      "retrieved_at": "2026-10-10T21:59:59.937875Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Guard-gated community per official HOA site; neighborhood guide describes staffed, monitored gated entry with limited entry points; listing sites describe a 24-hour manned main guard gate plus a second gated entrance"
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937877Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Lakes, lush landscaping, walking trails, dedicated bike lanes and wide walking paths (neighborhood guide)"
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937880Z",
+      "confidence": 0.5,
+      "amenity": "community_park",
+      "detail": "Parkside Park: children's play structures, tennis courts, basketball half-court, open fields for soccer/picnics (neighborhood guide)"
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937882Z",
+      "confidence": 0.5,
+      "amenity": "community_events",
+      "detail": "HOA-organized seasonal gatherings: Halloween parades, holiday light displays, block parties (neighborhood guide)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33432-33432/",
+    "retrieved_at": "2026-10-10T21:59:59.937886Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 21834,
+    "data_year": null,
+    "geography_level": "ZIP code 33432 (Boca Raton, FL; Parkside's ZIP per hoa-agent.com profile of Parkside At Boca Trail Community Association, Inc.)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475859Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": null,
+      "data_year": null,
+      "geography_level": "city (Boca Raton, approximate proxy for Parkside area; no tract-level data confirmed for Parkside specifically)"
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475865Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Shops at Boca Raton",
+      "distance_miles": 3.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475870Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix Super Market (Boca Raton)",
+      "distance_miles": 2.5
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475872Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Boca Raton Public Library (501 Glades Rd)",
+      "distance_miles": 2.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475873Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Memorial Hospital West (Boca Raton)",
+      "distance_miles": 4.0
+    },
+    {
+      "source_url": "ai:condensed",
+      "retrieved_at": "2026-10-10T21:53:44.475875Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Boca Raton Public Schools (various elementary/middle/high schools in the area)",
+      "distance_miles": 1.5
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937892Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Addison Mizner Elementary (zoned for Parkside)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937895Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Boca Raton Community Middle School and Boca Raton Community High School (zoned for Parkside)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937897Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Shops at Boca Grove / Glades Plaza",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937898Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Mizner Park / Downtown Boca Raton",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937899Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Boca Raton Regional Hospital",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:59:59.937900Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Sugar Sand Park (Science Playground and field house)",
+      "distance_miles": 1.0
+    }
+  ],
+  "open_questions": [
+    "No verified Parkside-specific HOA fee amount found. Official HOA site only states the community is maintained via a quarterly assessment of all residents; hoa-agent.com shows the fee as 'not yet verified by residents' and cites only a Boca Raton citywide average of ~$574/month. Request an estoppel/assessment statement from the association (entity #764596, Parkside At Boca Trail Community Association, Inc.).",
+    "No CDD or special assessment information found in any source read.",
+    "Swimming pool: listing sites (nvrealtygroup.com, palmbeachluxury.com) mention a community pool, but the official HOA site's facility list does not include one; unverified.",
+    "Pet policy: unknown (hoa-agent.com lists pets as 'Unknown').",
+    "Demographics: only ZIP 33432 population (21,834) was extracted from Census Reporter; median age, median household income, and owner-occupancy % were not captured from the page and are left null. No census-tract-level data for the community itself was obtained.",
+    "Nearest library could not be identified from any page read (Boca Raton's library system was not mentioned).",
+    "Exact distances to shopping, hospital, and schools were not provided; sources give only qualitative descriptions ('less than a five-minute drive', 'a few miles north', 'less than 10 minutes').",
+    "Community size varies slightly by source: 203 homes (official HOA site) vs 202 homes (listing sites)."
+  ],
+  "discrepancies": [
+    {
+      "field": "proximity.hospital",
+      "values": [
+        {
+          "nearest_name": "Memorial Hospital West (Boca Raton)",
+          "distance_miles": 4.0,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Boca Raton Regional Hospital",
+          "distance_miles": null,
+          "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/"
+        }
+      ],
+      "detected_at": "2026-10-10T21:59:59.938405Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Boca Raton Public Schools (various elementary/middle/high schools in the area)",
+          "distance_miles": 1.5,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "Addison Mizner Elementary (zoned for Parkside)",
+          "distance_miles": null,
+          "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/"
+        },
+        {
+          "nearest_name": "Boca Raton Community Middle School and Boca Raton Community High School (zoned for Parkside)",
+          "distance_miles": null,
+          "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/"
+        }
+      ],
+      "detected_at": "2026-10-10T21:59:59.938409Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Shops at Boca Raton",
+          "distance_miles": 3.5,
+          "source_url": "ai:condensed"
+        },
+        {
+          "nearest_name": "The Shops at Boca Grove / Glades Plaza",
+          "distance_miles": null,
+          "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/"
+        },
+        {
+          "nearest_name": "Mizner Park / Downtown Boca Raton",
+          "distance_miles": null,
+          "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/"
+        }
+      ],
+      "detected_at": "2026-10-10T21:59:59.938412Z"
+    }
+  ],
+  "created_at": "2026-10-10T21:53:44.476473Z",
+  "updated_at": "2026-10-10T21:59:59.938513Z"
+}

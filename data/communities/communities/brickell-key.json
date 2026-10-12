@@ -1,0 +1,464 @@
+{
+  "id": "5118284f-40fc-41b4-a4dd-ee3a7e632f1e",
+  "identity": {
+    "name": "Brickell Key",
+    "slug": "brickell-key",
+    "county_fips": null,
+    "city": "Miami",
+    "hoa_name": "Brickell Key Section One Homeowners Association, Inc. (Master Association: Brickell Key Condominiums)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Brickell Key (also called Claughton Island) is a man-made, 44-acre triangular island off the mainland Brickell neighborhood of Miami, just east of Downtown Miami and the Miami River. It is a residential condominium community whose Section 1 HOA (originated 12/07/1981, federal ID 592141358) operates under the master association Brickell Key Condominiums, managed by FPMS (5600 Granada Dr). The island also hosts the Mandarin Oriental Miami hotel and some of Miami's tallest condominium towers. ZIP 33131, area codes 305/786."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=760952",
+      "retrieved_at": "2026-10-09T22:12:04.144615Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": "unspecified",
+      "currency": "USD",
+      "note": "HOA is required plus additional fees per florida-condo-associations.com; no specific dollar amount stated in the content. communitypay.us confirms regular periodic assessments exist but omits amounts. Recommend requesting an estoppel/RC for exact figures (FL RC fee cap $299)."
+    },
+    {
+      "source_url": "https://www.brickellkeyrealestate.com/buildings/brickell-key-one/",
+      "retrieved_at": "2026-10-09T22:58:58.491623Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 647.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "Brickell Key One (island's first tower, 1982, 301 units): per the association's 2026 proposed budget, maintenance is $647-$5,778/month depending on unit type, billed quarterly at $1,941-$17,335, and includes reserve contributions. Dues include water, sewer, trash. Garage/cabana/commercial charges billed separately. Building-level figure, not the Section One HOA or master rate - obtain estoppel for specific unit. Source: licensed broker site (Carlos Olivares, FL #3051724), updated Sep 2026. Alternative figures recorded separately: CommunityPay 'Median fee $383/mo' for Section One HOA; Brickell-wide $0.55-$1.10/sf (brickellsold.com). Major pending item: $32M seawall/Baywalk special assessment dispute vs Swire (see cdd_assessment). Section One HOA dollar amount not published on directory sites (florida-hoa.com, florida-condo-associations.com, florida-hoa.net show 'HOA Fee Required' only). Manager: FPMS, 5600 Granada Dr, Sarasota FL, 941-960-5000. No CDD found for the island."
+    },
+    {
+      "source_url": "https://www.communitypay.us/directory/florida/miami/brickell-key-section-one-homeowners-association-inc/",
+      "retrieved_at": "2026-10-09T22:58:58.491633Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 383.0,
+      "period": "month",
+      "currency": "USD",
+      "note": "CommunityPay directory: 'Median fee $383/mo' for BRICKELL KEY SECTION ONE HOMEOWNERS ASSOCIATION, INC.; also 'Risk: Very High'. Figure seen only in the search-result snippet - the page body as retrieved did not render it, so treat as unverified directory data. Conflicts with Brickell Key One's 2026 budget range ($647-$5,778/mo) - reported separately, not reconciled. Verify via estoppel/FPMS."
+    },
+    {
+      "source_url": "https://www.brickellsold.com/blog/brickell-condo-hoa-fees-explained-complete-2026-buyers-guide/",
+      "retrieved_at": "2026-10-09T22:58:58.491635Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "month",
+      "currency": "USD",
+      "note": "Context only, Brickell neighborhood-wide (not Key-specific): HOA fees $0.55-$1.10/sf, avg $0.72/sf, ~$550-$850/mo for a typical 1BR; fees typically cover insurance, water/sewer, security, maintenance, amenities, reserves, management. Per-building examples are mainland Brickell towers, not Brickell Key. Directional, low confidence."
+    },
+    {
+      "source_url": "https://therealdeal.com/miami/2026-05-26/swire-sued-over-32-million-brickell-key-condo-assessment/",
+      "retrieved_at": "2026-10-09T22:58:58.491637Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": 32000000.0,
+      "period": "one-time special assessment (disputed)",
+      "currency": "USD",
+      "note": "The Real Deal (5/26/2026): Brickell Key condo owners sue developer Swire Properties over a $32M (headline says $32M; snippet says $32.3M) seawall and Baywalk assessment, alleging owners are being illegally saddled with seawall-replacement costs. This is a condo-association special assessment for island infrastructure, not a CDD tax (no CDD found for Brickell Key). Status/outcome and per-unit allocation unverified - key due-diligence item."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491639Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Brickell Key Master Association (BKMA, created 1980) maintains island common property: perimeter linear park, roadways, seawall, recreational areas, landscaping; administers special projects, island amenities, seasonal activities; provides maintenance and security. Per-unit master dues not published on the site - request from FPMS (manager of record for the Section One HOA, est. 12/07/1981, federal ID 592141358, 520 Brickell Key Dr, 33131)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:03:09.979904Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 920.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fee as listed for 540 Brickell Key Drive #1214; no CDD or other fees stated on the page."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:06:51.691541Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Marina slips are limited and often involve separate fees or leases; dock maintenance and insurance add cost/complexity; transferability of slip rights varies by building and HOA rules. No dollar amounts stated on the page (general Brickell context notes larger fitness centers, pools, 24-hour staffing, and EV/connector operating costs can show up in monthly dues)."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:13:58.047932Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 2460.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Median rent per month for the Brickell neighborhood, 112% above national average. Not Brickell Key-specific; no HOA or CDD fees stated on page."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=760952",
+      "retrieved_at": "2026-10-09T22:12:04.144624Z",
+      "confidence": 0.6,
+      "amenity": "community_pool",
+      "detail": "Listed as an amenity for Brickell Key HOA Section 1"
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Brickell_Key",
+      "retrieved_at": "2026-10-09T22:12:04.144632Z",
+      "confidence": 0.7,
+      "amenity": "hotel_on_island",
+      "detail": "Mandarin Oriental Miami hotel is located on the island"
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491643Z",
+      "confidence": 0.5,
+      "amenity": "baywalk_linear_park",
+      "detail": "1.5-mile public lineal park (Baywalk) around the island, open to residents and non-residents; perimeter park, roadways and seawall maintained by BKMA."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491652Z",
+      "confidence": 0.5,
+      "amenity": "village_green_playground_fountain_events",
+      "detail": "Central village green with children's playground and Nautilus splash fountain; dedicated play/recreation space for residents; BKMA hosts seasonal events (Summer Splash, Autumn Jamboree, Frosty Fest); 5,000+ trees in open landscaped spaces."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491656Z",
+      "confidence": 0.5,
+      "amenity": "japanese_garden",
+      "detail": "Listed as one of the island's features on the BKMA site."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491663Z",
+      "confidence": 0.5,
+      "amenity": "beach",
+      "detail": "Hidden man-made beach on the island."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491665Z",
+      "confidence": 0.5,
+      "amenity": "public_art",
+      "detail": "Numerous public art installations incl. Manuel Carbonell's 30-ft 'El Centinela del Rio' and commissioned statues."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491668Z",
+      "confidence": 0.5,
+      "amenity": "parking",
+      "detail": "5,600-vehicle underground parking island-wide; streets kept car-free."
+    },
+    {
+      "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+      "retrieved_at": "2026-10-09T22:58:58.491670Z",
+      "confidence": 0.5,
+      "amenity": "security_gated_island",
+      "detail": "BKMA provides security services for common areas (roadways, linear park, seawall, recreational areas). Island described as gated/private in marketing (mandarinorientalluxuryresidences.com). Gate specifics not detailed on the site."
+    },
+    {
+      "source_url": "https://www.florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=760952",
+      "retrieved_at": "2026-10-09T22:58:58.491672Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Directory lists 'Community Pool' as the amenity for Brickell Key HOA Section 1 (master: Brickell Key Condominiums; manager FPMS, 5600 Granada Dr, Sarasota FL, 941-960-5000). Individual towers (e.g., Mandarin Oriental Residences) add building-level resort amenities (pools, spa, fitness, courts) - not part of the Section One HOA."
+    },
+    {
+      "source_url": "https://www.brickellkeyrealestate.com/buildings/brickell-key-one/",
+      "retrieved_at": "2026-10-09T22:58:58.491675Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy_brickell_key_one",
+      "detail": "Owners only: one dog or cat per unit, max 15 lbs at maturity, Board approval required (Declaration sec. 17.2); tenants may not keep pets. Building-specific; other towers may differ."
+    },
+    {
+      "source_url": "https://www.brickellkeyrealestate.com/buildings/brickell-key-one/",
+      "retrieved_at": "2026-10-09T22:58:58.491678Z",
+      "confidence": 0.5,
+      "amenity": "rental_policy_brickell_key_one",
+      "detail": "Long-term rentals allowed; 60-day minimum lease; every lease needs written association approval; possible damage escrow; no sub-60-day rentals; no post-purchase waiting period found. Building-specific."
+    },
+    {
+      "source_url": "https://mandarinorientalluxuryresidences.com/",
+      "retrieved_at": "2026-10-09T22:58:58.491681Z",
+      "confidence": 0.5,
+      "amenity": "island_lifestyle_connectivity_marketing",
+      "detail": "Promotional: 'Brickell Key is a gated, private island connected to the Brickell Financial District' with direct Bay Walk access, Brickell City Centre retail, nearby marinas (Epic, One Island Park, Rickenbacker) and Biscayne Bay yacht access. Treat as promotional."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:06:51.691553Z",
+      "confidence": 0.5,
+      "amenity": "marina_private_boat_slips",
+      "detail": "Buildings with private slips or nearby marina access are a standout on Brickell Key; slips are limited and often involve separate fees or leases."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:06:51.691564Z",
+      "confidence": 0.5,
+      "amenity": "dock_access",
+      "detail": "Dock access is part of the appeal of Brickell Key and waterfront towers; maintenance and insurance for docks add complexity."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:06:51.691567Z",
+      "confidence": 0.5,
+      "amenity": "water_views",
+      "detail": "Water views and dock access are part of the appeal on Brickell Key and waterfront towers."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:08:15.424086Z",
+      "confidence": 0.5,
+      "amenity": "minimarket",
+      "detail": "One review mentions a well-stocked minimarket on the property (\"Tienen un minimarket muy bien surtido\"). Not confirmed by the business owner; profile is unclaimed."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:13:58.047945Z",
+      "confidence": 0.5,
+      "amenity": "brickell_city_centre",
+      "detail": "Upscale shopping and dining destination hosting regular events."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:13:58.047955Z",
+      "confidence": 0.5,
+      "amenity": "waterfront_and_outdoor_spaces",
+      "detail": "Area offers many outdoor spaces and waterfront views along Biscayne Bay."
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:13:58.047958Z",
+      "confidence": 0.5,
+      "amenity": "dining_nightlife_and_cultural_events",
+      "detail": "Known for upscale dining and nightlife; Miami International Film Festival, Art Basel satellite events, and New Year's Eve fireworks over Biscayne Bay."
+    }
+  ],
+  "demographics": {
+    "source_url": "browser:google",
+    "retrieved_at": "2026-10-09T23:13:58.047964Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 35000,
+    "data_year": null,
+    "geography_level": "neighborhood (Brickell, not Brickell Key specifically)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Brickell_Key",
+      "retrieved_at": "2026-10-09T22:12:04.144637Z",
+      "confidence": 0.6,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 20558,
+      "data_year": 2020,
+      "geography_level": "Island/neighborhood (ZIP 33131), excluding Brickell and Mary Brickell Village; 2010 census population was 2,189; area 0.162 sq mi"
+    },
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Brickell-Key-Demographics.html",
+      "retrieved_at": "2026-10-09T22:58:58.491687Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 1270,
+      "data_year": 2023,
+      "geography_level": "Point2-defined 'Brickell Key' neighborhood, Miami FL (not an official Census geography); underlying data: US Census Bureau ACS 2019-2023 5-year estimates per page methodology note. Alternative ZIP-level: 33131 (ACS 2019-2023) population 23,289, median age 36.3, median HH income $143,114, 35.5% owner-occupied (uscivicdata.com) - broadly consistent. No official Census geography exists for the island alone; tract aggregates include mainland Brickell high-rises. See open_questions for unverified neighborhood-wide figures (censuseasy/miamirealgroup snippets). Point2 details: 724 households (avg 2.0), 1,033 units, 63% renter / 37% owner, 29.9% units vacant, median HH income $144,138, avg HH income $212,649 (2024), median gross rent $3,124, median build year 2005 (46.1% of homes 2000-2009), 41.7% bachelor's / 33% graduate degree, 92.5% above poverty, 3.3% unemployment, 42.1% White / 42.6% two+ races / 5.1% Asian, 28.2% non-citizens."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://mandarinorientalluxuryresidences.com/",
+      "retrieved_at": "2026-10-09T22:58:58.491695Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Brickell City Centre (luxury retail incl. Saks Fifth Avenue); dining (Cipriani, LPM, Chateau ZZ's, Delilah, NAOE, Komodo, Boulud Sud) 'all within one mile'",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.wholefoodsmarket.com/stores/downtownmiami",
+      "retrieved_at": "2026-10-09T22:58:58.491699Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Whole Foods Market - Downtown Miami (official store page confirms store; address 299 SE 3rd Ave, Miami FL 33131 per multiple directory snippets - street address not in page body as read)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://mdpls.org/branch-main",
+      "retrieved_at": "2026-10-09T22:58:58.491700Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Miami-Dade Public Library Main Library (West Flagler branch), 101 West Flagler Street, Miami FL 33130 - across the Miami River from the island; nearest MDPL branch to Brickell Key",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.rome2rio.com/s/Brickell/Jackson-Memorial-Hospital",
+      "retrieved_at": "2026-10-09T22:58:58.491702Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Jackson Memorial Hospital (UHealth), Miami; ~3 miles from Brickell (taxi 3 mi / 7 min; Metro Mover 'Brickell Station' to 'Uhealth Jackson Station' 8-15 min)",
+      "distance_miles": 3.0
+    },
+    {
+      "source_url": "https://www.publicschoolreview.com/florida/miami/neighborhood/brickell/elementary",
+      "retrieved_at": "2026-10-09T22:58:58.491704Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Southside Preparatory Academy Magnet School, 45 SW 13th St, Miami FL 33130 (PK-8, 873 students) - top-ranked of the 3 public schools serving the Brickell neighborhood for 2026-27; the other two listed (Somerset Academy Key MS, 6340 Sunset Dr 33143; a K-12 charter at I-41 MM 37.5, 33144) are several miles away",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:06:51.691572Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Marina",
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:08:15.424099Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Downtown Miami",
+      "distance_miles": 0.5
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:13:58.047971Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    },
+    {
+      "source_url": "browser:google",
+      "retrieved_at": "2026-10-09T23:13:58.047975Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Brickell City Centre",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "Exact current dues for the Brickell Key Section One HOA and the Brickell Key Master Association: directories (florida-hoa.com, florida-condo-associations.com, florida-hoa.net) say 'HOA fee required' but publish no amount; CommunityPay's '$383/mo median' was only in a search snippet, not the page body. Request estoppel/budget from FPMS (5600 Granada Dr, Sarasota FL, 941-960-5000) or the association (520 Brickell Key Dr, Miami 33131).",
+    "Status, outcome, and per-unit allocation of the $32M (headline) / $32.3M (snippet) seawall and Baywalk special assessment in the owners' lawsuit against Swire Properties (The Real Deal, 5/26/2026) - major buyer exposure.",
+    "Whether a CDD (Community Development District) exists for Brickell Key: none found in sources; the $32M item appears to be an association special assessment, not a CDD tax. Verify with Miami-Dade property appraiser.",
+    "Per-building HOA fees, amenities, and pet/rental rules for the other Brickell Key towers (Brickell Key One rules verified; homes.com building page returned Access Denied).",
+    "Exact driving/walking distances from the island to Whole Foods (299 SE 3rd Ave), the MDPL Main Library (101 W Flagler St), and Southside Preparatory Academy (45 SW 13th St) - no verified mile figures found; all are within ~0.5-1 mile across the river/bridges per location context.",
+    "Boundary of Point2's 'Brickell Key' demographics area (not an official Census geography) - island-only demographics not available from Census/ACS; ZIP 33131 and Point2 figures include adjacent areas.",
+    "Unverified neighborhood-wide figures seen only in search snippets (not recorded as facts): censuseasy.com Brickell 15-tract aggregate (~36,734 people, 36% owner-occupied) and miamirealgroup.com Brickell profile (~35,000 pop, $117,262 median HH income).",
+    "Gate/security specifics (gatehouse location, access rules, delivery policy) not detailed on the BKMA site.",
+    "Whether BKMA levies separate common-area charges on top of each building's HOA dues (not stated publicly)."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 647.0,
+          "period": "month",
+          "source_url": "https://www.brickellkeyrealestate.com/buildings/brickell-key-one/",
+          "retrieved_at": "2026-10-09T22:58:58.491623+00:00"
+        },
+        {
+          "amount": 383.0,
+          "period": "month",
+          "source_url": "https://www.communitypay.us/directory/florida/miami/brickell-key-section-one-homeowners-association-inc/",
+          "retrieved_at": "2026-10-09T22:58:58.491633+00:00"
+        },
+        {
+          "amount": null,
+          "period": "month",
+          "source_url": "https://www.brickellsold.com/blog/brickell-condo-hoa-fees-explained-complete-2026-buyers-guide/",
+          "retrieved_at": "2026-10-09T22:58:58.491635+00:00"
+        },
+        {
+          "amount": 920.0,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-09T23:03:09.979904+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T23:13:58.049021Z"
+    },
+    {
+      "field": "fees.other",
+      "values": [
+        {
+          "amount": null,
+          "period": "unspecified",
+          "source_url": "https://www.florida-condo-associations.com/cdetail_list.php?mastertable=ctitle&masterkey1=760952",
+          "retrieved_at": "2026-10-09T22:12:04.144615+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "https://websites.kw-ic.com/brickellkeymaster/",
+          "retrieved_at": "2026-10-09T22:58:58.491639+00:00"
+        },
+        {
+          "amount": null,
+          "period": null,
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-09T23:06:51.691541+00:00"
+        },
+        {
+          "amount": 2460.0,
+          "period": "monthly",
+          "source_url": "browser:google",
+          "retrieved_at": "2026-10-09T23:13:58.047932+00:00"
+        }
+      ],
+      "detected_at": "2026-10-09T23:13:58.049028Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Marina",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        },
+        {
+          "nearest_name": "Downtown Miami",
+          "distance_miles": 0.5,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-09T23:13:58.049032Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Brickell City Centre (luxury retail incl. Saks Fifth Avenue); dining (Cipriani, LPM, Chateau ZZ's, Delilah, NAOE, Komodo, Boulud Sud) 'all within one mile'",
+          "distance_miles": null,
+          "source_url": "https://mandarinorientalluxuryresidences.com/"
+        },
+        {
+          "nearest_name": "Brickell City Centre",
+          "distance_miles": null,
+          "source_url": "browser:google"
+        }
+      ],
+      "detected_at": "2026-10-09T23:13:58.049035Z"
+    }
+  ],
+  "created_at": "2026-10-09T22:12:04.145162Z",
+  "updated_at": "2026-10-09T23:13:58.049101Z"
+}

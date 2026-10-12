@@ -1,0 +1,205 @@
+{
+  "id": "7eee3939-de44-4ac4-b4ec-d66f96bc403b",
+  "identity": {
+    "name": "Whitmore Estates",
+    "slug": "whitmore-estates",
+    "county_fips": null,
+    "city": "Lake Worth",
+    "hoa_name": null,
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated new estate home community by Lennar in Lake Worth, FL (10110 Ruidoso Road, ZIP 33449), conveniently located near Wellington, the \"Winter Equestrian Capital of the World.\" Actively selling with homes priced $1,199,000–$2,799,990. Features a modern clubhouse (indoor lounge, covered outdoor area, fire pit, barbecue area) and a tropical swimming pool with cabana area. No HOA fee amounts, demographics, or facility distances were stated in the content. Note: the content also includes a profile for a separate \"Whitmore Estates Homeowners Association, Inc.\" in Palm Beach Gardens, FL 33410 (single-family, gated), which appears to be a different community and contained no fee/amenity/demographic data."
+  },
+  "fees": [
+    {
+      "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/",
+      "retrieved_at": "2026-10-12T15:43:39.377354Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Every home is in an HOA with a monthly fee covering amenities and common-area maintenance (gated entry, clubhouse, lawns); no dollar amount published on any page read. A Lennar agent's Facebook video describes it as a 'comparatively low HOA payment' (unverified, no amount). No CDD/special assessment found. Note: 'Whitmore Estates Homeowners Association, Inc.' in Palm Beach Gardens 33410 (hoa-agent.com) is a different community and was excluded. Community is new construction (2025-2027), so fee schedules may not yet be public; confirm with Lennar/HOA at purchase. Confidence 0.55 (reputable realtor site, no amount)."
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/",
+      "retrieved_at": "2026-10-12T15:43:39.377367Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "HOA maintains common areas, gated entry, clubhouse, and fully maintained lawns (maintenance included in dues per FAQ). No separate recurring charges identified. Confidence 0.55."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:39:42.046689Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Modern, state-of-the-art clubhouse with indoor lounge, covered outdoor area, and outdoor gathering spaces including a fire pit and barbecue area (builder marketing site)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:39:42.046706Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Tropical swimming pool with beautifully landscaped pool deck and cabana area (builder marketing site)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:39:42.046714Z",
+      "confidence": 0.5,
+      "amenity": "gated",
+      "detail": "Gated community entrance."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:39:42.046720Z",
+      "confidence": 0.5,
+      "amenity": "putting_green",
+      "detail": "Source text cut off ('Putt away on the gr...'), likely a putting green but not confirmed."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:43:39.377373Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Modern/state-of-the-art clubhouse with indoor lounge, covered outdoor area, outdoor gathering spaces, fire pit and barbecue area. Confidence 0.9 (builder's official community page)."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:43:39.377386Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pool",
+      "detail": "Tropical swimming pool with landscaped pool deck and cabana area. Confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:43:39.377394Z",
+      "confidence": 0.5,
+      "amenity": "putting_green",
+      "detail": "Manicured putting green. Confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:43:39.377400Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community (gated entry listed as a community feature). Confidence 0.9."
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:43:39.377406Z",
+      "confidence": 0.5,
+      "amenity": "maintained_lawns",
+      "detail": "Fully maintained lawns. Confidence 0.9."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.census.gov/quickfacts/fact/table/lakeworthbeachcityflorida/PST045225",
+    "retrieved_at": "2026-02-10T12:00:00Z",
+    "confidence": 0.9,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 43970,
+    "data_year": 2025,
+    "geography_level": "city (Lake Worth Beach, FL — the city containing the community; no tract-level data read for ZIP 33449/West Lake Worth specifically). Population is the July 1, 2025 estimate (V2025); income and owner-occupancy are ACS 2020-2024 (in 2024 dollars). Median age not captured on the page read (left null)."
+  },
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:39:42.046729Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Wellington, FL",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/",
+      "retrieved_at": "2026-10-12T15:43:39.377427Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Coral Reef Elementary School (zoned, Palm Beach County School District)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/",
+      "retrieved_at": "2026-10-12T15:43:39.377433Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Woodland Middle School (zoned)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/",
+      "retrieved_at": "2026-10-12T15:43:39.377436Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Dr. Joaquín García High School (zoned)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2",
+      "retrieved_at": "2026-10-12T15:43:39.377440Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "National Polo Center / Wellington International (Wellington, FL) — described as nearby attractions; no distance given",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "HOA monthly fee dollar amount: not published on any page read (new community under construction 2025-2027); must be confirmed with Lennar or the HOA at purchase.",
+    "CDD special assessments: none found; unclear whether a CDD exists for this master plan.",
+    "Median age for Lake Worth Beach: not verified on a page I read (third-party aggregators in search snippets cite ~36.6 years, unverified).",
+    "Distances (miles) to nearest hospital, grocery, shopping center, and library: not stated on any page read; only zoned schools and Wellington-area attractions were named.",
+    "Pet policy: not found on any page read.",
+    "Demographics are city-level (Lake Worth Beach), not specific to the West Lake Worth/33449 area where the community sits.",
+    "The separate 'Whitmore Estates Homeowners Association, Inc.' in Palm Beach Gardens, FL 33410 is a different community and was excluded from all facts above."
+  ],
+  "discrepancies": [
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "Wellington, FL",
+          "distance_miles": null,
+          "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2"
+        },
+        {
+          "nearest_name": "National Polo Center / Wellington International (Wellington, FL) — described as nearby attractions; no distance given",
+          "distance_miles": null,
+          "source_url": "https://www.lennar.com/new-homes/florida/palm-beach/lake-worth/whitmore-estates2"
+        }
+      ],
+      "detected_at": "2026-10-12T15:43:39.378324Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Coral Reef Elementary School (zoned, Palm Beach County School District)",
+          "distance_miles": null,
+          "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/"
+        },
+        {
+          "nearest_name": "Woodland Middle School (zoned)",
+          "distance_miles": null,
+          "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/"
+        },
+        {
+          "nearest_name": "Dr. Joaquín García High School (zoned)",
+          "distance_miles": null,
+          "source_url": "https://wellingtonhometeam.com/lake-worth-communities/whitmore-estates/"
+        }
+      ],
+      "detected_at": "2026-10-12T15:43:39.378332Z"
+    }
+  ],
+  "created_at": "2026-10-12T15:39:42.047579Z",
+  "updated_at": "2026-10-12T15:43:39.378457Z"
+}

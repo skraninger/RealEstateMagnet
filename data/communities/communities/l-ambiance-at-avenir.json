@@ -1,0 +1,160 @@
+{
+  "id": "373e72b1-5c1c-4a8c-82c9-26959d6a3757",
+  "identity": {
+    "name": "L'Ambiance at Avenir",
+    "slug": "l-ambiance-at-avenir",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "L'AMBIANCE AT AVENIR NEIGHBORHOOD ASSOCIATION, INC.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated single-family sub-community in Palm Beach Gardens, FL (ZIP 33410), built 2024–2026. Homes offer 3+ bedrooms and 3+ bathrooms averaging 2,423 sq ft; median sold price $1,099,990 ($420/sq ft), with 8 sales over the past two years ranging $895,000–$1,139,990. HOA entity number N23000001740."
+  },
+  "fees": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495307Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 403.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fees averaging $403 monthly per realtor community profile; HOA Agent profile shows no verified fee data, so amount is unverified — confirm with association directly. No special assessment signals reported yet. Average annual property taxes $4,813 (tax, not HOA). Utilities: FPL (electric), Seacoast Utility Authority (water/sewer), Solid Waste Authority of Palm Beach County (trash)."
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814211Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 4813.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "Average annual property taxes (not an HOA fee), per listing site."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495324Z",
+      "confidence": 0.6,
+      "amenity": "pool",
+      "detail": "Community pool"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495338Z",
+      "confidence": 0.6,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495344Z",
+      "confidence": 0.6,
+      "amenity": "pickleball",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495350Z",
+      "confidence": 0.6,
+      "amenity": "bocce_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495356Z",
+      "confidence": 0.6,
+      "amenity": "sidewalks",
+      "detail": null
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:09:05.495361Z",
+      "confidence": 0.6,
+      "amenity": "gated_entry",
+      "detail": "Gated residential community"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814218Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool; also listed for the Avenir master plan on homestimulus.com"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814230Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Also listed for the Avenir master plan on homestimulus.com"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814237Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": "Pickleball court"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814242Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Bocce court"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814248Z",
+      "confidence": 0.5,
+      "amenity": "sidewalks",
+      "detail": "Sidewalks listed as a community amenity"
+    },
+    {
+      "source_url": "https://www.homestimulus.com/new-homes/fl/palm-beach-gardens/communities/lambiance-at-avenir",
+      "retrieved_at": "2026-10-10T22:40:57.814254Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis listed among Avenir master-plan amenities (clubhouse, park, tennis, pool)"
+    },
+    {
+      "source_url": "https://www.homestimulus.com/new-homes/fl/palm-beach-gardens/communities/lambiance-at-avenir",
+      "retrieved_at": "2026-10-10T22:40:57.814259Z",
+      "confidence": 0.5,
+      "amenity": "park",
+      "detail": "Park listed among Avenir master-plan amenities"
+    },
+    {
+      "source_url": "https://horizonpalmrealty.com/community/lambiance-at-avenir-palm-beach-gardens-fl",
+      "retrieved_at": "2026-10-10T22:40:57.814264Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Described as a gated residential community; no further gate/security detail found"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/86000US33410-33410/",
+    "retrieved_at": "2026-10-10T22:40:57.814273Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 36759,
+    "data_year": null,
+    "geography_level": "ZIP 33410 (Palm Beach Gardens, FL)"
+  },
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [
+    "CDD special assessments: no CDD assessment information found for L'Ambiance at Avenir (search returned no results; no CDD data on pages read).",
+    "Official HOA dues from the HOA (L'AMBIANCE AT AVENIR NEIGHBORHOOD ASSOCIATION, INC., entity N23000001740) or recorded CC&Rs: the $403/month figure is a listing-site average and was not verified against official documents.",
+    "Demographics: the Census Reporter page for ZIP 33410 rendered only the population (36,759); median age, median household income, and owner-occupancy % could not be extracted (page content incomplete even with JavaScript enabled).",
+    "Proximity: nearest shopping, grocery, library, hospital, and school distances could not be verified. The homestimulus.com page has a 'Schools nearby' section but the school names/distances did not render; the community address is 13608 Le Christine Drive, Palm Beach Gardens, FL.",
+    "Pet policy: not found on any page read.",
+    "Amenity details (e.g., whether the pool is heated, fitness center availability) were not specified on the pages read."
+  ],
+  "discrepancies": [],
+  "created_at": "2026-10-10T22:09:05.496238Z",
+  "updated_at": "2026-10-10T22:40:57.815503Z"
+}

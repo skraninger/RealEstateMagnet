@@ -1,0 +1,181 @@
+{
+  "id": "edc4f4b8-702a-4bd6-8763-a19b7542d326",
+  "identity": {
+    "name": "PGA National",
+    "slug": "pga-national",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "PGA National HOA",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "PGA National is a golf resort community in Palm Beach Gardens, FL, featuring world-class golf courses, resort amenities including pools, fitness center, tennis, spa, and multiple dining options. The community has a population of approximately 3,575 residents with a median age of 52. It operates a vacation rentals program and offers cottages with golf course vistas."
+  },
+  "fees": [
+    {
+      "source_url": "https://hoa-community.com/pga-national-hoa-palm-beach-gardens-fl/",
+      "retrieved_at": "2026-10-12T16:31:04.468273Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "HOA fees exist but no specific amount is stated in the available sources. The hoa-community.com page notes that all information is subject to change and should be verified directly with the association."
+    },
+    {
+      "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+      "retrieved_at": "2026-10-12T16:36:11.266115Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 150.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported 2026 low end: 'about $150 a month in parts of PGA National'; dues vary by subdivision/unit. Source cites Florida Luxe Estates 2026 listing data; verify with estoppel certificate before buying. PGA National comprises ~40 individual neighborhood associations (per pga-poa.com search snippet, not read)."
+    },
+    {
+      "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+      "retrieved_at": "2026-10-12T16:36:11.266127Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 500.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported 2026 range for full-service golf & country club communities including PGA National: ~$500-$1,500/month (amount shown is the low end of the range). Excludes separate mandatory club membership."
+    },
+    {
+      "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+      "retrieved_at": "2026-10-12T16:36:11.266132Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 20000.0,
+      "period": "annual",
+      "currency": "USD",
+      "note": "PGA National Members Club membership (buying a home can require joining): reported 2024-2025 club schedules show six-figure buy-in plus roughly $20,000-$30,000/year in dues (amount shown is low end of range), billed separately from HOA dues. Club runs golf, tennis, and dining."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468288Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "World-class golf courses, open daily; includes driving range and pro shop (7am-6pm daily)"
+    },
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468302Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort pools open daily from sunrise to sunset"
+    },
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468309Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center and sports/racquet club, Mon-Fri 5am-8pm, Sat-Sun 5am-5pm"
+    },
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468316Z",
+      "confidence": 0.5,
+      "amenity": "tennis",
+      "detail": "Tennis courts open daily 8am-9pm; racquet sports pro shop daily 7am-4pm"
+    },
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468321Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "The Spa, Sun-Thu 9:30am-4pm, Fri-Sat 9:30am-5pm; Spa Cafe closed Oct 1-31"
+    },
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468326Z",
+      "confidence": 0.5,
+      "amenity": "dining",
+      "detail": "Multiple dining options including the mkt, birdie's diner, honeybelle, The Butcher's club, lobby bar, sushi by boū, sugarplume, and pool bar"
+    },
+    {
+      "source_url": "https://www.pgaresort.com/welcome/amenities",
+      "retrieved_at": "2026-10-12T16:31:04.468332Z",
+      "confidence": 0.5,
+      "amenity": "kids_activities",
+      "detail": "Banyan buddies (Fri-Sun 9am-5pm) and Kid's Night Out (Fri-Sat 6pm-10pm)"
+    },
+    {
+      "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+      "retrieved_at": "2026-10-12T16:36:11.266137Z",
+      "confidence": 0.5,
+      "amenity": "gated_security",
+      "detail": "Gated grounds & amenities (2026 buyer's guide, full-service golf community category). HOA dues typically fund gated security, grounds/lawn care, pools, fitness/clubhouse operations, common-area insurance, and reserves in this market segment."
+    },
+    {
+      "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+      "retrieved_at": "2026-10-12T16:36:11.266151Z",
+      "confidence": 0.5,
+      "amenity": "golf",
+      "detail": "Full-service golf community; the Members Club runs golf, tennis, and dining. Club membership is separate from (and often mandatory on top of) HOA dues."
+    }
+  ],
+  "demographics": {
+    "source_url": "https://censusreporter.org/profiles/16000US1254075-palm-beach-gardens-fl/",
+    "retrieved_at": "2026-10-12T16:36:11.266160Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": 60959,
+    "data_year": null,
+    "geography_level": "city (Palm Beach Gardens, FL - not the PGA National community itself; community-level figures could not be retrieved within budget; page content was partially rendered, showing only population, area 59.2 sq mi, density 1,029/sq mi)}"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Palm-Beach-Gardens/Pga-National-Resort-Demographics.html",
+      "retrieved_at": "2026-10-12T16:31:04.468341Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 3575,
+      "data_year": null,
+      "geography_level": "community/neighborhood (Pga National Resort, Palm Beach Gardens, FL)"
+    }
+  ],
+  "proximity": [],
+  "open_questions": [
+    "Specific PGA National amenities (resort pool with private cabanas, fitness center with personal trainers/Pilates/aerobics, tennis, spa, multiple dining options) are advertised on pgaresort.com and pgamembersclub.com, but those pages were not read within budget, so they are unverified here.",
+    "No CDD special assessment amount found for PGA National; the buyer's guide notes CDD bonds are separate from HOA dues in Palm Beach Gardens, but no PGA National-specific CDD figure was located.",
+    "Community-level demographics (brief cites ~3,575 residents, median age 52) could not be verified from Census/ACS; only city-level population (60,959) was retrieved, and median age/income/owner-occupancy were not in the page content returned.",
+    "Proximity distances to nearest hospital, library, school, and shopping could not be verified; Yelp search results listed The Gardens Mall, PGA Commons, Downtown Abacoa, and Downtown Palm Beach Gardens as shopping near PGA National Resort, but no distances were read from a page.",
+    "Exact HOA dues vary by the ~40 individual neighborhood associations within PGA National (per pga-poa.com search snippet, page not read); per-association amounts unverified."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://hoa-community.com/pga-national-hoa-palm-beach-gardens-fl/",
+          "retrieved_at": "2026-10-12T16:31:04.468273+00:00"
+        },
+        {
+          "amount": 150.0,
+          "period": "monthly",
+          "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+          "retrieved_at": "2026-10-12T16:36:11.266115+00:00"
+        },
+        {
+          "amount": 500.0,
+          "period": "monthly",
+          "source_url": "https://cahurgroup.com/hoa-costs-palm-beach-gardens/",
+          "retrieved_at": "2026-10-12T16:36:11.266127+00:00"
+        }
+      ],
+      "detected_at": "2026-10-12T16:36:11.267019Z"
+    }
+  ],
+  "created_at": "2026-10-12T16:31:04.469169Z",
+  "updated_at": "2026-10-12T16:36:11.267172Z"
+}

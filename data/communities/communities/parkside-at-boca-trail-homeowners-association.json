@@ -1,0 +1,112 @@
+{
+  "id": "774379d6-086f-4067-ae8f-835e7db7f97f",
+  "identity": {
+    "name": "Parkside at Boca Trail Homeowners Association",
+    "slug": "parkside-at-boca-trail-homeowners-association",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": "Parkside at Boca Trail Homeowners Association",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "A 55+ gated single-family home community in Boca Raton, Florida, established August 18, 1982. Located just south of Palmetto Park Road between Military Trail and Camino Real. Features winding streets, cul-de-sacs, and a strong sense of community with seasonal events including Halloween parades and holiday light displays. Most homes are single-story ranches or two-story contemporaries with four to six bedrooms."
+  },
+  "fees": [
+    {
+      "source_url": "https://florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541097Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "No specific fee amount found in available content. Contact property manager HAAG MANAGEMENT INC (561-241-0285) or the board for current HOA dues and assessment details."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541106Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Gated access with brick pillars and mature palm trees at main entrance on Parkside Circle"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541114Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541117Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541119Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541122Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541124Z",
+      "confidence": 0.5,
+      "amenity": "pickleball",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541126Z",
+      "confidence": 0.5,
+      "amenity": "bbq_area",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541129Z",
+      "confidence": 0.5,
+      "amenity": "bocce_ball",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541131Z",
+      "confidence": 0.5,
+      "amenity": "shuffleboard",
+      "detail": null
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitlecnty&masterkey1=764596",
+      "retrieved_at": "2026-10-10T21:55:31.541133Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": null
+    },
+    {
+      "source_url": "https://parksidebocaratonneighborhood.org/living-in-parkside-boca-raton-a-neighborly-guide-to-life-in-a-beloved-community/",
+      "retrieved_at": "2026-10-10T21:55:31.541135Z",
+      "confidence": 0.5,
+      "amenity": "other",
+      "detail": "55+ community with seasonal events including Halloween parades and holiday light displays"
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-10T21:55:31.541670Z",
+  "updated_at": "2026-10-10T21:55:31.541790Z"
+}

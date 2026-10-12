@@ -1,0 +1,94 @@
+{
+  "id": "ac529277-c3bc-4dc9-a249-68f549c67758",
+  "identity": {
+    "name": "Tiffany Trace Homeowners Association",
+    "slug": "tiffany-trace-homeowners-association",
+    "county_fips": null,
+    "city": "Boca Raton",
+    "hoa_name": "Tiffany Trace Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Single-family gated community in Boca Raton, FL, established April 16, 1987. Part of the Boca Golf and Tennis Country Club master association. Located at 17459 Tiffany Trace Dr, Boca Raton, FL 33487. Property managed by Vesta Property Services Inc (Jacksonville, FL)."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585178Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Specific HOA fee amounts not stated in available sources. Contact property manager Vesta Property Services Inc (877-988-3782) for current dues and assessment details."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585188Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Community pool"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585196Z",
+      "confidence": 0.5,
+      "amenity": "gated_community",
+      "detail": "Gated community with security"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585199Z",
+      "confidence": 0.5,
+      "amenity": "golf_course",
+      "detail": "Golf community; part of Boca Golf and Tennis Country Club master association"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585201Z",
+      "confidence": 0.5,
+      "amenity": "tennis_court",
+      "detail": "Tennis court"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585204Z",
+      "confidence": 0.5,
+      "amenity": "country_club",
+      "detail": "Country club access via Boca Golf and Tennis Country Club"
+    },
+    {
+      "source_url": "https://www.florida-hoa.com/fhhoa_list.php?mastertable=fhtitle&masterkey1=N20177",
+      "retrieved_at": "2026-10-12T18:06:16.585217Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa facility"
+    }
+  ],
+  "demographics": null,
+  "demographics_history": [],
+  "proximity": [
+    {
+      "source_url": "https://www.totalrealtyconcepts.com/listings/subdivision/Tiffany-Trace/",
+      "retrieved_at": "2026-10-12T18:06:16.585222Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Town Center at Boca Raton",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.totalrealtyconcepts.com/listings/subdivision/Tiffany-Trace/",
+      "retrieved_at": "2026-10-12T18:06:16.585225Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": null,
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [],
+  "discrepancies": [],
+  "created_at": "2026-10-12T18:06:16.585754Z",
+  "updated_at": "2026-10-12T18:06:16.585865Z"
+}

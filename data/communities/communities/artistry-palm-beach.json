@@ -1,0 +1,317 @@
+{
+  "id": "eba39cea-2bf2-4a1e-af23-b3949c2908d7",
+  "identity": {
+    "name": "Artistry Palm Beach",
+    "slug": "artistry-palm-beach",
+    "county_fips": null,
+    "city": "Palm Beach Gardens",
+    "hoa_name": "Artistry Homeowners Association, Inc.",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Gated, Kolter Homes-developed single-family luxury community in Palm Beach Gardens, FL 33418, with approximately 473 homes built mostly 2019-2026. Features Palm Beach Contemporary architecture, homes ranging 3-5 beds / 2,984-6,482 sq ft, starting from $2,169,990. HOA managed by Lang Management (790 Park of Commerce Blvd, Suite 200, Boca Raton, FL 33487). Located east of Florida's Turnpike, minutes from The Gardens Mall and area beaches."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:48:37.973903Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 522.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Reported by NewHomeSource; fees often include lawn maintenance, cable TV, high-speed internet, gate security, and access to amenities. Other sources report a range of $460-$572/month. Exact current amounts, transfer fees, capital contributions, or special assessments not consistently detailed in public sources and may vary by lot/association tier."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973912Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 460.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Lower end of reported range ($460-$572/month) per HOA Bulletin Board; includes various services. Specific current amounts unavailable in public sources."
+    },
+    {
+      "source_url": "https://www.homes.com/new-homes/community/artistry-palm-beach-culture-collection/cc4e7d33try7t/",
+      "retrieved_at": "2026-10-10T22:53:11.237000Z",
+      "confidence": 0.5,
+      "fee_type": "cdd_assessment",
+      "amount": null,
+      "period": null,
+      "currency": "USD",
+      "note": "Unverified: homes.com search snippet states homes 'may be subject to a Community Development District' special tax/assessment; CDD name and dollar amount not confirmed (page not read)."
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973917Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Resident-only lakeside clubhouse"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973926Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Resort-style pool"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973929Z",
+      "confidence": 0.5,
+      "amenity": "fitness_center",
+      "detail": "Fitness center with yoga/aerobics studio"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973932Z",
+      "confidence": 0.5,
+      "amenity": "spa",
+      "detail": "Spa/sauna"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973935Z",
+      "confidence": 0.5,
+      "amenity": "billiards",
+      "detail": "Billiards/hobby rooms"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973937Z",
+      "confidence": 0.5,
+      "amenity": "business_center",
+      "detail": "On-site business center"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973940Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball court"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973944Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Children's playground"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973946Z",
+      "confidence": 0.5,
+      "amenity": "trails",
+      "detail": "Walking trails"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973949Z",
+      "confidence": 0.5,
+      "amenity": "picnic_area",
+      "detail": "Picnic areas"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973951Z",
+      "confidence": 0.5,
+      "amenity": "bocce_court",
+      "detail": "Bocce court"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:48:37.973954Z",
+      "confidence": 0.5,
+      "amenity": "greenbelt",
+      "detail": "Greenbelt / lake views"
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+      "retrieved_at": "2026-10-10T22:48:37.973957Z",
+      "confidence": 0.5,
+      "amenity": "gate_security",
+      "detail": "Gated entry with on-site security"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237013Z",
+      "confidence": 0.5,
+      "amenity": "pool",
+      "detail": "Community pool (kolterhomes.com lifestyle page, which failed to load, describes it as heated resort-style — unverified)"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237043Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse",
+      "detail": "Clubhouse; kolterhomes.com describes it as lakeside with fitness center and yoga/aerobics studio (page failed to load — unverified)"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237052Z",
+      "confidence": 0.5,
+      "amenity": "basketball_court",
+      "detail": "Basketball court"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237063Z",
+      "confidence": 0.5,
+      "amenity": "playground",
+      "detail": "Children's playground"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237073Z",
+      "confidence": 0.5,
+      "amenity": "lake",
+      "detail": "Community lake"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237084Z",
+      "confidence": 0.5,
+      "amenity": "greenbelt",
+      "detail": "Greenbelt"
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237096Z",
+      "confidence": 0.5,
+      "amenity": "gated_entry",
+      "detail": "Gated community (page describes it as 'a gated contemporary community'); 24-hour guard post mentioned only in an unread search snippet — unverified"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://www.neighborhoodscout.com/fl/palm-beach-gardens/demographics",
+    "retrieved_at": "2026-10-10T22:48:37.973962Z",
+    "confidence": 0.4,
+    "median_age": null,
+    "median_household_income": null,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": null,
+    "geography_level": "community (approximate)"
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://meyerlucas.com/neighborhoods/artistry",
+      "retrieved_at": "2026-08-24T00:00:00Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 42979,
+      "data_year": null,
+      "geography_level": "neighborhood area labeled 'Artistry' (aggregator-defined, not the HOA boundary); figures attributed by the site to U.S. Census Bureau data. ZIP 33418 population per Census Reporter is 43,676 (https://censusreporter.org/profiles/86000US33418-33418/). Median age 51.3; average individual income $83,288; 18,505 households; avg household size 2.31; density 937/sq mi. Median household income and owner-occupancy % not retrieved (Census Reporter page did not render full data)."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:48:37.973967Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "The Gardens Mall",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:48:37.973971Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Marsh Pointe Elementary School",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:48:37.973972Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "PGA Corridor (championship golf)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:48:37.973974Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Area beaches",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+      "retrieved_at": "2026-10-10T22:53:11.237145Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Marsh Pointe Elementary School (PK-5, 12649 Ibiiza Dr, Palm Beach Gardens, FL 33418)",
+      "distance_miles": null
+    }
+  ],
+  "open_questions": [
+    "CDD: homes.com listing says homes 'may be subject to a Community Development District' assessment, but the CDD name and annual assessment amount could not be verified (page not read; targeted CDD search returned no results).",
+    "Exact current HOA fee: newhomesource lists $522/month; hoabulletinboard.com (unread) reports ~$460-$572/month. Confirm with Lang Management (790 Park of Commerce Blvd, Suite 200, Boca Raton, FL 33487).",
+    "Pool/clubhouse details (heated resort-style pool, fitness center, yoga/aerobics studio, lakeside clubhouse) come from kolterhomes.com lifestyle pages that failed to load; only 'pool' and 'clubhouse' are confirmed via newhomesource.",
+    "24-hour guard gate: mentioned in a meyerlucas.com search snippet but not confirmed on the page content retrieved.",
+    "Demographics: median household income, owner-occupancy %, and median age for ZIP 33418 not retrieved (censusreporter.org page returned only population 43,676 / 45.8 sq mi / 952.6 density). The meyerlucas figures (pop 42,979, median age 51.3, avg individual income $83,288) cover an aggregator-defined 'Artistry' area, not the HOA boundary.",
+    "No verified distances to nearest hospital, library, or grocery; only 'minutes from The Gardens Mall and area beaches' (newhomesource) and Marsh Pointe Elementary in the same 33418 ZIP.",
+    "Pet policy not found in any source read."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 522.0,
+          "period": "monthly",
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638",
+          "retrieved_at": "2026-10-10T22:48:37.973903+00:00"
+        },
+        {
+          "amount": 460.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/arpbgfl/about_hoa/",
+          "retrieved_at": "2026-10-10T22:48:37.973912+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T22:53:11.238439Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "PGA Corridor (championship golf)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638"
+        },
+        {
+          "nearest_name": "Area beaches",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638"
+        }
+      ],
+      "detected_at": "2026-10-10T22:53:11.238450Z"
+    },
+    {
+      "field": "proximity.school",
+      "values": [
+        {
+          "nearest_name": "Marsh Pointe Elementary School",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638"
+        },
+        {
+          "nearest_name": "Marsh Pointe Elementary School (PK-5, 12649 Ibiiza Dr, Palm Beach Gardens, FL 33418)",
+          "distance_miles": null,
+          "source_url": "https://www.newhomesource.com/community/fl/palm-beach-gardens/artistry-palm-beach-by-kolter-homes/127638"
+        }
+      ],
+      "detected_at": "2026-10-10T22:53:11.238456Z"
+    }
+  ],
+  "created_at": "2026-10-10T22:48:37.974585Z",
+  "updated_at": "2026-10-10T22:53:11.238857Z"
+}

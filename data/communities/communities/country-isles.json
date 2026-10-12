@@ -1,0 +1,365 @@
+{
+  "id": "1763faf8-4e2a-4343-a614-3b0c192ee13c",
+  "identity": {
+    "name": "Country Isles",
+    "slug": "country-isles",
+    "county_fips": null,
+    "city": "Weston",
+    "hoa_name": "Multiple sub-HOAs (Garden Homes HOA - RSN Management, Village Homes HOA - Avalon Management, Patio Homes HOA, Executive Homes HOA, Captiva Cay HOA, etc.)",
+    "cdd_name": null,
+    "is_gated": true,
+    "geo_point": null,
+    "notes": "Country Isles is an established multi-subdivision residential community in Weston, FL 33326, consisting of eight subdivisions including Garden Homes, Village Homes, Patio Homes, Executive Homes, and Captiva Cay. It features a mix of single-family homes, townhomes, villas, and garden homes with lake views and mature landscaping. Governed by several sub-HOAs (Garden Homes managed by RSN Management; Village Homes managed by Avalon Management) rather than a single master association. The community offers a suburban, family-oriented lifestyle with access to lakes, green spaces, and proximity to Weston Town Center."
+  },
+  "fees": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544729Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 175.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Approximately $150–$200 per month reported for some single-family homes; varies by subdivision. Specific master HOA details unavailable in public sources; contact sub-associations for verification."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544742Z",
+      "confidence": 0.5,
+      "fee_type": "other",
+      "amount": 375.0,
+      "period": "quarterly",
+      "currency": "USD",
+      "note": "$375 per quarter reported specifically for Village Homes subdivision. Other subdivisions report $300–$500 per quarter. Transfer fees, capital contributions, and special assessments not detailed in available public sources."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544748Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": 167.0,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "$167/month reported in a specific listing. Fees vary significantly by subdivision and property type; exact amounts require direct contact with individual associations."
+    },
+    {
+      "source_url": "https://www.neighborhoods.com/country-isles-weston-fl",
+      "retrieved_at": "2026-10-10T04:53:24.044206Z",
+      "confidence": 0.5,
+      "fee_type": "hoa_monthly",
+      "amount": null,
+      "period": "monthly",
+      "currency": "USD",
+      "note": "Quick Facts table: 'Association Fee Ranges: $117 to $291/mo' aggregated across active MLS listings in Country Isles sub-HOAs. Exact per-subdivision amounts not published on the page. (Listing-aggregator figure; verify with each sub-HOA.) Conflicting figure: BEX Realty describes fees as 'under $200 monthly'. Aggregator hoabulletinboard cites ~$150-$200/month, $167/month in specific listings, and $375/quarter for Village Homes; $300-$500/quarter for some properties. See open_questions for full conflict list and sub-HOA contacts (Garden Homes: RSN Mgmt 954-214-0691; Village Homes: Avalon Mgmt 954-385-7100). No CDD/special assessment found in public sources for Country Isles. Confidence: 0.5 (reputable listing aggregator). Retrieved 2026-09-26. (Also listed on same page: $350 to $875/quarter association fee range.)"
+    }
+  ],
+  "amenities": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544755Z",
+      "confidence": 0.5,
+      "amenity": "swimming_pools",
+      "detail": "Community swimming pools available in multiple subdivisions."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544770Z",
+      "confidence": 0.5,
+      "amenity": "parks",
+      "detail": "Country Isles Park with playgrounds and walking paths."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544777Z",
+      "confidence": 0.5,
+      "amenity": "walking_trails",
+      "detail": "Trails and walking paths throughout the community."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544784Z",
+      "confidence": 0.5,
+      "amenity": "clubhouses",
+      "detail": "Clubhouses or recreational areas available in some subdivisions."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544789Z",
+      "confidence": 0.5,
+      "amenity": "lakes",
+      "detail": "Lake views in certain sections; potential for non-motorized water activities."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544795Z",
+      "confidence": 0.5,
+      "amenity": "mature_landscaping",
+      "detail": "Established landscaping and well-maintained common areas across the community."
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544802Z",
+      "confidence": 0.5,
+      "amenity": "playgrounds",
+      "detail": "Playgrounds available at Country Isles Park and other sub-HOA areas."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044223Z",
+      "confidence": 0.5,
+      "amenity": "community_pool",
+      "detail": "Community amenities listed as 'a clubhouse, swimming pool, and spa / hot tub'. BEX Realty also notes some townhome sections (Patio Homes, Village Homes) 'demonstrating amenities such as a community pool, park, or kiddie's playground'. Florida HOA registry page lists 'Community Pool' as the amenity for the Garden Homes HOA (florida-hoa.net, retrieved same date)."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044238Z",
+      "confidence": 0.5,
+      "amenity": "clubhouse_and_spa_hot_tub",
+      "detail": "'Country Isles amenities include a clubhouse, swimming pool, and spa / hot tub.'"
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044247Z",
+      "confidence": 0.5,
+      "amenity": "parks_playground_dog_park_picnic_area_trails",
+      "detail": "'There is also a community park, a playground, a dog park, as well as walking or jogging trails.' Onsite dining venue: a picnic area."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044255Z",
+      "confidence": 0.5,
+      "amenity": "gating_security",
+      "detail": "Gating is partial, not uniform: 'The partly gated/ungated Captiva Cay, Garden Homes, Executive I, and Executive II subdivisions represent single family home accommodations...' HOA fees described as covering 'low-cost maintenance of campus grounds, security (where applicable), and limited community amenities'. Community is otherwise described as relying on 'spaciousness, privacy' rather than elaborate amenities."
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044262Z",
+      "confidence": 0.5,
+      "amenity": "pet_policy",
+      "detail": "'The Country Isles Master HOA does allow pets, however the various subdivision may impose their own pet restrictions, so check the individual listings for specifics.'"
+    },
+    {
+      "source_url": "https://www.mypacer.com/parks/106653/country-isles-park-weston",
+      "retrieved_at": "2026-10-10T04:53:24.044268Z",
+      "confidence": 0.5,
+      "amenity": "country_isles_park_city_of_weston_park",
+      "detail": "4.5-acre park in the community with a 0.3-mile walking/running trail, leisure playground, shelter/picnic area, and parking; wheelchair accessible. (City of Weston facility page westonfl.org was blocked to automated access; mypacer used as secondary source.)"
+    },
+    {
+      "source_url": "https://www.neighborhoods.com/country-isles-weston-fl",
+      "retrieved_at": "2026-10-10T04:53:24.044276Z",
+      "confidence": 0.5,
+      "amenity": "golf_nearby",
+      "detail": "'Golfers in Country Isles have the Weston Hills Country Club, a private club, right across the street from the community or the public Bonaventure Golf Club about five minutes away.'"
+    },
+    {
+      "source_url": "https://www.neighborhoods.com/country-isles-weston-fl",
+      "retrieved_at": "2026-10-10T04:53:24.044282Z",
+      "confidence": 0.5,
+      "amenity": "tennis_nearby",
+      "detail": "'Just north of Country Isles is a Cliff Drysdale Tennis Center staffed by pros who provide expert instruction on 16 courts.'"
+    },
+    {
+      "source_url": "https://hoa-resource.com/country-isles-garden-home-homeowners-association-weston-fl/",
+      "retrieved_at": "2026-10-10T04:53:24.044288Z",
+      "confidence": 0.5,
+      "amenity": "hoa_fee_inclusions_garden_homes_hoa",
+      "detail": "HOA fee listed as including: Trash Removal, Water, Sewer, Pest Control. Unverified aggregator; confirm with RSN Management."
+    },
+    {
+      "source_url": "https://www.trulia.com/n/fl/weston/country-isles/337598/",
+      "retrieved_at": "2026-10-10T04:53:24.044296Z",
+      "confidence": 0.5,
+      "amenity": "resident_survey_trulia_local_data",
+      "detail": "Trulia user votes: 93% would walk alone at night; 82% say it's quiet; 73% say it's dog friendly; 71% say parking is easy; 69% say kids play outside; 50% say it's walkable to grocery stores; 55% walkable to restaurants; 86% say a car is needed. (11+ Trulia users per feature.)"
+    }
+  ],
+  "demographics": {
+    "source_url": "https://bestneighborhood.org/household-income-country-isles-weston-fl/",
+    "retrieved_at": "2026-10-10T04:53:24.044306Z",
+    "confidence": 0.5,
+    "median_age": null,
+    "median_household_income": 144767.0,
+    "owner_occupancy_pct": null,
+    "population": null,
+    "data_year": 2024,
+    "geography_level": "Country Isles neighborhood, Weston FL (whole neighborhood; BestNeighborhood calculations from U.S. Census Bureau ACS 2020-2024 5-year estimates). Per capita income on same page: $70,965/yr; 69% of adults hold a bachelor's degree or higher. CONFLICTING/ALTERNATIVE FIGURES (different geography): point2homes (U.S. Census/ACS 2019-2023) reports for the small sub-area 'Harbour - Country Isles Garden Homes': population 1,644, median age 42, owner-occupancy 72.4%, median household income $117,373, 555 households, 615 housing units, median year built 1990 (https://www.point2homes.com/US/Neighborhood/FL/Weston-Miramar/Harbour-Country-Isles-Garden-Homes-Demographics.html); and for 'Country Isles - Waterford Landing': population 1,213, median age 42, owner-occupancy 72.4%, median HH income $117,373 (https://www.point2homes.com/US/Neighborhood/FL/Weston-Miramar/Country-Isles-Waterford-Landing-Demographics.html). No single census geography covering all of Country Isles was located; whole-community population unverified. City of Weston overall: median age 42.3, median HH income ~$139,825 (worldpopulationreview.com, retrieved same date)."
+  },
+  "demographics_history": [
+    {
+      "source_url": "https://www.point2homes.com/US/Neighborhood/FL/Weston-Miramar/Country-Isles-Waterford-Landing-Demographics.html",
+      "retrieved_at": "2026-10-10T04:32:05.544810Z",
+      "confidence": 0.5,
+      "median_age": null,
+      "median_household_income": null,
+      "owner_occupancy_pct": null,
+      "population": 1213,
+      "data_year": 2020,
+      "geography_level": "subdivision (Country Isles - Waterford Landing area only, not entire community). Median age 42; 48.3% male / 51.7% female. Race: 39.1% Caucasian, 5.2% African American, 5.4% Asian, 45.6% two or more races. Citizenship: 46.8% US-born, 32.3% naturalized, 20.9% non-citizens. 409 households, avg 3 members; 83.9% families, 16.1% individuals. Median income not stated in provided content."
+    }
+  ],
+  "proximity": [
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544820Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Weston Town Center",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/",
+      "retrieved_at": "2026-10-10T04:32:05.544826Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "City of Weston (for full HOA registry)",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.publix.com/locations/1469-country-isles-plaza",
+      "retrieved_at": "2026-10-10T04:53:24.044317Z",
+      "confidence": 0.5,
+      "category": "grocery",
+      "nearest_name": "Publix Country Isles Plaza (store #1469), 1170 Weston Rd, Weston, FL 33326 - on the community's eastern border; has pharmacy, wine/beer, sushi, curbside",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044323Z",
+      "confidence": 0.5,
+      "category": "shopping",
+      "nearest_name": "Weston Town Center (1675 Market St, per chamberofcommerce.com listing) - 'takes only a few minutes' from Country Isles; also Indian Trace Square 8-theater movieplex 'kitty-corner to Country Isles' per neighborhoods.com",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/Weston_Branch_Library",
+      "retrieved_at": "2026-10-10T04:53:24.044327Z",
+      "confidence": 0.5,
+      "category": "library",
+      "nearest_name": "Weston Branch Library (Broward County Library), 4205 Bonaventure Blvd, Weston, FL 33326 - on the community's western border (Bonaventure Blvd); shares building with Broward College satellite campus; serves pop. 65,672; built 1996",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://doctor.webmd.com/practice/cleveland-clinic-florida-3686120c-2791-4efb-aa1f-b2d6422ba5d8",
+      "retrieved_at": "2026-10-10T04:53:24.044330Z",
+      "confidence": 0.5,
+      "category": "hospital",
+      "nearest_name": "Cleveland Clinic Florida (Cleveland Clinic Hospital Weston), 3100 Weston Rd, Weston, FL 33331 - acute-care hospital with 24-hour emergency department (per mapquest.com listing of same facility); 316 providers. Broward Health Weston (2300 N Commerce Pkwy, Weston, FL 33326; phone 954-217-5700; not open 24 hours) is a closer urgent-care/specialty/surgery center per City of Weston community-resources listing (snippet).",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.neighborhoods.com/country-isles-weston-fl",
+      "retrieved_at": "2026-10-10T04:53:24.044333Z",
+      "confidence": 0.5,
+      "category": "school",
+      "nearest_name": "Country Isles Elementary School (Broward County PS), 2300 Country Isles Rd, Weston FL 33326 (address per schooldistricts.us snippet; school confirmed on official page countryisles.browardschools.com) - 'in the center of the community' per neighborhoods.com. Tequesta Trace Middle School 'about a five-minute drive'; Cypress Bay High School 'less than 10 minutes away' (same source).",
+      "distance_miles": null
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044336Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Fort Lauderdale-Hollywood Intl Airport (FLL)",
+      "distance_miles": 14.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044339Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Miami International Airport (MIA)",
+      "distance_miles": 22.0
+    },
+    {
+      "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/",
+      "retrieved_at": "2026-10-10T04:53:24.044342Z",
+      "confidence": 0.5,
+      "category": "other",
+      "nearest_name": "Palm Beach International Airport (PBI)",
+      "distance_miles": 44.0
+    }
+  ],
+  "open_questions": [
+    "Exact current HOA dues for each sub-HOA (Garden Homes, Village Homes, Patio Homes I/II/III, Executive I/II, Captiva Cay) could not be verified from official sources; fee figures found are listing-aggregator ranges ($117-$291/mo and $350-$875/qtr per neighborhoods.com; 'under $200/mo' per BEX Realty; ~$150-$200/mo, $167/mo, $300-$500/qtr, $375/qtr for Village Homes per hoabulletinboard.com). Contact sub-HOAs directly: Garden Homes at Country Isles c/o RSN Management Services, 954-214-0691, rsnmgmt@gmail.com, P.O. Box 267426, Weston FL 33326 (per official site countryislesgardenhomes.com); Village Homes c/o Avalon Management, 954-385-7100, avalonmanagementinc@gmail.com.",
+    "No CDD (Community Development District) was located for Country Isles in public sources, so no CDD assessment was found; confirm with City of Weston (954-385-2000) whether any sub-area is in a CDD.",
+    "Transfer fees, capital contributions, and special assessments are not detailed in any public source found; request estoppel/financials from each sub-HOA.",
+    "Median household income conflict: $144,767 (BestNeighborhood, ACS 2020-2024, whole Country Isles) vs $117,373 (point2homes, ACS 2019-2023, two smaller sub-areas). No official Census geography covering the entire community was located; whole-community population, median age, and owner-occupancy % therefore unverified (sub-area estimates: pop ~1,200-1,644, median age 42, owner-occupancy 72.4%).",
+    "Homes.com Country Isles neighborhood guide (demographics, crime, attractions) returned 'Access Denied' and could not be read; no alternative full-neighborhood census profile found.",
+    "Exact mile distances to hospital, library, and shopping were not stated on pages read; only drive times were given (middle school ~5 min, high school <10 min, Weston Town Center 'a few minutes', I-75 'a couple of minutes').",
+    "Per-subdivision pet restrictions (breed/size/weight limits) are not published on pages read; BEX Realty notes the master HOA allows pets but subdivisions may restrict.",
+    "Gating/security details (gate hours, guard staff, number of gates) beyond 'partially gated' subdivisions were not verifiable from public pages.",
+    "BEX Realty's school-zone table on the Country Isles page loaded empty; school assignments (Country Isles Elem / Tequesta Trace MS / Cypress Bay HS) verified only via neighborhoods.com and the schools' official pages - confirm zoning for the specific lot, since it may vary by section.",
+    "Garden Homes HOA dues inclusions (trash, water, sewer, pest control) come from a single unverified aggregator (hoa-resource.com); confirm with RSN Management. Note water/sewer in Broward is often billed by the utility, not the HOA."
+  ],
+  "discrepancies": [
+    {
+      "field": "fees.hoa_monthly",
+      "values": [
+        {
+          "amount": 175.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+          "retrieved_at": "2026-10-10T04:32:05.544729+00:00"
+        },
+        {
+          "amount": 167.0,
+          "period": "monthly",
+          "source_url": "https://www.hoabulletinboard.com/hoa/ciwefl/about_hoa/",
+          "retrieved_at": "2026-10-10T04:32:05.544748+00:00"
+        },
+        {
+          "amount": null,
+          "period": "monthly",
+          "source_url": "https://www.neighborhoods.com/country-isles-weston-fl",
+          "retrieved_at": "2026-10-10T04:53:24.044206+00:00"
+        }
+      ],
+      "detected_at": "2026-10-10T04:53:24.045706Z"
+    },
+    {
+      "field": "proximity.other",
+      "values": [
+        {
+          "nearest_name": "City of Weston (for full HOA registry)",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/"
+        },
+        {
+          "nearest_name": "Fort Lauderdale-Hollywood Intl Airport (FLL)",
+          "distance_miles": 14.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/"
+        },
+        {
+          "nearest_name": "Miami International Airport (MIA)",
+          "distance_miles": 22.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/"
+        },
+        {
+          "nearest_name": "Palm Beach International Airport (PBI)",
+          "distance_miles": 44.0,
+          "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/"
+        }
+      ],
+      "detected_at": "2026-10-10T04:53:24.045721Z"
+    },
+    {
+      "field": "proximity.shopping",
+      "values": [
+        {
+          "nearest_name": "Weston Town Center",
+          "distance_miles": null,
+          "source_url": "https://www.hoabulletinboard.com/hoa/ciwfl/about_hoa/"
+        },
+        {
+          "nearest_name": "Weston Town Center (1675 Market St, per chamberofcommerce.com listing) - 'takes only a few minutes' from Country Isles; also Indian Trace Square 8-theater movieplex 'kitty-corner to Country Isles' per neighborhoods.com",
+          "distance_miles": null,
+          "source_url": "https://www.bexrealty.com/real-estate/Weston/Country-Isles/"
+        }
+      ],
+      "detected_at": "2026-10-10T04:53:24.045727Z"
+    }
+  ],
+  "created_at": "2026-10-10T04:32:05.545739Z",
+  "updated_at": "2026-10-10T04:53:24.045887Z"
+}
